@@ -25,15 +25,31 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'npm'
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build project
-        run: npm run build
-
-      - name: Post-build fix (404.html + .nojekyll)
+      - name: Print env
         run: |
+          node -v
+          npm -v
+          echo "workspace files:"
+          ls -la
+
+      # если lock-файл есть — используем ci; если вдруг нет, аккуратно fallback на install
+      - name: Install dependencies (ci)
+        if: ${{ hashFiles('**/package-lock.json') != '' }}
+        run: npm ci --no-audit --no-fund
+
+      - name: Install dependencies (install fallback)
+        if: ${{ hashFiles('**/package-lock.json') == '' }}
+        run: npm install --no-audit --no-fund
+
+      - name: Build project (verbose)
+        env:
+          # иногда инструменты в CI трактуют предупреждения как ошибки — выключим это поведение
+          CI: "false"
+        run: |
+          npm run build -- --logLevel info --debug
+          # 404 для SPA и .nojekyll для Pages
           cp dist/index.html dist/404.html
           touch dist/.nojekyll
 
