@@ -10,6 +10,7 @@ permissions:
   pages: write
   id-token: write
 
+# Чтобы не запускать одновременные деплои
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -25,38 +26,24 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # можно оставить кеш, даже без lock-файла; при появлении package-lock.json он начнет работать
+          cache: npm
 
-      - name: Print env
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Post-build fix (404.html + .nojekyll)
         run: |
-          node -v
-          npm -v
-          echo "workspace files:"
-          ls -la
-
-      # если lock-файл есть — используем ci; если вдруг нет, аккуратно fallback на install
-      - name: Install dependencies (ci)
-        if: ${{ hashFiles('**/package-lock.json') != '' }}
-        run: npm ci --no-audit --no-fund
-
-      - name: Install dependencies (install fallback)
-        if: ${{ hashFiles('**/package-lock.json') == '' }}
-        run: npm install --no-audit --no-fund
-
-      - name: Build project (verbose)
-        env:
-          # иногда инструменты в CI трактуют предупреждения как ошибки — выключим это поведение
-          CI: "false"
-        run: |
-          npm run build -- --logLevel info --debug
-          # 404 для SPA и .nojekyll для Pages
           cp dist/index.html dist/404.html
           touch dist/.nojekyll
 
       - name: Upload dist folder
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: dist
 
   deploy:
     needs: build
