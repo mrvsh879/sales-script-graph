@@ -25,7 +25,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          # ВАЖНО: без cache, чтобы не требовал package-lock.json
 
       - name: Install
         run: npm install
