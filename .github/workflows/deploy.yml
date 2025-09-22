@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # ВАЖНО: без cache, чтобы не требовал package-lock.json
 
       - name: Install
         run: npm install
@@ -33,7 +33,6 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          # нужно, если используешь auto-base из vite.config.ts (Вариант 1)
           GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: Upload artifact
