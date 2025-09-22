@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2025-09-22T10:19:45.005500Z",
+  "generated_at": "2025-09-22T00:00:00Z",
   "locale": "uk-pl",
   "nodes": [
     {
@@ -8,34 +8,441 @@
       "title": "Початок розмови",
       "type": "greeting",
       "text": [
-        "Привіт! Це демо вузол."
+        "Dzień dobry, Pani/Panie [imię klienta]. Nazywam się [twoje imię]. Jestem Pani/Pana osobistym asystentem. Interesował/a się Pan/Pani dodatkowym dochodem w ramach projektu [nazwa projektu], zgadza się?"
       ]
     },
     {
       "id": "barriers_router",
       "title": "Стартові барʼєри",
       "type": "router",
-      "text": []
+      "text": [
+        "Якщо барʼєрів не було — натисніть «Далі» для переходу до блоку «Досвід»."
+      ]
     },
+    {
+      "id": "bar_no_reg",
+      "title": "Не реєструвався",
+      "type": "barrier",
+      "text": [
+        "Розумію. Коротко поясню, що це за співпраця і чому люди реєструються: … (твоя обробка для «не реєструвався»)."
+      ]
+    },
+    {
+      "id": "bar_send_email",
+      "title": "Надішліть на пошту",
+      "type": "barrier",
+      "text": [
+        "Звісно, можу продублювати на пошту. Щоб не втрачати час — коротко зорієнтую зараз, а лист з деталями також надішлю."
+      ]
+    },
+    {
+      "id": "bar_not_mine",
+      "title": "Це не моє",
+      "type": "barrier",
+      "text": [
+        "Розумію. Зазвичай так кажуть, коли уявлення про формат роботи ще туманне. Дозвольте поясню однією фразою, а ви скажете, чи це вам підходить: …"
+      ]
+    },
+    {
+      "id": "bar_not_interested",
+      "title": "Не цікаво",
+      "type": "barrier",
+      "text": [
+        "Ok, rozumiem. Zadam tylko 1 pytanie, żeby zrozumieć — co dokładnie jest nieinteresujące: tematyka, czas czy warunki? Od tego zależy, czy w ogóle jest sens iść dalej."
+      ]
+    },
+    {
+      "id": "bar_need_nothing",
+      "title": "Нічого не потрібно",
+      "type": "barrier",
+      "text": [
+        "Zgoda. Z mojego doświadczenia część osób mówi tak, bo nie widzi realnej korzyści. Pozwoli Pan/Pani, że w 20 sekund pokażę konkretną korzyść, a jeśli nadal «nie trzeba» — zamkniemy temat."
+      ]
+    },
+    {
+      "id": "bar_busy",
+      "title": "Я зайнятий",
+      "type": "barrier",
+      "text": [
+        "Розумію. Нам потрібно ~5–7 хвилин, щоб зрозуміти, чи є сенс далі. Якщо вам зручно — коротко зараз; якщо ні — узгодимо слот на сьогодні/завтра."
+      ]
+    },
+    {
+      "id": "bar_no_time",
+      "title": "Немає часу",
+      "type": "barrier",
+      "text": [
+        "Ok, rozumiem. Zaproponuję dwie opcje: 1) 5 minut teraz — tylko esencja; 2) konkretny slot dziś/jutro. Co wygodniejsze?"
+      ]
+    },
+    {
+      "id": "bar_child",
+      "title": "Це дитина",
+      "type": "barrier",
+      "text": [
+        "Dziękuję za informację. Nasza oferta jest wyłącznie dla osób pełnoletnich. Jeśli to Pani/Pana numer, przepraszam za kłopot — zakończmy uprzejmie rozmowę."
+      ]
+    },
+    {
+      "id": "bar_accidental",
+      "title": "Це випадково",
+      "type": "barrier",
+      "text": [
+        "Zdarza się. Żeby nie wracać do tematu w przyszłości — zapiszę: brak zainteresowania czy nieodpowiedni moment?"
+      ]
+    },
+    {
+      "id": "bar_scam",
+      "title": "Це обман",
+      "type": "barrier",
+      "text": [
+        "Rozumiem obawy — to rozsądne. Dlatego pracujemy transparentnie: oficjalna rejestracja, regulamin, weryfikacja klienta i bezpieczne wpłaty. Chętnie odpowiem na 1–2 konkretne obawy i pokażę dalej tylko fakty."
+      ]
+    },
+
     {
       "id": "experience_q",
       "title": "Досвід — питання",
       "type": "question",
       "text": [
-        "Co Pana/Panią zainteresowało…?"
+        "[імʼя клієнта], Co Pana / Panią zainteresowało w naszej ofercie, że Pan / Pani zdecydował / zdecydowała się na rejestrację?"
+      ]
+    },
+    {
+      "id": "exp_no",
+      "title": "Немає досвіду",
+      "type": "info",
+      "text": [
+        "— Pan/i jest zielony/a w tej branży (uśmiech) — mamy ekipę specjalistów, którzy będą doradzać na każdym etapie współpracy. Nasza firma jest zainteresowana długoterminową i dochodową współpracą z Państwem.",
+        "Dalej krótkie pytania robocze →"
+      ]
+    },
+    {
+      "id": "exp_yes",
+      "title": "Є досвід",
+      "type": "info",
+      "text": [
+        "Nie jest Pan/i osobą początkującą w tej branży, więc będzie to dla nas łatwe.",
+        "BLIŻSZE PYTANIA O DOŚWIADCZENIE NA TYM ETAPIE NIE STAWIAMY (wg макету)."
+      ]
+    },
+
+    {
+      "id": "work_block",
+      "title": "Робота",
+      "type": "form",
+      "text": [
+        "— Ile czasu mógłby/mogłaby Pan/Pani poświęcić na współpracę? (zwykle 1–2h dziennie)",
+        "— Wygląda na to, że dużo Pan/Pani pracuje, prawda?",
+        "— Proszę powiedzieć, w jakiej branży Pan/Pani pracuje? (zamiast od razu oceniać — zainteresowanie)",
+        "— Potem, gdy wejdzie, jak najlepiej to Pan/Pani wyjaśnić. Jeśli pracuje Pan/Pani w branży finansowej, wszystko pójdzie bardzo szybko.",
+        "— Jak długo pracuje Pan/Pani w swoim zawodzie?",
+        "— Mam wielu klientów z Pana/Pani branży i wiem, że to ciężka praca. Czy miał(a) Pan/Pani kiedyś myśl o zmianie? (łagodnie, bez nacisku)"
+      ]
+    },
+
+    {
+      "id": "family_block",
+      "title": "Сімʼя",
+      "type": "form",
+      "text": [
+        "Питання про сімʼю задаємо мʼяко, щоб зрозуміти контекст:",
+        "— Czy mieszka Pan/Pani sam/a czy z rodziną?",
+        "— Czy jest ktoś, kto Pana/Panią wspiera moralnie/organizacyjnie, gdy Pan/Pani ma nowe wyzwania?",
+        "— Czy zastanawiał(a) się Pan/Pani, że chciał(a)by Pan/Pani pracować dla siebie?"
+      ]
+    },
+
+    {
+      "id": "exp_deep_for_yes",
+      "title": "Поглиблення по досвіду (для тих, хто має)",
+      "type": "question",
+      "text": [
+        "Wspominał(a) Pan/Pani wcześniej, że miał(a) Pan/Pani doświadczenie w branży inwestycyjnej. Proszę powiedzieć więcej:",
+        "— Czy handlował(a) Pan/Pani samodzielnie, czy za pośrednictwem banku albo firmy brokerskiej?",
+        "— Na jakich rynkach Pan/Pani handlował(a)?",
+        "— Co było dla Pana/Pani najtrudniejsze w wyborze firmy?",
+        "— Jaki wynik daje Panu/Pani satysfakcję?"
+      ]
+    },
+
+    {
+      "id": "goals",
+      "title": "Цілі",
+      "type": "question",
+      "text": [
+        "Z mojego doświadczenia wynika, że klienci przychodzą do nas, aby zarobić na samochód, mieszkanie, spłatę kredytu albo pozycję bezpieczeństwa.",
+        "Jaki jest Pana/Pani główny cel naszej współpracy?"
+      ]
+    },
+    {
+      "id": "goal_credit",
+      "title": "Ціль: кредит",
+      "type": "info",
+      "text": [
+        "Якщо відповів, що є кредит — уточнити суму/термін та бажаний темп погашення."
+      ]
+    },
+    {
+      "id": "goal_house",
+      "title": "Ціль: будинок",
+      "type": "info",
+      "text": [
+        "Cel: zakup domu. Фіксуємо бюджет і горизонти (місяці/роки)."
+      ]
+    },
+    {
+      "id": "goal_car",
+      "title": "Ціль: авто",
+      "type": "info",
+      "text": [
+        "Cel: samochód. Узгоджуємо бажаний термін і суму."
+      ]
+    },
+    {
+      "id": "goal_flat",
+      "title": "Ціль: квартира",
+      "type": "info",
+      "text": [
+        "Cel: mieszkanie. Узгоджуємо бюджет і першу ціль по накопиченню."
+      ]
+    },
+    {
+      "id": "goal_other",
+      "title": "Інше",
+      "type": "info",
+      "text": [
+        "Фіксуємо власну ціль клієнта своїми словами."
+      ]
+    },
+
+    {
+      "id": "presentation_router",
+      "title": "Презентація",
+      "type": "router",
+      "text": [
+        "Далі йде коротка презентація під рівень досвіду."
+      ]
+    },
+
+    {
+      "id": "fin_market_noexp",
+      "title": "Фінансовий ринок — для новачків",
+      "type": "script",
+      "text": [
+        "Co Pan/Pani wie albo wcześniej słyszał/a na temat rynków finansowych?",
+        "Świetnie. Teraz wyjaśnię Panu/Pani bardziej szczegółowo, na czym polega zarabianie na rynku finansowym.",
+        "Wszystko opiera się na spekulacji — kupujemy aktywo po jednej cenie, a sprzedajemy po innej, zarabiając na różnicy w cenie. Mówiąc prościej: kupujemy taniej, sprzedajemy drożej. Czy to jest jasne?",
+        "Na rynku finansowym mamy cztery główne kierunki, na których możemy handlować. Możemy zarabiać na różnicach cen aktywów takich jak: – Pary walutowe (np. EUR/PLN), – Towary (np. ropa naftowa, złoto), – Akcje (np. Tesla, Orlen), – Kryptowaluty.",
+        "Nie skupiamy się na jednym aktywie, ponieważ nie da się codziennie handlować tym samym instrumentem i uzyskiwać takiego samego zysku. Jeżeli pojawia się okazja do zarobku — oczywiście z niej korzystamy.",
+        "Dlatego właśnie chciałbym przedstawić Panu/Pani idealną propozycję współpracy z naszą firmą!"
+      ]
+    },
+    {
+      "id": "fin_market_yesexp_grok",
+      "title": "Фінансовий ринок — досвідчений, розуміє",
+      "type": "script",
+      "text": [
+        "Skoro ma Pan/i już doświadczenie w tej branży, to na pewno doskonale Pan/i rozumie, jak działa rynek finansowy, prawda?",
+        "Świetnie. Możliwe, że ciekawi Pana/ią jakiś bardziej konkretny rodzaj rynku?",
+        "Nie skupiamy się na jednym aktywie – nie da się przecież codziennie handlować na tym samym instrumencie i zarabiać taki sam zysk.",
+        "Jeżeli pojawia się okazja, żeby zarobić, to oczywiście z niej korzystamy.",
+        "Dlatego właśnie chciałbym przedstawić Panu/Pani idealną propozycję współpracy z naszą firmą!"
+      ]
+    },
+    {
+      "id": "fin_market_yesexp_nogrok",
+      "title": "Фінансовий ринок — досвідчений, але хоче пояснення як для новачка",
+      "type": "script",
+      "text": [
+        "W takim razie w skrócie jak wyżej:",
+        "Wszystko opiera się na spekulacji — kupujemy aktywo po jednej cenie, a sprzedajemy po innej (kup taniej, sprzedaj drożej)…",
+        "Główne klasy aktywów: pary walutowe, towary, akcje, kryptowaluty.",
+        "Nie skupiamy się na jednym aktywie…",
+        "I przechodzimy do współpracy."
+      ]
+    },
+
+    {
+      "id": "trade_with_expert",
+      "title": "Торгівля з експертом",
+      "type": "script",
+      "text": [
+        "Pracujemy krok po kroku z analitykiem/ekspertem. Zadaniem klienta jest trzymać się planu i zarządzać ryzykiem według zaleceń. Na starcie pokazujemy prosto, bez przeładowania terminologią."
+      ]
+    },
+
+    {
+      "id": "client_questions",
+      "title": "Питання клієнтів",
+      "type": "router",
+      "text": [
+        "Można odpowiedzieć teraz lub pominąć i przejść dalej do demo."
+      ]
+    },
+    {
+      "id": "q_interest_company",
+      "title": "Інтерес фірми",
+      "type": "faq",
+      "text": [
+        "Interes firmy — długoterminowa współpraca. Zarabiamy, jeśli klient zarabia i korzysta z naszych usług (opłaty transakcyjne, subskrypcje, itp.). Dlatego stawiamy na jakość i wyniki."
+      ]
+    },
+    {
+      "id": "q_risks",
+      "title": "Ризики",
+      "type": "faq",
+      "text": [
+        "Ryzyko istnieje zawsze. Dlatego zaczynamy małymi kwotami, korzystamy z zarządzania pozycją, stop-loss, dywersyfikacji. Pokażę to na platformie na żywo."
+      ]
+    },
+    {
+      "id": "q_where_funds",
+      "title": "Де знаходяться кошти",
+      "type": "faq",
+      "text": [
+        "Środki są przechowywane u regulowanych dostawców/usługodawców płatniczych (opis wg Twojej polityki). Klient ma dostęp do historii wpłat/wypłat i potwierdzeń."
+      ]
+    },
+
+    {
+      "id": "platform_demo",
+      "title": "Демонстрація платформи",
+      "type": "demo",
+      "text": [
+        "Krótkie pokazanie interfejsu: instrumenty, wykres, panel zleceń, historia, moduł ryzyka."
+      ]
+    },
+
+    {
+      "id": "entry_amounts",
+      "title": "Суми для входу на ринок",
+      "type": "info",
+      "text": [
+        "Minimalne progi wejścia — zgodnie z Twoją siatką (np. 100–250–500–1000). Dobieramy do celu i komfortu klienta."
+      ]
+    },
+
+    {
+      "id": "objections_router",
+      "title": "Заперечення",
+      "type": "router",
+      "text": [
+        "Wybierz typ: nieuzasadnione / uzasadnione, albo «Dajmy jutro», albo «Przejdź do płatności»."
+      ]
+    },
+    {
+      "id": "obj_unjustified",
+      "title": "Необґрунтовані заперечення",
+      "type": "script",
+      "text": [
+        "Шаблони відповідей з файлу «Необґрунтовані Заперечення ПЛ» (вставляєш свої заготовки 1:1)."
+      ]
+    },
+    {
+      "id": "obj_justified",
+      "title": "Обґрунтовані заперечення",
+      "type": "script",
+      "text": [
+        "Шаблони відповідей з файлу «Обґрунтовані заперечення ПЛ» (вставляєш свої заготовки 1:1)."
+      ]
+    },
+    {
+      "id": "option_tomorrow",
+      "title": "«Давайте завтра» + Новина ПЛ",
+      "type": "script",
+      "text": [
+        "Якщо клієнт просить перенести: даємо кейс + коротку актуальну новину ПЛ (твій заготовлений текст) і фіксуємо слот."
+      ]
+    },
+
+    {
+      "id": "closure_topup",
+      "title": "ЗАКРИТТЯ — ПОПОВНЕННЯ",
+      "type": "script",
+      "text": [
+        "Przechodzimy do zasilenia konta: minimalna kwota zgodnie z siatką, bezpieczna płatność, potwierdzenie na mail/SMS. Po wpłacie — pierwsza wspólna sesja z ekspertem."
       ]
     }
   ],
   "edges": [
-    {
-      "from": "greeting",
-      "to": "barriers_router",
-      "label": "Далі"
-    },
-    {
-      "from": "barriers_router",
-      "to": "experience_q",
-      "label": "Далі"
-    }
+    { "from": "greeting", "to": "barriers_router", "label": "Далі" },
+
+    { "from": "barriers_router", "to": "bar_no_reg", "label": "Не реєструвався" },
+    { "from": "barriers_router", "to": "bar_send_email", "label": "Надішліть на пошту" },
+    { "from": "barriers_router", "to": "bar_not_mine", "label": "Це не моє" },
+    { "from": "barriers_router", "to": "bar_not_interested", "label": "Не цікаво" },
+    { "from": "barriers_router", "to": "bar_need_nothing", "label": "Нічого не потрібно" },
+    { "from": "barriers_router", "to": "bar_busy", "label": "Я зайнятий" },
+    { "from": "barriers_router", "to": "bar_no_time", "label": "Немає часу" },
+    { "from": "barriers_router", "to": "bar_child", "label": "Це дитина" },
+    { "from": "barriers_router", "to": "bar_accidental", "label": "Це випадково" },
+    { "from": "barriers_router", "to": "bar_scam", "label": "Це обман" },
+    { "from": "barriers_router", "to": "experience_q", "label": "Далі" },
+
+    { "from": "bar_no_reg", "to": "experience_q", "label": "→ до Досвіду" },
+    { "from": "bar_send_email", "to": "experience_q", "label": "→ до Досвіду" },
+    { "from": "bar_not_mine", "to": "experience_q", "label": "→ до Досвіду" },
+    { "from": "bar_not_interested", "to": "experience_q", "label": "→ до Досвіду" },
+    { "from": "bar_need_nothing", "to": "experience_q", "label": "→ до Досвіду" },
+    { "from": "bar_busy", "to": "experience_q", "label": "→ до Досвіду" },
+    { "from": "bar_no_time", "to": "experience_q", "label": "→ до Досвіду" },
+    { "from": "bar_child", "to": "experience_q", "label": "→ до Досвіду" },
+    { "from": "bar_accidental", "to": "experience_q", "label": "→ до Досвіду" },
+    { "from": "bar_scam", "to": "experience_q", "label": "→ до Досвіду" },
+
+    { "from": "experience_q", "to": "exp_no", "label": "Немає досвіду" },
+    { "from": "experience_q", "to": "exp_yes", "label": "Є досвід" },
+
+    { "from": "exp_no", "to": "work_block", "label": "Далі: Робота" },
+    { "from": "exp_yes", "to": "work_block", "label": "Далі: Робота" },
+
+    { "from": "work_block", "to": "family_block", "label": "Далі: Сімʼя" },
+    { "from": "family_block", "to": "exp_deep_for_yes", "label": "Питання по досвіду (за необхідності)" },
+
+    { "from": "family_block", "to": "goals", "label": "Далі: Ціль" },
+    { "from": "exp_deep_for_yes", "to": "goals", "label": "Далі: Ціль" },
+
+    { "from": "goals", "to": "goal_credit", "label": "Кредит" },
+    { "from": "goals", "to": "goal_house", "label": "Будинок" },
+    { "from": "goals", "to": "goal_car", "label": "Авто" },
+    { "from": "goals", "to": "goal_flat", "label": "Квартира" },
+    { "from": "goals", "to": "goal_other", "label": "Інше" },
+
+    { "from": "goal_credit", "to": "presentation_router", "label": "Далі: Презентація" },
+    { "from": "goal_house", "to": "presentation_router", "label": "Далі: Презентація" },
+    { "from": "goal_car", "to": "presentation_router", "label": "Далі: Презентація" },
+    { "from": "goal_flat", "to": "presentation_router", "label": "Далі: Презентація" },
+    { "from": "goal_other", "to": "presentation_router", "label": "Далі: Презентація" },
+
+    { "from": "presentation_router", "to": "fin_market_noexp", "label": "Новачок" },
+    { "from": "presentation_router", "to": "fin_market_yesexp_grok", "label": "Досвідчений — розуміє" },
+    { "from": "presentation_router", "to": "fin_market_yesexp_nogrok", "label": "Досвідчений — просить пояснення" },
+
+    { "from": "fin_market_noexp", "to": "trade_with_expert", "label": "Далі: З експертом" },
+    { "from": "fin_market_yesexp_grok", "to": "trade_with_expert", "label": "Далі: З експертом" },
+    { "from": "fin_market_yesexp_nogrok", "to": "trade_with_expert", "label": "Далі: З експертом" },
+
+    { "from": "trade_with_expert", "to": "client_questions", "label": "Питання клієнта" },
+    { "from": "client_questions", "to": "q_interest_company", "label": "Інтерес фірми" },
+    { "from": "client_questions", "to": "q_risks", "label": "Ризики" },
+    { "from": "client_questions", "to": "q_where_funds", "label": "Де кошти" },
+    { "from": "client_questions", "to": "platform_demo", "label": "Пропустити → Демо" },
+
+    { "from": "q_interest_company", "to": "platform_demo", "label": "Показати платформу" },
+    { "from": "q_risks", "to": "platform_demo", "label": "Показати платформу" },
+    { "from": "q_where_funds", "to": "platform_demo", "label": "Показати платформу" },
+
+    { "from": "platform_demo", "to": "entry_amounts", "label": "Далі: Суми входу" },
+    { "from": "entry_amounts", "to": "objections_router", "label": "Опрацювати заперечення / оплата" },
+
+    { "from": "objections_router", "to": "obj_unjustified", "label": "Необґрунтовані" },
+    { "from": "objections_router", "to": "obj_justified", "label": "Обґрунтовані" },
+    { "from": "objections_router", "to": "option_tomorrow", "label": "Давайте завтра" },
+    { "from": "objections_router", "to": "closure_topup", "label": "Перейти до оплати" },
+
+    { "from": "obj_unjustified", "to": "closure_topup", "label": "Закриття → Оплата" },
+    { "from": "obj_justified", "to": "closure_topup", "label": "Закриття → Оплата" },
+    { "from": "option_tomorrow", "to": "closure_topup", "label": "Повернутися і закрити (за згодою)" }
   ]
 }
