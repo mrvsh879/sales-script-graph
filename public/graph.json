@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "generated_at": "2025-09-22T10:19:45.005500Z",
+  "locale": "uk-pl",
+  "nodes": [
+    {
+      "id": "greeting",
+      "title": "Початок розмови",
+      "type": "greeting",
+      "text": [
+        "Привіт! Це демо вузол."
+      ]
+    },
+    {
+      "id": "barriers_router",
+      "title": "Стартові барʼєри",
+      "type": "router",
+      "text": []
+    },
+    {
+      "id": "experience_q",
+      "title": "Досвід — питання",
+      "type": "question",
+      "text": [
+        "Co Pana/Panią zainteresowało…?"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "greeting",
+      "to": "barriers_router",
+      "label": "Далі"
+    },
+    {
+      "from": "barriers_router",
+      "to": "experience_q",
+      "label": "Далі"
+    }
+  ]
+}
