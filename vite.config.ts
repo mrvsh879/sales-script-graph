@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+const repo = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? ''
 export default defineConfig({
-  base: '/sales-script-graph/',
   plugins: [react()],
+  base: repo ? `/${repo}/` : '/', // локально = '/', на CI = '/<repo>/'
 })
