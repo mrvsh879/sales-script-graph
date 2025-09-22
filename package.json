@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && npm run postbuild",
     "preview": "vite preview",
     "postbuild": "touch dist/.nojekyll && cp dist/index.html dist/404.html"
   },
