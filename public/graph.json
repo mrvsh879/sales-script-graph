@@ -33,7 +33,7 @@
         { "label": "ЦЕ ВИПАДКОВО", "to": "bar_accidental" },
         { "label": "НЕ ЦІКАВО", "to": "bar_not_interesting" },
         { "label": "ЦЕ ОБМАН", "to": "bar_scam" },
-        { "label": "Далі", "to": "exp_question" }
+        { "label": "Далі", "to": "experience_q" }
       ]
     },
 
