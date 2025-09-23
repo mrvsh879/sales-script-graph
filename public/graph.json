@@ -1381,13 +1381,7 @@
       "to": "experience_q",
       "label": "Далі"
     }
-  ],
-  "ui": {
-    "sticky_comment_panel": true,
-    "sticky_comment_title": "Коментар про клієнта"
-  }
-    },
-    {
+     {
       "from": "bar_email",           
       "to": "barriers_router",
       "label": "⬅ Назад"
@@ -1495,5 +1489,11 @@
       "from": "bar_scam",            
       "to": "experience_q",    
       "label": "➡ Далі"
-    } 
-
+    }
+  ],
+  "ui": {
+    "sticky_comment_panel": true,
+    "sticky_comment_title": "Коментар про клієнта"
+  }
+    }
+   
