@@ -50,7 +50,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "exp_question" }
+        { "label": "Далі", "to": "experience_q" }
       ]
     },
 
@@ -64,7 +64,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "exp_question" }
+        { "label": "Далі", "to": "experience_q" }
       ]
     },
 
@@ -78,7 +78,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "exp_question" }
+        { "label": "Далі", "to": "experience_q" }
       ]
     },
 
@@ -92,7 +92,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "exp_question" }
+        { "label": "Далі", "to": "experience_q" }
       ]
     },
 
@@ -106,7 +106,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "exp_question" }
+        { "label": "Далі", "to": "experience_q" }
       ]
     },
 
@@ -120,7 +120,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "exp_question" }
+        { "label": "Далі", "to": "experience_q" }
       ]
     },
 
@@ -134,7 +134,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "exp_question" }
+        { "label": "Далі", "to": "experience_q" }
       ]
     },
 
@@ -147,7 +147,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "exp_question" }
+        { "label": "Далі", "to": "experience_q" }
       ]
     },
 
@@ -160,7 +160,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "exp_question" }
+        { "label": "Далі", "to": "experience_q" }
       ]
     },
 
@@ -173,7 +173,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "exp_question" }
+        { "label": "Далі", "to": "experience_q" }
       ]
     },
 
