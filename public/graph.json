@@ -1146,13 +1146,173 @@
     },
     {
       "from": "objections_root",
-      "to": "obj_unjust",
-      "label": "Необґрунтовані"
+      "to": "node",
+      "label": "НЕМАЄ ГРОШЕЙ"
     },
     {
       "from": "objections_root",
-      "to": "obj_just",
-      "label": "Обґрунтовані"
+      "to": "2_0",
+      "label": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_2",
+      "label": "ХОЧУ ПОДУМАТИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_3",
+      "label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’Ї"
+    },
+    {
+      "from": "objections_root",
+      "to": "2_0_2",
+      "label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’Ї 2.0 (логіка)"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_4",
+      "label": "ЛІЦЕНЗІЯ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_5",
+      "label": "ХОЧУ ПОЧИТАТИ ВІДГУКИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_6",
+      "label": "ХОЧУ ПІДПИСАТИ ДОГОВІР"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_7",
+      "label": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_8",
+      "label": "У ВАС АКЦЕНТ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_9",
+      "label": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_10",
+      "label": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_11",
+      "label": "НЕМАЄ ЧАСУ (коротка версія)"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_12",
+      "label": "ШАХРАЇ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_13",
+      "label": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_14",
+      "label": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_15",
+      "label": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_16",
+      "label": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_17",
+      "label": "ХОЧУ ПРИЇХАТИ В ОФІС"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_18",
+      "label": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_19",
+      "label": "ЯКІ ГАРАНТІЇ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_20",
+      "label": "Я В ЦЕ НЕ ВІРЮ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_21",
+      "label": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_22",
+      "label": "БОЮСЬ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_23",
+      "label": "НЕ ДОВІРЯЮ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_24",
+      "label": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_25",
+      "label": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_26",
+      "label": "Я ВЖЕ ВТРАЧАВ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_27",
+      "label": "БОЮСЯ ВТРАТИТИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_28",
+      "label": "ЯКІ Є РИЗИКИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_29",
+      "label": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_30",
+      "label": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?"
+    },
+    {
+      "from": "objections_root",
+      "to": "tomorrow",
+      "label": "Давайте завтра"
+    },
+    {
+      "from": "objections_root",
+      "to": "payment",
+      "label": "Перейти до оплати"
     },
     {
       "from": "objections_root",
