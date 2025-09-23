@@ -406,7 +406,7 @@
     { "label": "Якщо клієнт питає про місцезнаходження коштів", "to": "fund_location" },
     { "label": "Пропустити", "to": "entry_amounts" }
   ]
-}
+},
     {
       "id": "interest_company",
       "title": "Інтерес фірми",
