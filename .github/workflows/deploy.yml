@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 20      # без cache, чтобы не требовался lock
 
       - name: Install deps
         run: npm install
@@ -32,10 +32,24 @@ jobs:
       - name: Build
         run: npm run build
 
+      # 👇 Диагностика: убеждаемся, что Vite переписал /src/main.tsx на /assets/*.js
+      - name: Sanity-check built index.html
+        run: |
+          echo "----- FIRST 40 LINES OF dist/index.html -----"
+          head -n 40 dist/index.html
+          echo "----- GREP check -----"
+          if grep -q "/src/main.tsx" dist/index.html; then
+            echo "ERROR: dist/index.html всё ещё ссылается на /src/main.tsx -> сборка неверная"; exit 1;
+          fi
+          if ! grep -q "/sales-script-graph/assets/" dist/index.html; then
+            echo "ERROR: в dist/index.html нет ссылок на /sales-script-graph/assets/*.js"; exit 1;
+          fi
+          echo "OK: сборка корректная."
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: dist
 
   deploy:
     needs: build
@@ -44,6 +58,5 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
