@@ -23,7 +23,7 @@
         "Виберіть барʼєр або натисніть «Далі», якщо барʼєрів немає."
       ],
       "transitions": [
-        { "label": "НАДІШЛІТЬ ВСЕ НА ПОШТУ", "to": "bar_mail" },
+        { "label": "НАДІШЛІТЬ ВСЕ НА ПОШТУ", "to": "bar_email" },
         { "label": "НЕ РЕЄСТРУВАВСЯ", "to": "bar_not_registered" },
         { "label": "ЦЕ НЕ МОЄ", "to": "bar_not_mine" },
         { "label": "НІЧОГО НЕ ПОТРІБНО", "to": "bar_nothing_needed" },
@@ -38,7 +38,7 @@
     },
 
     {
-      "id": "bar_mail",
+      "id": "bar_email",
       "title": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:",
       "type": "snippet",
       "text": [
