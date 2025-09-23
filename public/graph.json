@@ -42,11 +42,11 @@
       "title": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:",
       "type": "snippet",
       "text": [
-        "Po naszej rozmowie prześlę Panu/Pani wszystkie informacje, jednak aby móc coś przesłać, muszę najpierw wiedzieć, z czym już Pan/Pani się zapoznał(a).",
-        "Niestety, nie zajmuję się wysyłaniem masowych wiadomości.",
-        "Niestety, nie jestem w stanie wysłać Panu/Pani mojego profesjonalizmu na e-mail :)",
-        "Rozumiem Pana/Panią. Jest tylko jedna kwestia — takich wiadomości ma Pan/Pani zapewne już dziesiątki. Czy naprawdę je Pan/Pani otwiera i analizuje, czy jest w środku, czy raczej mówi tak tylko po to, by odłożyć rozmowę?",
-        "Jeśli temat jest interesujący, łatwiej będzie teraz, na żywo, wszystko dokładnie wyjaśnić. Proszę powiedzieć — bardziej zależy Panu/Pani na dochodowości czy na bezpieczeństwie?"
+        "Варіант 1: Po naszej rozmowie prześlę Panu/Pani wszystkie informacje, jednak aby móc coś przesłać, muszę najpierw wiedzieć, z czym już Pan/Pani się zapoznał(a).",
+        "Варіант 2: Niestety, nie zajmuję się wysyłaniem masowych wiadomości.",
+        "Варіант 3: Niestety, nie jestem w stanie wysłać Panu/Pani mojego profesjonalizmu na e-mail :)",
+        "Варіант 4: Rozumiem Pana/Panią. Jest tylko jedna kwestia — takich wiadomości ma Pan/Pani zapewne już dziesiątki. Czy naprawdę je Pan/Pani otwiera i analizuje, czy jest w środku, czy raczej mówi tak tylko po to, by odłożyć rozmowę?",
+        "Варіант 5: Jeśli temat jest interesujący, łatwiej będzie teraz, na żywo, wszystko dokładnie wyjaśnić. Proszę powiedzieć — bardziej zależy Panu/Pani na dochodowości czy na bezpieczeństwie?"
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
