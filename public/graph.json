@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "generated_at": "2025-09-23T00:00:00Z",
+  "generated_at": "2025-09-22T12:06:13.097404Z",
   "locale": "uk-pl",
   "nodes": [
     {
@@ -18,19 +18,6 @@
       "type": "router",
       "text": [
         "Виберіть барʼєр або натисніть «Далі», якщо барʼєрів немає."
-      ],
-      "options": [
-        { "label": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:", "to": "bar_email" },
-        { "label": "НЕ РЕЄСТРУВАВСЯ:",       "to": "bar_not_registered" },
-        { "label": "ЦЕ НЕ МОЄ:",             "to": "bar_not_mine" },
-        { "label": "НІЧОГО НЕ ПОТРІБНО:",    "to": "bar_nothing_needed" },
-        { "label": "Я ЗАЙНЯТИЙ:",            "to": "bar_busy" },
-        { "label": "ЦЕ ДИТИНА:",             "to": "bar_child" },
-        { "label": "НЕМАЄ ЧАСУ:",            "to": "bar_no_time" },
-        { "label": "ЦЕ ВИПАДКОВО:",          "to": "bar_accident" },
-        { "label": "НЕ ЦІКАВО:",             "to": "bar_not_interesting" },
-        { "label": "ЦЕ ОБМАН",               "to": "bar_scam" },
-        { "label": "Далі",                   "to": "experience_q" }
       ]
     },
     {
@@ -38,7 +25,7 @@
       "title": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:",
       "type": "snippet",
       "text": [
-        "Po naszej rozmowie prześlę Panu/Pani wszystkie informacje, jednak aby móc coś przesłać, muszę najpierw wiedzieć, z czym już Pan/Pani się zapoznał(a).",
+        "По naszej rozmowie prześlę Panu/Pani wszystkie informacje, jednak aby móc coś przesłać, muszę najpierw wiedzieć, z czym już Pan/Pani się zapoznał(a).",
         "Niestety, nie zajmuję się wysyłaniem masowych wiadomości.",
         "Niestety, nie jestem w stanie wysłać Panu/Pani mojego profesjonalizmu na e-mail :)",
         "Rozumiem Pana/Panią. Jest tylko jedna kwestia — takich wiadomości ma Pan/Pani zapewne już dziesiątki. Czy naprawdę je Pan/Pani otwiera i analizuje, czy jest w środku, czy raczej mówi tak tylko po to, by odłożyć rozmowę?",
@@ -104,7 +91,7 @@
       ]
     },
     {
-      "id": "bar_accident",
+      "id": "bar_accidental",
       "title": "ЦЕ ВИПАДКОВО:",
       "type": "snippet",
       "text": [
@@ -120,8 +107,8 @@
       "type": "snippet",
       "text": [
         "Rozumiem, że teraz to może nie być interesujące. Ale może po prostu brakuje konkretów? Co musiałby Pan/Pani usłyszeć na temat dochodu, żeby uznać, że warto kontynuować rozmowę?",
-        "„To nieinteresujące” — na razie. A gdyby dochód mógł wzrosnąć o 10–15% miesięcznie, bez dodatkowego wysiłku — to nadal nie chciał(a) by Pan/Pani usłyszeć, jak to możliwe?",
-        "Rozumiem, że teraz to może być nieinteresujące. Ale był момент, kiedy zainteresowała Pana/Panią reklama — co wtedy przyciągnęło Pana/Pani uwagę?"
+        "„To nieinteresujące” — na razie.A gdyby dochód mógł wzrosnąć o 10–15% miesięcznie, bez dodatkowego wysiłku — to nadal nie chciał(a) by Pan/Pani usłyszeć, jak to możliwe?",
+        "Rozumiem, że teraz to może być nieinteresujące.Ale był moment, kiedy zainteresowała Pana/Panią reklama — co wtedy przyciągnęło Pana/Pani uwagę?"
       ]
     },
     {
@@ -130,7 +117,7 @@
       "type": "snippet",
       "text": [
         "Rozumiem Pana/i brak zaufania — w dzisiejszych czasach jest tyle ofert, że wątpliwości są całkowicie zrozumiałe. Ale zróbmy tak: ja wyjaśnię, o co dokładnie chodzi, a Pan/i sam/a oceni, czy warto iść dalej. Szczerze, bez żadnego naciskania.",
-        "Sceptycyzm to coś zupełnie normalnego — szczególnie w dzisiejszych czasach. Właśnie dlatego nie składam żadnych przypadkowych propozycji — po prostu wyjaśniam, o co chodzi, a Pan/i sam/a decyduje, czy chce się w to zagłębić. Chcę tylko pokazać, на czym to polega — a decyzja oczywiście należy do Pana/i."
+        "Sceptycyzm to coś zupełnie normalnego — szczególnie w dzisiejszych czasach. Właśnie dlatego nie składam żadnych przypadkowych propozycji — po prostu wyjaśniam, o co chodzi, a Pan/i sam/a decyduje, czy chce się w to zagłębić. Chcę tylko pokazać, na czym to polega — a decyzja oczywiście należy do Pana/i."
       ]
     },
     {
@@ -140,6 +127,26 @@
       "text": [
         "ДОСВІД:",
         "[ім’я клієнта], Co Pana / Panią zainteresowało w naszej ofercie, że Pan / Pani zdecydował / zdecydowała się na rejestrację?"
+      ]
+    },
+    {
+      "id": "exp_no",
+      "title": "Немає досвіду",
+      "type": "snippet",
+      "text": [
+        "Немає досвіду:",
+        "Pan/i jest zielony/a w tej branży [цеŭ żart — мożemy powiedzieć з усмішкою й можна трохи посміятись, це щось типу \"а, to Bu новачок / чайник\"] i także z усмішкою продовжуємо:",
+        "Nie szkodzi, mamy ekipę specjalistów, którzy będą Panu/Pani doradzać na każdym etapie naszej współpracy. Ponieważ nasza firma jest zainteresowana długoterminową i dochodową współpracą z Państwem."
+      ]
+    },
+    {
+      "id": "exp_yes",
+      "title": "Є досвід",
+      "type": "snippet",
+      "text": [
+        "Є досвід:",
+        "Nie jest Pan/i osobą początkującą w tej branży, więc będzie to dla nas łatwe.",
+        "БІЛЬШЕ ПИТАНЬ ПРО ДОСВІД НА ЦЬОМУ ЕТАПІ МИ НЕ СТАВИМО!!!"
       ]
     },
     {
@@ -1291,103 +1298,53 @@
   "edges": [
     {
       "from": "barriers_router",
-      "to": "bar_",
+      "to": "bar_email",
       "label": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:"
     },
     {
-      "from": "bar_",
-      "to": "experience_q",
-      "label": "Далі"
-    },
-    {
       "from": "barriers_router",
-      "to": "bar_",
+      "to": "bar_not_registered",
       "label": "НЕ РЕЄСТРУВАВСЯ:"
     },
     {
-      "from": "bar_",
-      "to": "experience_q",
-      "label": "Далі"
-    },
-    {
       "from": "barriers_router",
-      "to": "bar_",
+      "to": "bar_not_mine",
       "label": "ЦЕ НЕ МОЄ:"
     },
     {
-      "from": "bar_",
-      "to": "experience_q",
-      "label": "Далі"
-    },
-    {
       "from": "barriers_router",
-      "to": "bar_",
+      "to": "bar_nothing_needed",
       "label": "НІЧОГО НЕ ПОТРІБНО:"
     },
     {
-      "from": "bar_",
-      "to": "experience_q",
-      "label": "Далі"
-    },
-    {
       "from": "barriers_router",
-      "to": "bar_",
+      "to": "bar_busy",
       "label": "Я ЗАЙНЯТИЙ:"
     },
     {
-      "from": "bar_",
-      "to": "experience_q",
-      "label": "Далі"
-    },
-    {
       "from": "barriers_router",
-      "to": "bar_",
+      "to": "bar_child",
       "label": "ЦЕ ДИТИНА:"
     },
     {
-      "from": "bar_",
-      "to": "experience_q",
-      "label": "Далі"
-    },
-    {
       "from": "barriers_router",
-      "to": "bar_",
+      "to": "bar_no_time",
       "label": "НЕМАЄ ЧАСУ:"
     },
     {
-      "from": "bar_",
-      "to": "experience_q",
-      "label": "Далі"
-    },
-    {
       "from": "barriers_router",
-      "to": "bar_",
+      "to": "bar_accidental",
       "label": "ЦЕ ВИПАДКОВО:"
     },
     {
-      "from": "bar_",
-      "to": "experience_q",
-      "label": "Далі"
-    },
-    {
       "from": "barriers_router",
-      "to": "bar_",
+      "to": "bar_not_interesting",
       "label": "НЕ ЦІКАВО:"
     },
     {
-      "from": "bar_",
-      "to": "experience_q",
-      "label": "Далі"
-    },
-    {
       "from": "barriers_router",
-      "to": "bar_",
+      "to": "bar_scam",
       "label": "ЦЕ ОБМАН"
-    },
-    {
-      "from": "bar_",
-      "to": "experience_q",
-      "label": "Далі"
     },
     {
       "from": "greeting",
@@ -1528,6 +1485,56 @@
       "from": "objections_root",
       "to": "closing_payment",
       "label": "Перейти до оплати"
+    },
+    {
+      "from": "bar_email",
+      "to": "experience_q",
+      "label": "Далі"
+    },
+    {
+      "from": "bar_not_registered",
+      "to": "experience_q",
+      "label": "Далі"
+    },
+    {
+      "from": "bar_not_mine",
+      "to": "experience_q",
+      "label": "Далі"
+    },
+    {
+      "from": "bar_nothing_needed",
+      "to": "experience_q",
+      "label": "Далі"
+    },
+    {
+      "from": "bar_busy",
+      "to": "experience_q",
+      "label": "Далі"
+    },
+    {
+      "from": "bar_child",
+      "to": "experience_q",
+      "label": "Далі"
+    },
+    {
+      "from": "bar_no_time",
+      "to": "experience_q",
+      "label": "Далі"
+    },
+    {
+      "from": "bar_accidental",
+      "to": "experience_q",
+      "label": "Далі"
+    },
+    {
+      "from": "bar_not_interesting",
+      "to": "experience_q",
+      "label": "Далі"
+    },
+    {
+      "from": "bar_scam",
+      "to": "experience_q",
+      "label": "Далі"
     }
   ],
   "ui": {
