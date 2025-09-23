@@ -1386,4 +1386,114 @@
     "sticky_comment_panel": true,
     "sticky_comment_title": "Коментар про клієнта"
   }
-}
+    }
+    {
+      "from": "bar_email",           
+      "to": "barriers_router",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "bar_email",
+      "to": "experience_q",    
+      "label": "➡ Далі"
+    },
+
+    {
+      "from": "bar_not_registered",  
+      "to": "barriers_router", 
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "bar_not_registered",  
+      "to": "experience_q",    
+      "label": "➡ Далі"
+    },
+
+    {
+      "from": "bar_not_mine",        
+      "to": "barriers_router", 
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "bar_not_mine",        
+      "to": "experience_q",    
+      "label": "➡ Далі"
+    },
+
+    {  
+      "from": "bar_nothing_needed",  
+      "to": "barriers_router", 
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "bar_nothing_needed",  
+      "to": "experience_q",    
+      "label": "➡ Далі"
+    },
+
+    {
+      "from": "bar_busy",            
+      "to": "barriers_router", 
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "bar_busy",            
+      "to": "experience_q",    
+      "label": "➡ Далі"
+    },
+
+    { 
+      "from": "bar_child",           
+      "to": "barriers_router", 
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "bar_child",           
+      "to": "experience_q",    
+      "label": "➡ Далі"
+    },
+
+    {
+      "from": "bar_no_time",         
+      "to": "barriers_router", 
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "bar_no_time",         
+      "to": "experience_q",    
+      "label": "➡ Далі"
+    },
+
+    {
+      "from": "bar_accidental",      
+      "to": "barriers_router", 
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "bar_accidental",      
+      "to": "experience_q",    
+      "label": "➡ Далі"
+    },
+
+    {
+      "from": "bar_not_interesting", 
+      "to": "barriers_router", 
+      "label": "⬅ Назад"
+    }, 
+    {
+      "from": "bar_not_interesting", 
+      "to": "experience_q",    
+      "label": "➡ Далі"
+    },
+
+    {
+      "from": "bar_scam",            
+      "to": "barriers_router", 
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "bar_scam",            
+      "to": "experience_q",    
+      "label": "➡ Далі"
+    } 
+
