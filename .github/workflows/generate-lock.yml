@@ -1,6 +1,7 @@
 name: generate-lock
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+
 jobs:
   gen:
     runs-on: ubuntu-latest
