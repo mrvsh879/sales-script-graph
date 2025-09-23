@@ -73,8 +73,9 @@
       "title": "ЦЕ НЕ МОЄ:",
       "type": "snippet",
       "text": [
-        "Tak mówi prawie każdy, dopóki się nie zapozna bliżej. „To nie dla mnie” — to jak powiedzieć „nie jestem kierowcą”, nigdy nie siadając za kierownicą. Tu nie chodzi o to, żeby zrozumieć wszystkie terminy, tylko o to, czy to działa dla Pana/Pani.",
-        "Pozwoli Pan/Pani, że zapytam: co jest dla Pana/Pani важливіше — щоб гроші просто лежали, чи щоб приносили дохід без ризику їх втрати?"
+        "Tak mówi prawie każdy, dopóki się nie zapozna bliżej. „To nie dla mnie” — to jak powiedzieć „nie jestem kierowcą”, nigdy nie siadając za kierownicą. Tu nie chodzi o to, żeby zrozumieć wszystkie terminy, tylko o to, czy to działa dla Pana/Pani.Powiedzmy wprost: co jest dla Pana/Pani ważniejsze — żeby pieniądze po prostu leżały, czy żeby przynosiły zysk, bez ryzyka ich utraty?",
+        "Rozumiem, brzmi to jak „to nie dla mnie” — ale pozwoli Pan/Pani, że dopytam: już Pan/Pani próbował/a i uznał/a, że to nieodpowiednie? Czy po prostu nie było jeszcze okazji, żeby się w to zagłębić?",
+        "Bo jeśli Pan/Pani nie inwestuje, to nie znaczy, że to nie działa. Proszę szczerze powiedzieć — jaka forma pomnażania kapitału jest dla Pana/Pani akceptowalna: nieruchomości, biznes, lokaty?"
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
@@ -87,8 +88,9 @@
       "title": "НІЧОГО НЕ ПОТРІБНО:",
       "type": "snippet",
       "text": [
-        "„Nic mi nie trzeba” — часто означає: «Поки не хочу нічого міняти». А якби існував спосіб без зусиль і з доходом — теж було б нецікаво?",
-        "Що саме викликає сумніви або побоювання, коли мова про додатковий дохід?"
+        "Hm… Dziwne, nie widzę Pana/Pani na liście Forbesa… A mogę zapytać, dlaczego jeszcze nie ma Pana/Pani wśród najbogatszych?", 
+         "Nic mi nie trzeba” — brzmi raczej jak „Na razie nie chcę niczego zmieniać”. A gdyby istniał sposób, który nie wymaga od Pana/Pani żadnego wysiłku, a przynosi dochód — to też byłoby nieinteresujące?",
+         "Nic mi nie trzeba” często ukrywa obawy lub wątpliwości. Co konkretnie budzi u Pana/Pani niepokój, jeśli chodzi o temat dodatkowego dochodu?"
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
@@ -101,8 +103,9 @@
       "title": "Я ЗАЙНЯТИЙ:",
       "type": "snippet",
       "text": [
-        "Widzę, że jest Pan/Pani zajęty/a i to szanuję. Porozmawiajmy krótko, aby każdy wrócił do swoich spraw.",
-        "Moja propozycja zajmie kilka minut, а користь може бути значною. Jak dawno interesuje się Pan/Pani inwestycjami jako dodatkowymi zarobkami?"
+        "Doskonale Pana/Panią rozumiem — żeby nie zabierać zbyt dużo czasu, porozmawiajmy krótko i każdy wróci do swoich spraw. [задаємо питання]",
+        "Widzę, że jest Pan/Pani zajęty/a i doceniam to. Moim celem nie jest zabierać Panu/Pani czasu, lecz zaproponować coś naprawdę wartego uwagi.Proszę powiedzieć — co w tej chwili najbardziej niepokoi Pana/Panią w kwestii dodatkowego dochodu?",
+        "Doskonale Pana/Panią rozumiem, słyszę po głosie, że jest Pan/Pani osobą bardzo ważną i zajętą.Ale bądźmy szczerzy — moja propozycja naprawdę nie zajmie dużo czasu, a jestem przekonany, że może być dla Pana/Pani przydatna.Proszę powiedzieć, od jak dawna interesuje się Pan/Pani temat inwestycji jako możliwości dodatkowego zarobku?"
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
@@ -129,8 +132,9 @@
       "title": "НЕМАЄ ЧАСУ:",
       "type": "snippet",
       "text": [
-        "Szanuję czas — to zajmie dosłownie kilka minut.",
-        "Moje informacje mogą stać się dla Pana/Pani źródłem dodatkowego zarobku і не заберуть багато часу."
+        "Szanuję ludzi, którzy cenią czas, ja tu właśnie  na kilka minut. [задаємо питання]",
+        "Doskonale Pana/Panią rozumiem — jak to mówią, czas to pieniądz. Ale właśnie moja propozycja może przynieść Panu/Pani dodatkowy zysk, a zajmie to bardzo niewiele czasu.",
+        "Czas to cenny zasób i to szanuję.Jednak moje informacje mogą stać się dla Pana/Pani źródłem dodatkowego zarobku, a nie zabiorą dużo czasu."
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
@@ -143,7 +147,8 @@
       "title": "ЦЕ ВИПАДКОВО:",
       "type": "snippet",
       "text": [
-        "Przypadki nie są przypadkowe. Skoro już jesteśmy w kontakcie — коротко поясню і самі оціните, чи підходить це Вам."
+        "Jest Pan/Pani bardzo szczęśliwą osobą, jeśli przypadkowo trafia Pan/Pani na najbardziej dochodowe branże.A czy udało się Panu/Pani przypadkowo zapoznać z naszą informacją?",
+        "Przypadek się zdarza.Ale jeśli właśnie ten temat przykuł Pana/Pani uwagę, być może nie jest to przypadek.Pozwoli Pan/Pani, że krótko wyjaśnię, a wtedy sam/a oceni, na ile to jest dla Pana/Pani odpowiednie."
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
@@ -156,7 +161,9 @@
       "title": "НЕ ЦІКАВО:",
       "type": "snippet",
       "text": [
-        "Розумію, зараз може бути нецікаво. А якби дохід зростав на 10–15% щомісяця без додаткових зусиль — варто почути як це можливо?"
+        "Rozumiem, że teraz to może nie być interesujące.Ale może po prostu brakuje konkretów?Co musiałby Pan/Pani usłyszeć na temat dochodu, żeby uznać, że warto kontynuować rozmowę?",
+        "To nieinteresujące” — na razie.A gdyby dochód mógł wzrosnąć o 10–15% miesięcznie, bez dodatkowego wysiłku — to nadal nie chciał/a by Pan/Pani usłyszeć, jak to możliwe?",
+        "Rozumiem, że teraz to może być nieinteresujące.Ale był moment, kiedy zainteresowała Pana/Panią reklama — co wtedy przyciągnęło Pana/Pani uwagę?"
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
@@ -169,7 +176,8 @@
       "title": "ЦЕ ОБМАН:",
       "type": "snippet",
       "text": [
-        "Sceptycyzm — нормальний. Я просто поясню суть, а Ви самі вирішите, чи є сенс іти далі. Без тиску."
+        "Rozumiem Pana/i brak zaufania — w dzisiejszych czasach jest tyle ofert, że wątpliwości są całkowicie zrozumiałe.Ale zróbmy tak: ja wyjaśnię, o co dokładnie chodzi, a Pan/i sam/a oceni, czy warto iść dalej.Szczerze, bez żadnego naciskania.",
+        "Sceptycyzm to coś zupełnie normalnego — szczególnie w dzisiejszych czasach. Właśnie dlatego nie składam żadnych przypadkowych propozycji — po prostu wyjaśniam, o co chodzi, a Pan/i sam/a decyduje, czy chce się w to zagłębić. Chcę tylko pokazać, na czym to polega — a decyzja oczywiście należy do Pana/i"
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
@@ -526,8 +534,7 @@
     { "label": "ЯКІ Є РИЗИКИ", "to": "node_28" },
     { "label": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ", "to": "node_29" },
     { "label": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?", "to": "node_30" },
-    { "label": "Давайте завтра", "to": "tomorrow" },
-    { "label": "Перейти до оплати", "to": "payment" }
+    { "label": "Давайте завтра", "to": "tomorrow" }
   ]
 },
     {
