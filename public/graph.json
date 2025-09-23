@@ -1,37 +1,59 @@
 {
-  "version": "2.0",
-  "generated_at": "2025-09-22T12:06:13.097404Z",
-  "locale": "uk-pl",
+  "version": 1,
+  "start": "greeting",
+
   "nodes": [
     {
       "id": "greeting",
       "title": "Початок розмови",
       "type": "greeting",
       "text": [
-        "Привітання:",
-        "- Dzień dobry, Pani/Panie [ім’я клієнта]. Nazywam się [твоє ім’я]. Jestem Pani/Pana osobistym asystentem. Interesował/a się Pan/Pani dodatkowym dochodem w ramach projektu [назва проекту], zgadza się?"
+        "Вітаю! Почнемо коротко і по суті."
+      ],
+      "transitions": [
+        { "label": "Перейти до барʼєрів", "to": "barriers_router" }
       ]
     },
+
     {
       "id": "barriers_router",
       "title": "Стартові барʼєри",
       "type": "router",
       "text": [
         "Виберіть барʼєр або натисніть «Далі», якщо барʼєрів немає."
+      ],
+      "transitions": [
+        { "label": "НАДІШЛІТЬ ВСЕ НА ПОШТУ", "to": "bar_mail" },
+        { "label": "НЕ РЕЄСТРУВАВСЯ", "to": "bar_not_registered" },
+        { "label": "ЦЕ НЕ МОЄ", "to": "bar_not_mine" },
+        { "label": "НІЧОГО НЕ ПОТРІБНО", "to": "bar_nothing_needed" },
+        { "label": "Я ЗАЙНЯТИЙ", "to": "bar_busy" },
+        { "label": "ЦЕ ДИТИНА", "to": "bar_child" },
+        { "label": "НЕМАЄ ЧАСУ", "to": "bar_no_time" },
+        { "label": "ЦЕ ВИПАДКОВО", "to": "bar_accidental" },
+        { "label": "НЕ ЦІКАВО", "to": "bar_not_interesting" },
+        { "label": "ЦЕ ОБМАН", "to": "bar_scam" },
+        { "label": "Далі", "to": "exp_question" }
       ]
     },
+
     {
-      "id": "bar_email",
+      "id": "bar_mail",
       "title": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:",
       "type": "snippet",
       "text": [
-        "По naszej rozmowie prześlę Panu/Pani wszystkie informacje, jednak aby móc coś przesłać, muszę najpierw wiedzieć, z czym już Pan/Pani się zapoznał(a).",
+        "Po naszej rozmowie prześlę Panu/Pani wszystkie informacje, jednak aby móc coś przesłać, muszę najpierw wiedzieć, z czym już Pan/Pani się zapoznał(a).",
         "Niestety, nie zajmuję się wysyłaniem masowych wiadomości.",
         "Niestety, nie jestem w stanie wysłać Panu/Pani mojego profesjonalizmu na e-mail :)",
         "Rozumiem Pana/Panią. Jest tylko jedna kwestia — takich wiadomości ma Pan/Pani zapewne już dziesiątki. Czy naprawdę je Pan/Pani otwiera i analizuje, czy jest w środku, czy raczej mówi tak tylko po to, by odłożyć rozmowę?",
         "Jeśli temat jest interesujący, łatwiej będzie teraz, na żywo, wszystko dokładnie wyjaśnić. Proszę powiedzieć — bardziej zależy Panu/Pani na dochodowości czy na bezpieczeństwie?"
+      ],
+      "transitions": [
+        { "label": "Назад", "to": "barriers_router" },
+        { "label": "Далі", "to": "exp_question" }
       ]
     },
+
     {
       "id": "bar_not_registered",
       "title": "НЕ РЕЄСТРУВАВСЯ:",
@@ -39,114 +61,158 @@
       "text": [
         "Proszę spojrzeć — prawie 80% naszych klientów na początku mówi, że się nie rejestrowali. A potem przypominają sobie, że po prostu interesowali się dodatkowym dochodem i zostawili dane kontaktowe automatycznie. Być może u Pana/Pani było podobnie.",
         "A tak szczerze — czy rozważał/ła Pan/Pani kiedyś pasywny dochód, przy którym nie trzeba codziennie samodzielnie czegoś robić?"
+      ],
+      "transitions": [
+        { "label": "Назад", "to": "barriers_router" },
+        { "label": "Далі", "to": "exp_question" }
       ]
     },
+
     {
       "id": "bar_not_mine",
       "title": "ЦЕ НЕ МОЄ:",
       "type": "snippet",
       "text": [
-        "Tak mówi prawie każdy, dopóki się nie zapozna bliżej. „To nie dla mnie” — to jak powiedzieć „nie jestem kierowcą”, nigdy nie siadając za kierownicą. Tu nie chodzi o to, żeby zrozumieć wszystkie terminy, tylko o to, czy to działa dla Pana/Pani. Powiedzmy wprost: co jest dla Pana/Pani ważniejsze — żeby pieniądze po prostu leżały, czy żeby przynosiły zysk, bez ryzyka ich utraty?",
-        "Rozumiem, brzmi to jak „to nie dla mnie” — ale pozwolił Pan/Pani, że zapytam: już Pan/Pani próbował/a i uznał/a, że to nieodpowiednie? Czy po prostu nie było jeszcze okazji, żeby się w to zagłębić?",
-        "Bo jeśli Pan/Pani nie inwestuje, to nie znaczy, że to nie działa. Proszę szczerze powiedzieć — jaka forma pomnażania kapitału jest dla Pana/Pani akceptowalna: nieruchomości, biznes, lokaty?"
+        "Tak mówi prawie każdy, dopóki się nie zapozna bliżej. „To nie dla mnie” — to jak powiedzieć „nie jestem kierowcą”, nigdy nie siadając za kierownicą. Tu nie chodzi o to, żeby zrozumieć wszystkie terminy, tylko o to, czy to działa dla Pana/Pani.",
+        "Pozwoli Pan/Pani, że zapytam: co jest dla Pana/Pani важливіше — щоб гроші просто лежали, чи щоб приносили дохід без ризику їх втрати?"
+      ],
+      "transitions": [
+        { "label": "Назад", "to": "barriers_router" },
+        { "label": "Далі", "to": "exp_question" }
       ]
     },
+
     {
       "id": "bar_nothing_needed",
       "title": "НІЧОГО НЕ ПОТРІБНО:",
       "type": "snippet",
       "text": [
-        "Hm… Dziwne, nie widzę Pana/Pani na liście Forbesa… A mogę zapytać, dlaczego jeszcze nie ma Pana/Pani wśród najbogatszych? :)",
-        "„Nic mi nie trzeba” — brzmi raczej jak „Na razie nie chcę niczego zmieniać”. A gdyby istniał sposób, który nie wymaga od Pana/Pani żadnego wysiłku, a przynosi dochód — to też byłoby nieinteresujące?",
-        "„Nic mi nie trzeba” często ukrywa obawy lub wątpliwości. Co konkretnie budzi u Pana/Pani niepokój, jeśli chodzi o temat dodatkowego dochodu?"
+        "„Nic mi nie trzeba” — часто означає: «Поки не хочу нічого міняти». А якби існував спосіб без зусиль і з доходом — теж було б нецікаво?",
+        "Що саме викликає сумніви або побоювання, коли мова про додатковий дохід?"
+      ],
+      "transitions": [
+        { "label": "Назад", "to": "barriers_router" },
+        { "label": "Далі", "to": "exp_question" }
       ]
     },
+
     {
       "id": "bar_busy",
       "title": "Я ЗАЙНЯТИЙ:",
       "type": "snippet",
       "text": [
-        "Doskonale Pana/Panią rozumiem — żeby nie zabierać zbyt dużo czasu, porozmawiajmy krótko i każdy wróci do swoich spraw.",
-        "Widzę, że jest Pan/Pani zajęty/a i doceniam to. Moim celem nie jest zabierać Panu/Pani czasu, lecz zaproponować coś wartego uwagi. Proszę powiedzieć — co w tej chwili najbardziej niepokoi Pana/Panią w kwestii dodatkowego dochodu?",
-        "Doskonale Pana/Panią rozumiem, słyszę po głosie, że jest Pan/Pani osobą bardzo zajętą. Ale bądźmy szczerzy — moja propozycja wymaga raptem kilku minut rozmowy, a korzyść może być dla Pana/Pani przydatna. Proszę powiedzieć, od jak dawna interesuje się Pan/Pani tematem inwestycji jako możliwością dodatkowego zarobku?"
+        "Widzę, że jest Pan/Pani zajęty/a i to szanuję. Porozmawiajmy krótko, aby każdy wrócił do swoich spraw.",
+        "Moja propozycja zajmie kilka minut, а користь може бути значною. Jak dawno interesuje się Pan/Pani inwestycjami jako dodatkowymi zarobkami?"
+      ],
+      "transitions": [
+        { "label": "Назад", "to": "barriers_router" },
+        { "label": "Далі", "to": "exp_question" }
       ]
     },
+
     {
       "id": "bar_child",
       "title": "ЦЕ ДИТИНА:",
       "type": "snippet",
       "text": [
-        "Och, to znaczy, że ktoś w Państwa rodzinie już interesuje się dochodem — to świetny znak! A co dziecko zdążyło Panu/Pani opowiedzieć o naszym projekcie?",
-        "Mogę z całą pewnością powiedzieć — ma Pan/Pani szczęście z dzieckiem. Nie każdy w takim wieku interesuje się inwestycjami! A skoro dane są Pana/Pani, to zaprośmy do wspólnego omówienia. Tym bardziej jestem przekonany/a, że kwestia zwiększenia dochodu interesuje każdego rodzica."
+        "Świetnie, że w rodzinie ktoś interesuje się dochodem — dobry znak!",
+        "Skoro dane są Pana/Pani — porozmawiajmy wspólnie. Temat zwiększenia dochodu zwykle interesuje każdego rodzica."
+      ],
+      "transitions": [
+        { "label": "Назад", "to": "barriers_router" },
+        { "label": "Далі", "to": "exp_question" }
       ]
     },
+
     {
       "id": "bar_no_time",
       "title": "НЕМАЄ ЧАСУ:",
       "type": "snippet",
       "text": [
-        "Szanuję ludzi, którzy cenią czas, to właśnie na kilka minut.",
-        "Doskonale Pana/Panią rozumiem — jak to mówią, czas to pieniądz. Ale właśnie moja propozycja może przynieść Panu/Pani dodatkowy zysk, a zajmie to bardzo niewiele czasu.",
-        "Czas to cenny zasób i to szanuję. Jednak moje informacje mogą stać się dla Pana/Pani źródłem dodatkowego zarobku, a nie zabiorą dużo czasu."
+        "Szanuję czas — to zajmie dosłownie kilka minut.",
+        "Moje informacje mogą stać się dla Pana/Pani źródłem dodatkowego zarobku і не заберуть багато часу."
+      ],
+      "transitions": [
+        { "label": "Назад", "to": "barriers_router" },
+        { "label": "Далі", "to": "exp_question" }
       ]
     },
+
     {
       "id": "bar_accidental",
       "title": "ЦЕ ВИПАДКОВО:",
       "type": "snippet",
       "text": [
-        "Jest Pan/Pani bardzo szczęśliwą osobą, jeśli przypadkowo trafia Pan/Pani na najbardziej dochodowe branże. A czy udało się Panu/Pani przypadkowo zapoznać z naszą informacją?",
-        "Przypadek się zdarza. Ale jeśli właśnie ten temat przykuł Pana/Pani uwagę, być może nie ma w tym przypadku?",
-        "Pozwoli Pan/Pani, że krótko wyjaśnię, a wtedy sam/a oceni, na ile to jest dla Pana/Pani odpowiednie.",
-        "Jak to mówią, przypadki nie są przypadkowe. Skoro już jesteśmy w kontakcie, pozwólmy to wyjaśnić. Jestem przekonany, że ta informacja będzie dla Pana/Pani co najmniej przydatna, szczególnie jeśli interesuje Pana/Panią temat dochodu."
+        "Przypadki nie są przypadkowe. Skoro już jesteśmy w kontakcie — коротко поясню і самі оціните, чи підходить це Вам."
+      ],
+      "transitions": [
+        { "label": "Назад", "to": "barriers_router" },
+        { "label": "Далі", "to": "exp_question" }
       ]
     },
+
     {
       "id": "bar_not_interesting",
       "title": "НЕ ЦІКАВО:",
       "type": "snippet",
       "text": [
-        "Rozumiem, że teraz to może nie być interesujące. Ale może po prostu brakuje konkretów? Co musiałby Pan/Pani usłyszeć na temat dochodu, żeby uznać, że warto kontynuować rozmowę?",
-        "„To nieinteresujące” — na razie.A gdyby dochód mógł wzrosnąć o 10–15% miesięcznie, bez dodatkowego wysiłku — to nadal nie chciał(a) by Pan/Pani usłyszeć, jak to możliwe?",
-        "Rozumiem, że teraz to może być nieinteresujące.Ale był moment, kiedy zainteresowała Pana/Panią reklama — co wtedy przyciągnęło Pana/Pani uwagę?"
+        "Розумію, зараз може бути нецікаво. А якби дохід зростав на 10–15% щомісяця без додаткових зусиль — варто почути як це можливо?"
+      ],
+      "transitions": [
+        { "label": "Назад", "to": "barriers_router" },
+        { "label": "Далі", "to": "exp_question" }
       ]
     },
+
     {
       "id": "bar_scam",
-      "title": "ЦЕ ОБМАН",
+      "title": "ЦЕ ОБМАН:",
       "type": "snippet",
       "text": [
-        "Rozumiem Pana/i brak zaufania — w dzisiejszych czasach jest tyle ofert, że wątpliwości są całkowicie zrozumiałe. Ale zróbmy tak: ja wyjaśnię, o co dokładnie chodzi, a Pan/i sam/a oceni, czy warto iść dalej. Szczerze, bez żadnego naciskania.",
-        "Sceptycyzm to coś zupełnie normalnego — szczególnie w dzisiejszych czasach. Właśnie dlatego nie składam żadnych przypadkowych propozycji — po prostu wyjaśniam, o co chodzi, a Pan/i sam/a decyduje, czy chce się w to zagłębić. Chcę tylko pokazać, na czym to polega — a decyzja oczywiście należy do Pana/i."
+        "Sceptycyzm — нормальний. Я просто поясню суть, а Ви самі вирішите, чи є сенс іти далі. Без тиску."
+      ],
+      "transitions": [
+        { "label": "Назад", "to": "barriers_router" },
+        { "label": "Далі", "to": "exp_question" }
       ]
     },
+
     {
-      "id": "experience_q",
+      "id": "exp_question",
       "title": "Досвід — питання",
       "type": "question",
       "text": [
-        "ДОСВІД:",
-        "[ім’я клієнта], Co Pana / Panią zainteresowało w naszej ofercie, że Pan / Pani zdecydował / zdecydowała się na rejestrację?"
+        "[імʼя клієнта], Co Pana / Panią zainteresowało w naszej ofercie, że Pan / Pani zdecydował / zdecydowała się na rejestrację?"
+      ],
+      "transitions": [
+        { "label": "Немає досвіду", "to": "exp_no" },
+        { "label": "Є досвід", "to": "exp_yes" }
       ]
     },
+
     {
       "id": "exp_no",
-      "title": "Немає досвіду",
+      "title": "Немає досвіду:",
       "type": "snippet",
       "text": [
-        "Немає досвіду:",
-        "Pan/i jest zielony/a w tej branży [цеŭ żart — мożemy powiedzieć з усмішкою й можна трохи посміятись, це щось типу \"а, to Bu новачок / чайник\"] i także z усмішкою продовжуємо:",
-        "Nie szkodzi, mamy ekipę specjalistów, którzy będą Panu/Pani doradzać na każdym etapie naszej współpracy. Ponieważ nasza firma jest zainteresowana długoterminową i dochodową współpracą z Państwem."
+        "— Pan/i jest zielony/a w tej branży [жарт, з усмішкою].",
+        "— Nie szkodzi, mamy ekipę specjalistów, którzy będą Panu/Pani doradzać na każdym etapie naszej współpracy. Ponieważ nasza firma jest zainteresowana długoterminową і dochodową współpracą."
+      ],
+      "transitions": [
+        { "label": "До етапу «Робота»", "to": "work" }
       ]
     },
+
     {
       "id": "exp_yes",
-      "title": "Є досвід",
+      "title": "Є досвід:",
       "type": "snippet",
       "text": [
-        "Є досвід:",
         "Nie jest Pan/i osobą początkującą w tej branży, więc będzie to dla nas łatwe.",
         "БІЛЬШЕ ПИТАНЬ ПРО ДОСВІД НА ЦЬОМУ ЕТАПІ МИ НЕ СТАВИМО!!!"
+      ],
+      "transitions": [
+        { "label": "До етапу «Робота»", "to": "work" }
       ]
     },
     {
