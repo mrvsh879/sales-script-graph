@@ -12,7 +12,6 @@
         "- Dzień dobry, Pani/Panie [ім’я клієнта]. Nazywam się [твоє ім’я]. Jestem Pani/Pana osobistym asystentem. Interesował/a się Pan/Pani dodatkowym dochodem w ramach projektu [назва проекту], zgadza się?"
       ]
     },
-
     {
       "id": "barriers_router",
       "title": "Стартові барʼєри",
@@ -34,7 +33,6 @@
         { "label": "Далі",                   "to": "experience_q" }
       ]
     },
-
     {
       "id": "bar_email",
       "title": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:",
@@ -123,7 +121,7 @@
       "text": [
         "Rozumiem, że teraz to może nie być interesujące. Ale może po prostu brakuje konkretów? Co musiałby Pan/Pani usłyszeć na temat dochodu, żeby uznać, że warto kontynuować rozmowę?",
         "„To nieinteresujące” — na razie. A gdyby dochód mógł wzrosnąć o 10–15% miesięcznie, bez dodatkowego wysiłku — to nadal nie chciał(a) by Pan/Pani usłyszeć, jak to możliwe?",
-        "Rozumiem, że teraz to może być nieinteresujące. Ale był moment, kiedy zainteresowała Pana/Panią reklama — co wtedy przyciągnęło Pana/Pani uwagę?"
+        "Rozumiem, że teraz to może być nieinteresujące. Ale był момент, kiedy zainteresowała Pana/Panią reklama — co wtedy przyciągnęło Pana/Pani uwagę?"
       ]
     },
     {
@@ -132,10 +130,9 @@
       "type": "snippet",
       "text": [
         "Rozumiem Pana/i brak zaufania — w dzisiejszych czasach jest tyle ofert, że wątpliwości są całkowicie zrozumiałe. Ale zróbmy tak: ja wyjaśnię, o co dokładnie chodzi, a Pan/i sam/a oceni, czy warto iść dalej. Szczerze, bez żadnego naciskania.",
-        "Sceptycyzm to coś zupełnie normalnego — szczególnie w dzisiejszych czasach. Właśnie dlatego nie składam żadnych przypadkowych propozycji — po prostu wyjaśniam, o co chodzi, a Pan/i sam/a decyduje, czy chce się w to zagłębić. Chcę tylko pokazać, na czym to polega — a decyzja oczywiście należy do Pana/i."
+        "Sceptycyzm to coś zupełnie normalnego — szczególnie w dzisiejszych czasach. Właśnie dlatego nie składam żadnych przypadkowych propozycji — po prostu wyjaśniam, o co chodzi, a Pan/i sam/a decyduje, czy chce się w to zagłębić. Chcę tylko pokazać, на czym to polega — a decyzja oczywiście należy do Pana/i."
       ]
     },
-
     {
       "id": "experience_q",
       "title": "Досвід — питання",
@@ -145,6 +142,8 @@
         "[ім’я клієнта], Co Pana / Panią zainteresowało w naszej ofercie, że Pan / Pani zdecydował / zdecydowała się na rejestrację?"
       ]
     }
+  ]
+}
     {
       "id": "work",
       "title": "Робота",
