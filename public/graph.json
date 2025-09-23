@@ -396,11 +396,17 @@
       ]
     },
     {
-      "id": "client_questions",
-      "title": "Питання клієнтів",
-      "type": "router",
-      "text": ["Вибиріть питання, або натисніть пропустити."],
-    },
+  "id": "client_questions",
+  "title": "Питання клієнтів",
+  "type": "router",
+  "text": [],
+  "transitions": [
+    { "label": "ІНТЕРЕС ФІРМИ", "to": "interest_company" },
+    { "label": "Якщо клієнт питає про ризики", "to": "risks" },
+    { "label": "Якщо клієнт питає про місцезнаходження коштів", "to": "fund_location" },
+    { "label": "Пропустити", "to": "entry_amounts" }
+  ]
+}
     {
       "id": "interest_company",
       "title": "Інтерес фірми",
@@ -483,13 +489,12 @@
       ]
     },
     {
-      "id": "objections_root",
-      "title": "Заперечення — меню",
-      "type": "router",
-      "text": ["Оберіть заперечення або інший варіант:",
-      ],
-      "options": [
-        {
+  "id": "objections_root",
+  "title": "Заперечення — меню",
+  "type": "router",
+  "text": [],
+  "transitions": [
+    {
           "label": "НЕМАЄ ГРОШЕЙ",
           "to": "node"
         },
