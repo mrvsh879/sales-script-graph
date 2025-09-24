@@ -50,7 +50,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "experience_q" }
+        { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
 
@@ -64,7 +64,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "experience_q" }
+        { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
 
@@ -79,7 +79,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "experience_q" }
+        { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
 
@@ -94,7 +94,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "experience_q" }
+        { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
 
@@ -109,7 +109,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "experience_q" }
+        { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
 
@@ -123,7 +123,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "experience_q" }
+        { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
 
@@ -138,7 +138,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "experience_q" }
+        { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
 
@@ -152,7 +152,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "experience_q" }
+        { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
 
@@ -167,7 +167,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "experience_q" }
+        { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
 
@@ -181,7 +181,7 @@
       ],
       "transitions": [
         { "label": "Назад", "to": "barriers_router" },
-        { "label": "Далі", "to": "experience_q" }
+        { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
 
