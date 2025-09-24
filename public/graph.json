@@ -1148,6 +1148,16 @@
       "label": "Далі"
     },
     {
+      "from": "exp_no",
+      "to": "experience_q",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "exp_yes",
+      "to": "experience_q",
+      "label": "⬅ Назад"
+    },
+    {
       "from": "experience_q",
       "to": "exp_no",
       "label": "Немає досвіду"
