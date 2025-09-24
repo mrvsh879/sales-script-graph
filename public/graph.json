@@ -1137,6 +1137,11 @@
   ],
   "edges": [
     {
+      "from": "greeting",
+      "to": "experience_q",
+      "label": "ПЕРЕЙТИ ДО СБОРУ"
+    },
+    {
       "from": "barriers_router",
       "to": "bar_email",
       "label": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:"
