@@ -203,8 +203,12 @@
       "title": "Немає досвіду:",
       "type": "snippet",
       "text": [
-        "— Pan/i jest zielony/a w tej branży [жарт, з усмішкою].",
-        "— Nie szkodzi, mamy ekipę specjalistów, którzy będą Panu/Pani doradzać na każdym etapie naszej współpracy. Ponieważ nasza firma jest zainteresowana długoterminową і dochodową współpracą."
+        "— Pan/i jest zielony/a w tej branży",
+        " [цей жарт — тому говоримо з усмішкою й можна трохи посміятись,",
+        " це щось типу 'а, то Ви новачок / чайник'] і також з усмішкою продовжуємо:",
+        
+        "Nie szkodzi, mamy ekipę specjalistów, którzy będą Panu/Pani doradzać na każdym etapie naszej współpracy.",
+        "Ponieważ nasza firma jest zainteresowana długoterminową i dochodową współpracą z Państwem."
       ],
       "transitions": [
         { "label": "До етапу «Робота»", "to": "work" }
@@ -217,6 +221,7 @@
       "type": "snippet",
       "text": [
         "Nie jest Pan/i osobą początkującą w tej branży, więc będzie to dla nas łatwe.",
+        
         "БІЛЬШЕ ПИТАНЬ ПРО ДОСВІД НА ЦЬОМУ ЕТАПІ МИ НЕ СТАВИМО!!!"
       ],
       "transitions": [
