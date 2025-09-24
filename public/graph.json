@@ -1266,11 +1266,6 @@
       "label": "⬅ Назад"
     },
     {
-      "from": "pres_exp",
-      "to": "trade_with_expert",
-      "label": "➡ Далі"
-    },
-    {
       "from": "pres_exp_yes",
       "to": "presentation",
       "label": "⬅ Назад"
