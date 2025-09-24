@@ -187,7 +187,7 @@
 
     {
       "id": "experience_q",
-      "title": "ДОСВІД _ ПИТАННЯ",
+      "title": "ДОСВІД - ПИТАННЯ",
       "type": "question",
       "text": [
         "[імʼя клієнта], Co Pana / Panią zainteresowało w naszej ofercie, że Pan / Pani zdecydował / zdecydowała się na rejestrację?"
@@ -234,11 +234,14 @@
       "type": "question",
       "text": [
         "РОБОТА:",
-        "- Ile czasu mógłby/mogłaby Pan/Pani poświęcić na współpracę? [відповідь наприклад 1–2 год]",
+        "- Ile czasu mógłby/mogłaby Pan/Pani poświęcić na współpracę?", 
+        "[відповідь наприклад 1–2 год]",
         "- Wygląda na to, że dużo Pan/Pani pracuje, prawda?",
-        "- Proszę powiedzieć, w jakiej branży Pan/Pani pracuje? [якщо, навіщо воно вам]відповідь", 
+        "- Proszę powiedzieć, w jakiej branży Pan/Pani pracuje? [якщо, навіщо воно вам]",
+        "ВІДПОВІДЬ", 
         "- Pytam, żeby wiedzieć, jak najlepiej to Panu/Pani wyjaśnić. Jeśli pracuje Pan/Pani w branży finansowej, wszystko pójdzie bardzo szybko.",
-        "- Jak długo pracuje Pan/Pani w swojej branży? [наприклад, відповідь 10 р.] [якщо не працює або пенсіонер — задаємо питання інше]",
+        "- Jak długo pracuje Pan/Pani w swojej branży? [наприклад, відповідь 10 р.]", 
+        "[якщо не працює або пенсіонер — задаємо питання інше]",
         "- Mam wielu klientów z Pana/Pani branży i wiem, że to ciężka praca. Czy myślał/myślała Pan/Pani kiedyś o zmianie branży albo o założeniu własnej firmy? [наводимо приклад]",
         "ПРИКЛАД:",
         "Mam klienta, Pana Dariusza, który również pracuje w branży budowlanej. Ma 53 lata. Po roku naszej współpracy otworzył własną firmę i zajmuje się wykończeniami wnętrz.", 
@@ -248,7 +251,8 @@
         "- A jak widzi Pan/Pani współpracę z naszą firmą?",
         
         "Якщо людина в віці [50+] або пенсіонер:",
-        "- Naprawdę? — Szczerze mówiąc, brzmi Pan/Pani bardzo młodo — trudno mi uwierzyć, że ma Pan/Pani więcej niż 40–50 lat. [це комплімент, говоримо з усмішкою]",
+        "- Naprawdę? — Szczerze mówiąc, brzmi Pan/Pani bardzo młodo — trudno mi uwierzyć, że ma Pan/Pani więcej niż 40–50 lat.",
+        "[це комплімент, говоримо з усмішкою]",
         "- Wie Pan/Pani, najważniejsze jest to, na ile lat się Pan/Pani czuje, a nie to, co jest wpisane w paszporcie. Szanuję Pana/Panią, bo w tym wieku chce się Pan/Pani nauczyć czegoś nowego i spróbować swoich sił w nowej branży.",
         "- Jak myśli Pan/Pani, w nowej dziedzinie łatwo się odnaleźć?",
         "- Czy czasem Panu/Pani zdrowie nie przeszkadza?",
@@ -276,7 +280,8 @@
       "title": "ПОВЕРТАЄМОСЬ ДО ДОСВІДУ",
       "type": "question",
       "text": [
-        "ПОВЕРТАЄМОСЬ ДО ДОСВІДУ:(якщо клієнт раніше казав, що досвіду немає — пропускаємо цей розділ",
+        "ПОВЕРТАЄМОСЬ ДО ДОСВІДУ:",
+        "(ЯКЩО КЛІЄНТ РАНІШЕ КАЗАВ ЩО ДОСВІДУ НЕМАЄ _ ТО ПРОПУСКАЄМО ЦІЙ РОЗДІЛ)",
         "— Wspomniał/a Pan/i wcześniej, że miał/a Pan/i doświadczenie w branży inwestycyjnej. Proszę powiedzieć coś więcej:",
         "– Czy handlował/a Pan/Pani samodzielnie, czy za pośrednictwem banku albo firmy brokerskiej?",
         "– Na jakich aktywach Pan/Pani handlował/a?",
@@ -285,15 +290,18 @@
         "– Jak Pan/Pani myśli, dlaczego się nie udało? [Dlaczego dochód był taki mały?]",
         "→ Powiem Panu/Pani, dlaczego — dlatego, że był/a Pan/Pani bez doświadczenia. Rozumiem to, bo sam/a byłem/am w takiej sytuacji. Powiem tylko tyle: wszyscy zdobywają doświadczenie z czasem.",
         
-        "Якщо клієнт з негативним досвідом, працював раніше з фірмою, брокером:(зaуважуємо, та спробуємо все з'ясувати)",
+        "ЯКЩО КЛІЄНТ З НЕГАТИВНИМ ДОСВІДОМ, ПРАЦЮВАВ РАНІШЕ З ФІРМОЮ БРОКЕРОМ:",
+        "(зaуважуємо, та спробуємо все з'ясувати)",
         "– Jak to się stało, że się Pan/Pani nie udało?",
         
-        "Якщо клієнт говорить, що фірма була шахрайською, уточнюємо:",
+        "ЯКЩО КЛІЄНТ ГОВОРИТЬ, ЩО ФІРМА БУЛА ШАХРАЙСЬКОЮ, УТОЧНЮЄМО:",
         "– Dlaczego uważa Pan/Pani, że to byli oszuści? Czy tylko dlatego, że nic Pan/Pani nie zarobił(a)?",
         
-        "Якщо клієнт говорить – \"Tak\" (говоримо об абсурді ще твердження, можна навести приклад):",
+        "ЯКЩО КЛІЄНТ ГОВОРИТ – \"TАК\"", 
+        "(говоримо об абсурді ще твердження, можна навести приклад):",
         "– Jeśli miał/a Pan/Pani problemy ze współpracą z jakąś firmą, to niekoniecznie oznacza, że była ona nieuczciwa. Nie wszystko działa od razu. Niektórzy ludzie kupują samochód, a po tygodniu mają wypadek — i to przecież nie jest wina producenta.",
-        "– Czy zgadza się Pan/Pani ze mną? Może po prostu nie otrzymał/a Pan/Pani wystarczającego wsparcia i doświadczenia, a firma nie zapewniła odpowiedniej pomocy dla osoby początkującej? W takim przypadku faktycznie mamy do czynienia z problemem jakości obsługi. Dlatego w naszej firmie wspieramy naszych klientów — zarówno początkujących, jak i tych z doświadczeniem — oferując kompleksowe wsparcie i wszystkie niezbędne narzędzia.",
+        "– Czy zgadza się Pan/Pani ze mną? Może po prostu nie otrzymał/a Pan/Pani wystarczającego wsparcia i doświadczenia, a firma nie zapewniła odpowiedniej pomocy dla osoby początkującej?", 
+        " W takim przypadku faktycznie mamy do czynienia z problemem jakości obsługi. Dlatego w naszej firmie wspieramy naszych klientów — zarówno początkujących, jak i tych z doświadczeniem — oferując kompleksowe wsparcie i wszystkie niezbędne narzędzia.",
         "– Jak rozumiem, handlował/a Pan/Pani z brokerem albo za pomocą robota?",
         "– Bardzo mi przykro, że ma Pan/Pani takie doświadczenie. Ale mimo wszystko nadal szuka Pan/Pani możliwości zarabiania online — czyli chce Pan/Pani znaleźć coś odpowiedniego dla siebie.",
         "– Proszę powiedzieć, czego dokładnie Pan/Pani szuka?",
