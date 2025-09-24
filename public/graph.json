@@ -502,7 +502,7 @@
         "[Якщо каже, що не знає або питає які є варіанти — читаємо далі]",
         "— Do wyboru ma Pan/i zwykły przelew, BLIK albo płatność w kryptowalucie.",
         "[ОБОВ’ЯЗКОВО уточнити з якого банку буде робити переказ і чи сума, яку обрав зараз, є доступна]"
-      ]
+      ],
       "transitions": [
     { "label": "⬅ Назад", "to": "client_questions" },
     { "label": "➡ Далі", "to": "platform_demo" }
