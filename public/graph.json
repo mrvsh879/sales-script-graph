@@ -342,7 +342,14 @@
       "title": "Презентація",
       "type": "router",
       "text": [
-        "ПРЕЗЕНТАЦІЯ:",
+        "ПРЕЗЕНТАЦІЯ:"
+      ]
+    },
+    {
+      "id": "pres_noexp",
+      "title": "Фінансовий ринок — немає досвіду",
+      "type": "snippet",
+      "text": [
         "ФІНАНСОВИЙ РИНОК( НЕМАЄ ДОСВІДУ )",
         "Co Pan/Pani wie albo wcześniej słyszał/a na temat rynków finansowych?",
         "Świetnie. Teraz wyjaśnię Panu/Pani bardziej szczegółowo, na czym polega zarabianie na rynku finansowym.",
@@ -358,29 +365,6 @@
         "Być może interesuje Pana/Panią bardziej konkretny rodzaj rynku?",
         "Nie skupiamy się na jednym aktywie, ponieważ nie da się codziennie handlować tym samym instrumentem i uzyskiwać takiego samego zysku. Jeżeli pojawia się okazja do zarobku — oczywiście z niej korzystamy.",
         "Dlatego właśnie chciałbym przedstawić Panu/Pani idealną propozycję współpracy z naszą firmą!",
-        
-        "ФІНАНСОВИЙ РИНОК (Є ДОСВІД):",
-        "Skoro ma Pan/i już doświadczenie w tej branży, to na pewno doskonale Pan/i rozumie, jak działa rynek finansowy, prawda?",
-        "ЯКЩО КЛІЄНТ ВІДПОВІВ \"НІ\", ТО ПОВЕРТАЄМОСЬ ДО ФІНАНСОВИЙ РИНОК( НЕМАЄ ДОСВІДУ )",
-
-         "КЛІЄНТ ВІДПОВІВ \"ТАК\":",
-        "Świetnie. Możliwe, że ciekawi Pana/ią jakiś bardziej konkretny rodzaj rynku?",
-        "Nie skupiamy się na jednym aktywie — nie da się przecież codziennie handlować na tym samym instrumencie i zarobić taki sam zysk.",
-        "Jeżeli pojawia się okazja, żeby zarobić, to oczywiście z niej korzystamy.",
-        "Dlatego właśnie chciałbym przedstawić Panu/Pani idealną propozycję współpracy z naszą firmą!"
-      ]
-    },
-    {
-      "id": "pres_noexp",
-      "title": "Фінансовий ринок — немає досвіду",
-      "type": "snippet",
-      "text": [
-        "Co Pan/Pani wie albo wcześniej słyszał/a na temat rynków finansowych?",
-        "Świetnie. Teraz wyjaśnię Panu/Pani bardziej szczegółowo, na czym polega zarabianie na rynku finansowym.",
-        "Wszystko opiera się na spekulacji — kupujemy aktywo po jednej cenie, a sprzedajemy po innej, zarabiając na różnicy w cenie. Mówiąc prościej: kupujemy taniej, sprzedajemy drożej. Czy to jest jasne?",
-        "Na rynku finansowym mamy cztery główne kierunki: pary walutowe (np. EUR/PLN), towary (np. ropa, złoto), akcje (np. Tesla, Orlen), kryptowaluty.",
-        "Nie skupiamy się na jednym aktywie, ponieważ nie da się codziennie handlować tym samym instrumentem i mieć taki sam zysk. Jeżeli pojawia się okazja do zarobku — korzystamy.",
-        "Dlatego chciałbym przedstawić idealną propozycję współpracy z naszą firmą!"
       ]
     },
     {
@@ -397,8 +381,9 @@
       "type": "snippet",
       "text": [
         "Świetnie. Możliwe, że ciekawi Pana/ią jakiś bardziej konkretny rodzaj rynku?",
-        "Nie skupiamy się na jednym aktywie — liczy się okazja do zarobku.",
-        "Dlatego chciałbym przedstawić idealną propozycję współpracy z naszą firmą!"
+        "Nie skupiamy się na jednym aktywie — nie da się przecież codziennie handlować na tym samym instrumencie i zarobić taki sam zysk.",
+        "Jeżeli pojawia się okazja, żeby zarobić, to oczywiście z niej korzystamy.",
+        "Dlatego właśnie chciałbym przedstawić Panu/Pani idealną propozycję współpracy z naszą firmą!"
       ]
     },
     {
@@ -406,7 +391,20 @@
       "title": "Пояснення як для без досвіду",
       "type": "snippet",
       "text": [
-        "Powrót do wyjaśnienia podstaw (jak w ścieżce „brak doświadczenia”)."
+        "ФІНАНСОВИЙ РИНОК( НЕМАЄ ДОСВІДУ )",
+        "Co Pan/Pani wie albo wcześniej słyszał/a na temat rynków finansowych?",
+        "Świetnie. Teraz wyjaśnię Panu/Pani bardziej szczegółowo, na czym polega zarabianie na rynku finansowym.",
+        
+        "Wszystko opiera się na spekulacji — kupujemy aktywo po jednej cenie, a sprzedajemy po innej, zarabiając na różnicy w cenie.",
+        "Mówiąc prościej: kupujemy taniej, sprzedajemy drożej. Czy to jest jasne?",
+        
+        "Na rynku finansowym mamy cztery główne kierunki, na których możemy handlować. Możemy zarabiać na różnicach cen aktywów takich jak:",
+        "– Pary walutowe (np. EUR/PLN),",
+        "– Towary (np. ropa naftowa, złoto),",
+        "– Akcje (np. Tesla, Orlen),",
+        "– Kryptowaluty.",
+        "Być może interesuje Pana/Panią bardziej konkretny rodzaj rynku?",
+        "Nie skupiamy się na jednym aktywie, ponieważ nie da się codziennie handlować tym samym instrumentem i uzyskiwać takiego samego zysku. Jeżeli pojawia się okazja do zarobku — oczywiście z niej korzystamy."
       ]
     },
     {
