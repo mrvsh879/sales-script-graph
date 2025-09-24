@@ -614,16 +614,23 @@
       "title": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)",
       "type": "snippet",
       "text": [
-        "Rozumiem, że sytuacja finansowa może być trudna. Czy mógłby/mogłaby Pan/Pani doprecyzować, na czym dokładnie polegają te trudności? Dzięki temu będę mógł/mogła lepiej zrozumieć Pana/Pani sytuację i zaproponować możliwe najlepsze rozwiązanie.",
-        "— Jakiej kwoty Pan/Pani brakuje? Ile czasu będzie potrzebne, aby rozwiązać kwestię finansową?",
-        "— Kiedy spodziewa się Pan/Pani otrzymać kolejne środki (np. wypłatę, emeryturę, zasiłek)?",
-        "Rozumiem, że teraz może się wydawać, że to nie jest najlepszy момент na inwestycję.",
-        "Proszę jednak spojrzeć na to jak na szansę – nie tylko na zachowanie, ale również na pomnożenie swojego kapitału.",
-        "Jestem gotów/gotowa zaproponować Panu/Pani ekskluzywne warunki przeznaczone dla nowych inwestorów.",
-        "To wyjątkowa okazja, by uzyskać dostęp do atrakcyjnych możliwości inwestycyjnych, które nie są powszechnie dostępne.",
-        "Właśnie dlatego nie warto odkładać tej decyzji, ale działać bez zwłoki.",
-        "Podczas gdy Pan/Pani zastanawia się nad każdą złotówką, inni inwestorzy korzystają z okazji i zarabiają, uzyskując korzyści większe niż początkowy wkład.",
-        "Czy nie chciał(a)by Pan/Pani wykorzystać swojej szansy?"
+        "Уточнення фінансової ситуації:",                                                                                                                                                               
+        "Rozumiem, że sytuacja finansowa może być trudna. Czy mógłby/mogłaby Pan/Pani doprecyzować, na czym dokładnie polegają te trudności? Dzięki temu będę mógł/mogła lepiej zrozumieć Pana/Pani sytuację i zaproponować możliwie najlepsze rozwiązanie.",
+        "Jakiej kwoty Panu/Pani brakuje? Ile czasu będzie potrzebne, aby rozwiązać kwestię finansową? Kiedy spodziewa się Pan/Pani otrzymać kolejne środki (np. wypłatę, emeryturę, zasiłek)?", 
+        "[якщо клієнт відповідає на перше запитання, що повний нуль, найімовірніше, клієнт не до кінця чесний і за цим приховує свої сумніви або недовіру,",
+        "відповіді на наступні запитання теж треба слухати дуже уважно, адже клієнт може сказати, що зарплату дали кілька днів тому, а отже, гроші в нього є, але розпочинати роботу він не збирається]",
+        "Підкреслення важливості інвестування:",                                                                                                                                          
+        "Rozumiem, że teraz może się wydawać, że to nie jest najlepszy moment na inwestycje. Proszę jednak spojrzeć na to jak na szansę — nie tylko na zachowanie, ale również na pomnożenie swojego kapitału. Czas to pieniądz – im wcześniej Pan/Pani zacznie, tym większy potencjał zysków będzie można wykorzystać.",
+        "Пропозиція ексклюзивних умов:",                                                                                                                                       
+        "Jestem gotów/gotowa zaproponować Panu/Pani ekskluzywne warunki przeznaczone dla nowych inwestorów. To wyjątkowa okazja, by uzyskać dostęp do atrakcyjnych możliwości inwestycyjnych, które nie są powszechnie dostępne. [Запропонувати бонус]",
+        "Створення відчуття терміновості:",                                                                                                                             
+        "Sytuacja na rynku może się szybko zmieniać, dlatego ważne jest, aby działać bez zwłoki. Podczas gdy Pan/Pani się jeszcze zastanawia, inni mogą już korzystać z tej okazji. Inwestycja teraz może przynieść więcej korzyści niż w przyszłości.",
+        "Підкреслення успіхів попередніх інвесторів:",                                                                                                                           
+        "Wielu naszych inwestorów rozpoczęło od niewielkich kwot, a dziś są właścicielami znaczących portfeli. Ich sukcesy mówią same za siebie. Czy nie chciał(a)by Pan/Pani wykorzystać swojej szansy?",
+        "Підготовка до укладення угоди:",                                                                                                                                              
+        "Jeśli szybko rozwiążemy tę kwestię, jestem gotów/gotowa przekazać Panu/Pani wszystkie niezbędne informacje i przystąpić do finalizacji transakcji. To tylko kilka kroków – a wkrótce zacznie Pan/Pani dostrzegać pierwsze rezultaty.",
+        "Використання переконливих фактів:",                                                                                                                                  
+        "Warto pamiętać, że wielu odnoszących sukcesy ludzi zawdzięcza swój dobrobyt właśnie inwestycjom. Nie warto czekać na lepszy moment – stwórzmy go razem już teraz"
       ]
     },
     {
@@ -632,15 +639,15 @@
       "type": "snippet",
       "text": [
         "Z mojego doświadczenia wynika, że kiedy klient mówi, że chce się zastanowić, często oznacza to, że nie do końca zrozumiał projekt albo nie jest jeszcze do niego przekonany.",
-        "— Proszę powiedzieć, czego dokładnie się Pan/Pani obawia? [чекаємо відповідь клієнта]",
-        "— Proszę powiedzieć, nad czym dokładnie chciał/aby się Pan/Pani zastanowić?",
+
+        "Proszę powiedzieć, czego dokładnie się Pan/Pani obawia? [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
+        "Proszę powiedzieć, nad czym dokładnie chciał/a/by się Pan/Pani zastanowić?",
         "Czego zabrakło w mojej prezentacji, aby mógł/mogła Pan/Pani podjąć decyzję już teraz?",
         "Co powstrzymuje Pana/Panią przed decyzją w tej chwili?",
         "Jak to może wpłynąć na Pana/Pani ostateczną decyzję?",
-        "Oczywiście, ma Pan/Pani prawo, żeby się zastanowić.",
-        "Z mojego doświadczenia wynika jednak, że najlepiej podejmujemy decyzje wtedy, gdy można zobaczyć konkretne rezultaty — zacząć działać, a później to zweryfikować w praktyce.",
-        "Szczerze mówiąc, w tej chwili nie ma się nad czym długo zastanawiać — chyba że coś budzi Pana/Pani wątpliwości.",
-        "Co dokładnie powstrzymuje Pana/Panią przed podjęciem decyzji?"
+
+        "Oczywiście, ma Pan/Pani prawo, żeby się zastanowić. Z mojego doświadczenia wynika jednak, że najlepiej podejmuje się decyzje wtedy, gdy można zobaczyć konkretne rezultaty i zrozumieć, jak to działa w praktyce.",
+        "Szczerze mówiąc, w tej chwili nie ma się nad czym długo zastanawiać — chyba że coś budzi Pana/Pani wątpliwości? Co dokładnie powstrzymuje Pana/Panią przed podjęciem decyzji?" 
       ]
     },
     {
@@ -648,12 +655,13 @@
       "title": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’Ї",
       "type": "snippet",
       "text": [
-        "Rozumiem, że chce Pan/i skonsultować się z żoną/mężem, ponieważ nie jest Pan/i jeszcze całkowicie przekonany/a, zgadza się?",
-        "W czym dokładnie nie jest Pan/i pewny/a? Jakie ma Pan/i wątpliwości?",
-        "— Czy chodzi o to, żeby żona/mąż zatwierdził/a lub odrzucił/a Pana/Pani decyzję?",
-        "— Bo wie Pan/i, ja sam/sama nie pytał/abym o zgodę, gdybym nie był/a do końca przekonany/a do swojego wyboru.",
+        "Rozumiem, że chce Pan/i skonsultować się z żoną/mężem, ponieważ nie jest Pan/i jeszcze całkowicie przekonany/a, zgadza się? [якщо відповідь клієнта - Так, тоді уточніть]",
+        "W czym dokładnie nie jest Pan/i pewny/a? Jakie ma Pan/і wątpliwości?",
+        "- якщо відповідь - НІ",
+        "Proszę powiedzieć – czy chodzi o to, żeby żona/mąż zatwierdził/a lub odrzucił/a Pana/Pani decyzję?",
+        "Bo wie Pan/i, ja sam/sama nie pytał/a/bym o zgodę, gdybym nie był/a do końca przekonany/a do swojego wyboru.",
         "Na początek możemy zacząć od niewielkiej kwoty – to bezpieczne i pozwala sprawdzić, jak to działa w praktyce.",
-        "Już dziś może Pan/i osiągnąć pierwszy zysk na wybranej симуляції i… zrobić prezent żonie/mężowi/сину!",
+        "Już dziś może Pan/i osiągnąć pierwszy zysk na wydarzeniu światowym i... zrobić prezent żonie/ mężowi/synowi!",
         "Czy nadal ma Pan/i jakieś obawy? Proszę powiedzieć, co dokładnie Pana/Panią martwi – chętnie to wyjaśnię."
       ]
     },
@@ -662,11 +670,11 @@
       "title": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’Ї 2.0 (логіка)",
       "type": "snippet",
       "text": [
+        "Виводимо на логіку:",
         "Rozumiem, że chce Pan/i podjąć decyzję wspólnie z bliską osobą – to całkowicie naturalne.",
         "Pozwoli Pan/i, że zadam pytanie: jeśli boli ząb – do kogo Pan/i się zwraca? Do dentysty, prawda? Bo to osoba, która zna się na rzeczy.",
-        "Proszę powiedzieć, czy osoba, z którą chce się Pan/i skonsultować, zna się на inwestycjach i rynku finansowym?",
-        "Jeśli nie – to lepiej, żeby wszystkie pytania zadać komuś, kto się na tym zna.",
-        "Dlatego jestem tu, żeby pomóc – chętnie odpowiem на wszystko i jeśli Pan/i będzie gotowy/a, przejdziemy do aktywacji konta. Dobrze?"
+        "Proszę powiedzieć, czy osoba, z którą chce się Pan/i skonsultować, zna się na inwestycjach i rynku finansowym? Jeśli nie – to lepiej, żeby wszelkie pytania zadać komuś, kto się na tym zna.",
+        "Dlatego jestem tu, żeby pomóc – chętnie odpowiem na wszystko i jeśli Pan/i będzie gotowy/a, przejdziemy do aktywacji konta. Dobrze?"
       ]
     },
     {
@@ -674,14 +682,14 @@
       "title": "ЛІЦЕНЗІЯ",
       "type": "snippet",
       "text": [
-        "– Oczywiście, nie ma problemu. Wyślę Panu/Pani teraz dokumenty i wspólnie je przejrzymy.",
-        "Będę z Panem/Panią na linii, aby natychmiast odpowiedzieć на wszystkie pytania.",
-        "– Zostaniemy w kontakcie, będę z Panem/Panią na linii, żeby od razu odpowiedzieć na wszystkie pytania.",
-        "– Przy okazji – skoro chce Pan/i coś jeszcze sprawdzić, rozumiem, że są pewne wątpliwości.",
-        "Proszę powiedzieć szczerze: czego dokładnie się Pan/i obawia?",
-        "– Co według Pana/i mogłoby nie zadziałać w naszej współpracy?",
-        "[якщо клієнт починає говорити заперечення – уважно слухаємо і відпрацьовуємо, не сперечаємось]",
-        "**Другий варіант:**",
+        "- Oczywiście, nie ma problemu. Wyślę Panu/Pani teraz dokumenty i wspólnie je przejrzymy. Będę z Panem/Panią na linii, aby natychmiast odpowiedzieć na wszystkie pytania.",              
+        "- Zostańmy w kontakcie, będę z Panem/Panią na linii, żeby od razu odpowiedzieć na wszystkie pytania.",                                                                                                                                
+        "- Przy okazji – skoro chce Pan/i coś jeszcze sprawdzić, rozumiem, że są pewne wątpliwości.",    
+        "- Porozmawiajmy szczerze: czego dokładnie się Pan/i obawia?",                                                    
+        "- Co według Pana/i mogłoby nie zadziałać w naszej współpracy?", 
+        "[якщо клієнт починає говорити заперечення, то ви переходите до їхнього відпрацювання, водночас нічого не надсилаєте, і якщо після відпрацювання клієнт згадує про ліцензію, то тоді вже її надсилаєте!!!]",
+
+                                   "**Другий варіант:**",
         "– W porządku, nie mam nic przeciwko temu, aby udostępnić Panu/Pani licencję.",
         "– Ale proszę powiedzieć – czy sama licencja może być gwarancją zarobku?",
         "– Na przykład: czy kierowca, który posiada prawo jazdy, może zagwarantować Panu/Panią bezpieczną podróż?",
@@ -696,12 +704,13 @@
       "title": "ХОЧУ ПОЧИТАТИ ВІДГУКИ",
       "type": "snippet",
       "text": [
-        "– Proszę mi powiedzieć – jak często zdarza się Pan/u/Pani osobiście pisać opinie w internecie?",
-        "– A jak Pan/i myśli – kto найczęściej pisze opinie?",
-        "– Wie Pan/i, gdybym napisał teraz tysiąc negatywnych komentarzy на temat Pana/Pani samochodu – czy to oznaczyłoby, że auto не działa i trzeba je sprzedać? [pauza]",
-        "– Uważam, że nic nie przekonuje lepiej niż osobiste doświadczenie.",
-        "– Dlatego zachęcam – sprawdźmy to razem przy okazji dzisiejszego wydarzenia i zobaczy Pan/i efekty на własne oczy.",
-        "**Інший варіант:**",
+        "- Proszę mi powiedzieć – jak często zdarza się Panu/Pani osobiście pisać opinie w internecie? [Чекаємо на відповідь клієнта.]",                                                                                                                                                                                                        
+        "- A jak Pan/i myśli – kto najczęściej pisze opinie? [Чекаємо на відповідь клієнта.]",                                                                         
+        "- Wie Pan/i, gdybym napisał/a teraz tysiąc negatywnych komentarzy na temat Pana/Pani samochodu – czy to znaczyłoby, że auto nie działa i trzeba je sprzedać? [Пауза, щоб задумався.]",                                                                                
+        "- Uważam, że nic nie przekonuje lepiej niż osobiste doświadczenie.",                                                                              
+        "- Dlatego zachęcam – sprawdźmy to razem przy okazji dzisiejszego wydarzenia i zobaczy Pan(i) efekty na własne oczy.",
+
+                                          "**Інший варіант:**",
         "– To świetny pomysł, aby czytać opinie – szczególnie wtedy, gdy wiemy, kto je napisał.",
         "– Proszę powiedzieć, jak Pan/i odróżnia prawdziwą opinię od tej mniej wiarygodnej?",
         "– Czy zgadza się Pan/i ze stwierdzeniem, że opinie można kupić?",
@@ -710,7 +719,9 @@
         "– A jeśli miotły/mikroby Pan/Pani przedstawi setki pozytywnych i sto negatywnych opinii – które z nich uzna Pan/Pani za bardziej wiarygodne?",
         "– Uważam, że nic nie przekonuje lepiej niż osobiste doświadczenie.",
         "– Dlatego zachęcam – sprawdźmy to razem przy okazji dzisiejszego wydarzenia i zobaczy Pan/i efekty на własne oczy.",
-        "**Прочитав погані відгуки:**",
+        
+                                    "**Прочитав погані відгуки:**",
+        "Пояснення на прикладі:",
         "– To, że zapoznał/a się Pan/i z opiniami, pokazuje, że poważnie podchodzi Pan/i do decyzji o współpracy – i to bardzo dobrze.",
         "– Trzeba jednak pamiętać, że opinie w internecie nie zawsze odzwierciedlają rzeczywistość.",
         "– Wiele z nich bywa pisanych przez konkurencję.",
@@ -725,10 +736,10 @@
       "title": "ХОЧУ ПІДПИСАТИ ДОГОВІР",
       "type": "snippet",
       "text": [
-        "– Ze mną osobiście nie podpisuje Pan/i umowy.",
-        "– Po rozpoczęciu współpracy z analitykiem proszę запytać o umowę – są one przygotowywane indywidualnie dla każdego klienta, z uwzględnieniem rodzaju współpracy, oczekiwanych zysków, kierunku handlu oraz sytuacji finansowej.",
-        "[якщо клієнт просить wysłać pusty szablon → документи формуються під клієнта після консультації з аналітиком]",
-        "**Другий варіант:**",
+        "- Ze mną osobiście nie podpisuje Pan/i umowy.",
+        "- Po rozpoczęciu współpracy z analitykiem proszę zapytać o umowę – są one przygotowywane indywidualnie dla każdego klienta, z uwzględnieniem rodzaju współpracy, oczekiwanych zysków, kierunku handlu oraz sytuacji finansowej.",
+        "[Якщо клієнт просить вислати порожній договір, ви маєте вивести на обґрунтоване заперечення, і зрозуміти, чому йому потрібен цей договір / НЕ  ВПЕВНЕНА АБО БОЇТЬСЯ / відводьте в тему обґрунтованого заперечення (якої форми договір вас цікавить?)]",
+                                    "**Другий варіант:**",
         "– Umowa jest podpisywana w przypadku, gdy firma przyjmuje środki klienta w zarządzanie.",
         "– W naszym przypadku nie przekazuje nam Pan/i swoich pieniędzy – otwiera Pan/i własny rachunek i samodzielnie nim zarządza, korzystając z naszych rekomendacji.",
         "– Proszę mi powiedzieć, w ilu procentach jest Pan/i pewny/a, że uda się Pan/i з nami zarobić?"
@@ -739,14 +750,15 @@
       "title": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ",
       "type": "snippet",
       "text": [
-        "– A dlaczego dopiero za miesiąc?",
-        "Albo",
-        "– Oczywiście mogę zadzwonić do Pana/i za miesiąc, ale proszę mi powiedzieć – co się w tym czasie zmieni?",
-        "Albo",
-        "– Co stoi na przeszkodzie, aby zacząć już teraz?",
-        "Albo",
-        "– Czy mogę zapytać, co powstrzymuje Pana(ią) przed rozpoczęciem już teraz?",
-        "[Якщо клієнт каже, що йому треба подумати… або tylko через miesiąc będą pieniądze — продовжуємо інтерес і пропонуємо вигідні умови]"
+         "A dlaczego dopiero za miesiąc?",                                                                                                                                              
+                        "Або",
+        "Oczywiście mogę zadzwonić do Pana/i za miesiąc, ale proszę mi powiedzieć – co się w tym czasie zmieni?",
+                        "Або",
+        "Co stoi na przeszkodzie, aby zacząć już teraz?",
+                        "Або",
+       "Czy mogę zapytać, co powstrzymuje Pana(ią) przed rozpoczęciem już teraz?", 
+       "[Якщо клієнт каже, що йому треба: подумати, у нього потім буде більше часу - то переходимо до відпрацювання цих заперечень.",
+        "Якщо клієнт каже, що тільки через місяць у нього будуть гроші - тоді наше завдання продати йому новину, зацікавити прибутком, поставити дедлайн і запропонувати запуститися в роботу на більш вигідних умовах.]"
       ]
     },
     {
@@ -779,18 +791,18 @@
       "text": [
         "– Skoro chce Pan/i otrzymać informacje na maila, to może oznaczać, że nie wszystko jest jeszcze dla Pana/i jasne. Proszę powiedzieć – jakiej informacji brakuje lub co budzi wątpliwości?",
         "– Co jeszcze chciał/a/by Pan/i, żebym wyjaśnił/a?",
-        "[Якщо клієнт відповідає, że wszystko jasne — пропонуємо починати]",
+        "[Якщо клієнт відповідає, що нічого не хоче уточнити і йому все зрозуміло тоді пропонуйте починати роботу]",
         "– Skoro wszystko jest już jasne, proponuję zrobić pierwszy krok.",
         "Jaka kwota została wybrana przez Pana/Panią do rozpoczęcia współpracy?"
       ]
     },
     {
       "id": "node_11",
-      "title": "НЕМАЄ ЧАСУ (коротка версія)",
+      "title": "НЕМАЄ ЧАСУ",
       "type": "snippet",
       "text": [
-        "– Chcę podkreślić jedną bardzo ważną rzecz – aktywacja konta zajmie dosłownie kilka minut, a następnie będzie Pan/i mógł/mogła wrócić do swoich codziennych obowiązków.",
-        "Albo",
+        "Chcę podkreślić jedną bardzo ważną rzecz – aktywacja konta zajmie dosłownie kilka minut, a następnie będzie Pan/i mógł/mogła wrócić do swoich codziennych obowiązków.",
+                        "Або",
         "– Rozmawiamy już od ponad 20 minut, a gdy zbliżamy się do aktywacji konta handlowego, mówi Pan/i, że nie ma teraz czasu.",
         "Proszę szczerze powiedzieć – czy coś Pana/Panią powstrzymuje? Czego dokładnie Pan/i się obawia?"
       ]
@@ -814,8 +826,9 @@
       "type": "snippet",
       "text": [
         "Jeżeli 1000–1100 zł to dla Pana/i zbyt wysoka kwota на początek, proszę powiedzieć – jaka kwota byłaby dla Pana/i odpowiednia, żeby rozpocząć współpracę?",
-        "[Якщо клієнт каже…] Dlaczego akurat taka kwota? Czy dlatego, że w razie ewentualnych trudności nie byłoby to dla Pana/i dużym obciążeniem? Proszę powiedzieć szczerze.",
-        "[Якщо клієнт каже – ТАК…]"
+        "[Якщо клієнт каже - що не готовий починати і хоче подумати, почитати або порадитися, то переходимо до відпрацювання цього заперечення. Якщо клієнт називає будь-яку іншу суму, що менша за 1000-1100 злотих, тоді розвиваємо діалог далі]",
+        "Dlaczego akurat taka kwota? Czy dlatego, że w razie ewentualnych trudności nie byłoby to dla Pana/i dużym obciążeniem? Proszę powiedzieć szczerze.",
+        "[Якщо клієнт каже - ТАК або що хоче подумати чи боїться - переходимо до відпрацювання цих заперечень]"
       ]
     },
     {
@@ -823,9 +836,13 @@
       "title": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ",
       "type": "snippet",
       "text": [
-        "Oczywiście, że inwestuję — mam osobistego analityka i od 4 lat zarabiam na handlu. Najczęściej kryptowaluty, ale też inne aktywa.",
-        "Nie tylko ja — również moi bliscy biorą udział w projekcie.",
-        "Doradzam rozpoczęcie współpracy — sam/a Pan/i zobaczy, że można naprawdę dobrze zarabiać."
+        "Oczywiście, że inwestuję – mało tego, mam również osobistego analityka, z którym współpracuję i z którym od 4 lat zarabiam na handlu.", 
+        "Najczęściej inwestujemy w kryptowaluty, ale regularnie otwieramy też transakcje na innych aktywach.",
+        "Mało tego – nie tylko ja inwestuję, ale również moi bliscy biorą udział w tym projekcie.",
+        
+        "Doradzam Panu/i rozpoczęcie współpracy – dzięki temu może Pan/i zacząć zarabiać tak jak ja.",
+        
+        "Zachęcam Pana/ią do rozpoczęcia współpracy – sam/a Pan/i zobaczy, że można naprawdę dobrze zarabiać."
       ]
     },
     {
@@ -833,9 +850,17 @@
       "title": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ",
       "type": "snippet",
       "text": [
-        "Dlaczego minimalna kwota to 1000–1100 zł i nie można mniej?",
-        "To wynika ze strategii bezpiecznego handlu: 6–10 pozycji dziennie, wykorzystujemy ~50% środków. Połowa kwoty pracuje, połowa to „poduszka bezpieczeństwa”.",
-        "Alternatywa: testy przez 5 lat pokazały, że 1000–1100 zł to najbezpieczniejszy старт. Czy zgadza się Pan/i, że nie warto inwestować całej kwoty w jedno miejsce?"
+        "Dlaczego minimalna kwota to akurat 1000-1100 zł i nie można mniej?",
+        "Kwota ta wynika z przyjętej strategii bezpiecznego handlu. Otwieramy średnio 6–10 pozycji dziennie, ale zawsze wykorzystujemy tylko około 50% środków, by zminimalizować ryzyko.",
+        "Dlatego 1000-1100 zł to kwota, która umożliwia skuteczne i bezpieczne rozpoczęcie inwestycji – z czego tylko połowa faktycznie trafia na rynek.",
+        "Oczywiście może Pan/i poszukać brokera z niższym progiem wejścia, ale tam będzie Pan/i działać sam/a – bez wsparcia, bez strategii i bez osoby, która będzie zaangażowana w Pana/i wynik. U nas jesteśmy partnerami – zarabia Pan/i, zarabiamy my.",
+        "Dlatego jeśli zależy Panu/i na bezpieczeństwie i zyskach, najlepiej przekonać się o tym w praktyce. Proponuję zasilić konto minimalną kwotą i już dziś zrobić pierwszy krok do zysku.",
+                   "Або",
+        "Przez 5 lat testowaliśmy współpracę z klientami przy różnych kwotach i doszliśmy do wniosku, że 1000-1100 zł to najbezpieczniejsza kwota na start.",
+        "Właśnie od tej kwoty mogę dać Panu/i gwarancję, że wszystko się uda.",
+        "Jeśli zapyta Pan/i „dlaczego?”, już wyjaśniam:",
+        "ta kwota jest odpowiednio rozdzielana zgodnie z zasadami zarządzania ryzykiem – część kapitału pracuje na rynku, a pozostała część stanowi tak zwany „poduszkę bezpieczeństwa”.",
+        "Proszę powiedzieć – czy zgadza się Pan/i z tym, że nie warto inwestować całej kwoty w jedno miejsce?"
       ]
     },
     {
@@ -854,9 +879,10 @@
       "title": "ХОЧУ ПРИЇХАТИ В ОФІС",
       "type": "snippet",
       "text": [
-        "To świetnie, że jest inicjatywa. Nasze biuro jest dostępne wyłącznie dla VIP.",
-        "Proszę zrozumieć — era cyfrowa, większość spraw online.",
-        "Czy zgadza się Pan/i z tym?"
+        "Generalnie omówiliśmy już wszystko, co jest Panu/i potrzebne, aby rozpocząć współpracę.", 
+        "Zdecydował/a się Pan/i na sposób działania, który może pomóc szybciej osiągnąć cel finansowy, niż Pan/i zakładał/a.", 
+        "Omówiliśmy też kwestię bezpieczeństwa środków, więc sądzę, że to nie brak zainteresowania jest przeszkodą.", 
+        "Proszę powiedzieć wprost – czego się Pan/i obawia?"
       ]
     },
     {
@@ -875,9 +901,14 @@
       "title": "ЯКІ ГАРАНТІЇ",
       "type": "snippet",
       "text": [
-        "Jeżeli pyta Pan/i o gwarancje — proszę doprecyzować czego dotyczy obawa.",
-        "Najważniejsza gwarancja — wspólny interes: pobieramy 10% od zysku przy wypłacie. Zarabiamy tylko wtedy, gdy Pan/i zarabia.",
-        "Chcemy współpracy na lata."
+        "Jeżeli pyta Pan/i o gwarancje, to znaczy, że chce się Pan/i przed czymś zabezpieczyć. Proszę powiedzieć – czego dokładnie się Pan/i obawia?",
+        "[ЗАДАЄМО ПИТАННЯ/ОТРИМАЄМО ВІДПОВІДЬ, НЕ ВІДПОВІДАЙТЕ ЗА КЛІЄНТА! Якщо клієнт бурмоче і не може чітко відповісти, запитайте його:]",
+        "Proszę sobie wyobrazić, co może się wydarzyć we współpracy z nami.",
+        "[СТАВИМО ЗАПИТАННЯ/ЧЕКАЄМО ВІДПОВІДЬ НЕ НАКИДАЮЧИ ВАРІАНТИ ЗА КЛІЄНТА]",
+        "Tylko mądrzy ludzie interesują się tym pytaniem – proszę powiedzieć, jakie konkretnie gwarancje Pana/Panią interesują?",
+        "[Якщо клієнт посилається на договір, ліцензію або особисту зустріч – ми використовуємо відповідні напрацювання з цього файлу. Якщо клієнт не може дати точну відповідь, використовуємо наведену нижче версію]",
+        "Najważniejszą gwarancją w naszej współpracy jest wspólny interes. Proszę się zastanowić – jaki mielibyśmy zysk z tego, żeby stawiać Pana/Panią w sytuacji, w której traci Pan/i pieniądze, skoro nasz zarobek wynosi 10% od Pana/Pani zysku? ",
+        "W naszej firmie absolutnie każdy jest zainteresowany tym, żeby nasza współpraca trwała przez lata."
       ]
     },
     {
@@ -885,8 +916,9 @@
       "title": "Я В ЦЕ НЕ ВІРЮ",
       "type": "snippet",
       "text": [
-        "W co dokładnie Pan/Pani nie wierzy?",
-        "Czy w to, że można tutaj zarobić? A może brak zaufania lub obawa?"
+        "W co dokładnie Pan/Pani nie wierzy? [Чекаємо відповідь клієнта]",
+        "Nie wierzy Pan/Pani w to, że naprawdę można tutaj zarobić? [Чекаємо на відповідь клієнта + можемо посилатися на інтерес компанії.]",
+        "Nie ma Pan/Pani zaufania? Albo może czegoś się Pan/Pani obawia?"
       ]
     },
     {
@@ -894,10 +926,14 @@
       "title": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ",
       "type": "snippet",
       "text": [
-        "Nie trzeba wierzyć — można sprawdzić w praktyce.",
-        "Przykłady przewidywalnych zdarzeń (złoto, waluta przed wyborami).",
-        "Eksperci pomagają maksymalizować kapitał.",
-        "Jeśli osiągnie Pan/Pani zysk i wypłaci — czy wtedy uwierzy?"
+        "Nie trzeba wierzyć w branżę inwestycyjną — to można sprawdzić w praktyce.",
+        "Na przykład: złoto jest stabilne cenowo, a waluta krajowa przed wyborami zazwyczaj traci na wartości.",
+        "Wszystkie te wydarzenia można przewidywać — wystarczy zaufać naszym analitykom.",
+        "To profesjonaliści w swojej dziedzinie, a ich głównym celem jest maksymalny wzrost Pana/Pani kapitału i wspólny zysk, ponieważ właśnie na tym polega nasz dochód.",
+        
+        "Jeśli osiągnie Pan/Pani zysk i wypłaci go na swoje konto — czy wtedy uwierzy Pan/Pani, że to działa?",
+        "W takim razie proponuję podjąć ten krok, zobaczyć rezultat w praktyce i dopiero wtedy ocenić, na ile to realne.", 
+        "Doradzam Panu/Pani rozpocząć współpracę i już dziś wypracować swój pierwszy zysk!"
       ]
     },
     {
@@ -905,10 +941,13 @@
       "title": "БОЮСЬ",
       "type": "snippet",
       "text": [
-        "To naturalne mieć obawy.",
-        "Czego konkretnie się Pan/i obawia? Utraty środków?",
-        "Dajemy wsparcie analityka, pracujemy częścią kapitału, reszta — zabezpieczenie.",
-        "Proponuję: spróbujmy — praktyka rozwiewa wątpliwości."
+        "Rozumiem Pana/i obawy – to całkowicie naturalne. Każdy, kto zaczyna coś nowego, ma pewne lęki.",
+        "Ale proszę zadać sobie jedno pytanie: czego dokładnie się Pan/i obawia? Utraty środków?",
+        "Właśnie dlatego nie zostawiamy Pana/Pani samego/samej. Otrzymuje Pan/i wsparcie analityka, który prowadzi krok po kroku.",
+        "Poza tym – zarabiamy tylko wtedy, gdy zarabia Pan/i, więc mamy wspólny interes w Pana/i sukcesie.",
+        "Nie inwestuje Pan/i całej kwoty od razu – pracujemy tylko częścią kapitału, a reszta służy jako zabezpieczenie.",
+        "To przemyślana i bezpieczna strategia zarządzania ryzykiem",
+        "Dlatego proponuję: spróbujmy. Dopiero praktyka rozwiewa wszystkie wątpliwości."        
       ]
     },
     {
@@ -916,9 +955,13 @@
       "title": "НЕ ДОВІРЯЮ",
       "type": "snippet",
       "text": [
-        "Dobrze, że Pan/i nie wierzy na słowo — nie trzeba wierzyć, trzeba sprawdzić.",
-        "Zarabiamy dopiero przy wypłacie zysków.",
-        "Zróbmy pierwszy krok i zobaczmy efekty na własnym koncie."
+        "Rozumiem Pana/i obawy – to całkowicie naturalne. Każdy, kto zaczyna coś nowego, ma pewne lęki.",
+        "Ale proszę zadać sobie jedno pytanie: czego dokładnie się Pan/i obawia? Utraty środków?",
+        "Właśnie dlatego nie zostawiamy Pana/Pani samego/samej. Otrzymuje Pan/i wsparcie analityka, który prowadzi krok po kroku.",
+        "Poza tym – zarabiamy tylko wtedy, gdy zarabia Pan/i, więc mamy wspólny interes w Pana/i sukcesie.",
+        "Nie inwestuje Pan/i całej kwoty od razu – pracujemy tylko częścią kapitału, a reszta służy jako zabezpieczenie.",
+        "To przemyślana i bezpieczna strategia zarządzania ryzykiem.",
+        "Dlatego proponuję: spróbujmy. Dopiero praktyka rozwiewa wszystkie wątpliwości."
       ]
     },
     {
@@ -926,8 +969,16 @@
       "title": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ",
       "type": "snippet",
       "text": [
-        "Niepewność przed startem — naturalna.",
-        "Pewność przychodzi z działaniem. Zacznijmy od minimum, sprawdźmy w praktyce, potem decyzje na spokojnie."
+        "Rozumiem Pana/i obawy – to całkowicie naturalne. Każdy, kto zaczyna coś nowego, ma pewne lęki.",
+        "Ale proszę zadać sobie jedno pytanie: czego dokładnie się Pan/i obawia? Utraty środków?",
+        
+        "Właśnie dlatego nie zostawiamy Pana/Pani samego/samej. Otrzymuje Pan/i wsparcie analityka, który prowadzi krok po kroku.",
+        "Poza tym – zarabiamy tylko wtedy, gdy zarabia Pan/i, więc mamy wspólny interes w Pana/i sukcesie.",
+        
+        "Nie inwestuje Pan/i całej kwoty od razu – pracujemy tylko częścią kapitału, a reszta służy jako zabezpieczenie.",
+        "To przemyślana i bezpieczna strategia zarządzania ryzykiem.",
+        
+        "Dlatego proponuję: spróbujmy. Dopiero praktyka rozwiewa wszystkie wątpliwości."
       ]
     },
     {
@@ -935,9 +986,12 @@
       "title": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ",
       "type": "snippet",
       "text": [
-        "Nie mówimy sami o terminach wypłat. Jeśli pyta:",
-        "Wszystkie pytania o wypłatę — ze swoim ekspertem. Pierwsze zyski wypłaca Pan/Pani z jego pomocą.",
-        "Jeśli nalega — wypłata możliwa w dowolnym momencie. Teraz celem jest wypracowanie zysku — ekspert pokaże proces."
+        "Самі не говоримо, коли буде зроблено вивід. Якщо клієнт запитує:",                                                                                                                           
+        "Wszystkie pytania dotyczące wypłaty środków proszę omówić ze swoim ekspertem.", 
+        "Tym bardziej, że pierwsze wypracowane zyski będzie Pan/Pani wypłacać właśnie z jego pomocą – to on wskaże, jak dokładnie to zrobić. Zgadza się?",
+
+        "Якщо клієнт наполягає на тому, чи може він у будь-який момент робити вивід:",                                                                              
+        "Wypłata środków jest możliwa w dowolnym momencie. Pańskim głównym zadaniem na ten moment jest jednak wypracowanie zysku, a jeśli chce Pan/Pani zobaczyć, jak wygląda ten proces w praktyce, ekspert z pewnością Panu/Pani w tym pomoże."
       ]
     },
     {
@@ -945,9 +999,12 @@
       "title": "Я ВЖЕ ВТРАЧАВ",
       "type": "snippet",
       "text": [
-        "Rozumiem i współczuję.",
-        "Czego dokładnie się Pan/Pani obawia? Co budzi niepokój?",
-        "Dalej — przechodzimy do konkretnych obaw albo jeszcze raz wyjaśniamy gdzie są środki i rolę analityka."
+        "Doskonale Pana/i rozumiem – to bardzo przykra sytuacja i oczywiście rozumiem Pana/i obawy.",
+        "Proszę powiedzieć, czego dokładnie się Pan/i obawia?",
+                          "Або",
+        "Doskonale rozumiem Pana/i obawy – to naprawdę przykra sytuacja.",
+        "Proszę mi powiedzieć, co konkretnie budzi Pana/i niepokój?",                                                                                                
+       "[Далі або переходимо до опрацювання заперечень, які надасть клієнт, або ще раз пояснюємо, де знаходяться кошти, та роботу з аналітиком.]"
       ]
     },
     {
@@ -955,10 +1012,26 @@
       "title": "БОЮСЯ ВТРАТИТИ",
       "type": "snippet",
       "text": [
-        "W trakcie operacji:",
-        "Ryzyko zawsze istnieje przy samodzielnym handlu. Nasz cel — stabilne zyski; zarabiamy tylko gdy klient zarabia. Stop-loss/take-profit zabezpiecza środki.",
-        "Przy wypłacie:",
-        "To Pana/Pani indywidualne konto handlowe. Przelewy między własnymi kontami nie „giną”. Nasz priorytet — przejrzysty proces wypłat."
+        "У процесі торгівлі:",
+        "Oczywiście, na giełdzie wszystko może się zdarzyć – szczególnie gdy handluje się samodzielnie. W takim przypadku bardzo łatwo można ponieść straty, ponieważ ryzyko istnieje zawsze.",
+        "Naszym głównym celem jest jednak doprowadzenie Pana/i do stabilnych zysków, ponieważ my również zarabiamy tylko wtedy, gdy Pan/i zarabia!",
+        
+        "Zarabiamy zarówno na wzrostach, jak i na spadkach cen.",
+        "Nasi analitycy na bieżąco informują, w jakim kierunku zmierza rynek, i pomagają otwierać transakcje we właściwym momencie.",
+        "Dodatkowo ekspert pomoże ustawić tzw. ograniczniki (stop loss/take profit), które zabezpieczą Pana/i środki.",
+        
+        "Proponuję rozpocząć współpracę już teraz – by jeszcze dziś zobaczyć swój pierwszy zysk!",
+        
+        "При виведенні:",
+        
+        "Jest to wyłącznie Pana/Pani indywidualne konto handlowe. Proszę mi powiedzieć – gdy dokonuje Pan/Pani przelewu pomiędzy swoimi kontami bankowymi, czy zdarzyło się, aby środki „zaginęły”?",
+        "Tutaj wygląda to dokładnie tak samo – po prostu dokonuje Pan/Pani przelewu pomiędzy swoimi kontami. TO JEST CAŁKOWICIE BEZPIECZNE!",
+        
+        "Dlatego proponuję rozpocząć współpracę już teraz, aby już dziś zobaczył/a Pan/Pani swój pierwszy zysk!",
+        
+        "My otrzymujemy swoją prowizję dopiero w momencie, kiedy Pan/Pani wypłaca swoje zyski.",
+        "Proszę pomyśleć – jaka byłaby dla nas korzyść, gdyby nie udało się Panu/Pani wypłacić pieniędzy, skoro wtedy my również nic nie zarabiamy?",
+        "Zarabiamy tylko wtedy, gdy zarabia Pan/Pani. Dlatego jesteśmy w pełni zainteresowani Pana/Pani sukcesem!"
       ]
     },
     {
@@ -966,9 +1039,26 @@
       "title": "ЯКІ Є РИЗИКИ",
       "type": "snippet",
       "text": [
-        "Ryzyko istnieje zawsze — nikt nie ma pełnej kontroli nad rynkiem.",
-        "Klucz — zarządzanie ryzykiem: m.in. Stop Loss (automatyczne zamknięcie przy określonej stracie).",
-        "Dywersyfikujemy pozycje; dochód generowany regularnie (różnej wielkości)."
+        "Rozumiem, o czym Pan/Pani myśli. Pracuję w tej branży od dłuższego czasu i wiem, że każdy rozsądny człowiek interesuje się kwestią ryzyka. Pytania typu:",
+        "A co, jeśli stracę?",
+        "albo",
+        "Jakie mam gwarancje?", 
+        "– to naturalna reakcja. W końcu chodzi o Pana/Pani pieniądze, więc takie obawy są jak najbardziej uzasadnione.",
+        
+        "Byłbym/bym słabym doradcą, gdybym twierdził/a, że ryzyko nie istnieje – to po prostu nieprawda.",
+        "Budujemy relację opartą na zaufaniu, dlatego mówię wprost: ryzyko zawsze istnieje, ponieważ nikt nie ma pełnej kontroli nad rynkiem finansowym.",
+        "Nieprzewidziane sytuacje mogą pojawić się wszędzie, ale kluczem jest umiejętne zarządzanie tym ryzykiem.",
+        
+        "Jak się mówi:", "kto ma informację, ten ma władzę","I my te informacje posiadamy.",
+        
+        "Dlatego korzystamy z szeregu narzędzi, które pomagają ryzyko ograniczyć do minimum.",
+        "Jednym z najważniejszych takich narzędzi jest tzw. Stop Loss. Czy słyszał/a Pan/Pani o tym pojęciu?",
+        
+        "(Stop Loss) (z ang. „zatrzymaj stratę”) – to mechanizm, który automatycznie zamyka pozycję, jeśli osiągnie ona określony poziom straty",
+        "Na przykład: jeśli ustawimy Stop Loss na poziomie 2 dolarów, to nawet jeśli rynek gwałtownie się załamie – system sam zamknie transakcję z maksymalną stratą 2 dolarów. To bardzo skuteczna forma zabezpieczenia.",
+        
+        "Co więcej – zawsze działamy na kilku pozycjach jednocześnie, co oznacza, że nawet jeśli jedna z transakcji przyniesie stratę, pozostałe mogą przynieść zysk.",
+        "Dzięki temu możliwe jest codzienne generowanie dochodu – czasem większego, czasem mniejszego, ale regularnego."
       ]
     },
     {
@@ -976,8 +1066,12 @@
       "title": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ",
       "type": "snippet",
       "text": [
-        "Funkcja wpłat na platformie została wyłączona dla bezpieczeństwa — aby nie podawać danych kart.",
-        "Aktywacja konta odbywa się przez dział finansowy: my dokonujemy przeładowania i księgujemy na koncie handlowym; bierzemy na siebie prowizje."
+        "Wcześniej ta funkcja była dostępna na naszej platformie, jednak całkowicie z niej zrezygnowaliśmy – i już tłumaczę, dlaczego!",
+        "Zrobiliśmy to z myślą o Pana/i bezpieczeństwie. Usunęliśmy tę metodę wpłaty, aby uniknąć sytuacji, w których użytkownicy musieliby podawać dane swojej karty, takie jak numer, data ważności czy kod CVC.",
+
+        "Obecnie aktywacja konta odbywa się wyłącznie za pośrednictwem działu finansowego. Jako że działamy na terenie Polski, musimy rozliczać się z urzędem skarbowym.",
+        "My z naszej strony dokonujemy przewalutowania, deklarujemy Pana/i kwotę i następnie księgujemy ją na Pana/i koncie handlowym.",
+        "W dodatku ponosimy wszystkie koszty związane z prowizją – co sprawia, że ta metoda jest dla Pana/i bardziej opłacalna, prawda?"
       ]
     },
     {
