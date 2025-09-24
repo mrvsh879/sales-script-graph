@@ -11,7 +11,8 @@
         "- Dzień dobry, Pani/Panie [ім’я клієнта]. Nazywam się [твоє ім’я]. Jestem Pani/Pana osobistym asystentem. Interesował/a się Pan/Pani dodatkowym dochodem w ramach projektu [назва проекту], zgadza się?."
       ],
       "transitions": [
-        { "label": "Перейти до барʼєрів", "to": "barriers_router" }
+        { "label": "Перейти до барʼєрів", "to": "barriers_router" },
+        { "label": "ПЕРЕЙТИ ДО СБОРУ", "to": "experience_q" }
       ]
     },
 
@@ -1136,11 +1137,6 @@
     }
   ],
   "edges": [
-    {
-      "from": "greeting",
-      "to": "experience_q",
-      "label": "ПЕРЕЙТИ ДО СБОРУ"
-    },
     {
       "from": "barriers_router",
       "to": "bar_email",
