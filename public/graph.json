@@ -236,13 +236,17 @@
         "РОБОТА:",
         "- Ile czasu mógłby/mogłaby Pan/Pani poświęcić na współpracę? [відповідь наприклад 1–2 год]",
         "- Wygląda na to, że dużo Pan/Pani pracuje, prawda?",
-        "- Proszę powiedzieć, w jakiej branży Pan/Pani pracuje? [якщо, навіщо воно вам] → Pytam, żeby wiedzieć, jak najlepiej to Panu/Pani wyjaśnić. Jeśli pracuje Pan/Pani w branży finansowej, wszystko pójdzie bardzo szybko.",
+        "- Proszę powiedzieć, w jakiej branży Pan/Pani pracuje? [якщо, навіщо воно вам]відповідь", 
+        "- Pytam, żeby wiedzieć, jak najlepiej to Panu/Pani wyjaśnić. Jeśli pracuje Pan/Pani w branży finansowej, wszystko pójdzie bardzo szybko.",
         "- Jak długo pracuje Pan/Pani w swojej branży? [наприклад, відповідь 10 р.] [якщо не працює або пенсіонер — задаємо питання інше]",
         "- Mam wielu klientów z Pana/Pani branży i wiem, że to ciężka praca. Czy myślał/myślała Pan/Pani kiedyś o zmianie branży albo o założeniu własnej firmy? [наводимо приклад]",
-        "Przykład:",
-        "Mam klienta, Pana Dariusza, który również pracuje w branży budowlanej. Ma 53 lata. Po roku naszej współpracy otworzył własną firmę i zajmuje się wykończeniami wnętrz. Ma swoją ekipę — 5 osób — i pracuje na własny rachunek. Myślę, że Pan/Pani też chciał(a)by już otworzyć własny biznes i pracować dla siebie, prawda?",
+        "ПРИКЛАД:",
+        "Mam klienta, Pana Dariusza, który również pracuje w branży budowlanej. Ma 53 lata. Po roku naszej współpracy otworzył własną firmę i zajmuje się wykończeniami wnętrz.", 
+        "Ma swoją ekipę — 5 osób — i pracuje na własny rachunek. Myślę, że Pan/Pani też chciał(a)by już otworzyć własny biznes i pracować dla siebie, prawda?",
+        
         "- Czy zastanawiał/a się Pan/Pani, ile chciał(a)by Pan/Pani zarobić?",
         "- A jak widzi Pan/Pani współpracę z naszą firmą?",
+        
         "Якщо людина в віці [50+] або пенсіонер:",
         "- Naprawdę? — Szczerze mówiąc, brzmi Pan/Pani bardzo młodo — trudno mi uwierzyć, że ma Pan/Pani więcej niż 40–50 lat. [це комплімент, говоримо з усмішкою]",
         "- Wie Pan/Pani, najważniejsze jest to, na ile lat się Pan/Pani czuje, a nie to, co jest wpisane w paszporcie. Szanuję Pana/Panią, bo w tym wieku chce się Pan/Pani nauczyć czegoś nowego i spróbować swoich sił w nowej branży.",
@@ -259,9 +263,12 @@
       "text": [
         "СІМ’Я:",
         "— Czy Pan/Pani samodzielnie załatwia swoje potrzeby finansowe, czy korzysta z pomocy męża/żony/rodziców?",
-        "Якщо каже, що є підтримка → Świetnie, dzięki temu nie jest aż tak ciężko.",
+        
+        "Якщо каже, що є підтримка ",
+        "→ Świetnie, dzięki temu nie jest aż tak ciężko.",
         "— Czym zajmuje się Pana/Pani żona/mąż?",
-        "Якщо каже, що все вирішує сам/сама → Jestem dumny/dumna z Pana/Pani, że nie tylko Pan/Pani pracuje, ale jeszcze dba o rodzinę i szuka dodatkowego dochodu."
+        "Якщо каже, що все вирішує сам/сама",
+        "→ Jestem dumny/dumna z Pana/Pani, że nie tylko Pan/Pani pracuje, ale jeszcze dba o rodzinę i szuka dodatkowego dochodu."
       ]
     },
     {
@@ -277,10 +284,13 @@
         "– Ile udało się Panu/Pani ogólnie zarobić?",
         "– Jak Pan/Pani myśli, dlaczego się nie udało? [Dlaczego dochód był taki mały?]",
         "→ Powiem Panu/Pani, dlaczego — dlatego, że był/a Pan/Pani bez doświadczenia. Rozumiem to, bo sam/a byłem/am w takiej sytuacji. Powiem tylko tyle: wszyscy zdobywają doświadczenie z czasem.",
+        
         "Якщо клієнт з негативним досвідом, працював раніше з фірмою, брокером:(зaуважуємо, та спробуємо все з'ясувати)",
         "– Jak to się stało, że się Pan/Pani nie udało?",
+        
         "Якщо клієнт говорить, що фірма була шахрайською, уточнюємо:",
         "– Dlaczego uważa Pan/Pani, że to byli oszuści? Czy tylko dlatego, że nic Pan/Pani nie zarobił(a)?",
+        
         "Якщо клієнт говорить – \"Tak\" (говоримо об абсурді ще твердження, можна навести приклад):",
         "– Jeśli miał/a Pan/Pani problemy ze współpracą z jakąś firmą, to niekoniecznie oznacza, że była ona nieuczciwa. Nie wszystko działa od razu. Niektórzy ludzie kupują samochód, a po tygodniu mają wypadek — i to przecież nie jest wina producenta.",
         "– Czy zgadza się Pan/Pani ze mną? Może po prostu nie otrzymał/a Pan/Pani wystarczającego wsparcia i doświadczenia, a firma nie zapewniła odpowiedniej pomocy dla osoby początkującej? W takim przypadku faktycznie mamy do czynienia z problemem jakości obsługi. Dlatego w naszej firmie wspieramy naszych klientów — zarówno początkujących, jak i tych z doświadczeniem — oferując kompleksowe wsparcie i wszystkie niezbędne narzędzia.",
@@ -297,24 +307,33 @@
       "text": [
         "ЦІЛЬ:",
         "– Z mojego doświadczenia wynika, że klienci przychodzą do nas, aby zarobić na samochód, mieszkanie, spłatę kredytu albo pozbyć się komornika. A jaki jest Pan/Pani ogólny cel naszej współpracy?",
-        "Якщо відповів що є кредит, уточнюємо:",
+        
+        "ЯКЩО, ВІДПОВІВ ЩО Є КРЕДИТ УТОЧНИТИ",
         "– Czy to kredyt bankowy, czy pozabankowy?",
         "– Ile zostało Panu/Pani jeszcze do spłaty?",
         "– Czy udaje się Panu/Pani regularnie spłacać raty, czy zdarzają się miesiące, w których nie może Pan/Pani zapłacić?",
         "– Mam nadzieję, że nie ma Pan/Pani komornika?",
-        "[Można żartobliwie, z uśmiechem: „mam kilku znajomych komorników, ale broń Boże im płacić, tłumaczę klientom, że u nas nie chodzi o to, by płacić problemy z wyegzekwowaniem długu, ale żeby znaleźć sposób, jak zarobić dodatkowe środki”.]",
-        "Якщо каже, що nie może mieć środków na płatność albo ma komornika → ЗВЕРТАЄМОСЬ ДО ТЕМИ",
-        "Якщо каже, що кредит pozabankowy, уточнюємо:",
+        "[може запитати навіщо вам стільки інформації, про борги та кредити, пояснюємо, що ми не хочемо щоб були проблеми виведенням коштів які він з нами заробить, тому что пристав, кредитор може самостійно забрати кошти з рахунку]",
+        "Якщо каже, що не кожен місяць платить або несвоєчасно ЗВЕРТАЄМОСЬ ДО ТІМА",
+        
+        "Якщо каже, що кредит поза банком, уточнюємо:",
         "– Ma Pan/Pani pożyczkę w Bocianie, Kasie Stefczyka, Vivusie, Providencie?",
+        
         "Якщо каже „Tak”:",
         "– Ile zostało Panu/Pani jeszcze do spłaty?",
-        "[УТОЧНИТИ У ТИМ ЩО РОБИТИ ДАЛІ]",
-        "Якщо відповідає, що хотів би купити будинок/машину/квартиру:",
+        "[УТОЧНИТИ У ТИМА ЩО РОБИТИ ДАЛІ]",
+        
+        "ЯКЩО ВІДПОВІДАЄ, ЩО ХОТІВ БИ КУПИТИ БУДИНОК/МАШИНУ/КВАРТИРУ:",
+        "[дізнатись більш детально]",
         "– Proszę mi powiedzieć, czy wybrał(a) już Pan/Pani mieszkanie lub samochód, który chce Pan/Pani kupić?",
         "– Ile będzie kosztować dom lub samochód, który chce Pan/Pani kupić?",
-        "[Można, kiedy mówi o samochodzie, dodać: „a jaki model? Sedan, SUV, może kombi?” — żeby rozmowa była naturalna i żeby klient wyobraził sobie zakup.]",
+        "– Dlaczego chce Pan/Pani kupić dom lub samochód?",
+        "Можливо, клієнту потрібна машина для роботи або дім, тому що він живе на орендованій квартирі, і це для нього незручно — це ключова відповідь, яка дозволить виявити потребу клієнта!",
+        
         "– Czy udało się Panu/Pani odłożyć na realizację tego celu? [Ile udało się Panu/Pani zaoszczędzić?]",
         "– Ile jeszcze trzeba uzbierać?",
+        "[Може запитати навіщо вам стільки інформації скажіть це жартома мені справді дуже цікаво у нас багато клієнтів і в кожного свої цілі і знаєте іноді вони бувають дуже незвичні]",
+        
         "Na podstawie tego, co mi Pan/Pani powiedział/a, mam dla Pana/Pani idealną propozycję!"
       ]
     },
@@ -324,10 +343,13 @@
       "type": "router",
       "text": [
         "ПРЕЗЕНТАЦІЯ:",
-        "Фінансовий ринок (немає досвіду)",
+        "ФІНАНСОВИЙ РИНОК( НЕМАЄ ДОСВІДУ )",
         "Co Pan/Pani wie albo wcześniej słyszał/a na temat rynków finansowych?",
         "Świetnie. Teraz wyjaśnię Panu/Pani bardziej szczegółowo, na czym polega zarabianie na rynku finansowym.",
-        "Wszystko opiera się na spekulacji — kupujemy aktywo po jednej cenie, a sprzedajemy po innej, zarabiając na różnicy w cenie. Mówiąc prościej: kupujemy taniej, sprzedajemy drożej. Czy to jest jasne?",
+        
+        "Wszystko opiera się na spekulacji — kupujemy aktywo po jednej cenie, a sprzedajemy po innej, zarabiając na różnicy w cenie.",
+        "Mówiąc prościej: kupujemy taniej, sprzedajemy drożej. Czy to jest jasne?",
+        
         "Na rynku finansowym mamy cztery główne kierunki, na których możemy handlować. Możemy zarabiać na różnicach cen aktywów takich jak:",
         "– Pary walutowe (np. EUR/PLN),",
         "– Towary (np. ropa naftowa, złoto),",
@@ -336,14 +358,15 @@
         "Być może interesuje Pana/Panią bardziej konkretny rodzaj rynku?",
         "Nie skupiamy się na jednym aktywie, ponieważ nie da się codziennie handlować tym samym instrumentem i uzyskiwać takiego samego zysku. Jeżeli pojawia się okazja do zarobku — oczywiście z niej korzystamy.",
         "Dlatego właśnie chciałbym przedstawić Panu/Pani idealną propozycję współpracy z naszą firmą!",
-        "Фінансовий ринок (є досвід):",
+        
+        "ФІНАНСОВИЙ РИНОК (Є ДОСВІД):",
         "Skoro ma Pan/i już doświadczenie w tej branży, to na pewno doskonale Pan/i rozumie, jak działa rynek finansowy, prawda?",
-        "Клієнт відповів \"НІ\":",
+        "ЯКЩО КЛІЄНТ ВІДПОВІВ \"НІ\", ТО ПОВЕРТАЄМОСЬ ДО ФІНАНСОВИЙ РИНОК( НЕМАЄ ДОСВІДУ )",
+
+         "КЛІЄНТ ВІДПОВІВ \"ТАК\":",
         "Świetnie. Możliwe, że ciekawi Pana/ią jakiś bardziej konkretny rodzaj rynku?",
         "Nie skupiamy się na jednym aktywie — nie da się przecież codziennie handlować na tym samym instrumencie i zarobić taki sam zysk.",
         "Jeżeli pojawia się okazja, żeby zarobić, to oczywiście z niej korzystamy.",
-        "Dlatego właśnie chciałbym przedstawić Panu/Pani idealną propozycję współpracy z naszą firmą!",
-        "Відповідь \"ТАК\":",
         "Dlatego właśnie chciałbym przedstawić Panu/Pani idealną propozycję współpracy z naszą firmą!"
       ]
     },
