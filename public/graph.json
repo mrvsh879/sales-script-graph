@@ -1394,6 +1394,56 @@
       "label": "Далі"
     },
     {
+      "from": "node",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "node",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "2_0",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "2_0",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "node_2",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "node_2",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "node_3",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "node_3",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "node_4",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "node_4",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
       "from": "closing_payment",
       "to": "objections_root",
       "label": "⬅ Назад"
