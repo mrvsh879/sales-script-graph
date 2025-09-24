@@ -1183,12 +1183,12 @@
     {
       "from": "greeting",
       "to": "barriers_router",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "barriers_router",
       "to": "experience_q",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "exp_no",
@@ -1213,32 +1213,32 @@
     {
       "from": "exp_no",
       "to": "work",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "exp_yes",
       "to": "work",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "work",
       "to": "family",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "family",
       "to": "back_to_exp",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "back_to_exp",
       "to": "goal",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "goal",
       "to": "presentation",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "presentation",
@@ -1249,6 +1249,46 @@
       "from": "presentation",
       "to": "pres_exp",
       "label": "Є досвід"
+    },
+    {
+      "from": "pres_noexp",
+      "to": "presentation",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "pres_noexp",
+      "to": "trade_with_expert",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "pres_exp",
+      "to": "presentation",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "pres_exp",
+      "to": "trade_with_expert",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "pres_exp_yes",
+      "to": "presentation",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "pres_exp_yes",
+      "to": "trade_with_expert",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "pres_exp_no",
+      "to": "presentation",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "pres_exp_no",
+      "to": "trade_with_expert",
+      "label": "➡ Далі"
     },
     {
       "from": "pres_exp",
@@ -1263,22 +1303,22 @@
     {
       "from": "pres_noexp",
       "to": "trade_with_expert",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "pres_exp_yes",
       "to": "trade_with_expert",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "pres_exp_no",
       "to": "trade_with_expert",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "trade_with_expert",
       "to": "client_questions",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "client_questions",
@@ -1303,12 +1343,12 @@
     {
       "from": "platform_demo",
       "to": "entry_amounts",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "entry_amounts",
       "to": "objections_root",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "objections_root",
@@ -1488,52 +1528,52 @@
     {
       "from": "bar_email",
       "to": "experience_q",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "bar_not_registered",
       "to": "experience_q",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "bar_not_mine",
       "to": "experience_q",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "bar_nothing_needed",
       "to": "experience_q",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "bar_busy",
       "to": "experience_q",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "bar_child",
       "to": "experience_q",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "bar_no_time",
       "to": "experience_q",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "bar_accidental",
       "to": "experience_q",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "bar_not_interesting",
       "to": "experience_q",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "bar_scam",
       "to": "experience_q",
-      "label": "Далі"
+      "label": "➡ Далі"
     },
     {
       "from": "node",
