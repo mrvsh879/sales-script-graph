@@ -1775,8 +1775,9 @@
 
   ],
   "ui": {
-    "sticky_comment_panel": true,
-    "sticky_comment_title": "Коментар про клієнта"
-  }
+  "sticky_comment_panel": true,
+  "sticky_comment_title": "Коментар про клієнта",
+  "sticky_comment_position": "right"
+}
     }
    
