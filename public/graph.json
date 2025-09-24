@@ -187,20 +187,20 @@
 
     {
       "id": "experience_q",
-      "title": "Досвід — питання",
+      "title": "ДОСВІД _ ПИТАННЯ",
       "type": "question",
       "text": [
         "[імʼя клієнта], Co Pana / Panią zainteresowało w naszej ofercie, że Pan / Pani zdecydował / zdecydowała się na rejestrację?"
       ],
       "transitions": [
-        { "label": "Немає досвіду", "to": "exp_no" },
-        { "label": "Є досвід", "to": "exp_yes" }
+        { "label": "НЕМАЄ ДОСВІД", "to": "exp_no" },
+        { "label": "Є ДОСВІД", "to": "exp_yes" }
       ]
     },
 
     {
       "id": "exp_no",
-      "title": "Немає досвіду:",
+      "title": "НЕМАЄ ДОСВІДУ:",
       "type": "snippet",
       "text": [
         "— Pan/i jest zielony/a w tej branży",
@@ -217,7 +217,7 @@
 
     {
       "id": "exp_yes",
-      "title": "Є досвід:",
+      "title": "Є ДОСВІД:",
       "type": "snippet",
       "text": [
         "Nie jest Pan/i osobą początkującą w tej branży, więc będzie to dla nas łatwe.",
@@ -225,12 +225,12 @@
         "БІЛЬШЕ ПИТАНЬ ПРО ДОСВІД НА ЦЬОМУ ЕТАПІ МИ НЕ СТАВИМО!!!"
       ],
       "transitions": [
-        { "label": "До етапу «Робота»", "to": "work" }
+        { "label": "До етапу «РОБОТА»", "to": "work" }
       ]
     },
     {
       "id": "work",
-      "title": "Робота",
+      "title": "РОБОТА",
       "type": "question",
       "text": [
         "РОБОТА:",
@@ -258,7 +258,7 @@
     },
     {
       "id": "family",
-      "title": "Сімʼя",
+      "title": "СІМ'Я",
       "type": "question",
       "text": [
         "СІМ’Я:",
@@ -273,7 +273,7 @@
     },
     {
       "id": "back_to_exp",
-      "title": "Повертаємось до досвіду",
+      "title": "ПОВЕРТАЄМОСЬ ДО ДОСВІДУ",
       "type": "question",
       "text": [
         "ПОВЕРТАЄМОСЬ ДО ДОСВІДУ:(якщо клієнт раніше казав, що досвіду немає — пропускаємо цей розділ",
@@ -339,7 +339,7 @@
     },
     {
       "id": "presentation",
-      "title": "Презентація",
+      "title": "ПРЕЗЕНТАЦІЯ",
       "type": "router",
       "text": [
         "ПРЕЗЕНТАЦІЯ:"
@@ -377,7 +377,7 @@
     },
     {
       "id": "pres_exp_yes",
-      "title": "OK — wtedy…",
+      "title": "Пояснення як з досвідом",
       "type": "snippet",
       "text": [
         "Świetnie. Możliwe, że ciekawi Pana/ią jakiś bardziej konkretny rodzaj rynku?",
@@ -409,29 +409,37 @@
     },
     {
       "id": "trade_with_expert",
-      "title": "Торгівля з експертом",
+      "title": "ТОРГІВЛЯ З ЕКСПЕРТОМ",
       "type": "snippet",
       "text": [
         "ТОРГІВЛЯ З ЕКСПЕРТОМ",
-        "Jak Pan/i myśli, w jaki sposób odbywa się handel z ekspertem? [чекаємо на відповідь. Хвалимо, якщо намагається відповідати.]",
-        "Ekspert to osoba z ponad 10-letnim doświadczeniem na rynkach finansowych. Do Pana/i zostanie przydzielony taki właśnie ekspert, który będzie prowadził Pana/ią przez cały okres współpracy. Ekspert pomoże, doradzi, wszystko tłumaczy krok po kroku. Przekazuje gotowe informacje o tym, jaki aktyw kupić lub sprzedać, ile można na tym zarobić i w jakim czasie.",
+        "Jak Pan/i myśli, w jaki sposób odbywa się handel z ekspertem?",
+        "[чекаємо на відповідь. Хвалимо, якщо намагається відповідати.]",
+        
+        "Ekspert to osoba z ponad 10-letnim doświadczeniem na rynkach finansowych. Do Pana/i zostanie przydzielony taki właśnie ekspert, który będzie prowadził Pana/ią przez cały okres współpracy.", 
+        "Ekspert pomoże, doradzi, wszystko tłumaczy krok po kroku. Przekazuje gotowe informacje o tym, jaki aktyw kupić lub sprzedać, ile można na tym zarobić i w jakim czasie.",
         "Może Pan/i być całkowicie spokojny/a — to naprawdę bardzo proste. Wystarczy nacisnąć jeden przycisk, by zawrzeć transakcję, a później ją zamknąć.",
+        
         "Jakie pytania ma Pan/i do mnie na tym etapie?",
+        
         "Na pewno słyszał/a Pan/i o tym, że na świecie mają miejsce wydarzenia, które pozwalają dobrze zarobić na rynku. Na przykład, gdy firma Tesla wprowadza nowy model samochodu, akcje tej firmy szybko rosną i właśnie na tym można zarobić!",
         "Czy słyszał/a Pan/i kiedyś o czymś takim? [чекаємо на відповідь]",
-        "Jeśli odpowiedź \"Tak\" → przechodzimy dalej.",
-        "Jeśli \"Nie\" → podajemy inny przykład, wskazany na poprzedniej ścieżce.",
+        
+        "• Якщо відповідь так „Tak” – продовжуємо далі по скрипту.",
+        "• Якщо „Nie” – наводимо ще один приклад, схожий на попередній.",
+        
         "Świetnie! Bo oto właśnie w takich sytuacjach będzie informował Pana/ią ekspert, który dokładnie wyjaśni, ile można na takiej transakcji zarobić i jak ją przeprowadzić.",
         "Czasem takie wydarzenie pozwala naszym klientom zarobić nawet kilkaset zł w ciągu jednego dnia handlowego, a bywa, że i kilka tysięcy.",
         "Właśnie dlatego współpracując z ekspertem, może Pan/i zarobić nawet do 50% miesięcznie od zainwestowanej kwoty.",
         "Na przykład: jeśli zacznie Pan/i od 1000 zł, to na koniec pierwszego miesiąca może mieć Pan/i na koncie 1500 zł.",
         "Gdzie 1000 zł to kwota inwestowana, a 500 zł to Pana/i zysk.",
+        
         "Czy taki zysk jest dla Pana/Pani zadowalający?"
       ]
     },
     {
   "id": "client_questions",
-  "title": "Питання клієнтів",
+  "title": "ПИТАННЯ КЛІЄНТІВ",
   "type": "router",
   "text": [],
   "transitions": [
@@ -509,13 +517,14 @@
         "— Proponuję, żeby teraz zalogował/a się Pan/i na platformie. Pokażę, jak wszystko działa i od razu zmienimy hasło, aby zabezpieczyć konto handlowe.",
         "— Za chwilę wyślę Panu/Pani link do naszej platformy — proszę tylko powiedzieć, gdzie będzie wygodniej go otrzymać: na e-mail czy na WhatsApp?",
         "[Якщо на пошту, перевіряємо пошту чи він/вона залишив під час реєстрації. Якщо na WhatsApp — фіксуємо свій номер, щоб клієнт додав вас, а в рідкісних випадках додаємо самі.]",
+        
         "— Czy dobrze rozumiem, że ma Pan/i teraz możliwość otworzyć naszą platformę?",
         "[Тільки після позитивної відповіді відправляємо посилання і ведемо клієнта далі по платформі.]"
       ]
     },
     {
       "id": "entry_amounts",
-      "title": "Суми для входу на ринок",
+      "title": "СУМИ ДЛЯ ВХОДУ У РИНОК",
       "type": "question",
       "text": [
         "СУМИ ДЛЯ ВХОДУ НА РИНОК:",
@@ -536,7 +545,7 @@
     },
    {
   "id": "objections_root",
-  "title": "Заперечення — меню",
+  "title": "ЗАПЕРЕЧЕННЯ",
   "type": "router",
   "text": [],
   "transitions": [
