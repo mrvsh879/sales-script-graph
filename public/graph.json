@@ -628,11 +628,22 @@
       "title": "ЗАКРИТТЯ — ПОПОВНЕННЯ",
       "type": "snippet",
       "text": [
-        "— Czy ma Pan/i jeszcze jakieś pytania? Polecam aktywować swoje konto handlowe już teraz!",
-        "— Mamy różne sposoby aktywacji konta — który z nich najbardziej Panu/Pani odpowiada?",
-        "[Якщо каже, що не знає або питає які є варіанти — читаємо далі]",
-        "— Do wyboru ma Pan/i zwykły przelew, BLIK albo płatność w kryptowalucie.",
-        "[ОБОВ’ЯЗКОВО уточнити з якого банку буде робити переказ і чи сума, яку обрав зараз, є доступна]"
+        "— Czy są jeszcze jakieś pytania? Polecam aktywować swoje konto handlowe już teraz! ",
+        "Co o tym sądzisz?",
+        
+        "—Aktywacja konta odbywa się w kilku etapach:",
+        "1) Wspólnie wejdziemy do Twojego osobistego konta, abyś mógł bezpośrednio złożyć wniosek o podanie danych osobowych niezbędnych do zasilenia konta.",
+        "2) Następnie należy dokładnie przepisać dane. Bardzo ważne jest, aby być uważnym i nie pominąć żadnej cyfry ani litery.",
+        "3) Po dokonaniu przelewu należy dostarczyć potwierdzenie pomyślnej operacji bankowej, abym mógł przekazać tę informację do działu finansowego w celu zaksięgowania środków na koncie handlowym.",
+        
+        "Proszę podać, z jakiego banku planują Państwo przelać środki na swoje konto handlowe?",
+        
+        "Korzystasz z aplikacji mobilnej swojego banku?",
+        
+        "Czy kwota 1000 złotych jest dostępna w tym banku lub w innym Twoim banku?", 
+        "(ВАЖЛИВО СЛУХАТИ УВАЖНО ВІДПОВІДІ КЛІЄНТА)",
+
+        "Świetnie, przejdźmy do pierwszego kroku, dobrze?"
       ]
     },
     {
@@ -1633,6 +1644,31 @@
     {
       "from": "closing_payment",
       "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "work",
+      "to": "experience_q",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "family",
+      "to": "work",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "back_to_exp",
+      "to": "family",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "goal",
+      "to": "back_to_exp",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "presentation",
+      "to": "goal",
       "label": "⬅ Назад"
     },
     {
