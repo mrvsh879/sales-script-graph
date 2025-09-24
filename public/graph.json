@@ -1330,11 +1330,6 @@
     },
     {
       "from": "objections_root",
-      "to": "payment",
-      "label": "Перейти до оплати"
-    },
-    {
-      "from": "objections_root",
       "to": "tomorrow",
       "label": "Давайте завтра"
     },
