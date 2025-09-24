@@ -13,9 +13,9 @@ interface GraphNode {
   id: string;
   title: string;
   type: NodeType;
-  text?: string[];          // для snippet / question / greeting
-  options?: { label: string; to: string }[]; // историческое поле
-  transitions?: Transition[]; // предпочтительный источник кнопок
+  text?: string[];
+  options?: { label: string; to: string }[];
+  transitions?: Transition[];
 }
 
 interface Edge {
@@ -84,11 +84,16 @@ const App: React.FC = () => {
   const [comment, setComment] = useState("");
   const contentTopRef = useRef<HTMLDivElement>(null);
 
-  // Загрузка graph.json
+  // ключ для localStorage (на случай разных графов)
+  const graphKey = "graph";
+
+  // Загрузка graph.json (работает и локально, и на GitHub Pages с под-путём)
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch("graph.json", { cache: "no-store" });
+        const base =
+          (import.meta as any).env?.BASE_URL?.replace(/\/+$/, "") || "";
+        const res = await fetch(`${base}/graph.json`, { cache: "no-store" });
         const data = (await res.json()) as GraphData;
         setGraph(data);
 
@@ -97,11 +102,20 @@ const App: React.FC = () => {
           data.nodes.find((n) => n.type === "greeting")?.id || data.nodes[0]?.id;
         setCurrentId(start || null);
         setHistory(start ? [start] : []);
+
+        // восстановим заметку, если была
+        const saved = localStorage.getItem(`notes:${graphKey}`);
+        if (saved != null) setComment(saved);
       } catch (e) {
         console.error("Не удалось загрузить graph.json", e);
       }
     })();
   }, []);
+
+  // сохраняем заметку
+  useEffect(() => {
+    localStorage.setItem(`notes:${graphKey}`, comment);
+  }, [comment]);
 
   // удобный доступ к ноде по id
   const nodeMap = useMemo(() => {
@@ -117,7 +131,6 @@ const App: React.FC = () => {
     if (!nextId || !nodeMap.has(nextId)) return;
     setCurrentId(nextId);
     setHistory((h) => [...h, nextId]);
-    // плавный скролл вверх контентной части
     requestAnimationFrame(() => {
       contentTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
@@ -149,9 +162,7 @@ const App: React.FC = () => {
     if (!current || !graph) return [];
     if (current.transitions?.length) return current.transitions;
 
-    // fallback: из edges
-    const fromEdges =
-      graph.edges?.filter((e) => e.from === current.id) || [];
+    const fromEdges = graph.edges?.filter((e) => e.from === current.id) || [];
     return fromEdges.map((e) => ({ label: e.label, to: e.to }));
   }, [current, graph]);
 
@@ -254,7 +265,7 @@ const App: React.FC = () => {
         )}
 
         {/* === Левая колонка: навигация (sidebar) === */}
-        <aside className="rounded-2xl border border-white/5 bg-zinc-900/40 backdrop-blur p-3 lg:h-[calc(100dvh-120px)] lg:overflow-hidden">
+        <aside className="rounded-2xl border border-white/5 bg-zinc-900/40 backdrop-blur p-3 lg:h:[calc(100dvh-120px)] lg:overflow-hidden">
           <div className="mb-2">
             <div className="px-2 text-[11px] uppercase tracking-widest text-zinc-400">
               Вузли
