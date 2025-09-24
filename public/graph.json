@@ -1277,11 +1277,6 @@
       "label": "⬅ Назад"
     },
     {
-      "from": "pres_exp_yes",
-      "to": "trade_with_expert",
-      "label": "➡ Далі"
-    },
-    {
       "from": "pres_exp_no",
       "to": "presentation",
       "label": "⬅ Назад"
