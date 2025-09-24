@@ -250,7 +250,7 @@
         "- Czy zastanawiał/a się Pan/Pani, ile chciał(a)by Pan/Pani zarobić?",
         "- A jak widzi Pan/Pani współpracę z naszą firmą?",
         
-        "Якщо людина в віці [50+] або пенсіонер:",
+        "ЯКЩО ЛЮДИНА В ВІЦІ (50+) АБО ПЕНСІОНЕР:",
         "- Naprawdę? — Szczerze mówiąc, brzmi Pan/Pani bardzo młodo — trudno mi uwierzyć, że ma Pan/Pani więcej niż 40–50 lat.",
         "[це комплімент, говоримо з усмішкою]",
         "- Wie Pan/Pani, najważniejsze jest to, na ile lat się Pan/Pani czuje, a nie to, co jest wpisane w paszporcie. Szanuję Pana/Panią, bo w tym wieku chce się Pan/Pani nauczyć czegoś nowego i spróbować swoich sił w nowej branży.",
@@ -281,7 +281,7 @@
       "type": "question",
       "text": [
         "ПОВЕРТАЄМОСЬ ДО ДОСВІДУ:",
-        "(ЯКЩО КЛІЄНТ РАНІШЕ КАЗАВ ЩО ДОСВІДУ НЕМАЄ _ ТО ПРОПУСКАЄМО ЦІЙ РОЗДІЛ)",
+        "(ЯКЩО КЛІЄНТ РАНІШЕ КАЗАВ ЩО ДОСВІДУ НЕМАЄ-ТО ПРОПУСКАЄМО ЦІЙ РОЗДІЛ)",
         "— Wspomniał/a Pan/i wcześniej, że miał/a Pan/i doświadczenie w branży inwestycyjnej. Proszę powiedzieć coś więcej:",
         "– Czy handlował/a Pan/Pani samodzielnie, czy za pośrednictwem banku albo firmy brokerskiej?",
         "– Na jakich aktywach Pan/Pani handlował/a?",
