@@ -1,13 +1,20 @@
 // src/components/Sidebar.tsx
 import React from "react";
 
-type SidebarProps = {
-  nodes: { id: string; title: string; type: string }[];
+export type Node = {
+  id: string;
+  title: string;
+  type: string;
+  text?: string[];
+};
+
+type Props = {
+  nodes: Node[];
   currentId: string | null;
   onSelect: (id: string) => void;
 };
 
-export default function Sidebar({ nodes, currentId, onSelect }: SidebarProps) {
+export default function Sidebar({ nodes, currentId, onSelect }: Props) {
   const [q, setQ] = React.useState("");
 
   const filtered = React.useMemo(() => {
@@ -17,38 +24,41 @@ export default function Sidebar({ nodes, currentId, onSelect }: SidebarProps) {
       (n) =>
         n.id.toLowerCase().includes(s) ||
         n.title.toLowerCase().includes(s) ||
-        n.type.toLowerCase().includes(s)
+        (n.text || []).some((t) => t.toLowerCase().includes(s))
     );
   }, [q, nodes]);
 
   return (
-    <aside className="h-full w-full overflow-hidden border-r border-white/10 bg-slate-900/60 backdrop-blur">
+    <aside className="h-full border-r border-white/10 bg-slate-950/40 backdrop-blur">
       <div className="p-3 border-b border-white/10">
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Пошук…"
-          className="w-full rounded-md bg-slate-800/70 px-3 py-2 text-sm outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-cyan-400"
+          className="w-full rounded-md bg-slate-900/70 px-3 py-2 text-sm outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-cyan-400"
         />
       </div>
 
       <div className="h-[calc(100%-3rem)] overflow-y-auto p-2 space-y-1">
-        {filtered.map((n) => (
-          <button
-            key={n.id}
-            onClick={() => onSelect(n.id)}
-            className={`w-full text-left rounded-lg px-3 py-2 text-sm transition
-            ${currentId === n.id
-                ? "bg-cyan-600/20 ring-1 ring-cyan-400 text-white"
-                : "hover:bg-white/5 text-slate-200"}`}
-            title={n.id}
-          >
-            <div className="text-[10px] uppercase tracking-wide text-slate-400">
-              {n.type}
-            </div>
-            <div className="truncate">{n.title || n.id}</div>
-          </button>
-        ))}
+        {filtered.map((n) => {
+          const active = n.id === currentId;
+          return (
+            <button
+              key={n.id}
+              onClick={() => onSelect(n.id)}
+              className={[
+                "w-full text-left px-3 py-2 rounded-md border",
+                active
+                  ? "bg-cyan-900/30 border-cyan-700/40 ring-1 ring-cyan-600/30"
+                  : "bg-slate-900/50 border-white/10 hover:bg-slate-900/70",
+              ].join(" ")}
+              title={n.id}
+            >
+              <div className="text-[11px] text-slate-400">{n.id}</div>
+              <div className="text-slate-100 font-medium">{n.title}</div>
+            </button>
+          );
+        })}
       </div>
     </aside>
   );
