@@ -1482,7 +1482,14 @@
     { "from": "bar_no_time",         "to": "barriers_router", "label": "⬅ Назад" },
     { "from": "bar_accidental",      "to": "barriers_router", "label": "⬅ Назад" },
     { "from": "bar_not_interesting", "to": "barriers_router", "label": "⬅ Назад" },
-    { "from": "bar_scam",            "to": "barriers_router", "label": "⬅ Назад" } 
+    { "from": "bar_scam",            "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "interest_company", "to": "client_questions", "label": "⬅ Назад" },
+    { "from": "interest_company", "to": "platform_demo",   "label": "➡ Далі" },
+    { "from": "risks",            "to": "client_questions", "label": "⬅ Назад" },
+    { "from": "risks",            "to": "platform_demo",    "label": "➡ Далі" },
+    { "from": "fund_location",    "to": "client_questions", "label": "⬅ Назад" },
+    { "from": "fund_location",    "to": "platform_demo",    "label": "➡ Далі" }
+
   ],
   "ui": {
     "sticky_comment_panel": true,
