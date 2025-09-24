@@ -1439,6 +1439,16 @@
       "label": "➡ Далі"
     },
     {
+      "from": "tomorrow",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "tomorrow",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
       "from": "closing_payment",
       "to": "objections_root",
       "label": "⬅ Назад"
