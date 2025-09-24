@@ -1,7 +1,9 @@
 // src/App.tsx
 import React, { useEffect, useMemo, useRef, useState } from "react";
 
-/** ===== Типы данных (совместимы с вашим graph.json) ===== */
+/* =========================
+   Типы, совместимые с graph.json
+   ========================= */
 type NodeType = "greeting" | "router" | "question" | "snippet";
 
 interface Transition {
@@ -14,8 +16,8 @@ interface GraphNode {
   title: string;
   type: NodeType;
   text?: string[];
-  options?: { label: string; to: string }[];
-  transitions?: Transition[];
+  options?: { label: string; to: string }[]; // старое поле (необязательно)
+  transitions?: Transition[];               // предпочтительный источник кнопок
 }
 
 interface Edge {
@@ -36,88 +38,171 @@ interface GraphData {
   ui?: GraphUI;
 }
 
-/** ===== Вспомогательные утилиты ===== */
-const typeBadge = (t: NodeType) => {
-  switch (t) {
-    case "greeting":
-      return "Привітання";
-    case "router":
-      return "Router";
-    case "question":
-      return "Question";
-    case "snippet":
-      return "Snippet";
-    default:
-      return t;
-  }
+/* =========================
+   Небольшие утилиты
+   ========================= */
+const TYPE_COLORS: Record<NodeType, string> = {
+  greeting:
+    "bg-emerald-900/40 text-emerald-300 ring-1 ring-emerald-700/40 shadow-[inset_0_0_20px_rgba(16,185,129,0.2)]",
+  router:
+    "bg-cyan-900/40 text-cyan-300 ring-1 ring-cyan-700/40 shadow-[inset_0_0_20px_rgba(34,211,238,0.2)]",
+  question:
+    "bg-violet-900/40 text-violet-300 ring-1 ring-violet-700/40 shadow-[inset_0_0_20px_rgba(139,92,246,0.2)]",
+  snippet:
+    "bg-sky-900/40 text-sky-300 ring-1 ring-sky-700/40 shadow-[inset_0_0_20px_rgba(56,189,248,0.2)]",
 };
 
-const TypePill: React.FC<{ t: NodeType }> = ({ t }) => {
-  const palette: Record<NodeType, string> = {
-    greeting:
-      "bg-emerald-900/40 text-emerald-300 ring-1 ring-emerald-700/40 shadow-[inset_0_0_20px_rgba(16,185,129,0.2)]",
-    router:
-      "bg-cyan-900/40 text-cyan-300 ring-1 ring-cyan-700/40 shadow-[inset_0_0_20px_rgba(34,211,238,0.2)]",
-    question:
-      "bg-violet-900/40 text-violet-300 ring-1 ring-violet-700/40 shadow-[inset_0_0_20px_rgba(139,92,246,0.2)]",
-    snippet:
-      "bg-sky-900/40 text-sky-300 ring-1 ring-sky-700/40 shadow-[inset_0_0_20px_rgba(56,189,248,0.2)]",
-  };
+const TypePill: React.FC<{ t: NodeType }> = ({ t }) => (
+  <span
+    className={
+      "px-2.5 py-1 rounded-full text-[11px] font-semibold tracking-wide " +
+      TYPE_COLORS[t]
+    }
+  >
+    {t.toUpperCase()}
+  </span>
+);
+
+const useLocalStorage = (key: string, initial = "") => {
+  const [val, setVal] = useState<string>(() => {
+    try {
+      const r = localStorage.getItem(key);
+      return r ?? initial;
+    } catch {
+      return initial;
+    }
+  });
+  useEffect(() => {
+    try {
+      localStorage.setItem(key, val);
+    } catch {}
+  }, [key, val]);
+  return [val, setVal] as const;
+};
+
+/* =========================
+   Компонент Заметок (справа)
+   ========================= */
+const StickyNotes: React.FC<{
+  title: string;
+  storageKey: string;
+}> = ({ title, storageKey }) => {
+  const [text, setText] = useLocalStorage(storageKey, "");
   return (
-    <span
-      className={
-        "px-3 py-1 rounded-full text-xs font-semibold tracking-wide " +
-        palette[t]
-      }
-    >
-      {typeBadge(t)}
-    </span>
+    <aside className="hidden lg:block">
+      <div className="rounded-2xl border border-white/5 bg-zinc-900/40 backdrop-blur p-4 sticky top-[88px]">
+        <div className="text-[11px] uppercase tracking-widest text-zinc-400 mb-2">
+          {title}
+        </div>
+        <textarea
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder="Ваші нотатки…"
+          className="w-full h-[280px] rounded-xl bg-zinc-800/60 border border-white/10 p-3 text-sm text-zinc-200 focus:outline-none focus:ring-2 ring-cyan-500/40 resize-none"
+        />
+        <div className="mt-2 text-[11px] text-zinc-500">
+          Зберігається локально*
+        </div>
+      </div>
+    </aside>
   );
 };
 
-/** ===== Главный компонент ===== */
+/* =========================
+   Сайдбар (поиск + список узлов)
+   ========================= */
+const Sidebar: React.FC<{
+  nodes: GraphNode[];
+  currentId: string | null;
+  onSelect: (id: string) => void;
+}> = ({ nodes, currentId, onSelect }) => {
+  const [search, setSearch] = useState("");
+
+  const filtered = useMemo(() => {
+    const s = search.trim().toLowerCase();
+    if (!s) return nodes;
+    return nodes.filter(
+      (n) =>
+        n.title.toLowerCase().includes(s) ||
+        n.id.toLowerCase().includes(s) ||
+        (n.text || []).some((t) => t.toLowerCase().includes(s))
+    );
+  }, [nodes, search]);
+
+  return (
+    <aside className="rounded-2xl border border-white/5 bg-zinc-900/40 backdrop-blur p-3 lg:h-[calc(100dvh-96px)] lg:overflow-hidden">
+      <div className="mb-2">
+        <div className="px-2 text-[11px] uppercase tracking-widest text-zinc-400">
+          Вузли
+        </div>
+        <div className="relative mt-2">
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Пошук…"
+            className="w-full rounded-xl bg-zinc-800/60 border border-white/10 px-10 py-2.5 text-sm focus:outline-none focus:ring-2 ring-cyan-500/40"
+          />
+          <div className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-500">
+            🔎
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-3 overflow-y-auto lg:h-[calc(100%-84px)] pr-1 space-y-1 custom-scroll">
+        {filtered.map((n) => {
+          const active = n.id === currentId;
+          return (
+            <button
+              key={n.id}
+              onClick={() => onSelect(n.id)}
+              className={[
+                "w-full text-left px-3 py-2 rounded-xl border transition-colors",
+                active
+                  ? "bg-cyan-950/40 border-cyan-800/40 ring-1 ring-cyan-700/30"
+                  : "bg-zinc-800/40 border-white/5 hover:bg-zinc-800/60",
+              ].join(" ")}
+            >
+              <div className="text-[11px] text-zinc-400">{n.id}</div>
+              <div className="flex items-center gap-2">
+                <div className="font-medium text-sm text-zinc-100">
+                  {n.title}
+                </div>
+                <TypePill t={n.type} />
+              </div>
+            </button>
+          );
+        })}
+      </div>
+    </aside>
+  );
+};
+
+/* =========================
+   Главный App
+   ========================= */
 const App: React.FC = () => {
   const [graph, setGraph] = useState<GraphData | null>(null);
   const [currentId, setCurrentId] = useState<string | null>(null);
   const [history, setHistory] = useState<string[]>([]);
-  const [search, setSearch] = useState("");
-  const [comment, setComment] = useState("");
   const contentTopRef = useRef<HTMLDivElement>(null);
 
-  // ключ для localStorage (на случай разных графов)
-  const graphKey = "graph";
-
-  // Загрузка graph.json (работает и локально, и на GitHub Pages с под-путём)
+  // загрузка graph.json
   useEffect(() => {
     (async () => {
-      try {
-        const base =
-          (import.meta as any).env?.BASE_URL?.replace(/\/+$/, "") || "";
-        const res = await fetch(`${base}/graph.json`, { cache: "no-store" });
-        const data = (await res.json()) as GraphData;
-        setGraph(data);
+      const res = await fetch("graph.json", { cache: "no-store" });
+      const data = (await res.json()) as GraphData;
+      setGraph(data);
 
-        // стартовая нода — greeting или первая
-        const start =
-          data.nodes.find((n) => n.type === "greeting")?.id || data.nodes[0]?.id;
-        setCurrentId(start || null);
-        setHistory(start ? [start] : []);
-
-        // восстановим заметку, если была
-        const saved = localStorage.getItem(`notes:${graphKey}`);
-        if (saved != null) setComment(saved);
-      } catch (e) {
-        console.error("Не удалось загрузить graph.json", e);
-      }
-    })();
+      const start =
+        data.nodes.find((n) => n.type === "greeting")?.id ||
+        data.nodes[0]?.id ||
+        null;
+      setCurrentId(start);
+      setHistory(start ? [start] : []);
+    })().catch((e) => console.error("Не удалось загрузить graph.json", e));
   }, []);
 
-  // сохраняем заметку
-  useEffect(() => {
-    localStorage.setItem(`notes:${graphKey}`, comment);
-  }, [comment]);
-
-  // удобный доступ к ноде по id
+  // мапа узлов по id
   const nodeMap = useMemo(() => {
     const m = new Map<string, GraphNode>();
     graph?.nodes.forEach((n) => m.set(n.id, n));
@@ -126,27 +211,32 @@ const App: React.FC = () => {
 
   const current = currentId ? nodeMap.get(currentId) : undefined;
 
-  // переход по переходу
+  // переходы из ноды (или из edges)
+  const transitions: Transition[] = useMemo(() => {
+    if (!current || !graph) return [];
+    if (current.transitions?.length) return current.transitions;
+    const es = graph.edges?.filter((e) => e.from === current.id) || [];
+    return es.map((e) => ({ label: e.label, to: e.to }));
+  }, [current, graph]);
+
+  // переходы/навигация
   const goTo = (nextId: string) => {
     if (!nextId || !nodeMap.has(nextId)) return;
     setCurrentId(nextId);
     setHistory((h) => [...h, nextId]);
-    requestAnimationFrame(() => {
-      contentTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
+    requestAnimationFrame(() =>
+      contentTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
+    );
   };
 
-  // назад по истории
-  const goBack = () => {
+  const goBack = () =>
     setHistory((h) => {
       if (h.length <= 1) return h;
       const prev = h[h.length - 2];
       setCurrentId(prev);
       return h.slice(0, -1);
     });
-  };
 
-  // Домой (к greeting)
   const goHome = () => {
     if (!graph) return;
     const start =
@@ -156,35 +246,6 @@ const App: React.FC = () => {
       setHistory([start]);
     }
   };
-
-  // из узла берём transitions — либо свои, либо из edges
-  const transitions: Transition[] = useMemo(() => {
-    if (!current || !graph) return [];
-    if (current.transitions?.length) return current.transitions;
-
-    const fromEdges = graph.edges?.filter((e) => e.from === current.id) || [];
-    return fromEdges.map((e) => ({ label: e.label, to: e.to }));
-  }, [current, graph]);
-
-  // фильтр списка узлов в сайдбаре
-  const filteredNodes = useMemo(() => {
-    if (!graph) return [];
-    const s = search.trim().toLowerCase();
-    if (!s) return graph.nodes;
-    return graph.nodes.filter(
-      (n) =>
-        n.title.toLowerCase().includes(s) ||
-        n.id.toLowerCase().includes(s) ||
-        (n.text || []).some((t) => t.toLowerCase().includes(s))
-    );
-  }, [graph, search]);
-
-  const stickyRight =
-    graph?.ui?.sticky_comment_panel &&
-    (graph?.ui?.sticky_comment_position ?? "right") === "right";
-  const stickyLeft =
-    graph?.ui?.sticky_comment_panel &&
-    (graph?.ui?.sticky_comment_position ?? "right") === "left";
 
   if (!graph || !current) {
     return (
@@ -196,9 +257,15 @@ const App: React.FC = () => {
     );
   }
 
+  // UI: заметки всегда справа (как ты и хотел).
+  // Если хочешь уважать graph.ui.sticky_comment_position — раскомментируй 2 строки ниже.
+  const showNotes = graph.ui?.sticky_comment_panel !== false;
+  // const notesOnRight = (graph.ui?.sticky_comment_position ?? "right") === "right";
+  const notesTitle = graph.ui?.sticky_comment_title || "Коментар про клієнта";
+
   return (
     <div className="min-h-screen bg-[#0b0e14] text-zinc-200">
-      {/* === Градиентная сетка в фоне + подсветка === */}
+      {/* фоновые светящиеся пятна */}
       <div className="pointer-events-none fixed inset-0 opacity-[0.07]" aria-hidden>
         <div
           className="w-full h-full"
@@ -209,7 +276,7 @@ const App: React.FC = () => {
         />
       </div>
 
-      {/* === Хедер === */}
+      {/* шапка */}
       <header className="sticky top-0 z-30 backdrop-blur bg-[#0b0e14]/60 border-b border-white/5">
         <div className="mx-auto max-w-screen-2xl px-6 py-3 flex items-center gap-4">
           <div className="flex items-center gap-3">
@@ -225,6 +292,7 @@ const App: React.FC = () => {
               </div>
             </div>
           </div>
+
           <div className="ml-auto flex items-center gap-2">
             <button
               onClick={goHome}
@@ -241,7 +309,7 @@ const App: React.FC = () => {
               ← Назад
             </button>
             <button
-              onClick={() => goTo(history[history.length - 1])}
+              onClick={() => currentId && goTo(currentId)}
               className="px-3 py-1.5 rounded-lg bg-cyan-600/80 hover:bg-cyan-600 text-white text-sm"
               title="Перезапустить текущий узел"
             >
@@ -251,70 +319,22 @@ const App: React.FC = () => {
         </div>
       </header>
 
-      {/* === Основная трех-колоночная раскладка === */}
-      <div className="mx-auto max-w-screen-2xl px-4 md:px-6 py-6 grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6">
-        {/* ==== Левая заметка (если ui требует left) ==== */}
-        {stickyLeft && (
-          <aside className="hidden lg:block">
-            <StickyNotes
-              title={graph.ui?.sticky_comment_title || "Коментар"}
-              value={comment}
-              onChange={setComment}
-            />
-          </aside>
-        )}
+      {/* основная раскладка: 3 колонки всегда, заметки справа */}
+      <div className="mx-auto max-w-screen-2xl px-4 md:px-6 py-6 grid grid-cols-1 lg:grid-cols-[280px_1fr_320px] gap-6">
+        {/* колонка: сайдбар */}
+        <Sidebar
+          nodes={graph.nodes}
+          currentId={currentId}
+          onSelect={(id) => {
+            setCurrentId(id);
+            setHistory((h) => [...h, id]);
+          }}
+        />
 
-        {/* === Левая колонка: навигация (sidebar) === */}
-        <aside className="rounded-2xl border border-white/5 bg-zinc-900/40 backdrop-blur p-3 lg:h:[calc(100dvh-120px)] lg:overflow-hidden">
-          <div className="mb-2">
-            <div className="px-2 text-[11px] uppercase tracking-widest text-zinc-400">
-              Вузли
-            </div>
-            <div className="relative mt-2">
-              <input
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder="Пошук…"
-                className="w-full rounded-xl bg-zinc-800/60 border border-white/10 px-10 py-2.5 text-sm focus:outline-none focus:ring-2 ring-cyan-500/40"
-              />
-              <div className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-500">
-                🔎
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-3 overflow-y-auto lg:h-[calc(100%-84px)] pr-1 space-y-1 custom-scroll">
-            {filteredNodes.map((n) => {
-              const active = n.id === current.id;
-              return (
-                <button
-                  key={n.id}
-                  onClick={() => goTo(n.id)}
-                  className={[
-                    "w-full text-left px-3 py-2 rounded-xl border",
-                    active
-                      ? "bg-cyan-950/40 border-cyan-800/40 ring-1 ring-cyan-700/30"
-                      : "bg-zinc-800/40 border-white/5 hover:bg-zinc-800/60",
-                  ].join(" ")}
-                >
-                  <div className="text-[11px] text-zinc-400">{n.id}</div>
-                  <div className="flex items-center gap-2">
-                    <div className="font-medium text-sm text-zinc-100">
-                      {n.title}
-                    </div>
-                    <TypePill t={n.type} />
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-        </aside>
-
-        {/* === Центральная колонка: контент узла === */}
+        {/* колонка: контент */}
         <main>
           <div ref={contentTopRef} />
           <div className="rounded-2xl border border-white/5 bg-zinc-900/40 backdrop-blur p-6 relative overflow-hidden">
-            {/* подсветка под заголовком */}
             <div className="pointer-events-none absolute inset-0 opacity-[0.12]" aria-hidden>
               <div
                 className="w-full h-40"
@@ -334,7 +354,6 @@ const App: React.FC = () => {
                 {current.title}
               </h1>
 
-              {/* Текстовая часть узла */}
               {!!current.text?.length && (
                 <div className="mt-5 space-y-3">
                   {current.text.map((line, i) => (
@@ -345,7 +364,6 @@ const App: React.FC = () => {
                 </div>
               )}
 
-              {/* Кнопки переходов */}
               <div className="mt-6">
                 {transitions.length > 0 ? (
                   <>
@@ -375,19 +393,15 @@ const App: React.FC = () => {
           </div>
         </main>
 
-        {/* ==== Правая заметка (если ui требует right) ==== */}
-        {stickyRight && (
-          <aside className="hidden lg:block">
-            <StickyNotes
-              title={graph.ui?.sticky_comment_title || "Коментар"}
-              value={comment}
-              onChange={setComment}
-            />
-          </aside>
+        {/* колонка: заметки (всегда справа если включены) */}
+        {showNotes ? (
+          <StickyNotes title={notesTitle} storageKey="graph_notes" />
+        ) : (
+          <div className="hidden lg:block" />
         )}
       </div>
 
-      {/* === Низ страницы (подсказки) === */}
+      {/* подвал */}
       <footer className="px-6 py-6 text-center text-xs text-zinc-500">
         <span className="opacity-70">
           ↑ Використовуйте панель ліворуч для переходу між вузлами. Кнопки
@@ -395,7 +409,7 @@ const App: React.FC = () => {
         </span>
       </footer>
 
-      {/* стилизация кастомного скролла немного футуристичная */}
+      {/* стилизация скролла (косметика) */}
       <style>{`
         .custom-scroll::-webkit-scrollbar {
           width: 10px;
@@ -410,28 +424,6 @@ const App: React.FC = () => {
           background: transparent;
         }
       `}</style>
-    </div>
-  );
-};
-
-/** ===== Компонент «липкие заметки» ===== */
-const StickyNotes: React.FC<{
-  title: string;
-  value: string;
-  onChange: (v: string) => void;
-}> = ({ title, value, onChange }) => {
-  return (
-    <div className="rounded-2xl border border-white/5 bg-zinc-900/40 backdrop-blur p-4 sticky top-[88px]">
-      <div className="text-[11px] uppercase tracking-widest text-zinc-400 mb-2">
-        {title}
-      </div>
-      <textarea
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        placeholder="Ваші нотатки…"
-        className="w-full h-[260px] rounded-xl bg-zinc-800/60 border border-white/10 p-3 text-sm text-zinc-200 focus:outline-none focus:ring-2 ring-cyan-500/40 resize-none"
-      />
-      <div className="mt-2 text-[11px] text-zinc-500">Зберігається локально*</div>
     </div>
   );
 };
