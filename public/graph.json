@@ -1292,11 +1292,6 @@
       "label": "Nie"
     },
     {
-      "from": "pres_noexp",
-      "to": "trade_with_expert",
-      "label": "➡ Далі"
-    },
-    {
       "from": "pres_exp_yes",
       "to": "trade_with_expert",
       "label": "➡ Далі"
