@@ -460,7 +460,11 @@
         "Pana/Pani konto handlowe jest zabezpieczone prywatnym hasłem.",
         "Ani ja, ani ekspert nie mamy dostępu do tego konta, ponieważ najważniejsze jest bezpieczeństwo klienta.",
         "— Czy ma Pan/i do mnie jakieś pytania?"
-      ]
+      ],
+      "transitions": [
+    { "label": "⬅ Назад", "to": "client_questions" },
+    { "label": "➡ Далі", "to": "platform_demo" }
+  ]
     },
     {
       "id": "platform_demo",
@@ -473,7 +477,11 @@
         "[Якщо на пошту, перевіряємо пошту чи він/вона залишив під час реєстрації. Якщо na WhatsApp — фіксуємо свій номер, щоб клієнт додав вас, а в рідкісних випадках додаємо самі.]",
         "— Czy dobrze rozumiem, że ma Pan/i teraz możliwość otworzyć naszą platformę?",
         "[Тільки після позитивної відповіді відправляємо посилання і ведемо клієнта далі по платформі.]"
-      ]
+      ],
+      "transitions": [
+    { "label": "⬅ Назад", "to": "client_questions" },
+    { "label": "➡ Далі", "to": "platform_demo" }
+  ]
     },
     {
       "id": "entry_amounts",
@@ -495,6 +503,10 @@
         "— Do wyboru ma Pan/i zwykły przelew, BLIK albo płatność w kryptowalucie.",
         "[ОБОВ’ЯЗКОВО уточнити з якого банку буде робити переказ і чи сума, яку обрав зараз, є доступна]"
       ]
+      "transitions": [
+    { "label": "⬅ Назад", "to": "client_questions" },
+    { "label": "➡ Далі", "to": "platform_demo" }
+  ]
     },
    {
   "id": "objections_root",
