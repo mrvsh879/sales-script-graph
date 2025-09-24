@@ -1667,6 +1667,11 @@
       "label": "⬅ Назад"
     },
     {
+      "from": "experience_q",
+      "to": "barriers_router",
+      "label": "⬅ Назад"
+    },
+    {
       "from": "closing_payment",
       "to": "greeting",
       "label": "🏠 На початок"
