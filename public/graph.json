@@ -50,7 +50,7 @@
         " Jeśli temat jest interesujący, łatwiej będzie teraz, na żywo, wszystko dokładnie wyjaśnić. Proszę powiedzieć — bardziej zależy Panu/Pani na dochodowości czy na bezpieczeństwie?"
       ],
       "transitions": [
-        { "label": "Назад", "to": "barriers_router" },
+        { "label": "⬅ Назад", "to": "barriers_router" },
         { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
@@ -64,7 +64,7 @@
         "A tak szczerze — czy rozważał/ła Pan/Pani kiedyś pasywny dochód, przy którym nie trzeba codziennie samodzielnie czegoś robić?"
       ],
       "transitions": [
-        { "label": "Назад", "to": "barriers_router" },
+        { "label": "⬅ Назад", "to": "barriers_router" },
         { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
@@ -79,7 +79,7 @@
         "Bo jeśli Pan/Pani nie inwestuje, to nie znaczy, że to nie działa. Proszę szczerze powiedzieć — jaka forma pomnażania kapitału jest dla Pana/Pani akceptowalna: nieruchomości, biznes, lokaty?"
       ],
       "transitions": [
-        { "label": "Назад", "to": "barriers_router" },
+        { "label": "⬅ Назад", "to": "barriers_router" },
         { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
@@ -94,7 +94,7 @@
          "Nic mi nie trzeba” często ukrywa obawy lub wątpliwości. Co konkretnie budzi u Pana/Pani niepokój, jeśli chodzi o temat dodatkowego dochodu?"
       ],
       "transitions": [
-        { "label": "Назад", "to": "barriers_router" },
+        { "label": "⬅ Назад", "to": "barriers_router" },
         { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
@@ -109,7 +109,7 @@
         "Doskonale Pana/Panią rozumiem, słyszę po głosie, że jest Pan/Pani osobą bardzo ważną i zajętą.Ale bądźmy szczerzy — moja propozycja naprawdę nie zajmie dużo czasu, a jestem przekonany, że może być dla Pana/Pani przydatna.Proszę powiedzieć, od jak dawna interesuje się Pan/Pani temat inwestycji jako możliwości dodatkowego zarobku?"
       ],
       "transitions": [
-        { "label": "Назад", "to": "barriers_router" },
+        { "label": "⬅ Назад", "to": "barriers_router" },
         { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
@@ -123,7 +123,7 @@
         "Skoro dane są Pana/Pani — porozmawiajmy wspólnie. Temat zwiększenia dochodu zwykle interesuje każdego rodzica."
       ],
       "transitions": [
-        { "label": "Назад", "to": "barriers_router" },
+        { "label": "⬅ Назад", "to": "barriers_router" },
         { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
@@ -138,7 +138,7 @@
         "Czas to cenny zasób i to szanuję.Jednak moje informacje mogą stać się dla Pana/Pani źródłem dodatkowego zarobku, a nie zabiorą dużo czasu."
       ],
       "transitions": [
-        { "label": "Назад", "to": "barriers_router" },
+        { "label": "⬅ Назад", "to": "barriers_router" },
         { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
@@ -152,7 +152,7 @@
         "Przypadek się zdarza.Ale jeśli właśnie ten temat przykuł Pana/Pani uwagę, być może nie jest to przypadek.Pozwoli Pan/Pani, że krótko wyjaśnię, a wtedy sam/a oceni, na ile to jest dla Pana/Pani odpowiednie."
       ],
       "transitions": [
-        { "label": "Назад", "to": "barriers_router" },
+        { "label": "⬅ Назад", "to": "barriers_router" },
         { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
@@ -167,7 +167,7 @@
         "Rozumiem, że teraz to może być nieinteresujące.Ale był moment, kiedy zainteresowała Pana/Panią reklama — co wtedy przyciągnęło Pana/Pani uwagę?"
       ],
       "transitions": [
-        { "label": "Назад", "to": "barriers_router" },
+        { "label": "⬅ Назад", "to": "barriers_router" },
         { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
@@ -181,7 +181,7 @@
         "Sceptycyzm to coś zupełnie normalnego — szczególnie w dzisiejszych czasach. Właśnie dlatego nie składam żadnych przypadkowych propozycji — po prostu wyjaśniam, o co chodzi, a Pan/i sam/a decyduje, czy chce się w to zagłębić. Chcę tylko pokazać, na czym to polega — a decyzja oczywiście należy do Pana/i"
       ],
       "transitions": [
-        { "label": "Назад", "to": "barriers_router" },
+        { "label": "⬅ Назад", "to": "barriers_router" },
         { "label": "➡ Далі", "to": "experience_q" }
       ]
     },
