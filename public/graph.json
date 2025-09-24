@@ -1393,6 +1393,16 @@
       "to": "experience_q",
       "label": "Далі"
     },
+    {
+      "from": "closing_payment",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "closing_payment",
+      "to": "greeting",
+      "label": "🏠 На початок"
+    },
     { "from": "2_0_2",   "to": "objections_root", "label": "⬅ Назад" },
     { "from": "2_0_2",   "to": "closing_payment", "label": "➡ Далі" },
 
