@@ -266,12 +266,6 @@ const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про �
 
       {/* === Основная раскладка === */}
       <div className="mx-auto max-w-screen-2xl px-4 md:px-6 py-6 grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6">
-        {/* ==== Левая заметка (если ui требует left) ==== */}
-        {stickyLeft && (
-          <aside className="hidden lg:block">
-            <CommentPanel title={notesTitle} graphKey="graph" />
-          </aside>
-        )}
 
         {/* === Левая колонка: навигация (sidebar) === */}
         <aside className="rounded-2xl border border-black/5 dark:border-white/5 bg-white/70 dark:bg-zinc-900/40 backdrop-blur p-3 lg:h-[calc(100dvh-120px)] lg:overflow-hidden">
