@@ -687,23 +687,16 @@
       "title": "ХОЧУ ПОДУМАТИ",
       "type": "snippet",
       "text": [
-        "Aus meiner Erfahrung, wenn ein Kunde sagt, dass er nachdenken will, bedeutet das oft, dass er das Projekt nicht ganz verstanden hat oder noch nicht davon überzeugt ist.",
+        "Meiner Erfahrung nach bedeutet es oft, dass der Kunde das Projekt nicht ganz verstanden hat oder noch nicht davon überzeugt ist, wenn er sagt, dass er darüber nachdenken möchte.",
 
-        "Sagen Sie bitte, wovor genau haben Sie Angst? [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
-        "Sagen Sie bitte, worüber genau wollten Sie nachdenken?",
+        "Sagen Sie mir bitte, was genau befürchten Sie? [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
+        "Sagen Sie mir bitte, worüber genau möchten Sie nachdenken?",
         "Was hat in meiner Präsentation gefehlt, damit Sie die Entscheidung jetzt treffen könnten?",
         "Was hält Sie davon ab, die Entscheidung jetzt zu treffen?",
         "Wie könnte das Ihre endgültige Entscheidung beeinflussen?",
 
-        "Natürlich haben Sie das Recht, nachzudenken. Aus meiner Erfahrung trifft man Entscheidungen am besten, wenn man konkrete Ergebnisse sehen und verstehen kann, wie es in der Praxis funktioniert.",
-        "Ehrlich gesagt, im Moment gibt es nichts, worüber man lange nachdenken müsste — es sei denn, etwas macht Ihnen Zweifel? Was genau hält Sie von der Entscheidung ab?...(truncated 2885 characters)...т:**",
-        "– In Ordnung, ich habe nichts dagegen, Ihnen die Lizenz zur Verfügung zu stellen.",
-        "– Aber sagen Sie bitte – kann die Lizenz selbst eine Garantie für Gewinn sein?",
-        "– Zum Beispiel: Kann ein Fahrer, der einen Führerschein hat, Ihnen eine sichere Fahrt garantieren?",
-        "– Stimmen Sie zu, dass der Führerschein auch eine Form der Lizenz für den Fahrer ist?",
-        "– Gibt sein bloßer Besitz eine Garantie?",
-        "– Leider ist es in heutigen Zeiten nicht schwierig, eine Lizenz zu bekommen – genauso wie einen Führerschein.",
-        "– Deshalb gibt die Lizenz allein keine hundertprozentige Sicherheit, dass jemand Gewinn erzielt."
+       "Natürlich haben Sie das Recht, darüber nachzudenken. Meiner Erfahrung nach trifft man Entscheidungen jedoch am besten, wenn man konkrete Ergebnisse sieht und versteht, wie es in der Praxis funktioniert",
+        "Ehrlich gesagt gibt es im Moment nichts, worüber man lange nachdenken müsste – es sei denn, Sie haben irgendwelche Bedenken? Was genau hält Sie davon ab, eine Entscheidung zu treffen?"
       ]
     },
     {
@@ -1722,4 +1715,5 @@
   "sticky_comment_title": "Коментар про клієнта",
   "sticky_comment_position": "right"
 }
+
     }
