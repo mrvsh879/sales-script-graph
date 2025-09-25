@@ -211,6 +211,18 @@ const App: React.FC = () => {
     );
   }, [graph, search]);
 
+  const displayNodes = useMemo(() => {
+    if (!graph) return [];
+    const ids = new Set(pinnedIds);
+    return [...filteredNodes].sort((a, b) => {
+      const ap = ids.has(a.id) ? 0 : 1;
+      const bp = ids.has(b.id) ? 0 : 1;
+      if (ap !== bp) return ap - bp;
+      return 0;
+    });
+  }, [filteredNodes, pinnedIds, graph]);
+
+
   // Комментарии всегда включены (если их не отключили вовсе) и всегда справа.
 const stickyEnabled = graph?.ui?.sticky_comment_panel !== false;
 const stickyRight = stickyEnabled;  // всегда справа
@@ -319,7 +331,7 @@ const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про �
           </div>
 
           <div className="mt-3 overflow-y-auto lg:h-[calc(100%-84px)] pr-1 space-y-1 custom-scroll">
-            {filteredNodes.map((n) => {
+            {displayNodes.map((n) => {
               const active = n.id === current.id;
               return (
                 <button
