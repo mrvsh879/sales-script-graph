@@ -688,24 +688,16 @@
       "title": "ХОЧУ ПОДУМАТИ",
       "type": "snippet",
       "text": [
-        "Din experiența mea, când un client spune că vrea să se gândească, adesea înseamnă că nu a înțeles complet proiectul sau nu este încă convins de el.",
+        "Din experiența mea, când un client spune că vrea să se gândească, asta înseamnă adesea că nu a înțeles pe deplin proiectul sau că nu este încă convins de acesta.",
 
-        "Spuneți-mi, de ce anume vă temeți? [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
-        "Spuneți-mi, la ce exact ați vrea să vă gândiți?",
-        "Ce a lipsit în prezentarea mea, ca să puteți lua decizia acum?",
-        "Ce vă oprește de la decizie în acest moment?",
-        "Cum poate influența asta decizia Dumneavoastră finală?",
+        "Vă rog să-mi spuneți exact ce vă preocupă? [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
+        "Vă rog să-mi spuneți exact la ce doriți să vă gândiți?",
+        "Ce a lipsit din prezentarea mea pentru a vă permite să luați o decizie chiar acum?",
+        "Ce vă împiedică să luați o decizie în acest moment?",
+        "Cum ar putea afecta acest lucru decizia dvs. finală?", 
 
-        "Desigur, aveți dreptul să vă gândiți. Totuși, din experiența mea, deciziile se iau cel mai bine când puteți vedea rezultate concrete și înțelege cum funcționează în practică.",
-        "Sincer vorbind, acum nu e nimic de gândit mult — decât dacă ceva vă trezește îndoieli? Ce exact vă oprește de la decizie?...(truncated 2885 characters)...т:**",
-        "– Bine, nu am nimic împotrivă să vă furnizez licența.",
-        "– Dar spuneți-mi – licența în sine poate fi o garanție a câștigului?",
-        "– De exemplu: un șofer care are permis de conducere vă poate garanta o călătorie sigură?",
-        "– Sunteți de acord că permisul de conducere e și el o formă de licență pentru șofer?",
-        "– Posesia lui în sine oferă garanție?",
-        "– Din păcate, în zilele noastre obținerea unei licențe – la fel ca permisul de conducere – nu e dificilă.",
-        "– De aceea licența în sine nu oferă certitudine 100% că cineva va obține profit."
-      ]
+        "Desigur, aveți dreptul să vă gândiți. Cu toate acestea, din experiența mea, cele mai bune decizii se iau atunci când puteți vedea rezultate concrete și înțelegeți cum funcționează în practică.",
+        "Sincer, nu prea sunt multe lucruri de luat în considerare în acest moment — dacă nu cumva ceva vă îngrijorează? Ce anume vă împiedică să luați o decizie?",
     },
     {
       "id": "node_5",
@@ -1723,4 +1715,5 @@
   "sticky_comment_title": "Коментар про клієнта",
   "sticky_comment_position": "right"
 }
+
     }
