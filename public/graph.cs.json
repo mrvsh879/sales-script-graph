@@ -503,13 +503,13 @@
       "type": "snippet",
       "text": [
         "Якщо клієнт питає про місце знаходження коштів:",
-        "Máme vlastní obchodní platformu, na které bude vaše obchodní konto.",
+        "Máme vlastní obchodní platformu, na které bude vaše obchodní učet.",
         "Naše platforma je velmi podobná mobilnímu bankovnictví.",
-        "V jaké bance jste klientem? [Santander, Millennium, Pekao S.A.]",
+        "V jaké bance jste klientem? ",
         "Na naší platformě všechno vypadá podobně jako v bankovnictví:",
         "je sekce výplat, sekce, kde lze změnit heslo, získat zpětnou vazbu, finanční sekce, kontakt s technickou podporou, hlavní strana, a také panel, kde probíhá obchodování.",
         "Vaše obchodní konto je zabezpečené soukromým heslem.",
-        "Ani já, ani expert nemáme přístup k tomuto kontu, protože nejdůležitější je bezpečnost klienta.",
+        "Ani já, ani odborník nemáme přístup k tomuto účtu, protože nejdůležitější je bezpečnost klienta.",
         "— Máte ke mně nějaké otázky?"
       ],
         "transitions": [
@@ -523,7 +523,7 @@
       "type": "snippet",
       "text": [
         "ДЕМОНСТРАЦІЯ ПЛАТФОРМИ:",
-        "— Navrhuji, abyste se teď přihlásil/a na platformě. Ukážu, jak všechno funguje a hned změníme heslo, aby se zabezpečilo obchodní konto.",
+        "— Navrhuji, abyste se teď přihlásil/a na platformě. Ukážu, jak všechno funguje a hned změníme heslo, aby se zabezpečilo obchodní učet.",
         "— Za chvíli vám zašlu odkaz na naši platformu — prosím jen řekněte, kde bude pohodlnější ho obdržet: na e-mail nebo na WhatsApp?",
         "[Якщо на пошту, перевіряємо пошту чи він/вона залишив під час реєстрації. Якщо na WhatsApp — фіксуємо свій номер, щоб клієнт додав вас, а в рідкісних випадках додаємо самі.]",
         
@@ -688,7 +688,7 @@
       "title": "ХОЧУ ПОДУМАТИ",
       "type": "snippet",
       "text": [
-        "Z mé zkušenosti vyplývá, že když klient říká, že se chce zamyslet, často to znamená, že ne zcela pochopil projekt nebo ještě není přesvědčený o něm.",
+        "Podle mých zkušeností, když klient řekne, že si to chce rozmyslet, často to znamená, že projektu úplně nerozumí nebo si tím ještě není jistý",
 
         "Prosím, řekněte mi, čeho se přesně obáváte?  [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
         "Prosím, řekněte mi, o čem přesně byste chtěl/a přemýšlet?",
