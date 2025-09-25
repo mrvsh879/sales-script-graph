@@ -74,8 +74,10 @@ const TypePill: React.FC<{ type: NodeType }> = ({ type }) => {
 
 /** ===== Главный компонент ===== */
 const App: React.FC = () => {
-  // Язык (PL / CS)
-  const [lang, setLang] = useState<"pl" | "cs">("pl");
+  // Язык (PL / CS / UK / DE / RO / FR)
+  type Lang = "pl" | "cs" | "uk" | "de" | "ro" | "fr";
+  const [lang, setLang] = useState<Lang>("pl");
+
   
   /** ===== Тема (светлая/тёмная) ===== */
   const [darkMode, setDarkMode] = useState<boolean>(() => {
