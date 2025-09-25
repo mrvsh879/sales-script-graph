@@ -157,13 +157,13 @@ const App: React.FC = () => {
           }
         }
 
-if (!loaded) throw lastErr ?? new Error("Graph load failed");
-setGraph(loaded);
+        if (!loaded) throw lastErr ?? new Error("Graph load failed");
+        setGraph(loaded);
 
 
         // стартовая нода — greeting или первая
         const start =
-          data.nodes.find((n) => n.type === "greeting")?.id || data.nodes[0]?.id;
+          loaded.nodes.find((n) => n.type === "greeting")?.id || loaded.nodes[0]?.id;
         setCurrentId(start || null);
         setHistory(start ? [start] : []);
       } catch (e) {
@@ -347,6 +347,9 @@ const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про �
               <option value="ro">🇷🇴 Română</option>
               <option value="fr">🇫🇷 Français</option>
             </select>
+          </div>   {/* ← закрыть ml-auto flex ... */}
+        </div>   {/* ← закрыть .max-w-screen-2xl ... */}
+      </header>
 
       {/* === Основная раскладка === */}
       <div
