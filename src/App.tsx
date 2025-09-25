@@ -139,10 +139,27 @@ const App: React.FC = () => {
   useEffect(() => {
     (async () => {
       try {
-        const url = lang === "cs" ? "graph.cs.json" : "graph.json";
-        const res = await fetch(url, { cache: "no-store" });
-        const data = (await res.json()) as GraphData;
-        setGraph(data);
+        const candidates = lang === "pl"
+          ? ["graph.pl.json", "graph.json"]   // поддержка старого имени
+          : [`graph.${lang}.json`];
+
+        let loaded: GraphData | null = null;
+        let lastErr: unknown = null;
+
+        for (const url of candidates) {
+          try {
+            const res = await fetch(url, { cache: "no-store" });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            loaded = (await res.json()) as GraphData;
+            break;
+          } catch (e) {
+            lastErr = e;
+          }
+        }
+
+if (!loaded) throw lastErr ?? new Error("Graph load failed");
+setGraph(loaded);
+
 
         // стартовая нода — greeting или первая
         const start =
