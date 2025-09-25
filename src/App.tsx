@@ -133,11 +133,12 @@ const App: React.FC = () => {
   }, [pinnedIds]);
 
 
-  // Загрузка graph.json
+  // Загрузка графа (PL / CS)
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch("graph.json", { cache: "no-store" });
+        const url = lang === "cs" ? "graph.cs.json" : "graph.json";
+        const res = await fetch(url, { cache: "no-store" });
         const data = (await res.json()) as GraphData;
         setGraph(data);
 
@@ -147,10 +148,10 @@ const App: React.FC = () => {
         setCurrentId(start || null);
         setHistory(start ? [start] : []);
       } catch (e) {
-        console.error("Не удалось загрузить graph.json", e);
+        console.error("Не удалось загрузить граф", e);
       }
     })();
-  }, []);
+  }, [lang]);
 
   // Удобный доступ к ноде по id
   const nodeMap = useMemo(() => {
