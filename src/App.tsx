@@ -95,6 +95,32 @@ const App: React.FC = () => {
   const [search, setSearch] = useState("");
   const contentTopRef = useRef<HTMLDivElement>(null);
 
+  // === Закреплённые узлы (pin) ===============================================
+  const [pinnedIds, setPinnedIds] = useState<string[]>(() => {
+    try {
+      const raw = localStorage.getItem("sg_pins");
+      return raw ? JSON.parse(raw) : [];
+    } catch {
+      return [];
+    
+    });
+
+  const togglePinned = (id: string) => {
+    setPinnedIds((prev) => {
+      const set = new Set(prev);
+      set.has(id) ? set.delete(id) : set.add(id);
+      return Array.from(set);
+    });
+  };
+
+  // сохраняем список закреплённых в storage
+  useEffect(() => {
+    try {
+      localStorage.setItem("sg_pins", JSON.stringify(pinnedIds));
+    } catch {}
+  }, [pinnedIds]);
+
+
   // Загрузка graph.json
   useEffect(() => {
     (async () => {
