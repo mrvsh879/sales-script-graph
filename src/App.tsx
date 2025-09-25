@@ -185,13 +185,11 @@ const App: React.FC = () => {
     );
   }, [graph, search]);
 
-  // UI-комментарии
-  const stickyEnabled = graph?.ui?.sticky_comment_panel !== false;
-  const stickyRight =
-    stickyEnabled && (graph?.ui?.sticky_comment_position ?? "right") === "right";
-  const stickyLeft =
-    stickyEnabled && (graph?.ui?.sticky_comment_position ?? "right") === "left";
-  const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про клієнта";
+  // Комментарии всегда включены (если их не отключили вовсе) и всегда справа.
+const stickyEnabled = graph?.ui?.sticky_comment_panel !== false;
+const stickyRight = stickyEnabled;  // всегда справа
+const stickyLeft = false;           // слева — никогда
+const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про клієнта";
 
   if (!graph || !current) {
     return (
