@@ -273,7 +273,7 @@ const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про �
                 Script Graph
               </div>
               <div className="text-xs text-zinc-500 dark:text-zinc-400">
-                sales-script-graph / GitHub Pages
+                sales-script-graph
               </div>
             </div>
           </div>
@@ -307,6 +307,22 @@ const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про �
             >
               {darkMode ? "🌞 Светлая" : "🌙 Тёмная"}
             </button>
+            
+            {/* === Переключатель языка === */}
+            <div className="inline-flex rounded-lg overflow-hidden border border-black/10 dark:border-white/10">
+              <button
+                onClick={() => setLang("pl")}
+                className={`px-3 py-1 text-sm ${lang === "pl" ? "bg-black text-white" : "bg-white dark:bg-zinc-800/60 dark:text-zinc-200"}`}
+                >
+                PL
+              </button>
+              <button
+                onClick={() => setLang("cs")}
+                className={`px-3 py-1 text-sm ${lang === "cs" ? "bg-black text-white" : "bg-white dark:bg-zinc-800/60 dark:text-zinc-200"}`}
+                >
+                CS
+              </button>
+            </div>
           </div>
         </div>
       </header>
