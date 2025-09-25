@@ -331,24 +331,22 @@ const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про �
               {darkMode ? "🌞 Светлая" : "🌙 Тёмная"}
             </button>
             
-            {/* === Переключатель языка === */}
-            <div className="inline-flex rounded-lg overflow-hidden border border-black/10 dark:border-white/10">
-              <button
-                onClick={() => setLang("pl")}
-                className={`px-3 py-1 text-sm ${lang === "pl" ? "bg-black text-white" : "bg-white dark:bg-zinc-800/60 dark:text-zinc-200"}`}
-                >
-                PL
-              </button>
-              <button
-                onClick={() => setLang("cs")}
-                className={`px-3 py-1 text-sm ${lang === "cs" ? "bg-black text-white" : "bg-white dark:bg-zinc-800/60 dark:text-zinc-200"}`}
-                >
-                CS
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+           {/* === Переключатель языка (select) === */}
+            <select
+              value={lang}
+              onChange={(e) => setLang(e.target.value as Lang)}
+              className="px-3 py-1.5 rounded-lg bg-zinc-100 hover:bg-zinc-200 border border-black/10
+              text-zinc-800 text-sm dark:bg-zinc-800/60 dark:hover:bg-zinc-800
+              dark:border-white/10 dark:text-zinc-200"
+              title="Выбрать язык"
+              >
+              <option value="pl">🇵🇱 Polski</option>
+              <option value="cs">🇨🇿 Čeština</option>
+              <option value="uk">🇺🇦 Українська</option>
+              <option value="de">🇩🇪 Deutsch</option>
+              <option value="ro">🇷🇴 Română</option>
+              <option value="fr">🇫🇷 Français</option>
+            </select>
 
       {/* === Основная раскладка === */}
       <div
