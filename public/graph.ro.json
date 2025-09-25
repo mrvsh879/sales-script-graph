@@ -1,0 +1,1726 @@
+{
+  "version": 1,
+  "start": "greeting",
+
+  "nodes": [
+    {
+      "id": "greeting",
+      "title": "Початок розмови",
+      "type": "greeting",
+      "text": [
+        "- Bună ziua, Doamnă/Domnule [ім’я клієнта]. Mă numesc [твоє ім’я]. Sunt asistentul personal al Dumneavoastră. V-ați interesat de un venit suplimentar în cadrul proiectului [назва проекту], nu-i așa?."
+      ],
+      "transitions": [
+        { "label": "Перейти до барʼєрів", "to": "barriers_router" },
+        { "label": "ПЕРЕЙТИ ДО СБОРУ", "to": "experience_q" }
+      ]
+    },
+
+    {
+      "id": "barriers_router",
+      "title": "Стартові барʼєри",
+      "type": "router",
+      "text": [
+        "Виберіть барʼєр або натисніть «Далі», якщо барʼєрів немає."
+      ],
+      "transitions": [
+        { "label": "НАДІШЛІТЬ ВСЕ НА ПОШТУ", "to": "bar_email" },
+        { "label": "НЕ РЕЄСТРУВАВСЯ", "to": "bar_not_registered" },
+        { "label": "ЦЕ НЕ МОЄ", "to": "bar_not_mine" },
+        { "label": "НІЧОГО НЕ ПОТРІБНО", "to": "bar_nothing_needed" },
+        { "label": "Я ЗАЙНЯТИЙ", "to": "bar_busy" },
+        { "label": "ЦЕ ДИТИНА", "to": "bar_child" },
+        { "label": "НЕМАЄ ЧАСУ", "to": "bar_no_time" },
+        { "label": "ЦЕ ВИПАДКОВО", "to": "bar_accidental" },
+        { "label": "НЕ ЦІКАВО", "to": "bar_not_interesting" },
+        { "label": "ЦЕ ОБМАН", "to": "bar_scam" },
+        { "label": "Далі", "to": "experience_q" }
+      ]
+    },
+
+    {
+      "id": "bar_email",
+      "title": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:",
+      "type": "snippet",
+      "text": [
+        " După conversația noastră, vă voi trimite toate informațiile, dar pentru a putea trimite ceva, trebuie să știu mai întâi cu ce v-ați familiarizat deja.",
+        " Din păcate, nu mă ocup de trimiterea de mesaje în masă.",
+        " Din păcate, nu pot să vă trimit profesionalismul meu prin e-mail :)",
+        " Înțeleg. Există doar o problemă — probabil aveți deja zeci de astfel de mesaje. Le deschideți și le analizați cu adevărat, sau spuneți asta doar pentru a amâna conversația?",
+        " Dacă subiectul este interesant, va fi mai ușor acum, în direct, să explic totul în detaliu. Spuneți-mi — vă interesează mai mult rentabilitatea sau securitatea?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+
+    {
+      "id": "bar_not_registered",
+      "title": "НЕ РЕЄСТРУВАВСЯ:",
+      "type": "snippet",
+      "text": [
+        "Vă rog să vă uitați — aproape 80% dintre clienții noștri spun la început că nu s-au înregistrat. Apoi își amintesc că pur și simplu erau interesați de un venit suplimentar și au lăsat datele de contact automat. Poate că la Dumneavoastră a fost la fel.",
+        "Și sincer — ați luat în considerare vreodată un venit pasiv, la care nu trebuie să faceți ceva zilnic singur?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+
+    {
+      "id": "bar_not_mine",
+      "title": "ЦЕ НЕ МОЄ:",
+      "type": "snippet",
+      "text": [
+        "Așa spune aproape toată lumea, până nu se familiarizează mai bine. „Nu e pentru mine” — e ca și cum ai spune „nu sunt șofer”, fără să fi stat vreodată la volan. Aici nu e vorba să înțelegeți toți termenii, ci dacă funcționează pentru Dumneavoastră. Să spunem direct: ce este mai important pentru Dumneavoastră — ca banii să stea pur și simplu, sau să aducă profit, fără riscul de a-i pierde?",
+        "Înțeleg, sună ca „nu e pentru mine” — dar permiteți-mi să întreb: ați încercat deja și ați decis că nu e potrivit? Sau pur și simplu nu a fost ocazia să vă aprofundați?",
+        "Pentru că dacă nu investiți, nu înseamnă că nu funcționează. Spuneți sincer — ce formă de multiplicare a capitalului este acceptabilă pentru Dumneavoastră: imobiliare, afaceri, depozite?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+
+    {
+      "id": "bar_nothing_needed",
+      "title": "НІЧОГО НЕ ПОТРІБНО:",
+      "type": "snippet",
+      "text": [
+        "Hm… Ciudat, nu vă văd pe lista Forbes… Pot să întreb de ce nu sunteți încă printre cei mai bogați?", 
+         "Nimic nu-mi trebuie” — sună mai degrabă ca „Deocamdată nu vreau să schimb nimic”. Dar dacă ar exista o modalitate care nu necesită efort din partea Dumneavoastră, dar aduce venit — ar fi tot neinteresant?",
+         "Nimic nu-mi trebuie” adesea ascunde temeri sau îndoieli. Ce anume vă îngrijorează în mod concret în legătură cu subiectul venitului suplimentar?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+
+    {
+      "id": "bar_busy",
+      "title": "Я ЗАЙНЯТИЙ:",
+      "type": "snippet",
+      "text": [
+        "Înțeleg perfect — ca să nu vă iau prea mult timp, să vorbim scurt și fiecare se întoarce la treburile sale. [задаємо питання]",
+        "Văd că sunteți ocupat/ă și apreciez asta. Scopul meu nu este să vă iau timpul, ci să vă propun ceva cu adevărat valoros. Spuneți-mi — ce vă îngrijorează cel mai mult în prezent în legătură cu venitul suplimentar?",
+        "Înțeleg perfect, aud după voce că sunteți o persoană foarte importantă și ocupată. Dar să fim sinceri — propunerea mea nu va lua mult timp și sunt convins că poate fi utilă pentru Dumneavoastră. Spuneți-mi, de cât timp vă interesează subiectul investițiilor ca posibilitate de venit suplimentar?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+
+    {
+      "id": "bar_child",
+      "title": "ЦЕ ДИТИНА:",
+      "type": "snippet",
+      "text": [
+        "Excelent, că în familie cineva se interesează de venit — un semn bun!",
+        "Deoarece datele sunt ale Dumneavoastră — să vorbim împreună. Subiectul creșterii venitului interesează de obicei fiecare părinte."
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+
+    {
+      "id": "bar_no_time",
+      "title": "НЕМАЄ ЧАСУ:",
+      "type": "snippet",
+      "text": [
+        "Respect oamenii care prețuiesc timpul, eu sunt aici doar pentru câteva minute. [задаємо питання]",
+        "Înțeleg perfect — cum se spune, timpul e bani. Dar tocmai propunerea mea vă poate aduce un profit suplimentar și va lua foarte puțin timp.",
+        "Timpul este o resursă prețioasă și respect asta. Totuși, informațiile mele pot deveni o sursă de venit suplimentar pentru Dumneavoastră, fără a lua mult timp."
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+
+    {
+      "id": "bar_accidental",
+      "title": "ЦЕ ВИПАДКОВО:",
+      "type": "snippet",
+      "text": [
+        "Sunteți o persoană foarte norocoasă, dacă ajungeți accidental în cele mai profitabile domenii. Ați reușit accidental să vă familiarizați cu informațiile noastre?",
+        "Accidentele se întâmplă. Dar dacă tocmai acest subiect v-a atras atenția, poate nu e un accident. Permiteți-mi să explic scurt, iar Dumneavoastră evaluați singur/ă dacă e potrivit."
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+
+    {
+      "id": "bar_not_interesting",
+      "title": "НЕ ЦІКАВО:",
+      "type": "snippet",
+      "text": [
+        "Înțeleg că acum poate nu e interesant. Dar poate pur și simplu lipsesc detaliile? Ce ar trebui să auziți despre venit ca să considerați că merită să continuați conversația?",
+        "Nu e interesant” — deocamdată. Dar dacă venitul ar putea crește cu 10–15% lunar, fără efort suplimentar — tot nu ați vrea să auziți cum e posibil?",
+        "Înțeleg că acum poate nu e interesant. Dar a fost un moment când ați fost atras/ă de reclamă — ce v-a atras atenția atunci?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+
+    {
+      "id": "bar_scam",
+      "title": "ЦЕ ОБМАН:",
+      "type": "snippet",
+      "text": [
+        "Înțeleg lipsa de încredere — în zilele noastre sunt atâtea oferte, încât îndoielile sunt complet de înțeles. Dar să facem așa: eu explic exact despre ce e vorba, iar Dumneavoastră evaluați singur/ă dacă merită să continuați. Sincer, fără nicio presiune.",
+        "Scepticismul este ceva complet normal — mai ales în zilele noastre. Tocmai de aceea nu fac propuneri întâmplătoare — pur și simplu explic despre ce e vorba, iar Dumneavoastră decideți singur/ă dacă vreți să vă aprofundați. Vreau doar să vă arăt cum funcționează — iar decizia vă aparține evident."
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+
+    {
+      "id": "experience_q",
+      "title": "ДОСВІД - ПИТАННЯ",
+      "type": "question",
+      "text": [
+        "[імʼя клієнта], Ce v-a interesat în oferta noastră, încât ați decis să vă înregistrați?"
+      ],
+      "transitions": [
+        { "label": "НЕМАЄ ДОСВІД", "to": "exp_no" },
+        { "label": "Є ДОСВІД", "to": "exp_yes" }
+      ]
+    },
+
+    {
+      "id": "exp_no",
+      "title": "НЕМАЄ ДОСВІДУ:",
+      "type": "snippet",
+      "text": [
+        "— Sunteți verde în această industrie",
+        " [цей жарт — тому говоримо з усмішкою й можна трохи посміятись,",
+        " це щось типу 'а, то Ви новачок / чайник'] і також з усмішкою продовжуємо:",
+        
+        "Nu contează, avem o echipă de specialiști care vă vor sfătui la fiecare etapă a colaborării noastre.",
+        "Deoarece compania noastră este interesată de o colaborare pe termen lung și profitabilă cu Dumneavoastră."
+      ],
+      "transitions": [
+        { "label": "До етапу «Робота»", "to": "work" }
+      ]
+    },
+
+    {
+      "id": "exp_yes",
+      "title": "Є ДОСВІД:",
+      "type": "snippet",
+      "text": [
+        "Nu sunteți o persoană începătoare în această industrie, deci va fi ușor pentru noi.",
+        
+        "БІЛЬШЕ ПИТАНЬ ПРО ДОСВІД НА ЦЬОМУ ЕТАПІ МИ НЕ СТАВИМО!!!"
+      ],
+      "transitions": [
+        { "label": "До етапу «РОБОТА»", "to": "work" }
+      ]
+    },
+    {
+      "id": "work",
+      "title": "РОБОТА",
+      "type": "question",
+      "text": [
+        "РОБОТА:",
+        "- Cât timp ați putea aloca pentru colaborare?", 
+        "[відповідь наприклад 1–2 год]",
+        "- Pare că lucrați mult, nu-i așa?",
+        "- Spuneți-mi, în ce domeniu lucrați? [якщо, навіщо воно вам]",
+        "ВІДПОВІДЬ", 
+        "- Întreb ca să știu cum să vă explic cel mai bine. Dacă lucrați în domeniul financiar, totul va merge foarte repede.",
+        "- De cât timp lucrați în domeniul Dumneavoastră? [наприклад, відповідь 10 р.]", 
+        "[якщо не працює або пенсіонер — задаємо питання інше]",
+        "- Am mulți clienți din domeniul Dumneavoastră și știu că e o muncă grea. Ați gândit vreodată să schimbați domeniul sau să vă deschideți propria firmă? [наводимо приклад]",
+        "ПРИКЛАД:",
+        "Am un client, Domnul Dariusz, care lucrează și el în domeniul construcțiilor. Are 53 de ani. După un an de colaborare cu noi, și-a deschis propria firmă și se ocupă de finisaje interioare.", 
+        "Are echipa sa — 5 persoane — și lucrează pe cont propriu. Cred că și Dumneavoastră ați vrea să vă deschideți propriul business și să lucrați pentru Dumneavoastră, nu-i așa?",
+        
+        "- V-ați gândit cât ați vrea să câștigați?",
+        "- Cum vedeți colaborarea cu firma noastră?",
+        
+        "ЯКЩО ЛЮДИНА В ВІЦІ (50+) АБО ПЕНСІОНЕР:",
+        "- Serios? — Sincer vorbind, sunați foarte tânăr/tânără — îmi e greu să cred că aveți mai mult de 40–50 de ani.",
+        "[це комплімент, говоримо з усмішкою]",
+        "- Știți, cel mai important este câți ani vă simțiți, nu ce scrie în pașaport. Vă respect, pentru că la această vârstă vreți să învățați ceva nou și să vă încercați forțele într-un domeniu nou.",
+        "- Cum credeți, e ușor să vă orientați într-un domeniu nou?",
+        "- Vă împiedică sănătatea uneori?",
+        "- Dumneavoastră înșivă ați vorbit despre o muncă atât de grea — poate deja s-a întâmplat?",
+        "- Dumneavoastră știți că e greu să trăiți doar din pensie, având atâția ani lucrați. Din ce spun clienții mei, pensia sau alocația e adesea doar 3000 zł. La Dumneavoastră e similar?"
+      ]
+    },
+    {
+      "id": "family",
+      "title": "СІМ'Я",
+      "type": "question",
+      "text": [
+        "СІМ’Я:",
+        "— Gestionați singur/ă nevoile financiare, sau beneficiați de ajutor de la soț/soție/părinți?",
+        
+        "Якщо каже, що є підтримка ",
+        "→ Excelent, datorită asta nu e chiar atât de greu.",
+        "— Cu ce se ocupă soția/soțul Dumneavoastră?",
+        "Якщо каже, că все вирішує сам/сама",
+        "→ Sunt mândru/mândră de Dumneavoastră, că nu doar lucrați, ci aveți grijă de familie și căutați venit suplimentar."
+      ]
+    },
+    {
+      "id": "back_to_exp",
+      "title": "ПОВЕРТАЄМОСЬ ДО ДОСВІДУ",
+      "type": "question",
+      "text": [
+        "ПОВЕРТАЄМОСЬ ДО ДОСВІДУ:",
+        "(ЯКЩО КЛІЄНТ РАНІШЕ КАЗАВ ЩО ДОСВІДУ НЕМАЄ-ТО ПРОПУСКАЄМО ЦІЙ РОЗДІЛ)",
+        "— Ați menționat mai devreme că ați avut experiență în industria investițiilor. Spuneți-mi mai multe:",
+        "– Ați tranzacționat singur/ă, sau prin intermediul unei bănci sau firme de brokeraj?",
+        "– Pe ce active ați tranzacționat?",
+        "– Ce a fost cel mai important pentru Dumneavoastră la alegerea firmei?",
+        "– Cât ați reușit să câștigați în total?",
+        "– Cum credeți, de ce nu a mers? [De ce venitul a fost atât de mic?]",
+        "→ Vă spun de ce — pentru că erați fără experiență. Înțeleg asta, pentru că și eu am fost în situația asta. Spun doar atât: toți câștigăm experiență cu timpul.",
+        
+        "ЯКЩО КЛІЄНТ З НЕГАТИВНИМ ДОСВІДОМ, ПРАЦЮВАВ РАНІШЕ З ФІРМОЮ БРОКЕРОМ:",
+        "(зaуважуємо, та спробуємо все з'ясувати)",
+        "– Cum s-a întâmplat că nu v-a reușit?",
+        
+        "ЯКЩО КЛІЄНТ ГОВОРИТЬ, ЩО ФІРМА БУЛА ШАХРАЙСЬКОЮ, УТОЧНЮЄМО:",
+        "– De ce credeți că erau escroci? Doar pentru că nu ați câștigat nimic?",
+        
+        "ЯКЩО КЛІЄНТ ГОВОРИТ – \"TАК\"", 
+        "(говоримо об абсурді ще твердження, можна навести приклад):",
+        "– Dacă ați avut probleme în colaborarea cu o firmă, nu înseamnă neapărat că era necinstită. Nu totul funcționează imediat. Unii oameni cumpără o mașină, iar după o săptămână au un accident — și nu e vina producătorului.",
+        "– Sunteți de acord cu mine? Poate pur și simplu nu ați primit suficient sprijin și experiență, iar firma nu a oferit ajutor adecvat pentru un începător?", 
+        " În acest caz, avem într-adevăr o problemă cu calitatea serviciului. De aceea, în firma noastră, sprijinim clienții noștri — atât pe începători, cât și pe cei cu experiență — oferind sprijin complet și toate instrumentele necesare.",
+        "– Cum înțeleg, ați tranzacționat cu un broker sau cu ajutorul unui robot?",
+        "– Îmi pare foarte rău că aveți o astfel de experiență. Dar totuși continuați să căutați oportunități de câștig online — deci vreți să găsiți ceva potrivit pentru Dumneavoastră.",
+        "– Spuneți-mi, ce anume căutați?",
+        "– Aș putea să vă spun unde puteți câștiga bani, dacă încă doriți — dar vă explic cum să faceți, pas cu pas."
+      ]
+    },
+    {
+      "id": "goal",
+      "title": "Ціль",
+      "type": "question",
+      "text": [
+        "ЦІЛЬ:",
+        "– Din experiența mea, clienții vin la noi ca să câștige pentru o mașină, un apartament, rambursarea unui credit sau să scape de executor. Iar care este scopul general al colaborării noastre?",
+        
+        "ЯКЩО, ВІДПОВІВ ЩО Є КРЕДИТ УТОЧНИТИ",
+        "– Este un credit bancar sau nebancar?",
+        "– Cât a mai rămas de plătit?",
+        "– Reușiți să plătiți ratele regulat, sau sunt luni în care nu puteți plăti?",
+        "– Sper că nu aveți executor?",
+        "[може запитати навіщо вам стільки інформації, про борги та кредити, пояснюємо, що ми не хочемо щоб були проблеми виведенням коштів які він з нами заробить, тому что пристав, кредитор може самостійно забрати кошти з рахунку]",
+        "Якщо каже, що не кожен місяць платить або несвоєчасно ЗВЕРТАЄМОСЬ ДО ТІМА",
+        
+        "Якщо каже, що кредит поза банком, уточнюємо:",
+        "– Aveți un împrumut la Bocian, Kasa Stefczyka, Vivus, Provident?",
+        
+        "Якщо каже „Tak”:",
+        "– Cât a mai rămas de plătit?",
+        "[УТОЧНИТИ У ТИМА ЩО РОБИТИ ДАЛІ]",
+        
+        "ЯКЩО ВІДПОВІДАЄ, ЩО ХОТІВ БИ КУПИТИ БУДИНОК/МАШИНУ/КВАРТИРУ:",
+        "[дізнатись більш детально]",
+        "– Spuneți-mi, ați ales deja apartamentul sau mașina pe care vreți să o cumpărați?",
+        "– Cât va costa casa sau mașina pe care vreți să o cumpărați?",
+        "– De ce vreți să cumpărați casa sau mașina?",
+        "Можливо, клієнту потрібна машина для роботи або дім, тому що він живе на орендованій квартирі, і це для нього незручно — це ключова відповідь, яка дозволить виявити потребу клієнта!",
+        
+        "– Ați reușit să economisiți pentru realizarea acestui scop? [Cât ați reușit să economisiți?]",
+        "– Cât mai trebuie să strângeți?",
+        "[Може запитати навіщо вам стільки інформації скажіть це жартома мені справді дуже цікаво у нас багато клієнтів і в кожного свої цілі і знаєте іноді вони бувають дуже незвичні]",
+        
+        "Pe baza a ceea ce mi-ați spus, am o propunere ideală pentru Dumneavoastră!"
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "ПРЕЗЕНТАЦІЯ",
+      "type": "router",
+      "text": [
+        "ПРЕЗЕНТАЦІЯ:"
+      ]
+    },
+    {
+      "id": "pres_noexp",
+      "title": "Фінансовий ринок — немає досвіду",
+      "type": "snippet",
+      "text": [
+        "ФІНАНСОВИЙ РИНОК( НЕМАЄ ДОСВІДУ )",
+        "Ce știți sau ați auzit anterior despre piețele financiare?",
+        "Excelent. Acum vă explic mai detaliat cum funcționează câștigul pe piața financiară.",
+        
+        "Totul se bazează pe speculație — cumpărăm un activ la un preț, iar îl vindem la altul, câștigând din diferența de preț.",
+        "Mai simplu spus: cumpărăm ieftin, vindem scump. E clar?",
+        
+        "Pe piața financiară avem patru direcții principale pe care putem tranzacționa. Putem câștiga din diferențele de preț ale activelor precum:",
+        "– Perechi valutare (de ex. EUR/PLN),",
+        "– Mărfuri (de ex. petrol, aur),",
+        "– Acțiuni (de ex. Tesla, Orlen),",
+        "– Criptomonede.",
+        "Poate vă interesează un anumit tip de piață mai concret?",
+        "Nu ne concentrăm pe un singur activ, deoarece nu se poate tranzacționa zilnic același instrument și obține același profit. Dacă apare o ocazie de câștig — bineînțeles că o folosim.",
+        "De aceea aș vrea să vă prezint propunerea ideală de colaborare cu firma noastră!"
+      ]
+    },
+    {
+      "id": "pres_exp",
+      "title": "Фінансовий ринок — є досвід",
+      "type": "question",
+      "text": [
+        "Deoarece aveți deja experiență, cu siguranță înțelegeți cum funcționează piața financiară, nu-i așa?"
+      ]
+    },
+    {
+      "id": "pres_exp_yes",
+      "title": "Пояснення як з досвідом",
+      "type": "snippet",
+      "text": [
+        "Excelent. Posibil că vă interesează un anumit tip de piață mai concret?",
+        "Nu ne concentrăm pe un singur activ — nu se poate tranzacționa zilnic pe același instrument și câștiga același profit.",
+        "Dacă apare o ocazie de câștig, bineînțeles că o folosim.",
+        "De aceea aș vrea să vă prezint propunerea ideală de colaborare cu firma noastră!"
+      ]
+    },
+    {
+      "id": "pres_exp_no",
+      "title": "Пояснення як для без досвіду",
+      "type": "snippet",
+      "text": [
+        "ФІНАНСОВИЙ РИНОК( НЕМАЄ ДОСВІДУ )",
+        "Ce știți sau ați auzit anterior despre piețele financiare?",
+        "Excelent. Acum vă explic mai detaliat cum funcționează câștigul pe piața financiară.",
+        
+        "Totul se bazează pe speculație — cumpărăm un activ la un preț, iar îl vindem la altul, câștigând din diferența de preț.",
+        "Mai simplu spus: cumpărăm ieftin, vindem scump. E clar?",
+        
+        "Pe piața financiară avem patru direcții principale pe care putem tranzacționa. Putem câștiga din diferențele de preț ale activelor precum:",
+        "– Perechi valutare (de ex. EUR/PLN),",
+        "– Mărfuri (de ex. petrol, aur),",
+        "– Acțiuni (de ex. Tesla, Orlen),",
+        "– Criptomonede.",
+        "Poate vă interesează un anumit tip de piață mai concret?",
+        "Nu ne concentrăm pe un singur activ, deoarece nu se poate tranzacționa zilnic același instrument și obține același profit. Dacă apare o ocazie de câștig — bineînțeles că o folosim."
+      ]
+    },
+    {
+      "id": "trade_with_expert",
+      "title": "ТОРГІВЛЯ З ЕКСПЕРТОМ",
+      "type": "snippet",
+      "text": [
+        "ТОРГІВЛЯ З ЕКСПЕРТОМ",
+        "Cum credeți că se desfășoară tranzacționarea cu un expert?",
+        "[чекаємо на відповідь. Хвалимо, якщо намагається відповідати.]",
+        
+        "Expertul este o persoană cu peste 10 ani de experiență pe piețele financiare. Vi se va atribui un astfel de expert, care vă va ghida pe toată perioada colaborării.", 
+        "Expertul vă va ajuta, vă va sfătui, vă va explica totul pas cu pas. Vă transmite informații gata despre ce activ să cumpărați sau să vindeți, cât puteți câștiga și în ce timp.",
+        "Puteți fi complet liniștit/ă — e cu adevărat foarte simplu. Trebuie doar să apăsați un buton pentru a deschide tranzacția, iar apoi să o închideți.",
+        
+        "Ce întrebări aveți pentru mine la această etapă?",
+        
+        "Cu siguranță ați auzit că în lume au loc evenimente care permit să câștigați bine pe piață. De exemplu, când firma Tesla lansează un nou model de mașină, acțiunile firmei cresc rapid și tocmai pe asta se poate câștiga!",
+        "Ați auzit vreodată de așa ceva? [чекаємо на відповідь]",
+        
+        "• Якщо відповідь так „Tak” – продовжуємо далі по скрипту.",
+        "• Якщо „Nie” – наводимо ще один приклад, схожий на попередній.",
+        
+        "Excelent! Tocmai în astfel de situații vă va informa expertul, care vă va explica exact cât puteți câștiga pe o astfel de tranzacție și cum să o efectuați.",
+        "Uneori un astfel de eveniment permite clienților noștri să câștige chiar sute de zł într-o singură zi de tranzacționare, iar uneori și câteva mii.",
+        "Tocmai de aceea, colaborând cu un expert, puteți câștiga chiar până la 50% lunar din suma investită.",
+        "De exemplu: dacă începeți cu 1000 zł, la sfârșitul primei luni puteți avea pe cont 1500 zł.",
+        "Unde 1000 zł este suma investită, iar 500 zł este profitul Dumneavoastră.",
+        
+        "Un astfel de profit este satisfăcător pentru Dumneavoastră?"
+      ]
+    },
+    {
+  "id": "client_questions",
+  "title": "ПИТАННЯ КЛІЄНТІВ",
+  "type": "router",
+  "text": [],
+  "transitions": [
+    { "label": "ІНТЕРЕС ФІРМИ", "to": "interest_company" },
+    { "label": "Якщо клієнт питає про ризики", "to": "risks" },
+    { "label": "Якщо клієнт питає про місцезнаходження коштів", "to": "fund_location" },
+    { "label": "Пропустити", "to": "entry_amounts" }
+  ]
+},
+    {
+      "id": "interest_company",
+      "title": "Інтерес фірми",
+      "type": "snippet",
+      "text": [
+        "ІНТЕРЕС ФІРМИ:",
+        "— [ім’я клієнта], cum credeți — în ce constă interesul nostru în colaborarea cu clientul?",
+        "Firma noastră câștigă comision nu din suma investită, ci din profitul pe care îl obțineți.",
+        "Încasăm automat 10% comision din profit în momentul retragerii fondurilor din contul de tranzacționare.",
+        "Asta înseamnă că cu cât câștigați mai mult, cu atât câștigăm și noi mai mult.",
+        "Cum credeți — 10% comision sunt condiții cinstite?",
+        "Și tocmai în asta constă interesul nostru — ca clienții noștri să câștige cât mai mult.",
+        "Pentru că atunci câștigă și firma, deci putem spune că construim un business comun împreună cu clientul.",
+        "— Aveți întrebări pentru mine la această etapă?"
+      ],
+        "transitions": [
+    { "label": "⬅ Назад", "to": "client_questions" },
+    { "label": "➡ Далі", "to": "platform_demo" }
+  ]
+    },
+    {
+      "id": "risks",
+      "title": "Ризики — відповідь",
+      "type": "snippet",
+      "text": [
+        "Dacă клиент питає про ризики:",
+        "— Cum credeți, care pot fi riscurile într-o astfel de colaborare? [чекаємо відповідь, з’ясовуємо чому клієнт так вважає]",
+        "— Dacă clientul deschide singur tranzacțiile — fără ajutorul expertului și fără experiență — există un risc mare ca o astfel de tranzacție să aducă pierdere.",
+        "Dar ce sens are colaborarea, dacă clientul nu câștigă nimic sau este „în minus”?",
+        "Nu are niciun sens — nici pentru client, nici pentru firmă. E pur și simplu pierdere de timp.",
+        "Cum am menționat deja, firma noastră câștigă doar când clientul câștigă.",
+        "De aceea expertul vă ajută să alegeți tranzacția potrivită — una pe care se poate câștiga.",
+        "Nimeni nu deschide și nu închide tranzacțiile în locul Dumneavoastră — o faceți singur/ă, dar cu ajutorul expertului."
+      ],
+        "transitions": [
+    { "label": "⬅ Назад", "to": "client_questions" },
+    { "label": "➡ Далі", "to": "platform_demo" }
+  ]
+    },
+    {
+      "id": "fund_location",
+      "title": "Місцезнаходження коштів",
+      "type": "snippet",
+      "text": [
+        "Dacă клиент питає про locul unde se află fondurile:",
+        "Avem propria platformă de tranzacționare, pe care se va afla contul Dumneavoastră de tranzacționare.",
+        "Platforma noastră este foarte similară cu bankingul mobil.",
+        "În ce bancă sunteți client? [Santander, Millennium, Pekao S.A.]",
+        "Pe platforma noastră totul arată similar cu bankingul:",
+        "există secțiunea de retrageri, secțiunea unde puteți schimba parola, primi feedback, secțiunea financiară, contact cu suportul tehnic, pagina principală, precum și panoul unde se desfășoară tranzacționarea.",
+        "Contul Dumneavoastră de tranzacționare este securizat cu o parolă privată.",
+        "Nici eu, nici expertul nu avem acces la acest cont, deoarece cel mai important este securitatea clientului.",
+        "— Aveți întrebări pentru mine?"
+      ],
+        "transitions": [
+    { "label": "⬅ Назад", "to": "client_questions" },
+    { "label": "➡ Далі", "to": "platform_demo" }
+  ]
+    },
+    {
+      "id": "platform_demo",
+      "title": "Демонстрація платформи",
+      "type": "snippet",
+      "text": [
+        "ДЕМОНСТРАЦІЯ ПЛАТФОРМИ:",
+        "— Propun să vă conectați acum la platformă. Vă arăt cum funcționează totul și imediat schimbăm parola, pentru a securiza contul de tranzacționare.",
+        "— În curând vă trimit link-ul către platforma noastră — spuneți-mi doar unde ar fi mai convenabil să-l primiți: pe e-mail sau pe WhatsApp?",
+        "[Dacă pe e-mail, verificăm e-mailul dacă l-a lăsat la înregistrare. Dacă pe WhatsApp — notăm numărul nostru, ca clientul să ne adauge, iar în cazuri rare adăugăm noi.]",
+        
+        "— Înțeleg corect că acum aveți posibilitatea să deschideți platforma noastră?",
+        "[Doar după răspuns pozitiv trimitem link-ul și ghidăm clientul mai departe pe platformă.]"
+      ]
+    },
+    {
+      "id": "entry_amounts",
+      "title": "СУМИ ДЛЯ ВХОДУ У РИНОК",
+      "type": "question",
+      "text": [
+        "СУМИ ДЛЯ ВХОДУ НА РИНОК:",
+        "— Spuneți-mi, [ім’я клієнта], ați avut ocazia să vă familiarizați cu sumele de la care putem începe colaborarea?",
+        "— Oferim clienților noștri alegerea unuia dintre cele trei portofolii inițiale:",
+        "• 4800 zł (patru mii opt sute),",
+        "• 2400 zł (două mii patru sute),",
+        "• 1000-1100 zł (o mie - o mie o sută).",
+        "— Care dintre aceste sume ar fi cea mai confortabilă pentru Dumneavoastră?",
+        "— Înțeleg, această sumă este disponibilă acum pe contul Dumneavoastră bancar?"
+      ]
+    },
+   {
+  "id": "objections_root",
+  "title": "ЗАПЕРЕЧЕННЯ",
+  "type": "router",
+  "text": [],
+  "transitions": [
+    { "label": "НЕМАЄ ГРОШЕЙ", "to": "node" },
+    { "label": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)", "to": "2_0" },
+    { "label": "ХОЧУ ПОДУМАТИ", "to": "node_2" },
+    { "label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’ Ї", "to": "node_3" },
+    { "label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’ Ї 2.0 (логіка)", "to": "2_0_2" },
+    { "label": "ЛІЦЕНЗІЯ", "to": "node_4" },
+    { "label": "ХОЧУ ПОЧИТАТИ ВІДГУКИ", "to": "node_5" },
+    { "label": "ХОЧУ ПІДПИСАТИ ДОГОВІР", "to": "node_6" },
+    { "label": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ", "to": "node_7" },
+    { "label": "У ВАС АКЦЕНТ", "to": "node_8" },
+    { "label": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ", "to": "node_9" },
+    { "label": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ", "to": "node_10" },
+    { "label": "НЕМАЄ ЧАСУ (коротка версія)", "to": "node_11" },
+    { "label": "ШАХРАЇ", "to": "node_12" },
+    { "label": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ", "to": "node_13" },
+    { "label": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ", "to": "node_14" },
+    { "label": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ", "to": "node_15" },
+    { "label": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО", "to": "node_16" },
+    { "label": "ХОЧУ ПРИ ЇХАТИ В ОФІС", "to": "node_17" },
+    { "label": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА", "to": "node_18" },
+    { "label": "ЯКІ ГАРАНТІ Ї", "to": "node_19" },
+    { "label": "Я В ЦЕ НЕ ВІРЮ", "to": "node_20" },
+    { "label": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ", "to": "node_21" },
+    { "label": "БОЮСЬ", "to": "node_22" },
+    { "label": "НЕ ДОВІРЯЮ", "to": "node_23" },
+    { "label": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ", "to": "node_24" },
+    { "label": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ", "to": "node_25" },
+    { "label": "Я ВЖЕ ВТРАЧАВ", "to": "node_26" },
+    { "label": "БОЮСЯ ВТРАТИТИ", "to": "node_27" },
+    { "label": "ЯКІ Є РИЗИКИ", "to": "node_28" },
+    { "label": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ", "to": "node_29" },
+    { "label": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?", "to": "node_30" },
+    { "label": "Давайте завтра", "to": "tomorrow" }
+  ]
+},
+    {
+      "id": "tomorrow",
+      "title": "Давайте завтра — приклад + новина ПЛ",
+      "type": "snippet",
+      "text": [
+        "ПРИКЛАД + НОВИНА (PL):",
+        "— Să discutăm asta puțin mai detaliat. Există o firmă precum Apple — cu siguranță o cunoașteți bine, nu-i așa? [чекаємо відповідь клієнта]",
+        "— Excelent. Să ne imaginăm că firma Apple a produs cea mai modernă mașină electrică. Această mașină devine extrem de populară în întreaga lume și este cumpărată cu plăcere în multe țări.",
+        "— Cum credeți, ce se va întâmpla cu acțiunile firmei Apple în această situație? Valoarea lor va crește sau va scădea? [чекаємо відповідь клієнта]",
+        "— Desigur, aveți dreptate. Să presupunem acum că ați cumpărat acțiuni Apple înainte ca firma să intre pe piața mașinilor — când prețul lor era încă scăzut — și apoi le-ați vândut după creșterea prețului, cauzată de interesul mare pentru noul produs.",
+        "— În acest mod, împreună cu Dumneavoastră, am obține profit. Tocmai asta face analistul, care vă va pregăti prognoze și analize ale evenimentelor care pot influența cursul acțiunilor. Analistul vă va furniza informații gata cu justificări complete.",
+        "— Ce întrebări aveți la această etapă?",
+        "— Ce credeți despre asta?",
+        "— Vă sfătuiesc să profitați de această oportunitate astăzi.",
+        "Avem o ofertă specială — nu trebuie să începeți cu 1000 euro, e suficientă o sumă de probă de 1000–1100 zł.",
+        "— — —",
+        "— Cum vă raportați la posibilitatea de a câștiga 30 euro în viitorul apropiat?",
+        "— Cred că ați observat că situația în lume este acum destul de instabilă, nu-i așa?",
+        "— În astfel de momente, fiecare investitor vrea să aibă banii într-un loc sigur. Și tocmai atunci cea mai bună soluție este adesea investiția în aur.",
+        "— La începutul acestui an, prețul aurului era de 2600 dolari pe uncie.",
+        "— Iar știți cât costă acum? — 3239 dolari!",
+        "— Conform prognozelor celor mai mari centre analitice, prețul poate crește chiar până la 3700–3800 dolari pe uncie.",
+        "— E o ocazie excelentă! Deja astăzi puteți nu doar să vedeți cum arată câștigul, ci și să faceți efectiv 30 euro datorită creșterii prețului aurului.",
+        "Și dacă crește în câteva ore — ar fi excelent, nu-i așa?",
+        "— De aceea propun să profitați de această șansă acum.",
+        "E suficient să alimentați contul cu suma de 1000–1100 zł, pentru a începe să câștigați.",
+        "— Ce credeți despre asta?",
+        "— Vă sfătuiesc să profitați de această oportunitate astăzi.",
+        "Avem o ofertă specială — nu trebuie să începeți cu 1000 euro, e suficientă o sumă de probă de 1000–1100 zł."
+      ]
+    },
+    {
+      "id": "closing_payment",
+      "title": "ЗАКРИТТЯ — ПОПОВНЕННЯ",
+      "type": "snippet",
+      "text": [
+        "— Aveți alte întrebări? Recomand să activați contul de tranzacționare acum!", 
+        "Ce credeți despre asta?",
+        
+        "— Activarea contului se desfășoară în câteva etape:", 
+        "1) Ne conectăm împreună la contul Dumneavoastră personal, pentru ca să puteți depune direct cererea pentru furnizarea datelor personale necesare pentru alimentarea contului.",
+        "2) Apoi trebuie să copiați datele foarte atent. E extrem de important să nu omiteți nicio cifră sau literă.",
+        "3) După efectuarea transferului, vă rog să furnizați confirmarea operațiunii bancare de succes, ca să pot transmite această informație departamentului financiar pentru a înregistra fondurile pe contul de tranzacționare.", 
+        
+        "De la ce bancă planificați să transferați fondurile pe contul Dumneavoastră de tranzacționare?", 
+        
+        "Folosiți aplicația mobilă a băncii Dumneavoastră?  ",
+        
+        "Suma de 1000 złotych este disponibilă în această bancă sau în alta a Dumneavoastră?", 
+        "(ВАЖЛИВО СЛУХАТИ УВАЖНО ВІДПОВІДІ КЛІЄНТА)",
+        
+        "Excelent, să trecem la primul pas, bine?"
+
+      ]
+    },
+    {
+      "id": "node",
+      "title": "НЕМАЄ ГРОШЕЙ",
+      "type": "snippet",
+      "text": [
+        "— Spuneți-mi, nu aveți acum fonduri libere, sau e vorba de lipsă de bani în general – pentru viață? [чекаємо відповідь клієнта]",
+        "Dacă spune că nu are pentru viață:",
+        "— Aveți o situație foarte grea. Aș vrea foarte mult să vă ajut să o rezolvați, deoarece și eu am fost la început în situație similară. [свій приклад]",
+        "— Să lăsăm deocamdată chestiunile financiare. Pe cât de procente evaluați șansele Dumneavoastră că veți reuși să câștigați aici? [чекаємо відповідь, підказуємо 70–80%]",
+        "— Înțeleg că restul de 20% sunt îndoielile Dumneavoastră. Spuneți-mi, ce vă face nesigur/ă?",
+        "Dacă spune că e sigur/ă, dar nu are bani:",
+        "— Imaginați-vă – dacă ar trebui urgent să obțineți 1000–1100 zł, ce ați face ca să găsiți această sumă?",
+        "Dacă spune că nu are libere:",
+        "— Prin „fonduri libere” înțelegeți bani pe care nu vă e frică să-i pierdeți? [чекаємо відповідь клієнта]",
+        "— Spuneți-mi – cum credeți, în ce mod ați putea pierde bani aici?"
+      ]
+    },
+    {
+      "id": "2_0",
+      "title": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)",
+      "type": "snippet",
+      "text": [
+        "Utocnenie situației financiare:",                                                                                                                                                               
+        "Înțeleg că situația financiară poate fi dificilă. Ați putea preciza în ce constau exact aceste dificultăți? Astfel voi putea înțelege mai bine situația Dumneavoastră și propune cea mai bună soluție posibilă.",
+        "Cât vă lipsește? Cât timp va fi necesar pentru a rezolva chestiunea financiară? Când vă așteptați să primiți următorii bani (de ex. salariu, pensie, alocație)?", 
+        "[якщо клієнт відповідає на перше запитання, що повний нуль, найімовірніше, клієнт не до кінця чесний і за цим приховує свої сумніви або недовіру,",
+        "відповіді на наступні запитання теж треба слухати дуже уважно, адже клієнт може сказати, що зарплату дали кілька днів тому, а отже, гроші в нього є, але розпочинати роботу він не збирається]",
+        "Subiectarea importanței investițiilor:",                                                                                                                                          
+        "Înțeleg că acum poate părea că nu e cel mai bun moment pentru investiții. Vă rog însă să priviți asta ca pe o șansă — nu doar de a păstra, ci și de a multiplica capitalul. Timpul e bani – cu cât începeți mai devreme, cu atât mai mare potențialul de profit puteți utiliza.",
+        "Propunerea condițiilor exclusive:",                                                                                                                                       
+        "Sunt gata să vă propun condiții exclusive destinate noilor investitori. E o ocazie unică de a obține acces la oportunități investiționale atractive, care nu sunt disponibile public. [Запропонувати бонус]",
+        "Crearea senzației de urgență:",                                                                                                                             
+        "Situația pe piață se poate schimba rapid, de aceea e important să acționați fără întârziere. În timp ce Dumneavoastră încă vă gândiți, alții pot deja profita de această ocazie. Investiția acum poate aduce mai multe beneficii decât în viitor.",
+        "Subiectarea succeselor investitorilor anteriori:",                                                                                                                           
+        "Mulți dintre investitorii noștri au început cu sume mici, iar azi sunt proprietari de portofolii semnificative. Succesele lor vorbesc de la sine. Nu ați vrea să profitați de șansa Dumneavoastră?",
+        "Pregătirea pentru încheierea tranzacției:",                                                                                                                                              
+        "Dacă rezolvăm rapid această chestiune, sunt gata să vă transmit toate informațiile necesare și să procedăm la finalizarea tranzacției. Sunt doar câțiva pași – și în curând veți începe să vedeți primele rezultate.",
+        "Utilizarea faptelor convingătoare:",                                                                                                                                  
+        "Merită să țineți minte că mulți oameni de succes își datorează bunăstarea tocmai investițiilor. Nu merită să așteptați un moment mai bun – să-l creăm împreună acum"
+      ]
+    },
+    {
+      "id": "node_2",
+      "title": "ХОЧУ ПОДУМАТИ",
+      "type": "snippet",
+      "text": [
+        "Din experiența mea, când un client spune că vrea să se gândească, adesea înseamnă că nu a înțeles complet proiectul sau nu este încă convins de el.",
+
+        "Spuneți-mi, de ce anume vă temeți? [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
+        "Spuneți-mi, la ce exact ați vrea să vă gândiți?",
+        "Ce a lipsit în prezentarea mea, ca să puteți lua decizia acum?",
+        "Ce vă oprește de la decizie în acest moment?",
+        "Cum poate influența asta decizia Dumneavoastră finală?",
+
+        "Desigur, aveți dreptul să vă gândiți. Totuși, din experiența mea, deciziile se iau cel mai bine când puteți vedea rezultate concrete și înțelege cum funcționează în practică.",
+        "Sincer vorbind, acum nu e nimic de gândit mult — decât dacă ceva vă trezește îndoieli? Ce exact vă oprește de la decizie?...(truncated 2885 characters)...т:**",
+        "– Bine, nu am nimic împotrivă să vă furnizez licența.",
+        "– Dar spuneți-mi – licența în sine poate fi o garanție a câștigului?",
+        "– De exemplu: un șofer care are permis de conducere vă poate garanta o călătorie sigură?",
+        "– Sunteți de acord că permisul de conducere e și el o formă de licență pentru șofer?",
+        "– Posesia lui în sine oferă garanție?",
+        "– Din păcate, în zilele noastre obținerea unei licențe – la fel ca permisul de conducere – nu e dificilă.",
+        "– De aceea licența în sine nu oferă certitudine 100% că cineva va obține profit."
+      ]
+    },
+    {
+      "id": "node_5",
+      "title": "ХОЧУ ПОЧИТАТИ ВІДГУКИ",
+      "type": "snippet",
+      "text": [
+        "- Spuneți-mi – cât de des vă întâmplă să scrieți personal recenzii pe internet? [Чекаємо на відповідь клієнта.]",                                                                                                                                                                                                        
+        "- Iar cum credeți – cine scrie cel mai des recenzii? [Чекаємо на відповідь клієнта.]",                                                                         
+        "- Știți, dacă aș scrie acum o mie de comentarii negative despre mașina Dumneavoastră – ar însemna asta că mașina nu funcționează și trebuie vândută? [Пауза, щоб задумався.]",                                                                                
+        "- Cred că nimic nu convinge mai bine decât experiența personală.",                                                                              
+        "- De aceea vă încurajez – să verificăm împreună cu ocazia evenimentului de azi și veți vedea rezultatele cu ochii proprii.",
+
+                                          "**Alt variantă:**",
+        "– E o idee excelentă să citiți recenzii – mai ales când știm cine le-a scris.",
+        "– Spuneți-mi, cum deosebiți o recenzie adevărată de una mai puțin credibilă?",
+        "– Sunteți de acord că recenziile pot fi cumpărate?",
+        "– V-ați uitat vreodată la recenziile băncii Dumneavoastră proprii?",
+        "– La ce recenzii acordați mai multă atenție – pozitive sau negative?",
+        "– Iar dacă v-aș prezenta sute de recenzii pozitive și o sută negative – pe care le-ați considera mai credibile?",
+        "– Cred că nimic nu convinge mai bine decât experiența personală.",
+        "– De aceea vă încurajez – să verificăm împreună cu ocazia evenimentului de azi și veți vedea rezultatele cu ochii proprii.",
+        
+                                    "**A citit recenzii negative:**",
+        "Explicație pe exemplu:",
+        "– Faptul că v-ați familiarizat cu recenziile arată că tratați serios decizia de colaborare – și asta e foarte bine.",
+        "– Totuși, trebuie să țineți minte că recenziile pe internet nu reflectă întotdeauna realitatea.",
+        "– Multe dintre ele sunt scrise de concurență.",
+        "– Cel mai important este ceea ce verificați personal – folosind platforma.",
+        "– Atunci singur/ă evaluați dacă colaborarea funcționează așa cum așteptați.",
+        "– Recenziile pot fi scrise, copiate, editate – dar experiența nimeni nu o poate falsifica.",
+        "– De aceea vă rog – să verificăm împreună, ca să puteți vedea singur/ă rezultatele."
+      ]
+    },
+    {
+      "id": "node_6",
+      "title": "ХОЧУ ПІДПИСАТИ ДОГОВІР",
+      "type": "snippet",
+      "text": [
+        "- Cu mine personal nu semnați contractul.",
+        "- După începerea colaborării cu analistul, întrebați-l despre contract – ele sunt pregătite individual pentru fiecare client, ținând cont de tipul colaborării, profiturile așteptate, direcția tranzacționării și situația financiară.",
+        "[Якщо клієнт просить вислати порожній договір, ви маєте вивести на обґрунтоване заперечення, і зрозуміти, чому йому потрібен цей договір / НЕ  ВПЕВНЕНА АБО БОЇТЬСЯ / відводьте в тему обґрунтованого заперечення (якої форми договір вас цікавить?)]",
+                                    "**A doua variantă:**",
+        "– Contractul se semnează în cazul în care firma preia fondurile clientului în management.",
+        "– În cazul nostru, nu ne transmiteți banii Dumneavoastră – deschideți propriul cont și îl gestionați singur/ă, folosind recomandările noastre.",
+        "– Spuneți-mi, în câte procente sunteți sigur/ă că veți reuși să câștigați cu noi?"
+      ]
+    },
+    {
+      "id": "node_7",
+      "title": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ",
+      "type": "snippet",
+      "text": [
+         "Și de ce tocmai peste o lună?",                                                                                                                                              
+                        "Sau",
+        "Desigur că pot suna peste o lună, dar spuneți-mi – ce se va schimba în acest timp?",
+                        "Sau",
+        "Ce vă împiedică să începeți acum?",
+                        "Sau",
+       "Pot să întreb, ce vă oprește de la începere acum?", 
+       "[Dacă clientul spune că trebuie: să se gândească, va avea mai mult timp mai târziu - atunci trecem la prelucrarea acestor obiecții.",
+        "Dacă clientul spune că doar peste o lună va avea bani - atunci sarcina noastră este să-i vindem știrea, să-l interesăm cu profitul, să punem deadline și să propunem să începem lucrul în condiții mai avantajoase.]"
+      ]
+    },
+    {
+      "id": "node_8",
+      "title": "У ВАС АКЦЕНТ",
+      "type": "snippet",
+      "text": [
+        "Pe teritoriul țării noastre locuiesc mulți oameni din diferite părți ale lumii, deci e greu să găsești pe cineva fără niciun accent.",
+        "Totuși, în peste 3 ani de lucru în această firmă, accentul meu niciodată nu a fost o piedică în a ajuta oamenii să obțină profituri.",
+        "De aceea să ne concentrăm pe scopul pentru care ați lăsat înregistrarea și să vorbim despre profiturile potențiale pe care le puteți obține.",
+        "[ОДРАЗУ ЗАДАЄМО ВІДКРИТЕ ПИТАННЯ]"
+      ]
+    },
+    {
+      "id": "node_9",
+      "title": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ",
+      "type": "snippet",
+      "text": [
+        "Înțeleg că e un domeniu nou pentru Dumneavoastră și pot apărea anumite temeri – fiecare dintre noi a început odată.",
+        "Tocmai de aceea vă atribuim un analist experimentat, care vă va ghida pas cu pas – ca un profesor la școală.",
+        "Firma noastră, la fel ca Dumneavoastră, este interesată de un singur lucru – CÂȘTIGUL!",
+        "Încasăm comision doar când retrageți profiturile Dumneavoastră – deci suntem parteneri, nu doar furnizori de servicii.",
+        "Sunt convins/ă că veți avea succes în colaborarea cu noi – și în curând veți vedea singur/ă!"
+      ]
+    },
+    {
+      "id": "node_10",
+      "title": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ",
+      "type": "snippet",
+      "text": [
+        "– Deoarece vreți să primiți informațiile pe e-mail, poate însemna că nu totul e clar încă pentru Dumneavoastră. Spuneți-mi – ce informație lipsește sau ce trezește îndoieli?",
+        "– Ce altceva ați vrea să vă explic?",
+        "[Dacă clientul răspunde că nu vrea să clarifice nimic și totul e clar, atunci propuneți să începeți lucrul]",
+        "– Deoarece totul e clar, propun să facem primul pas.",
+        "Ce sumă ați ales pentru începerea colaborării?"
+      ]
+    },
+    {
+      "id": "node_11",
+      "title": "НЕМАЄ ЧАСУ",
+      "type": "snippet",
+      "text": [
+        "Vreau să subliniez un lucru foarte important – activarea contului va dura literalmente câteva minute, iar apoi puteți reveni la obligațiile zilnice.",
+                        "Sau",
+        "– Vorbim deja de peste 20 de minute, iar când ne apropiem de activarea contului de tranzacționare, spuneți că nu aveți timp acum.",
+        "Spuneți sincer – ceva vă oprește? De ce anume vă temeți?"
+      ]
+    },
+    {
+      "id": "node_12",
+      "title": "ШАХРАЇ",
+      "type": "snippet",
+      "text": [
+        "Pe baza căror informații evaluați care firmă e cinstită și care nu?",
+        "[Чекаємо на відповідь клієнта]",
+        "În ce vedeți exact potențialul de fraudă?",
+        "[Чекаємо на відповідь клієнта]",
+        "Nu vă cer nicio dată personală – Dumneavoastră singur/ă ați lăsat formularul de înregistrare ca să vă contactăm.",
+        "Cel mai important, fondurile se află pe contul Dumneavoastră individual și doar Dumneavoastră aveți acces la el. Unde poate fi vorba de fraudă?"
+      ]
+    },
+    {
+      "id": "node_13",
+      "title": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ",
+      "type": "snippet",
+      "text": [
+        "Dacă 1000–1100 zł e o sumă prea mare pentru Dumneavoastră la început, spuneți-mi – ce sumă ar fi potrivită pentru Dumneavoastră ca să începeți colaborarea?",
+        "[Dacă clientul spune - că nu e gata să înceapă și vrea să se gândească, să citească sau să se consulte, atunci trecem la prelucrarea acestei obiecții. Dacă clientul numește orice altă sumă mai mică de 1000-1100 zł, atunci dezvoltăm dialogul mai departe]",
+        "De ce tocmai această sumă? Pentru că în caz de dificultăți nu ar fi o povară mare pentru Dumneavoastră? Spuneți sincer.",
+        "[Dacă clientul spune - DA sau că vrea să se gândească sau se teme - trecem la prelucrarea acestor obiecții]"
+      ]
+    },
+    {
+      "id": "node_14",
+      "title": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ",
+      "type": "snippet",
+      "text": [
+        "Desigur că investesc – ba mai mult, am și un analist personal cu care colaborez și cu care de 4 ani câștig pe tranzacționare.", 
+        "Cel mai des investim în criptomonede, dar deschidem regulat tranzacții și pe alte active.",
+        "Ba mai mult – nu doar eu investesc, ci și apropiații mei participă la acest proiect.",
+        
+        "Vă sfătuiesc să începeți colaborarea – astfel puteți începe să câștigați ca și mine.",
+        
+        "Vă încurajez să începeți colaborarea – singur/ă veți vedea că se poate câștiga bine."
+      ]
+    },
+    {
+      "id": "node_15",
+      "title": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ",
+      "type": "snippet",
+      "text": [
+        "De ce suma minimă e tocmai 1000-1100 zł și nu se poate mai puțin?",
+        "Această sumă rezultă din strategia adoptată de tranzacționare sigură. Deschidem în medie 6–10 poziții pe zi, dar folosim întotdeauna doar aproximativ 50% din fonduri, pentru a minimiza riscul.",
+        "De aceea 1000-1100 zł e suma care permite un început eficient și sigur al investițiilor – din care doar jumătate intră efectiv pe piață.",
+        "Desigur puteți căuta un broker cu prag de intrare mai mic, dar acolo veți acționa singur/ă – fără sprijin, fără strategie și fără o persoană implicată în rezultatul Dumneavoastră. La noi suntem parteneri – câștigați Dumneavoastră, câștigăm noi.",
+        "De aceea dacă vă pasă de securitate și profituri, cel mai bine să vă convingeți în practică. Propun să alimentați contul cu suma minimă și deja azi să faceți primul pas spre profit.",
+                   "Sau",
+        "De 5 ani testăm colaborarea cu clienții la diferite sume și am ajuns la concluzia că 1000-1100 zł e cea mai sigură sumă pentru start.",
+        "Tocmai de la această sumă vă pot da garanție că totul va reuși.",
+        "Dacă întrebați „de ce?”, vă explic imediat:",
+        "această sumă este distribuită corespunzător conform regulilor de management al riscului – o parte din capital lucrează pe piață, iar restul servește ca așa-numita „pernă de siguranță”.",
+        "Spuneți-mi – sunteți de acord că nu merită să investiți toată suma într-un singur loc?"
+      ]
+    },
+    {
+      "id": "node_16",
+      "title": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО",
+      "type": "snippet",
+      "text": [
+        "Am discutat totul necesar pentru start.",
+        "Ați ales modul de acțiune care accelerează atingerea scopului.",
+        "Securitatea fondurilor e și ea discutată — deci nu lipsa de interes e obstacolul.",
+        "Spuneți direct — de ce vă temeți?"
+      ]
+    },
+    {
+      "id": "node_17",
+      "title": "ХОЧУ ПРИ ЇХАТИ В ОФІС",
+      "type": "snippet",
+      "text": [
+        "În general am discutat deja totul necesar pentru ca să începeți colaborarea.", 
+        "Ați decis modul de acțiune care poate ajuta să atingeți scopul financiar mai repede decât presupuneați.", 
+        "Am discutat și chestiunea securității fondurilor, deci cred că nu lipsa de interes e obstacolul.", 
+        "Spuneți direct – de ce vă temeți?"
+      ]
+    },
+    {
+      "id": "node_18",
+      "title": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА",
+      "type": "snippet",
+      "text": [
+        "Suntem o firmă internațională, birou și în Polonia — principal în Krotoszyn.",
+        "Înregistrare: ELITE POLSKA sp. z o.o., KRS: 0000646268, ul. Juliana Smulikowskiego 4/112, 00-389 Warszawa, Mazowieckie, data: 2016-11-10.",
+        "În practică, cererea oficială la NBP poate costa ~150€ și dura până la 14 zile lucrătoare.",
+        "👉 Dacă numele proiectului diferă de numele firmei — verificați după nume și KRS pe internet."
+      ]
+    },
+    {
+      "id": "node_19",
+      "title": "ЯКІ ГАРАНТІ Ї",
+      "type": "snippet",
+      "text": [
+        "Dacă întrebați despre garanții, înseamnă că vreți să vă protejați de ceva. Spuneți-mi – de ce anume vă temeți?",
+        "[ЗАДАЄМО ПИТАННЯ/ОТРИМАЄМО ВІДПОВІДЬ, НЕ ВІДПОВІДАЙТЕ ЗА КЛІЄНТА! Dacă clientul mormăie și nu poate răspunde clar, întrebați-l:]",
+        "Imaginați-vă ce poate întâmpla în colaborarea cu noi.",
+        "[СТАВИМО ЗАПИТАННЯ/ЧЕКАЄМО ВІДПОВІДЬ НЕ НАКИДАЮЧИ ВАРІАНТИ ЗА КЛІЄНТА]",
+        "Doar oamenii înțelepți se interesează de această întrebare – spuneți-mi, ce garanții concrete vă interesează?",
+        "[Dacă clientul se referă la contract, licență sau întâlnire personală – folosim prelucrările corespunzătoare din acest fișier. Dacă clientul nu poate da un răspuns exact, folosim varianta de mai jos]",
+        "Cea mai importantă garanție în colaborarea noastră este interesul comun. Gândiți-vă – ce câștig am avea dacă v-am pune în situația în care pierdeți bani, deoarece câștigul nostru e 10% din profitul Dumneavoastră? ",
+        "În firma noastră absolut toți sunt interesați ca colaborarea noastră să dureze ani de zile."
+      ]
+    },
+    {
+      "id": "node_20",
+      "title": "Я В ЦЕ НЕ ВІРЮ",
+      "type": "snippet",
+      "text": [
+        "În ce exact nu credeți? [Чекаємо відповідь клієнта]",
+        "Nu credeți că aici se poate câștiga cu adevărat? [Чекаємо на відповідь клієнта + можемо посилатися на інтерес компанії.]",
+        "Nu aveți încredere? Sau poate vă temeți de ceva?"
+      ]
+    },
+    {
+      "id": "node_21",
+      "title": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ",
+      "type": "snippet",
+      "text": [
+        "Nu trebuie să credeți în industria investițiilor — asta se poate verifica în practică.",
+        "De exemplu: aurul e stabil la preț, iar valuta națională înainte de alegeri de obicei pierde valoare.",
+        "Toate aceste evenimente pot fi prevăzute — trebuie doar să aveți încredere în analiștii noștri.",
+        "Sunt profesioniști în domeniul lor, iar scopul lor principal e creșterea maximă a capitalului Dumneavoastră și profitul comun, deoarece tocmai asta e venitul nostru.",
+        
+        "Dacă obțineți profit și îl retrageți pe contul Dumneavoastră — atunci veți crede că funcționează?",
+        "În acest caz propun să facem acest pas, să vedem rezultatul în practică și abia apoi să evaluați cât de real e.", 
+        "Vă sfătuiesc să începeți colaborarea și deja azi să obțineți primul profit!"
+      ]
+    },
+    {
+      "id": "node_22",
+      "title": "БОЮСЬ",
+      "type": "snippet",
+      "text": [
+        "Înțeleg temerile Dumneavoastră – e complet natural. Fiecare care începe ceva nou are anumite frici.",
+        "Dar vă rog să vă puneți o întrebare: de ce anume vă temeți? De pierderea fondurilor?",
+        "Tocmai de aceea nu vă lăsăm singur/ă. Primiți sprijinul unui analist, care vă ghidează pas cu pas.",
+        "În plus – câștigăm doar când câștigați Dumneavoastră, deci avem interes comun în succesul Dumneavoastră.",
+        "Nu investiți toată suma deodată – lucrăm doar cu o parte din capital, iar restul servește ca securitate.",
+        "E o strategie gândită și sigură de management al riscului",
+        "De aceea propun: să încercăm. Doar practica risipește toate îndoielile."        
+      ]
+    },
+    {
+      "id": "node_23",
+      "title": "НЕ ДОВІРЯЮ",
+      "type": "snippet",
+      "text": [
+        "Înțeleg temerile Dumneavoastră – e complet natural. Fiecare care începe ceva nou are anumite frici.",
+        "Dar vă rog să vă puneți o întrebare: de ce anume vă temeți? De pierderea fondurilor?",
+        "Tocmai de aceea nu vă lăsăm singur/ă. Primiți sprijinul unui analist, care vă ghidează pas cu pas.",
+        "În plus – câștigăm doar când câștigați Dumneavoastră, deci avem interes comun în succesul Dumneavoastră.",
+        "Nu investiți toată suma deodată – lucrăm doar cu o parte din capital, iar restul servește ca securitate.",
+        "E o strategie gândită și sigură de management al riscului.",
+        "De aceea propun: să încercăm. Doar practica risipește toate îndoielile."
+      ]
+    },
+    {
+      "id": "node_24",
+      "title": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ",
+      "type": "snippet",
+      "text": [
+        "Înțeleg temerile Dumneavoastră – e complet natural. Fiecare care începe ceva nou are anumite frici.",
+        "Dar vă rog să vă puneți o întrebare: de ce anume vă temeți? De pierderea fondurilor?",
+        
+        "Tocmai de aceea nu vă lăsăm singur/ă. Primiți sprijinul unui analist, care vă ghidează pas cu pas.",
+        "În plus – câștigăm doar când câștigați Dumneavoastră, deci avem interes comun în succesul Dumneavoastră.",
+        
+        "Nu investiți toată suma deodată – lucrăm doar cu o parte din capital, iar restul servește ca securitate.",
+        "E o strategie gândită și sigură de management al riscului.",
+        
+        "De aceea propun: să încercăm. Doar practica risipește toate îndoielile."
+      ]
+    },
+    {
+      "id": "node_25",
+      "title": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ",
+      "type": "snippet",
+      "text": [
+        "Nu spunem singuri când se va face retragerea. Dacă clientul întreabă:",                                                                                                                           
+        "Toate întrebările privind retragerea fondurilor vă rog să le discutați cu expertul Dumneavoastră.", 
+        "Mai ales că primele profituri obținute le veți retrage tocmai cu ajutorul lui – el vă va indica exact cum să faceți. De acord?",
+
+        "Dacă clientul insistă dacă poate retrage în orice moment:",                                                                              
+        "Retragerea fondurilor este posibilă în orice moment. Sarcina Dumneavoastră principală acum este însă să obțineți profit, iar dacă vreți să vedeți cum arată acest proces în practică, expertul cu siguranță vă va ajuta."
+      ]
+    },
+    {
+      "id": "node_26",
+      "title": "Я ВЖЕ ВТРАЧАВ",
+      "type": "snippet",
+      "text": [
+        "Înțeleg perfect – e o situație foarte neplăcută și desigur înțeleg temerile Dumneavoastră.",
+        "Spuneți-mi, de ce anume vă temeți?",
+                          "Sau",
+        "Înțeleg perfect temerile Dumneavoastră – e cu adevărat o situație neplăcută.",
+        "Spuneți-mi, ce anume vă îngrijorează?",                                                                                                
+       "[Mai departe fie trecem la prelucrarea obiecțiilor pe care le va da clientul, fie explicăm din nou unde se află fondurile și lucrul cu analistul.]"
+      ]
+    },
+    {
+      "id": "node_27",
+      "title": "БОЮСЯ ВТРАТИТИ",
+      "type": "snippet",
+      "text": [
+        "În procesul de tranzacționare:",
+        "Desigur, la bursă orice se poate întâmpla – mai ales când tranzacționați singur. În acest caz e foarte ușor să aveți pierderi, deoarece riscul există întotdeauna.",
+        "Scopul nostru principal este însă să vă aducem la profituri stabile, deoarece și noi câștigăm doar când câștigați Dumneavoastră!",
+        
+        "Câștigăm atât pe creșteri, cât și pe scăderi de prețuri.",
+        "Analiștii noștri informează constant în ce direcție merge piața și vă ajută să deschideți tranzacțiile la momentul potrivit.",
+        "În plus, expertul vă va ajuta să setați așa-numiții limitatori (stop loss/take profit), care vă vor securiza fondurile.",
+        
+        "Propun să începeți colaborarea acum – ca încă azi să vedeți primul profit!",
+        
+        "La retragere:",
+        
+        "E exclusiv contul Dumneavoastră individual de tranzacționare. Spuneți-mi – când faceți transfer între conturile Dumneavoastră bancare, s-a întâmplat ca fondurile să „dispară”?",
+        "Aici e exact la fel – pur și simplu faceți transfer între conturile Dumneavoastră. E COMPLET SIGUR!",
+        
+        "De aceea propun să începeți colaborarea acum, ca deja azi să vedeți primul profit!",
+        
+        "Noi primim comisionul nostru doar în momentul când retrageți profiturile Dumneavoastră.",
+        "Gândiți-vă – ce beneficiu am avea dacă nu ați reuși să retrageți banii, deoarece atunci nici noi nu câștigăm nimic?",
+        "Câștigăm doar când câștigați Dumneavoastră. De aceea suntem pe deplin interesați de succesul Dumneavoastră!"
+      ]
+    },
+    {
+      "id": "node_28",
+      "title": "ЯКІ Є РИЗИКИ",
+      "type": "snippet",
+      "text": [
+        "Înțeleg la ce vă gândiți. Lucrez în această industrie de mult timp și știu că fiecare om rezonabil se interesează de chestiunea riscului. Întrebări de genul:",
+        "Dar dacă pierd?",
+        "sau",
+        "Ce garanții am?", 
+        "– e o reacție naturală. În fond, e vorba de banii Dumneavoastră, deci astfel de temeri sunt pe deplin justificate.",
+        
+        "Aș fi un consilier slab dacă aș susține că riscul nu există – pur și simplu nu e adevărat.",
+        "Construim o relație bazată pe încredere, de aceea spun direct: riscul există întotdeauna, deoarece nimeni nu are control total asupra pieței financiare.",
+        "Situații neașteptate pot apărea oriunde, dar cheia e să gestionați acest risc cu abilitate.",
+        
+        "Cum se spune:", "cine are informație, are putere","Și noi avem aceste informații.",
+        
+        "De aceea folosim o serie de instrumente care ajută să reducem riscul la minim.",
+        "Unul dintre cele mai importante astfel de instrumente este așa-numitul Stop Loss. Ați auzit de acest concept?",
+        
+        "(Stop Loss) (din eng. „oprește pierderea”) – e un mecanism care închide automat poziția dacă atinge un anumit nivel de pierdere",
+        "De exemplu: dacă setăm Stop Loss la nivelul de 2 dolari, atunci chiar dacă piața se prăbușește brusc – sistemul va închide singur tranzacția cu pierdere maximă de 2 dolari. E o formă foarte eficientă de securizare.",
+        
+        "Mai mult – acționăm întotdeauna pe mai multe poziții simultan, ceea ce înseamnă că chiar dacă o tranzacție aduce pierdere, celelalte pot aduce profit.",
+        "Datorită asta e posibil să generați venit zilnic – uneori mai mare, uneori mai mic, dar regulat."
+      ]
+    },
+    {
+      "id": "node_29",
+      "title": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ",
+      "type": "snippet",
+      "text": [
+        "Anterior această funcție era disponibilă pe platforma noastră, dar am renunțat complet la ea – și vă explic de ce!",
+        "Am făcut-o gândindu-ne la securitatea Dumneavoastră. Am eliminat această metodă de depunere pentru a evita situațiile în care utilizatorii trebuie să introducă datele cardului, cum ar fi numărul, data expirării sau codul CVC.",
+
+        "Acum activarea contului se face exclusiv prin departamentul financiar. Deoarece operăm pe teritoriul Poloniei, trebuie să ne decontăm cu fiscul.",
+        "Noi din partea noastră efectuăm conversia valutară, declarăm suma Dumneavoastră și apoi o înregistrăm pe contul Dumneavoastră de tranzacționare.",
+        "În plus, suportăm toate costurile legate de comision – ceea ce face această metodă mai avantajoasă pentru Dumneavoastră, nu-i așa?"
+      ]
+    },
+    {
+      "id": "node_30",
+      "title": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?",
+      "type": "snippet",
+      "text": [
+        "Partenerul oficial de plăți are mai multe conturi, unele pe fundații (de ex. Crucea Roșie) — pentru transparență și conformitate legală.",
+        "Numele destinatarului e o chestiune tehnică; fondurile ajung pe contul individual de tranzacționare.",
+        "Similar cu biletele/rezervările — pe extras apare uneori alt nume legal.",
+        "Canalul e oficial și acceptat de bănci; soldul va fi alimentat cu suma aleasă."
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "barriers_router",
+      "to": "bar_email",
+      "label": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_not_registered",
+      "label": "НЕ РЕЄСТРУВАВСЯ:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_not_mine",
+      "label": "ЦЕ НЕ МОЄ:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_nothing_needed",
+      "label": "НІЧОГО НЕ ПОТРІБНО:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_busy",
+      "label": "Я ЗАЙНЯТИЙ:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_child",
+      "label": "ЦЕ ДИТИНА:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_no_time",
+      "label": "НЕМАЄ ЧАСУ:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_accidental",
+      "label": "ЦЕ ВИПАДКОВО:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_not_interesting",
+      "label": "НЕ ЦІКАВО:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_scam",
+      "label": "ЦЕ ОБМАН"
+    },
+    {
+      "from": "greeting",
+      "to": "barriers_router",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "barriers_router",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "exp_no",
+      "to": "experience_q",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "exp_yes",
+      "to": "experience_q",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "experience_q",
+      "to": "exp_no",
+      "label": "Немає досвіду"
+    },
+    {
+      "from": "experience_q",
+      "to": "exp_yes",
+      "label": "Є досвід"
+    },
+    {
+      "from": "exp_no",
+      "to": "work",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "exp_yes",
+      "to": "work",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "work",
+      "to": "family",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "family",
+      "to": "back_to_exp",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "back_to_exp",
+      "to": "goal",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "goal",
+      "to": "presentation",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "presentation",
+      "to": "pres_noexp",
+      "label": "Немає досвіду"
+    },
+    {
+      "from": "presentation",
+      "to": "pres_exp",
+      "label": "Є досвід"
+    },
+    {
+      "from": "pres_noexp",
+      "to": "presentation",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "pres_noexp",
+      "to": "trade_with_expert",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "pres_exp",
+      "to": "presentation",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "pres_exp_yes",
+      "to": "presentation",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "pres_exp_no",
+      "to": "presentation",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "pres_exp",
+      "to": "pres_exp_yes",
+      "label": "Tak"
+    },
+    {
+      "from": "pres_exp",
+      "to": "pres_exp_no",
+      "label": "Nie"
+    },
+    {
+      "from": "pres_exp_yes",
+      "to": "trade_with_expert",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "pres_exp_no",
+      "to": "trade_with_expert",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "trade_with_expert",
+      "to": "client_questions",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "client_questions",
+      "to": "interest_company",
+      "label": "ІНТЕРЕС ФІРМИ"
+    },
+    {
+      "from": "client_questions",
+      "to": "risks",
+      "label": "Dacă клієнт питає про ризики"
+    },
+    {
+      "from": "client_questions",
+      "to": "fund_location",
+      "label": "Dacă клієнт питає про місцезнаходження коштів"
+    },
+    {
+      "from": "client_questions",
+      "to": "platform_demo",
+      "label": "Пропустити"
+    },
+    {
+      "from": "platform_demo",
+      "to": "entry_amounts",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "entry_amounts",
+      "to": "objections_root",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "objections_root",
+      "to": "node",
+      "label": "НЕМАЄ ГРОШЕЙ"
+    },
+    {
+      "from": "objections_root",
+      "to": "2_0",
+      "label": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_2",
+      "label": "ХОЧУ ПОДУМАТИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_3",
+      "label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’ Ї"
+    },
+    {
+      "from": "objections_root",
+      "to": "2_0_2",
+      "label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’ Ї 2.0 (логіка)"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_4",
+      "label": "ЛІЦЕНЗІЯ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_5",
+      "label": "ХОЧУ ПОЧИТАТИ ВІДГУКИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_6",
+      "label": "ХОЧУ ПІДПИСАТИ ДОГОВІР"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_7",
+      "label": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_8",
+      "label": "У ВАС АКЦЕНТ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_9",
+      "label": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_10",
+      "label": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_11",
+      "label": "НЕМАЄ ЧАСУ (коротка версія)"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_12",
+      "label": "ШАХРАЇ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_13",
+      "label": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_14",
+      "label": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_15",
+      "label": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_16",
+      "label": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_17",
+      "label": "ХОЧУ ПРИ ЇХАТИ В ОФІС"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_18",
+      "label": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_19",
+      "label": "ЯКІ ГАРАНТІ Ї"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_20",
+      "label": "Я В ЦЕ НЕ ВІРЮ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_21",
+      "label": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_22",
+      "label": "БОЮСЬ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_23",
+      "label": "НЕ ДОВІРЯЮ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_24",
+      "label": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_25",
+      "label": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_26",
+      "label": "Я ВЖЕ ВТРАЧАВ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_27",
+      "label": "БОЮСЯ ВТРАТИТИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_28",
+      "label": "ЯКІ Є РИЗИКИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_29",
+      "label": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_30",
+      "label": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?"
+    },
+    {
+      "from": "objections_root",
+      "to": "tomorrow",
+      "label": "Давайте завтра"
+    },
+    {
+      "from": "objections_root",
+      "to": "tomorrow",
+      "label": "Давайте завтра"
+    },
+    {
+      "from": "objections_root",
+      "to": "closing_payment",
+      "label": "Перейти до оплати"
+    },
+    {
+      "from": "bar_email",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_not_registered",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_not_mine",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_nothing_needed",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_busy",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_child",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_no_time",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_accidental",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_not_interesting",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_scam",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "node",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "node",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "2_0",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "2_0",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "node_2",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "node_2",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "node_3",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "node_3",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "node_4",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "node_4",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "tomorrow",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "tomorrow",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "closing_payment",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "work",
+      "to": "experience_q",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "family",
+      "to": "work",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "back_to_exp",
+      "to": "family",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "goal",
+      "to": "back_to_exp",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "presentation",
+      "to": "goal",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "experience_q",
+      "to": "barriers_router",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "closing_payment",
+      "to": "greeting",
+      "label": "🏠 На початок"
+    },
+    { "from": "2_0_2",   "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "2_0_2",   "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_5",  "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_5",  "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_6",  "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_6",  "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_7",  "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_7",  "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_8",  "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_8",  "to": "closing_payment", "label": "➡ Далі" },
+ 
+    { "from": "node_9",  "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_9",  "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_10", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_10", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_11", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_11", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_12", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_12", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_13", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_13", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_14", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_14", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_15", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_15", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_16", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_16", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_17", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_17", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_18", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_18", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_19", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_19", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_20", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_20", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_21", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_21", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_22", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_22", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_23", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_23", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_24", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_24", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_25", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_25", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_26", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_26", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_27", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_27", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_28", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_28", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_29", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_29", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_30", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_30", "to": "closing_payment", "label": "➡ Далі" },
+    { "from": "bar_email",           "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_not_registered",  "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_not_mine",        "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_nothing_needed",  "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_busy",            "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_child",           "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_no_time",         "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_accidental",      "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_not_interesting", "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_scam",            "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "interest_company", "to": "client_questions", "label": "⬅ Назад" },
+    { "from": "interest_company", "to": "platform_demo",   "label": "➡ Далі" },
+    { "from": "risks",            "to": "client_questions", "label": "⬅ Назад" },
+    { "from": "risks",            "to": "platform_demo",    "label": "➡ Далі" },
+    { "from": "fund_location",    "to": "client_questions", "label": "⬅ Назад" },
+    { "from": "fund_location",    "to": "platform_demo",    "label": "➡ Далі" }
+
+  ],
+  "ui": {
+  "sticky_comment_panel": true,
+  "sticky_comment_title": "Коментар про клієнта",
+  "sticky_comment_position": "right"
+}
+    }
