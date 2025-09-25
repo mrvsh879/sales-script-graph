@@ -341,30 +341,51 @@ const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про �
 
           <div className="mt-3 overflow-y-auto lg:h-[calc(100%-84px)] pr-1 space-y-1 custom-scroll">
             {displayNodes.map((n) => {
-              const active = n.id === current.id;
-              return (
-                <button
-                  key={n.id}
-                  onClick={() => goTo(n.id)}
-                  className={[
-                    "w-full text-left px-3 py-2 rounded-xl border",
-                    active
-                      ? "bg-cyan-50 border-cyan-200 ring-1 ring-cyan-300 dark:bg-cyan-950/40 dark:border-cyan-800/40 dark:ring-cyan-700/30"
-                      : "bg-white/80 border-black/5 hover:bg-white dark:bg-zinc-800/40 dark:border-white/5 dark:hover:bg-zinc-800/60",
-                  ].join(" ")}
+          const active = n.id === current.id;
+          const pinned = pinnedIds.includes(n.id); // ← пометка: закреплён ли узел
+          
+          return (
+            <div key={n.id} className="relative">
+              <button
+                onClick={() => goTo(n.id)}
+                className={[
+                  "w-full text-left px-3 py-2 pr-10 rounded-xl border", // pr-10 — запас справа под пин
+                  active
+                  ? "bg-cyan-50 border-cyan-200 ring-1 ring-cyan-300 dark:bg-cyan-950/40 dark:border-cyan-800/40 dark:ring-cyan-700/30"
+                  : "bg-white/80 border-black/5 hover:bg-white dark:bg-zinc-800/40 dark:border-white/5 dark:hover:bg-zinc-800/60",
+                ].join(" ")}
                 >
-                  <div className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                    {n.id}
+                <div className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                  {n.id}
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="font-medium text-sm text-zinc-800 dark:text-zinc-100">
+                    {n.title}
                   </div>
-                  <div className="flex items-center gap-2">
-                    <div className="font-medium text-sm text-zinc-800 dark:text-zinc-100">
-                      {n.title}
-                    </div>
-                    <TypePill type={n.type} />
-                  </div>
-                </button>
-              );
-            })}
+                  <TypePill t={n.type} />
+                </div>
+              </button>
+
+              {/* Кнопка ПИН справа */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation(); // чтобы не срабатывал переход по узлу
+                  togglePinned(n.id);
+                }}
+                title={pinned ? "Відкріпити" : "Закріпити"}
+                className={
+                  "absolute right-2 top-1/2 -translate-y-1/2 text-xs rounded px-2 py-1 border " +
+                  (pinned
+                   ? "bg-amber-500/20 border-amber-400 text-amber-300"
+                   : "bg-transparent border-black/10 dark:border-white/10 text-zinc-500 hover:text-zinc-300")
+                }
+                aria-pressed={pinned}
+                >
+                {pinned ? "📌" : "📍"}
+              </button>
+            </div>
+          );
+        })}
           </div>
         </aside>
 
