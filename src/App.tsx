@@ -127,14 +127,6 @@ const App: React.FC = () => {
     } catch {}
   }, [pinnedIds]);
 
-  // сохраняем список закреплённых в storage
-  useEffect(() => {
-    try {
-      localStorage.setItem("sg_pins", JSON.stringify(pinnedIds));
-    } catch {}
-  }, [pinnedIds]);
-
-
   // Загрузка графа (PL / CS)
   useEffect(() => {
     (async () => {
