@@ -689,21 +689,14 @@
       "text": [
         "D'après mon expérience, quand un client dit qu'il veut réfléchir, cela signifie souvent qu'il n'a pas tout à fait compris le projet ou qu'il n'est pas encore convaincu.",
 
-        "Dites-moi, de quoi exactement avez-vous peur ? [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
-        "Dites-moi, sur quoi exactement voudriez-vous réfléchir ?",
-        "Qu'est-ce qui manquait dans ma présentation pour que vous puissiez prendre une décision maintenant ?",
-        "Qu'est-ce qui vous empêche de prendre une décision en ce moment ?",
+        "Pouvez-vous me dire exactement ce qui vous inquiète ?  [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
+        "Pouvez-vous me dire exactement ce que vous souhaitez réfléchir ?",
+        "Que manque-t-il dans ma présentation pour que vous puissiez prendre une décision dès maintenant ?",
+        "Qu'est-ce qui vous empêche de prendre une décision pour le moment ?",
         "Comment cela peut-il influencer votre décision finale ?",
 
-        "Bien sûr, vous avez le droit de réfléchir. D'après mon expérience, cependant, les meilleures décisions se prennent quand on peut voir des résultats concrets et comprendre comment cela fonctionne en pratique.",
-        "Honnêtement, en ce moment il n'y a pas grand-chose à réfléchir — à moins que quelque chose ne vous fasse douter ? Qu'est-ce qui vous empêche exactement de prendre une décision ?...(truncated 2885 characters)...т:**",
-        "– D'accord, je n'ai rien contre le fait de vous fournir la licence.",
-        "– Mais dites-moi – la licence elle-même peut-elle être une garantie de gain ?",
-        "– Par exemple : un conducteur qui a un permis de conduire peut-il vous garantir un voyage en sécurité ?",
-        "– Êtes-vous d'accord que le permis de conduire est aussi une forme de licence pour le conducteur ?",
-        "– Est-ce que sa simple possession donne une garantie ?",
-        "– Malheureusement, de nos jours, obtenir une licence – comme un permis de conduire – n'est pas difficile.",
-        "– C'est pourquoi la licence elle-même ne donne pas une certitude à 100% que quelqu'un réalisera un profit."
+        "Bien sûr, vous avez le droit de réfléchir. Cependant, d'après mon expérience, les meilleures décisions sont prises lorsque l'on peut voir des résultats concrets et comprendre comment cela fonctionne dans la pratique.",
+        " Honnêtement, il n'y a pas grand-chose à réfléchir pour le moment, à moins que quelque chose ne vous pose problème ? Qu'est-ce qui vous empêche exactement de prendre une décision ?",
       ]
     },
     {
@@ -1722,4 +1715,5 @@
   "sticky_comment_title": "Коментар про клієнта",
   "sticky_comment_position": "right"
 }
+
     }
