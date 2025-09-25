@@ -122,15 +122,6 @@ const App: React.FC = () => {
     } catch {}
   }, [pinnedIds]);
 
-
-  const togglePinned = (id: string) => {
-    setPinnedIds((prev) => {
-      const set = new Set(prev);
-      set.has(id) ? set.delete(id) : set.add(id);
-      return Array.from(set);
-    });
-  };
-
   // сохраняем список закреплённых в storage
   useEffect(() => {
     try {
