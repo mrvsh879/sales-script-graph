@@ -73,9 +73,8 @@ const TypePill: React.FC<{ type: NodeType }> = ({ type }) => {
 const App: React.FC = () => {
   /** ===== Тема (светлая/тёмная) ===== */
   const [darkMode, setDarkMode] = useState<boolean>(() => {
-    // читаем тему из localStorage (по умолчанию — тёмная)
     const saved = localStorage.getItem("sg_theme");
-    return saved ? saved === "dark" : true;
+    return saved ? saved === "dark" : true; // по умолчанию — тёмная
   });
 
   useEffect(() => {
@@ -115,7 +114,7 @@ const App: React.FC = () => {
     })();
   }, []);
 
-  // удобный доступ к ноде по id
+  // Удобный доступ к ноде по id
   const nodeMap = useMemo(() => {
     const m = new Map<string, GraphNode>();
     graph?.nodes.forEach((n) => m.set(n.id, n));
@@ -124,18 +123,17 @@ const App: React.FC = () => {
 
   const current = currentId ? nodeMap.get(currentId) : undefined;
 
-  // переход по переходу
+  // Переход по переходу
   const goTo = (nextId: string) => {
     if (!nextId || !nodeMap.has(nextId)) return;
     setCurrentId(nextId);
     setHistory((h) => [...h, nextId]);
-    // плавный скролл вверх контентной части
     requestAnimationFrame(() => {
       contentTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   };
 
-  // назад по истории
+  // Назад по истории
   const goBack = () => {
     setHistory((h) => {
       if (h.length <= 1) return h;
@@ -156,7 +154,7 @@ const App: React.FC = () => {
     }
   };
 
-  // Перезапуск текущего узла (перелистать текст вверх)
+  // Перезапуск текущего узла (прокрутка к началу)
   const restart = () => {
     if (!currentId) return;
     setCurrentId((id) => id); // принудительная перерисовка
@@ -165,17 +163,16 @@ const App: React.FC = () => {
     });
   };
 
-  // из узла берём transitions — либо свои, либо из edges
+  // Переходы: приоритет — transitions в ноде, затем edges
   const transitions: Transition[] = useMemo(() => {
     if (!current || !graph) return [];
     if (current.transitions?.length) return current.transitions;
 
-    // fallback: из edges
     const fromEdges = graph.edges?.filter((e) => e.from === current.id) || [];
     return fromEdges.map((e) => ({ label: e.label, to: e.to }));
   }, [current, graph]);
 
-  // фильтр списка узлов в сайдбаре
+  // Фильтр списка узлов в сайдбаре
   const filteredNodes = useMemo(() => {
     if (!graph) return [];
     const s = search.trim().toLowerCase();
@@ -188,6 +185,7 @@ const App: React.FC = () => {
     );
   }, [graph, search]);
 
+  // UI-комментарии
   const stickyEnabled = graph?.ui?.sticky_comment_panel !== false;
   const stickyRight =
     stickyEnabled && (graph?.ui?.sticky_comment_position ?? "right") === "right";
@@ -203,11 +201,11 @@ const App: React.FC = () => {
         </div>
       </div>
     );
-    }
+  }
 
   return (
     <div className="min-h-screen bg-white text-slate-900 dark:bg-[#0b0e14] dark:text-zinc-200">
-      {/* === Градиентная сетка в фоне === */}
+      {/* === Фоновая подсветка === */}
       <div className="pointer-events-none fixed inset-0 opacity-[0.06] dark:opacity-[0.07]" aria-hidden>
         <div
           className="w-full h-full"
@@ -329,7 +327,7 @@ const App: React.FC = () => {
         <main>
           <div ref={contentTopRef} />
           <div className="rounded-2xl border border-black/5 dark:border-white/5 bg-white/70 dark:bg-zinc-900/40 backdrop-blur p-6 relative overflow-hidden">
-            {/* подсветка под заголовком */}
+            {/* Подсветка под заголовком */}
             <div className="pointer-events-none absolute inset-0 opacity-[0.08] dark:opacity-[0.12]" aria-hidden>
               <div
                 className="w-full h-40"
@@ -400,7 +398,7 @@ const App: React.FC = () => {
         )}
       </div>
 
-      {/* === Низ страницы (подсказки) === */}
+      {/* === Футер-подсказка === */}
       <footer className="px-6 py-6 text-center text-xs text-zinc-500 dark:text-zinc-500/80">
         <span className="opacity-70">
           ↑ Використовуйте панель ліворуч для переходу між вузлами. Кнопки
@@ -408,7 +406,7 @@ const App: React.FC = () => {
         </span>
       </footer>
 
-      {/* стилизация кастомного скролла */}
+      {/* Кастомный скролл */}
       <style>{`
         .custom-scroll::-webkit-scrollbar {
           width: 10px;
