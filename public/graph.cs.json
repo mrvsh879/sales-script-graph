@@ -258,7 +258,7 @@
         "- Jak si myslíte, je snadné se v nové oblasti zorientovat?",
         "- Někdy vám zdraví nepřekáží?",
         "- Sám/a jste mluvil/a o tak těžké práci — možná už se to stalo?",
-        "- Sám/a víte, že je těžké žít jen z důchodu, když máte tolik odpracovaných let. Z toho, co říkají moji klienti, renta nebo dávka to často jen sotva 3000 zl důchodu. Je to u vás podobné?"
+        "- Sám/a víte, že je těžké žít jen z důchodu, když máte tolik odpracovaných let. Z toho, co říkají moji klienti, renta nebo dávka to často jen sotva 20000 korun důchodu. Je to u vás podobné?"
       ]
     },
     {
@@ -440,8 +440,8 @@
         "Skvělé! Protože právě v takových situacích vás bude informovat expert, který přesně vysvětlí, kolik lze na takové transakci vydělat a jak ji provést.",
         "Někdy taková událost umožňuje našim klientům vydělat dokonce několik set zl v průběhu jednoho obchodního dne, a stává se, že i několik tisíc.",
         "Právě proto při spolupráci s expertem můžete vydělat dokonce do 50 % měsíčně z investované částky.",
-        "Například: pokud začnete s 1000 zl, pak na konci prvního měsíce můžete mít na účtu 1500 zl.",
-        "Kde 1000 zl je investovaná částka, a 500 zl je váš zisk.",
+        "Například: pokud začnete s 6000 korun , pak na konci prvního měsíce můžete mít na účtu 3000 korun.",
+        "Kde 6000 korun je investovaná částka, a 3000 korun je váš zisk.",
         
         "Je takový zisk pro vás uspokojivý?"
       ]
@@ -539,9 +539,9 @@
         "СУМИ ДЛЯ ВХОДУ НА РИНОК:",
         "— Prosím, řekněte mi, [jméno klienta], zda jste měl/a už příležitost seznámit se s částkami, od kterých můžeme začít spolupráci?",
         "— Nabízíme našim klientům výběr jednoho z tří počátečních portfolií:",
-        "• 4800 zl (čtyři tisíce osm set),",
-        "• 2400 zl (dva tisíce čtyři sta),",
-        "• 1000-1100 zl (tisíc - tisíc sto).",
+        "• 24000 korun (dvacet čtyři tisíce),",
+        "• 12000 korun (dvanáct tisíc),",
+        "• 6000 korun (šest tisíc).",
         "— Která z těchto částek by byla pro vás nejpohodlnější?",
         "— Chápem, je tato částka v tuto chvíli dostupná na vašem bankovním účtu?"
       ]
@@ -592,7 +592,7 @@
       "title": "Давайте завтра — приклад + новина ПЛ",
       "type": "snippet",
       "text": [
-        "PŘÍKLAD + NOVINKA (PL):",
+        "PŘÍKLAD + NOVINKA:",
         "— Proberme to trochu podrobněji. Je tu firma jako Apple — určitě ji dobře znáte, že ano? [čekáme odpověď klienta]",
         "— Skvělé. Představte si, že firma Apple vyrobila nejmodernější elektrické auto. Toto auto se stane extrémně populárním po celém světě a je ochotně kupováno v mnoha zemích.",
         "— Jak si myslíte, co se v takové situaci stane s akciemi firmy Apple? Zvýší se jejich hodnota, nebo klesne? [čekáme odpověď klienta]",
@@ -601,21 +601,21 @@
         "— Jaké otázky máte na této fázi?",
         "— Co si o tom myslíte?",
         "— Radím využít této příležitosti ještě dnes.",
-        "Máme speciální nabídku — nemusíte začínat od 1000 euro, stačí zkušební částka 1000–1100 zl.",
+        "Máme speciální nabídku — nemusíte začínat od 1000 euro, stačí zkušební částka 6000 korun.",
         "— — —",
         "— Jak se stavíte k možnosti vydělat 30 euro v nejbližší době?",
         "— Myslím, že jste si všiml/a, že situace ve světě je teď dost nestabilní, že ano?",
         "— V takových momentech každý investor chce mít své peníze na bezpečném místě. A právě tehdy je nejlepším řešením často investice do zlata.",
         "— Na začátku tohoto roku stála cena zlata 2600 dolarů za unci.",
-        "— A víte, kolik stojí teď? — 3239 dolarů!",
+        "— A víte, kolik stojí teď? — 3800 dolarů!",
         "— Podle prognóz největších analytických center může cena vzrůst dokonce na 3700–3800 dolarů za unci.",
         "— To je skvělá příležitost! Ještě dnes můžete nejen vidět, jak vypadá vydělávání, ale také skutečně udělat 30 euro díky růstu ceny zlata.",
         "A co kdyby vzrostla během několika hodin — to by také bylo skvělé, že ano?",
         "— Proto navrhuji využít této šance hned teď.",
-        "Stačí naplnit svůj účet částkou 1000–1100 zl, abyste začal/a vydělávat.",
+        "Stačí naplnit svůj účet částkou 6000 korun, abyste začal/a vydělávat."",
         "— Co si o tom myslíte?",
         "— Radím využít této příležitosti ještě dnes.",
-        "Máme speciální nabídku — nemusíte začínat od 1000 euro, stačí zkušební částka 1000–1100 zl."
+        "Máme speciální nabídku — nemusíte začínat od 1000 euro, stačí zkušební částka 6000 korun."
       ]
     },
     {
@@ -635,7 +635,7 @@
         
         "Používáte mobilní aplikaci své banky?  ",
         
-        "Je částka 1000 zlotých dostupná v této nebo v jiné vaší bance?", 
+        "Je částka 6000 korun dostupná v této nebo v jiné vaší bance?", 
         "(ВАЖЛИВО СЛУХАТИ УВАЖНО ВІДПОВІДІ КЛІЄНТА)",
         
         "Skvělé, přejděme k prvnímu kroku, dobře?"
@@ -653,7 +653,7 @@
         "— Nechme zatím finanční otázky. Na kolik procent odhadujete své šance, že se zde podaří vydělat? [čekáme odpověď, podkazujeme 70–80%]",
         "— Chápem, že zbývajících 20 % jsou vaše pochybnosti. Prosím, řekněte, co ve vás vyvolává nejistotu?",
         "Якщо говорить, що впевнений/а, але немає грошей:",
-        "— Představte si – kdybyste musel/a naléhavě získat 1000–1100 zl, co byste udělal/a, abyste našel/a tuto částku?",
+        "— Představte si – kdybyste musel/a naléhavě získat 6000 korun, co byste udělal/a, abyste našel/a tuto částku?",
         "Якщо говорить, že немає вільних:",
         "— Pod „volnými prostředky“ rozumíte peníze, kterých se nebojíte ztratit? [čekáme odpověď klienta]",
         "— Prosím, řekněte mi – jak si myslíte, jakým způsobem byste zde mohl/a ztratit peníze?"
@@ -826,8 +826,8 @@
       "title": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ",
       "type": "snippet",
       "text": [
-        "Pokud je 1000–1100 zl pro vás příliš vysoká částka na začátek, prosím, řekněte – jaká částka by byla pro vás vhodná, abyste zahájil/a spolupráci?",
-        "[Якщо клієнт каже - що не готовий починати і хоче подумати, почитати або порадитися, то переходимо до відпрацювання цього заперечення. Якщо клієнт називає будь-яку іншу суму, що менша за 1000-1100 злотих, тоді розвиваємо діалог далі]",
+        "Pokud je 6000 korun pro vás příliš vysoká částka na začátek, prosím, řekněte – jaká částka by byla pro vás vhodná, abyste zahájil/a spolupráci?",
+        "[Якщо клієнт каже - що не готовий починати і хоче подумати, почитати або порадитися, то переходимо до відпрацювання цього заперечення. Якщо клієнт називає будь-яку іншу суму, що менша за 6000 крон, тоді розвиваємо діалог далі]",
         "Proč právě taková částka? Protože v případě případných obtíží by to pro vás nebylo velkou zátěží? Prosím, řekněte upřímně.",
         "[Якщо клієнт каже - ТАК або що хоче подумати чи боїться - переходимо до відпрацювання цих заперечень]"
       ]
@@ -851,13 +851,13 @@
       "title": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ",
       "type": "snippet",
       "text": [
-        "Proč je minimální částka právě 1000-1100 zl a nelze méně?",
+        "Proč je minimální částka právě 6000 korun a nelze méně?",
         "Tato částka vyplývá z přijaté strategie bezpečného obchodování. Otevíráme průměrně 6–10 pozic denně, ale vždy využíváme jen asi 50 % prostředků, abychom minimalizovali riziko.",
         "Proto 1000-1100 zl je částka, která umožňuje efektivní a bezpečné zahájení investic – z čehož jen polovina skutečně jde na trh.",
         "Samozřejmě můžete hledat brokera s nižším prahem vstupu, ale tam budete jednat sám/a – bez podpory, bez strategie a bez osoby, která bude zapojena do vašeho výsledku. U nás jsme partnery – vyděláte vy, vyděláme my.",
         "Proto pokud vám záleží na bezpečnosti a ziscích, nejlépe se přesvědčit o tom v praxi. Navrhuji naplnit účet minimální částkou a ještě dnes udělat první krok k zisku.",
                    "Nebo",
-        "Během 5 let jsme testovali spolupráci s klienty při různých částkách a došli jsme k závěru, že 1000-1100 zl je nejbezpečnější částka na start.",
+        "Během 5 let jsme testovali spolupráci s klienty při různých částkách a došli jsme k závěru, že 6000 korun je nejbezpečnější částka na start.",
         "Právě od této částky vám mohu dát záruku, že všechno se podaří.",
         "Pokud se ptáte „proč?“, už vysvětluji:",
         "tato částka je vhodně rozdělována podle pravidel řízení rizika – část kapitálu pracuje na trhu, a zbývající část tvoří takzvaný „bezpečnostní polštář“.",
@@ -892,7 +892,7 @@
       "type": "snippet",
       "text": [
         "Jsme mezinárodní firma, kancelář také v Polsku — hlavní v Krotoszynu.",
-        "Registrace: ELITE POLSKA sp. z o.o., KRS: 0000646268, ul. Juliana Smulikowskiego 4/112, 00-389 Warszawa, Mazowieckie, datum: 2016-11-10.",
+        "Registrace: Elite Czech Republic s.r.o., IČO:27170357, Černínská 95/7, Hradčany (Praha 1), 118 00 Praha , zápisu 28. červenec 2004 .",
         "V praxi oficiální žádost do NBP může stát ~150€ a trvat do 14 pracovních dnů.",
         "👉 Pokud se název projektu liší od názvu firmy — zkontrolovat podle názvu a KRS na internetu."
       ]
