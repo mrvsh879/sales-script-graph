@@ -1,9 +1,9 @@
 // src/App.tsx
 import React, { useEffect, useMemo, useRef, useState } from "react";
+import Sidebar from "./components/Sidebar";
+import CommentPanel from "./components/CommentPanel";
 
-/* =========================
-   Типы, совместимые с graph.json
-   ========================= */
+/** ===== Типы данных, совместимые с вашим graph.json ===== */
 type NodeType = "greeting" | "router" | "question" | "snippet";
 
 interface Transition {
@@ -15,9 +15,9 @@ interface GraphNode {
   id: string;
   title: string;
   type: NodeType;
-  text?: string[];
-  options?: { label: string; to: string }[]; // старое поле (необязательно)
-  transitions?: Transition[];               // предпочтительный источник кнопок
+  text?: string[]; // для snippet / question / greeting
+  options?: { label: string; to: string }[]; // историческое поле
+  transitions?: Transition[]; // предпочтительный источник кнопок
 }
 
 interface Edge {
@@ -38,171 +38,84 @@ interface GraphData {
   ui?: GraphUI;
 }
 
-/* =========================
-   Небольшие утилиты
-   ========================= */
-const TYPE_COLORS: Record<NodeType, string> = {
-  greeting:
-    "bg-emerald-900/40 text-emerald-300 ring-1 ring-emerald-700/40 shadow-[inset_0_0_20px_rgba(16,185,129,0.2)]",
-  router:
-    "bg-cyan-900/40 text-cyan-300 ring-1 ring-cyan-700/40 shadow-[inset_0_0_20px_rgba(34,211,238,0.2)]",
-  question:
-    "bg-violet-900/40 text-violet-300 ring-1 ring-violet-700/40 shadow-[inset_0_0_20px_rgba(139,92,246,0.2)]",
-  snippet:
-    "bg-sky-900/40 text-sky-300 ring-1 ring-sky-700/40 shadow-[inset_0_0_20px_rgba(56,189,248,0.2)]",
+/** ===== Вспомогательные утилиты ===== */
+const TYPE_BADGE: Record<NodeType, string> = {
+  greeting: "Привітання",
+  router: "Router",
+  question: "Question",
+  snippet: "Snippet",
 };
 
-const TypePill: React.FC<{ t: NodeType }> = ({ t }) => (
-  <span
-    className={
-      "px-2.5 py-1 rounded-full text-[11px] font-semibold tracking-wide " +
-      TYPE_COLORS[t]
-    }
-  >
-    {t.toUpperCase()}
-  </span>
-);
-
-const useLocalStorage = (key: string, initial = "") => {
-  const [val, setVal] = useState<string>(() => {
-    try {
-      const r = localStorage.getItem(key);
-      return r ?? initial;
-    } catch {
-      return initial;
-    }
-  });
-  useEffect(() => {
-    try {
-      localStorage.setItem(key, val);
-    } catch {}
-  }, [key, val]);
-  return [val, setVal] as const;
-};
-
-/* =========================
-   Компонент Заметок (справа)
-   ========================= */
-const StickyNotes: React.FC<{
-  title: string;
-  storageKey: string;
-}> = ({ title, storageKey }) => {
-  const [text, setText] = useLocalStorage(storageKey, "");
+const TypePill: React.FC<{ type: NodeType }> = ({ type }) => {
+  const palette: Record<NodeType, string> = {
+    greeting:
+      "bg-emerald-900/40 text-emerald-300 ring-1 ring-emerald-700/40 shadow-[inset_0_0_20px_rgba(16,185,129,0.2)]",
+    router:
+      "bg-cyan-900/40 text-cyan-300 ring-1 ring-cyan-700/40 shadow-[inset_0_0_20px_rgba(34,211,238,0.2)]",
+    question:
+      "bg-violet-900/40 text-violet-300 ring-1 ring-violet-700/40 shadow-[inset_0_0_20px_rgba(139,92,246,0.2)]",
+    snippet:
+      "bg-sky-900/40 text-sky-300 ring-1 ring-sky-700/40 shadow-[inset_0_0_20px_rgba(56,189,248,0.2)]",
+  };
   return (
-    <aside className="hidden lg:block">
-      <div className="rounded-2xl border border-white/5 bg-zinc-900/40 backdrop-blur p-4 sticky top-[88px]">
-        <div className="text-[11px] uppercase tracking-widest text-zinc-400 mb-2">
-          {title}
-        </div>
-        <textarea
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          placeholder="Ваші нотатки…"
-          className="w-full h-[280px] rounded-xl bg-zinc-800/60 border border-white/10 p-3 text-sm text-zinc-200 focus:outline-none focus:ring-2 ring-cyan-500/40 resize-none"
-        />
-        <div className="mt-2 text-[11px] text-zinc-500">
-          Зберігається локально*
-        </div>
-      </div>
-    </aside>
+    <span
+      className={
+        "px-3 py-1 rounded-full text-xs font-semibold tracking-wide " +
+        palette[type]
+      }
+    >
+      {TYPE_BADGE[type]}
+    </span>
   );
 };
 
-/* =========================
-   Сайдбар (поиск + список узлов)
-   ========================= */
-const Sidebar: React.FC<{
-  nodes: GraphNode[];
-  currentId: string | null;
-  onSelect: (id: string) => void;
-}> = ({ nodes, currentId, onSelect }) => {
-  const [search, setSearch] = useState("");
-
-  const filtered = useMemo(() => {
-    const s = search.trim().toLowerCase();
-    if (!s) return nodes;
-    return nodes.filter(
-      (n) =>
-        n.title.toLowerCase().includes(s) ||
-        n.id.toLowerCase().includes(s) ||
-        (n.text || []).some((t) => t.toLowerCase().includes(s))
-    );
-  }, [nodes, search]);
-
-  return (
-    <aside className="rounded-2xl border border-white/5 bg-zinc-900/40 backdrop-blur p-3 lg:h-[calc(100dvh-96px)] lg:overflow-hidden">
-      <div className="mb-2">
-        <div className="px-2 text-[11px] uppercase tracking-widest text-zinc-400">
-          Вузли
-        </div>
-        <div className="relative mt-2">
-          <input
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Пошук…"
-            className="w-full rounded-xl bg-zinc-800/60 border border-white/10 px-10 py-2.5 text-sm focus:outline-none focus:ring-2 ring-cyan-500/40"
-          />
-          <div className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-500">
-            🔎
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-3 overflow-y-auto lg:h-[calc(100%-84px)] pr-1 space-y-1 custom-scroll">
-        {filtered.map((n) => {
-          const active = n.id === currentId;
-          return (
-            <button
-              key={n.id}
-              onClick={() => onSelect(n.id)}
-              className={[
-                "w-full text-left px-3 py-2 rounded-xl border transition-colors",
-                active
-                  ? "bg-cyan-950/40 border-cyan-800/40 ring-1 ring-cyan-700/30"
-                  : "bg-zinc-800/40 border-white/5 hover:bg-zinc-800/60",
-              ].join(" ")}
-            >
-              <div className="text-[11px] text-zinc-400">{n.id}</div>
-              <div className="flex items-center gap-2">
-                <div className="font-medium text-sm text-zinc-100">
-                  {n.title}
-                </div>
-                <TypePill t={n.type} />
-              </div>
-            </button>
-          );
-        })}
-      </div>
-    </aside>
-  );
-};
-
-/* =========================
-   Главный App
-   ========================= */
+/** ===== Главный компонент ===== */
 const App: React.FC = () => {
+  /** ===== Тема (светлая/тёмная) ===== */
+  const [darkMode, setDarkMode] = useState<boolean>(() => {
+    // читаем тему из localStorage (по умолчанию — тёмная)
+    const saved = localStorage.getItem("sg_theme");
+    return saved ? saved === "dark" : true;
+  });
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (darkMode) {
+      root.classList.add("dark");
+      localStorage.setItem("sg_theme", "dark");
+    } else {
+      root.classList.remove("dark");
+      localStorage.setItem("sg_theme", "light");
+    }
+  }, [darkMode]);
+
+  /** ===== Граф ===== */
   const [graph, setGraph] = useState<GraphData | null>(null);
   const [currentId, setCurrentId] = useState<string | null>(null);
   const [history, setHistory] = useState<string[]>([]);
+  const [search, setSearch] = useState("");
   const contentTopRef = useRef<HTMLDivElement>(null);
 
-  // загрузка graph.json
+  // Загрузка graph.json
   useEffect(() => {
     (async () => {
-      const res = await fetch("graph.json", { cache: "no-store" });
-      const data = (await res.json()) as GraphData;
-      setGraph(data);
+      try {
+        const res = await fetch("graph.json", { cache: "no-store" });
+        const data = (await res.json()) as GraphData;
+        setGraph(data);
 
-      const start =
-        data.nodes.find((n) => n.type === "greeting")?.id ||
-        data.nodes[0]?.id ||
-        null;
-      setCurrentId(start);
-      setHistory(start ? [start] : []);
-    })().catch((e) => console.error("Не удалось загрузить graph.json", e));
+        // стартовая нода — greeting или первая
+        const start =
+          data.nodes.find((n) => n.type === "greeting")?.id || data.nodes[0]?.id;
+        setCurrentId(start || null);
+        setHistory(start ? [start] : []);
+      } catch (e) {
+        console.error("Не удалось загрузить graph.json", e);
+      }
+    })();
   }, []);
 
-  // мапа узлов по id
+  // удобный доступ к ноде по id
   const nodeMap = useMemo(() => {
     const m = new Map<string, GraphNode>();
     graph?.nodes.forEach((n) => m.set(n.id, n));
@@ -211,32 +124,28 @@ const App: React.FC = () => {
 
   const current = currentId ? nodeMap.get(currentId) : undefined;
 
-  // переходы из ноды (или из edges)
-  const transitions: Transition[] = useMemo(() => {
-    if (!current || !graph) return [];
-    if (current.transitions?.length) return current.transitions;
-    const es = graph.edges?.filter((e) => e.from === current.id) || [];
-    return es.map((e) => ({ label: e.label, to: e.to }));
-  }, [current, graph]);
-
-  // переходы/навигация
+  // переход по переходу
   const goTo = (nextId: string) => {
     if (!nextId || !nodeMap.has(nextId)) return;
     setCurrentId(nextId);
     setHistory((h) => [...h, nextId]);
-    requestAnimationFrame(() =>
-      contentTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
-    );
+    // плавный скролл вверх контентной части
+    requestAnimationFrame(() => {
+      contentTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   };
 
-  const goBack = () =>
+  // назад по истории
+  const goBack = () => {
     setHistory((h) => {
       if (h.length <= 1) return h;
       const prev = h[h.length - 2];
       setCurrentId(prev);
       return h.slice(0, -1);
     });
+  };
 
+  // Домой (к greeting)
   const goHome = () => {
     if (!graph) return;
     const start =
@@ -247,26 +156,59 @@ const App: React.FC = () => {
     }
   };
 
+  // Перезапуск текущего узла (перелистать текст вверх)
+  const restart = () => {
+    if (!currentId) return;
+    setCurrentId((id) => id); // принудительная перерисовка
+    requestAnimationFrame(() => {
+      contentTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  };
+
+  // из узла берём transitions — либо свои, либо из edges
+  const transitions: Transition[] = useMemo(() => {
+    if (!current || !graph) return [];
+    if (current.transitions?.length) return current.transitions;
+
+    // fallback: из edges
+    const fromEdges = graph.edges?.filter((e) => e.from === current.id) || [];
+    return fromEdges.map((e) => ({ label: e.label, to: e.to }));
+  }, [current, graph]);
+
+  // фильтр списка узлов в сайдбаре
+  const filteredNodes = useMemo(() => {
+    if (!graph) return [];
+    const s = search.trim().toLowerCase();
+    if (!s) return graph.nodes;
+    return graph.nodes.filter(
+      (n) =>
+        n.title.toLowerCase().includes(s) ||
+        n.id.toLowerCase().includes(s) ||
+        (n.text || []).some((t) => t.toLowerCase().includes(s))
+    );
+  }, [graph, search]);
+
+  const stickyEnabled = graph?.ui?.sticky_comment_panel !== false;
+  const stickyRight =
+    stickyEnabled && (graph?.ui?.sticky_comment_position ?? "right") === "right";
+  const stickyLeft =
+    stickyEnabled && (graph?.ui?.sticky_comment_position ?? "right") === "left";
+  const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про клієнта";
+
   if (!graph || !current) {
     return (
-      <div className="min-h-screen bg-[#0b0e14] text-zinc-200 grid place-items-center">
-        <div className="animate-pulse text-zinc-400 tracking-wide">
+      <div className="min-h-screen bg-white text-slate-900 dark:bg-[#0b0e14] dark:text-zinc-200 grid place-items-center">
+        <div className="animate-pulse text-zinc-500 dark:text-zinc-400 tracking-wide">
           Завантаження…
         </div>
       </div>
     );
-  }
-
-  // UI: заметки всегда справа (как ты и хотел).
-  // Если хочешь уважать graph.ui.sticky_comment_position — раскомментируй 2 строки ниже.
-  const showNotes = graph.ui?.sticky_comment_panel !== false;
-  // const notesOnRight = (graph.ui?.sticky_comment_position ?? "right") === "right";
-  const notesTitle = graph.ui?.sticky_comment_title || "Коментар про клієнта";
+    }
 
   return (
-    <div className="min-h-screen bg-[#0b0e14] text-zinc-200">
-      {/* фоновые светящиеся пятна */}
-      <div className="pointer-events-none fixed inset-0 opacity-[0.07]" aria-hidden>
+    <div className="min-h-screen bg-white text-slate-900 dark:bg-[#0b0e14] dark:text-zinc-200">
+      {/* === Градиентная сетка в фоне === */}
+      <div className="pointer-events-none fixed inset-0 opacity-[0.06] dark:opacity-[0.07]" aria-hidden>
         <div
           className="w-full h-full"
           style={{
@@ -276,18 +218,18 @@ const App: React.FC = () => {
         />
       </div>
 
-      {/* шапка */}
-      <header className="sticky top-0 z-30 backdrop-blur bg-[#0b0e14]/60 border-b border-white/5">
+      {/* === Хедер === */}
+      <header className="sticky top-0 z-30 backdrop-blur bg-white/70 dark:bg-[#0b0e14]/60 border-b border-black/5 dark:border-white/5">
         <div className="mx-auto max-w-screen-2xl px-6 py-3 flex items-center gap-4">
           <div className="flex items-center gap-3">
             <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-cyan-400 to-violet-500 shadow-lg shadow-cyan-500/20 grid place-items-center">
               <span className="text-gray-900 font-black">SG</span>
             </div>
             <div>
-              <div className="text-cyan-300 font-semibold tracking-wide">
+              <div className="text-cyan-700 dark:text-cyan-300 font-semibold tracking-wide">
                 Script Graph
               </div>
-              <div className="text-xs text-zinc-400">
+              <div className="text-xs text-zinc-500 dark:text-zinc-400">
                 sales-script-graph / GitHub Pages
               </div>
             </div>
@@ -296,78 +238,135 @@ const App: React.FC = () => {
           <div className="ml-auto flex items-center gap-2">
             <button
               onClick={goHome}
-              className="px-3 py-1.5 rounded-lg bg-zinc-800/60 hover:bg-zinc-800 border border-white/10 text-zinc-200 text-sm"
+              className="px-3 py-1.5 rounded-lg bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800 text-sm dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200"
               title="Домой (Greeting)"
             >
               ⌂ Домой
             </button>
             <button
               onClick={goBack}
-              className="px-3 py-1.5 rounded-lg bg-zinc-800/60 hover:bg-zinc-800 border border-white/10 text-zinc-200 text-sm"
+              className="px-3 py-1.5 rounded-lg bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800 text-sm dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200"
               title="Назад по истории"
             >
               ← Назад
             </button>
             <button
-              onClick={() => currentId && goTo(currentId)}
+              onClick={restart}
               className="px-3 py-1.5 rounded-lg bg-cyan-600/80 hover:bg-cyan-600 text-white text-sm"
               title="Перезапустить текущий узел"
             >
               ↻ Перезапуск
             </button>
+            <button
+              onClick={() => setDarkMode((v) => !v)}
+              className="px-3 py-1.5 rounded-lg bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800 text-sm dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200"
+              title="Переключить тему"
+            >
+              {darkMode ? "🌞 Светлая" : "🌙 Тёмная"}
+            </button>
           </div>
         </div>
       </header>
 
-      {/* основная раскладка: 3 колонки всегда, заметки справа */}
-      <div className="mx-auto max-w-screen-2xl px-4 md:px-6 py-6 grid grid-cols-1 lg:grid-cols-[280px_1fr_320px] gap-6">
-        {/* колонка: сайдбар */}
-        <Sidebar
-          nodes={graph.nodes}
-          currentId={currentId}
-          onSelect={(id) => {
-            setCurrentId(id);
-            setHistory((h) => [...h, id]);
-          }}
-        />
+      {/* === Основная раскладка === */}
+      <div className="mx-auto max-w-screen-2xl px-4 md:px-6 py-6 grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6">
+        {/* ==== Левая заметка (если ui требует left) ==== */}
+        {stickyLeft && (
+          <aside className="hidden lg:block">
+            <CommentPanel title={notesTitle} graphKey="graph" />
+          </aside>
+        )}
 
-        {/* колонка: контент */}
+        {/* === Левая колонка: навигация (sidebar) === */}
+        <aside className="rounded-2xl border border-black/5 dark:border-white/5 bg-white/70 dark:bg-zinc-900/40 backdrop-blur p-3 lg:h-[calc(100dvh-120px)] lg:overflow-hidden">
+          <div className="mb-2">
+            <div className="px-2 text-[11px] uppercase tracking-widest text-zinc-500 dark:text-zinc-400">
+              Вузли
+            </div>
+            <div className="relative mt-2">
+              <input
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Пошук…"
+                className="w-full rounded-xl bg-zinc-100 dark:bg-zinc-800/60 border border-black/10 dark:border-white/10 px-10 py-2.5 text-sm text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-2 ring-cyan-500/40"
+              />
+              <div className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-500 dark:text-zinc-400">
+                🔎
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-3 overflow-y-auto lg:h-[calc(100%-84px)] pr-1 space-y-1 custom-scroll">
+            {filteredNodes.map((n) => {
+              const active = n.id === current.id;
+              return (
+                <button
+                  key={n.id}
+                  onClick={() => goTo(n.id)}
+                  className={[
+                    "w-full text-left px-3 py-2 rounded-xl border",
+                    active
+                      ? "bg-cyan-50 border-cyan-200 ring-1 ring-cyan-300 dark:bg-cyan-950/40 dark:border-cyan-800/40 dark:ring-cyan-700/30"
+                      : "bg-white/80 border-black/5 hover:bg-white dark:bg-zinc-800/40 dark:border-white/5 dark:hover:bg-zinc-800/60",
+                  ].join(" ")}
+                >
+                  <div className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                    {n.id}
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="font-medium text-sm text-zinc-800 dark:text-zinc-100">
+                      {n.title}
+                    </div>
+                    <TypePill type={n.type} />
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </aside>
+
+        {/* === Центральная колонка: контент узла === */}
         <main>
           <div ref={contentTopRef} />
-          <div className="rounded-2xl border border-white/5 bg-zinc-900/40 backdrop-blur p-6 relative overflow-hidden">
-            <div className="pointer-events-none absolute inset-0 opacity-[0.12]" aria-hidden>
+          <div className="rounded-2xl border border-black/5 dark:border-white/5 bg-white/70 dark:bg-zinc-900/40 backdrop-blur p-6 relative overflow-hidden">
+            {/* подсветка под заголовком */}
+            <div className="pointer-events-none absolute inset-0 opacity-[0.08] dark:opacity-[0.12]" aria-hidden>
               <div
                 className="w-full h-40"
                 style={{
                   background:
-                    "radial-gradient(300px 200px at 20% 10%, rgba(34,211,238,0.6), transparent 60%), radial-gradient(250px 150px at 80% 0%, rgba(139,92,246,0.6), transparent 60%)",
+                    "radial-gradient(300px 200px at 20% 10%, rgba(34,211,238,0.4), transparent 60%), radial-gradient(250px 150px at 80% 0%, rgba(139,92,246,0.4), transparent 60%)",
                 }}
               />
             </div>
 
             <div className="relative">
               <div className="flex items-center gap-3 mb-2">
-                <TypePill t={current.type} />
-                <div className="text-xs text-zinc-400/80">id: {current.id}</div>
+                <TypePill type={current.type} />
+                <div className="text-xs text-zinc-500 dark:text-zinc-400/80">
+                  id: {current.id}
+                </div>
               </div>
-              <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-zinc-100">
+              <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
                 {current.title}
               </h1>
 
+              {/* Текстовая часть узла */}
               {!!current.text?.length && (
                 <div className="mt-5 space-y-3">
                   {current.text.map((line, i) => (
-                    <p key={i} className="text-zinc-300 leading-relaxed">
+                    <p key={i} className="text-zinc-700 dark:text-zinc-300 leading-relaxed">
                       {line}
                     </p>
                   ))}
                 </div>
               )}
 
+              {/* Кнопки переходов */}
               <div className="mt-6">
                 {transitions.length > 0 ? (
                   <>
-                    <div className="text-[11px] uppercase tracking-widest text-zinc-400 mb-2">
+                    <div className="text-[11px] uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-2">
                       Переходи
                     </div>
                     <div className="flex flex-wrap gap-2">
@@ -375,7 +374,7 @@ const App: React.FC = () => {
                         <button
                           key={idx}
                           onClick={() => goTo(tr.to)}
-                          className="px-3 py-2 rounded-lg text-sm bg-zinc-800/60 hover:bg-zinc-800 border border-white/10 text-zinc-200"
+                          className="px-3 py-2 rounded-lg text-sm bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800 dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200"
                           title={tr.to}
                         >
                           {tr.label}
@@ -384,7 +383,7 @@ const App: React.FC = () => {
                     </div>
                   </>
                 ) : (
-                  <div className="text-zinc-400 text-sm">
+                  <div className="text-zinc-500 dark:text-zinc-400 text-sm">
                     Для цього вузла переходів не знайдено.
                   </div>
                 )}
@@ -393,29 +392,29 @@ const App: React.FC = () => {
           </div>
         </main>
 
-        {/* колонка: заметки (всегда справа если включены) */}
-        {showNotes ? (
-          <StickyNotes title={notesTitle} storageKey="graph_notes" />
-        ) : (
-          <div className="hidden lg:block" />
+        {/* ==== Правая заметка (если ui требует right) ==== */}
+        {stickyRight && (
+          <aside className="hidden lg:block">
+            <CommentPanel title={notesTitle} graphKey="graph" />
+          </aside>
         )}
       </div>
 
-      {/* подвал */}
-      <footer className="px-6 py-6 text-center text-xs text-zinc-500">
+      {/* === Низ страницы (подсказки) === */}
+      <footer className="px-6 py-6 text-center text-xs text-zinc-500 dark:text-zinc-500/80">
         <span className="opacity-70">
           ↑ Використовуйте панель ліворуч для переходу між вузлами. Кнопки
           всередині вузлів відповідають вашому graph.json.
         </span>
       </footer>
 
-      {/* стилизация скролла (косметика) */}
+      {/* стилизация кастомного скролла */}
       <style>{`
         .custom-scroll::-webkit-scrollbar {
           width: 10px;
         }
         .custom-scroll::-webkit-scrollbar-thumb {
-          background: rgba(148,163,184,0.15);
+          background: rgba(148,163,184,0.25);
           border-radius: 9999px;
           border: 2px solid transparent;
           background-clip: padding-box;
