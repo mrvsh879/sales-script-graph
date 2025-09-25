@@ -102,6 +102,7 @@ const App: React.FC = () => {
       return raw ? JSON.parse(raw) : [];
     } catch {
       return [];
+      }
     });
 
   const togglePinned = (id: string) => {
