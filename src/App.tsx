@@ -74,6 +74,9 @@ const TypePill: React.FC<{ type: NodeType }> = ({ type }) => {
 
 /** ===== Главный компонент ===== */
 const App: React.FC = () => {
+  // Язык (PL / CS)
+  const [lang, setLang] = useState<"pl" | "cs">("pl");
+  
   /** ===== Тема (светлая/тёмная) ===== */
   const [darkMode, setDarkMode] = useState<boolean>(() => {
     const saved = localStorage.getItem("sg_theme");
