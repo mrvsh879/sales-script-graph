@@ -1,48 +1,81 @@
-// src/components/CommentPanel.tsx
 import React from "react";
 
-type CommentPanelProps = {
-  title?: string;
-  graphKey?: string; // например, имя файла graph.json
+type Props = {
+  title: string;
+  /** Ключ для локального сохранения комментария (обычно "graph") */
+  graphKey: string;
 };
 
-export default function CommentPanel({
-  title = "Коментар про клієнта",
-  graphKey = "default",
-}: CommentPanelProps) {
-  const storageKey = `sg:notes:${graphKey}`;
-  const [value, setValue] = React.useState("");
+/**
+ * Панель комментариев, полностью адаптированная под светлую/тёмную темы.
+ * Основано на классе `dark` у <html> (Tailwind dark variant).
+ */
+const CommentPanel: React.FC<Props> = ({ title, graphKey }) => {
+  const storageKey = `notes:${graphKey}`;
+
+  const [value, setValue] = React.useState<string>(() => {
+    try {
+      return localStorage.getItem(storageKey) ?? "";
+    } catch {
+      return "";
+    }
+  });
 
   React.useEffect(() => {
-    // подхватываем сохраненные заметки
-    const saved = localStorage.getItem(storageKey);
-    if (saved != null) setValue(saved);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [storageKey]);
-
-  React.useEffect(() => {
-    localStorage.setItem(storageKey, value);
-  }, [storageKey, value]);
+    try {
+      localStorage.setItem(storageKey, value);
+    } catch {
+      /* ignore */
+    }
+  }, [value, storageKey]);
 
   return (
-    <aside className="h-full w-full overflow-hidden border-l border-white/10 bg-slate-900/60 backdrop-blur">
-      <div className="p-3 border-b border-white/10">
-        <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-300">
+    <aside className="hidden lg:block sticky top-[88px]">
+      {/* Корпус панели */}
+      <div
+        className={[
+          // Светлая тема
+          "rounded-2xl overflow-hidden border bg-white text-zinc-800 shadow-sm",
+          "border-zinc-200",
+          // Тёмная тема
+          "dark:bg-zinc-900/40 dark:text-zinc-200 dark:border-white/10",
+          "backdrop-blur",
+        ].join(" ")}
+      >
+        {/* Заголовок */}
+        <div
+          className={[
+            "px-4 py-2 text-[11px] uppercase tracking-widest",
+            // Светлая
+            "bg-zinc-100/70 text-zinc-600 border-b border-zinc-200",
+            // Тёмная
+            "dark:bg-white/5 dark:text-zinc-400 dark:border-white/10",
+          ].join(" ")}
+        >
           {title}
         </div>
-      </div>
 
-      <div className="p-3 h-[calc(100%-3rem)]">
-        <textarea
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-          placeholder="Ваші нотатки…"
-          className="h-full w-full resize-none rounded-md bg-slate-800/70 px-3 py-2 text-sm outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-cyan-400"
-        />
-        <div className="mt-2 text-[10px] text-slate-400">
-          Зберігається локально*
+        {/* Контент */}
+        <div className="p-4">
+          <textarea
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            placeholder="Ваші нотатки…"
+            className={[
+              "w-full h-[65vh] resize-none rounded-xl p-3 text-sm focus:outline-none focus:ring-2 ring-cyan-500/40",
+              // Светлая
+              "bg-zinc-100 border border-zinc-300 text-zinc-900 placeholder-zinc-400",
+              // Тёмная
+              "dark:bg-zinc-800/60 dark:border-white/10 dark:text-zinc-100 dark:placeholder-zinc-500",
+            ].join(" ")}
+          />
+          <div className="mt-2 text-[11px] text-zinc-500 dark:text-zinc-400">
+            Зберігається локально*
+          </div>
         </div>
       </div>
     </aside>
   );
-}
+};
+
+export default CommentPanel;
