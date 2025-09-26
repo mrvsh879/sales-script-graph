@@ -249,6 +249,8 @@
         "- Depuis combien de temps travaillez-vous dans votre domaine ?", 
         "- Travaillez-vous de manière indépendante ou pour quelqu'un ?",
         "- J'ai beaucoup de clients de votre domaine et je sais que c'est un travail difficile. Pour moi, les personnes qui travaillent comme vous sont un exemple de bonnes personnes de famille. Je suis heureux de faire votre connaissance.",
+        "- Quel bénéfice supplémentaire aimeriez-vous obtenir?",
+        
         " ЯКЩО ВІН СКАЖЕ «Я НЕ ЗНАЮ», НАВЕДІТЬ ПРИКЛАД:",
         "DANS NOTRE DOMAINE, IL EST IMPORTANT D'AVOIR UN OBJECTIF. PAR EXEMPLE, J'AI UN CLIENT NOMMÉ DARIUS QUI A TRAVAILLÉ 17 ANS DANS LE SECTEUR DU BÂTIMENT. IL A MAINTENANT 53 ANS.", 
         "APRÈS UNE ANNÉE DE NOTRE COLLABORATION, IL A CRÉÉ SA PROPRE ENTREPRISE ET S'OCCUPE DE L'AMÉNAGEMENT INTÉRIEUR, ALORS QU'IL A COMMENCÉ EXACTEMENT COMME VOUS.", 
@@ -1725,6 +1727,7 @@
 }
 
     }
+
 
 
 
