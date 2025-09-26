@@ -452,8 +452,8 @@
         "Excelent! Tocmai în astfel de situații vă va informa expertul, care vă va explica exact cât puteți câștiga pe o astfel de tranzacție și cum să o efectuați.",
         "Uneori un astfel de eveniment permite clienților noștri să câștige chiar sute de zł într-o singură zi de tranzacționare, iar uneori și câteva mii.",
         "Tocmai de aceea, colaborând cu un expert, puteți câștiga chiar până la 50% lunar din suma investită.",
-        "De exemplu: dacă începeți cu 1000 zł, la sfârșitul primei luni puteți avea pe cont 1500 zł.",
-        "Unde 1000 zł este suma investită, iar 500 zł este profitul Dumneavoastră.",
+        "De exemplu: dacă începeți cu 1250 RON, la sfârșitul primei luni puteți avea pe cont 1875 RON.",
+        "Unde 1250 RON este suma investită, iar 625 RON este profitul Dumneavoastră.",
         
         "Un astfel de profit este satisfăcător pentru Dumneavoastră?"
       ]
@@ -517,7 +517,7 @@
         "Dacă клиент питає про locul unde se află fondurile:",
         "Avem propria platformă de tranzacționare, pe care se va afla contul Dumneavoastră de tranzacționare.",
         "Platforma noastră este foarte similară cu bankingul mobil.",
-        "În ce bancă sunteți client? [Santander, Millennium, Pekao S.A.]",
+        "În ce bancă sunteți client?",
         "Pe platforma noastră totul arată similar cu bankingul:",
         "există secțiunea de retrageri, secțiunea unde puteți schimba parola, primi feedback, secțiunea financiară, contact cu suportul tehnic, pagina principală, precum și panoul unde se desfășoară tranzacționarea.",
         "Contul Dumneavoastră de tranzacționare este securizat cu o parolă privată.",
@@ -619,15 +619,15 @@
         "— Cred că ați observat că situația în lume este acum destul de instabilă, nu-i așa?",
         "— În astfel de momente, fiecare investitor vrea să aibă banii într-un loc sigur. Și tocmai atunci cea mai bună soluție este adesea investiția în aur.",
         "— La începutul acestui an, prețul aurului era de 2600 dolari pe uncie.",
-        "— Iar știți cât costă acum? — 3239 dolari!",
+        "— Iar știți cât costă acum? — 3800 dolari!",
         "— Conform prognozelor celor mai mari centre analitice, prețul poate crește chiar până la 3700–3800 dolari pe uncie.",
         "— E o ocazie excelentă! Deja astăzi puteți nu doar să vedeți cum arată câștigul, ci și să faceți efectiv 30 euro datorită creșterii prețului aurului.",
         "Și dacă crește în câteva ore — ar fi excelent, nu-i așa?",
         "— De aceea propun să profitați de această șansă acum.",
-        "E suficient să alimentați contul cu suma de 1000–1100 zł, pentru a începe să câștigați.",
+        "E suficient să alimentați contul cu suma de 1250 RON, pentru a începe să câștigați.",
         "— Ce credeți despre asta?",
         "— Vă sfătuiesc să profitați de această oportunitate astăzi.",
-        "Avem o ofertă specială — nu trebuie să începeți cu 1000 euro, e suficientă o sumă de probă de 1000–1100 zł."
+        "Avem o ofertă specială — nu trebuie să începeți cu 1000 euro, e suficientă o sumă de probă de 1250 RON."
       ]
     },
     {
@@ -647,7 +647,7 @@
         
         "Folosiți aplicația mobilă a băncii Dumneavoastră?  ",
         
-        "Suma de 1000 złotych este disponibilă în această bancă sau în alta a Dumneavoastră?", 
+        "Suma de 1250 RON este disponibilă în această bancă sau în alta a Dumneavoastră?", 
         "(ВАЖЛИВО СЛУХАТИ УВАЖНО ВІДПОВІДІ КЛІЄНТА)",
         
         "Excelent, să trecem la primul pas, bine?"
@@ -838,7 +838,7 @@
       "title": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ",
       "type": "snippet",
       "text": [
-        "Dacă 1000–1100 zł e o sumă prea mare pentru Dumneavoastră la început, spuneți-mi – ce sumă ar fi potrivită pentru Dumneavoastră ca să începeți colaborarea?",
+        "Dacă 1250 RON e o sumă prea mare pentru Dumneavoastră la început, spuneți-mi – ce sumă ar fi potrivită pentru Dumneavoastră ca să începeți colaborarea?",
         "[Dacă clientul spune - că nu e gata să înceapă și vrea să se gândească, să citească sau să se consulte, atunci trecem la prelucrarea acestei obiecții. Dacă clientul numește orice altă sumă mai mică de 1000-1100 zł, atunci dezvoltăm dialogul mai departe]",
         "De ce tocmai această sumă? Pentru că în caz de dificultăți nu ar fi o povară mare pentru Dumneavoastră? Spuneți sincer.",
         "[Dacă clientul spune - DA sau că vrea să se gândească sau se teme - trecem la prelucrarea acestor obiecții]"
@@ -863,7 +863,7 @@
       "title": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ",
       "type": "snippet",
       "text": [
-        "De ce suma minimă e tocmai 1000-1100 zł și nu se poate mai puțin?",
+        "De ce suma minimă e tocmai 1250 RON și nu se poate mai puțin?",
         "Această sumă rezultă din strategia adoptată de tranzacționare sigură. Deschidem în medie 6–10 poziții pe zi, dar folosim întotdeauna doar aproximativ 50% din fonduri, pentru a minimiza riscul.",
         "De aceea 1000-1100 zł e suma care permite un început eficient și sigur al investițiilor – din care doar jumătate intră efectiv pe piață.",
         "Desigur puteți căuta un broker cu prag de intrare mai mic, dar acolo veți acționa singur/ă – fără sprijin, fără strategie și fără o persoană implicată în rezultatul Dumneavoastră. La noi suntem parteneri – câștigați Dumneavoastră, câștigăm noi.",
@@ -904,8 +904,8 @@
       "type": "snippet",
       "text": [
         "Suntem o firmă internațională, birou și în Polonia — principal în Krotoszyn.",
-        "Înregistrare: ELITE POLSKA sp. z o.o., KRS: 0000646268, ul. Juliana Smulikowskiego 4/112, 00-389 Warszawa, Mazowieckie, data: 2016-11-10.",
-        "În practică, cererea oficială la NBP poate costa ~150€ și dura până la 14 zile lucrătoare.",
+        "Înregistrare: ELITE INVESTING SRL., CUI: 51322779, Str. Sergentului 17, sat Ipoești, județ Suceava, Mazowieckie,",
+        "În practică, cererea oficială la NBP poate costa ~1500€ și dura până la 14 zile lucrătoare.",
         "👉 Dacă numele proiectului diferă de numele firmei — verificați după nume și KRS pe internet."
       ]
     },
@@ -1730,6 +1730,7 @@
 }
 
     }
+
 
 
 
