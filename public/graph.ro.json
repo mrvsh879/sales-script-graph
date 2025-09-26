@@ -665,7 +665,7 @@
         "— Să lăsăm deocamdată chestiunile financiare. Pe cât de procente evaluați șansele Dumneavoastră că veți reuși să câștigați aici? [чекаємо відповідь, підказуємо 70–80%]",
         "— Înțeleg că restul de 20% sunt îndoielile Dumneavoastră. Spuneți-mi, ce vă face nesigur/ă?",
         "Dacă spune că e sigur/ă, dar nu are bani:",
-        "— Imaginați-vă – dacă ar trebui urgent să obțineți 1000–1100 zł, ce ați face ca să găsiți această sumă?",
+        "— Imaginați-vă – dacă ar trebui urgent să obțineți 1250 RON, ce ați face ca să găsiți această sumă?",
         "Dacă spune că nu are libere:",
         "— Prin „fonduri libere” înțelegeți bani pe care nu vă e frică să-i pierdeți? [чекаємо відповідь клієнта]",
         "— Spuneți-mi – cum credeți, în ce mod ați putea pierde bani aici?"
@@ -1730,6 +1730,7 @@
 }
 
     }
+
 
 
 
