@@ -664,7 +664,7 @@
         "— Laissons pour l'instant les questions financières. Sur une échelle de pourcentages, comment évaluez-vous vos chances de gagner ici ? [чекаємо відповідь, підказуємо 70–80%]",
         "— Je comprends que les 20% restants sont vos doutes. Dites-moi, qu'est-ce qui vous rend incertain(e) ?",
         "Якщо говорить, що впевнений/а, але немає грошей:",
-        "— Imaginez — si vous deviez urgemment trouver 1000–1100 zł, que feriez-vous pour trouver cette somme ?",
+        "— Imaginez — si vous deviez urgemment trouver 250 eur, que feriez-vous pour trouver cette somme ?",
         "Якщо говорить, що немає вільних:",
         "— Par « fonds libres », entendez-vous l'argent que vous n'avez pas peur de perdre ? [чекаємо відповідь клієнта]",
         "— Dites-moi — à votre avis, comment pourriez-vous perdre de l'argent ici ?"
@@ -1729,6 +1729,7 @@
 }
 
     }
+
 
 
 
