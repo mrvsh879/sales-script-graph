@@ -534,12 +534,25 @@
       "type": "snippet",
       "text": [
         "ДЕМОНСТРАЦІЯ ПЛАТФОРМИ:",
-        "— Je propose que vous vous connectiez maintenant à la plateforme. Je vous montrerai comment tout fonctionne et nous changerons immédiatement le mot de passe pour sécuriser le compte de trading.",
-        "— Dans un instant, je vous enverrai un lien vers notre plateforme — dites-moi seulement où il sera plus pratique de le recevoir : par e-mail ou sur WhatsApp ?",
-        "[Якщо на пошту, перевіряємо пошту чи він/вона залишив під час реєстрації. Якщо na WhatsApp — фіксуємо свій номер, щоб клієнт додав вас, а в рідкісних випадках додаємо самі.]",
-        
-        "— Ai-je bien compris que vous avez maintenant la possibilité d'ouvrir notre plateforme ?",
-        "[Тільки після позитивної відповіді відправляємо посилання і ведемо клієнта далі по платформі.]"
+        "— Je vous propose de vous connecter à votre espace personnel afin que vous puissiez voir de vos propres yeux où sera votre argent et comment tout fonctionne. D’accord ?",
+        "— Où préférez-vous que j’envoie le lien, sur votre e-mail ou utilisez-vous une messagerie ? Si oui, laquelle ?",
+        "[ЯКЩО НА ПОШТУ, ПЕРЕВІРЯЄМО ПОШТУ ЧИ ВІН/ВОНА ЗАЛИШИВ ПІД ЧАС РЕЄСТРАЦІЇ. ЯКЩО НА WHATSAPP/VIBER — ФІКСУЄМО СВІЙ НОМЕР, ЩОБ КЛІЄНТ ДОДАВ ВАС, А В РІДКІСНИХ ВИПАДКАХ ДОДАЄМО САМІ.]",
+        "[КОПІЮЄМО ЦЕ ПОВІДОМЛЕНЯ ТА ВІПРАВЛЯЄМО КЛІЄНТУ З ДАНИМИ ЛОГУВАННЯ]",
+
+        "Chèr(e) client(e),",
+
+        "Nous vous souhaitons la bienvenue et vous remercions pour votre inscription.",
+        "Veuillez trouver ci-dessous vos identifiants de connexion à votre espace personnel :",
+
+        "E-mail (identifiant) : [insérer l’e-mail du client]",
+        "Mot de passe : Aa123456@",
+
+        "Pour accéder à votre espace, veuillez cliquer sur le lien suivant : [insérer le lien de l’espace]",
+        "👉 Se connecter à l’espace",
+
+        "Je viens de vous envoyer un message, dites-moi s’il vous plaît : savez-vous vérifier vos messages pendant que nous parlons ?",
+        "[ВАЖЛИВО ПИТАТИ, ЩО КЛІЄНТ БАЧИТЬ, ДЕ САМЕ БАЧИТЬ І ЯКЩО НЕ БАЧИТЬ ТО СПОКІЙНО ВЕСТИ ЩОБ І ВИ І КЛІЄНТ НЕ НЕРВУВАВСЯ]",
+        "[ЯКЩО ВИ НЕ ЗНАЄТЕ, ЩО РОЗПОВІДАТИ КЛІЄНТУ В КАБІНЕТІ ПОЗВІТЬ ТІМА]"
       ]
     },
     {
@@ -1729,6 +1742,7 @@
 }
 
     }
+
 
 
 
