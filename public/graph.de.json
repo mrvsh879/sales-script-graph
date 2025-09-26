@@ -457,8 +457,8 @@
         "Toll! Denn genau in solchen Situationen informiert Sie der Experte, der genau erklärt, wie viel man mit einer solchen Transaktion verdienen kann und wie man sie durchführt.",
         "Manchmal ermöglicht ein solches Ereignis unseren Kunden, sogar mehrere hundert Zloty an einem Handelstag zu verdienen, und manchmal auch mehrere Tausend.",
         "Genau deswegen können Sie bei der Zusammenarbeit mit einem Experten sogar bis zu 50% monatlich vom investierten Betrag verdienen.",
-        "Zum Beispiel: Wenn Sie mit 1000 zł beginnen, können Sie am Ende des ersten Monats 1500 zł auf dem Konto haben.",
-        "Wobei 1000 zł der investierte Betrag sind und 500 zł Ihr Gewinn.",
+        "Zum Beispiel: Wenn Sie mit 250 eur beginnen, können Sie am Ende des ersten Monats 375 eur auf dem Konto haben.",
+        "Wobei 250 eur der investierte Betrag sind und 125 eur Ihr Gewinn.",
         
         "Ist ein solcher Gewinn für Sie zufriedenstellend?"
       ]
@@ -521,7 +521,7 @@
         "Якщо клієнт питає про місце знаходження коштів:",
         "Wir haben unsere eigene Handelsplattform, auf der sich Ihr Handelskonto befinden wird.",
         "Unsere Plattform ist sehr ähnlich wie Mobile Banking.",
-        "In welcher Bank sind Sie Kunde? [Santander, Millennium, Pekao S.A.]",
+        "In welcher Bank sind Sie Kunde?",
         "Auf unserer Plattform sieht alles ähnlich aus wie im Banking:",
         "es gibt einen Auszahlungsbereich, einen Bereich, in dem man das Passwort ändern kann, Feedback erhalten, Finanzbereich, Kontakt zum technischen Support, Hauptseite sowie ein Panel, in dem der Handel stattfindet.",
         "Ihr Handelskonto ist mit einem privaten Passwort gesichert.",
@@ -555,9 +555,9 @@
         "СУМИ ДЛЯ ВХОДУ НА РИНОК:",
         "— Sagen Sie mir bitte, [ім’я клієнта], hatten Sie schon die Gelegenheit, sich mit den Beträgen vertraut zu machen, von denen wir die Zusammenarbeit beginnen können?",
         "— Wir bieten unseren Kunden die Wahl eines von drei anfänglichen Portfolios:",
-        "• 4800 zł (vier Tausend achthundert),",
-        "• 2400 zł (zwei Tausend vierhundert),",
-        "• 1000-1100 zł (Tausend - Tausend einhundert).",
+        "• 1000 eur",
+        "• 500 eur",
+        "• 250 eur",
         "— Welcher dieser Beträge wäre für Sie am bequemsten?",
         "— Ich verstehe, ist dieser Betrag im Moment auf Ihrem Bankkonto verfügbar?"
       ]
@@ -608,7 +608,7 @@
       "title": "Давайте завтра — приклад + новина ПЛ",
       "type": "snippet",
       "text": [
-        "ПРИКЛАД + НОВИНА (PL):",
+        "ПРИКЛАД + НОВИНА :",
         "— Lassen Sie uns das etwas detaillierter besprechen. Es gibt eine Firma wie Apple — Sie kennen sie sicher gut, stimmt das? [чекаємо відповідь клієнта]",
         "— Toll. Stellen Sie sich vor, die Firma Apple hat das modernste Elektroauto produziert. Dieses Auto wird weltweit extrem beliebt und wird in vielen Ländern gerne gekauft.",
         "— Wie denken Sie, was in einer solchen Situation mit den Aktien der Firma Apple passiert? Steigt ihr Wert oder fällt er? [чекаємо відповідь клієнта]",
@@ -617,7 +617,7 @@
         "— Welche Fragen haben Sie in dieser Phase?",
         "— Was denken Sie darüber?",
         "— Ich rate, diese Möglichkeit heute zu nutzen.",
-        "Wir haben ein spezielles Angebot — man muss nicht mit 1000 Euro beginnen, es reicht ein Probe-Betrag von 1000–1100 zł.",
+        "Wir haben ein spezielles Angebot — man muss nicht mit 1000 Euro beginnen, es reicht ein Probe-Betrag von250 eur.",
         "— — —",
         "— Wie stehen Sie zu der Möglichkeit, in naher Zukunft 30 Euro zu verdienen?",
         "— Ich denke, Sie haben bemerkt, dass die Situation in der Welt jetzt ziemlich instabil ist, stimmt das?",
@@ -631,7 +631,7 @@
         "Es reicht, Ihr Konto mit 1000–1100 zł aufzuladen, um zu beginnen zu verdienen.",
         "— Was denken Sie darüber?",
         "— Ich rate, diese Möglichkeit heute zu nutzen.",
-        "Wir haben ein spezielles Angebot — man muss nicht mit 1000 Euro beginnen, es reicht ein Probe-Betrag von 1000–1100 zł."
+        "Wir haben ein spezielles Angebot — man muss nicht mit 1000 Euro beginnen, es reicht ein Probe-Betrag von 250 eur."
       ]
     },
     {
@@ -651,7 +651,7 @@
         
         "Nutzen Sie die mobile App Ihrer Bank?  ",
         
-        "Ist der Betrag von 1000 Zloty in dieser oder einer anderen Ihrer Bank verfügbar?", 
+        "Ist der Betrag von 250 eur in dieser oder einer anderen Ihrer Bank verfügbar?", 
         "(ВАЖЛИВО СЛУХАТИ УВАЖНО ВІДПОВІДІ КЛІЄНТА)",
         
         "Toll, gehen wir zum ersten Schritt, einverstanden?"
@@ -842,7 +842,7 @@
       "title": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ",
       "type": "snippet",
       "text": [
-        "Wenn 1000–1100 zł für Sie zu hoch als Startbetrag sind, sagen Sie bitte – welcher Betrag wäre für Sie geeignet, um die Zusammenarbeit zu beginnen?",
+        "Wenn 250 eur für Sie zu hoch als Startbetrag sind, sagen Sie bitte – welcher Betrag wäre für Sie geeignet, um die Zusammenarbeit zu beginnen?",
         "[Якщо клієнт каже - що не готовий починати і хоче подумати, почитати або порадитися, то переходимо до відпрацювання цього заперечення. Якщо клієнт називає будь-яку іншу суму, що менша за 1000-1100 злотих, тоді розвиваємо діалог далі]",
         "Warum genau dieser Betrag? Weil es im Fall eventueller Schwierigkeiten für Sie keine große Belastung wäre? Sagen Sie ehrlich.",
         "[Якщо клієнт каже - ТАК або що хоче подумати чи боїться - переходимо до відпрацювання цих заперечень]"
@@ -869,7 +869,7 @@
       "text": [
         "Warum ist der Mindestbetrag genau 1000-1100 zł und nicht weniger?",
         "Dieser Betrag ergibt sich aus der angenommenen Strategie des sicheren Handels. Wir eröffnen durchschnittlich 6–10 Positionen täglich, aber wir nutzen immer nur etwa 50% der Mittel, um das Risiko zu minimieren.",
-        "Deshalb ist 1000-1100 zł der Betrag, der ein effektives und sicheres Beginn der Investition ermöglicht – wovon nur die Hälfte tatsächlich auf den Markt geht.",
+        "Deshalb ist 250 eur der Betrag, der ein effektives und sicheres Beginn der Investition ermöglicht – wovon nur die Hälfte tatsächlich auf den Markt geht.",
         "Natürlich können Sie einen Broker mit niedrigerem Einstiegsschwell suchen, aber dort werden Sie allein handeln – ohne Unterstützung, ohne Strategie und ohne Person, die an Ihrem Ergebnis interessiert ist. Bei uns sind wir Partner – Sie verdienen, wir verdienen.",
         "Deshalb, wenn Ihnen an Sicherheit und Gewinnen liegt, am besten in der Praxis überzeugen. Ich schlage vor, das Konto mit dem Mindestbetrag aufzuladen und heute den ersten Schritt zum Gewinn zu machen.",
                    "Або",
@@ -907,10 +907,12 @@
       "title": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА",
       "type": "snippet",
       "text": [
-        "Wir sind ein internationales Unternehmen, Büro auch in Polen — das Haupt in Krotoszyn.",
-        "Registrierung: ELITE POLSKA sp. z o.o., KRS: 0000646268, ul. Juliana Smulikowskiego 4/112, 00-389 Warszawa, Mazowieckie, Datum: 2016-11-10.",
-        "In der Praxis kann ein offizieller Antrag an die NBP ~150€ kosten und bis zu 14 Werktage dauern.",
-        "👉 Wenn der Projektname vom Firmennamen abweicht — nach Name und KRS im Internet prüfen."
+        "📍 Unser Sitz:",
+        "Wir arbeiten mit einem internationalen Finanzdienstleister zusammen, unser Team ist unter anderem in Deutschland, Zypern und der Schweiz tätig.",
+        "Sobald Sie Ihre Arbeit aufgenommen haben, erhalten Sie von Ihrem Finanzexperten alle erforderlichen Unterlagen, wie z. B. eine interne Vereinbarung über die Sicherheit Ihres Geldes.",
+        "Außerdem ist unser Hauptbüro in Unser Firmensitz befindet sich in der",
+        "Börsenstraße 4, 70174 Stuttgart, Germany",
+        "Ich freue mich auf Ihre Rückmeldung und beantworte gerne alle weiteren Fragen!"
       ]
     },
     {
@@ -1734,6 +1736,7 @@
 }
 
     }
+
 
 
 
