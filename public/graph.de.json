@@ -283,13 +283,14 @@
       "type": "question",
       "text": [
         "СІМ’Я:",
-        "— Erledigen Sie Ihre finanziellen Bedürfnisse selbst, oder nutzen Sie Hilfe von Ehemann/Ehefrau/Eltern?",
-        
-        "Якщо каже, що є підтримка ",
-        "→ Toll, dadurch ist es nicht so schwer.",
-        "— Womit beschäftigt sich Ihre Frau/Ihr Mann?",
-        "Якщо каже, що все вирішує сам/сама",
-        "→ Ich bin stolz auf Sie, dass Sie nicht nur arbeiten, sondern auch für die Familie sorgen und nach zusätzlichem Einkommen suchen."
+        "- Gelingt es Ihnen, Ihre Familie selbst zu versorgen?",
+        "- Und wie viele Familienmitglieder versorgen Sie, wenn es kein Geheimnis ist?",  
+        "ВАЖЛИВО: ЯКЩО КЛІЄНТ НЕ ХОЧЕ ГОВОРИТИ НА ЦІ ТЕМИ, ТО ТРЕБА ПЕРЕЙТИ ДАЛІ ДО НАСТУПНОЇ ТЕМИ.",
+
+        "- Haben Sie Kinder?",
+        "- Ist es Ihnen schon gelungen, Helfer großzuziehen?",
+        "- Und wie steht Ihre Familie zu Ihrem Interesse?",
+        "Es ist für mich sehr angenehm, dass für Sie – genauso wie für mich – die Familie einen großen Wert darstellt. Ich werde mich freuen, Ihnen zu helfen, Ihre Pläne zu verwirklichen."
       ]
     },
     {
@@ -1733,6 +1734,7 @@
 }
 
     }
+
 
 
 
