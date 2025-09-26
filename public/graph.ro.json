@@ -240,31 +240,33 @@
       "title": "РОБОТА",
       "type": "question",
       "text": [
-        "РОБОТА:",
-        "- Cât timp ați putea aloca pentru colaborare?", 
-        "[відповідь наприклад 1–2 год]",
-        "- Pare că lucrați mult, nu-i așa?",
-        "- Spuneți-mi, în ce domeniu lucrați? [якщо, навіщо воно вам]",
-        "ВІДПОВІДЬ", 
-        "- Întreb ca să știu cum să vă explic cel mai bine. Dacă lucrați în domeniul financiar, totul va merge foarte repede.",
-        "- De cât timp lucrați în domeniul Dumneavoastră? [наприклад, відповідь 10 р.]", 
-        "[якщо не працює або пенсіонер — задаємо питання інше]",
-        "- Am mulți clienți din domeniul Dumneavoastră și știu că e o muncă grea. Ați gândit vreodată să schimbați domeniul sau să vă deschideți propria firmă? [наводимо приклад]",
-        "ПРИКЛАД:",
-        "Am un client, Domnul Dariusz, care lucrează și el în domeniul construcțiilor. Are 53 de ani. După un an de colaborare cu noi, și-a deschis propria firmă și se ocupă de finisaje interioare.", 
-        "Are echipa sa — 5 persoane — și lucrează pe cont propriu. Cred că și Dumneavoastră ați vrea să vă deschideți propriul business și să lucrați pentru Dumneavoastră, nu-i așa?",
-        
-        "- V-ați gândit cât ați vrea să câștigați?",
-        "- Cum vedeți colaborarea cu firma noastră?",
-        
+       "РОБОТА:",
+        "- Cât timp ați putea dedica colaborării?", 
+        "- Cât de dificil este să lucrați după un astfel de program?",
+        "- Spuneți-mi, vă rog, în ce domeniu activați??",
+        "- (ЯКЩО ЗАПИТАННЯ «ДЛЯ ЧОГО ВАМ ЦЕ ПОТРІБНО?» , МИ ВИКОРИСТОВУЄМО ВІДПОВІДЬ)",
+        "ÎNTREB PENTRU A ȘTI CUM VĂ POT EXPLICA CEL MAI BINE ȘI PENTRU A ALEGE CELE MAI BUNE CONDIȚII PENTRU DVS. NICI EU NU AM ÎNCEPUT DE LA ÎNCEPUT ÎN ACEST DOMENIU",
+        "- De cât timp lucrați în domeniul dvs.?", 
+        "- Lucrați pe cont propriu sau pentru cineva?",
+        "- Am mulți clienți din domeniul dvs. și știu că este o muncă grea. Pentru mine, oamenii care lucrează ca dvs. sunt un exemplu de buni oameni de familie. Mă bucur să vă cunosc.",
+        " ЯКЩО ВІН СКАЖЕ «Я НЕ ЗНАЮ», НАВЕДІТЬ ПРИКЛАД:",
+        "ÎN DOMENIUL NOSTRU ESTE IMPORTANT SĂ AI UN SCOP. DE EXEMPLU, AM UN CLIENT PE NUME DARIUS, CARE A LUCRAT 17 ANI ÎN DOMENIUL CONSTRUCȚIILOR. ACUM ARE 53 DE ANI.", 
+        "DUPĂ UN AN DE COLABORARE CU NOI, ȘI-A ÎNFIINȚAT PROPRIA FIRMĂ ȘI SE OCUPĂ DE AMENAJĂRI INTERIOARE, DEȘI A ÎNCEPUT EXACT CA DVS.", 
+        "- CARE ESTE OBIECTIVUL DVS.?",
+
         "ЯКЩО ЛЮДИНА В ВІЦІ (50+) АБО ПЕНСІОНЕР:",
-        "- Serios? — Sincer vorbind, sunați foarte tânăr/tânără — îmi e greu să cred că aveți mai mult de 40–50 de ani.",
-        "[це комплімент, говоримо з усмішкою]",
-        "- Știți, cel mai important este câți ani vă simțiți, nu ce scrie în pașaport. Vă respect, pentru că la această vârstă vreți să învățați ceva nou și să vă încercați forțele într-un domeniu nou.",
-        "- Cum credeți, e ușor să vă orientați într-un domeniu nou?",
-        "- Vă împiedică sănătatea uneori?",
-        "- Dumneavoastră înșivă ați vorbit despre o muncă atât de grea — poate deja s-a întâmplat?",
-        "- Dumneavoastră știți că e greu să trăiți doar din pensie, având atâția ani lucrați. Din ce spun clienții mei, pensia sau alocația e adesea doar 3000 zł. La Dumneavoastră e similar?"
+        "- Serios? Asta mă surprinde, poate că faceți sport de mult timp.",
+        " Trebuie să menționez că avem anumite restricții de vârstă",
+        "- Și dacă nu este un secret, ce vârstă aveți?",
+        "- ЯКЩО ВІН НЕ РОЗКРИВАЄ СВІЙ ТОЧНИЙ ВІК",
+        " Nu îmi este confortabil să pun astfel de întrebări, permiteți-mi să întreb altfel",
+        "- Aveți deja 25 de ani? – Trebuie neapărat să întreb asta))",
+        "- Ați sărbătorit deja cea de-a 75-a aniversare?",
+        "ЯКЩО ВІК НЕ ВІДПОВІДАЄ ПРАВИЛАМ, ТРЕБА ПРОДАТИ УМОВИ",
+
+        "- Cu ce v-ați ocupat înainte de pensionare?",
+        "- Cum vă petreceți timpul liber?",
+        "- Locuiți singur(ă) sau aveți pe cineva care vă ajută?"
       ]
     },
     {
@@ -1724,6 +1726,7 @@
 }
 
     }
+
 
 
 
