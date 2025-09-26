@@ -532,12 +532,25 @@
       "type": "snippet",
       "text": [
         "ДЕМОНСТРАЦІЯ ПЛАТФОРМИ:",
-        "— Proponuję, żeby teraz zalogował/a się Pan/i na platformie. Pokażę, jak wszystko działa i od razu zmienimy hasło, aby zabezpieczyć konto handlowe.",
-        "— Za chwilę wyślę Panu/Pani link do naszej platformy — proszę tylko powiedzieć, gdzie będzie wygodniej go otrzymać: na e-mail czy na WhatsApp?",
-        "[Якщо на пошту, перевіряємо пошту чи він/вона залишив під час реєстрації. Якщо na WhatsApp — фіксуємо свій номер, щоб клієнт додав вас, а в рідкісних випадках додаємо самі.]",
-        
-        "— Czy dobrze rozumiem, że ma Pan/i teraz możliwość otworzyć naszą platformę?",
-        "[Тільки після позитивної відповіді відправляємо посилання і ведемо клієнта далі по платформі.]"
+        "— Proponuję Panu / Pani zalogować się do swojego osobistego konta, aby mógł / mogła Pan / Pani na własne oczy zobaczyć, gdzie będą Pana / Pani pieniądze i jak wszystko działa. Dobrze?",
+        "— Gdzie lepiej będzie wysłać link – na Pana / Pani e-mail, czy korzysta Pan / Pani z jakichś komunikatorów? Jeśli tak, to z jakich?",
+        "[ЯКЩО НА ПОШТУ, ПЕРЕВІРЯЄМО ПОШТУ ЧИ ВІН/ВОНА ЗАЛИШИВ ПІД ЧАС РЕЄСТРАЦІЇ. ЯКЩО НА WHATSAPP/VIBER — ФІКСУЄМО СВІЙ НОМЕР, ЩОБ КЛІЄНТ ДОДАВ ВАС, А В РІДКІСНИХ ВИПАДКАХ ДОДАЄМО САМІ.]",
+        "[КОПІЮЄМО ЦЕ ПОВІДОМЛЕНЯ ТА ВІПРАВЛЯЄМО КЛІЄНТУ З ДАНИМИ ЛОГУВАННЯ]",
+
+        "Szanowny Kliencie / Szanowna Klientko!",
+
+        "Witamy i dziękujemy za rejestrację.",
+        "Poniżej znajdzie Pan / Pani swoje dane do logowania do osobistego konta:",
+
+        "E-mail (login): [wstawić e-mail klienta]",
+        "Hasło: Aa123456@",
+
+        "Aby zalogować się do swojego konta, proszę przejść pod poniższy link: [wstawić link do konta]",
+        "👉 Zaloguj się do konta",
+
+        "Właśnie teraz wysyłam Panu / Pani wiadomość, proszę powiedzieć, czy potrafi Pan / Pani sprawdzić wiadomości w trakcie rozmowy?",
+        "[ВАЖЛИВО ПИТАТИ, ЩО КЛІЄНТ БАЧИТЬ, ДЕ САМЕ БАЧИТЬ І ЯКЩО НЕ БАЧИТЬ ТО СПОКІЙНО ВЕСТИ ЩОБ І ВИ І КЛІЄНТ НЕ НЕРВУВАВСЯ]",
+        "[ЯКЩО ВИ НЕ ЗНАЄТЕ, ЩО РОЗПОВІДАТИ КЛІЄНТУ В КАБІНЕТІ ПОЗВІТЬ ТІМА]"
       ]
     },
     {
