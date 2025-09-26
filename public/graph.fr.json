@@ -206,12 +206,12 @@
       "title": "НЕМАЄ ДОСВІДУ:",
       "type": "snippet",
       "text": [
-        "— Vous êtes novice dans cette industrie",
-        " [цей жарт — тому говоримо з усмішкою й можна трохи посміятись,",
-        " це щось типу 'а, то Ви новачок / чайник'] і також з усмішкою продовжуємо:",
+        "C'est formidable que vous soyez novice dans ce domaine. Vous n'êtes ni le premier ni le dernier de nos clients à ne pas avoir d'expérience",
+        "Comment vous sentez-vous avant de vous lancer dans quelque chose de nouveau?",
+        "(Можливо, у вас є якісь побоювання або питання, які ви соромитеся задати — не хвилюйтеся, ми тут, щоб підтримати вас.)",
         
-        "Ce n'est pas grave, nous avons une équipe de spécialistes qui vous conseilleront à chaque étape de notre collaboration.",
-        "Parce que notre entreprise est intéressée par une collaboration à long terme et rentable avec vous."
+        "Ne vous inquiétez pas, nous avons une équipe de spécialistes qui vous conseilleront à chaque étape de notre collaboration.",
+        "Notre entreprise souhaite établir une collaboration à long terme et mutuellement avantageuse avec vous."
       ],
       "transitions": [
         { "label": "До етапу «Робота»", "to": "work" }
@@ -1719,5 +1719,6 @@
 }
 
     }
+
 
 
