@@ -206,12 +206,12 @@
       "title": "НЕМАЄ ДОСВІДУ:",
       "type": "snippet",
       "text": [
-        "— Sunteți verde în această industrie",
-        " [цей жарт — тому говоримо з усмішкою й можна трохи посміятись,",
-        " це щось типу 'а, то Ви новачок / чайник'] і також з усмішкою продовжуємо:",
+        "Este minunat că sunteți începător în acest domeniu. Nu sunteți nici primul, nici ultimul nostru client fără experiență",
+        " Cum vă simțiți înainte de a începe ceva nou?",
+        " (Poate aveți unele temeri sau întrebări pe care vă este rușine să le puneți – nu vă faceți griji, suntem aici pentru a vă sprijini.)",
         
-        "Nu contează, avem o echipă de specialiști care vă vor sfătui la fiecare etapă a colaborării noastre.",
-        "Deoarece compania noastră este interesată de o colaborare pe termen lung și profitabilă cu Dumneavoastră."
+        "Nu vă faceți griji, avem o echipă de specialiști care vă vor oferi consultanță în fiecare etapă a colaborării noastre.",
+        "Compania noastră este interesată într-o colaborare pe termen lung și reciproc avantajoasă cu dumneavoastră."
       ],
       "transitions": [
         { "label": "До етапу «Робота»", "to": "work" }
@@ -1720,6 +1720,7 @@
 }
 
     }
+
 
 
 
