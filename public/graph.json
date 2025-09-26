@@ -191,7 +191,9 @@
       "title": "ДОСВІД - ПИТАННЯ",
       "type": "question",
       "text": [
-        "[імʼя клієнта], Co Pana / Panią zainteresowało w naszej ofercie, że Pan / Pani zdecydował / zdecydowała się na rejestrację?"
+        "[imię klienta], Co zwróciło uwagę Pana / Pani w naszej ofercie, że zdecydował się Pan / zdecydowała się Pani na rejestrację?",
+        "Od jak dawna interesuje się Pan / Pani dodatkowym dochodem?",
+        "Czy to jest Pana / Pani pierwsze doświadczenie, czy już wcześniej próbował Pan / próbowała Pani współpracować z innymi firmami?"
       ],
       "transitions": [
         { "label": "НЕМАЄ ДОСВІД", "to": "exp_no" },
