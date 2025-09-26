@@ -211,7 +211,8 @@
         " (Poate aveți unele temeri sau întrebări pe care vă este rușine să le puneți – nu vă faceți griji, suntem aici pentru a vă sprijini.)",
         
         "Nu vă faceți griji, avem o echipă de specialiști care vă vor oferi consultanță în fiecare etapă a colaborării noastre.",
-        "Compania noastră este interesată într-o colaborare pe termen lung și reciproc avantajoasă cu dumneavoastră."
+        "Compania noastră este interesată într-o colaborare pe termen lung și reciproc avantajoasă cu dumneavoastră.",
+        "Vă propun să facem cunoștință, pentru a înțelege cine suntem și pentru a găsi cele mai bune condiții pentru dvs., de acord?"
       ],
       "transitions": [
         { "label": "До етапу «Робота»", "to": "work" }
@@ -223,7 +224,10 @@
       "title": "Є ДОСВІД:",
       "type": "snippet",
       "text": [
-        "Nu sunteți o persoană începătoare în această industrie, deci va fi ușor pentru noi.",
+        "Din experiența mea, nu sunteți prima persoană care vine la noi cu experiență.",
+        "Pot spune că în compania noastră nu contează ce experiență aveți, ci este important ca clienții noștri să primească de la noi ceea ce doresc.",
+
+        "Vă propun să facem cunoștință, pentru a înțelege cine suntem și pentru a găsi cele mai bune condiții pentru dvs., de acord?",
         
         "БІЛЬШЕ ПИТАНЬ ПРО ДОСВІД НА ЦЬОМУ ЕТАПІ МИ НЕ СТАВИМО!!!"
       ],
@@ -1720,6 +1724,7 @@
 }
 
     }
+
 
 
 
