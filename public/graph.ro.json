@@ -277,13 +277,15 @@
       "type": "question",
       "text": [
         "СІМ’Я:",
-        "— Gestionați singur/ă nevoile financiare, sau beneficiați de ajutor de la soț/soție/părinți?",
-        
-        "Якщо каже, що є підтримка ",
-        "→ Excelent, datorită asta nu e chiar atât de greu.",
-        "— Cu ce se ocupă soția/soțul Dumneavoastră?",
-        "Якщо каже, că все вирішує сам/сама",
-        "→ Sunt mândru/mândră de Dumneavoastră, că nu doar lucrați, ci aveți grijă de familie și căutați venit suplimentar."
+        "- Reușiți să vă întrețineți singur(ă) familia?",
+        "- Și câți membri ai familiei întrețineți, dacă nu este un secret?",  
+        "ВАЖЛИВО: ЯКЩО КЛІЄНТ НЕ ХОЧЕ ГОВОРИТИ НА ЦІ ТЕМИ, ТО ТРЕБА ПЕРЕЙТИ ДАЛІ ДО НАСТУПНОЇ ТЕМИ.",
+
+        "- Aveți copii?",
+        "- Ați reușit deja să creșteți ajutoare?",
+        "- Și cum se raportează familia dvs. la interesul dvs.?",
+        "Îmi face mare plăcere că pentru dvs., la fel ca și pentru mine, familia este o mare valoare. Voi fi bucuros (bucuroasă) să vă ajut să vă realizați planurile."
+
       ]
     },
     {
@@ -1728,6 +1730,7 @@
 }
 
     }
+
 
 
 
