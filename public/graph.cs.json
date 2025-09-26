@@ -206,12 +206,12 @@
       "title": "НЕМАЄ ДОСВІДУ:",
       "type": "snippet",
       "text": [
-        "— Jste zelený/á v této branži",
-        " [цей жарт — тому говоримо з усмішкою й можна трохи посміятись,",
-        " це щось типу 'а, то Ви новачок / чайник'] і також з усмішкою продовжуємо:",
+        "Je skvělé, že jste v této oblasti nováčkem. Nejste zdaleka naším prvním ani posledním zákazníkem, který nemá zkušenosti",
+        "Jak se cítíte před začátkem něčeho nového?,",
+        "(можливо, людина нервує або у неї є питання, які вона соромиться задати, ВАЖЛИВО ПІДТРИМАТИ)",
         
-        "To nevadí, máme tým specialistů, kteří vám budou radit na každém kroku naší spolupráce.",
-        "Protože naše firma má zájem na dlouhodobé a výnosné spolupráci s vámi."
+        "To nevadí, máme tým specialistů, kteří vám budou poskytovat poradenství v každé fázi naší spolupráce.",
+        "Naše společnost má zájem o dlouhodobou a vzájemně výhodnou spolupráci s vámi."
       ],
       "transitions": [
         { "label": "До етапу «Робота»", "to": "work" }
