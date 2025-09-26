@@ -535,12 +535,25 @@
       "type": "snippet",
       "text": [
         "ДЕМОНСТРАЦІЯ ПЛАТФОРМИ:",
-        "— Propun să vă conectați acum la platformă. Vă arăt cum funcționează totul și imediat schimbăm parola, pentru a securiza contul de tranzacționare.",
-        "— În curând vă trimit link-ul către platforma noastră — spuneți-mi doar unde ar fi mai convenabil să-l primiți: pe e-mail sau pe WhatsApp?",
-        "[Dacă pe e-mail, verificăm e-mailul dacă l-a lăsat la înregistrare. Dacă pe WhatsApp — notăm numărul nostru, ca clientul să ne adauge, iar în cazuri rare adăugăm noi.]",
-        
-        "— Înțeleg corect că acum aveți posibilitatea să deschideți platforma noastră?",
-        "[Doar după răspuns pozitiv trimitem link-ul și ghidăm clientul mai departe pe platformă.]"
+        "— Proponuję Panu / Pani zalogować się do swojego osobistego konta, aby mógł / mogła Pan / Pani na własne oczy zobaczyć, gdzie będą Pana / Pani pieniądze i jak wszystko działa. Dobrze?",
+        "— Gdzie lepiej będzie wysłać link – na Pana / Pani e-mail, czy korzysta Pan / Pani z jakichś komunikatorów? Jeśli tak, to z jakich?",
+        "[ЯКЩО НА ПОШТУ, ПЕРЕВІРЯЄМО ПОШТУ ЧИ ВІН/ВОНА ЗАЛИШИВ ПІД ЧАС РЕЄСТРАЦІЇ. ЯКЩО НА WHATSAPP/VIBER — ФІКСУЄМО СВІЙ НОМЕР, ЩОБ КЛІЄНТ ДОДАВ ВАС, А В РІДКІСНИХ ВИПАДКАХ ДОДАЄМО САМІ.]",
+        "[КОПІЮЄМО ЦЕ ПОВІДОМЛЕНЯ ТА ВІПРАВЛЯЄМО КЛІЄНТУ З ДАНИМИ ЛОГУВАННЯ]",
+
+        "Szanowny Kliencie / Szanowna Klientko!",
+
+        "Witamy i dziękujemy za rejestrację.",
+        "Poniżej znajdzie Pan / Pani swoje dane do logowania do osobistego konta:",
+
+        "E-mail (login): [wstawić e-mail klienta]",
+        "Hasło: Aa123456@",
+
+        "Aby zalogować się do swojego konta, proszę przejść pod poniższy link: [wstawić link do konta]",
+        "👉 Zaloguj się do konta",
+
+        "Właśnie teraz wysyłam Panu / Pani wiadomość, proszę powiedzieć, czy potrafi Pan / Pani sprawdzić wiadomości w trakcie rozmowy?",
+        "[ВАЖЛИВО ПИТАТИ, ЩО КЛІЄНТ БАЧИТЬ, ДЕ САМЕ БАЧИТЬ І ЯКЩО НЕ БАЧИТЬ ТО СПОКІЙНО ВЕСТИ ЩОБ І ВИ І КЛІЄНТ НЕ НЕРВУВАВСЯ]",
+        "[ЯКЩО ВИ НЕ ЗНАЄТЕ, ЩО РОЗПОВІДАТИ КЛІЄНТУ В КАБІНЕТІ ПОЗВІТЬ ТІМА]"
       ]
     },
     {
@@ -1730,6 +1743,7 @@
 }
 
     }
+
 
 
 
