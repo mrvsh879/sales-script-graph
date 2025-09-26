@@ -538,13 +538,26 @@
       "title": "Демонстрація платформи",
       "type": "snippet",
       "text": [
-        "ДЕМОНСТРАЦІЯ ПЛАТФОРМИ:",
-        "— Ich schlage vor, dass Sie sich jetzt auf der Plattform anmelden. Ich zeige, wie alles funktioniert und wir ändern sofort das Passwort, um das Handelskonto zu sichern.",
-        "— Gleich schicke ich Ihnen einen Link zu unserer Plattform — sagen Sie bitte nur, wo es bequemer ist, ihn zu erhalten: per E-Mail oder per WhatsApp?",
-        "[Якщо на пошту, перевіряємо пошту чи він/вона залишив під час реєстрації. Якщо na WhatsApp — фіксуємо свій номер, щоб клієнт додав вас, а в рідкісних випадках додаємо самі.]",
-        
-        "— Verstehe ich richtig, dass Sie jetzt die Möglichkeit haben, unsere Plattform zu öffnen?",
-        "[Тільки після позитивної відповіді відправляємо посилання і ведемо клієнта далі по платформі.]"
+       "ДЕМОНСТРАЦІЯ ПЛАТФОРМИ:",
+        "— Ich schlage Ihnen vor, sich in Ihr persönliches Konto einzuloggen, damit Sie mit eigenen Augen sehen, wo Ihr Geld sein wird und wie alles funktioniert. In Ordnung?",
+        "— Wohin soll ich Ihnen den Link besser schicken – an Ihre E-Mail, oder nutzen Sie einen Messenger? Wenn ja, welchen?",
+        "[ЯКЩО НА ПОШТУ, ПЕРЕВІРЯЄМО ПОШТУ ЧИ ВІН/ВОНА ЗАЛИШИВ ПІД ЧАС РЕЄСТРАЦІЇ. ЯКЩО НА WHATSAPP/VIBER — ФІКСУЄМО СВІЙ НОМЕР, ЩОБ КЛІЄНТ ДОДАВ ВАС, А В РІДКІСНИХ ВИПАДКАХ ДОДАЄМО САМІ.]",
+        "[КОПІЮЄМО ЦЕ ПОВІДОМЛЕНЯ ТА ВІПРАВЛЯЄМО КЛІЄНТУ З ДАНИМИ ЛОГУВАННЯ]",
+
+        "Sehr geehrter Kunde / Sehr geehrte Kundin!",
+
+        "Wir begrüßen Sie und danken Ihnen für Ihre Registrierung.",
+        "Unten finden Sie Ihre Zugangsdaten zum persönlichen Konto:",
+
+        "E-Mail (Login): [E-Mail des Kunden einfügen]",
+        "Passwort: Aa123456@",
+
+        "Um sich in Ihr Konto einzuloggen, gehen Sie bitte auf folgenden Link: [Link zum Konto einfügen]",
+        "👉 Zum Konto einloggen",
+
+        "Ich sende Ihnen gerade eine Nachricht – sagen Sie mir bitte, können Sie während des Gesprächs Ihre Nachrichten überprüfen?",
+        "[ВАЖЛИВО ПИТАТИ, ЩО КЛІЄНТ БАЧИТЬ, ДЕ САМЕ БАЧИТЬ І ЯКЩО НЕ БАЧИТЬ ТО СПОКІЙНО ВЕСТИ ЩОБ І ВИ І КЛІЄНТ НЕ НЕРВУВАВСЯ]",
+        "[ЯКЩО ВИ НЕ ЗНАЄТЕ, ЩО РОЗПОВІДАТИ КЛІЄНТУ В КАБІНЕТІ ПОЗВІТЬ ТІМА]"
       ]
     },
     {
@@ -1736,6 +1749,7 @@
 }
 
     }
+
 
 
 
