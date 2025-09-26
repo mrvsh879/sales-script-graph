@@ -211,7 +211,8 @@
         "(Можливо, у вас є якісь побоювання або питання, які ви соромитеся задати — не хвилюйтеся, ми тут, щоб підтримати вас.)",
         
         "Ne vous inquiétez pas, nous avons une équipe de spécialistes qui vous conseilleront à chaque étape de notre collaboration.",
-        "Notre entreprise souhaite établir une collaboration à long terme et mutuellement avantageuse avec vous."
+        "Notre entreprise souhaite établir une collaboration à long terme et mutuellement avantageuse avec vous.",
+        "Je vous propose de faire un peu connaissance afin que vous compreniez qui nous sommes et que nous trouvions les meilleures conditions pour vous, d'accord"
       ],
       "transitions": [
         { "label": "До етапу «Робота»", "to": "work" }
@@ -223,7 +224,10 @@
       "title": "Є ДОСВІД:",
       "type": "snippet",
       "text": [
-        "Vous n'êtes pas débutant(e) dans cette industrie, donc ce sera facile pour nous.",
+        "D'après mon expérience, vous n'êtes pas la première personne à venir chez nous avec de l'expérience",
+        "Je peux vous dire que dans notre entreprise, peu importe votre expérience, l'important est que nos clients obtiennent ce qu'ils veulent.",
+
+        "Je vous propose de faire un peu connaissance afin que vous compreniez qui nous sommes et que nous trouvions les meilleures conditions pour vous, d'accord",
         
         "БІЛЬШЕ ПИТАНЬ ПРО ДОСВІД НА ЦЬОМУ ЕТАПІ МИ НЕ СТАВИМО!!!"
       ],
@@ -1719,6 +1723,7 @@
 }
 
     }
+
 
 
 
