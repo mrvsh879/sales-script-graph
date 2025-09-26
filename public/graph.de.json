@@ -669,7 +669,7 @@
         "— Lassen Sie die finanziellen Fragen vorerst beiseite. Auf wie vielen Prozent schätzen Sie Ihre Chancen, hier zu verdienen? [чекаємо відповідь, підказуємо 70–80%]",
         "— Ich verstehe, dass die restlichen 20% Ihre Zweifel sind. Sagen Sie bitte, was macht Sie unsicher?",
         "Якщо говорить, що впевнений/а, але немає грошей:",
-        "— Stellen Sie sich vor – wenn Sie dringend 1000–1100 zł besorgen müssten, was würden Sie tun, um diesen Betrag zu finden?",
+        "— Stellen Sie sich vor – wenn Sie dringend 250 eur besorgen müssten, was würden Sie tun, um diesen Betrag zu finden?",
         "Якщо говорить, що немає вільних:",
         "— Verstehen Sie unter „freien Mitteln“ Geld, das Sie nicht fürchten zu verlieren? [чекаємо відповідь клієнта]",
         "— Sagen Sie mir bitte – wie denken Sie, auf welche Weise könnten Sie hier Geld verlieren?"
@@ -1736,6 +1736,7 @@
 }
 
     }
+
 
 
 
