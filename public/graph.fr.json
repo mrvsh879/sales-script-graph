@@ -379,7 +379,7 @@
         "En termes simples : nous achetons moins cher, vendons plus cher. Est-ce clair ?",
         
         "Sur le marché financier, nous avons quatre directions principales sur lesquelles nous pouvons trader. Nous pouvons gagner sur les différences de prix d'actifs tels que :",
-        "– Paires de devises (par ex. EUR/PLN),",
+        "– Paires de devises (par ex. EUR/USD),",
         "– Matières premières (par ex. pétrole, or),",
         "– Actions (par ex. Tesla, Orlen),",
         "– Cryptomonnaies.",
@@ -452,8 +452,8 @@
         "Génial ! Car c'est précisément dans ces situations que l'expert vous informera, qui expliquera exactement combien on peut gagner sur une telle transaction et comment la mener.",
         "Parfois, un tel événement permet à nos clients de gagner même plusieurs centaines de zł en une journée de trading, et parfois même plusieurs milliers.",
         "C'est pourquoi en collaborant avec un expert, vous pouvez gagner jusqu'à 50% par mois sur le montant investi.",
-        "Par exemple : si vous commencez avec 1000 zł, à la fin du premier mois, vous pourriez avoir 1500 zł sur votre compte.",
-        "Où 1000 zł est le montant investi, et 500 zł votre profit.",
+        "Par exemple : si vous commencez avec 250 eur, à la fin du premier mois, vous pourriez avoir 375 eur sur votre compte.",
+        "Où 250 eur est le montant investi, et 125 votre profit.",
         
         "Un tel profit vous satisfait-il ?"
       ]
@@ -550,9 +550,9 @@
         "СУМИ ДЛЯ ВХОДУ НА РИНОК:",
         "— Dites-moi, [ім’я клієнта], avez-vous déjà eu l'occasion de vous familiariser avec les montants à partir desquels nous pouvons commencer la collaboration ?",
         "— Nous offrons à nos clients le choix d'un des trois portefeuilles initiaux :",
-        "• 4800 zł (quatre mille huit cents),",
-        "• 2400 zł (deux mille quatre cents),",
-        "• 1000-1100 zł (mille - mille cent).",
+        "• 1000 eur",
+        "• 500 eur ",
+        "• 250 eur ",
         "— Quel de ces montants serait le plus confortable pour vous ?",
         "— Je comprends, ce montant est-il disponible en ce moment sur votre compte bancaire ?"
       ]
@@ -612,21 +612,21 @@
         "— Quelles questions avez-vous à cette étape ?",
         "— Qu'en pensez-vous ?",
         "— Je conseille de profiter de cette opportunité dès aujourd'hui.",
-        "Nous avons une offre spéciale — pas besoin de commencer avec 1000 euros, une somme d'essai de 1000–1100 zł suffit.",
+        "Nous avons une offre spéciale — pas besoin de commencer avec 1000 euros, une somme d'essai de 250 eur suffit.",
         "— — —",
         "— Comment voyez-vous la possibilité de gagner 30 euros dans un proche avenir ?",
         "— Je pense que vous avez remarqué que la situation dans le monde est maintenant assez instable, n'est-ce pas ?",
         "— Dans de tels moments, chaque investisseur veut avoir son argent en lieu sûr. Et c'est alors que la meilleure solution est souvent l'investissement dans l'or.",
         "— Au début de cette année, le prix de l'or était de 2600 dollars l'once.",
-        "— Et savez-vous combien il coûte maintenant ? — 3239 dollars !",
+        "— Et savez-vous combien il coûte maintenant ? — 3800 dollars !",
         "— Selon les prévisions des plus grands centres analytiques, le prix peut monter jusqu'à 3700–3800 dollars l'once.",
         "— C'est une excellente opportunité ! Dès aujourd'hui, vous pouvez non seulement voir comment fonctionne le gain, mais aussi réellement faire 30 euros grâce à l'augmentation du prix de l'or.",
         "Et si cela augmente en quelques heures — ce serait génial aussi, n'est-ce pas ?",
         "— C'est pourquoi je propose de profiter de cette chance maintenant.",
-        "Il suffit de créditer votre compte avec 1000–1100 zł pour commencer à gagner.",
+        "Il suffit de créditer votre compte avec 250 eur pour commencer à gagner.",
         "— Qu'en pensez-vous ?",
         "— Je conseille de profiter de cette opportunité dès aujourd'hui.",
-        "Nous avons une offre spéciale — pas besoin de commencer avec 1000 euros, une somme d'essai de 1000–1100 zł suffit."
+        "Nous avons une offre spéciale — pas besoin de commencer avec 1000 euros, une somme d'essai de 250 eur suffit."
       ]
     },
     {
@@ -646,7 +646,7 @@
         
         "Utilisez-vous l'application mobile de votre banque ?  ",
         
-        "Le montant de 1000 zł est-il disponible dans cette banque ou une autre ?", 
+        "Le montant de 250 eur est-il disponible dans cette banque ou une autre ?", 
         "(ВАЖЛИВО СЛУХАТИ УВАЖНО ВІДПОВІДІ КЛІЄНТА)",
         
         "Génial, passons à la première étape, d'accord ?"
@@ -769,8 +769,8 @@
         "Qu'est-ce qui empêche de commencer maintenant ?",
                         "Або",
        "Puis-je demander ce qui vous empêche de commencer maintenant ?", 
-       "[Якщо клієнт каже, що йому треба: подумати, у нього потім буде більше часу - то переходимо до відпрацювання цих заперечень.",
-        "Якщо клієнт каже, що тільки через місяць у нього будуть гроші - тоді наше завдання продати йому новину, зацікавити прибутком, поставити дедлайн і запропонувати запуститися в роботу на більш вигідних умовах.]"
+       "Якщо клієнт каже, що йому треба: подумати, у нього потім буде більше часу - то переходимо до відпрацювання цих заперечень.",
+       "Якщо клієнт каже, що тільки через місяць у нього будуть гроші - тоді наше завдання продати йому новину, зацікавити прибутком, поставити дедлайн і запропонувати запуститися в роботу на більш вигідних умовах.]"
       ]
     },
     {
@@ -837,7 +837,7 @@
       "title": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ",
       "type": "snippet",
       "text": [
-        "Si 1000–1100 zł est pour vous une somme trop élevée pour commencer, dites-moi – quel montant serait approprié pour vous pour commencer la collaboration ?",
+        "Si 250 eur est pour vous une somme trop élevée pour commencer, dites-moi – quel montant serait approprié pour vous pour commencer la collaboration ?",
         "[Якщо клієнт каже - що не готовий починати і хоче подумати, почитати або порадитися, то переходимо до відпрацювання цього заперечення. Якщо клієнт називає будь-яку іншу суму, що менша за 1000-1100 злотих, тоді розвиваємо діалог далі]",
         "Pourquoi précisément ce montant ? Est-ce parce qu'en cas de difficultés éventuelles, cela ne serait pas un grand fardeau pour vous ? Dites-moi honnêtement.",
         "[Якщо клієнт каже - ТАК або що хоче подумати чи боїться - переходимо до відпрацювання цих заперечень]"
@@ -862,7 +862,7 @@
       "title": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ",
       "type": "snippet",
       "text": [
-        "Pourquoi le montant minimal est précisément 1000-1100 zł et pas moins ?",
+        "Pourquoi le montant minimal est précisément 250 eur et pas moins ?",
         "Ce montant résulte de la stratégie adoptée de trading sécurisé. Nous ouvrons en moyenne 6–10 positions par jour, mais nous utilisons toujours seulement environ 50% des fonds, pour minimiser le risque.",
         "C'est pourquoi 1000-1100 zł est le montant qui permet un démarrage efficace et sécurisé des investissements – dont seulement la moitié va réellement sur le marché.",
         "Bien sûr, vous pouvez chercher un courtier avec un seuil d'entrée plus bas, mais là vous agirez seul(e) – sans soutien, sans stratégie et sans personne engagée dans votre résultat. Chez nous, nous sommes partenaires – vous gagnez, nous gagnons.",
@@ -903,8 +903,8 @@
       "type": "snippet",
       "text": [
         "Nous sommes une entreprise internationale, bureau aussi en Pologne — principal à Krotoszyn.",
-        "Enregistrement : ELITE POLSKA sp. z o.o., KRS: 0000646268, ul. Juliana Smulikowskiego 4/112, 00-389 Warszawa, Mazowieckie, date: 2016-11-10.",
-        "En pratique, la demande officielle à la NBP peut coûter ~150€ et durer jusqu'à 14 jours ouvrables.",
+        "Enregistrement : ELITE UK LIMITED, Company number 05099962,251 Henley Road, Caversham, Reading, RG4 6LJ , Mazowieckie, date: 13 April 2004.",
+        "En pratique, la demande officielle à la NBP peut coûter ~1500€ et durer jusqu'à 14 jours ouvrables.",
         "👉 Si le nom du projet diffère du nom de l'entreprise — vérifier par nom et KRS sur internet."
       ]
     },
@@ -1729,6 +1729,7 @@
 }
 
     }
+
 
 
 
