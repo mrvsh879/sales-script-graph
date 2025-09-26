@@ -534,12 +534,24 @@
       "type": "snippet",
       "text": [
         "ДЕМОНСТРАЦІЯ ПЛАТФОРМИ:",
-        "— Navrhuji, abyste se teď přihlásil/a na platformě. Ukážu, jak všechno funguje a hned změníme heslo, aby se zabezpečilo obchodní učet.",
-        "— Za chvíli vám zašlu odkaz na naši platformu — prosím jen řekněte, kde bude pohodlnější ho obdržet: na e-mail nebo na WhatsApp?",
-        "[Якщо на пошту, перевіряємо пошту чи він/вона залишив під час реєстрації. Якщо na WhatsApp — фіксуємо свій номер, щоб клієнт додав вас, а в рідкісних випадках додаємо самі.]",
+        "— Navrhuji Vám přihlásit se do Vašeho osobního kabinetu, abyste vlastníma očima viděl/a, kde budou Vaše peníze a jak všechno funguje. Dobře?",
+        "— Kam je pro Vás lepší poslat odkaz – na Váš e-mail, nebo používáte nějaké messengery? Pokud ano, které?",
+        "[ЯКЩО НА ПОШТУ, ПЕРЕВІРЯЄМО ПОШТУ ЧИ ВІН/ВОНА ЗАЛИШИВ ПІД ЧАС РЕЄСТРАЦІЇ. ЯКЩО НА WHATSAPP/VIBER — ФІКСУЄМО СВІЙ НОМЕР, ЩОБ КЛІЄНТ ДОДАВ ВАС, А В РІДКІСНИХ ВИПАДКАХ ДОДАЄМО САМІ.]",
+        "[КОПІЮЄМО ЦЕ ПОВІДОМЛЕНЯ ТА ВІПРАВЛЯЄМО КЛІЄНТУ З ДАНИМИ ЛОГУВАННЯ]",
+
+        "Vážený kliente / Vážená klientko!",
+
+        "Vítáme Vás a děkujeme za registraci.",
+        "Níže najdete své přihlašovací údaje do osobního kabinetu:",
+
+        "E-mail (login): [vložit e-mail klienta]",
+        "Heslo: Aa123456@",
         
-        "— Správně chápu, že teď máte možnost otevřít naši platformu?",
-        "[Тільки після позитивної відповіді відправляємо посилання і ведемо клієнта далі по платформі.]"
+        "Pro vstup do svého kabinetu přejděte na odkaz: [vložit odkaz na kabinet]",
+        "👉 Přihlásit se do kabinetu",
+        "Právě teď Vám posílám zprávu, řekněte mi prosím, umíte během hovoru zkontrolovat zprávy?",
+        "[ВАЖЛИВО ПИТАТИ, ЩО КЛІЄНТ БАЧИТЬ, ДЕ САМЕ БАЧИТЬ І ЯКЩО НЕ БАЧИТЬ ТО СПОКІЙНО ВЕСТИ ЩОБ І ВИ І КЛІЄНТ НЕ НЕРВУВАВСЯ]",
+        "[ЯКЩО ВИ НЕ ЗНАЄТЕ, ЩО РОЗПОВІДАТИ КЛІЄНТУ В КАБІНЕТІ ПОЗВІТЬ ТІМА]"
       ]
     },
     {
