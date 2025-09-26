@@ -241,30 +241,32 @@
       "type": "question",
       "text": [
         "РОБОТА:",
-        "- Combien de temps pourriez-vous consacrer à la collaboration ?", 
-        "[відповідь наприклад 1–2 год]",
-        "- On dirait que vous travaillez beaucoup, n'est-ce pas ?",
-        "- Dites-moi, dans quel secteur travaillez-vous ? [якщо, навіщо воно вам]",
-        "ВІДПОВІДЬ", 
-        "- Je demande pour savoir comment vous l'expliquer au mieux. Si vous travaillez dans le secteur financier, tout ira très vite.",
-        "- Depuis combien de temps travaillez-vous dans votre secteur ? [наприклад, відповідь 10 р.]", 
-        "[якщо не працює або пенсіонер — задаємо питання інше]",
-        "- J'ai beaucoup de clients dans votre secteur et je sais que c'est un travail dur. Avez-vous déjà pensé à changer de secteur ou à créer votre propre entreprise ? [наводимо приклад]",
-        "ПРИКЛАД:",
-        "J'ai un client, M. Dariusz, qui travaille aussi dans le bâtiment. Il a 53 ans. Après un an de collaboration, il a ouvert sa propre entreprise et s'occupe de finitions intérieures.", 
-        "Il a son équipe — 5 personnes — et travaille pour son propre compte. Je pense que vous aussi voudriez ouvrir votre propre entreprise et travailler pour vous, n'est-ce pas ?",
-        
-        "- Avez-vous réfléchi à combien vous voudriez gagner ?",
-        "- Comment voyez-vous la collaboration avec notre entreprise ?",
-        
+        "- Combien de temps pourriez-vous consacrer à la collaboration ?",
+        "- Est-il difficile de travailler selon un tel emploi du temps ?",
+        "- Dites-moi s'il vous plaît, dans quel domaine travaillez-vous ??",
+        "- (ЯКЩО ЗАПИТАННЯ «ДЛЯ ЧОГО ВАМ ЦЕ ПОТРІБНО?» , МИ ВИКОРИСТОВУЄМО ВІДПОВІДЬ)",
+        "JE DEMANDE AFIN DE SAVOIR COMMENT JE PEUX VOUS L'EXPLIQUER AU MIEUX ET CHOISIR LES MEILLEURES CONDITIONS POUR VOUS. MOI AUSSI, JE N'AI PAS COMMENCÉ DÈS LE DÉBUT DANS CE DOMAINE",
+        "- Depuis combien de temps travaillez-vous dans votre domaine ?", 
+        "- Travaillez-vous de manière indépendante ou pour quelqu'un ?",
+        "- J'ai beaucoup de clients de votre domaine et je sais que c'est un travail difficile. Pour moi, les personnes qui travaillent comme vous sont un exemple de bonnes personnes de famille. Je suis heureux de faire votre connaissance.",
+        " ЯКЩО ВІН СКАЖЕ «Я НЕ ЗНАЮ», НАВЕДІТЬ ПРИКЛАД:",
+        "DANS NOTRE DOMAINE, IL EST IMPORTANT D'AVOIR UN OBJECTIF. PAR EXEMPLE, J'AI UN CLIENT NOMMÉ DARIUS QUI A TRAVAILLÉ 17 ANS DANS LE SECTEUR DU BÂTIMENT. IL A MAINTENANT 53 ANS.", 
+        "APRÈS UNE ANNÉE DE NOTRE COLLABORATION, IL A CRÉÉ SA PROPRE ENTREPRISE ET S'OCCUPE DE L'AMÉNAGEMENT INTÉRIEUR, ALORS QU'IL A COMMENCÉ EXACTEMENT COMME VOUS.", 
+        "- QUEL EST VOTRE OBJECTIF ?",
+
         "ЯКЩО ЛЮДИНА В ВІЦІ (50+) АБО ПЕНСІОНЕР:",
-        "- Vraiment ? — Honnêtement, vous semblez très jeune — il est difficile de croire que vous avez plus de 40–50 ans.",
-        "[це комплімент, говоримо з усмішкою]",
-        "- Vous savez, le plus important c'est comment vous vous sentez, pas ce qui est écrit dans le passeport. Je vous respecte parce qu'à cet âge, vous voulez apprendre quelque chose de nouveau et essayer vos forces dans un nouveau secteur.",
-        "- Pensez-vous qu'il est facile de s'adapter dans un nouveau domaine ?",
-        "- Est-ce que votre santé ne vous gêne pas parfois ?",
-        "- Vous-même avez parlé d'un travail si dur — peut-être que cela s'est déjà accumulé ?",
-        "- Vous-même savez qu'il est difficile de vivre seulement de la retraite, puisque vous avez tant d'années travaillées. D'après ce que disent mes clients, la pension ou l'allocation est souvent à peine 3000 zł. Est-ce similaire pour vous ?"
+        "- Vraiment ? Cela me surprend, peut-être que vous faites du sport depuis longtemps.",
+        " Je dois préciser que nous avons certaines restrictions liées à l'âge",
+        "- Et si ce n'est pas un secret, quel âge avez-vous ?",
+        "- POKUD NEUVÁDÍ SVŮJ PŘESNÝ VĚK",
+        " Je ne suis pas à l'aise de poser de telles questions, permettez-moi de demander autrement",
+        "- Avez-vous déjà 25 ans ? – Je dois absolument poser cette question))",
+        "- Avez-vous déjà célébré votre 75e anniversaire ?",
+        "ЯКЩО ВІК НЕ ВІДПОВІДАЄ ПРАВИЛАМ, ТРЕБА ПРОДАТИ УМОВИ",
+
+        "- De quoi vous occupiez-vous avant de prendre votre retraite ?",
+        "- Comment passez-vous votre temps libre ?",
+        "- Vivez-vous seul(e) ou avez-vous quelqu'un qui vous aide ?"
       ]
     },
     {
@@ -1723,6 +1725,7 @@
 }
 
     }
+
 
 
 
