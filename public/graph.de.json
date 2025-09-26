@@ -244,30 +244,35 @@
       "type": "question",
       "text": [
         "РОБОТА:",
-        "- Wie viel Zeit könnten Sie der Zusammenarbeit widmen?", 
-        "[відповідь наприклад 1–2 год]",
-        "- Es sieht so aus, als ob Sie viel arbeiten, stimmt das?",
-        "- Sagen Sie bitte, in welcher Branche arbeiten Sie? [якщо, навіщо воно вам]",
-        "ВІДПОВІДЬ", 
-        "- Ich frage, um zu wissen, wie ich es Ihnen am besten erklären kann. Wenn Sie in der Finanzbranche arbeiten, geht alles sehr schnell.",
-        "- Wie lange arbeiten Sie schon in Ihrer Branche? [наприклад, відповідь 10 р.]", 
-        "[якщо не працює або пенсіонер — задаємо питання інше]",
-        "- Ich habe viele Kunden aus Ihrer Branche und weiß, dass das harte Arbeit ist. Haben Sie schon einmal über einen Branchenwechsel oder die Gründung eines eigenen Unternehmens nachgedacht? [наводимо приклад]",
-        "ПРИКЛАД:",
-        "Ich habe einen Kunden, Herrn Darius, der auch in der Baubranche arbeitet. Er ist 53 Jahre alt. Nach einem Jahr unserer Zusammenarbeit hat er sein eigenes Unternehmen eröffnet und beschäftigt sich mit Innenausbau.", 
-        "Er hat sein eigenes Team — 5 Personen — und arbeitet auf eigene Rechnung. Ich denke, Sie würden auch gerne Ihr eigenes Geschäft eröffnen und für sich selbst arbeiten, stimmt das?",
+        "- Wie viel Zeit könnten Sie für die Zusammenarbeit aufwenden?",
+        "- Wie schwierig ist es, nach einem solchen Zeitplan zu arbeiten?",
+        "- Sagen Sie mir bitte, in welcher Branche arbeiten Sie?", 
+        "(ЯКЩО ПИТАЄ: «НАВІЩО ВОНО ВАМ?», ТО ВИКОРИСТОВУЄМО ВІДПОВІДЬ)",
+        "ICH FRAGE, UM ZU WISSEN, WIE ICH IHNEN DAS AM BESTEN ERKLÄREN UND DIE BESTEN KONDITIONEN FÜR SIE AUSWÄHLEN KANN. ICH HABE MEINE KARRIERE ZUM BEISPIEL AUCH NICHT IN DIESEM BEREICH BEGONNEN.",
         
-        "- Haben Sie sich schon überlegt, wie viel Sie verdienen möchten?",
-        "- Und wie sehen Sie die Zusammenarbeit mit unserem Unternehmen?",
+        "- Wie lange arbeiten Sie schon in Ihrer Branche?",
+        "- Arbeiten Sie selbstständig oder für jemanden?", 
+        
+        "- Ich habe viele Kunden aus Ihrer Branche und weiß, dass es eine schwere Arbeit ist. Für mich sind Menschen, die wie Sie arbeiten, ein Beispiel für gute Familienmenschen, ich freue mich, Sie kennenzulernen",
+        "- Welchen zusätzlichen Gewinn würden Sie gerne erzielen?“",
+        
+        "ЯКЩО КАЖЕ «Я НЕ ЗНАЮ», НАВЕДІТЬ ПРИКЛАД:",
+        "IN UNSERER BRANCHE IST ES WICHTIG, EIN ZIEL ZU HABEN. ICH HABE ZUM BEISPIEL EINEN KUNDEN NAMENS DARIUS, DER 17 JAHRE LANG IN DER BAUBRANCHE GEARBEITET HAT. JETZT IST ER 53 JAHRE ALT.", 
+        "NACH EINEM JAHR UNSERER ZUSAMMENARBEIT HAT ER SEIN EIGENES UNTERNEHMEN GEGRÜNDET UND BESCHÄFTIGT SICH MIT INNENAUSBAU, OBWOHL ER WIE SIE ANGEFANGEN HAT. WAS IST IHR ZIEL?",
+        
         
         "ЯКЩО ЛЮДИНА В ВІЦІ (50+) АБО ПЕНСІОНЕР:",
-        "- Wirklich? — Ehrlich gesagt, Sie klingen sehr jung — es ist schwer zu glauben, dass Sie mehr als 40–50 Jahre alt sind.",
-        "[це комплімент, говоримо з усмішкою]",
-        "- Wissen Sie, das Wichtigste ist, wie alt Sie sich fühlen, und nicht, was im Pass steht. Ich respektiere Sie, weil Sie in diesem Alter etwas Neues lernen und in einer neuen Branche ausprobieren wollen.",
-        "- Wie denken Sie, ist es einfach, sich in einem neuen Bereich zurechtzufinden?",
-        "- Behindert Ihre Gesundheit Sie manchmal?",
-        "- Sie selbst haben von so harter Arbeit gesprochen — vielleicht hat es sich schon ausgewirkt?",
-        "- Sie selbst wissen, dass es schwer ist, nur von der Rente zu leben, da Sie so viele Jahre gearbeitet haben. Aus dem, was meine Kunden sagen, ist die Rente oder Leistung oft kaum 3000 zł. Sieht es bei Ihnen ähnlich aus?"
+        "- Wirklich? Das überrascht mich, treiben Sie vielleicht schon lange Sport?",
+        "- Ich muss Sie darauf hinweisen, dass wir einige Altersbeschränkungen haben:",
+        "- Und wenn es kein Geheimnis ist, wie alt sind Sie? ",
+        "- WENN ER SEIN GENAUES ALTER NICHT VERRÄT",
+        "- Sind Sie schon 25 Jahre alt? – Ich werde es auf jeden Fall herausfinden))",
+        "- Haben Sie schon Ihren 75. Geburtstag gefeiert?",
+        "ЯКЩО БІЛЬШЕ ВІК НЕ ПІДХОДИТЬ, ТО ТРЕБА ПРОДАТИ УМОВИ",
+
+        "Was haben Sie vor Ihrer Pensionierung gearbeitet?",
+        "Wie verbringen Sie Ihre Freizeit?",
+        "Leben Sie allein oder haben Sie jemanden, der Ihnen hilft?"
       ]
     },
     {
@@ -1726,6 +1731,7 @@
 }
 
     }
+
 
 
 
