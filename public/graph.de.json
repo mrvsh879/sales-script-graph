@@ -867,13 +867,13 @@
       "title": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ",
       "type": "snippet",
       "text": [
-        "Warum ist der Mindestbetrag genau 1000-1100 zł und nicht weniger?",
+        "Warum ist der Mindestbetrag genau 250 eur und nicht weniger?",
         "Dieser Betrag ergibt sich aus der angenommenen Strategie des sicheren Handels. Wir eröffnen durchschnittlich 6–10 Positionen täglich, aber wir nutzen immer nur etwa 50% der Mittel, um das Risiko zu minimieren.",
         "Deshalb ist 250 eur der Betrag, der ein effektives und sicheres Beginn der Investition ermöglicht – wovon nur die Hälfte tatsächlich auf den Markt geht.",
         "Natürlich können Sie einen Broker mit niedrigerem Einstiegsschwell suchen, aber dort werden Sie allein handeln – ohne Unterstützung, ohne Strategie und ohne Person, die an Ihrem Ergebnis interessiert ist. Bei uns sind wir Partner – Sie verdienen, wir verdienen.",
         "Deshalb, wenn Ihnen an Sicherheit und Gewinnen liegt, am besten in der Praxis überzeugen. Ich schlage vor, das Konto mit dem Mindestbetrag aufzuladen und heute den ersten Schritt zum Gewinn zu machen.",
                    "Або",
-        "Über 5 Jahre haben wir die Zusammenarbeit mit Kunden bei verschiedenen Beträgen getestet und sind zu dem Schluss gekommen, dass 1000-1100 zł der sicherste Startbetrag ist.",
+        "Über 5 Jahre haben wir die Zusammenarbeit mit Kunden bei verschiedenen Beträgen getestet und sind zu dem Schluss gekommen, dass 250 eur der sicherste Startbetrag ist.",
         "Genau von diesem Betrag kann ich Ihnen garantieren, dass alles gelingt.",
         "Wenn Sie fragen „warum?“, erkläre ich schon:",
         "dieser Betrag wird entsprechend den Risikomanagement-Regeln verteilt – ein Teil des Kapitals arbeitet auf dem Markt, und der Rest dient als so genanntes „Sicherheitspolster“.",
@@ -1736,6 +1736,7 @@
 }
 
     }
+
 
 
 
