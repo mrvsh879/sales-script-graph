@@ -212,7 +212,7 @@
       "text": [
         "Es ist toll, dass Sie neu in diesem Bereich sind. Sie sind bei weitem nicht unser erster und letzter Kunde ohne Erfahrung.",
         "Wie fühlen Sie sich, bevor Sie etwas Neues beginnen?",
-        "(можливо людина хвилюється, або має питання які соромиться задати, ВАЖЛИВО ПІДТРИМАТИ)",
+        "(можливо ,що людина хвилюється, або має питання, які соромиться задати, ВАЖЛИВО ПІДТРИМАТИ)",
         
         "Das macht nichts, wir haben ein Team von Spezialisten, die Sie in jedem Schritt unserer Zusammenarbeit beraten werden.",
         "Weil unser Unternehmen an einer langfristigen und profitablen Zusammenarbeit mit Ihnen interessiert ist."
@@ -227,7 +227,10 @@
       "title": "Є ДОСВІД:",
       "type": "snippet",
       "text": [
-        "Sie sind keine Anfängerperson in dieser Branche, also wird es für uns einfach sein.",
+        "Nach meiner ganzen Erfahrung sind Sie nicht der erste Mensch, der mit Erfahrung zu uns kommt.",
+        "Ich kann Ihnen sagen, dass es in unserer Firma nicht wichtig ist, welche Erfahrung Sie haben, sondern dass unsere Kunden bei uns das bekommen, was sie wollen.",
+
+        "Ich schlage vor, dass wir uns ein bisschen kennenlernen, damit Sie verstehen, wer wir sind, und wir die besten Bedingungen für Sie finden, einverstanden?",
         
         "БІЛЬШЕ ПИТАНЬ ПРО ДОСВІД НА ЦЬОМУ ЕТАПІ МИ НЕ СТАВИМО!!!"
       ],
@@ -1723,5 +1726,6 @@
 }
 
     }
+
 
 
