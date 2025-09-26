@@ -249,6 +249,8 @@
         "- De cât timp lucrați în domeniul dvs.?", 
         "- Lucrați pe cont propriu sau pentru cineva?",
         "- Am mulți clienți din domeniul dvs. și știu că este o muncă grea. Pentru mine, oamenii care lucrează ca dvs. sunt un exemplu de buni oameni de familie. Mă bucur să vă cunosc.",
+        "- Ce profit suplimentar ați dori să obțineți?",
+        
         " ЯКЩО ВІН СКАЖЕ «Я НЕ ЗНАЮ», НАВЕДІТЬ ПРИКЛАД:",
         "ÎN DOMENIUL NOSTRU ESTE IMPORTANT SĂ AI UN SCOP. DE EXEMPLU, AM UN CLIENT PE NUME DARIUS, CARE A LUCRAT 17 ANI ÎN DOMENIUL CONSTRUCȚIILOR. ACUM ARE 53 DE ANI.", 
         "DUPĂ UN AN DE COLABORARE CU NOI, ȘI-A ÎNFIINȚAT PROPRIA FIRMĂ ȘI SE OCUPĂ DE AMENAJĂRI INTERIOARE, DEȘI A ÎNCEPUT EXACT CA DVS.", 
@@ -1726,6 +1728,7 @@
 }
 
     }
+
 
 
 
