@@ -839,7 +839,7 @@
       "type": "snippet",
       "text": [
         "Dacă 1250 RON e o sumă prea mare pentru Dumneavoastră la început, spuneți-mi – ce sumă ar fi potrivită pentru Dumneavoastră ca să începeți colaborarea?",
-        "[Dacă clientul spune - că nu e gata să înceapă și vrea să se gândească, să citească sau să se consulte, atunci trecem la prelucrarea acestei obiecții. Dacă clientul numește orice altă sumă mai mică de 1000-1100 zł, atunci dezvoltăm dialogul mai departe]",
+        "[Dacă clientul spune - că nu e gata să înceapă și vrea să se gândească, să citească sau să se consulte, atunci trecem la prelucrarea acestei obiecții. Dacă clientul numește orice altă sumă mai mică de 1250 RON, atunci dezvoltăm dialogul mai departe]",
         "De ce tocmai această sumă? Pentru că în caz de dificultăți nu ar fi o povară mare pentru Dumneavoastră? Spuneți sincer.",
         "[Dacă clientul spune - DA sau că vrea să se gândească sau se teme - trecem la prelucrarea acestor obiecții]"
       ]
@@ -1730,6 +1730,7 @@
 }
 
     }
+
 
 
 
