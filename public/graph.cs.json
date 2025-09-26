@@ -191,7 +191,9 @@
       "title": "ДОСВІД - ПИТАННЯ",
       "type": "question",
       "text": [
-        "[jméno klienta], Co vás zaujalo v naší nabídce, že jste se rozhodl/a pro registraci?"
+        "[jméno klienta], Co vás zaujalo v naší nabídce, že jste se rozhodl/a pro registraci?",
+        "Jak dlouho se zajímáte o vedlejší příjem?",
+        "Je to vaše první zkušenost, nebo jste již dříve zkoušeli pracovat s jinými společnostmi?" 
       ],
       "transitions": [
         { "label": "НЕМАЄ ДОСВІД", "to": "exp_no" },
