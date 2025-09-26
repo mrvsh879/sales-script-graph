@@ -191,7 +191,9 @@
       "title": "ДОСВІД - ПИТАННЯ",
       "type": "question",
       "text": [
-        "[імʼя клієнта], Qu'est-ce qui vous a intéressé dans notre offre pour que vous décidiez de vous inscrire ?"
+        "[імʼя клієнта], Qu'est-ce qui vous a intéressé dans notre offre pour que vous décidiez de vous inscrire ?",
+        "Depuis combien de temps êtes-vous intéressé par un revenu supplémentaire?",
+        "Est-ce votre première expérience ou avez-vous déjà travaillé avec d'autres entreprises?"
       ],
       "transitions": [
         { "label": "НЕМАЄ ДОСВІД", "to": "exp_no" },
@@ -1717,4 +1719,5 @@
 }
 
     }
+
 
