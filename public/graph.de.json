@@ -244,21 +244,22 @@
       "type": "question",
       "text": [
         "РОБОТА:",
-        "- Wie viel Zeit könnten Sie für die Zusammenarbeit aufwenden?",
+        "- Wie viel Zeit könnten Sie der Zusammenarbeit widmen?", 
         "- Wie schwierig ist es, nach einem solchen Zeitplan zu arbeiten?",
-        "- Sagen Sie mir bitte, in welcher Branche arbeiten Sie?", 
+        "- Sagen Sie bitte, in welcher Branche arbeiten Sie??",
         "(ЯКЩО ПИТАЄ: «НАВІЩО ВОНО ВАМ?», ТО ВИКОРИСТОВУЄМО ВІДПОВІДЬ)",
-        "ICH FRAGE, UM ZU WISSEN, WIE ICH IHNEN DAS AM BESTEN ERKLÄREN UND DIE BESTEN KONDITIONEN FÜR SIE AUSWÄHLEN KANN. ICH HABE MEINE KARRIERE ZUM BEISPIEL AUCH NICHT IN DIESEM BEREICH BEGONNEN.",
+        "ICH FRAGE, UM ZU WISSEN, WIE ICH IHNEN DAS AM BESTEN ERKLÄREN UND DIE BESTEN KONDITIONEN FÜR SIE AUSWÄHLEN KANN. ICH HABE AUCH NICHT VON ANFANG AN IN DIESER BRANCHE GEARBEITET",
         
         "- Wie lange arbeiten Sie schon in Ihrer Branche?",
         "- Arbeiten Sie selbstständig oder für jemanden?", 
         
         "- Ich habe viele Kunden aus Ihrer Branche und weiß, dass es eine schwere Arbeit ist. Für mich sind Menschen, die wie Sie arbeiten, ein Beispiel für gute Familienmenschen, ich freue mich, Sie kennenzulernen",
-        "- Welchen zusätzlichen Gewinn würden Sie gerne erzielen?“",
+        "- Welchen zusätzlichen Gewinn würden Sie gerne erzielen?",
         
         "ЯКЩО КАЖЕ «Я НЕ ЗНАЮ», НАВЕДІТЬ ПРИКЛАД:",
         "IN UNSERER BRANCHE IST ES WICHTIG, EIN ZIEL ZU HABEN. ICH HABE ZUM BEISPIEL EINEN KUNDEN NAMENS DARIUS, DER 17 JAHRE LANG IN DER BAUBRANCHE GEARBEITET HAT. JETZT IST ER 53 JAHRE ALT.", 
-        "NACH EINEM JAHR UNSERER ZUSAMMENARBEIT HAT ER SEIN EIGENES UNTERNEHMEN GEGRÜNDET UND BESCHÄFTIGT SICH MIT INNENAUSBAU, OBWOHL ER WIE SIE ANGEFANGEN HAT. WAS IST IHR ZIEL?",
+        "NACH EINEM JAHR UNSERER ZUSAMMENARBEIT HAT ER SEIN EIGENES UNTERNEHMEN GEGRÜNDET UND BESCHÄFTIGT SICH MIT INNENAUSBAU, OBWOHL ER WIE SIE ANGEFANGEN HAT.", 
+        "WAS IST IHR ZIEL?",
         
         
         "ЯКЩО ЛЮДИНА В ВІЦІ (50+) АБО ПЕНСІОНЕР:",
@@ -266,6 +267,7 @@
         "- Ich muss Sie darauf hinweisen, dass wir einige Altersbeschränkungen haben:",
         "- Und wenn es kein Geheimnis ist, wie alt sind Sie? ",
         "- WENN ER SEIN GENAUES ALTER NICHT VERRÄT",
+        " Es ist mir nicht angenehm, solche Fragen zu stellen, lassen Sie mich anders fragen",
         "- Sind Sie schon 25 Jahre alt? – Ich werde es auf jeden Fall herausfinden))",
         "- Haben Sie schon Ihren 75. Geburtstag gefeiert?",
         "ЯКЩО БІЛЬШЕ ВІК НЕ ПІДХОДИТЬ, ТО ТРЕБА ПРОДАТИ УМОВИ",
@@ -1731,6 +1733,7 @@
 }
 
     }
+
 
 
 
