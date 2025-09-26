@@ -551,9 +551,9 @@
         "СУМИ ДЛЯ ВХОДУ НА РИНОК:",
         "— Spuneți-mi, [ім’я клієнта], ați avut ocazia să vă familiarizați cu sumele de la care putem începe colaborarea?",
         "— Oferim clienților noștri alegerea unuia dintre cele trei portofolii inițiale:",
-        "• 4800 zł (patru mii opt sute),",
-        "• 2400 zł (două mii patru sute),",
-        "• 1000-1100 zł (o mie - o mie o sută).",
+        "• 5000 RON",
+        "• 2500 RON",
+        "• 1250 RON",
         "— Care dintre aceste sume ar fi cea mai confortabilă pentru Dumneavoastră?",
         "— Înțeleg, această sumă este disponibilă acum pe contul Dumneavoastră bancar?"
       ]
@@ -1730,6 +1730,7 @@
 }
 
     }
+
 
 
 
