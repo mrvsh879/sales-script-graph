@@ -276,13 +276,15 @@
       "type": "question",
       "text": [
         "СІМ’Я:",
-        "— Sám/a řešíte své finanční potřeby, nebo využíváte pomoci manžela/manželky/rodičů?",
-        
-        "Якщо каже, що є підтримка ",
-        "→ Skvělé, díky tomu to není tak těžké.",
-        "— Čím se zabývá váš manžel/manželka?",
-        "Якщо каже, що все вирішує сам/сама",
-        "→ Jsem hrdý/á na vás, že nejen pracujete, ale ještě se staráte o rodinu a hledáte dodatečný příjem."
+      
+        "- Daří se Vám samostatně zabezpečovat svou rodinu?",
+        "- A kolik členů rodiny zabezpečujete, pokud to není tajemství?",  
+        "ВАЖЛИВО: ЯКЩО КЛІЄНТ НЕ ХОЧЕ ГОВОРИТИ НА ЦІ ТЕМИ, ТО ТРЕБА ПЕРЕЙТИ ДАЛІ ДО НАСТУПНОЇ ТЕМИ.",
+
+        "- Máte děti?",
+        "- Už se Vám podařilo vychovat pomocníky?",
+        "- A jak se Vaše rodina staví k Vašemu zájmu?",
+        "Je pro mě velmi příjemné, že pro Vás, stejně jako pro mě, je rodina velkou hodnotou. Budu rád (ráda), když Vám pomohu uskutečnit Vaše plány."
       ]
     },
     {
