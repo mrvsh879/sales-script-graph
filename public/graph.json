@@ -275,13 +275,14 @@
       "type": "question",
       "text": [
         "СІМ’Я:",
-        "— Czy Pan/Pani samodzielnie załatwia swoje potrzeby finansowe, czy korzysta z pomocy męża/żony/rodziców?",
-        
-        "Якщо каже, що є підтримка ",
-        "→ Świetnie, dzięki temu nie jest aż tak ciężko.",
-        "— Czym zajmuje się Pana/Pani żona/mąż?",
-        "Якщо каже, що все вирішує сам/сама",
-        "→ Jestem dumny/dumna z Pana/Pani, że nie tylko Pan/Pani pracuje, ale jeszcze dba o rodzinę i szuka dodatkowego dochodu."
+        "- Czy udaje się Panu / Pani samodzielnie utrzymywać swoją rodzinę?",
+        "- A ilu członków rodziny utrzymuje Pan / Pani, jeśli to nie jest tajemnica?",  
+        "ВАЖЛИВО: ЯКЩО КЛІЄНТ НЕ ХОЧЕ ГОВОРИТИ НА ЦІ ТЕМИ, ТО ТРЕБА ПЕРЕЙТИ ДАЛІ ДО НАСТУПНОЇ ТЕМИ.",
+
+        "- Czy ma Pan / Pani dzieci?",
+        "- Czy udało się już wychować pomocników?",
+        "- A jak rodzina Pana / Pani odnosi się do Pana / Pani zainteresowania?",
+        "Jest mi bardzo miło, że dla Pana / Pani, tak jak dla mnie, rodzina jest wielką wartością. Będę rad (rada) pomóc Panu / Pani w realizacji planów."
       ]
     },
     {
