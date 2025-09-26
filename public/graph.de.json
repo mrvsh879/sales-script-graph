@@ -8,7 +8,7 @@
       "title": "Початок розмови",
       "type": "greeting",
       "text": [
-        "- Guten Tag, Frau/Herr [ім’я клієнта]. Ich heiße [твоє ім’я]. Ich bin Ihr persönlicher Assistent. Sie interessierten sich für ein zusätzliches Einkommen im Rahmen des Projekts [назва проекту], stimmt das?."
+        "- Guten Tag, Frau/Herr [ім’я клієнта]. Mein Name ist [твоє ім’я]. Ich bin Ihr persönlicher Assistent. Sie haben sich für ein zusätzliches Einkommen im Rahmen des Projekts [назва проекту], interessiert, richtig?."
       ],
       "transitions": [
         { "label": "Перейти до барʼєрів", "to": "barriers_router" },
@@ -74,7 +74,8 @@
       "title": "ЦЕ НЕ МОЄ:",
       "type": "snippet",
       "text": [
-        "Das sagt fast jeder, bis er es näher kennenlernt. „Das ist nichts für mich“ — das ist wie zu sagen „Ich bin kein Fahrer“, ohne je hinter dem Lenkrad gesessen zu haben. Es geht nicht darum, alle Begriffe zu verstehen, sondern darum, ob es für Sie funktioniert. Sagen wir es direkt: Was ist für Sie wichtiger — dass das Geld einfach daliegt oder dass es Gewinn bringt, ohne das Risiko, es zu verlieren?",
+        "Das sagt fast jeder, bis er es näher kennenlernt. „Das ist nichts für mich“ — das ist wie zu sagen „Ich bin kein Fahrer“, ohne je hinter dem Lenkrad gesessen zu haben. Es geht nicht darum, alle Begriffe zu verstehen, sondern darum, ob es für Sie funktioniert.", 
+        "Sagen wir es direkt: Was ist für Sie wichtiger — dass das Geld einfach daliegt oder dass es Gewinn bringt, ohne das Risiko, es zu verlieren?",
         "Ich verstehe, es klingt wie „das ist nichts für mich“ — aber erlauben Sie mir zu fragen: Haben Sie es schon ausprobiert und festgestellt, dass es unpassend ist? Oder hatten Sie einfach noch keine Gelegenheit, sich damit auseinanderzusetzen?",
         "Denn wenn Sie nicht investieren, bedeutet das nicht, dass es nicht funktioniert. Sagen Sie ehrlich — welche Form der Kapitalvermehrung ist für Sie akzeptabel: Immobilien, Geschäft, Einlagen?"
       ],
@@ -106,7 +107,8 @@
       "text": [
         "Ich verstehe Sie perfekt — um nicht zu viel Zeit zu nehmen, reden wir kurz und jeder kehrt zu seinen Angelegenheiten zurück. [задаємо питання]",
         "Ich sehe, dass Sie beschäftigt sind und schätze das. Mein Ziel ist es nicht, Ihnen Zeit zu nehmen, sondern etwas wirklich Wertvolles vorzuschlagen. Sagen Sie bitte — was macht Ihnen im Moment die meisten Sorgen im Hinblick auf ein zusätzliches Einkommen?",
-        "Ich verstehe Sie perfekt, ich höre an Ihrer Stimme, dass Sie eine sehr wichtige und beschäftigte Person sind. Aber seien wir ehrlich — mein Vorschlag nimmt wirklich nicht viel Zeit in Anspruch, und ich bin überzeugt, dass er für Sie nützlich sein kann. Sagen Sie bitte, seit wann interessieren Sie sich für das Thema Investitionen als Möglichkeit eines zusätzlichen Verdiensts?"
+        "Ich verstehe Sie perfekt, ich höre an Ihrer Stimme, dass Sie eine sehr wichtige und beschäftigte Person sind. Aber seien wir ehrlich — mein Vorschlag nimmt wirklich nicht viel Zeit in Anspruch, und ich bin überzeugt, dass er für Sie nützlich sein kann.", 
+        "Sagen Sie bitte, seit wann interessieren Sie sich für das Thema Investitionen als Möglichkeit eines zusätzlichen Verdiensts?"
       ],
       "transitions": [
         { "label": "⬅ Назад", "to": "barriers_router" },
@@ -178,7 +180,8 @@
       "type": "snippet",
       "text": [
         "Ich verstehe Ihr Misstrauen — in heutigen Zeiten gibt es so viele Angebote, dass Zweifel völlig verständlich sind. Aber machen wir es so: Ich erkläre genau, worum es geht, und Sie bewerten selbst, ob es sich lohnt, weiterzugehen. Ehrlich, ohne Druck.",
-        "Skeptizismus ist etwas völlig Normales — besonders in heutigen Zeiten. Deshalb mache ich keine zufälligen Vorschläge — ich erkläre einfach, worum es geht, und Sie entscheiden selbst, ob Sie sich damit auseinandersetzen wollen. Ich will nur zeigen, worum es geht — die Entscheidung liegt natürlich bei Ihnen"
+        "Skeptizismus ist etwas völlig Normales — besonders in heutigen Zeiten. Deshalb mache ich keine zufälligen Vorschläge — ich erkläre einfach, worum es geht, und Sie entscheiden selbst, ob Sie sich damit auseinandersetzen wollen.", 
+        "Ich will nur zeigen, worum es geht — die Entscheidung liegt natürlich bei Ihnen"
       ],
       "transitions": [
         { "label": "⬅ Назад", "to": "barriers_router" },
@@ -191,7 +194,10 @@
       "title": "ДОСВІД - ПИТАННЯ",
       "type": "question",
       "text": [
-        "[імʼя клієнта], Was hat Sie an unserem Angebot interessiert, dass Sie sich entschieden haben, sich zu registrieren?"
+        "[імʼя клієнта], Was hat Sie an unserem Angebot interessiert, dass Sie sich entschieden haben, sich zu registrieren?",
+        "Seit wann interessieren Sie sich für ein zusätzliches Einkommen?",
+        "Ist dies Ihre erste Erfahrung oder haben Sie bereits mit anderen Unternehmen zusammengearbeitet?"
+        
       ],
       "transitions": [
         { "label": "НЕМАЄ ДОСВІД", "to": "exp_no" },
@@ -1717,3 +1723,4 @@
 }
 
     }
+
