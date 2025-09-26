@@ -211,7 +211,8 @@
         "(можливо, людина нервує або у неї є питання, які вона соромиться задати, ВАЖЛИВО ПІДТРИМАТИ)",
         
         "To nevadí, máme tým specialistů, kteří vám budou poskytovat poradenství v každé fázi naší spolupráce.",
-        "Naše společnost má zájem o dlouhodobou a vzájemně výhodnou spolupráci s vámi."
+        "Naše společnost má zájem o dlouhodobou a vzájemně výhodnou spolupráci s vámi.",
+        "Navrhuji, abychom se trochu seznámili, abyste pochopili, kdo jsme, a my pro vás našli ty nejlepší podmínky, souhlasíte?"
       ],
       "transitions": [
         { "label": "До етапу «Робота»", "to": "work" }
@@ -223,7 +224,10 @@
       "title": "Є ДОСВІД:",
       "type": "snippet",
       "text": [
-        "Nejste začátečník/ice v této branži, takže to pro nás bude snadné.",
+        "Z mé zkušenosti nejste první člověk, který k nám přichází s praxí",
+        "Mohu říci, že v naší společnosti nezáleží na tom, jaké máte zkušenosti, ale je důležité, aby naši zákazníci od nás dostali to, co chtějí.",
+
+        "Navrhuji, abychom se trochu seznámili, abyste pochopili, kdo jsme, a my pro vás našli ty nejlepší podmínky, souhlasíte?",
         
         "БІЛЬШЕ ПИТАНЬ ПРО ДОСВІД НА ЦЬОМУ ЕТАПІ МИ НЕ СТАВИМО!!!"
       ],
