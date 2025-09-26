@@ -277,14 +277,15 @@
       "type": "question",
       "text": [
         "СІМ’Я:",
-        "- Czy udaje się Panu / Pani samodzielnie utrzymywać swoją rodzinę?",
-        "- A ilu członków rodziny utrzymuje Pan / Pani, jeśli to nie jest tajemnica?",  
+        "- Réussissez-vous à subvenir seul(e) aux besoins de votre famille ?",
+        "- Et combien de membres de la famille soutenez-vous, si ce n’est pas un secret ?",  
         "ВАЖЛИВО: ЯКЩО КЛІЄНТ НЕ ХОЧЕ ГОВОРИТИ НА ЦІ ТЕМИ, ТО ТРЕБА ПЕРЕЙТИ ДАЛІ ДО НАСТУПНОЇ ТЕМИ.",
 
-        "- Czy ma Pan / Pani dzieci?",
-        "- Czy udało się już wychować pomocników?",
-        "- A jak rodzina Pana / Pani odnosi się do Pana / Pani zainteresowania?",
-        "Jest mi bardzo miło, że dla Pana / Pani, tak jak dla mnie, rodzina jest wielką wartością. Będę rad (rada) pomóc Panu / Pani w realizacji planów."
+        "- Avez-vous des enfants ?",
+        "- Avez-vous déjà réussi à élever des aides ?",
+        "- Et comment votre famille considère-t-elle votre intérêt ?",
+        "C’est pour moi un grand plaisir que, pour vous comme pour moi, la famille soit une grande valeur. Je serai heureux (heureuse) de vous aider à réaliser vos projets."
+
       ]
     },
     {
@@ -1728,6 +1729,7 @@
 }
 
     }
+
 
 
 
