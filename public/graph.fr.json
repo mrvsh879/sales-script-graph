@@ -864,11 +864,11 @@
       "text": [
         "Pourquoi le montant minimal est précisément 250 eur et pas moins ?",
         "Ce montant résulte de la stratégie adoptée de trading sécurisé. Nous ouvrons en moyenne 6–10 positions par jour, mais nous utilisons toujours seulement environ 50% des fonds, pour minimiser le risque.",
-        "C'est pourquoi 1000-1100 zł est le montant qui permet un démarrage efficace et sécurisé des investissements – dont seulement la moitié va réellement sur le marché.",
+        "C'est pourquoi 250 eur est le montant qui permet un démarrage efficace et sécurisé des investissements – dont seulement la moitié va réellement sur le marché.",
         "Bien sûr, vous pouvez chercher un courtier avec un seuil d'entrée plus bas, mais là vous agirez seul(e) – sans soutien, sans stratégie et sans personne engagée dans votre résultat. Chez nous, nous sommes partenaires – vous gagnez, nous gagnons.",
         "C'est pourquoi si vous tenez à la sécurité et aux profits, le mieux est de s'en convaincre en pratique. Je propose de créditer le compte avec le montant minimal et de faire aujourd'hui le premier pas vers le profit.",
                    "Або",
-        "Pendant 5 ans, nous avons testé la collaboration avec les clients à différents montants et nous sommes arrivés à la conclusion que 1000-1100 zł est la somme la plus sûre pour commencer.",
+        "Pendant 5 ans, nous avons testé la collaboration avec les clients à différents montants et nous sommes arrivés à la conclusion que 250 eur est la somme la plus sûre pour commencer.",
         "C'est précisément à partir de ce montant que je peux vous donner la garantie que tout réussira.",
         "Si vous demandez « pourquoi ? », je l'explique déjà :",
         "ce montant est réparti de manière appropriée selon les règles de gestion du risque – une partie du capital travaille sur le marché, et le reste constitue un soi-disant « coussin de sécurité ».",
@@ -1729,6 +1729,7 @@
 }
 
     }
+
 
 
 
