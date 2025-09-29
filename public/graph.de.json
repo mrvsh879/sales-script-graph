@@ -618,7 +618,7 @@
 },
 {
   "id": "tomorrow",
-  "title": "Sprechen wir morgen — Beispiel + Nachricht PL",
+  "title": "Sprechen wir morgen — Beispiel + Nachricht",
   "type": "snippet",
   "text": [
     "BEISPIEL + NACHRICHT (PL):",
@@ -1765,6 +1765,7 @@
 }
 
     }
+
 
 
 
