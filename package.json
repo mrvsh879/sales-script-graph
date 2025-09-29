@@ -10,10 +10,11 @@
     "postbuild": "touch dist/.nojekyll && cp dist/index.html dist/404.html"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "zustand": "^4.5.2",
-    "fuse.js": "^7.0.0"
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
+  "zustand": "^4.5.2",
+  "fuse.js": "^7.0.0",
+  "reactflow": "^11.10.0"
   },
   "devDependencies": {
     "typescript": "^5.5.4",
