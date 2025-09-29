@@ -2,6 +2,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Sidebar from "./components/Sidebar";
 import CommentPanel from "./components/CommentPanel";
+import GraphEditor from "./components/GraphEditor";
 
 const PIN_KEY = "sg_pins"; // ключ для localStorage
 
