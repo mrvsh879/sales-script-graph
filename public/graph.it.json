@@ -1003,659 +1003,686 @@
         "При виведенні:",
         "È esclusivamente il suo conto di trading individuale. Mi dica: quando effettua un trasferimento tra i suoi conti bancari, è mai capitato che i fondi \"scomparissero\"?",
         "Qui è esattamente lo stesso: effettua semplicemente un trasferimento tra i suoi conti. È COMPLETAMENTE SICURO!",
-"Per questo propongo di iniziare la collaborazione ora, per vedere oggi il suo primo profitto!",
-"Riceviamo la nostra commissione solo quando preleva i suoi profitti.",
-"Ci pensi: che vantaggio avremmo se non riuscisse a prelevare i soldi, visto che allora neanche noi guadagniamo nulla?",
-"Guadagniamo solo quando guadagna lei. Quindi siamo pienamente interessati al suo successo!"
-]
-},
-{
-"id": "node_28",
-"title": "ЯКІ Є РИЗИКИ",
-"type": "snippet",
-"text": [
-"Capisco a cosa sta pensando. Lavoro in questo settore da tempo e so che ogni persona ragionevole si interessa alla questione del rischio. Domande come:",
-"E se perdo?",
-"o",
-"Quali garanzie ho?",
-"sono una reazione naturale. In fondo si tratta dei suoi soldi, quindi tali preoccupazioni sono del tutto giustificate.",
-"Sarei un cattivo consulente se dicessi che il rischio non esiste: semplicemente non è vero.",
-"Costruiamo una relazione basata sulla fiducia, quindi dico apertamente: il rischio esiste sempre, perché nessuno ha il pieno controllo sul mercato finanziario.",
-"Situazioni impreviste possono accadere ovunque, ma la chiave è gestire abilmente questo rischio.",
-"Come si dice:", "chi ha l'informazione, ha il potere","E noi abbiamo queste informazioni.",
-"Per questo usiamo una serie di strumenti che aiutano a ridurre il rischio al minimo.",
-"Uno degli strumenti più importanti è il cosiddetto Stop Loss. Ha sentito parlare di questo concetto?",
-"(Stop Loss) (dall'inglese "stop loss") è un meccanismo che chiude automaticamente la posizione se raggiunge un certo livello di perdita",
-"Ad esempio: se impostiamo lo Stop Loss a 2 dollari, anche se il mercato crolla improvvisamente, il sistema chiuderà la transazione con una perdita massima di 2 dollari. È una forma molto efficace di protezione.",
-"Inoltre, agiamo sempre su diverse posizioni contemporaneamente, il che significa che anche se una transazione porta una perdita, le altre possono portare profitto.",
-"Grazie a questo è possibile generare reddito quotidiano: a volte maggiore, a volte minore, ma regolare."
-]
-},
-{
-"id": "node_29",
-"title": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ",
-"type": "snippet",
-"text": [
-"Prima questa funzione era disponibile sulla nostra piattaforma, ma l'abbiamo completamente eliminata, e le spiego perché!",
-"L'abbiamo fatto pensando alla sua sicurezza. Abbiamo rimosso questo metodo di deposito per evitare situazioni in cui gli utenti dovevano fornire i dati della carta, come numero, data di scadenza o codice CVC.",
-"Ora l'attivazione del conto avviene esclusivamente tramite il dipartimento finanziario. Poiché operiamo in Polonia, dobbiamo render conto all'ufficio delle imposte.",
-"Da parte nostra effettuiamo la conversione valutaria, dichiariamo il suo importo e poi lo accreditiamo sul suo conto di trading.",
-"Inoltre, copriamo tutti i costi legati alla commissione, il che rende questo metodo più vantaggioso per lei, vero?"
-]
-},
-{
-"id": "node_30",
-"title": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?",
-"type": "snippet",
-"text": [
-"Il partner di pagamento ufficiale ha diversi conti, alcuni per fondazioni (ad es. Croce Rossa) per trasparenza e conformità legale.",
-"Il nome del destinatario è una questione tecnica; i fondi vanno sul conto di trading individuale.",
-"Simile ai biglietti/prenotazioni: sull'estratto conto appare un nome legale diverso.",
-"Il canale è ufficiale e accettato dalle banche; il saldo sarà finanziato con l'importo scelto."
-]
+        "Per questo propongo di iniziare la collaborazione ora, per vedere oggi il suo primo profitto!",
+        "Riceviamo la nostra commissione solo quando preleva i suoi profitti.",
+        "Ci pensi: che vantaggio avremmo se non riuscisse a prelevare i soldi, visto che allora neanche noi guadagniamo nulla?",
+        "Guadagniamo solo quando guadagna lei. Quindi siamo pienamente interessati al suo successo!"
+      ]
+    },
+    {
+      "id": "node_28",
+      "title": "ЯКІ Є РИЗИКИ",
+      "type": "snippet",
+      "text": [
+        "Capisco a cosa sta pensando. Lavoro in questo settore da tempo e so che ogni persona ragionevole si interessa alla questione del rischio. Domande come:",
+        "E se perdo?",
+        "o",
+        "Quali garanzie ho?",
+        "sono una reazione naturale. In fondo si tratta dei suoi soldi, quindi tali preoccupazioni sono del tutto giustificate.",
+        "Sarei un cattivo consulente se dicessi che il rischio non esiste: semplicemente non è vero.",
+        "Costruiamo una relazione basata sulla fiducia, quindi dico apertamente: il rischio esiste sempre, perché nessuno ha il pieno controllo sul mercato finanziario.",
+        "Situazioni impreviste possono accadere ovunque, ma la chiave è gestire abilmente questo rischio.",
+        "Come si dice:", "chi ha l'informazione, ha il potere","E noi abbiamo queste informazioni.",
+        "Per questo usiamo una serie di strumenti che aiutano a ridurre il rischio al minimo.",
+        "Uno degli strumenti più importanti è il cosiddetto Stop Loss. Ha sentito parlare di questo concetto?",
+        "(Stop Loss) (dall'inglese 'stop loss') è un meccanismo che chiude automaticamente la posizione se raggiunge un certo livello di perdita",
+        "Ad esempio: se impostiamo lo Stop Loss a 2 dollari, anche se il mercato crolla improvvisamente, il sistema chiuderà la transazione con una perdita massima di 2 dollari. È una forma molto efficace di protezione.",
+        "Inoltre, agiamo sempre su diverse posizioni contemporaneamente, il che significa che anche se una transazione porta una perdita, le altre possono portare profitto.",
+        "Grazie a questo è possibile generare reddito quotidiano: a volte maggiore, a volte minore, ma regolare."
+      ]
+    },
+    {
+      "id": "node_29",
+      "title": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ",
+      "type": "snippet",
+      "text": [
+        "Prima questa funzione era disponibile sulla nostra piattaforma, ma l'abbiamo completamente eliminata, e le spiego perché!",
+        "L'abbiamo fatto pensando alla sua sicurezza. Abbiamo rimosso questo metodo di deposito per evitare situazioni in cui gli utenti dovevano fornire i dati della carta, come numero, data di scadenza o codice CVC.",
+        "Ora l'attivazione del conto avviene esclusivamente tramite il dipartimento finanziario. Poiché operiamo in Polonia, dobbiamo render conto all'ufficio delle imposte.",
+        "Da parte nostra effettuiamo la conversione valutaria, dichiariamo il suo importo e poi lo accreditiamo sul suo conto di trading.",
+        "Inoltre, copriamo tutti i costi legati alla commissione, il che rende questo metodo più vantaggioso per lei, vero?"
+      ]
+    },
+    {
+      "id": "node_30",
+      "title": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?",
+      "type": "snippet",
+      "text": [
+        "Il partner di pagamento ufficiale ha diversi conti, alcuni per fondazioni (ad es. Croce Rossa) per trasparenza e conformità legale.",
+        "Il nome del destinatario è una questione tecnica; i fondi vanno sul conto di trading individuale.",
+        "Simile ai biglietti/prenotazioni: sull'estratto conto appare un nome legale diverso.",
+        "Il canale è ufficiale e accettato dalle banche; il saldo sarà finanziato con l'importo scelto."
+      ]
+    }
+  ],
+   "edges": [
+    {
+      "from": "barriers_router",
+      "to": "bar_email",
+      "label": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_not_registered",
+      "label": "НЕ РЕЄСТРУВАВСЯ:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_not_mine",
+      "label": "ЦЕ НЕ МОЄ:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_nothing_needed",
+      "label": "НІЧОГО НЕ ПОТРІБНО:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_busy",
+      "label": "Я ЗАЙНЯТИЙ:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_child",
+      "label": "ЦЕ ДИТИНА:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_no_time",
+      "label": "НЕМАЄ ЧАСУ:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_accidental",
+      "label": "ЦЕ ВИПАДКОВО:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_not_interesting",
+      "label": "НЕ ЦІКАВО:"
+    },
+    {
+      "from": "barriers_router",
+      "to": "bar_scam",
+      "label": "ЦЕ ОБМАН"
+    },
+    {
+      "from": "greeting",
+      "to": "barriers_router",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "barriers_router",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "exp_no",
+      "to": "experience_q",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "exp_yes",
+      "to": "experience_q",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "experience_q",
+      "to": "exp_no",
+      "label": "Немає досвіду"
+    },
+    {
+      "from": "experience_q",
+      "to": "exp_yes",
+      "label": "Є досвід"
+    },
+    {
+      "from": "exp_no",
+      "to": "work",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "exp_yes",
+      "to": "work",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "work",
+      "to": "family",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "family",
+      "to": "back_to_exp",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "back_to_exp",
+      "to": "goal",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "goal",
+      "to": "presentation",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "presentation",
+      "to": "pres_noexp",
+      "label": "Немає досвіду"
+    },
+    {
+      "from": "presentation",
+      "to": "pres_exp",
+      "label": "Є досвід"
+    },
+    {
+      "from": "pres_noexp",
+      "to": "presentation",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "pres_noexp",
+      "to": "trade_with_expert",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "pres_exp",
+      "to": "presentation",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "pres_exp_yes",
+      "to": "presentation",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "pres_exp_no",
+      "to": "presentation",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "pres_exp",
+      "to": "pres_exp_yes",
+      "label": "Tak"
+    },
+    {
+      "from": "pres_exp",
+      "to": "pres_exp_no",
+      "label": "Nie"
+    },
+    {
+      "from": "pres_exp_yes",
+      "to": "trade_with_expert",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "pres_exp_no",
+      "to": "trade_with_expert",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "trade_with_expert",
+      "to": "client_questions",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "client_questions",
+      "to": "interest_company",
+      "label": "ІНТЕРЕС ФІРМИ"
+    },
+    {
+      "from": "client_questions",
+      "to": "risks",
+      "label": "Якщо клієнт питає про ризики"
+    },
+    {
+      "from": "client_questions",
+      "to": "fund_location",
+      "label": "Якщо клієнт питає про місцезнаходження коштів"
+    },
+    {
+      "from": "client_questions",
+      "to": "platform_demo",
+      "label": "Пропустити"
+    },
+    {
+      "from": "platform_demo",
+      "to": "entry_amounts",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "entry_amounts",
+      "to": "objections_root",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "objections_root",
+      "to": "node",
+      "label": "НЕМАЄ ГРОШЕЙ"
+    },
+    {
+      "from": "objections_root",
+      "to": "2_0",
+      "label": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_2",
+      "label": "ХОЧУ ПОДУМАТИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_3",
+      "label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’Ї"
+    },
+    {
+      "from": "objections_root",
+      "to": "2_0_2",
+      "label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’Ї 2.0 (логіка)"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_4",
+      "label": "ЛІЦЕНЗІЯ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_5",
+      "label": "ХОЧУ ПОЧИТАТИ ВІДГУКИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_6",
+      "label": "ХОЧУ ПІДПИСАТИ ДОГОВІР"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_7",
+      "label": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_8",
+      "label": "У ВАС АКЦЕНТ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_9",
+      "label": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_10",
+      "label": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_11",
+      "label": "НЕМАЄ ЧАСУ (коротка версія)"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_12",
+      "label": "ШАХРАЇ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_13",
+      "label": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_14",
+      "label": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_15",
+      "label": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_16",
+      "label": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_17",
+      "label": "ХОЧУ ПРИЇХАТИ В ОФІС"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_18",
+      "label": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_19",
+      "label": "ЯКІ ГАРАНТІЇ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_20",
+      "label": "Я В ЦЕ НЕ ВІРЮ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_21",
+      "label": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_22",
+      "label": "БОЮСЬ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_23",
+      "label": "НЕ ДОВІРЯЮ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_24",
+      "label": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_25",
+      "label": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_26",
+      "label": "Я ВЖЕ ВТРАЧАВ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_27",
+      "label": "БОЮСЯ ВТРАТИТИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_28",
+      "label": "ЯКІ Є РИЗИКИ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_29",
+      "label": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ"
+    },
+    {
+      "from": "objections_root",
+      "to": "node_30",
+      "label": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?"
+    },
+    {
+      "from": "objections_root",
+      "to": "tomorrow",
+      "label": "Давайте завтра"
+    },
+    {
+      "from": "objections_root",
+      "to": "tomorrow",
+      "label": "Давайте завтра"
+    },
+    {
+      "from": "objections_root",
+      "to": "closing_payment",
+      "label": "Перейти до оплати"
+    },
+    {
+      "from": "bar_email",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_not_registered",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_not_mine",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_nothing_needed",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_busy",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_child",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_no_time",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_accidental",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_not_interesting",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "bar_scam",
+      "to": "experience_q",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "node",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "node",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "2_0",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "2_0",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "node_2",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "node_2",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "node_3",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "node_3",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "node_4",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "node_4",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "tomorrow",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "tomorrow",
+      "to": "closing_payment",
+      "label": "➡ Далі"
+    },
+    {
+      "from": "closing_payment",
+      "to": "objections_root",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "work",
+      "to": "experience_q",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "family",
+      "to": "work",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "back_to_exp",
+      "to": "family",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "goal",
+      "to": "back_to_exp",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "presentation",
+      "to": "goal",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "experience_q",
+      "to": "barriers_router",
+      "label": "⬅ Назад"
+    },
+    {
+      "from": "closing_payment",
+      "to": "greeting",
+      "label": "🏠 На початок"
+    },
+    { "from": "2_0_2",   "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "2_0_2",   "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_5",  "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_5",  "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_6",  "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_6",  "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_7",  "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_7",  "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_8",  "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_8",  "to": "closing_payment", "label": "➡ Далі" },
+ 
+    { "from": "node_9",  "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_9",  "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_10", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_10", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_11", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_11", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_12", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_12", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_13", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_13", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_14", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_14", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_15", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_15", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_16", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_16", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_17", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_17", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_18", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_18", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_19", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_19", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_20", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_20", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_21", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_21", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_22", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_22", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_23", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_23", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_24", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_24", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_25", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_25", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_26", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_26", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_27", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_27", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_28", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_28", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_29", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_29", "to": "closing_payment", "label": "➡ Далі" },
+
+    { "from": "node_30", "to": "objections_root", "label": "⬅ Назад" },
+    { "from": "node_30", "to": "closing_payment", "label": "➡ Далі" },
+    { "from": "bar_email",           "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_not_registered",  "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_not_mine",        "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_nothing_needed",  "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_busy",            "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_child",           "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_no_time",         "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_accidental",      "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_not_interesting", "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "bar_scam",            "to": "barriers_router", "label": "⬅ Назад" },
+    { "from": "interest_company", "to": "client_questions", "label": "⬅ Назад" },
+    { "from": "interest_company", "to": "platform_demo",   "label": "➡ Далі" },
+    { "from": "risks",            "to": "client_questions", "label": "⬅ Назад" },
+    { "from": "risks",            "to": "platform_demo",    "label": "➡ Далі" },
+    { "from": "fund_location",    "to": "client_questions", "label": "⬅ Назад" },
+    { "from": "fund_location",    "to": "platform_demo",    "label": "➡ Далі" }
+
+  ],
+  "ui": {
+  "sticky_comment_panel": true,
+  "sticky_comment_title": "Коментар про клієнта",
+  "sticky_comment_position": "right"
 }
-],
-"edges": [
-{
-"from": "barriers_router",
-"to": "bar_email",
-"label": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:"
-},
-{
-"from": "barriers_router",
-"to": "bar_not_registered",
-"label": "НЕ РЕЄСТРУВАВСЯ:"
-},
-{
-"from": "barriers_router",
-"to": "bar_not_mine",
-"label": "ЦЕ НЕ МОЄ:"
-},
-{
-"from": "barriers_router",
-"to": "bar_nothing_needed",
-"label": "НІЧОГО НЕ ПОТРІБНО:"
-},
-{
-"from": "barriers_router",
-"to": "bar_busy",
-"label": "Я ЗАЙНЯТИЙ:"
-},
-{
-"from": "barriers_router",
-"to": "bar_child",
-"label": "ЦЕ ДИТИНА:"
-},
-{
-"from": "barriers_router",
-"to": "bar_no_time",
-"label": "НЕМАЄ ЧАСУ:"
-},
-{
-"from": "barriers_router",
-"to": "bar_accidental",
-"label": "ЦЕ ВИПАДКОВО:"
-},
-{
-"from": "barriers_router",
-"to": "bar_not_interesting",
-"label": "НЕ ЦІКАВО:"
-},
-{
-"from": "barriers_router",
-"to": "bar_scam",
-"label": "ЦЕ ОБМАН"
-},
-{
-"from": "greeting",
-"to": "barriers_router",
-"label": "➡ Далі"
-},
-{
-"from": "barriers_router",
-"to": "experience_q",
-"label": "➡ Далі"
-},
-{
-"from": "exp_no",
-"to": "experience_q",
-"label": "⬅ Назад"
-},
-{
-"from": "exp_yes",
-"to": "experience_q",
-"label": "⬅ Назад"
-},
-{
-"from": "experience_q",
-"to": "exp_no",
-"label": "Немає досвіду"
-},
-{
-"from": "experience_q",
-"to": "exp_yes",
-"label": "Є досвід"
-},
-{
-"from": "exp_no",
-"to": "work",
-"label": "➡ Далі"
-},
-{
-"from": "exp_yes",
-"to": "work",
-"label": "➡ Далі"
-},
-{
-"from": "work",
-"to": "family",
-"label": "➡ Далі"
-},
-{
-"from": "family",
-"to": "back_to_exp",
-"label": "➡ Далі"
-},
-{
-"from": "back_to_exp",
-"to": "goal",
-"label": "➡ Далі"
-},
-{
-"from": "goal",
-"to": "presentation",
-"label": "➡ Далі"
-},
-{
-"from": "presentation",
-"to": "pres_noexp",
-"label": "Немає досвіду"
-},
-{
-"from": "presentation",
-"to": "pres_exp",
-"label": "Є досвід"
-},
-{
-"from": "pres_noexp",
-"to": "presentation",
-"label": "⬅ Назад"
-},
-{
-"from": "pres_noexp",
-"to": "trade_with_expert",
-"label": "➡ Далі"
-},
-{
-"from": "pres_exp",
-"to": "presentation",
-"label": "⬅ Назад"
-},
-{
-"from": "pres_exp_yes",
-"to": "presentation",
-"label": "⬅ Назад"
-},
-{
-"from": "pres_exp_no",
-"to": "presentation",
-"label": "⬅ Назад"
-},
-{
-"from": "pres_exp",
-"to": "pres_exp_yes",
-"label": "Tak"
-},
-{
-"from": "pres_exp",
-"to": "pres_exp_no",
-"label": "Nie"
-},
-{
-"from": "pres_exp_yes",
-"to": "trade_with_expert",
-"label": "➡ Далі"
-},
-{
-"from": "pres_exp_no",
-"to": "trade_with_expert",
-"label": "➡ Далі"
-},
-{
-"from": "trade_with_expert",
-"to": "client_questions",
-"label": "➡ Далі"
-},
-{
-"from": "client_questions",
-"to": "interest_company",
-"label": "ІНТЕРЕС ФІРМИ"
-},
-{
-"from": "client_questions",
-"to": "risks",
-"label": "Якщо клієнт питає про ризики"
-},
-{
-"from": "client_questions",
-"to": "fund_location",
-"label": "Якщо клієнт питає про місцезнаходження коштів"
-},
-{
-"from": "client_questions",
-"to": "platform_demo",
-"label": "Пропустити"
-},
-{
-"from": "platform_demo",
-"to": "entry_amounts",
-"label": "➡ Далі"
-},
-{
-"from": "entry_amounts",
-"to": "objections_root",
-"label": "➡ Далі"
-},
-{
-"from": "objections_root",
-"to": "node",
-"label": "НЕМАЄ ГРОШЕЙ"
-},
-{
-"from": "objections_root",
-"to": "2_0",
-"label": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)"
-},
-{
-"from": "objections_root",
-"to": "node_2",
-"label": "ХОЧУ ПОДУМАТИ"
-},
-{
-"from": "objections_root",
-"to": "node_3",
-"label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’Ї"
-},
-{
-"from": "objections_root",
-"to": "2_0_2",
-"label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’ Ї 2.0 (логіка)"
-},
-{
-"from": "objections_root",
-"to": "node_4",
-"label": "ЛІЦЕНЗІЯ"
-},
-{
-"from": "objections_root",
-"to": "node_5",
-"label": "ХОЧУ ПОЧИТАТИ ВІДГУКИ"
-},
-{
-"from": "objections_root",
-"to": "node_6",
-"label": "ХОЧУ ПІДПИСАТИ ДОГОВІР"
-},
-{
-"from": "objections_root",
-"to": "node_7",
-"label": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ"
-},
-{
-"from": "objections_root",
-"to": "node_8",
-"label": "У ВАС АКЦЕНТ"
-},
-{
-"from": "objections_root",
-"to": "node_9",
-"label": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ"
-},
-{
-"from": "objections_root",
-"to": "node_10",
-"label": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ"
-},
-{
-"from": "objections_root",
-"to": "node_11",
-"label": "НЕМАЄ ЧАСУ (коротка версія)"
-},
-{
-"from": "objections_root",
-"to": "node_12",
-"label": "ШАХРАЇ"
-},
-{
-"from": "objections_root",
-"to": "node_13",
-"label": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ"
-},
-{
-"from": "objections_root",
-"to": "node_14",
-"label": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ"
-},
-{
-"from": "objections_root",
-"to": "node_15",
-"label": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ"
-},
-{
-"from": "objections_root",
-"to": "node_16",
-"label": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО"
-},
-{
-"from": "objections_root",
-"to": "node_17",
-"label": "ХОЧУ ПРИ ЇХАТИ В ОФІС"
-},
-{
-"from": "objections_root",
-"to": "node_18",
-"label": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА"
-},
-{
-"from": "objections_root",
-"to": "node_19",
-"label": "ЯКІ ГАРАНТІЇ"
-},
-{
-"from": "objections_root",
-"to": "node_20",
-"label": "Я В ЦЕ НЕ ВІРЮ"
-},
-{
-"from": "objections_root",
-"to": "node_21",
-"label": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ"
-},
-{
-"from": "objections_root",
-"to": "node_22",
-"label": "БОЮСЬ"
-},
-{
-"from": "objections_root",
-"to": "node_23",
-"label": "НЕ ДОВІРЯЮ"
-},
-{
-"from": "objections_root",
-"to": "node_24",
-"label": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ"
-},
-{
-"from": "objections_root",
-"to": "node_25",
-"label": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ"
-},
-{
-"from": "objections_root",
-"to": "node_26",
-"label": "Я ВЖЕ ВТРАЧАВ"
-},
-{
-"from": "objections_root",
-"to": "node_27",
-"label": "БОЮСЯ ВТРАТИТИ"
-},
-{
-"from": "objections_root",
-"to": "node_28",
-"label": "ЯКІ Є РИЗИКИ"
-},
-{
-"from": "objections_root",
-"to": "node_29",
-"label": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ"
-},
-{
-"from": "objections_root",
-"to": "node_30",
-"label": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?"
-},
-{
-"from": "objections_root",
-"to": "tomorrow",
-"label": "Давайте завтра"
-},
-{
-"from": "objections_root",
-"to": "tomorrow",
-"label": "Давайте завтра"
-},
-{
-"from": "objections_root",
-"to": "closing_payment",
-"label": "Перейти до оплати"
-},
-{
-"from": "bar_email",
-"to": "experience_q",
-"label": "➡ Далі"
-},
-{
-"from": "bar_not_registered",
-"to": "experience_q",
-"label": "➡ Далі"
-},
-{
-"from": "bar_not_mine",
-"to": "experience_q",
-"label": "➡ Далі"
-},
-{
-"from": "bar_nothing_needed",
-"to": "experience_q",
-"label": "➡ Далі"
-},
-{
-"from": "bar_busy",
-"to": "experience_q",
-"label": "➡ Далі"
-},
-{
-"from": "bar_child",
-"to": "experience_q",
-"label": "➡ Далі"
-},
-{
-"from": "bar_no_time",
-"to": "experience_q",
-"label": "➡ Далі"
-},
-{
-"from": "bar_accidental",
-"to": "experience_q",
-"label": "➡ Далі"
-},
-{
-"from": "bar_not_interesting",
-"to": "experience_q",
-"label": "➡ Далі"
-},
-{
-"from": "bar_scam",
-"to": "experience_q",
-"label": "➡ Далі"
-},
-{
-"from": "node",
-"to": "objections_root",
-"label": "⬅ Назад"
-},
-{
-"from": "node",
-"to": "closing_payment",
-"label": "➡ Далі"
-},
-{
-"from": "2_0",
-"to": "objections_root",
-"label": "⬅ Назад"
-},
-{
-"from": "2_0",
-"to": "closing_payment",
-"label": "➡ Далі"
-},
-{
-"from": "node_2",
-"to": "objections_root",
-"label": "⬅ Назад"
-},
-{
-"from": "node_2",
-"to": "closing_payment",
-"label": "➡ Далі"
-},
-{
-"from": "node_3",
-"to": "objections_root",
-"label": "⬅ Назад"
-},
-{
-"from": "node_3",
-"to": "closing_payment",
-"label": "➡ Далі"
-},
-{
-"from": "node_4",
-"to": "objections_root",
-"label": "⬅ Назад"
-},
-{
-"from": "node_4",
-"to": "closing_payment",
-"label": "➡ Далі"
-},
-{
-"from": "tomorrow",
-"to": "objections_root",
-"label": "⬅ Назад"
-},
-{
-"from": "tomorrow",
-"to": "closing_payment",
-"label": "➡ Далі"
-},
-{
-"from": "closing_payment",
-"to": "objections_root",
-"label": "⬅ Назад"
-},
-{
-"from": "work",
-"to": "experience_q",
-"label": "⬅ Назад"
-},
-{
-"from": "family",
-"to": "work",
-"label": "⬅ Назад"
-},
-{
-"from": "back_to_exp",
-"to": "family",
-"label": "⬅ Назад"
-},
-{
-"from": "goal",
-"to": "back_to_exp",
-"label": "⬅ Назад"
-},
-{
-"from": "presentation",
-"to": "goal",
-"label": "⬅ Назад"
-},
-{
-"from": "experience_q",
-"to": "barriers_router",
-"label": "⬅ Назад"
-},
-{
-"from": "closing_payment",
-"to": "greeting",
-"label": "🏠 На початок"
-},
-{ "from": "2_0_2",   "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "2_0_2",   "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_5",  "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_5",  "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_6",  "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_6",  "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_7",  "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_7",  "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_8",  "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_8",  "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_9",  "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_9",  "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_10", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_10", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_11", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_11", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_12", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_12", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_13", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_13", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_14", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_14", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_15", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_15", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_16", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_16", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_17", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_17", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_18", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_18", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_19", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_19", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_20", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_20", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_21", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_21", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_22", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_22", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_23", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_23", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_24", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_24", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_25", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_25", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_26", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_26", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_27", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_27", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_28", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_28", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_29", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_29", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "node_30", "to": "objections_root", "label": "⬅ Назад" },
-{ "from": "node_30", "to": "closing_payment", "label": "➡ Далі" },
-{ "from": "bar_email",           "to": "barriers_router", "label": "⬅ Назад" },
-{ "from": "bar_not_registered",  "to": "barriers_router", "label": "⬅ Назад" },
-{ "from": "bar_not_mine",        "to": "barriers_router", "label": "⬅ Назад" },
-{ "from": "bar_nothing_needed",  "to": "barriers_router", "label": "⬅ Назад" },
-{ "from": "bar_busy",            "to": "barriers_router", "label": "⬅ Назад" },
-{ "from": "bar_child",           "to": "barriers_router", "label": "⬅ Назад" },
-{ "from": "bar_no_time",         "to": "barriers_router", "label": "⬅ Назад" },
-{ "from": "bar_accidental",      "to": "barriers_router", "label": "⬅ Назад" },
-{ "from": "bar_not_interesting", "to": "barriers_router", "label": "⬅ Назад" },
-{ "from": "bar_scam",            "to": "barriers_router", "label": "⬅ Назад" },
-{ "from": "interest_company", "to": "client_questions", "label": "⬅ Назад" },
-{ "from": "interest_company", "to": "platform_demo",   "label": "➡ Далі" },
-{ "from": "risks",            "to": "client_questions", "label": "⬅ Назад" },
-{ "from": "risks",            "to": "platform_demo",    "label": "➡ Далі" },
-{ "from": "fund_location",    "to": "client_questions", "label": "⬅ Назад" },
-{ "from": "fund_location",    "to": "platform_demo",    "label": "➡ Далі" }
-],
-"ui": {
-"sticky_comment_panel": true,
-"sticky_comment_title": "Коментар про клієнта",
-"sticky_comment_position": "right"
-}
-}
-</DOCUMENT>
+    }
+   
