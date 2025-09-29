@@ -566,10 +566,10 @@
     },
             {
       "id": "tomorrow",
-      "title": "Parliamo domani — esempio + notizia PL",
+      "title": "Parliamo domani — esempio + notizia ",
       "type": "snippet",
       "text": [
-        "ESEMPIO + NOTIZIA (PL):",
+        "ESEMPIO + NOTIZIA :",
         "— Analizziamo la cosa un po' più nel dettaglio. C'è un'azienda come Apple — la conosce sicuramente bene, giusto? [attendiamo la risposta del cliente]",
         "— Ottimo. Immaginiamo che Apple abbia lanciato l'auto elettrica più all'avanguardia. Questa auto diventa estremamente popolare in tutto il mondo ed è acquistata con entusiasmo in molti paesi.",
         "— Secondo lei, in una situazione del genere cosa accadrebbe alle azioni Apple? Il loro valore andrebbe su o giù? [attendiamo la risposta del cliente]",
@@ -1713,5 +1713,6 @@
 }
     }
    
+
 
 
