@@ -258,24 +258,24 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
           {/* Canvas */}
           <div className="relative h-full">
             <ReactFlow
-              +  style={{ width: '100%', height: '100%' }}      // ← гарантируем размеры
-            nodes={nodes.map(n => ({ ...n, data: { ...n.data }, type: "default" }))}
-            edges={edges}
-            onNodesChange={onNodesChange}
-            onEdgesChange={onEdgesChange}
-            onConnect={onConnect}
-            fitView
-            fitViewOptions={{ padding: 0.4 }}
-            proOptions={{ hideAttribution: false }}        // поставь true, если хочешь скрыть “React Flow”
-            panOnDrag                                     // ← перетаскивание полотна мышью
-            selectionOnDrag={false}                       // ← чтобы drag двигал полотно, а не выделял
-            zoomOnScroll                                  // ← масштаб колёсиком
-            zoomOnPinch                                   // ← масштаб pinch-жестом (трекпад)
-            minZoom={0.2}
-            maxZoom={2}
-            nodesDraggable                                // ← узлы можно таскать
-            nodesConnectable                              // ← можно соединять
-            elementsSelectable                            // ← можно выделять
+            style={{ width: '100%', height: '100%' }}      // ← гарантируем размеры
+              nodes={nodes.map(n => ({ ...n, data: { ...n.data }, type: "default" }))}
+              edges={edges}
+              onNodesChange={onNodesChange}
+              onEdgesChange={onEdgesChange}
+              onConnect={onConnect}
+              fitView
+              fitViewOptions={{ padding: 0.4 }}
+              proOptions={{ hideAttribution: false }}        // поставь true, если хочешь скрыть “React Flow”
+              panOnDrag                                     // ← перетаскивание полотна мышью
+              selectionOnDrag={false}                       // ← чтобы drag двигал полотно, а не выделял
+              zoomOnScroll                                  // ← масштаб колёсиком
+              zoomOnPinch                                   // ← масштаб pinch-жестом (трекпад)
+              minZoom={0.2}
+              maxZoom={2}
+              nodesDraggable                                // ← узлы можно таскать
+              nodesConnectable                              // ← можно соединять
+              elementsSelectable                            // ← можно выделять
               onNodeClick={(_, node) => setSelectedNodeId(node.id)}
               onPaneClick={() => setSelectedNodeId(null)}
               nodeTypes={{ default: RFNodeContent as any }}
