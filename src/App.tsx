@@ -324,6 +324,16 @@ const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про �
             >
               {darkMode ? "🌞 Светлая" : "🌙 Тёмная"}
             </button>
+
+            {/* —— Кнопка Редагувати (открыть редактор с мінімапою) —— */}
+            
+            <button
+              onClick={() => setEditorOpen(true)}
+              className="px-3 py-1.5 rounded-lg bg-violet-600/80 hover:bg-violet-600 text-white text-sm"
+              title="Редагувати граф через міні-мапу"
+            >
+              ✎ Редагувати
+            </button>
             
            {/* === Переключатель языка (select) === */}
             <select
@@ -498,6 +508,19 @@ const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про �
           </aside>
         )}
       </div>
+
+      {/* —— Модальное окно редактора графа —— */}
+      {graph && (
+      <GraphEditor
+        open={editorOpen}
+        onClose={() => setEditorOpen(false)}
+        value={graph}
+        onChange={(next) => {
+          setGraph(next);        // сохранить изменения обратно в приложение
+          setEditorOpen(false);  // закрыть модалку
+        }}
+        />
+    )}
 
       {/* === Футер-подсказка === */}
       <footer className="px-6 py-6 text-center text-xs text-zinc-500 dark:text-zinc-500/80">
