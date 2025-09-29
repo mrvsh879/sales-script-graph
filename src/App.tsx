@@ -103,6 +103,7 @@ const App: React.FC = () => {
   const [history, setHistory] = useState<string[]>([]);
   const [search, setSearch] = useState("");
   const contentTopRef = useRef<HTMLDivElement>(null);
+  const [editorOpen, setEditorOpen] = useState(false);
 
  // === Закреплённые узлы (pin) ===
   const [pinnedIds, setPinnedIds] = useState<string[]>(() => {
