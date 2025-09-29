@@ -616,508 +616,524 @@
     { "label": "Давайте завтра", "to": "tomorrow" }
   ]
 },
-    {
-      "id": "tomorrow",
-      "title": "Давайте завтра — приклад + новина ПЛ",
-      "type": "snippet",
-      "text": [
-        "ПРИКЛАД + НОВИНА :",
-        "— Lassen Sie uns das etwas detaillierter besprechen. Es gibt eine Firma wie Apple — Sie kennen sie sicher gut, stimmt das? [чекаємо відповідь клієнта]",
-        "— Toll. Stellen Sie sich vor, die Firma Apple hat das modernste Elektroauto produziert. Dieses Auto wird weltweit extrem beliebt und wird in vielen Ländern gerne gekauft.",
-        "— Wie denken Sie, was in einer solchen Situation mit den Aktien der Firma Apple passiert? Steigt ihr Wert oder fällt er? [чекаємо відповідь клієнта]",
-        "— Natürlich haben Sie recht. Nehmen wir an, Sie haben Aktien von Apple gekauft, bevor die Firma auf den Automarkt eingetreten ist — als der Preis noch niedrig war — und sie dann nach dem Preisanstieg verkauft, verursacht durch großes Interesse am neuen Produkt.",
-        "— Auf diese Weise würden wir zusammen mit Ihnen Gewinn erzielen. Genau darin besteht die Arbeit des Analysts, der für Sie Prognosen und Analysen von Ereignissen vorbereitet, die den Aktienkurs beeinflussen können. Der Analyst liefert Ihnen fertige Informationen mit voller Begründung.",
-        "— Welche Fragen haben Sie in dieser Phase?",
-        "— Was denken Sie darüber?",
-        "— Ich rate, diese Möglichkeit heute zu nutzen.",
-        "Wir haben ein spezielles Angebot — man muss nicht mit 1000 Euro beginnen, es reicht ein Probe-Betrag von250 eur.",
-        "— — —",
-        "— Wie stehen Sie zu der Möglichkeit, in naher Zukunft 30 Euro zu verdienen?",
-        "— Ich denke, Sie haben bemerkt, dass die Situation in der Welt jetzt ziemlich instabil ist, stimmt das?",
-        "— In solchen Momenten will jeder Investor sein Geld an einem sicheren Ort haben. Und genau dann ist die beste Lösung oft die Investition in Gold.",
-        "— Zu Beginn dieses Jahres betrug der Goldpreis 2600 Dollar pro Unze.",
-        "— Und wissen Sie, wie viel es jetzt kostet? — 3800 Dollar!",
-        "— Nach Prognosen der größten Analysezentren kann der Preis sogar auf 4000–4100 Dollar pro Unze steigen.",
-        "— Das ist eine tolle Gelegenheit! Schon heute können Sie nicht nur sehen, wie das Verdienen aussieht, sondern auch tatsächlich 30 Euro durch den Anstieg des Goldpreises machen.",
-        "Und was, wenn es in ein paar Stunden steigt — das wäre auch toll, stimmt das?",
-        "— Deshalb schlage ich vor, diese Chance jetzt zu nutzen.",
-        "Es reicht, Ihr Konto mit 250 eur aufzuladen, um zu beginnen zu verdienen.",
-        "— Was denken Sie darüber?",
-        "— Ich rate, diese Möglichkeit heute zu nutzen.",
-        "Wir haben ein spezielles Angebot — man muss nicht mit 1000 Euro beginnen, es reicht ein Probe-Betrag von 250 eur."
-      ]
-    },
-    {
-      "id": "closing_payment",
-      "title": "ЗАКРИТТЯ — ПОПОВНЕННЯ",
-      "type": "snippet",
-      "text": [
-        "— Haben Sie noch irgendwelche Fragen? Ich empfehle, Ihr Handelskonto jetzt zu aktivieren!", 
-        "Was denken Sie darüber?",
-        
-        "— Die Kontoaktivierung verläuft in mehreren Schritten:", 
-        "1) Gemeinsam loggen wir uns in Ihr persönliches Konto ein, damit Sie direkt einen Antrag auf Angabe der persönlichen Daten stellen können, die für die Aufladung des Kontos notwendig sind.",
-        "2) Dann müssen Sie die Daten sehr genau abschreiben. Das ist extrem wichtig, um keine Ziffer oder Buchstabe zu übersehen.",
-        "3) Nach der Überweisung bitte eine Bestätigung der erfolgreichen Bankoperation liefern, damit ich diese Information an die Finanzabteilung weiterleiten kann, um die Mittel auf dem Handelskonto zu buchen.", 
-        
-        "Von welcher Bank planen Sie, Mittel auf Ihr Handelskonto zu überweisen?", 
-        
-        "Nutzen Sie die mobile App Ihrer Bank?  ",
-        
-        "Ist der Betrag von 250 eur in dieser oder einer anderen Ihrer Bank verfügbar?", 
-        "(ВАЖЛИВО СЛУХАТИ УВАЖНО ВІДПОВІДІ КЛІЄНТА)",
-        
-        "Toll, gehen wir zum ersten Schritt, einverstanden?"
-
-      ]
-    },
-    {
-      "id": "node",
-      "title": "НЕМАЄ ГРОШЕЙ",
-      "type": "snippet",
-      "text": [
-        "— Sagen Sie bitte, haben Sie im Moment keine freien Mittel, oder geht es um den Mangel an Geld überhaupt – zum Leben? [чекаємо відповідь клієнта]",
-        "Якщо говорить, що немає на життя:",
-        "— Sie haben eine sehr schwierige Situation. Ich würde Ihnen gerne helfen, sie zu lösen, weil ich selbst am Anfang in einer ähnlichen Situation war. [свій приклад]",
-        "— Lassen Sie die finanziellen Fragen vorerst beiseite. Auf wie vielen Prozent schätzen Sie Ihre Chancen, hier zu verdienen? [чекаємо відповідь, підказуємо 70–80%]",
-        "— Ich verstehe, dass die restlichen 20% Ihre Zweifel sind. Sagen Sie bitte, was macht Sie unsicher?",
-        "Якщо говорить, що впевнений/а, але немає грошей:",
-        "— Stellen Sie sich vor – wenn Sie dringend 250 eur besorgen müssten, was würden Sie tun, um diesen Betrag zu finden?",
-        "Якщо говорить, що немає вільних:",
-        "— Verstehen Sie unter „freien Mitteln“ Geld, das Sie nicht fürchten zu verlieren? [чекаємо відповідь клієнта]",
-        "— Sagen Sie mir bitte – wie denken Sie, auf welche Weise könnten Sie hier Geld verlieren?"
-      ]
-    },
-    {
-      "id": "2_0",
-      "title": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)",
-      "type": "snippet",
-      "text": [
-        "Уточнення фінансової ситуації:",                                                                                                                                                               
-        "Ich verstehe, dass die finanzielle Situation schwierig sein kann. Könnten Sie präzisieren, worin genau diese Schwierigkeiten bestehen? Dadurch kann ich Ihre Situation besser verstehen und die bestmögliche Lösung vorschlagen.",
-        "Welchen Betrag fehlt Ihnen? Wie viel Zeit wird benötigt, um die finanzielle Frage zu lösen? Wann erwarten Sie die nächsten Mittel (z.B. Gehalt, Rente, Leistung)?", 
-        "[якщо клієнт відповідає на перше запитання, що повний нуль, найімовірніше, клієнт не до кінця чесний і за цим приховує свої сумніви або недовіру,",
-        "відповіді на наступні запитання теж треба слухати дуже уважно, адже клієнт може сказати, що зарплату дали кілька днів тому, а отже, гроші в нього є, але розпочинати роботу він не збирається]",
-        "Підкреслення важливості інвестування:",                                                                                                                                          
-        "Ich verstehe, dass es jetzt scheinen mag, dass das nicht der beste Moment für Investitionen ist. Schauen Sie jedoch darauf als Chance — nicht nur zur Erhaltung, sondern auch zur Vermehrung Ihres Kapitals. Zeit ist Geld – je früher Sie beginnen, desto größer das Potenzial der Gewinne.",
-        "Пропозиція ексклюзивних умов:",                                                                                                                                       
-        "Ich bin bereit, Ihnen exklusive Bedingungen für neue Investoren vorzuschlagen. Das ist eine einzigartige Gelegenheit, Zugang zu attraktiven Investitionsmöglichkeiten zu erhalten, die nicht allgemein verfügbar sind. [Запропонувати бонус]",
-        "Створення відчуття терміновості:",                                                                                                                             
-        "Die Marktsituation kann sich schnell ändern, daher ist es wichtig, ohne Verzögerung zu handeln. Während Sie noch überlegen, könnten andere schon von dieser Gelegenheit profitieren. Investition jetzt kann mehr Vorteile bringen als in der Zukunft.",
-        "Підкреслення успіхів попередніх інвесторів:",                                                                                                                           
-        "Viele unserer Investoren haben mit kleinen Beträgen begonnen und sind heute Eigentümer signifikanter Portfolios. Ihre Erfolge sprechen für sich. Wollen Sie nicht Ihre Chance nutzen?",
-        "Підготовка до укладення угоди:",                                                                                                                                              
-        "Wenn wir diese Frage schnell lösen, bin ich bereit, Ihnen alle notwendigen Informationen zu übermitteln und zur Finalisierung der Transaktion überzugehen. Das sind nur ein paar Schritte – und bald werden Sie die ersten Ergebnisse sehen.",
-        "Використання переконливих фактів:",                                                                                                                                  
-        "Es lohnt sich zu erinnern, dass viele erfolgreiche Menschen ihren Wohlstand genau Investitionen verdanken. Es lohnt nicht, auf einen besseren Moment zu warten – lassen Sie uns ihn zusammen jetzt schaffen"
-      ]
-    },
-    {
-      "id": "node_2",
-      "title": "ХОЧУ ПОДУМАТИ",
-      "type": "snippet",
-      "text": [
-        "Meiner Erfahrung nach bedeutet es oft, dass der Kunde das Projekt nicht ganz verstanden hat oder noch nicht davon überzeugt ist, wenn er sagt, dass er darüber nachdenken möchte.",
-
-        "Sagen Sie mir bitte, was genau befürchten Sie? [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
-        "Sagen Sie mir bitte, worüber genau möchten Sie nachdenken?",
-        "Was hat in meiner Präsentation gefehlt, damit Sie die Entscheidung jetzt treffen könnten?",
-        "Was hält Sie davon ab, die Entscheidung jetzt zu treffen?",
-        "Wie könnte das Ihre endgültige Entscheidung beeinflussen?",
-
-       "Natürlich haben Sie das Recht, darüber nachzudenken. Meiner Erfahrung nach trifft man Entscheidungen jedoch am besten, wenn man konkrete Ergebnisse sieht und versteht, wie es in der Praxis funktioniert",
-        "Ehrlich gesagt gibt es im Moment nichts, worüber man lange nachdenken müsste – es sei denn, Sie haben irgendwelche Bedenken? Was genau hält Sie davon ab, eine Entscheidung zu treffen?"
-      ]
-    },
-    {
-      "id": "node_5",
-      "title": "ХОЧУ ПОЧИТАТИ ВІДГУКИ",
-      "type": "snippet",
-      "text": [
-        "- Sagen Sie mir bitte – wie oft passiert es Ihnen persönlich, Bewertungen im Internet zu schreiben? [Чекаємо на відповідь клієнта.]",                                                                                                                                                                                                        
-        "- Und wie denken Sie – wer schreibt am häufigsten Bewertungen? [Чекаємо на відповідь клієнта.]",                                                                         
-        "- Wissen Sie, wenn ich jetzt tausend negative Kommentare über Ihr Auto schreiben würde – würde das bedeuten, dass das Auto nicht funktioniert und man es verkaufen muss? [Пауза, щоб задумався.]",                                                                                
-        "- Ich denke, nichts überzeugt besser als persönliche Erfahrung.",                                                                              
-        "- Deshalb ermutige ich – prüfen wir es zusammen bei der Gelegenheit des heutigen Ereignisses und Sie sehen die Effekte mit eigenen Augen.",
-
-                                          "**Інший варіант:**",
-        "– Das ist eine tolle Idee, Bewertungen zu lesen – besonders wenn wir wissen, wer sie geschrieben hat.",
-        "– Sagen Sie bitte, wie unterscheiden Sie eine echte Bewertung von einer weniger glaubwürdigen?",
-        "– Stimmen Sie der Aussage zu, dass Bewertungen gekauft werden können?",
-        "– Ist es Ihnen passiert, auf Bewertungen z.B. über Ihre eigene Bank zu achten?",
-        "– Auf welche Bewertungen achten Sie mehr – positive oder negative?",
-        "– Und wenn ich Ihnen Hunderte positive und hundert negative Bewertungen vorlege – welche würden Sie für glaubwürdiger halten?",
-        "– Ich denke, nichts überzeugt besser als persönliche Erfahrung.",
-        "– Deshalb ermutige ich – prüfen wir es zusammen bei der Gelegenheit des heutigen Ereignisses und Sie sehen die Effekte mit eigenen Augen.",
-        
-                                    "**Прочитав погані відгуки:**",
-        "Пояснення на прикладі:",
-        "– Dass Sie sich mit Bewertungen vertraut gemacht haben, zeigt, dass Sie die Entscheidung über die Zusammenarbeit ernst nehmen – und das ist sehr gut.",
-        "– Man muss jedoch bedenken, dass Bewertungen im Internet nicht immer die Realität widerspiegeln.",
-        "– Viele davon werden von der Konkurrenz geschrieben.",
-        "– Das Wichtigste ist, was Sie persönlich prüfen – mit der Plattform.",
-        "– Dann bewerten Sie selbst, ob die Zusammenarbeit so funktioniert, wie Sie erwarten.",
-        "– Bewertungen kann man schreiben, kopieren, bearbeiten – aber Erfahrung kann niemand fälschen.",
-        "– Deshalb bitte – prüfen wir zusammen, damit Sie selbst die Ergebnisse sehen können."
-      ]
-    },
-    {
-      "id": "node_6",
-      "title": "ХОЧУ ПІДПИСАТИ ДОГОВІР",
-      "type": "snippet",
-      "text": [
-        "- Mit mir persönlich unterschreiben Sie keinen Vertrag.",
-        "- Nach Beginn der Zusammenarbeit mit dem Analysten fragen Sie bitte nach dem Vertrag – sie werden individuell für jeden Kunden vorbereitet, unter Berücksichtigung der Art der Zusammenarbeit, erwarteter Gewinne, Handelsrichtung sowie der finanziellen Situation.",
-        "[Якщо клієнт просить вислати порожній договір, ви маєте вивести на обґрунтоване заперечення, і зрозуміти, чому йому потрібен цей договір / НЕ  ВПЕВНЕНА АБО БОЇТЬСЯ / відводьте в тему обґрунтованого заперечення (якої форми договір вас цікавить?)]",
-                                    "**Другий варіант:**",
-        "– Der Vertrag wird unterschrieben, wenn die Firma die Mittel des Kunden in die Verwaltung nimmt.",
-        "– In unserem Fall übergeben Sie uns Ihr Geld nicht – Sie eröffnen Ihr eigenes Konto und verwalten es selbst, unter Nutzung unserer Empfehlungen.",
-        "– Sagen Sie mir bitte, in wie vielen Prozent sind Sie sicher, dass es Ihnen mit uns gelingen wird zu verdienen?"
-      ]
-    },
-    {
-      "id": "node_7",
-      "title": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ",
-      "type": "snippet",
-      "text": [
-         "Und warum erst in einem Monat?",                                                                                                                                              
-                        "Або",
-        "Natürlich kann ich Sie in einem Monat anrufen, aber sagen Sie mir bitte – was ändert sich in dieser Zeit?",
-                        "Або",
-        "Was steht im Weg, jetzt zu beginnen?",
-                        "Або",
-       "Darf ich fragen, was Sie davon abhält, jetzt zu beginnen?", 
-       "[Якщо клієнт каже, що йому треба: подумати, у нього потім буде більше часу - то переходимо до відпрацювання цих заперечень.",
-        "Якщо клієнт каже, що тільки через місяць у нього будуть гроші - тоді наше завдання продати йому новину, зацікавити прибутком, поставити дедлайн і запропонувати запуститися в роботу на більш вигідних умовах.]"
-      ]
-    },
-    {
-      "id": "node_8",
-      "title": "У ВАС АКЦЕНТ",
-      "type": "snippet",
-      "text": [
-        "Auf dem Gebiet unseres Landes leben viele Menschen aus verschiedenen Teilen der Welt, daher ist es schwer, jemanden zu finden, der keinen Akzent hat.",
-        "Aber in über 3 Jahren meiner Arbeit in dieser Firma war mein Akzent nie ein Hindernis, Menschen beim Erreichen von Gewinnen zu helfen.",
-        "Deshalb konzentrieren wir uns auf das Ziel, für das Sie Ihre Registrierung hinterlassen haben, und reden wir über potenzielle Gewinne, die Sie erzielen können.",
-        "[ОДРАЗУ ЗАДАЄМО ВІДКРИТЕ ПИТАННЯ]"
-      ]
-    },
-    {
-      "id": "node_9",
-      "title": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ",
-      "type": "snippet",
-      "text": [
-        "Ich verstehe, dass das für Sie eine neue Branche ist und es gewisse Ängste geben kann – jeder von uns hat einmal angefangen.",
-        "Genau deswegen weisen wir Ihnen einen erfahrenen Analysten zu, der Schritt für Schritt durch den Prozess führt – wie ein Lehrer in der Schule.",
-        "Unsere Firma, genau wie Sie, ist an einem interessiert – GEWINN!",
-        "Wir nehmen Provision erst, wenn Sie Ihre Gewinne abheben – wir sind also Partner, nicht nur Dienstleister.",
-        "Ich bin überzeugt, dass Sie in der Zusammenarbeit mit uns Erfolg haben werden – und bald werden Sie sich selbst davon überzeugen!"
-      ]
-    },
-    {
-      "id": "node_10",
-      "title": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ",
-      "type": "snippet",
-      "text": [
-        "– Da Sie die Informationen per Mail erhalten wollen, könnte das bedeuten, dass nicht alles für Sie klar ist. Sagen Sie bitte – welche Information fehlt oder was macht Zweifel?",
-        "– Was wollten Sie noch, dass ich erkläre?",
-        "[Якщо клієнт відповідає, що нічого не хоче уточнити і йому все зрозуміло тоді пропонуйте починати роботу]",
-        "– Da alles schon klar ist, schlage ich vor, den ersten Schritt zu machen.",
-        "Welchen Betrag haben Sie für den Beginn der Zusammenarbeit gewählt?"
-      ]
-    },
-    {
-      "id": "node_11",
-      "title": "НЕМАЄ ЧАСУ",
-      "type": "snippet",
-      "text": [
-        "Ich möchte eine sehr wichtige Sache betonen – die Kontoaktivierung dauert buchstäblich ein paar Minuten, und dann können Sie zu Ihren täglichen Pflichten zurückkehren.",
-                        "Або",
-        "– Wir reden schon über 20 Minuten, und wenn wir uns der Aktivierung des Handelskontos nähern, sagen Sie, dass Sie jetzt keine Zeit haben.",
-        "Sagen Sie ehrlich bitte – hält etwas Sie zurück? Wovor haben Sie genau Angst?"
-      ]
-    },
-    {
-      "id": "node_12",
-      "title": "ШАХРАЇ",
-      "type": "snippet",
-      "text": [
-        "Auf Basis welcher Informationen bewerten Sie, welche Firma ehrlich ist und welche nicht?",
-        "[Чекаємо на відповідь клієнта]",
-        "Worauf genau sehen Sie potenziellen Betrug?",
-        "[Чекаємо на відповідь клієнта]",
-        "Ich bitte Sie um keine persönlichen Daten – Sie haben selbst das Registrierungsformular hinterlassen, damit wir uns kontaktieren.",
-        "Am wichtigsten ist, dass die Mittel auf Ihrem individuellen Konto sind und nur Sie Zugang dazu haben. Wo könnte hier von Betrug die Rede sein?"
-      ]
-    },
-    {
-      "id": "node_13",
-      "title": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ",
-      "type": "snippet",
-      "text": [
-        "Wenn 250 eur für Sie zu hoch als Startbetrag sind, sagen Sie bitte – welcher Betrag wäre für Sie geeignet, um die Zusammenarbeit zu beginnen?",
-        "[Якщо клієнт каже - що не готовий починати і хоче подумати, почитати або порадитися, то переходимо до відпрацювання цього заперечення. Якщо клієнт називає будь-яку іншу суму, що менша за 1000-1100 злотих, тоді розвиваємо діалог далі]",
-        "Warum genau dieser Betrag? Weil es im Fall eventueller Schwierigkeiten für Sie keine große Belastung wäre? Sagen Sie ehrlich.",
-        "[Якщо клієнт каже - ТАК або що хоче подумати чи боїться - переходимо до відпрацювання цих заперечень]"
-      ]
-    },
-    {
-      "id": "node_14",
-      "title": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ",
-      "type": "snippet",
-      "text": [
-        "Natürlich investiere ich – mehr noch, ich habe auch einen persönlichen Analysten, mit dem ich zusammenarbeite und mit dem ich seit 4 Jahren am Handel verdiene.", 
-        "Am häufigsten investieren wir in Kryptowährungen, aber wir eröffnen regelmäßig Transaktionen auch auf anderen Assets.",
-        "Mehr noch – nicht nur ich investiere, sondern auch meine Nahestehenden nehmen an diesem Projekt teil.",
-        
-        "Ich rate Ihnen, die Zusammenarbeit zu beginnen – dadurch können Sie so verdienen wie ich.",
-        
-        "Ich ermutige Sie zur Zusammenarbeit – Sie sehen selbst, dass man wirklich gut verdienen kann."
-      ]
-    },
-    {
-      "id": "node_15",
-      "title": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ",
-      "type": "snippet",
-      "text": [
-        "Warum ist der Mindestbetrag genau 250 eur und nicht weniger?",
-        "Dieser Betrag ergibt sich aus der angenommenen Strategie des sicheren Handels. Wir eröffnen durchschnittlich 6–10 Positionen täglich, aber wir nutzen immer nur etwa 50% der Mittel, um das Risiko zu minimieren.",
-        "Deshalb ist 250 eur der Betrag, der ein effektives und sicheres Beginn der Investition ermöglicht – wovon nur die Hälfte tatsächlich auf den Markt geht.",
-        "Natürlich können Sie einen Broker mit niedrigerem Einstiegsschwell suchen, aber dort werden Sie allein handeln – ohne Unterstützung, ohne Strategie und ohne Person, die an Ihrem Ergebnis interessiert ist. Bei uns sind wir Partner – Sie verdienen, wir verdienen.",
-        "Deshalb, wenn Ihnen an Sicherheit und Gewinnen liegt, am besten in der Praxis überzeugen. Ich schlage vor, das Konto mit dem Mindestbetrag aufzuladen und heute den ersten Schritt zum Gewinn zu machen.",
-                   "Або",
-        "Über 5 Jahre haben wir die Zusammenarbeit mit Kunden bei verschiedenen Beträgen getestet und sind zu dem Schluss gekommen, dass 250 eur der sicherste Startbetrag ist.",
-        "Genau von diesem Betrag kann ich Ihnen garantieren, dass alles gelingt.",
-        "Wenn Sie fragen „warum?“, erkläre ich schon:",
-        "dieser Betrag wird entsprechend den Risikomanagement-Regeln verteilt – ein Teil des Kapitals arbeitet auf dem Markt, und der Rest dient als so genanntes „Sicherheitspolster“.",
-        "Sagen Sie bitte – stimmen Sie zu, dass es sich nicht lohnt, den gesamten Betrag an einem Ort zu investieren?"
-      ]
-    },
-    {
-      "id": "node_16",
-      "title": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО",
-      "type": "snippet",
-      "text": [
-        "Wir haben alles besprochen, was für den Start notwendig ist.",
-        "Sie haben sich für eine Handlungsweise entschieden, die das Ziel beschleunigt.",
-        "Sicherheit der Mittel auch besprochen — also ist das eher kein Mangel an Interesse.",
-        "Sagen Sie direkt — wovor haben Sie Angst?"
-      ]
-    },
-    {
-      "id": "node_17",
-      "title": "ХОЧУ ПРИ ЇХАТИ В ОФІС",
-      "type": "snippet",
-      "text": [
-        "Im Allgemeinen haben wir schon alles besprochen, was Sie für den Beginn der Zusammenarbeit brauchen.", 
-        "Sie haben sich für eine Handlungsweise entschieden, die das finanzielle Ziel schneller erreichen kann, als Sie angenommen haben.", 
-        "Wir haben auch die Frage der Sicherheit der Mittel besprochen, also denke ich, dass das kein Mangel an Interesse ist.", 
-        "Sagen Sie direkt – wovor haben Sie Angst?"
-      ]
-    },
-    {
-      "id": "node_18",
-      "title": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА",
-      "type": "snippet",
-      "text": [
-        "📍 Unser Sitz:",
-        "Wir arbeiten mit einem internationalen Finanzdienstleister zusammen, unser Team ist unter anderem in Deutschland, Zypern und der Schweiz tätig.",
-        "Sobald Sie Ihre Arbeit aufgenommen haben, erhalten Sie von Ihrem Finanzexperten alle erforderlichen Unterlagen, wie z. B. eine interne Vereinbarung über die Sicherheit Ihres Geldes.",
-        "Außerdem ist unser Hauptbüro in Unser Firmensitz befindet sich in der",
-        "Börsenstraße 4, 70174 Stuttgart, Germany",
-        "Ich freue mich auf Ihre Rückmeldung und beantworte gerne alle weiteren Fragen!"
-      ]
-    },
-    {
-      "id": "node_19",
-      "title": "ЯКІ ГАРАНТІ Ї",
-      "type": "snippet",
-      "text": [
-        "Wenn Sie nach Garantien fragen, bedeutet das, dass Sie sich vor etwas schützen wollen. Sagen Sie bitte – wovor genau haben Sie Angst?",
-        "[ЗАДАЄМО ПИТАННЯ/ОТРИМАЄМО ВІДПОВІДЬ, НЕ ВІДПОВІДАЙТЕ ЗА КЛІЄНТА! Якщо клієнт бурмоче і не може чітко відповісти, запитайте його:]",
-        "Stellen Sie sich vor, was in der Zusammenarbeit mit uns passieren könnte.",
-        "[СТАВИМО ЗАПИТАННЯ/ЧЕКАЄМО ВІДПОВІДЬ НЕ НАКИДАЮЧИ ВАРІАНТИ ЗА КЛІЄНТА]",
-        "Nur kluge Leute interessieren sich für diese Frage – sagen Sie bitte, welche konkreten Garantien interessieren Sie?",
-        "[Якщо клієнт посилається на договір, ліцензію або особисту зустріч – ми використовуємо відповідні напрацювання з цього файлу. Якщо клієнт не може дати точну відповідь, використовуємо наведену нижче версію]",
-        "Die wichtigste Garantie in unserer Zusammenarbeit ist das gemeinsame Interesse. Denken Sie nach – welchen Gewinn hätten wir davon, Sie in eine Situation zu bringen, in der Sie Geld verlieren, da unser Verdienst 10% von Ihrem Gewinn beträgt? ",
-        "In unserer Firma ist absolut jeder daran interessiert, dass unsere Zusammenarbeit Jahre dauert."
-      ]
-    },
-    {
-      "id": "node_20",
-      "title": "Я В ЦЕ НЕ ВІРЮ",
-      "type": "snippet",
-      "text": [
-        "Worauf genau glauben Sie nicht? [Чекаємо відповідь клієнта]",
-        "Glauben Sie nicht, dass man hier wirklich verdienen kann? [Чекаємо на відповідь клієнта + можемо посилатися на інтерес компанії.]",
-        "Haben Sie kein Vertrauen? Oder haben Sie vielleicht vor etwas Angst?"
-      ]
-    },
-    {
-      "id": "node_21",
-      "title": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ",
-      "type": "snippet",
-      "text": [
-        "Man muss nicht an die Investitionsbranche glauben — das kann man in der Praxis prüfen.",
-        "Zum Beispiel: Gold ist preisstabil, und die nationale Währung verliert vor Wahlen normalerweise an Wert.",
-        "Alle diese Ereignisse kann man vorhersagen — es reicht, unseren Analysten zu vertrauen.",
-        "Das sind Profis in ihrem Fach, und ihr Hauptziel ist der maximale Wachstum Ihres Kapitals und gemeinsamer Gewinn, weil genau darauf unser Einkommen besteht.",
-        
-        "Wenn Sie Gewinn erzielen und ihn auf Ihr Konto abheben — glauben Sie dann, dass es funktioniert?",
-        "In diesem Fall schlage ich vor, diesen Schritt zu unternehmen, das Ergebnis in der Praxis zu sehen und erst dann zu bewerten, inwiefern das real ist.", 
-        "Ich rate Ihnen, die Zusammenarbeit zu beginnen und heute Ihren ersten Gewinn zu erarbeiten!"
-      ]
-    },
-    {
-      "id": "node_22",
-      "title": "БОЮСЬ",
-      "type": "snippet",
-      "text": [
-        "Ich verstehe Ihre Ängste – das ist völlig natürlich. Jeder, der etwas Neues beginnt, hat gewisse Ängste.",
-        "Aber stellen Sie sich eine Frage: Wovor genau haben Sie Angst? Verlust der Mittel?",
-        "Genau deswegen lassen wir Sie nicht allein. Sie erhalten Unterstützung des Analysts, der Schritt für Schritt führt.",
-        "Außerdem – wir verdienen nur, wenn Sie verdienen, also haben wir gemeinsames Interesse an Ihrem Erfolg.",
-        "Sie investieren nicht den gesamten Betrag auf einmal – wir arbeiten nur mit einem Teil des Kapitals, und der Rest dient als Sicherung.",
-        "Das ist eine durchdachte und sichere Risikomanagement-Strategie",
-        "Deshalb schlage ich vor: Versuchen wir es. Erst die Praxis vertreibt alle Zweifel."        
-      ]
-    },
-    {
-      "id": "node_23",
-      "title": "НЕ ДОВІРЯЮ",
-      "type": "snippet",
-      "text": [
-        "Ich verstehe Ihre Ängste – das ist völlig natürlich. Jeder, der etwas Neues beginnt, hat gewisse Ängste.",
-        "Aber stellen Sie sich eine Frage: Wovor genau haben Sie Angst? Verlust der Mittel?",
-        "Genau deswegen lassen wir Sie nicht allein. Sie erhalten Unterstützung des Analysts, der Schritt für Schritt führt.",
-        "Außerdem – wir verdienen nur, wenn Sie verdienen, also haben wir gemeinsames Interesse an Ihrem Erfolg.",
-        "Sie investieren nicht den gesamten Betrag auf einmal – wir arbeiten nur mit einem Teil des Kapitals, und der Rest dient als Sicherung.",
-        "Das ist eine durchdachte und sichere Risikomanagement-Strategie.",
-        "Deshalb schlage ich vor: Versuchen wir es. Erst die Praxis vertreibt alle Zweifel."
-      ]
-    },
-    {
-      "id": "node_24",
-      "title": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ",
-      "type": "snippet",
-      "text": [
-        "Ich verstehe Ihre Ängste – das ist völlig natürlich. Jeder, der etwas Neues beginnt, hat gewisse Ängste.",
-        "Aber stellen Sie sich eine Frage: Wovor genau haben Sie Angst? Verlust der Mittel?",
-        
-        "Genau deswegen lassen wir Sie nicht allein. Sie erhalten Unterstützung des Analysts, der Schritt für Schritt führt.",
-        "Außerdem – wir verdienen nur, wenn Sie verdienen, also haben wir gemeinsames Interesse an Ihrem Erfolg.",
-        
-        "Sie investieren nicht den gesamten Betrag auf einmal – wir arbeiten nur mit einem Teil des Kapitals, und der Rest dient als Sicherung.",
-        "Das ist eine durchdachte und sichere Risikomanagement-Strategie.",
-        
-        "Deshalb schlage ich vor: Versuchen wir es. Erst die Praxis vertreibt alle Zweifel."
-      ]
-    },
-    {
-      "id": "node_25",
-      "title": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ",
-      "type": "snippet",
-      "text": [
-        "Самі не говоримо, коли буде зроблено вивід. Якщо клієнт запитує:",                                                                                                                           
-        "Alle Fragen zur Auszahlung der Mittel besprechen Sie bitte mit Ihrem Experten.", 
-        "Umso mehr, da Sie die ersten erarbeiteten Gewinne genau mit seiner Hilfe abheben werden – er zeigt, wie man das genau macht. Stimmt das?",
-
-        "Якщо клієнт наполягає на тому, чи може він у будь-який момент робити вивід:",                                                                              
-        "Die Auszahlung der Mittel ist jederzeit möglich. Ihre Haupt Aufgabe im Moment ist jedoch, Gewinn zu erarbeiten, und wenn Sie sehen wollen, wie dieser Prozess in der Praxis aussieht, hilft der Experte Ihnen sicher dabei."
-      ]
-    },
-    {
-      "id": "node_26",
-      "title": "Я ВЖЕ ВТРАЧАВ",
-      "type": "snippet",
-      "text": [
-        "Ich verstehe Sie perfekt – das ist eine sehr unangenehme Situation und ich verstehe Ihre Ängste natürlich.",
-        "Sagen Sie bitte, wovor genau haben Sie Angst?",
-                          "Або",
-        "Ich verstehe Ihre Ängste perfekt – das ist wirklich eine unangenehme Situation.",
-        "Sagen Sie mir bitte, was genau macht Ihnen Sorgen?",                                                                                                
-       "[Далі або переходимо до опрацювання заперечень, які надасть клієнт, oder erklären wir noch einmal, wo sich die Mittel befinden, und die Arbeit mit dem Analysten.]"
-      ]
-    },
-    {
-      "id": "node_27",
-      "title": "БОЮСЯ ВТРАТИТИ",
-      "type": "snippet",
-      "text": [
-        "У процесі торгівлі:",
-        "Natürlich kann auf der Börse alles passieren – besonders wenn man selbst handelt. In diesem Fall ist es sehr leicht, Verluste zu erleiden, weil Risiko immer besteht.",
-        "Unser Hauptziel ist jedoch, Sie zu stabilen Gewinnen zu bringen, weil wir auch nur dann verdienen, wenn Sie verdienen!",
-        
-        "Wir verdienen sowohl bei Steigerungen als auch bei Preisfällen.",
-        "Unsere Analysten informieren laufend, in welche Richtung der Markt geht, und helfen, Transaktionen im richtigen Moment zu eröffnen.",
-        "Zusätzlich hilft der Experte, sogenannte Begrenzer einzustellen (stop loss/take profit), die Ihre Mittel sichern.",
-        
-        "Ich schlage vor, die Zusammenarbeit jetzt zu beginnen – um heute Ihren ersten Gewinn zu sehen!",
-        
-        "При виведенні:",
-        
-        "Das ist ausschließlich Ihr individuelles Handelskonto. Sagen Sie mir bitte – wenn Sie eine Überweisung zwischen Ihren Bankkonten machen, ist es passiert, dass Mittel „verloren gegangen“ sind?",
-        "Hier sieht es genau so aus – Sie machen einfach eine Überweisung zwischen Ihren Konten. DAS IST VÖLLIG SICHER!",
-        
-        "Deshalb schlage ich vor, die Zusammenarbeit jetzt zu beginnen, um heute Ihren ersten Gewinn zu sehen!",
-        
-        "Wir erhalten unsere Provision erst, wenn Sie Ihre Gewinne abheben.",
-        "Denken Sie nach – welchen Vorteil hätten wir davon, wenn es Ihnen nicht gelingen würde, Geld abzuheben, da wir dann auch nichts verdienen?",
-        "Wir verdienen nur, wenn Sie verdienen. Deshalb sind wir voll an Ihrem Erfolg interessiert!"
-      ]
-    },
-    {
-      "id": "node_28",
-      "title": "ЯКІ Є РИЗИКИ",
-      "type": "snippet",
-      "text": [
-        "Ich verstehe, woran Sie denken. Ich arbeite in dieser Branche schon länger und weiß, dass jeder vernünftige Mensch sich für die Risikofrage interessiert. Fragen wie:",
-        "Und was, wenn ich verliere?",
-        "oder",
-        "Welche Garantien habe ich?", 
-        "– das ist eine natürliche Reaktion. Es geht ja um Ihr Geld, also sind solche Ängste absolut gerechtfertigt.",
-        
-        "Ich wäre ein schlechter Berater, wenn ich behaupten würde, dass Risiko nicht existiert – das ist einfach nicht wahr.",
-        "Wir bauen eine Beziehung auf Vertrauen auf, daher sage ich direkt: Risiko besteht immer, weil niemand volle Kontrolle über den Finanzmarkt hat.",
-        "Unvorhergesehene Situationen können überall auftreten, aber der Schlüssel ist die geschickte Risikoverwaltung.",
-        
-        "Wie man sagt:", "wer Information hat, hat Macht","Und wir haben diese Informationen.",
-        
-        "Deshalb nutzen wir eine Reihe von Tools, die helfen, das Risiko auf ein Minimum zu reduzieren.",
-        "Eines der wichtigsten solchen Tools ist der sogenannte Stop Loss. Haben Sie von diesem Begriff gehört?",
-        
-        "(Stop Loss) (aus dem Engl. „stoppe den Verlust“) – das ist ein Mechanismus, der die Position automatisch schließt, wenn sie ein bestimmtes Verlustniveau erreicht",
-        "Zum Beispiel: Wenn wir Stop Loss auf dem Niveau von 2 Dollar setzen, schließt das System die Transaktion selbst mit maximalem Verlust von 2 Dollar, auch wenn der Markt plötzlich zusammenbricht. Das ist eine sehr effektive Form der Sicherung.",
-        
-        "Mehr noch – wir handeln immer auf mehreren Positionen gleichzeitig, was bedeutet, dass selbst wenn eine Transaktion Verlust bringt, die übrigen Gewinn bringen können.",
-        "Dadurch ist es möglich, täglich Einkommen zu generieren – mal größer, mal kleiner, aber regelmäßig."
-      ]
-    },
-    {
-      "id": "node_29",
-      "title": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ",
-      "type": "snippet",
-      "text": [
-        "Früher war diese Funktion auf unserer Plattform verfügbar, aber wir haben vollständig darauf verzichtet – und ich erkläre schon, warum!",
-        "Wir haben das mit Blick auf Ihre Sicherheit getan. Wir haben diese Einzahlungsmethode entfernt, um Situationen zu vermeiden, in denen Benutzer ihre Kartendaten angeben müssten, wie Nummer, Gültigkeitsdatum oder CVC-Code.",
-
-        "Derzeit erfolgt die Kontoaktivierung ausschließlich über die Finanzabteilung. Da wir in Polen tätig sind, müssen wir uns mit dem Finanzamt abrechnen.",
-        "Wir führen die Währungsumrechnung durch, deklarieren Ihren Betrag und buchen ihn dann auf Ihrem Handelskonto.",
-        "Zusätzlich übernehmen wir alle Kosten im Zusammenhang mit der Provision – was diese Methode für Sie vorteilhafter macht, stimmt das?"
-      ]
-    },
-    {
-      "id": "node_30",
-      "title": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?",
-      "type": "snippet",
-      "text": [
-        "Der offizielle Zahlungspartner hat mehrere Konten, einige für Stiftungen (z.B. Rotes Kreuz) — für Transparenz und rechtliche Übereinstimmung.",
-        "Der Name des Empfängers ist eine technische Sache; die Mittel gehen auf das individuelle Handelskonto.",
-        "Ähnlich wie bei Tickets/Reservierungen — auf dem Auszug kann ein anderer rechtlicher Name stehen.",
-        "Der Kanal ist offiziell und von Banken akzeptiert; das Guthaben wird mit dem gewählten Betrag aufgeladen."
-      ]
-    }
-  ],
+{
+  "id": "tomorrow",
+  "title": "Sprechen wir morgen — Beispiel + Nachricht PL",
+  "type": "snippet",
+  "text": [
+    "BEISPIEL + NACHRICHT (PL):",
+    "— Analysieren wir das etwas genauer. Es gibt ein Unternehmen wie Apple — Sie kennen es sicherlich gut, oder? [wir warten auf die Antwort des Kunden]",
+    "— Großartig. Stellen wir uns vor, Apple hat das fortschrittlichste Elektroauto auf den Markt gebracht. Dieses Auto wird weltweit äußerst beliebt und in vielen Ländern begeistert gekauft.",
+    "— Was meinen Sie, was würde in so einer Situation mit der Apple-Aktie passieren? Würde ihr Wert steigen oder fallen? [wir warten auf die Antwort des Kunden]",
+    "— Natürlich, Sie haben recht. Nehmen wir nun an, Sie hätten die Apple-Aktie gekauft, bevor das Unternehmen in den Automobilmarkt eingetreten ist — als der Preis noch niedrig war — und sie dann nach dem Anstieg aufgrund des großen Interesses am neuen Produkt verkauft.",
+    "— Auf diese Weise hätten wir gemeinsam Gewinn erzielt. Genau darum kümmert sich der Analyst: Er wird für Sie Prognosen und Analysen zu Ereignissen erstellen, die den Aktienkurs beeinflussen können, und Ihnen fertige Informationen mit vollständiger Begründung liefern.",
+    "— Welche Fragen haben Sie an dieser Stelle?",
+    "— Was denken Sie darüber?",
+    "— Ich rate Ihnen, diese Gelegenheit noch heute zu nutzen.",
+    "Wir haben ein Sonderangebot — es ist nicht nötig, mit 1000 Euro zu beginnen, ein Testbetrag von €233–€256 reicht aus.",
+    "— — —",
+    "— Wie stehen Sie dazu, in nächster Zeit 30 Euro zu verdienen?",
+    "— Ich denke, Sie haben bemerkt, dass die Weltlage derzeit ziemlich instabil ist, nicht wahr?",
+    "— In solchen Momenten möchte jeder Anleger sein Geld an einem sicheren Ort aufbewahren. Und häufig erweist sich eine Investition in Gold als die beste Lösung.",
+    "— Zu Beginn dieses Jahres lag der Goldpreis bei 2600 US-Dollar je Unze.",
+    "— Und wissen Sie, wie viel es jetzt kostet? — 3800 US-Dollar!",
+    "— Laut Prognosen der größten Analysezentren kann der Preis sogar auf 4000–4100 US-Dollar je Unze steigen.",
+    "— Das ist eine hervorragende Gelegenheit! Schon heute können Sie nicht nur sehen, wie man verdient, sondern tatsächlich 30 Euro erzielen — dank des Anstiegs des Goldpreises.",
+    "Und wenn er innerhalb weniger Stunden steigt — wäre das doch auch großartig, oder?",
+    "— Daher schlage ich vor, diese Chance gleich jetzt zu ergreifen.",
+    "Es reicht, Ihr Konto mit €233–€256 aufzuladen, um mit dem Verdienen zu beginnen.",
+    "— Was meinen Sie dazu?",
+    "— Ich rate Ihnen, diese Gelegenheit noch heute zu nutzen.",
+    "Wir haben ein Sonderangebot — es ist nicht nötig, mit 1000 Euro zu beginnen, ein Testbetrag von €233–€256 reicht aus."
+  ]
+},
+{
+  "id": "closing_payment",
+  "title": "ABSCHLUSS — AUFLADUNG",
+  "type": "snippet",
+  "text": [
+    "— Haben Sie noch weitere Fragen? Ich empfehle, Ihr Handelskonto gleich jetzt zu aktivieren!",
+    "Was meinen Sie dazu?",
+    "— Die Kontoaktivierung erfolgt in mehreren Schritten:",
+    "1) Wir melden uns gemeinsam in Ihrem persönlichen Bereich an, damit Sie die für die Aufladung erforderlichen Daten direkt eingeben können.",
+    "2) Anschließend müssen die Angaben sehr sorgfältig übertragen werden. Es ist äußerst wichtig, keine Ziffer oder Buchstaben auszulassen.",
+    "3) Nachdem Sie die Überweisung vorgenommen haben, senden Sie bitte die Bestätigung der erfolgreichen Banktransaktion, damit ich die Information an die Finanzabteilung weitergeben kann, um die Mittel auf dem Handelskonto gutzuschreiben.",
+    "Von welcher Bank planen Sie, Gelder auf Ihr Handelskonto zu überweisen?",
+    "Nutzen Sie die Mobile-App Ihrer Bank?",
+    "Ist ein Betrag von rund €233 bei dieser oder einer anderen Ihrer Banken verfügbar?",
+    "(WICHTIG: DIE ANTWORTEN DES KUNDEN AUFMERKSAM ANHÖREN)",
+    "Perfekt, gehen wir zum ersten Schritt über, einverstanden?"
+  ]
+},
+{
+  "id": "node",
+  "title": "ICH HABE KEIN GELD",
+  "type": "snippet",
+  "text": [
+    "— Sagen Sie mir bitte: Haben Sie derzeit keine freien Mittel oder handelt es sich um einen allgemeinen Mangel an Geld — zum Leben? [wir warten auf die Antwort des Kunden]",
+    "Wenn er sagt, er habe kein Geld zum Leben:",
+    "— Ihre Situation ist sehr schwierig. Ich würde Ihnen wirklich gerne helfen, sie zu lösen, denn ich war zu Beginn selbst in einer ähnlichen Lage. [persönliches Beispiel]",
+    "— Lassen wir die finanziellen Fragen vorerst beiseite. Auf wie viel Prozent schätzen Sie Ihre Chancen, hier zu verdienen? [wir warten auf die Antwort, wir schlagen 70–80 % vor]",
+    "— Ich verstehe, dass die übrigen 20 % Ihre Zweifel sind. Sagen Sie mir, was genau macht Sie unsicher?",
+    "Wenn er sagt, er sei sicher, habe aber kein Geld:",
+    "— Stellen Sie sich vor: Wenn Sie dringend €233–€256 auftreiben müssten, was würden Sie tun, um diesen Betrag zu beschaffen?",
+    "Wenn er sagt, er habe keine freien Mittel:",
+    "— Verstehen Sie unter „freien Mitteln“ Geld, dessen Verlust Sie nicht fürchten? [wir warten auf die Antwort des Kunden]",
+    "— Sagen Sie mir, auf welche Weise könnte man Ihrer Meinung nach hier Geld verlieren?"
+  ]
+},
+{
+  "id": "2_0",
+  "title": "ICH HABE KEIN GELD 2.0 (Präzisierung, Betonung, Angebot)",
+  "type": "snippet",
+  "text": [
+    "Präzisierung der finanziellen Situation:",
+    "Ich verstehe, dass die finanzielle Situation schwierig sein kann. Könnten Sie genauer erläutern, worin diese Schwierigkeiten bestehen? So kann ich Ihre Lage besser verstehen und die bestmögliche Lösung vorschlagen.",
+    "Welcher Betrag fehlt Ihnen? Wie lange wird es dauern, die finanzielle Frage zu klären? Wann erwarten Sie die nächsten Mittel (z. B. Gehalt, Rente, Unterstützung)?",
+    "[wenn der Kunde auf die erste Frage antwortet, es sei „ganz null“, ist es sehr wahrscheinlich, dass er nicht ganz ehrlich ist und Zweifel oder Misstrauen verbirgt;",
+    "auch die folgenden Antworten sollten sehr aufmerksam angehört werden, denn er könnte sagen, dass das Gehalt vor ein paar Tagen kam — das heißt, Geld ist vorhanden, aber er hat nicht vor zu beginnen]",
+    "Betonung der Bedeutung des Investierens:",
+    "Ich verstehe, dass es jetzt so wirken kann, als sei es nicht der beste Zeitpunkt zum Investieren. Betrachten wir es jedoch als Chance — nicht nur, Kapital zu erhalten, sondern auch zu vermehren. Zeit ist Geld: Je früher Sie beginnen, desto größer ist das Gewinnpotenzial.",
+    "Angebot exklusiver Konditionen:",
+    "Ich bin bereit, Ihnen exklusive Konditionen für neue Investoren anzubieten. Das ist eine einzigartige Möglichkeit, Zugang zu attraktiven Anlagechancen zu erhalten, die nicht allgemein verfügbar sind. [Bonus vorschlagen]",
+    "Schaffung eines Dringlichkeitsgefühls:",
+    "Die Marktsituation kann sich schnell ändern, daher ist es wichtig, ohne Verzögerung zu handeln. Während Sie noch nachdenken, könnten andere bereits profitieren. Jetzt zu investieren kann mehr Vorteile bringen als in der Zukunft.",
+    "Hervorhebung der Erfolge früherer Investoren:",
+    "Viele unserer Investoren haben mit kleinen Beträgen begonnen und besitzen heute bedeutende Portfolios. Ihre Erfolge sprechen für sich. Möchten auch Sie Ihre Chance nutzen?",
+    "Vorbereitung auf den Abschluss:",
+    "Wenn wir diese Frage schnell lösen, bin ich bereit, Ihnen alle notwendigen Informationen zu geben und zur Finalisierung überzugehen. Es sind nur wenige Schritte — und bald werden Sie die ersten Ergebnisse sehen.",
+    "Verwendung überzeugender Fakten:",
+    "Es ist zu bedenken, dass viele erfolgreiche Menschen ihren Wohlstand gerade den Investitionen verdanken. Es lohnt sich nicht, auf den „richtigen Moment“ zu warten — schaffen wir ihn gemeinsam jetzt."
+  ]
+},
+{
+  "id": "node_2",
+  "title": "ICH MÖCHTE DARÜBER NACHDENKEN",
+  "type": "snippet",
+  "text": [
+    "Nach meiner Erfahrung bedeutet es oft, wenn ein Kunde sagt, er wolle darüber nachdenken, dass er das Projekt nicht vollständig verstanden hat oder noch nicht davon überzeugt ist.",
+    "Sagen Sie mir bitte, was genau Sie beunruhigt? [wir warten auf die Antwort; wenn er sagt — über Risiken oder Sicherheit nachdenken — gehen wir zur Behandlung dieser Einwände über]",
+    "Sagen Sie mir — worüber genau möchten Sie nachdenken?",
+    "Was hat in meiner Präsentation gefehlt, damit Sie bereits jetzt eine Entscheidung treffen können?",
+    "Was hält Sie im Moment von einer Entscheidung ab?",
+    "Wie könnte sich das auf Ihre endgültige Entscheidung auswirken?",
+    "Natürlich haben Sie das Recht, darüber nachzudenken. Nach meiner Erfahrung werden die besten Entscheidungen jedoch getroffen, wenn man konkrete Ergebnisse sehen und verstehen kann, wie es in der Praxis funktioniert.",
+    "Ehrlich gesagt gibt es jetzt nicht viel zu grübeln — es sei denn, etwas löst bei Ihnen Zweifel aus? Was genau hindert Sie daran, jetzt zu entscheiden?"
+  ]
+},
+{
+  "id": "node_3",
+  "title": "ICH WILL MICH MIT EINEM FAMILIENMITGLIED BERATEN",
+  "type": "snippet",
+  "text": [
+    "Ich verstehe, dass Sie sich mit Ihrer Frau/Ihrem Mann beraten möchten, weil Sie noch nicht vollständig überzeugt sind, richtig? [wenn die Antwort Ja ist — präzisieren wir]",
+    "Worin sind Sie genau unsicher? Welche Zweifel haben Sie?",
+    "— wenn die Antwort Nein ist",
+    "Sagen Sie mir — geht es darum, dass Ihre Frau/Ihr Mann Ihre Entscheidung bestätigen oder ablehnen soll?",
+    "Wissen Sie, ich selbst würde keine Erlaubnis einholen, wenn ich nicht vollständig von meiner Wahl überzeugt wäre.",
+    "Für den Anfang können wir mit einer kleinen Summe starten — das ist sicher und zeigt, wie es in der Praxis funktioniert.",
+    "Schon heute können Sie den ersten Gewinn bei einem Weltereignis erzielen und … Ihrer Frau/Ihrem Mann/Ihrem Sohn ein Geschenk machen!",
+    "Haben Sie noch Bedenken? Sagen Sie mir genau, was Sie beunruhigt — ich erkläre es Ihnen gern."
+  ]
+},
+{
+  "id": "2_0_2",
+  "title": "BERATUNG MIT FAMILIENMITGLIED 2.0 (Logik)",
+  "type": "snippet",
+  "text": [
+    "Wechseln wir auf die Ebene der Logik:",
+    "Ich verstehe, dass Sie die Entscheidung gemeinsam mit einem nahestehenden Menschen treffen möchten — das ist völlig natürlich.",
+    "Erlauben Sie mir eine Frage: Wenn Sie Zahnschmerzen haben — an wen wenden Sie sich? An den Zahnarzt, richtig? Weil er der Fachmann ist.",
+    "Sagen Sie mir, kennt sich die Person, mit der Sie sich beraten möchten, mit Investitionen und dem Finanzmarkt aus? Wenn nicht — ist es besser, alle Fragen einem Fachkundigen zu stellen.",
+    "Deshalb bin ich hier, um zu helfen — ich beantworte gern alles und wenn Sie bereit sind, gehen wir zur Kontoaktivierung über. Einverstanden?"
+  ]
+},
+{
+  "id": "node_4",
+  "title": "LIZENZ",
+  "type": "snippet",
+  "text": [
+    "— Natürlich, kein Problem. Ich sende Ihnen jetzt die Unterlagen und wir sehen sie uns gemeinsam an. Ich bleibe in der Leitung, um sofort auf alle Fragen zu antworten.",
+    "— Bleiben wir in Kontakt, ich bleibe in der Leitung, um unmittelbar auf alle Fragen zu antworten.",
+    "— Übrigens — da Sie noch etwas prüfen möchten, verstehe ich, dass es gewisse Zweifel gibt.",
+    "— Sprechen wir offen: Wovor genau haben Sie Angst?",
+    "— Was könnte Ihrer Meinung nach in unserer Zusammenarbeit nicht funktionieren?",
+    "[wenn der Kunde beginnt, Einwände zu äußern — gehen wir zu deren Behandlung über, ohne etwas zu senden; und wenn der Kunde nach der Behandlung wieder die Lizenz anspricht — dann senden wir sie!]",
+    "**Zweite Option:**",
+    "— In Ordnung, ich habe nichts dagegen, Ihnen die Lizenz bereitzustellen.",
+    "— Aber sagen Sie mir — kann eine Lizenz allein eine Gewinn-Garantie sein?",
+    "— Zum Beispiel: Kann ein Fahrer mit Führerschein Ihnen eine sichere Fahrt garantieren?",
+    "— Sind Sie einverstanden, dass der Führerschein auch eine Art „Lizenz“ für den Fahrer darstellt?",
+    "— Bietet allein der Besitz eine Garantie?",
+    "— Leider ist es heutzutage nicht schwer, eine Lizenz — wie auch einen Führerschein — zu erhalten.",
+    "— Daher bietet die Lizenz allein keine hundertprozentige Sicherheit für Gewinn."
+  ]
+},
+{
+  "id": "node_5",
+  "title": "ICH MÖCHTE BEWERTUNGEN LESEN",
+  "type": "snippet",
+  "text": [
+    "— Sagen Sie mir, wie oft schreiben Sie persönlich Bewertungen im Internet? [Wir warten auf die Antwort des Kunden.]",
+    "— Und wer schreibt Ihrer Meinung nach am häufigsten Bewertungen? [Wir warten auf die Antwort des Kunden.]",
+    "— Wissen Sie, wenn ich jetzt tausend negative Kommentare über Ihr Auto schreiben würde — würde das bedeuten, dass das Auto nicht funktioniert und verkauft werden muss? [Denkpause.]",
+    "— Ich finde, nichts überzeugt besser als persönliche Erfahrung.",
+    "— Deshalb schlage ich vor — prüfen wir es gemeinsam beim heutigen Ereignis, und Sie werden die Ergebnisse mit eigenen Augen sehen.",
+    "**Andere Option:**",
+    "— Es ist eine großartige Idee, Bewertungen zu lesen — besonders, wenn wir wissen, wer sie geschrieben hat.",
+    "— Sagen Sie mir, wie unterscheiden Sie eine echte Bewertung von einer weniger verlässlichen?",
+    "— Stimmen Sie zu, dass Bewertungen gekauft werden können?",
+    "— Ist es Ihnen schon passiert, auf Bewertungen z. B. zu Ihrer eigenen Bank zu achten?",
+    "— Welchen Bewertungen schenken Sie mehr Aufmerksamkeit — den positiven oder den negativen?",
+    "— Und wenn man Ihnen Hunderte positive und hundert negative zeigt — welche würden Sie für glaubwürdiger halten?",
+    "— Ich finde, nichts überzeugt besser als persönliche Erfahrung.",
+    "— Daher schlage ich vor — prüfen wir es gemeinsam beim heutigen Ereignis, und Sie sehen die Ergebnisse selbst.",
+    "**Sie haben schlechte Bewertungen gelesen:**",
+    "Erklärung am Beispiel:",
+    "— Dass Sie sich mit Bewertungen vertraut gemacht haben, zeigt, dass Sie die Kooperationsentscheidung ernst nehmen — und das ist sehr gut.",
+    "— Dennoch spiegeln Bewertungen im Internet nicht immer die Realität wider.",
+    "— Viele davon werden von der Konkurrenz geschrieben.",
+    "— Am wichtigsten ist, was Sie persönlich — mithilfe der Plattform — überprüfen.",
+    "— Dann beurteilen Sie selbst, ob die Zusammenarbeit wie erwartet funktioniert.",
+    "— Bewertungen kann man schreiben, kopieren, bearbeiten — aber persönliche Erfahrung lässt sich nicht fälschen.",
+    "— Deshalb bitte ich — prüfen wir es gemeinsam, damit Sie die Ergebnisse selbst sehen können."
+  ]
+},
+{
+  "id": "node_6",
+  "title": "ICH MÖCHTE EINEN VERTRAG UNTERSCHREIBEN",
+  "type": "snippet",
+  "text": [
+    "— Mit mir persönlich unterschreiben Sie keinen Vertrag.",
+    "— Nach Beginn der Zusammenarbeit mit dem Analysten fragen Sie bitte nach dem Vertrag — sie werden für jeden Kunden individuell erstellt, unter Berücksichtigung der Kooperationsform, des erwarteten Gewinns, der Handelsrichtung und der finanziellen Situation.",
+    "[Wenn der Kunde darum bittet, einen leeren Vertrag zu senden — führen Sie zu einem begründeten Einwand und klären Sie, warum er diesen Vertrag braucht / IST UNSICHER ODER HAT ANGST / leiten Sie zum Thema des begründeten Einwands über (welche Vertragsform interessiert Sie?)]",
+    "**Zweite Option:**",
+    "— Ein Vertrag wird unterschrieben, wenn das Unternehmen Kundengelder in Verwaltung nimmt.",
+    "— In unserem Fall überlassen Sie uns Ihr Geld nicht — Sie eröffnen ein eigenes Konto und verwalten es selbst, gemäß unseren Empfehlungen.",
+    "— Sagen Sie mir, zu wie viel Prozent sind Sie sicher, dass wir gemeinsam Gewinn erzielen werden?"
+  ]
+},
+{
+  "id": "node_7",
+  "title": "RUFEN SIE MICH IN EINEM MONAT AN",
+  "type": "snippet",
+  "text": [
+    "Warum gerade in einem Monat?",
+    "Oder",
+    "Natürlich kann ich Sie in einem Monat anrufen, aber sagen Sie mir — was wird sich in dieser Zeit ändern?",
+    "Oder",
+    "Was hindert Sie daran, bereits jetzt zu beginnen?",
+    "Oder",
+    "Darf ich fragen, was Sie genau daran hindert, sofort zu starten?",
+    "[Wenn der Kunde sagt, er müsse: nachdenken, oder hätte später mehr Zeit — gehen wir zur Behandlung dieser Einwände über. Wenn der Kunde sagt, dass er erst in einem Monat Geld haben wird — ist unsere Aufgabe, die „Nachricht“ zu verkaufen, ihn für den Gewinn zu interessieren, eine Deadline zu setzen und einen Start zu günstigeren Bedingungen anzubieten.]"
+  ]
+},
+{
+  "id": "node_8",
+  "title": "SIE HABEN EINEN AKZENT",
+  "type": "snippet",
+  "text": [
+    "In unserem Land leben viele Menschen aus verschiedenen Teilen der Welt, daher ist es schwer, jemanden ganz ohne Akzent zu finden.",
+    "In über 3 Jahren meiner Arbeit in diesem Unternehmen hat mein Akzent jedoch nie daran gehindert, Menschen beim Erzielen von Gewinnen zu unterstützen.",
+    "Konzentrieren wir uns also auf das Ziel, für das Sie Ihre Registrierung hinterlassen haben, und sprechen wir über den potenziellen Gewinn, den Sie erzielen können.",
+    "[WIR STELLEN SOFORT EINE OFFENE FRAGE]"
+  ]
+},
+{
+  "id": "node_9",
+  "title": "DAS IST FÜR MICH KOMPLIZIERT",
+  "type": "snippet",
+  "text": [
+    "Ich verstehe, dass dies für Sie ein neues Feld ist und gewisse Bedenken entstehen können — wir alle haben einmal angefangen.",
+    "Gerade deshalb stellen wir Ihnen einen erfahrenen Analysten zur Seite, der Sie Schritt für Schritt durch den gesamten Prozess führt — wie ein Lehrer in der Schule.",
+    "Unser Unternehmen ist — ebenso wie Sie — nur an einer Sache interessiert — AM GEWINN!",
+    "Wir erheben die Provision erst, wenn Sie Ihre Gewinne auszahlen — wir sind also Partner und nicht nur ein Dienstleister.",
+    "Ich bin überzeugt, dass Sie mit uns Erfolg haben werden — und Sie werden sich schon bald selbst davon überzeugen!"
+  ]
+},
+{
+  "id": "node_10",
+  "title": "SENDEN SIE MIR ALLE INFORMATIONEN PER E-MAIL",
+  "type": "snippet",
+  "text": [
+    "— Wenn Sie die Informationen per E-Mail erhalten möchten, kann das bedeuten, dass noch nicht alles klar ist. Sagen Sie mir — welche Informationen fehlen oder was ruft Zweifel hervor?",
+    "— Was möchten Sie, dass ich zusätzlich erkläre?",
+    "[Wenn der Kunde antwortet, er wolle nichts präzisieren und alles sei klar — schlagen Sie dann vor, mit der Arbeit zu beginnen]",
+    "— Wenn alles bereits klar ist, schlage ich vor, den ersten Schritt zu machen.",
+    "Welchen Betrag haben Sie für den Beginn der Zusammenarbeit gewählt?"
+  ]
+},
+{
+  "id": "node_11",
+  "title": "ICH HABE KEINE ZEIT",
+  "type": "snippet",
+  "text": [
+    "Ich möchte einen sehr wichtigen Punkt hervorheben — die Kontoaktivierung dauert buchstäblich nur wenige Minuten, danach können Sie zu Ihren täglichen Aufgaben zurückkehren.",
+    "Oder",
+    "— Wir sprechen bereits seit über 20 Minuten, und wenn wir uns der Aktivierung des Handelskontos nähern, sagen Sie mir, dass Sie jetzt keine Zeit haben.",
+    "Sagen Sie mir offen — hält Sie etwas zurück? Wovor haben Sie genau Angst?"
+  ]
+},
+{
+  "id": "node_12",
+  "title": "BETRÜGER",
+  "type": "snippet",
+  "text": [
+    "Auf Grundlage welcher Informationen bestimmen Sie, welches Unternehmen ehrlich ist und welches nicht?",
+    "[Wir warten auf die Antwort des Kunden]",
+    "Worin sehen Sie genau einen möglichen Betrug?",
+    "[Wir warten auf die Antwort des Kunden]",
+    "Ich verlange keine persönlichen Daten von Ihnen — Sie selbst haben das Registrierungsformular hinterlassen, damit wir Sie kontaktieren.",
+    "Das Wichtigste: Die Gelder befinden sich auf Ihrem individuellen Konto und nur Sie haben Zugriff darauf. Wo sehen Sie hier einen Betrug?"
+  ]
+},
+{
+  "id": "node_13",
+  "title": "DAS IST FÜR MICH EINE GROSSE SUMME",
+  "type": "snippet",
+  "text": [
+    "Wenn €233–€256 für Sie ein zu hoher Betrag für den Start ist, sagen Sie mir — welcher Betrag wäre für Sie angenehm, um die Zusammenarbeit zu beginnen?",
+    "[Wenn der Kunde sagt, er sei nicht bereit zu beginnen und wolle nachdenken/lesen oder sich beraten — gehen wir zur Behandlung dieses Einwands über. Wenn der Kunde einen anderen, kleineren Betrag als €233–€256 nennt — führen wir den Dialog fort]",
+    "Warum gerade dieser Betrag? Weil es im Falle möglicher Schwierigkeiten keine große Belastung für Sie wäre? Sagen Sie es ehrlich.",
+    "[Wenn der Kunde sagt — JA, oder er wolle nachdenken/habe Angst — gehen wir zur Behandlung dieser Einwände über]"
+  ]
+},
+{
+  "id": "node_14",
+  "title": "WARUM INVESTIEREN SIE NICHT SELBST",
+  "type": "snippet",
+  "text": [
+    "Natürlich investiere ich — außerdem habe ich einen persönlichen Analysten, mit dem ich seit 4 Jahren mit dem Handel Geld verdiene.",
+    "Am häufigsten investieren wir in Kryptowährungen, aber wir eröffnen regelmäßig auch Positionen in anderen Anlageklassen.",
+    "Außerdem — nicht nur ich investiere, auch meine Angehörigen nehmen an diesem Projekt teil.",
+    "Ich rate Ihnen, die Zusammenarbeit zu beginnen — so können Sie verdienen wie ich.",
+    "Ich ermutige Sie, zu starten — Sie werden sehen, dass man hier wirklich gut verdienen kann."
+  ]
+},
+{
+  "id": "node_15",
+  "title": "WARUM KANN MAN NICHT MIT EINER KLEINEREN SUMME BEGINNEN",
+  "type": "snippet",
+  "text": [
+    "Warum beträgt der Mindestbetrag genau €233–€256 und nicht weniger?",
+    "Dieser Betrag ergibt sich aus der angenommenen sicheren Handelsstrategie. Wir eröffnen durchschnittlich 6–10 Positionen pro Tag, nutzen jedoch stets nur etwa 50 % der Mittel, um das Risiko zu minimieren.",
+    "Daher ist €233–€256 der Betrag, der einen effektiven und sicheren Investitionsstart ermöglicht — und tatsächlich arbeitet nur die Hälfte am Markt.",
+    "Natürlich können Sie einen Broker mit einer niedrigeren Einstiegsschwelle suchen, aber dort handeln Sie allein — ohne Unterstützung, ohne Strategie und ohne eine Person, die an Ihrem Ergebnis interessiert ist. Bei uns sind wir Partner: Verdienen Sie, verdienen wir.",
+    "Wenn Ihnen also Sicherheit und Gewinn wichtig sind, ist es am besten, sich in der Praxis davon zu überzeugen. Ich schlage vor, das Konto mit dem Mindestbetrag aufzuladen und schon heute den ersten Schritt zum Gewinn zu machen.",
+    "Oder",
+    "Fünf Jahre lang haben wir die Zusammenarbeit mit Kunden bei unterschiedlichen Beträgen getestet und sind zu dem Schluss gekommen, dass €233–€256 die sicherste Summe für den Start ist.",
+    "Ab genau diesem Betrag kann ich Ihnen die Zuversicht geben, dass alles gelingen wird.",
+    "Wenn Sie fragen „warum?“, erkläre ich:",
+    "dieser Betrag wird gemäß den Grundsätzen des Risikomanagements korrekt aufgeteilt: Ein Teil des Kapitals arbeitet am Markt, und der Rest bildet das sogenannte „Sicherheitskissen“.",
+    "Sagen Sie mir — stimmen Sie zu, dass man nicht die gesamte Summe an einem Ort investieren sollte?"
+  ]
+},
+{
+  "id": "node_16",
+  "title": "ICH BRAUCHE NICHTS / ES INTERESSIERT MICH NICHT MEHR",
+  "type": "snippet",
+  "text": [
+    "Wir haben alles Nötige für den Start besprochen.",
+    "Wir haben eine Vorgehensweise gewählt, die die Zielerreichung beschleunigt.",
+    "Auch die Sicherheit der Mittel wurde besprochen — es liegt also nicht an mangelndem Interesse.",
+    "Sagen Sie es offen — wovor haben Sie Angst?"
+  ]
+},
+{
+  "id": "node_17",
+  "title": "ICH MÖCHTE INS BÜRO KOMMEN",
+  "type": "snippet",
+  "text": [
+    "Im Großen und Ganzen haben wir bereits alles besprochen, was Sie für den Beginn der Zusammenarbeit benötigen.",
+    "Sie haben eine Vorgehensweise gewählt, die Ihnen helfen kann, Ihr finanzielles Ziel schneller zu erreichen, als Sie erwartet haben.",
+    "Wir haben auch die Sicherheit der Mittel besprochen, daher nehme ich an, dass es nicht an mangelndem Interesse liegt.",
+    "Sagen Sie es offen — wovor haben Sie Angst?"
+  ]
+},
+{
+  "id": "node_18",
+  "title": "WO IST IHR UNTERNEHMEN REGISTRIERT",
+  "type": "snippet",
+  "text": [
+    "Wir sind ein internationales Unternehmen, mit einem Büro auch in Polen — das Hauptbüro in Krotoszyn.",
+    "ELITE HOLDINGS LIMITED, Company number 12304784, 288 Church Street, Blackpool, Lancashire, England, FY1 3QA , Mazowieckie, 8. November 2019",
+    "In der Praxis kann ein offizieller Antrag bei der NBP etwa 150 € kosten und bis zu 14 Arbeitstage dauern.",
+    "👉 Wenn sich der Projektname vom Firmennamen unterscheidet — nach Name und Company Number im Internet prüfen."
+  ]
+},
+{
+  "id": "node_19",
+  "title": "WELCHE GARANTIEN",
+  "type": "snippet",
+  "text": [
+    "Wenn Sie nach Garantien fragen, bedeutet das, dass Sie sich vor etwas schützen möchten. Sagen Sie mir — wovor genau haben Sie Angst?",
+    "[WIR STELLEN FRAGEN / ERHALTEN ANTWORTEN, WIR ANTWORTEN NICHT FÜR DEN KUNDEN! Wenn der Kunde murmelt und nicht klar antworten kann, fragen Sie:]",
+    "Stellen Sie sich vor, was in der Zusammenarbeit mit uns passieren kann.",
+    "[WIR STELLEN FRAGEN / WARTEN AUF DIE ANTWORT, OHNE DEM KUNDEN OPTIONEN VORZUGEBEN]",
+    "Nur vernünftige Menschen stellen diese Frage — sagen Sie mir, welche konkreten Garantien Sie interessieren?",
+    "[Wenn der Kunde auf Vertrag, Lizenz oder persönliches Treffen verweist — verwenden wir die entsprechenden Texte. Wenn der Kunde nicht präzise antworten kann — verwenden wir die folgende Version]",
+    "Die wichtigste Garantie in unserer Zusammenarbeit ist das gemeinsame Interesse. Überlegen Sie: Welchen Vorteil hätten wir, Sie in eine Situation zu bringen, in der Sie Geld verlieren, wenn unser Gewinn 10 % Ihres Profits beträgt?",
+    "In unserem Unternehmen ist absolut jeder daran interessiert, dass unsere Zusammenarbeit Jahre andauert."
+  ]
+},
+{
+  "id": "node_20",
+  "title": "ICH GLAUBE NICHT DARAN",
+  "type": "snippet",
+  "text": [
+    "Woran genau glauben Sie nicht? [Wir warten auf die Antwort des Kunden]",
+    "Glauben Sie nicht, dass man hier wirklich verdienen kann? [Wir warten auf die Antwort des Kunden + wir können auf das Interesse des Unternehmens verweisen.]",
+    "Vertrauen Sie nicht? Oder fürchten Sie vielleicht etwas?"
+  ]
+},
+{
+  "id": "node_21",
+  "title": "ICH GLAUBE NICHT, DASS MAN AM FINANZMARKT VERDIENEN KANN",
+  "type": "snippet",
+  "text": [
+    "Man muss nicht an die Investmentbranche „glauben“ — man kann es in der Praxis überprüfen.",
+    "Zum Beispiel: Gold ist preislich stabil, während die Landeswährung vor Wahlen gewöhnlich an Wert verliert.",
+    "All diese Ereignisse lassen sich prognostizieren — es genügt, unseren Analysten zu vertrauen.",
+    "Sie sind Profis auf ihrem Gebiet, und ihr Hauptziel ist das maximale Wachstum Ihres Kapitals und der gemeinsame Gewinn, denn genau darauf basiert unser Einkommen.",
+    "Wenn Sie Gewinn erzielen und ihn auf Ihr Konto auszahlen — glauben Sie dann, dass es funktioniert?",
+    "In diesem Fall schlage ich vor, diesen Schritt zu tun, das Ergebnis in der Praxis zu sehen und erst danach die reale Machbarkeit zu bewerten.",
+    "Ich rate Ihnen, die Zusammenarbeit zu beginnen und schon heute Ihren ersten Gewinn zu erzielen!"
+  ]
+},
+{
+  "id": "node_22",
+  "title": "ICH HABE ANGST",
+  "type": "snippet",
+  "text": [
+    "Ich verstehe Ihre Befürchtungen — das ist völlig natürlich. Jeder, der etwas Neues beginnt, hat Ängste.",
+    "Aber stellen Sie sich eine Frage: Wovor genau haben Sie Angst? Vor dem Verlust von Mitteln?",
+    "Genau deshalb lassen wir Sie nicht allein. Sie erhalten die Unterstützung eines Analysten, der Sie Schritt für Schritt begleitet.",
+    "Außerdem — wir verdienen nur, wenn Sie verdienen, daher haben wir ein gemeinsames Interesse an Ihrem Erfolg.",
+    "Sie investieren nicht die gesamte Summe auf einmal — wir arbeiten nur mit einem Teil des Kapitals, der Rest dient als Absicherung.",
+    "Das ist eine durchdachte und sichere Risikomanagement-Strategie.",
+    "Daher schlage ich vor: Probieren wir es. Nur die Praxis zerstreut alle Zweifel."
+  ]
+},
+{
+  "id": "node_23",
+  "title": "ICH VERTRAUE NICHT",
+  "type": "snippet",
+  "text": [
+    "Ich verstehe Ihre Befürchtungen — das ist völlig natürlich. Jeder, der etwas Neues beginnt, hat Ängste.",
+    "Aber stellen Sie sich eine Frage: Wovor genau haben Sie Angst? Vor dem Verlust von Mitteln?",
+    "Genau deshalb lassen wir Sie nicht allein. Sie erhalten die Unterstützung eines Analysten, der Sie Schritt für Schritt begleitet.",
+    "Außerdem — wir verdienen nur, wenn Sie verdienen, daher haben wir ein gemeinsames Interesse an Ihrem Erfolg.",
+    "Sie investieren nicht die gesamte Summe auf einmal — wir arbeiten nur mit einem Teil des Kapitals, der Rest dient als Absicherung.",
+    "Das ist eine durchdachte und sichere Risikomanagement-Strategie.",
+    "Daher schlage ich vor: Probieren wir es. Nur die Praxis zerstreut alle Zweifel."
+  ]
+},
+{
+  "id": "node_24",
+  "title": "ICH BIN MIR NICHT SICHER / ICH BIN NICHT BEREIT",
+  "type": "snippet",
+  "text": [
+    "Ich verstehe Ihre Befürchtungen — das ist völlig natürlich. Jeder, der etwas Neues beginnt, hat Ängste.",
+    "Aber stellen Sie sich eine Frage: Wovor genau haben Sie Angst? Vor dem Verlust von Mitteln?",
+    "Genau deshalb lassen wir Sie nicht allein. Sie erhalten die Unterstützung eines Analysten, der Sie Schritt für Schritt begleitet.",
+    "Außerdem — wir verdienen nur, wenn Sie verdienen, daher haben wir ein gemeinsames Interesse an Ihrem Erfolg.",
+    "Sie investieren nicht die gesamte Summe auf einmal — wir arbeiten nur mit einem Teil des Kapitals, der Rest dient als Absicherung.",
+    "Das ist eine durchdachte und sichere Risikomanagement-Strategie.",
+    "Daher schlage ich vor: Probieren wir es. Nur die Praxis zerstreut alle Zweifel."
+  ]
+},
+{
+  "id": "node_25",
+  "title": "WANN KANN ICH DAS GELD ABHEBEN",
+  "type": "snippet",
+  "text": [
+    "Wir sagen nicht von uns aus, wann die Auszahlung erfolgt. Wenn der Kunde fragt:",
+    "Bitte besprechen Sie alle Fragen zur Abhebung der Mittel mit Ihrem Experten.",
+    "Zumal Sie die ersten erzielten Gewinne genau mit seiner Hilfe abheben — er wird Ihnen Schritt für Schritt zeigen, wie das geht. Einverstanden?",
+    "Wenn der Kunde darauf besteht, ob er jederzeit abheben kann:",
+    "Die Abhebung der Mittel ist jederzeit möglich. Ihre Hauptaufgabe ist jetzt jedoch, Gewinn zu erzielen, und wenn Sie sehen möchten, wie das in der Praxis funktioniert, wird der Experte Ihnen sicher helfen."
+  ]
+},
+{
+  "id": "node_26",
+  "title": "ICH HABE BEREITS VERLOREN",
+  "type": "snippet",
+  "text": [
+    "Ich verstehe Sie vollkommen — das ist eine sehr unangenehme Situation, und natürlich verstehe ich Ihre Befürchtungen.",
+    "Sagen Sie mir, wovor genau haben Sie Angst?",
+    "Oder",
+    "Ich verstehe Ihre Befürchtungen sehr gut — das ist wirklich eine bedauerliche Situation.",
+    "Sagen Sie mir, was genau beunruhigt Sie?",
+    "[Danach gehen wir entweder zu den vom Kunden vorgebrachten Einwänden über oder erklären noch einmal, wo sich die Mittel befinden und wie die Zusammenarbeit mit dem Analysten abläuft.]"
+  ]
+},
+{
+  "id": "node_27",
+  "title": "ICH HABE ANGST, ZU VERLIEREN",
+  "type": "snippet",
+  "text": [
+    "Im Handelsprozess:",
+    "Natürlich kann an der Börse alles passieren — besonders, wenn man allein handelt. In einem solchen Fall ist es sehr leicht, Verluste zu erleiden, denn Risiko besteht immer.",
+    "Unser Hauptziel ist jedoch, Sie zu stabilen Gewinnen zu führen, denn auch wir verdienen nur, wenn Sie verdienen!",
+    "Wir verdienen sowohl bei steigenden als auch bei fallenden Preisen.",
+    "Unsere Analysten zeigen fortlaufend die Marktrichtung an und helfen, Positionen zum richtigen Zeitpunkt zu eröffnen.",
+    "Außerdem hilft Ihnen der Experte, sogenannte Begrenzungen (Stop-Loss/Take-Profit) einzustellen, die Ihre Mittel schützen.",
+    "Ich schlage vor, die Zusammenarbeit gleich jetzt zu beginnen — damit Sie noch heute Ihren ersten Gewinn sehen!",
+    "Bei der Auszahlung:",
+    "Es handelt sich ausschließlich um Ihr individuelles Handelskonto. Sagen Sie mir: Ist es schon einmal vorgekommen, dass bei einer Überweisung zwischen Ihren Bankkonten Gelder „verschwunden“ sind?",
+    "Hier ist es genau dasselbe — Sie tätigen einfach eine Überweisung zwischen Ihren Konten. DAS IST VÖLLIG SICHER!",
+    "Daher schlage ich vor, die Zusammenarbeit gleich jetzt zu beginnen, damit Sie noch heute Ihren ersten Gewinn sehen!",
+    "Wir erhalten unsere Provision erst in dem Moment, in dem Sie Ihre Gewinne abheben.",
+    "Überlegen Sie: Welchen Vorteil hätten wir, wenn es Ihnen nicht gelänge, Geld abzuheben, wo wir in diesem Fall doch ebenfalls nichts verdienen würden?",
+    "Wir verdienen nur, wenn Sie verdienen. Daher sind wir voll und ganz an Ihrem Erfolg interessiert!"
+  ]
+},
+{
+  "id": "node_28",
+  "title": "WELCHE RISIKEN GIBT ES",
+  "type": "snippet",
+  "text": [
+    "Ich verstehe, woran Sie denken. Ich arbeite seit Langem in diesem Bereich und weiß, dass sich jeder vernünftige Mensch für das Thema Risiko interessiert. Fragen wie:",
+    "Was ist, wenn ich verliere?",
+    "oder",
+    "Welche Garantien habe ich?",
+    "— sind eine natürliche Reaktion. Schließlich geht es um Ihr Geld, daher sind solche Bedenken völlig gerechtfertigt.",
+    "Ich wäre ein schlechter Berater, wenn ich behaupten würde, dass es kein Risiko gibt — das wäre einfach nicht wahr.",
+    "Wir bauen die Beziehung auf Vertrauen auf, deshalb sage ich es klar: Risiko besteht immer, denn niemand hat vollständige Kontrolle über den Finanzmarkt.",
+    "Unvorhersehbare Situationen können überall auftreten, doch der Schlüssel liegt im umsichtigen Risikomanagement.",
+    "Wie man sagt: „Wer Informationen besitzt, besitzt Macht“. Und wir verfügen über diese Informationen.",
+    "Daher nutzen wir eine Reihe von Instrumenten, die helfen, das Risiko auf ein Minimum zu reduzieren.",
+    "Eines der wichtigsten ist der sogenannte Stop-Loss. Haben Sie diesen Begriff schon gehört?",
+    "(Stop-Loss) — ist ein Mechanismus, der die Position automatisch schließt, wenn sie ein bestimmtes Verlustniveau erreicht.",
+    "Zum Beispiel: Wenn wir den Stop-Loss auf 2 US-Dollar setzen, schließt das System die Position selbst bei einem plötzlichen Markteinbruch mit einem maximalen Verlust von 2 US-Dollar. Das ist ein sehr wirksamer Schutz.",
+    "Darüber hinaus arbeiten wir stets mit mehreren Positionen gleichzeitig. Selbst wenn eine Position Verlust bringt, können die anderen Gewinn abwerfen.",
+    "Dadurch ist es möglich, täglich Einkommen zu generieren — mal höher, mal niedriger, aber regelmäßig."
+  ]
+},
+{
+  "id": "node_29",
+  "title": "WARUM GIBT ES KEINE AUFLADUNG AUF DER PLATTFORM",
+  "type": "snippet",
+  "text": [
+    "Früher war diese Funktion auf unserer Plattform verfügbar, aber wir haben sie vollständig abgeschafft — und ich erkläre gleich warum!",
+    "Wir haben dies zu Ihrer Sicherheit getan. Wir haben diese Einzahlungsart entfernt, um zu vermeiden, dass Nutzer Kartendaten wie Nummer, Ablaufdatum oder CVC-Code eingeben müssen.",
+    "Derzeit erfolgt die Kontoaktivierung ausschließlich über die Finanzabteilung. Da wir in Polen tätig sind, müssen wir gegenüber dem Finanzamt abrechnen.",
+    "Unsererseits führen wir die Währungsumrechnung durch, deklarieren Ihren Betrag und buchen ihn anschließend auf Ihr Handelskonto.",
+    "Außerdem übernehmen wir alle Provisionskosten — was diese Methode für Sie vorteilhafter macht, nicht wahr?"
+  ]
+},
+{
+  "id": "node_30",
+  "title": "WARUM ERSCHEINT DIE ÜBERWEISUNG AUF DEN NAMEN DES ROTEN KREUZES?",
+  "type": "snippet",
+  "text": [
+    "Der offizielle Zahlungspartner verfügt über mehrere Konten, einige davon auf Stiftungen (z. B. Rotes Kreuz) — für Transparenz und rechtliche Konformität.",
+    "Der Name des Zahlungsempfängers ist eine technische Frage; die Gelder werden Ihrem individuellen Handelskonto gutgeschrieben.",
+    "Ähnlich wie bei Tickets/Buchungen — auf dem Kontoauszug kann eine andere juristische Bezeichnung erscheinen.",
+    "Der Kanal ist offiziell und von den Banken akzeptiert; das Guthaben wird mit dem gewählten Betrag aufgeladen."
+  ]
+}
+    ],
   "edges": [
     {
       "from": "barriers_router",
@@ -1749,6 +1765,7 @@
 }
 
     }
+
 
 
 
