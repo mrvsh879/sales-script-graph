@@ -1,0 +1,1661 @@
+{
+  "version": 1,
+  "start": "greeting",
+  "nodes": [
+    {
+      "id": "greeting",
+      "title": "Початок розмови",
+      "type": "greeting",
+      "text": [
+        "- Buongiorno, Signora/Signore [ім’я клієнта]. Mi chiamo [твоє ім’я]. Sono il suo assistente personale. Era interessato/a a un reddito aggiuntivo nel progetto [назва проекту], corretto?."
+      ],
+      "transitions": [
+        { "label": "Перейти до барʼєрів", "to": "barriers_router" },
+        { "label": "ПЕРЕЙТИ ДО СБОРУ", "to": "experience_q" }
+      ]
+    },
+    {
+      "id": "barriers_router",
+      "title": "Стартові барʼєри",
+      "type": "router",
+      "text": [
+        "Виберіть барʼєр або натисніть «Далі», якщо барʼєрів немає."
+      ],
+      "transitions": [
+        { "label": "НАДІШЛІТЬ ВСЕ НА ПОШТУ", "to": "bar_email" },
+        { "label": "НЕ РЕЄСТРУВАВСЯ", "to": "bar_not_registered" },
+        { "label": "ЦЕ НЕ МОЄ", "to": "bar_not_mine" },
+        { "label": "НІЧОГО НЕ ПОТРІБНО", "to": "bar_nothing_needed" },
+        { "label": "Я ЗАЙНЯТИЙ", "to": "bar_busy" },
+        { "label": "ЦЕ ДИТИНА", "to": "bar_child" },
+        { "label": "НЕМАЄ ЧАСУ", "to": "bar_no_time" },
+        { "label": "ЦЕ ВИПАДКОВО", "to": "bar_accidental" },
+        { "label": "НЕ ЦІКАВО", "to": "bar_not_interesting" },
+        { "label": "ЦЕ ОБМАН", "to": "bar_scam" },
+        { "label": "Далі", "to": "experience_q" }
+      ]
+    },
+    {
+      "id": "bar_email",
+      "title": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:",
+      "type": "snippet",
+      "text": [
+        " Dopo la nostra conversazione, le invierò tutte le informazioni, ma per poterle inviare qualcosa, devo prima sapere con cosa si è già familiarizzato/a.",
+        " Purtroppo, non mi occupo dell'invio di messaggi di massa.",
+        " Purtroppo, non posso inviarle la mia professionalità via e-mail :)",
+        " Capisco la sua posizione. C'è solo una questione: probabilmente ha già decine di tali messaggi. Li apre davvero e li analizza, o lo dice solo per rimandare la conversazione?",
+        " Se l'argomento è interessante, sarà più facile spiegarlo tutto ora, dal vivo. Mi dica: le interessa di più la redditività o la sicurezza?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+    {
+      "id": "bar_not_registered",
+      "title": "НЕ РЕЄСТРУВАВСЯ:",
+      "type": "snippet",
+      "text": [
+        "La prego di controllare: quasi l'80% dei nostri clienti all'inizio dice di non essersi registrati. Poi si ricordano che si interessavano solo a un reddito aggiuntivo e hanno lasciato i dati di contatto automaticamente. Forse è successo lo stesso con lei.",
+        "E sinceramente: ha mai considerato un reddito passivo in cui non deve fare nulla ogni giorno da solo?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+    {
+      "id": "bar_not_mine",
+      "title": "ЦЕ НЕ МОЄ:",
+      "type": "snippet",
+      "text": [
+        "Quasi tutti lo dicono finché non si informano meglio. \"Non è per me\" è come dire \"non sono un autista\" senza mai sedersi al volante. Qui non si tratta di capire tutti i termini, ma di vedere se funziona per lei. Diciamolo chiaro: cosa è più importante per lei, che i soldi stiano fermi o che generino profitto senza rischio di perdita?",
+        "Capisco, suona come \"non è per me\", ma mi permetta di chiedere: ha già provato e ha deciso che non è adatto? O semplicemente non ha ancora avuto l'occasione di approfondire?",
+        "Perché se non investe, non significa che non funzioni. Mi dica sinceramente: quale forma di moltiplicazione del capitale è accettabile per lei: immobili, business, depositi?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+    {
+      "id": "bar_nothing_needed",
+      "title": "НІЧОГО НЕ ПОТРІБНО:",
+      "type": "snippet",
+      "text": [
+        "Hm… Strano, non la vedo nella lista di Forbes… Posso chiederle perché non è ancora tra i più ricchi?", 
+        "\"Non mi serve niente\" suona più come \"Per ora non voglio cambiare nulla\". E se esistesse un modo che non richiede alcuno sforzo da parte sua e genera reddito, sarebbe comunque non interessante?",
+        "\"Non mi serve niente\" spesso nasconde preoccupazioni o dubbi. Cosa esattamente la preoccupa riguardo al tema del reddito aggiuntivo?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+    {
+      "id": "bar_busy",
+      "title": "Я ЗАЙНЯТИЙ:",
+      "type": "snippet",
+      "text": [
+        "La capisco perfettamente: per non rubarle troppo tempo, parliamo brevemente e ognuno tornerà alle sue faccende. [задаємо питання]",
+        "Vedo che è occupato/a e lo apprezzo. Il mio obiettivo non è rubarle tempo, ma proporle qualcosa di davvero valido. Mi dica: cosa la preoccupa di più riguardo al reddito aggiuntivo?",
+        "La capisco perfettamente, dal tono della voce sento che è una persona molto importante e occupata. Ma siamo onesti: la mia proposta non richiederà molto tempo e sono convinto che possa esserle utile. Mi dica, da quanto tempo si interessa al tema degli investimenti come opportunità di guadagno aggiuntivo?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+    {
+      "id": "bar_child",
+      "title": "ЦЕ ДИТИНА:",
+      "type": "snippet",
+      "text": [
+        "Ottimo che in famiglia qualcuno si interessi al reddito: è un buon segno!",
+        "Poiché i dati sono suoi, parliamo insieme. Il tema dell'aumento del reddito di solito interessa ogni genitore."
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+    {
+      "id": "bar_no_time",
+      "title": "НЕМАЄ ЧАСУ:",
+      "type": "snippet",
+      "text": [
+        "Rispetto le persone che valorizzano il tempo, io sono qui solo per pochi minuti. [задаємо питання]",
+        "La capisco perfettamente: come si dice, il tempo è denaro. Ma proprio la mia proposta può portarle un guadagno aggiuntivo e richiederà pochissimo tempo.",
+        "Il tempo è una risorsa preziosa e lo rispetto. Tuttavia, le mie informazioni possono diventare per lei una fonte di reddito aggiuntivo, senza rubarle molto tempo."
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+    {
+      "id": "bar_accidental",
+      "title": "ЦЕ ВИПАДКОВО:",
+      "type": "snippet",
+      "text": [
+        "È una persona molto fortunata se incappa casualmente nelle industrie più redditizie. E le è capitato casualmente di familiarizzare con le nostre informazioni?",
+        "Il caso capita. Ma se proprio questo tema ha attirato la sua attenzione, forse non è un caso. Mi permetta di spiegare brevemente, e poi valuterà lei stesso se è adatto."
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+    {
+      "id": "bar_not_interesting",
+      "title": "НЕ ЦІКАВО:",
+      "type": "snippet",
+      "text": [
+        "Capisco che ora potrebbe non essere interessante. Ma forse mancano solo i dettagli? Cosa dovrebbe sentire sul reddito per decidere che vale la pena continuare la conversazione?",
+        "\"Non è interessante\" per ora. E se il reddito potesse aumentare del 10–15% al mese, senza sforzo aggiuntivo, non vorrebbe comunque sapere come è possibile?",
+        "Capisco che ora potrebbe non essere interessante. Ma c'è stato un momento in cui la pubblicità ha attirato la sua attenzione: cosa l'ha colpita allora?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+    {
+      "id": "bar_scam",
+      "title": "ЦЕ ОБМАН:",
+      "type": "snippet",
+      "text": [
+        "Capisco la sua mancanza di fiducia: al giorno d'oggi ci sono tante offerte che i dubbi sono completamente comprensibili. Ma facciamo così: le spiego esattamente di cosa si tratta, e lei valuterà se vale la pena procedere. Sinceramente, senza pressioni.",
+        "Lo scetticismo è del tutto normale, specialmente al giorno d'oggi. Proprio per questo non faccio proposte casuali: spiego solo di cosa si tratta, e lei decide se approfondire. Voglio solo mostrarle come funziona, e la decisione spetta a lei."
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "barriers_router" },
+        { "label": "➡ Далі", "to": "experience_q" }
+      ]
+    },
+    {
+      "id": "experience_q",
+      "title": "ДОСВІД - ПИТАННЯ",
+      "type": "question",
+      "text": [
+        "[imię klienta], Cosa ha attirato la sua attenzione nella nostra offerta, tanto da decidere di registrarsi?",
+        "Da quanto tempo si interessa a un reddito aggiuntivo?",
+        "È la sua prima esperienza, o ha già provato a collaborare con altre aziende?"
+      ],
+      "transitions": [
+        { "label": "НЕМАЄ ДОСВІД", "to": "exp_no" },
+        { "label": "Є ДОСВІД", "to": "exp_yes" }
+      ]
+    },
+    {
+      "id": "exp_no",
+      "title": "НЕМАЄ ДОСВІДУ:",
+      "type": "snippet",
+      "text": [
+        "È fantastico che sia un principiante in questo campo. Non è il primo né l'ultimo nostro cliente senza esperienza.",
+        " Come si sente prima di iniziare qualcosa di nuovo?",
+        "(можливо людина хвилюється, або має питання які соромиться задати, ВАЖЛИВО ПІДТРИМАТИ )",
+        "Non importa, abbiamo un team di specialisti che la consiglieranno in ogni fase della nostra collaborazione.",
+        "Perché la nostra azienda è interessata a una collaborazione a lungo termine e redditizia con lei.",
+        "Propongo di conoscerci un po', affinché capisca chi siamo e troviamo le migliori condizioni per lei. È d'accordo?"
+      ],
+      "transitions": [
+        { "label": "До етапу «Робота»", "to": "work" }
+      ]
+    },
+    {
+      "id": "exp_yes",
+      "title": "Є ДОСВІД:",
+      "type": "snippet",
+      "text": [
+        "Dalla mia esperienza, non è la prima persona che viene da noi con esperienza",
+        "Posso dire che nella nostra azienda non importa che esperienza abbia, l'importante è che i nostri clienti ottengano ciò che vogliono.",
+        "Propongo di conoscerci un po', affinché capisca chi siamo e troviamo le migliori condizioni per lei. È d'accordo?",
+        "БІЛЬШЕ ПИТАНЬ ПРО ДОСВІД НА ЦЬОМУ ЕТАПІ МИ НЕ СТАВИМО!!!"
+      ],
+      "transitions": [
+        { "label": "До етапу «РОБОТА»", "to": "work" }
+      ]
+    },
+    {
+      "id": "work",
+      "title": "РОБОТА",
+      "type": "question",
+      "text": [
+        "РОБОТА:",
+        "- Quanto tempo potrebbe dedicare alla collaborazione?", 
+        "- Quanto è difficile lavorare secondo un tale orario?",
+        "- Mi dica, in quale settore lavora??",
+        "- (ЯКЩО ЗАПИТАННЯ «ДЛЯ ЧОГО ВАМ ЦЕ ПОТРІБНО?» , МИ ВИКОРИСТОВУЄМО ВІДПОВІДЬ)",
+        "LO CHIEDO PER SAPERE COME POSSO SPIEGARGLIELO AL MEGLIO E SCEGLIERE LE MIGLIORI CONDIZIONI PER LEI. ANCH'IO NON HO LAVORATO DA SUBITO IN QUESTO SETTORE",
+        "- Da quanto tempo lavora nel suo settore?", 
+        "- Lavora da solo/a o per qualcun altro?",
+        "- Ho molti clienti nel suo settore e so che è un lavoro duro. Per me le persone che lavorano come lei sono esempi di brave persone familiari. Sono lieto/a di conoscerla.",
+        "- Quale guadagno aggiuntivo vorrebbe ottenere?",
+        " ЯКЩО ВІН СКАЖЕ «Я НЕ ЗНАЮ», НАВЕДІТЬ ПРИКЛАД:",
+        "NEL NOSTRO SETTORE È IMPORTANTE AVERE UN OBIETTIVO. PER ESEMPIO, HO UN CLIENTE DI NOME DARIUS, CHE HA LAVORATO NEL SETTORE EDILE PER 17 ANNI. ORA HA 53 ANNI.",  
+        "DOPO UN ANNO DI COLLABORAZIONE CON NOI HA FONDATO LA SUA AZIENDA E SI OCCUPA DI FINITURE INTERNE, ANCHE SE HA INIZIATO ESATTAMENTE COME LEI.", 
+        "- QUAL È IL SUO OBIETTIVO?",
+        "ЯКЩО ЛЮДИНА В ВІЦІ (50+) АБО ПЕНСІОНЕР:",
+        "- Davvero? Mi sorprende, forse pratica sport da tempo.",
+        " Devo notare che abbiamo alcune restrizioni di età.",
+        "- E se non è un segreto, quanti anni ha?",
+        "- ЯКЩО ВІН НЕ РОЗКРИВАЄ СВІЙ ТОЧНИЙ ВІК",
+        " Non mi è comodo fare queste domande, mi permetta di chiedere in modo diverso.",
+        "- Ha già 25 anni? – Devo assolutamente chiederlo))",
+        "- Ha già festeggiato il suo 75esimo compleanno?",
+        "- ЯКЩО ВІК НЕ ВІДПОВІДАЄ ПРАВИЛАМ, ТРЕБА ПРОДАТИ УМОВИ",
+        "- Cosa faceva prima di andare in pensione?",
+        "- Come passa il suo tempo libero?",
+        "- Vive da solo/a o ha qualcuno che l'aiuta?"
+      ]
+    },
+    {
+      "id": "family",
+      "title": "СІМ'Я",
+      "type": "question",
+      "text": [
+        "СІМ’Я:",
+        "- Riusce a mantenere la sua famiglia da solo/a?",
+        "- E quanti membri della famiglia mantiene, se non è un segreto?",  
+        "ВАЖЛИВО: ЯКЩО КЛІЄНТ НЕ ХОЧЕ ГОВОРИТИ НА ЦІ ТЕМИ, ТО ТРЕБА ПЕРЕЙТИ ДАЛІ ДО НАСТУПНОЇ ТЕМИ.",
+        "- Ha figli?",
+        "- È riuscito/a a crescere degli aiutanti?",
+        "- E come reagisce la sua famiglia al suo interesse?",
+        "Mi fa molto piacere che per lei, come per me, la famiglia sia un grande valore. Sarò lieto/a di aiutarla a realizzare i suoi piani."
+      ]
+    },
+    {
+      "id": "back_to_exp",
+      "title": "ПОВЕРТАЄМОСЬ ДО ДОСВІДУ",
+      "type": "question",
+      "text": [
+        "ПОВЕРТАЄМОСЬ ДО ДОСВІДУ:",
+        "(ЯКЩО КЛІЄНТ РАНІШЕ КАЗАВ ЩО ДОСВІДУ НЕМАЄ-ТО ПРОПУСКАЄМО ЦІЙ РОЗДІЛ)",
+        "— Ha menzionato prima di avere esperienza nel settore degli investimenti. Mi dica di più:",
+        "– Ha negoziato da solo/a o tramite una banca o un'azienda di brokeraggio?",
+        "– Su quali asset ha negoziato?",
+        "– Cosa era più importante per lei nella scelta dell'azienda?",
+        "– Quanto è riuscito/a a guadagnare in totale?",
+        "– Secondo lei, perché non ha funzionato? [Perché il reddito era così basso?]",
+        "→ Le dirò perché: perché era senza esperienza. Lo capisco, perché anch'io sono stato/a in una situazione simile. Dico solo: tutti acquisiscono esperienza con il tempo.",
+        "ЯКЩО КЛІЄНТ З НЕГАТИВНИМ ДОСВІДОМ, ПРАЦЮВАВ РАНІШЕ З ФІРМОЮ БРОКЕРОМ:",
+        "(зaуважуємо, та спробуємо все з'ясувати)",
+        "– Come è successo che non ha funzionato?",
+        "ЯКЩО КЛІЄНТ ГОВОРИТЬ, ЩО ФІРМА БУЛА ШАХРАЙСЬКОЮ, УТОЧНЮЄМО:",
+        "– Perché pensa che fossero truffatori? Solo perché non ha guadagnato nulla?",
+        "ЯКЩО КЛІЄНТ ГОВОРИТ – \"TАК\"", 
+        "(говоримо об абсурді ще твердження, можна навести приклад):",
+        "– Se ha avuto problemi con la collaborazione con qualche azienda, non significa necessariamente che fosse disonesta. Non tutto funziona subito. Alcune persone comprano un'auto e dopo una settimana hanno un incidente: non è colpa del produttore.",
+        "– È d'accordo con me? Forse non ha ricevuto abbastanza supporto ed esperienza, e l'azienda non ha fornito l'aiuto adeguato per un principiante?", 
+        " In tal caso, si tratta davvero di un problema di qualità del servizio. Per questo nella nostra azienda supportiamo i nostri clienti, sia principianti che esperti, offrendo supporto completo e tutti gli strumenti necessari.",
+        "– Come capisco, ha negoziato con un broker o usando un robot?",
+        "– Mi dispiace molto che abbia avuto questa esperienza. Ma nonostante tutto, continua a cercare opportunità di guadagno online, quindi vuole trovare qualcosa di adatto.",
+        "– Mi dica, cosa esattamente sta cercando?",
+        "– Potrei dirle dove si possono guadagnare soldi, se lo vuole ancora, ma le spiegherò come farlo, passo dopo passo."
+      ]
+    },
+    {
+      "id": "goal",
+      "title": "Ціль",
+      "type": "question",
+      "text": [
+        "ЦІЛЬ:",
+        "– Dalla mia esperienza, i clienti vengono da noi per guadagnare per un'auto, un appartamento, pagare un prestito o sbarazzarsi dell'ufficiale giudiziario. E qual è il suo obiettivo generale nella nostra collaborazione?",
+        "ЯКЩО, ВІДПОВІВ ЩО Є КРЕДИТ УТОЧНИТИ",
+        "– È un prestito bancario o non bancario?",
+        "– Quanto le rimane da pagare?",
+        "– Riusce a pagare regolarmente le rate, o ci sono mesi in cui non può pagare?",
+        "– Spero che non abbia un ufficiale giudiziario?",
+        "[може запитати навіщо вам стільки інформації, про борги та кредити, пояснюємо, що ми не хочемо щоб були проблеми виведенням коштів які він з нами заробить, тому что пристав, кредитор може самостійно забрати кошти з рахунку]",
+        "Якщо каже, що не кожен місяць платить або несвоєчасно ЗВЕРТАЄМОСЬ ДО ТІМА",
+        "Якщо каже, що кредит поза банком, уточнюємо:",
+        "– Ha un prestito da Bocian, Kasa Stefczyka, Vivus, Provident?",
+        "Якщо каже „Tak”:",
+        "– Quanto le rimane da pagare?",
+        "[УТОЧНИТИ У ТИМА ЩО РОБИТИ ДАЛІ]",
+        "ЯКЩО ВІДПОВІДАЄ, ЩО ХОТІВ БИ КУПИТИ БУДИНОК/МАШИНУ/КВАРТИРУ:",
+        "[дізнатись більш детально]",
+        "– Mi dica, ha già scelto l'appartamento o l'auto che vuole comprare?",
+        "– Quanto costerà la casa o l'auto che vuole comprare?",
+        "– Perché vuole comprare una casa o un'auto?",
+        "Можливо, клієнту потрібна машина для роботи або дім, тому що він живе на орендованій квартирі, і це для нього незручно — це ключова відповідь, яка дозволить виявити потребу клієнта!",
+        "– È riuscito/a a risparmiare per realizzare questo obiettivo? [Quanto è riuscito/a a risparmiare?]",
+        "– Quanto manca ancora da accumulare?",
+        "[Може запитати навіщо вам стільки інформації скажіть це жартома мені справді дуже цікаво у нас багато клієнтів і в кожного свої цілі і знаєте іноді вони бувають дуже незвичні]",
+        "Sulla base di ciò che mi ha detto, ho una proposta ideale per lei!"
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "ПРЕЗЕНТАЦІЯ",
+      "type": "router",
+      "text": [
+        "ПРЕЗЕНТАЦІЯ:"
+      ]
+    },
+    {
+      "id": "pres_noexp",
+      "title": "Фінансовий ринок — немає досвіду",
+      "type": "snippet",
+      "text": [
+        "ФІНАНСОВИЙ РИНОК( НЕМАЄ ДОСВІДУ )",
+        "Cosa sa o ha sentito sui mercati finanziari?",
+        "Ottimo. Ora le spiegherò più in dettaglio come si guadagna sul mercato finanziario.",
+        "Tutto si basa sulla speculazione: compriamo un asset a un prezzo e lo vendiamo a un altro, guadagnando sulla differenza di prezzo.",
+        "In parole semplici: compriamo a basso prezzo, vendiamo a alto prezzo. È chiaro?",
+        "Sul mercato finanziario abbiamo quattro direzioni principali su cui possiamo negoziare. Possiamo guadagnare sulle differenze di prezzo di asset come:",
+        "– Coppie di valute (ad es. EUR/PLN),",
+        "– Materie prime (ad es. petrolio, oro),",
+        "– Azioni (ad es. Tesla, Orlen),",
+        "– Criptovalute.",
+        "Forse la interessa di più un tipo specifico di mercato?",
+        "Non ci concentriamo su un solo asset, perché non si può negoziare ogni giorno sullo stesso strumento e ottenere lo stesso profitto. Se appare un'opportunità di guadagno, ovviamente la sfruttiamo.",
+        "Per questo vorrei presentarle una proposta ideale di collaborazione con la nostra azienda!"
+      ]
+    },
+    {
+      "id": "pres_exp",
+      "title": "Фінансовий ринок — є досвід",
+      "type": "question",
+      "text": [
+        "Poiché ha già esperienza, sicuramente capisce come funziona il mercato finanziario, vero?"
+      ]
+    },
+    {
+      "id": "pres_exp_yes",
+      "title": "Пояснення як з досвідом",
+      "type": "snippet",
+      "text": [
+        "Ottimo. Forse la incuriosisce un tipo di mercato più specifico?",
+        "Non ci concentriamo su un solo asset: non si può negoziare ogni giorno sullo stesso strumento e guadagnare lo stesso profitto.",
+        "Se appare un'opportunità per guadagnare, ovviamente la sfruttiamo.",
+        "Per questo vorrei presentarle una proposta ideale di collaborazione con la nostra azienda!"
+      ]
+    },
+    {
+      "id": "pres_exp_no",
+      "title": "Пояснення як для без досвіду",
+      "type": "snippet",
+      "text": [
+        "ФІНАНСОВИЙ РИНОК( НЕМАЄ ДОСВІДУ )",
+        "Cosa sa o ha sentito sui mercati finanziari?",
+        "Ottimo. Ora le spiegherò più in dettaglio come si guadagna sul mercato finanziario.",
+        "Tutto si basa sulla speculazione: compriamo un asset a un prezzo e lo vendiamo a un altro, guadagnando sulla differenza di prezzo.",
+        "In parole semplici: compriamo a basso prezzo, vendiamo a alto prezzo. È chiaro?",
+        "Sul mercato finanziario abbiamo quattro direzioni principali su cui possiamo negoziare. Possiamo guadagnare sulle differenze di prezzo di asset come:",
+        "– Coppie di valute (ad es. EUR/PLN),",
+        "– Materie prime (ad es. petrolio, oro),",
+        "– Azioni (ad es. Tesla, Orlen),",
+        "– Criptovalute.",
+        "Forse la interessa di più un tipo specifico di mercato?",
+        "Non ci concentriamo su un solo asset, perché non si può negoziare ogni giorno sullo stesso strumento e ottenere lo stesso profitto. Se appare un'opportunità di guadagno, ovviamente la sfruttiamo."
+      ]
+    },
+    {
+      "id": "trade_with_expert",
+      "title": "ТОРГІВЛЯ З ЕКСПЕРТОМ",
+      "type": "snippet",
+      "text": [
+        "ТОРГІВЛЯ З ЕКСПЕРТОМ",
+        "Secondo lei, come avviene il trading con un esperto?",
+        "[чекаємо на відповідь. Хвалимо, якщо намагається відповідати.]",
+        "L'esperto è una persona con oltre 10 anni di esperienza sui mercati finanziari. Le verrà assegnato un esperto del genere, che la guiderà per tutto il periodo di collaborazione.", 
+        "L'esperto aiuterà, consiglierà, spiegherà tutto passo dopo passo. Fornisce informazioni pronte su quale asset comprare o vendere, quanto si può guadagnare e in quanto tempo.",
+        "Può stare completamente tranquillo/a: è davvero molto semplice. Basta premere un pulsante per aprire una transazione e poi chiuderla.",
+        "Quali domande ha per me a questo stadio?",
+        "Sicuramente ha sentito che nel mondo accadono eventi che permettono di guadagnare bene sul mercato. Ad esempio, quando Tesla introduce un nuovo modello di auto, le azioni di quella azienda crescono rapidamente e proprio su questo si può guadagnare!",
+        "Ha mai sentito parlare di qualcosa del genere? [чекаємо на відповідь]",
+        "• Якщо відповідь так „Tak” – продовжуємо далі по скрипту.",
+        "• Якщо „Nie” – наводимо ще один приклад, схожий на попередній.",
+        "Ottimo! Perché proprio in queste situazioni l'esperto la informerà, spiegando esattamente quanto si può guadagnare su tale transazione e come condurla.",
+        "A volte tali eventi permettono ai nostri clienti di guadagnare anche diverse centinaia di euro in un solo giorno di trading, e a volte anche diverse migliaia.",
+        "Proprio per questo, collaborando con un esperto, può guadagnare fino al 50% al mese sull'importo investito.",
+        "Ad esempio: se inizia con 230 euro, alla fine del primo mese potrebbe avere 345 euro sul conto.",
+        "Dove 230 euro è l'importo investito, e 115 euro è il suo profitto.",
+        "Un tale profitto è soddisfacente per lei?"
+      ]
+    },
+    {
+      "id": "client_questions",
+      "title": "ПИТАННЯ КЛІЄНТІВ",
+      "type": "router",
+      "text": [],
+      "transitions": [
+        { "label": "ІНТЕРЕС ФІРМИ", "to": "interest_company" },
+        { "label": "Якщо клієнт питає про ризики", "to": "risks" },
+        { "label": "Якщо клієнт питає про місцезнаходження коштів", "to": "fund_location" },
+        { "label": "Пропустити", "to": "entry_amounts" }
+      ]
+    },
+    {
+      "id": "interest_company",
+      "title": "Інтерес фірми",
+      "type": "snippet",
+      "text": [
+        "— [ім’я клієнта], secondo lei, qual è il nostro interesse nella collaborazione con il cliente?",
+        "La nostra azienda guadagna una commissione non sull'importo investito, ma sul profitto che lei ottiene.",
+        "Preleviamo automaticamente il 10% di commissione sul profitto al momento del prelievo dei fondi dal conto di trading.",
+        "Questo significa che più guadagna lei, più guadagniamo anche noi.",
+        "Secondo lei, il 10% di commissione è una condizione equa?",
+        "E proprio su questo si basa il nostro interesse: che i nostri clienti guadagnino il più possibile.",
+        "Perché allora guadagna anche l'azienda, quindi si può dire che costruiamo un business comune insieme al cliente.",
+        "— Ha qualche domanda per me a questo stadio?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "client_questions" },
+        { "label": "➡ Далі", "to": "platform_demo" }
+      ]
+    },
+    {
+      "id": "risks",
+      "title": "Ризики — відповідь",
+      "type": "snippet",
+      "text": [
+        "Якщо клієнт питає про ризики:",
+        "— Secondo lei, quali rischi potrebbero esserci in una tale collaborazione? [чекаємо відповідь, з’ясовуємо чому клієнт так вважає]",
+        "— Se il cliente apre transazioni da solo, senza aiuto di un esperto e senza esperienza, c'è un alto rischio che tale transazione porti a una perdita.",
+        "E che senso ha una collaborazione se il cliente non guadagna nulla o è in perdita?",
+        "Non ha senso: né per il cliente né per l'azienda. È solo una perdita di tempo.",
+        "Come ho già detto, la nostra azienda guadagna solo quando guadagna il cliente.",
+        "Per questo l'esperto aiuta a scegliere la transazione giusta: quella su cui si può guadagnare.",
+        "Nessuno apre o chiude transazioni al posto suo: lo fa lei stesso/a, ma con l'aiuto dell'esperto."
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "client_questions" },
+        { "label": "➡ Далі", "to": "platform_demo" }
+      ]
+    },
+    {
+      "id": "fund_location",
+      "title": "Місцезнаходження коштів",
+      "type": "snippet",
+      "text": [
+        "Якщо клієнт питає про місце знаходження коштів:",
+        "Abbiamo la nostra piattaforma di trading, su cui si troverà il suo conto di trading.",
+        "La nostra piattaforma è molto simile al banking mobile.",
+        "In quale banca è cliente? [Santander, Millennium, Pekao S.A.]",
+        "Sulla nostra piattaforma tutto appare simile al banking:",
+        "c'è la sezione prelievi, la sezione per cambiare password, ricevere feedback, sezione finanziaria, contatto con il supporto tecnico, pagina principale e anche il pannello dove avviene il trading.",
+        "Il suo conto di trading è protetto da una password privata.",
+        "Né io né l'esperto abbiamo accesso a questo conto, perché la sicurezza del cliente è la cosa più importante.",
+        "— Ha qualche domanda per me?"
+      ],
+      "transitions": [
+        { "label": "⬅ Назад", "to": "client_questions" },
+        { "label": "➡ Далі", "to": "platform_demo" }
+      ]
+    },
+    {
+      "id": "platform_demo",
+      "title": "Демонстрація платформи",
+      "type": "snippet",
+      "text": [
+        "ДЕМОНСТРАЦІЯ ПЛАТФОРМИ:",
+        "— Le propongo di accedere al suo account personale, affinché possa vedere con i suoi occhi dove saranno i suoi soldi e come funziona tutto. Va bene?",
+        "— Dove è meglio inviare il link: alla sua e-mail o usa qualche messenger? Se sì, quali?",
+        "[ЯКЩО НА ПОШТУ, ПЕРЕВІРЯЄМО ПОШТУ ЧИ ВІН/ВОНА ЗАЛИШИВ ПІД ЧАС РЕЄСТРАЦІЇ. ЯКЩО НА WHATSAPP/VIBER — ФІКСУЄМО СВІЙ НОМЕР, ЩОБ КЛІЄНТ ДОДАВ ВАС, А В РІДКІСНИХ ВИПАДКАХ ДОДАЄМО САМІ.]",
+        "[КОПІЮЄМО ЦЕ ПОВІДОМЛЕННЯ ТА ВІПРАВЛЯЄМО КЛІЄНТУ З ДАНИМИ ЛОГУВАННЯ]",
+        "Gentile Cliente!",
+        "Benvenuto e grazie per la registrazione.",
+        "Di seguito troverà i suoi dati per accedere all'account personale:",
+        "E-mail (login): [wstawić e-mail klienta]",
+        "Password: Aa123456@",
+        "Per accedere al suo account, segua il link seguente: [wstawić link do konta]",
+        "👉 Accedi all'account",
+        "Sto inviando il messaggio proprio ora, mi dica se riesce a controllare i messaggi durante la conversazione?",
+        "[ВАЖЛИВО ПИТАТИ, ЩО КЛІЄНТ БАЧИТЬ, ДЕ САМЕ БАЧИТЬ І ЯКЩО НЕ БАЧИТЬ ТО СПОКІЙНО ВЕСТИ ЩОБ І ВИ І КЛІЄНТ НЕ НЕРВУВАВСЯ]",
+        "[ЯКЩО ВИ НЕ ЗНАЄТЕ, ЩО РОЗПОВІДАТИ КЛІЄНТУ В КАБІНЕТІ ПОЗВІТЬ ТІМА]"
+      ]
+    },
+    {
+      "id": "entry_amounts",
+      "title": "СУМИ ДЛЯ ВХОДУ У РИНОК",
+      "type": "question",
+      "text": [
+        "СУМИ ДЛЯ ВХОДУ НА РИНОК:",
+        "— Mi dica, [ім’я клієнта], ha già avuto occasione di familiarizzare con gli importi da cui possiamo iniziare la collaborazione?",
+        "— Offriamo ai nostri clienti la scelta di uno dei tre portafogli iniziali:",
+        "• 1104 euro (millecentoquattro),",
+        "• 552 euro (cinquecentocinquantadue),",
+        "• 230-253 euro (duecentotrenta - duecentocinquantatré).",
+        "— Quale di questi importi sarebbe più comodo per lei?",
+        "— Capisco, quest'importo è disponibile ora sul suo conto bancario?"
+      ]
+    },
+    {
+      "id": "objections_root",
+      "title": "ЗАПЕРЕЧЕННЯ",
+      "type": "router",
+      "text": [],
+      "transitions": [
+        { "label": "НЕМАЄ ГРОШЕЙ", "to": "node" },
+        { "label": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)", "to": "2_0" },
+        { "label": "ХОЧУ ПОДУМАТИ", "to": "node_2" },
+        { "label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’Ї", "to": "node_3" },
+        { "label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’ Ї 2.0 (логіка)", "to": "2_0_2" },
+        { "label": "ЛІЦЕНЗІЯ", "to": "node_4" },
+        { "label": "ХОЧУ ПОЧИТАТИ ВІДГУКИ", "to": "node_5" },
+        { "label": "ХОЧУ ПІДПИСАТИ ДОГОВІР", "to": "node_6" },
+        { "label": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ", "to": "node_7" },
+        { "label": "У ВАС АКЦЕНТ", "to": "node_8" },
+        { "label": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ", "to": "node_9" },
+        { "label": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ", "to": "node_10" },
+        { "label": "НЕМАЄ ЧАСУ (коротка версія)", "to": "node_11" },
+        { "label": "ШАХРАЇ", "to": "node_12" },
+        { "label": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ", "to": "node_13" },
+        { "label": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ", "to": "node_14" },
+        { "label": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ", "to": "node_15" },
+        { "label": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО", "to": "node_16" },
+        { "label": "ХОЧУ ПРИЇХАТИ В ОФІС", "to": "node_17" },
+        { "label": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА", "to": "node_18" },
+        { "label": "ЯКІ ГАРАНТІЇ", "to": "node_19" },
+        { "label": "Я В ЦЕ НЕ ВІРЮ", "to": "node_20" },
+        { "label": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ", "to": "node_21" },
+        { "label": "БОЮСЬ", "to": "node_22" },
+        { "label": "НЕ ДОВІРЯЮ", "to": "node_23" },
+        { "label": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ", "to": "node_24" },
+        { "label": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ", "to": "node_25" },
+        { "label": "Я ВЖЕ ВТРАЧАВ", "to": "node_26" },
+        { "label": "БОЮСЯ ВТРАТИТИ", "to": "node_27" },
+        { "label": "ЯКІ Є РИЗИКИ", "to": "node_28" },
+        { "label": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ", "to": "node_29" },
+        { "label": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?", "to": "node_30" },
+        { "label": "Давайте завтра", "to": "tomorrow" }
+      ]
+    },
+    {
+      "id": "tomorrow",
+      "title": "Давайте завтра — приклад + новина ПЛ",
+      "type": "snippet",
+      "text": [
+        "ПРИКЛАД + НОВИНА (PL):",
+        "— Discutiamone un po' più in dettaglio. C'è un'azienda come Apple: sicuramente la conosce bene, vero? [чекаємо відповідь клієнта]",
+        "— Ottimo. Immaginiamo che Apple abbia prodotto l'auto elettrica più moderna. Questa auto diventa estremamente popolare in tutto il mondo e viene acquistata volentieri in molti paesi.",
+        "— Secondo lei, cosa succederebbe alle azioni di Apple in questa situazione? Il loro valore salirebbe o scenderebbe? [чекаємо відповідь клієнта]",
+        "— Ovviamente, ha ragione. Ora supponiamo che abbia comprato azioni Apple prima che l'azienda entrasse nel mercato delle auto, quando il prezzo era ancora basso, e poi le abbia vendute dopo l'aumento di prezzo causato dal grande interesse per il nuovo prodotto.",
+        "— In questo modo, insieme a lei, avremmo ottenuto un profitto. Proprio questo è il lavoro dell'analista, che preparerà per lei previsioni e analisi degli eventi che possono influenzare il corso delle azioni. L'analista le fornirà informazioni pronte con una giustificazione completa.",
+        "— Quali domande ha a questo stadio?",
+        "— Cosa ne pensa?",
+        "— Le consiglio di approfittare di questa opportunità oggi.",
+        "Abbiamo un'offerta speciale: non deve iniziare da 1000 euro, basta una somma di prova di 230–253 euro.",
+        "— — —",
+        "— Come si sente riguardo alla possibilità di guadagnare 30 euro nel prossimo futuro?",
+        "— Penso che abbia notato che la situazione nel mondo è ora abbastanza instabile, vero?",
+        "— In tali momenti, ogni investitore vuole avere i suoi soldi in un posto sicuro. E proprio allora la migliore soluzione è spesso investire in oro.",
+        "— All'inizio di quest'anno il prezzo dell'oro era di 2600 dollari per oncia.",
+        "— E sa quanto costa ora? — 3800 dollari!",
+        "— Secondo le previsioni dei maggiori centri analitici, il prezzo potrebbe salire fino a 4000–4100 dollari per oncia.",
+        "— È un'ottima opportunità! Già oggi può non solo vedere come si guadagna, ma anche fare effettivamente 30 euro grazie all'aumento del prezzo dell'oro.",
+        "E se sale in poche ore, sarebbe comunque ottimo, vero?",
+        "— Per questo propongo di approfittare di questa chance ora.",
+        "Basta finanziare il suo conto con 230–253 euro per iniziare a guadagnare.",
+        "— Cosa ne pensa?",
+        "— Le consiglio di approfittare di questa opportunità oggi.",
+        "Abbiamo un'offerta speciale: non deve iniziare da 1000 euro, basta una somma di prova di 230–253 euro."
+      ]
+    },
+    {
+      "id": "closing_payment",
+      "title": "ЗАКРИТТЯ — ПОПОВНЕННЯ",
+      "type": "snippet",
+      "text": [
+        "— Ha ancora qualche domanda? Le consiglio di attivare il suo conto di trading ora!", 
+        "Cosa ne pensa?",
+        "— L'attivazione del conto avviene in diverse fasi:", 
+        "1) Insieme accederemo al suo account personale, affinché possa presentare direttamente la richiesta per i dati personali necessari per finanziare il conto.",
+        "2) Poi deve copiare i dati con molta attenzione. È estremamente importante non omettere nessuna cifra o lettera.",
+        "3) Dopo aver effettuato il trasferimento, fornisca la conferma dell'operazione bancaria riuscita, affinché possa trasmettere questa informazione al dipartimento finanziario per accreditare i fondi sul conto di trading.", 
+        "Da quale banca intende trasferire i fondi sul suo conto di trading?", 
+        "Usa l'app mobile della sua banca?  ",
+        "L'importo di 230 euro è disponibile in questa o in un'altra sua banca?", 
+        "(ВАЖЛИВО СЛУХАТИ УВАЖНО ВІДПОВІДІ КЛІЄНТА)",
+        "Ottimo, passiamo al primo passo, va bene?"
+      ]
+    },
+    {
+      "id": "node",
+      "title": "НЕМАЄ ГРОШЕЙ",
+      "type": "snippet",
+      "text": [
+        "— Mi dica, non ha fondi liberi in questo momento, o si tratta di mancanza di denaro in generale, per vivere? [чекаємо відповідь клієнта]",
+        "Якщо говорить, що немає на життя:",
+        "— Ha una situazione molto difficile. Vorrei aiutarla a risolverla, perché anch'io sono stato/a in una situazione simile all'inizio. [свій приклад]",
+        "— Lasciamo da parte le questioni finanziarie. Su una scala da 1 a 100, quanto valuta le sue probabilità di guadagnare qui? [чекаємо відповідь, підказуємо 70–80%]",
+        "— Capisco, il restante 20% sono i suoi dubbi. Mi dica, cosa la rende insicuro/a?",
+        "Якщо говорить, що впевнений/а, але немає грошей:",
+        "— Immagini: se dovesse urgentemente trovare 230–253 euro, cosa farebbe per reperire questa somma?",
+        "Якщо говорить, що немає вільних:",
+        "— Per \"fondi liberi\" intende denaro che non ha paura di perdere? [чекаємо відповідь клієнта]",
+        "— Mi dica: secondo lei, in che modo potrebbe perdere denaro qui?"
+      ]
+    },
+    {
+      "id": "2_0",
+      "title": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)",
+      "type": "snippet",
+      "text": [
+        "Уточнення фінансової ситуації:",                                                                                                                                                               
+        "Capisco che la situazione finanziaria possa essere difficile. Potrebbe precisare su cosa consistono esattamente queste difficoltà? In questo modo potrò capire meglio la sua situazione e proporre la soluzione migliore possibile.",
+        "Di quanto denaro le manca? Quanto tempo sarà necessario per risolvere la questione finanziaria? Quando si aspetta di ricevere i prossimi fondi (ad es. stipendio, pensione, sussidio)?", 
+        "[якщо клієнт відповідає на перше запитання, що повний нуль, найімовірніше, клієнт не до кінця чесний і за цим приховує свої сумніви або недовіру,",
+        "відповіді на наступні запитання теж треба слухати дуже уважно, адже клієнт може сказати, що зарплату дали кілька днів тому, а отже, гроші в нього є, але розпочинати роботу він не збирається]",
+        "Підкреслення важливості інвестування:",                                                                                                                                          
+        "Capisco che ora possa sembrare che non sia il momento migliore per gli investimenti. La prego però di vederlo come un'opportunità: non solo per preservare, ma anche per moltiplicare il suo capitale. Il tempo è denaro: prima inizia, maggiore sarà il potenziale di guadagno.",
+        "Пропозиція ексклюзивних умов:",                                                                                                                                       
+        "Sono pronto/a a proporle condizioni esclusive destinate ai nuovi investitori. È un'opportunità unica per accedere a possibilità di investimento attraenti che non sono ampiamente disponibili. [Запропонувати бонус]",
+        "Створення відчуття терміновості:",                                                                                                                             
+        "La situazione sul mercato può cambiare rapidamente, quindi è importante agire senza indugio. Mentre lei ci pensa ancora, altri potrebbero già approfittarne. Investire ora può portare più benefici che in futuro.",
+        "Підкреслення успіхів попередніх інвесторів:",                                                                                                                           
+        "Molti dei nostri investitori hanno iniziato con piccole somme, e oggi sono proprietari di portafogli significativi. I loro successi dimostrano che anche con un investimento iniziale di 150 euro è possibile ottenere risultati impressionanti."
+      ]
+    },
+    {
+      "id": "node_2",
+      "title": "ХОЧУ ПОДУМАТИ",
+      "type": "snippet",
+      "text": [
+        "Capisco che vuole pensarci, è una decisione importante. Mi dica, su cosa esattamente vuole riflettere?",
+        "Cosa le manca per prendere una decisione oggi?",
+        "Immagini di iniziare oggi e di vedere i primi risultati tra una settimana. Non sarebbe più convincente di aspettare?"
+      ]
+    },
+    {
+      "id": "node_3",
+      "title": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’Ї",
+      "type": "snippet",
+      "text": [
+        "Capisco, è una decisione importante e consultarsi con la famiglia è una buona idea. Con chi esattamente vuole parlarne?",
+        "Cosa pensa che direbbe questa persona riguardo alla possibilità di guadagnare un reddito aggiuntivo?",
+        "Propongo di discutere insieme i dettagli, così potrà condividere con la sua famiglia informazioni complete."
+      ]
+    },
+    {
+      "id": "2_0_2",
+      "title": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’Ї 2.0 (логіка)",
+      "type": "snippet",
+      "text": [
+        "Capisco che consultarsi con la famiglia sia importante. Mi dica, questa persona è esperta di investimenti o ha esperienza in questo campo?",
+        "Se non è un esperto, non sarebbe meglio verificare tutto in pratica insieme a noi, per poi discutere i risultati concreti con la sua famiglia?",
+        "Propongo di fare il primo passo oggi, così avrà qualcosa di concreto da mostrare."
+      ]
+    },
+    {
+      "id": "node_4",
+      "title": "ЛІЦЕНЗІЯ",
+      "type": "snippet",
+      "text": [
+        "Capisco che la licenza sia importante per lei. La nostra azienda opera in conformità con le normative vigenti, registrata come ELITE POLSKA sp. z o.o., KRS: 0000646268.",
+        "Vuole che le fornisca maggiori dettagli sulla nostra registrazione o preferisce concentrarsi su come possiamo aiutarla a guadagnare?"
+      ]
+    },
+    {
+      "id": "node_5",
+      "title": "ХОЧУ ПОЧИТАТИ ВІДГУКИ",
+      "type": "snippet",
+      "text": [
+        "- Mi dica: quanto spesso le capita di scrivere personalmente recensioni su internet? [Чекаємо на відповідь клієнта.]",                                                                                                                                                                                                        
+        "- E secondo lei, chi scrive più spesso recensioni? [Чекаємо на відповідь клієнта.]",                                                                         
+        "- Sa, se ora scrivessi mille commenti negativi sulla sua auto, significherebbe che l'auto non funziona e deve venderla? [Пауза, щоб задумався.]",                                                                                
+        "- Penso che niente convinca meglio dell'esperienza personale.",                                                                              
+        "- Per questo la incoraggio: proviamolo insieme con l'evento di oggi e vedrà i risultati con i suoi occhi.",
+        "**Інший варіант:**",
+        "– È un'ottima idea leggere le recensioni, specialmente quando sappiamo chi le ha scritte.",
+        "– Mi dica, come distingue una recensione vera da una meno credibile?",
+        "– È d'accordo che le recensioni si possono comprare?",
+        "– Le è capitato di prestare attenzione alle recensioni, ad esempio, sulla sua banca?",
+        "– A quali recensioni presta più attenzione: positive o negative?",
+        "– E se le presentassi centinaia di recensioni positive e cento negative, quali considererebbe più credibili?",
+        "– Penso che niente convinca meglio dell'esperienza personale.",
+        "– Per questo la incoraggio: proviamolo insieme con l'evento di oggi e vedrà i risultati con i suoi occhi.",
+        "**Прочитав погані відгуки:**",
+        "Пояснення на прикладі:",
+        "– Il fatto che si sia informato/a sulle recensioni mostra che prende seriamente la decisione di collaborare, e questo è molto buono.",
+        "– Bisogna però ricordare che le recensioni su internet non sempre riflettono la realtà.",
+        "– Molte di esse vengono scritte dalla concorrenza.",
+        "– La cosa più importante è ciò che verifica personalmente usando la piattaforma.",
+        "– Allora lei stesso/a valuterà se la collaborazione funziona come si aspetta.",
+        "– Le recensioni si possono scrivere, copiare, modificare, ma l'esperienza non si può falsificare.",
+        "– Per questo la prego: proviamolo insieme, affinché possa vedere i risultati da solo/a."
+      ]
+    },
+    {
+      "id": "node_6",
+      "title": "ХОЧУ ПІДПИСАТИ ДОГОВІР",
+      "type": "snippet",
+      "text": [
+        "- Con me personalmente non firma un contratto.",
+        "- Dopo l'inizio della collaborazione con l'analista, chieda del contratto: vengono preparati individualmente per ogni cliente, tenendo conto del tipo di collaborazione, dei profitti attesi, della direzione del trading e della situazione finanziaria.",
+        "[Якщо клієнт просить вислати порожній договір, ви маєте вивести на обґрунтоване заперечення, і зрозуміти, чому йому потрібен цей договір / НЕ  ВПЕВНЕНА АБО БОЇТЬСЯ / відводьте в тему обґрунтованого заперечення (якої форми договір вас цікавить?)]",
+        "**Другий варіант:**",
+        "– Il contratto viene firmato nel caso in cui l'azienda prenda in gestione i fondi del cliente.",
+        "– Nel nostro caso, non ci trasferisce i suoi soldi: apre un proprio conto e lo gestisce da solo/a, usando le nostre raccomandazioni.",
+        "– Mi dica, in che percentuale è sicuro/a che riuscirà a guadagnare con noi?"
+      ]
+    },
+    {
+      "id": "node_7",
+      "title": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ",
+      "type": "snippet",
+      "text": [
+        "E perché proprio tra un mese?",                                                                                                                                              
+        "Або",
+        "Certo, posso chiamarla tra un mese, ma mi dica: cosa cambierà in quel tempo?",
+        "Або",
+        "Cosa impedisce di iniziare ora?",
+        "Або",
+        "Posso chiedere cosa la trattiene dall'iniziare ora?", 
+        "[Якщо клієнт каже, що йому треба: подумати, у нього потім буде більше часу - то переходимо до відпрацювання цих заперечень.",
+        "Якщо клієнт каже, що тільки через місяць у нього будуть гроші - тоді наше завдання продати йому новину, зацікавити прибутком, поставити дедлайн і запропонувати запуститися в роботу на більш вигідних умовах.]"
+      ]
+    },
+    {
+      "id": "node_8",
+      "title": "У ВАС АКЦЕНТ",
+      "type": "snippet",
+      "text": [
+        "Nel nostro paese vivono molte persone da diverse parti del mondo, quindi è difficile trovare qualcuno senza accento.",
+        "Tuttavia, in oltre 3 anni di lavoro in questa azienda, il mio accento non ha mai ostacolato l'aiuto alle persone nel raggiungere profitti.",
+        "Quindi concentriamoci sull'obiettivo per cui ha lasciato la registrazione e parliamo dei potenziali profitti che può ottenere.",
+        "[ОДРАЗУ ЗАДАЄМО ВІДКРИТЕ ПИТАННЯ]"
+      ]
+    },
+    {
+      "id": "node_9",
+      "title": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ",
+      "type": "snippet",
+      "text": [
+        "Capisco che è un settore nuovo per lei e possono sorgere preoccupazioni: tutti noi abbiamo iniziato una volta.",
+        "Proprio per questo le assegneremo un analista esperto, che la guiderà passo dopo passo, come un insegnante a scuola.",
+        "La nostra azienda, come lei, è interessata a una cosa: IL GUADAGNO!",
+        "Preleviamo la commissione solo quando preleva i suoi profitti: siamo quindi partner, non solo fornitori.",
+        "Sono convinto/a che avrà successo nella collaborazione con noi, e presto lo vedrà da solo/a!"
+      ]
+    },
+    {
+      "id": "node_10",
+      "title": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ",
+      "type": "snippet",
+      "text": [
+        "– Se vuole ricevere le informazioni via mail, potrebbe significare che non tutto è ancora chiaro per lei. Mi dica: quali informazioni mancano o cosa suscita dubbi?",
+        "– Cos'altro vorrebbe che le spiegassi?",
+        "[Якщо клієнт відповідає, що нічого не хоче уточнити і йому все зрозуміло тоді пропонуйте починати роботу]",
+        "– Poiché tutto è già chiaro, propongo di fare il primo passo.",
+        "Quale importo ha scelto per iniziare la collaborazione?"
+      ]
+    },
+    {
+      "id": "node_11",
+      "title": "НЕМАЄ ЧАСУ",
+      "type": "snippet",
+      "text": [
+        "Voglio sottolineare una cosa molto importante: l'attivazione del conto richiederà letteralmente pochi minuti, e poi potrà tornare ai suoi doveri quotidiani.",
+        "Або",
+        "– Stiamo parlando da più di 20 minuti, e quando ci avviciniamo all'attivazione del conto di trading, dice che non ha tempo ora.",
+        "Mi dica sinceramente: qualcosa la trattiene? Di cosa esattamente ha paura?"
+      ]
+    },
+    {
+      "id": "node_12",
+      "title": "ШАХРАЇ",
+      "type": "snippet",
+      "text": [
+        "Sulla base di quali informazioni valuta quale azienda è onesta e quale no?",
+        "[Чекаємо на відповідь клієнта]",
+        "In cosa esattamente vede un potenziale inganno?",
+        "[Чекаємо на відповідь клієнта]",
+        "Non le chiedo dati personali: è lei stesso/a che ha lasciato il modulo di registrazione affinché ci contattassimo.",
+        "La cosa più importante è che i fondi sono sul suo conto individuale e solo lei ha accesso. Dove potrebbe esserci inganno?"
+      ]
+    },
+    {
+      "id": "node_13",
+      "title": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ",
+      "type": "snippet",
+      "text": [
+        "Se 230–253 euro è una somma troppo alta per lei all'inizio, mi dica: quale importo sarebbe adatto per iniziare la collaborazione?",
+        "[Якщо клієнт каже - що не готовий починати і хоче подумати, почитати або порадитися, то переходимо до відпрацювання цього заперечення. Якщо клієнт називає будь-яку іншу суму, що менша за 230-253 євро, тоді розвиваємо діалог далі]",
+        "Perché proprio questa somma? Perché in caso di eventuali difficoltà non sarebbe un grande peso per lei? Mi dica sinceramente.",
+        "[Якщо клієнт каже - ТАК або що хоче подумати чи боїться - переходимо до відпрацювання цих заперечень]"
+      ]
+    },
+    {
+      "id": "node_14",
+      "title": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ",
+      "type": "snippet",
+      "text": [
+        "Certo che investo: inoltre, ho anche un analista personale con cui collaboro e con cui guadagno sul trading da 4 anni.", 
+        "Investiamo più spesso in criptovalute, ma apriamo regolarmente transazioni anche su altri asset.",
+        "Inoltre, non solo io investo, ma anche i miei cari partecipano a questo progetto.",
+        "Le consiglio di iniziare la collaborazione: così può iniziare a guadagnare come me.",
+        "La incoraggio a iniziare la collaborazione: vedrà da solo/a che si può guadagnare bene."
+      ]
+    },
+    {
+      "id": "node_15",
+      "title": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ",
+      "type": "snippet",
+      "text": [
+        "Perché la somma minima è proprio 230-253 euro e non si può di meno?",
+        "Questa somma deriva dalla strategia adottata per un trading sicuro. Apriamo in media 6–10 posizioni al giorno, ma usiamo sempre solo circa il 50% dei fondi per minimizzare il rischio.",
+        "Quindi 230-253 euro è la somma che permette di iniziare investimenti efficaci e sicuri, di cui solo la metà va effettivamente sul mercato.",
+        "Certo, può cercare un broker con una soglia di ingresso più bassa, ma lì agirà da solo/a, senza supporto, senza strategia e senza qualcuno impegnato nel suo risultato. Da noi siamo partner: guadagna lei, guadagniamo noi.",
+        "Quindi se le interessa la sicurezza e i profitti, è meglio convincersene in pratica. Propongo di finanziare il conto con la somma minima e fare oggi il primo passo verso il profitto.",
+        "Або",
+        "Per 5 anni abbiamo testato la collaborazione con i clienti con diverse somme e siamo giunti alla conclusione che 230-253 euro è la somma più sicura per iniziare.",
+        "Proprio da questa somma posso darle la garanzia che tutto funzionerà.",
+        "Se mi chiede \"perché?\", le spiego subito:",
+        "questa somma è distribuita adeguatamente secondo le regole di gestione del rischio: parte del capitale lavora sul mercato, e il resto costituisce il cosiddetto \"cuscino di sicurezza\".",
+        "Mi dica: è d'accordo che non vale la pena investire l'intera somma in un solo posto?"
+      ]
+    },
+    {
+      "id": "node_16",
+      "title": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО",
+      "type": "snippet",
+      "text": [
+        "Abbiamo discusso tutto ciò che serve per iniziare.",
+        "Abbiamo scelto un modo di agire che accelera il raggiungimento dell'obiettivo.",
+        "La sicurezza dei fondi è stata discussa, quindi non è mancanza di interesse.",
+        "Mi dica direttamente: di cosa ha paura?"
+      ]
+    },
+    {
+      "id": "node_17",
+      "title": "ХОЧУ ПРИЇХАТИ В ОФІС",
+      "type": "snippet",
+      "text": [
+        "In generale, abbiamo già discusso tutto ciò che le serve per iniziare la collaborazione.", 
+        "Ha deciso un modo di agire che può aiutare a raggiungere l'obiettivo finanziario più velocemente di quanto pensasse.", 
+        "Abbiamo discusso anche la questione della sicurezza dei fondi, quindi penso che non sia mancanza di interesse l'ostacolo.", 
+        "Mi dica direttamente: di cosa ha paura?"
+      ]
+    },
+    {
+      "id": "node_18",
+      "title": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА",
+      "type": "snippet",
+      "text": [
+        "Siamo un'azienda internazionale, ufficio anche in Polonia: principale a Krotoszyn.",
+        "Registrazione: ELITE POLSKA sp. z o.o., KRS: 0000646268, ul. Juliana Smulikowskiego 4/112, 00-389 Warszawa, Mazowieckie, data: 2016-11-10.",
+        "In pratica, la richiesta ufficiale alla NBP può costare ~150 euro e durare fino a 14 giorni lavorativi.",
+        "👉 Se il nome del progetto differisce dal nome dell'azienda, controllare per nome e KRS su internet."
+      ]
+    },
+    {
+      "id": "node_19",
+      "title": "ЯКІ ГАРАНТІЇ",
+      "type": "snippet",
+      "text": [
+        "Se chiede garanzie, significa che vuole proteggersi da qualcosa. Mi dica: di cosa esattamente ha paura?",
+        "[ЗАДАЄМО ПИТАННЯ/ОТРИМАЄМО ВІДПОВІДЬ, НЕ ВІДПОВІДАЙТЕ ЗА КЛІЄНТА! Якщо клієнт бурмоче і не може чітко відповісти, запитайте його:]",
+        "Immagini cosa potrebbe accadere nella collaborazione con noi.",
+        "[СТАВИМО ЗАПИТАННЯ/ЧЕКАЄМО ВІДПОВІДЬ НЕ НАКИДАЮЧИ ВАРІАНТИ ЗА КЛІЄНТА]",
+        "Solo le persone intelligenti si interessano a questa domanda: mi dica, quali garanzie specifiche la interessano?",
+        "[Якщо клієнт посилається на договір, ліцензію або особисту зустріч – ми використовуємо відповідні напрацювання з цього файлу. Якщо клієнт не може дати точну відповідь, використовуємо наведену нижче версію]",
+        "La garanzia più importante nella nostra collaborazione è l'interesse comune. Ci pensi: che vantaggio avremmo a metterla in una situazione in cui perde denaro, visto che il nostro guadagno è il 10% del suo profitto? ",
+        "Nella nostra azienda assolutamente tutti sono interessati a che la nostra collaborazione duri per anni."
+      ]
+    },
+    {
+      "id": "node_20",
+      "title": "Я В ЦЕ НЕ ВІРЮ",
+      "type": "snippet",
+      "text": [
+        "In cosa esattamente non crede? [Чекаємо відповідь клієнта]",
+        "Non crede che si possa davvero guadagnare qui? [Чекаємо на відповідь клієнта + можемо посилатися на інтерес компанії.]",
+        "Non ha fiducia? O forse ha paura di qualcosa?"
+      ]
+    },
+    {
+      "id": "node_21",
+      "title": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ",
+      "type": "snippet",
+      "text": [
+        "Non è necessario credere nel settore degli investimenti: lo si può verificare in pratica.",
+        "Ad esempio: l'oro è stabile nei prezzi, e la valuta nazionale prima delle elezioni di solito perde valore.",
+        "Tutti questi eventi si possono prevedere: basta fidarsi dei nostri analisti.",
+        "Sono professionisti nel loro campo, e il loro obiettivo principale è la massima crescita del suo capitale e il profitto comune, perché proprio su questo si basa il nostro reddito.",
+        "Se ottiene un profitto e lo preleva sul suo conto, allora crederà che funziona?",
+        "In tal caso, propongo di fare questo passo, vedere il risultato in pratica e solo allora valutare quanto sia reale.", 
+        "Le consiglio di iniziare la collaborazione e generare oggi il suo primo profitto!"
+      ]
+    },
+    {
+      "id": "node_22",
+      "title": "БОЮСЬ",
+      "type": "snippet",
+      "text": [
+        "Capisco le sue paure: è completamente naturale. Chiunque inizia qualcosa di nuovo ha certe ansie.",
+        "Ma si ponga una domanda: di cosa esattamente ha paura? Della perdita di fondi?",
+        "Proprio per questo non la lasciamo da solo/a. Riceve il supporto di un analista, che guida passo dopo passo.",
+        "Inoltre, guadagniamo solo quando guadagna lei, quindi abbiamo un interesse comune nel suo successo.",
+        "Non investe l'intera somma subito: lavoriamo solo con una parte del capitale, e il resto serve come sicurezza.",
+        "È una strategia pensata e sicura di gestione del rischio",
+        "Per questo propongo: proviamolo. Solo la pratica dissipa tutti i dubbi."        
+      ]
+    },
+    {
+      "id": "node_23",
+      "title": "НЕ ДОВІРЯЮ",
+      "type": "snippet",
+      "text": [
+        "Capisco le sue paure: è completamente naturale. Chiunque inizia qualcosa di nuovo ha certe ansie.",
+        "Ma si ponga una domanda: di cosa esattamente ha paura? Della perdita di fondi?",
+        "Proprio per questo non la lasciamo da solo/a. Riceve il supporto di un analista, che guida passo dopo passo.",
+        "Inoltre, guadagniamo solo quando guadagna lei, quindi abbiamo un interesse comune nel suo successo.",
+        "Non investe l'intera somma subito: lavoriamo solo con una parte del capitale, e il resto serve come sicurezza.",
+        "È una strategia pensata e sicura di gestione del rischio.",
+        "Per questo propongo: proviamolo. Solo la pratica dissipa tutti i dubbi."
+      ]
+    },
+    {
+      "id": "node_24",
+      "title": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ",
+      "type": "snippet",
+      "text": [
+        "Capisco le sue paure: è completamente naturale. Chiunque inizia qualcosa di nuovo ha certe ansie.",
+        "Ma si ponga una domanda: di cosa esattamente ha paura? Della perdita di fondi?",
+        "Proprio per questo non la lasciamo da solo/a. Riceve il supporto di un analista, che guida passo dopo passo.",
+        "Inoltre, guadagniamo solo quando guadagna lei, quindi abbiamo un interesse comune nel suo successo.",
+        "Non investe l'intera somma subito: lavoriamo solo con una parte del capitale, e il resto serve come sicurezza.",
+        "È una strategia pensata e sicura di gestione del rischio.",
+        "Per questo propongo: proviamolo. Solo la pratica dissipa tutti i dubbi."
+      ]
+    },
+    {
+      "id": "node_25",
+      "title": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ",
+      "type": "snippet",
+      "text": [
+        "Самі не говоримо, коли буде зроблено вивід. Якщо клієнт запитує:",                                                                                                                           
+        "Tutte le domande riguardanti il prelievo dei fondi le discuta con il suo esperto.", 
+        "Tanto più che i primi profitti guadagnati li preleverà proprio con il suo aiuto: lui le indicherà esattamente come farlo. D'accordo?",
+        "Якщо клієнт наполягає на тому, чи може він у будь-який момент робити вивід:",                                                                              
+        "Il prelievo dei fondi è possibile in qualsiasi momento. Il suo compito principale ora è però generare profitto, e se vuole vedere come appare questo processo in pratica, l'esperto sicuramente l'aiuterà."
+      ]
+    },
+    {
+      "id": "node_26",
+      "title": "Я ВЖЕ ВТРАЧАВ",
+      "type": "snippet",
+      "text": [
+        "La capisco perfettamente: è una situazione molto spiacevole e capisco le sue paure.",
+        "Mi dica, di cosa esattamente ha paura?",
+        "Або",
+        "Capisco perfettamente le sue paure: è davvero una situazione spiacevole.",
+        "Mi dica, cosa esattamente suscita la sua preoccupazione?",                                                                                                
+        "[Далі або переходимо до опрацювання заперечень, які надасть клієнт, або ще раз пояснюємо, де знаходяться кошти, та роботу з аналітиком.]"
+      ]
+    },
+    {
+      "id": "node_27",
+      "title": "БОЮСЯ ВТРАТИТИ",
+      "type": "snippet",
+      "text": [
+        "У процесі торгівлі:",
+        "Certo, in borsa tutto può accadere, specialmente se si negozia da soli. In tal caso è molto facile subire perdite, perché il rischio esiste sempre.",
+        "Il nostro obiettivo principale è però portarla a profitti stabili, perché guadagniamo anche noi solo quando guadagna lei!",
+        "Guadagniamo sia sui rialzi che sui ribassi dei prezzi.",
+        "I nostri analisti informano in tempo reale sulla direzione del mercato e aiutano ad aprire transazioni al momento giusto.",
+        "Inoltre, l'esperto aiuterà a impostare i cosiddetti limitatori (stop loss/take profit), che proteggeranno i suoi fondi.",
+        "Propongo di iniziare la collaborazione ora, per vedere oggi il suo primo profitto!",
+        "При виведенні:",
+        "È esclusivamente il suo conto di trading individuale. Mi dica: quando effettua un trasferimento tra i suoi conti bancari, è mai capitato che i fondi \"scomparissero\"?",
+        "Qui è esattamente lo stesso: effettua semplicemente un trasferimento tra i suoi conti. È COMPLETAMENTE SICURO!",
+"Per questo propongo di iniziare la collaborazione ora, per vedere oggi il suo primo profitto!",
+"Riceviamo la nostra commissione solo quando preleva i suoi profitti.",
+"Ci pensi: che vantaggio avremmo se non riuscisse a prelevare i soldi, visto che allora neanche noi guadagniamo nulla?",
+"Guadagniamo solo quando guadagna lei. Quindi siamo pienamente interessati al suo successo!"
+]
+},
+{
+"id": "node_28",
+"title": "ЯКІ Є РИЗИКИ",
+"type": "snippet",
+"text": [
+"Capisco a cosa sta pensando. Lavoro in questo settore da tempo e so che ogni persona ragionevole si interessa alla questione del rischio. Domande come:",
+"E se perdo?",
+"o",
+"Quali garanzie ho?",
+"sono una reazione naturale. In fondo si tratta dei suoi soldi, quindi tali preoccupazioni sono del tutto giustificate.",
+"Sarei un cattivo consulente se dicessi che il rischio non esiste: semplicemente non è vero.",
+"Costruiamo una relazione basata sulla fiducia, quindi dico apertamente: il rischio esiste sempre, perché nessuno ha il pieno controllo sul mercato finanziario.",
+"Situazioni impreviste possono accadere ovunque, ma la chiave è gestire abilmente questo rischio.",
+"Come si dice:", "chi ha l'informazione, ha il potere","E noi abbiamo queste informazioni.",
+"Per questo usiamo una serie di strumenti che aiutano a ridurre il rischio al minimo.",
+"Uno degli strumenti più importanti è il cosiddetto Stop Loss. Ha sentito parlare di questo concetto?",
+"(Stop Loss) (dall'inglese "stop loss") è un meccanismo che chiude automaticamente la posizione se raggiunge un certo livello di perdita",
+"Ad esempio: se impostiamo lo Stop Loss a 2 dollari, anche se il mercato crolla improvvisamente, il sistema chiuderà la transazione con una perdita massima di 2 dollari. È una forma molto efficace di protezione.",
+"Inoltre, agiamo sempre su diverse posizioni contemporaneamente, il che significa che anche se una transazione porta una perdita, le altre possono portare profitto.",
+"Grazie a questo è possibile generare reddito quotidiano: a volte maggiore, a volte minore, ma regolare."
+]
+},
+{
+"id": "node_29",
+"title": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ",
+"type": "snippet",
+"text": [
+"Prima questa funzione era disponibile sulla nostra piattaforma, ma l'abbiamo completamente eliminata, e le spiego perché!",
+"L'abbiamo fatto pensando alla sua sicurezza. Abbiamo rimosso questo metodo di deposito per evitare situazioni in cui gli utenti dovevano fornire i dati della carta, come numero, data di scadenza o codice CVC.",
+"Ora l'attivazione del conto avviene esclusivamente tramite il dipartimento finanziario. Poiché operiamo in Polonia, dobbiamo render conto all'ufficio delle imposte.",
+"Da parte nostra effettuiamo la conversione valutaria, dichiariamo il suo importo e poi lo accreditiamo sul suo conto di trading.",
+"Inoltre, copriamo tutti i costi legati alla commissione, il che rende questo metodo più vantaggioso per lei, vero?"
+]
+},
+{
+"id": "node_30",
+"title": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?",
+"type": "snippet",
+"text": [
+"Il partner di pagamento ufficiale ha diversi conti, alcuni per fondazioni (ad es. Croce Rossa) per trasparenza e conformità legale.",
+"Il nome del destinatario è una questione tecnica; i fondi vanno sul conto di trading individuale.",
+"Simile ai biglietti/prenotazioni: sull'estratto conto appare un nome legale diverso.",
+"Il canale è ufficiale e accettato dalle banche; il saldo sarà finanziato con l'importo scelto."
+]
+}
+],
+"edges": [
+{
+"from": "barriers_router",
+"to": "bar_email",
+"label": "НАДІШЛІТЬ ВСЕ НА ПОШТУ:"
+},
+{
+"from": "barriers_router",
+"to": "bar_not_registered",
+"label": "НЕ РЕЄСТРУВАВСЯ:"
+},
+{
+"from": "barriers_router",
+"to": "bar_not_mine",
+"label": "ЦЕ НЕ МОЄ:"
+},
+{
+"from": "barriers_router",
+"to": "bar_nothing_needed",
+"label": "НІЧОГО НЕ ПОТРІБНО:"
+},
+{
+"from": "barriers_router",
+"to": "bar_busy",
+"label": "Я ЗАЙНЯТИЙ:"
+},
+{
+"from": "barriers_router",
+"to": "bar_child",
+"label": "ЦЕ ДИТИНА:"
+},
+{
+"from": "barriers_router",
+"to": "bar_no_time",
+"label": "НЕМАЄ ЧАСУ:"
+},
+{
+"from": "barriers_router",
+"to": "bar_accidental",
+"label": "ЦЕ ВИПАДКОВО:"
+},
+{
+"from": "barriers_router",
+"to": "bar_not_interesting",
+"label": "НЕ ЦІКАВО:"
+},
+{
+"from": "barriers_router",
+"to": "bar_scam",
+"label": "ЦЕ ОБМАН"
+},
+{
+"from": "greeting",
+"to": "barriers_router",
+"label": "➡ Далі"
+},
+{
+"from": "barriers_router",
+"to": "experience_q",
+"label": "➡ Далі"
+},
+{
+"from": "exp_no",
+"to": "experience_q",
+"label": "⬅ Назад"
+},
+{
+"from": "exp_yes",
+"to": "experience_q",
+"label": "⬅ Назад"
+},
+{
+"from": "experience_q",
+"to": "exp_no",
+"label": "Немає досвіду"
+},
+{
+"from": "experience_q",
+"to": "exp_yes",
+"label": "Є досвід"
+},
+{
+"from": "exp_no",
+"to": "work",
+"label": "➡ Далі"
+},
+{
+"from": "exp_yes",
+"to": "work",
+"label": "➡ Далі"
+},
+{
+"from": "work",
+"to": "family",
+"label": "➡ Далі"
+},
+{
+"from": "family",
+"to": "back_to_exp",
+"label": "➡ Далі"
+},
+{
+"from": "back_to_exp",
+"to": "goal",
+"label": "➡ Далі"
+},
+{
+"from": "goal",
+"to": "presentation",
+"label": "➡ Далі"
+},
+{
+"from": "presentation",
+"to": "pres_noexp",
+"label": "Немає досвіду"
+},
+{
+"from": "presentation",
+"to": "pres_exp",
+"label": "Є досвід"
+},
+{
+"from": "pres_noexp",
+"to": "presentation",
+"label": "⬅ Назад"
+},
+{
+"from": "pres_noexp",
+"to": "trade_with_expert",
+"label": "➡ Далі"
+},
+{
+"from": "pres_exp",
+"to": "presentation",
+"label": "⬅ Назад"
+},
+{
+"from": "pres_exp_yes",
+"to": "presentation",
+"label": "⬅ Назад"
+},
+{
+"from": "pres_exp_no",
+"to": "presentation",
+"label": "⬅ Назад"
+},
+{
+"from": "pres_exp",
+"to": "pres_exp_yes",
+"label": "Tak"
+},
+{
+"from": "pres_exp",
+"to": "pres_exp_no",
+"label": "Nie"
+},
+{
+"from": "pres_exp_yes",
+"to": "trade_with_expert",
+"label": "➡ Далі"
+},
+{
+"from": "pres_exp_no",
+"to": "trade_with_expert",
+"label": "➡ Далі"
+},
+{
+"from": "trade_with_expert",
+"to": "client_questions",
+"label": "➡ Далі"
+},
+{
+"from": "client_questions",
+"to": "interest_company",
+"label": "ІНТЕРЕС ФІРМИ"
+},
+{
+"from": "client_questions",
+"to": "risks",
+"label": "Якщо клієнт питає про ризики"
+},
+{
+"from": "client_questions",
+"to": "fund_location",
+"label": "Якщо клієнт питає про місцезнаходження коштів"
+},
+{
+"from": "client_questions",
+"to": "platform_demo",
+"label": "Пропустити"
+},
+{
+"from": "platform_demo",
+"to": "entry_amounts",
+"label": "➡ Далі"
+},
+{
+"from": "entry_amounts",
+"to": "objections_root",
+"label": "➡ Далі"
+},
+{
+"from": "objections_root",
+"to": "node",
+"label": "НЕМАЄ ГРОШЕЙ"
+},
+{
+"from": "objections_root",
+"to": "2_0",
+"label": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)"
+},
+{
+"from": "objections_root",
+"to": "node_2",
+"label": "ХОЧУ ПОДУМАТИ"
+},
+{
+"from": "objections_root",
+"to": "node_3",
+"label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’Ї"
+},
+{
+"from": "objections_root",
+"to": "2_0_2",
+"label": "ПОРАДИТИСЯ З ЧЛЕНОМ СІМ’ Ї 2.0 (логіка)"
+},
+{
+"from": "objections_root",
+"to": "node_4",
+"label": "ЛІЦЕНЗІЯ"
+},
+{
+"from": "objections_root",
+"to": "node_5",
+"label": "ХОЧУ ПОЧИТАТИ ВІДГУКИ"
+},
+{
+"from": "objections_root",
+"to": "node_6",
+"label": "ХОЧУ ПІДПИСАТИ ДОГОВІР"
+},
+{
+"from": "objections_root",
+"to": "node_7",
+"label": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ"
+},
+{
+"from": "objections_root",
+"to": "node_8",
+"label": "У ВАС АКЦЕНТ"
+},
+{
+"from": "objections_root",
+"to": "node_9",
+"label": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ"
+},
+{
+"from": "objections_root",
+"to": "node_10",
+"label": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ"
+},
+{
+"from": "objections_root",
+"to": "node_11",
+"label": "НЕМАЄ ЧАСУ (коротка версія)"
+},
+{
+"from": "objections_root",
+"to": "node_12",
+"label": "ШАХРАЇ"
+},
+{
+"from": "objections_root",
+"to": "node_13",
+"label": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ"
+},
+{
+"from": "objections_root",
+"to": "node_14",
+"label": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ"
+},
+{
+"from": "objections_root",
+"to": "node_15",
+"label": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ"
+},
+{
+"from": "objections_root",
+"to": "node_16",
+"label": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО"
+},
+{
+"from": "objections_root",
+"to": "node_17",
+"label": "ХОЧУ ПРИ ЇХАТИ В ОФІС"
+},
+{
+"from": "objections_root",
+"to": "node_18",
+"label": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА"
+},
+{
+"from": "objections_root",
+"to": "node_19",
+"label": "ЯКІ ГАРАНТІЇ"
+},
+{
+"from": "objections_root",
+"to": "node_20",
+"label": "Я В ЦЕ НЕ ВІРЮ"
+},
+{
+"from": "objections_root",
+"to": "node_21",
+"label": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ"
+},
+{
+"from": "objections_root",
+"to": "node_22",
+"label": "БОЮСЬ"
+},
+{
+"from": "objections_root",
+"to": "node_23",
+"label": "НЕ ДОВІРЯЮ"
+},
+{
+"from": "objections_root",
+"to": "node_24",
+"label": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ"
+},
+{
+"from": "objections_root",
+"to": "node_25",
+"label": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ"
+},
+{
+"from": "objections_root",
+"to": "node_26",
+"label": "Я ВЖЕ ВТРАЧАВ"
+},
+{
+"from": "objections_root",
+"to": "node_27",
+"label": "БОЮСЯ ВТРАТИТИ"
+},
+{
+"from": "objections_root",
+"to": "node_28",
+"label": "ЯКІ Є РИЗИКИ"
+},
+{
+"from": "objections_root",
+"to": "node_29",
+"label": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ"
+},
+{
+"from": "objections_root",
+"to": "node_30",
+"label": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?"
+},
+{
+"from": "objections_root",
+"to": "tomorrow",
+"label": "Давайте завтра"
+},
+{
+"from": "objections_root",
+"to": "tomorrow",
+"label": "Давайте завтра"
+},
+{
+"from": "objections_root",
+"to": "closing_payment",
+"label": "Перейти до оплати"
+},
+{
+"from": "bar_email",
+"to": "experience_q",
+"label": "➡ Далі"
+},
+{
+"from": "bar_not_registered",
+"to": "experience_q",
+"label": "➡ Далі"
+},
+{
+"from": "bar_not_mine",
+"to": "experience_q",
+"label": "➡ Далі"
+},
+{
+"from": "bar_nothing_needed",
+"to": "experience_q",
+"label": "➡ Далі"
+},
+{
+"from": "bar_busy",
+"to": "experience_q",
+"label": "➡ Далі"
+},
+{
+"from": "bar_child",
+"to": "experience_q",
+"label": "➡ Далі"
+},
+{
+"from": "bar_no_time",
+"to": "experience_q",
+"label": "➡ Далі"
+},
+{
+"from": "bar_accidental",
+"to": "experience_q",
+"label": "➡ Далі"
+},
+{
+"from": "bar_not_interesting",
+"to": "experience_q",
+"label": "➡ Далі"
+},
+{
+"from": "bar_scam",
+"to": "experience_q",
+"label": "➡ Далі"
+},
+{
+"from": "node",
+"to": "objections_root",
+"label": "⬅ Назад"
+},
+{
+"from": "node",
+"to": "closing_payment",
+"label": "➡ Далі"
+},
+{
+"from": "2_0",
+"to": "objections_root",
+"label": "⬅ Назад"
+},
+{
+"from": "2_0",
+"to": "closing_payment",
+"label": "➡ Далі"
+},
+{
+"from": "node_2",
+"to": "objections_root",
+"label": "⬅ Назад"
+},
+{
+"from": "node_2",
+"to": "closing_payment",
+"label": "➡ Далі"
+},
+{
+"from": "node_3",
+"to": "objections_root",
+"label": "⬅ Назад"
+},
+{
+"from": "node_3",
+"to": "closing_payment",
+"label": "➡ Далі"
+},
+{
+"from": "node_4",
+"to": "objections_root",
+"label": "⬅ Назад"
+},
+{
+"from": "node_4",
+"to": "closing_payment",
+"label": "➡ Далі"
+},
+{
+"from": "tomorrow",
+"to": "objections_root",
+"label": "⬅ Назад"
+},
+{
+"from": "tomorrow",
+"to": "closing_payment",
+"label": "➡ Далі"
+},
+{
+"from": "closing_payment",
+"to": "objections_root",
+"label": "⬅ Назад"
+},
+{
+"from": "work",
+"to": "experience_q",
+"label": "⬅ Назад"
+},
+{
+"from": "family",
+"to": "work",
+"label": "⬅ Назад"
+},
+{
+"from": "back_to_exp",
+"to": "family",
+"label": "⬅ Назад"
+},
+{
+"from": "goal",
+"to": "back_to_exp",
+"label": "⬅ Назад"
+},
+{
+"from": "presentation",
+"to": "goal",
+"label": "⬅ Назад"
+},
+{
+"from": "experience_q",
+"to": "barriers_router",
+"label": "⬅ Назад"
+},
+{
+"from": "closing_payment",
+"to": "greeting",
+"label": "🏠 На початок"
+},
+{ "from": "2_0_2",   "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "2_0_2",   "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_5",  "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_5",  "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_6",  "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_6",  "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_7",  "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_7",  "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_8",  "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_8",  "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_9",  "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_9",  "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_10", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_10", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_11", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_11", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_12", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_12", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_13", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_13", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_14", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_14", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_15", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_15", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_16", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_16", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_17", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_17", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_18", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_18", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_19", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_19", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_20", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_20", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_21", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_21", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_22", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_22", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_23", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_23", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_24", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_24", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_25", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_25", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_26", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_26", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_27", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_27", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_28", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_28", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_29", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_29", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "node_30", "to": "objections_root", "label": "⬅ Назад" },
+{ "from": "node_30", "to": "closing_payment", "label": "➡ Далі" },
+{ "from": "bar_email",           "to": "barriers_router", "label": "⬅ Назад" },
+{ "from": "bar_not_registered",  "to": "barriers_router", "label": "⬅ Назад" },
+{ "from": "bar_not_mine",        "to": "barriers_router", "label": "⬅ Назад" },
+{ "from": "bar_nothing_needed",  "to": "barriers_router", "label": "⬅ Назад" },
+{ "from": "bar_busy",            "to": "barriers_router", "label": "⬅ Назад" },
+{ "from": "bar_child",           "to": "barriers_router", "label": "⬅ Назад" },
+{ "from": "bar_no_time",         "to": "barriers_router", "label": "⬅ Назад" },
+{ "from": "bar_accidental",      "to": "barriers_router", "label": "⬅ Назад" },
+{ "from": "bar_not_interesting", "to": "barriers_router", "label": "⬅ Назад" },
+{ "from": "bar_scam",            "to": "barriers_router", "label": "⬅ Назад" },
+{ "from": "interest_company", "to": "client_questions", "label": "⬅ Назад" },
+{ "from": "interest_company", "to": "platform_demo",   "label": "➡ Далі" },
+{ "from": "risks",            "to": "client_questions", "label": "⬅ Назад" },
+{ "from": "risks",            "to": "platform_demo",    "label": "➡ Далі" },
+{ "from": "fund_location",    "to": "client_questions", "label": "⬅ Назад" },
+{ "from": "fund_location",    "to": "platform_demo",    "label": "➡ Далі" }
+],
+"ui": {
+"sticky_comment_panel": true,
+"sticky_comment_title": "Коментар про клієнта",
+"sticky_comment_position": "right"
+}
+}
+</DOCUMENT>
