@@ -682,434 +682,524 @@
         "— Prosím, řekněte mi – jak si myslíte, jakým způsobem byste zde mohl/a ztratit peníze?"
       ]
     },
-    {
-      "id": "2_0",
-      "title": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)",
-      "type": "snippet",
-      "text": [
-        "Ujasnění finanční situace:",                                                                                                                                                               
-        "Chápem, že finanční situace může být těžká. Mohl/a byste upřesnit, v čem přesně spočívají tyto obtíže? Díky tomu budu moci lépe pochopit vaši situaci a navrhnout co nejlepší řešení.",
-        "Kolik částky vám chybí? Kolik času bude potřeba k vyřešení finanční otázky? Kdy očekáváte obdržení dalších prostředků (např. výplatu, důchod, dávku)?", 
-        "[якщо клієнт відповідає на перше запитання, що повний нуль, найімовірніше, клієнт не до кінця чесний і за цим приховує свої сумніви або недовіру,",
-        "відповіді на наступні запитання теж треба слухати дуже уважно, адже клієнт може сказати, що зарплату дали кілька днів тому, а отже, гроші в нього є, але розпочинати роботу він не збирається]",
-        "Podtržení důležitosti investování:",                                                                                                                                          
-        "Chápem, že teď se může zdát, že to není nejlepší moment na investice. Prosím však podívejte se na to jako na šanci — nejen na zachování, ale také na rozmnožení svého kapitálu. Čas jsou peníze – čím dříve začnete, tím větší potenciál zisků lze využít.",
-        "Nabídka exkluzivních podmínek:",                                                                                                                                       
-        "Jsem připraven/a navrhnout vám exkluzivní podmínky určené pro nové investory. To je výjimečná příležitost získat přístup k atraktivním investičním možnostem, které nejsou běžně dostupné. [Navrhnout bonus]",
-        "Vytvoření pocitu naléhavosti:",                                                                                                                             
-        "Situace na trhu se může rychle měnit, proto je důležité jednat bez odkladu. Zatímco se ještě rozhodujete, jiní už mohou využívat této příležitosti. Investice teď může přinést více výhod než v budoucnosti.",
-        "Podtržení úspěchů předchozích investorů:",                                                                                                                           
-        "Mnoho našich investorů začalo od malých částek, a dnes jsou vlastníky významných portfolií. Jejich úspěchy mluví samy za sebe. Nechtěl/a byste využít svou šanci?",
-        "Příprava k uzavření dohody:",                                                                                                                                              
-        "Pokud rychle vyřešíme tuto otázku, jsem připraven/a předat vám všechny potřebné informace a přistoupit k finalizaci transakce. To je jen několik kroků – a brzy začnete vidět první výsledky.",
-        "Použití přesvědčivých faktů:",                                                                                                                                  
-        "Stojí za to pamatovat, že mnoho úspěšných lidí vděčí za svůj blahobyt právě investicím. Nestojí za to čekat na lepší moment – vytvořme ho společně hned teď"
-      ]
-    },
-    {
-      "id": "node_2",
-      "title": "ХОЧУ ПОДУМАТИ",
-      "type": "snippet",
-      "text": [
-        "Podle mých zkušeností, když klient řekne, že si to chce rozmyslet, často to znamená, že projektu úplně nerozumí nebo si tím ještě není jistý",
-
-        "Prosím, řekněte mi, čeho se přesně obáváte?  [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
-        "Prosím, řekněte mi, o čem přesně byste chtěl/a přemýšlet?",
-        "Co v mé prezentaci chybělo, abyste se mohl/a rozhodnout hned teď?",
-        "Co vás v tuto chvíli brání v rozhodnutí?",
-        "Jak to může ovlivnit vaše konečné rozhodnutí?",
-
-        "Samozřejmě máte právo si to rozmyslet. Z mé zkušenosti však vyplývá, že nejlepší rozhodnutí se dělají tehdy, když je možné vidět konkrétní výsledky a pochopit, jak to funguje v praxi",
-        "Upřímně řečeno, v tuto chvíli není nad čím dlouho přemýšlet – pokud vás tedy něco neznepokojuje? Co přesně vás brání v rozhodnutí?"
-      ]
-    },
-    {
-      "id": "node_5",
-      "title": "ХОЧУ ПОЧИТАТИ ВІДГУКИ",
-      "type": "snippet",
-      "text": [
-        "- Prosím, řekněte mi – jak často se vám stává osobně psát recenze na internetu? [Čekáme na odpověď klienta.]",                                                                                                                                                                                                        
-        "- A jak si myslíte – kdo nejčastěji píše recenze? [Čekáme na odpověď klienta.]",                                                                         
-        "- Víte, kdybych teď napsal/a tisíc negativních komentářů o vašem autě – znamenalo by to, že auto nefunguje a je třeba ho prodat? [Pauza, aby se zamyslel.]",                                                                                
-        "- Myslím, že nic nepřesvědčí lépe než osobní zkušenost.",                                                                              
-        "- Proto vás vyzývám – zkusme to společně při příležitosti dnešní události a uvidíte výsledky na vlastní oči.",
-
-                                          "**Jiný variant:**",
-        "– To je skvělý nápad číst recenze – zvláště když víme, kdo je napsal.",
-        "– Prosím, řekněte, jak odlišujete pravou recenzi od té méně věrohodné?",
-        "– Souhlasíte s tvrzením, že recenze lze koupit?",
-        "– Stalo se vám věnovat pozornost recenzím např. o vlastní bance?",
-        "– Na jaké recenze věnujete větší pozornost – pozitivní nebo negativní?",
-        "– A kdybych vám představil/a stovky pozitivních a sto negativních recenzí – které z nich uznáte za věrohodnější?",
-        "– Myslím, že nic nepřesvědčí lépe než osobní zkušenost.",
-        "– Proto vás vyzývám – zkusme to společně při příležitosti dnešní události a uvidíte výsledky na vlastní oči.",
-        
-                                    "**Přečetl/a špatné recenze:**",
-        "Vysvětlení na příkladu:",
-        "– To, že jste se seznámil/a s recenzemi, ukazuje, že vážně přistupujete k rozhodnutí o spolupráci – a to je velmi dobré.",
-        "– Je třeba však pamatovat, že recenze na internetu ne vždy odrážejí realitu.",
-        "– Mnohé z nich bývají psány konkurencí.",
-        "– Nejdůležitější je to, co si sám/a ověříte – pomocí platformy.",
-        "– Pak sám/a posoudíte, jestli spolupráce funguje tak, jak očekáváte.",
-        "– Recenze lze psát, kopírovat, upravovat – ale zkušenost nikdo nedokáže podvrhnout.",
-        "– Proto prosím – zkusme společně, abyste sám/a viděl/a výsledky."
-      ]
-    },
-    {
-      "id": "node_6",
-      "title": "ХОЧУ ПІДПИСАТИ ДОГОВІР",
-      "type": "snippet",
-      "text": [
-        "- Se mnou osobně nepodpisujete smlouvu.",
-        "- Po zahájení spolupráce s analytikem prosím zeptejte se na smlouvu – jsou připravovány individuálně pro každého klienta, s ohledem na druh spolupráce, očekávané zisky, směr obchodování a finanční situaci.",
-        "[Якщо клієнт просить вислати порожній договір, ви маєте вивести на обґрунтоване заперечення, і зрозуміти, чому йому потрібен цей договір / НЕ  ВПЕВНЕНА АБО БОЇТЬСЯ / відводьте в тему обґрунтованого заперечення (якої форми договір вас цікавить?)]",
-                                    "**Druhý variant:**",
-        "– Smlouva se podepisuje v případě, kdy firma přijímá prostředky klienta do správy.",
-        "– V našem případě nám nepředáváte své peníze – otevíráte vlastní účet a sám/a ho spravujete, využívajíc našich doporučení.",
-        "– Prosím, řekněte, v kolika procentech jste si jistý/á, že se vám s námi podaří vydělat?"
-      ]
-    },
-    {
-      "id": "node_7",
-      "title": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ",
-      "type": "snippet",
-      "text": [
-         "A proč právě za měsíc?",                                                                                                                                              
-                        "Nebo",
-        "Samozřejmě mohu zavolat za měsíc, ale prosím, řekněte mi – co se za tu dobu změní?",
-                        "Nebo",
-        "Co brání začít hned teď?",
-                        "Nebo",
-       "Mohu se zeptat, co vás brzdí v zahájení hned teď?", 
-       "[Якщо клієнт каже, що йому треба: подумати, у нього потім буде більше часу - то переходимо до відпрацювання цих заперечень.",
-        "Якщо клієнт каже, що тільки через місяць у нього будуть гроші - тоді наше завдання продати йому новину, зацікавити прибутком, поставити дедлайн і запропонувати запуститися в роботу на більш вигідних умовах.]"
-      ]
-    },
-    {
-      "id": "node_8",
-      "title": "У ВАС АКЦЕНТ",
-      "type": "snippet",
-      "text": [
-        "Na území naší země žije mnoho lidí z různých koutů světa, takže je těžké najít někoho, kdo nemá žádný přízvuk.",
-        "Avšak během více než 3 let mé práce v této firmě můj přízvuk nikdy nebyl překážkou v pomáhání lidem dosáhnout zisků.",
-        "Proto se soustřeďme na cíl, pro který jste nechal/a svou registraci, a promluvme si o potenciálních ziscích, které můžete dosáhnout.",
-        "[ОДРАЗУ ЗАДАЄМО ВІДКРИТЕ ПИТАННЯ]"
-      ]
-    },
-    {
-      "id": "node_9",
-      "title": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ",
-      "type": "snippet",
-      "text": [
-        "Chápem, že to je pro vás nová branže a mohou se objevit určité obavy – každý z nás někdy začínal.",
-        "Právě proto vám přidělíme zkušeného analytika, který vás krok za krokem provede celým procesem – jako učitel ve škole.",
-        "Naše firma, stejně jako vy, má zájem na jednom – ZISKU!",
-        "Bere provizi teprve tehdy, když vyplatíte své zisky – jsme tedy partnery, nejen poskytovatelem služeb.",
-        "Jsem přesvědčen/a, že dosáhnete úspěchu ve spolupráci s námi – a už brzy se o tom sám/a přesvědčíte!"
-      ]
-    },
-    {
-      "id": "node_10",
-      "title": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ",
-      "type": "snippet",
-      "text": [
-        "– Protože chcete obdržet informace na mail, to může znamenat, že ne všechno je pro vás ještě jasné. Prosím, řekněte – jaké informace chybí nebo co vyvolává pochybnosti?",
-        "– Co ještě byste chtěl/a, abych vysvětlil/a?",
-        "[Якщо клієнт відповідає, що нічого не хоче уточнити і йому все зрозуміло тоді пропонуйте починати роботу]",
-        "– Protože všechno je už jasné, navrhuji udělat první krok.",
-        "Jakou částku jste vybral/a pro zahájení spolupráce?"
-      ]
-    },
-    {
-      "id": "node_11",
-      "title": "НЕМАЄ ЧАСУ",
-      "type": "snippet",
-      "text": [
-        "Chci podtrhnout jednu velmi důležitou věc – aktivace účtu zabere doslova několik minut, a pak se můžete vrátit k svým každodenním povinnostem.",
-                        "Nebo",
-        "– Mluvíme už více než 20 minut, a když se blížíme k aktivaci obchodního účtu, říkáte, že teď nemáte čas.",
-        "Prosím, řekněte upřímně – něco vás brzdí? Čeho přesně se bojíte?"
-      ]
-    },
-    {
-      "id": "node_12",
-      "title": "ШАХРАЇ",
-      "type": "snippet",
-      "text": [
-        "Na základě jakých informací hodnotíte, která firma je čestná a která ne?",
-        "[Čekáme na odpověď klienta]",
-        "V čem přesně vidíte potenciální podvod?",
-        "[Čekáme na odpověď klienta]",
-        "Nežádám o žádné osobní údaje – to vy sám/a nechal/a registrační formulář, abychom se spojili.",
-        "Co je nejdůležitější, prostředky jsou na vašem individuálním účtu a jen vy máte k němu přístup. Kde tu může být řeč o podvodu?"
-      ]
-    },
-    {
-      "id": "node_13",
-      "title": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ",
-      "type": "snippet",
-      "text": [
-        "Pokud je 6000 korun pro vás příliš vysoká částka na začátek, prosím, řekněte – jaká částka by byla pro vás vhodná, abyste zahájil/a spolupráci?",
-        "[Якщо клієнт каже - що не готовий починати і хоче подумати, почитати або порадитися, то переходимо до відпрацювання цього заперечення. Якщо клієнт називає будь-яку іншу суму, що менша за 6000 крон, тоді розвиваємо діалог далі]",
-        "Proč právě taková částka? Protože v případě případných obtíží by to pro vás nebylo velkou zátěží? Prosím, řekněte upřímně.",
-        "[Якщо клієнт каже - ТАК або що хоче подумати чи боїться - переходимо до відпрацювання цих заперечень]"
-      ]
-    },
-    {
-      "id": "node_14",
-      "title": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ",
-      "type": "snippet",
-      "text": [
-        "Samozřejmě, že investuji – navíc mám také osobního analytika, se kterým spolupracuji a se kterým už 4 roky vydělávám na obchodování.", 
-        "Nejčastěji investujeme do kryptoměn, ale pravidelně otevíráme také transakce na jiných aktivech.",
-        "Navíc – nejen já investuji, ale také moji blízcí se účastní tohoto projektu.",
-        
-        "Radím vám zahájit spolupráci – díky tomu můžete začít vydělávat jako já.",
-        
-        "Vyzývám vás k zahájení spolupráce – sám/a uvidíte, že lze opravdu dobře vydělávat."
-      ]
-    },
-    {
-      "id": "node_15",
-      "title": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ",
-      "type": "snippet",
-      "text": [
-        "Proč je minimální částka právě 6000 korun a nelze méně?",
-        "Tato částka vyplývá z přijaté strategie bezpečného obchodování. Otevíráme průměrně 6–10 pozic denně, ale vždy využíváme jen asi 50 % prostředků, abychom minimalizovali riziko.",
-        "Proto 6000 korun je částka, která umožňuje efektivní a bezpečné zahájení investic – z čehož jen polovina skutečně jde na trh.",
-        "Samozřejmě můžete hledat brokera s nižším prahem vstupu, ale tam budete jednat sám/a – bez podpory, bez strategie a bez osoby, která bude zapojena do vašeho výsledku. U nás jsme partnery – vyděláte vy, vyděláme my.",
-        "Proto pokud vám záleží na bezpečnosti a ziscích, nejlépe se přesvědčit o tom v praxi. Navrhuji naplnit účet minimální částkou a ještě dnes udělat první krok k zisku.",
-                   "Nebo",
-        "Během 5 let jsme testovali spolupráci s klienty při různých částkách a došli jsme k závěru, že 6000 korun je nejbezpečnější částka na start.",
-        "Právě od této částky vám mohu dát záruku, že všechno se podaří.",
-        "Pokud se ptáte „proč?“, už vysvětluji:",
-        "tato částka je vhodně rozdělována podle pravidel řízení rizika – část kapitálu pracuje na trhu, a zbývající část tvoří takzvaný „bezpečnostní polštář“.",
-        "Prosím, řekněte – souhlasíte s tím, že nestojí za to investovat celou částku na jedno místo?"
-      ]
-    },
-    {
-      "id": "node_16",
-      "title": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО",
-      "type": "snippet",
-      "text": [
-        "Probrali jsme všechno, co je potřeba pro start.",
-        "Vybrali jsme způsob jednání urychlující dosažení cíle.",
-        "Bezpečnost prostředků také probrána — takže to spíš není nedostatek zájmu.",
-        "Prosím, řekněte přímo — čeho se bojíte?"
-      ]
-    },
-    {
-      "id": "node_17",
-      "title": "ХОЧУ ПРИ ЇХАТИ В ОФІС",
-      "type": "snippet",
-      "text": [
-        "Obecně jsme už probrali všechno, co vám je potřeba, abyste zahájil/a spolupráci.", 
-        "Rozhodl/a jste se pro způsob jednání, který může pomoci dosáhnout finančního cíle rychleji, než jste předpokládal/a.", 
-        "Probrali jsme také otázku bezpečnosti prostředků, takže myslím, že to není nedostatek zájmu je překážkou.", 
-        "Prosím, řekněte přímo – čeho se bojíte?"
-      ]
-    },
-    {
-      "id": "node_18",
-      "title": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА",
-      "type": "snippet",
-      "text": [
-        "Jsme mezinárodní firma, kancelář také v Polsku — hlavní v Krotoszynu.",
-        "Registrace: Elite Czech Republic s.r.o., IČO:27170357, Černínská 95/7, Hradčany (Praha 1), 118 00 Praha , zápisu 28. červenec 2004 .",
-        "V praxi oficiální žádost do NBP může stát ~150€ a trvat do 14 pracovních dnů.",
-        "👉 Pokud se název projektu liší od názvu firmy — zkontrolovat podle názvu a KRS na internetu."
-      ]
-    },
-    {
-      "id": "node_19",
-      "title": "ЯКІ ГАРАНТІ Ї",
-      "type": "snippet",
-      "text": [
-        "Pokud se ptáte na záruky, znamená to, že se chcete před něčím zabezpečit. Prosím, řekněte – čeho přesně se bojíte?",
-        "[ЗАДАЄМО ПИТАННЯ/ОТРИМАЄМО ВІДПОВІДЬ, НЕ ВІДПОВІДАЙТЕ ЗА КЛІЄНТА! Якщо клієнт бурмоче і не може чітко відповісти, запитайте його:]",
-        "Představte si, co se může stát ve spolupráci s námi.",
-        "[СТАВИМО ЗАПИТАННЯ/ЧЕКАЄМО ВІДПОВІДЬ НЕ НАКИДАЮЧИ ВАРІАНТИ ЗА КЛІЄНТА]",
-        "Jen moudří lidé se zajímají o tuto otázku – prosím, řekněte, jaké konkrétní záruky vás zajímají?",
-        "[Якщо клієнт посилається на договір, ліцензію або особисту зустріч – ми використовуємо відповідні напрацювання з цього файлу. Якщо клієнт не може дати точну відповідь, використовуємо наведену нижче версію]",
-        "Nejdůležitější zárukou v naší spolupráci je společný zájem. Prosím, zamyslete se – jaký bychom měli zisk z toho, abychom vás stavěli do situace, ve které ztrácíte peníze, když náš výdělek činí 10 % z vašeho zisku? ",
-        "V naší firmě absolutně každý má zájem na tom, aby naše spolupráce trvala léta."
-      ]
-    },
-    {
-      "id": "node_20",
-      "title": "Я В ЦЕ НЕ ВІРЮ",
-      "type": "snippet",
-      "text": [
-        "V co přesně nevěříte? [Čekáme odpověď klienta]",
-        "Nevěříte, že zde opravdu lze vydělat? [Čekáme na odpověď klienta + можемо посилатися на інтерес компанії.]",
-        "Nemáte důvěru? Nebo se něčeho bojíte?"
-      ]
-    },
-    {
-      "id": "node_21",
-      "title": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ",
-      "type": "snippet",
-      "text": [
-        "Nemusíte věřit v investiční branži — to lze ověřit v praxi.",
-        "Například: zlato je cenově stabilní, a národní měna před volbami obvykle ztrácí na hodnotě.",
-        "Všechny tyto události lze předvídat — stačí důvěřovat našim analytikům.",
-        "To jsou profesionálové ve své oblasti, a jejich hlavním cílem je maximální růst vašeho kapitálu a společný zisk, protože právě na tom spočívá náš příjem.",
-        
-        "Pokud dosáhnete zisku a vyplatíte ho na svůj účet — pak uvěříte, že to funguje?",
-        "V tom případě navrhuji udělat tento krok, vidět výsledek v praxi a teprve pak posoudit, nakolik je to reálné.", 
-        "Radím vám zahájit spolupráci a ještě dnes vypracovat svůj první zisk!"
-      ]
-    },
-    {
-      "id": "node_22",
-      "title": "БОЮСЬ",
-      "type": "snippet",
-      "text": [
-        "Chápem vaše obavy – to je zcela přirozené. Každý, kdo začíná něco nového, má určité strachy.",
-        "Ale prosím položte si jednu otázku: čeho přesně se bojíte? Ztráty prostředků?",
-        "Právě proto vás nenecháváme samotného/u. Dostanete podporu analytika, který vede krok za krokem.",
-        "Kromě toho – vyděláváme jen tehdy, když vyděláváte vy, takže máme společný zájem na vašem úspěchu.",
-        "Neinvestujete celou částku najednou – pracujeme jen s částí kapitálu, a zbytek slouží jako zabezpečení.",
-        "To je promyšlená a bezpečná strategie řízení rizika",
-        "Proto navrhuji: zkuste to. Teprve praxe rozptýlí všechny pochybnosti."        
-      ]
-    },
-    {
-      "id": "node_23",
-      "title": "НЕ ДОВІРЯЮ",
-      "type": "snippet",
-      "text": [
-        "Chápem vaše obavy – to je zcela přirozené. Každý, kdo začíná něco nového, má určité strachy.",
-        "Ale prosím položte si jednu otázku: čeho přesně se bojíte? Ztráty prostředků?",
-        "Právě proto vás nenecháváme samotného/u. Dostanete podporu analytika, který vede krok za krokem.",
-        "Kromě toho – vyděláváme jen tehdy, když vyděláváte vy, takže máme společný zájem na vašem úspěchu.",
-        "Neinvestujete celou částku najednou – pracujeme jen s částí kapitálu, a zbytek slouží jako zabezpečení.",
-        "To je promyšlená a bezpečná strategie řízení rizika.",
-        "Proto navrhuji: zkuste to. Teprve praxe rozptýlí všechny pochybnosti."
-      ]
-    },
-    {
-      "id": "node_24",
-      "title": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ",
-      "type": "snippet",
-      "text": [
-        "Chápem vaše obavy – to je zcela přirozené. Každý, kdo začíná něco nového, má určité strachy.",
-        "Ale prosím položte si jednu otázku: čeho přesně se bojíte? Ztráty prostředků?",
-        
-        "Právě proto vás nenecháváme samotného/u. Dostanete podporu analytika, který vede krok za krokem.",
-        "Kromě toho – vyděláváme jen tehdy, když vyděláváte vy, takže máme společný zájem na vašem úspěchu.",
-        
-        "Neinvestujete celou částku najednou – pracujeme jen s částí kapitálu, a zbytek slouží jako zabezpečení.",
-        "To je promyšlená a bezpečná strategie řízení rizika.",
-        
-        "Proto navrhuji: zkuste to. Teprve praxe rozptýlí všechny pochybnosti."
-      ]
-    },
-    {
-      "id": "node_25",
-      "title": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ",
-      "type": "snippet",
-      "text": [
-        "Samí neříkáme, kdy bude provedena výplata. Pokud klient ptá:",                                                                                                                           
-        "Všechny otázky týkající se výplaty prostředků prosím proberte se svým expertem.", 
-        "Tím spíš, že první vypracované zisky budete vyplácet právě s jeho pomocí – to on ukáže, jak přesně to udělat. Souhlasíte?",
-
-        "Якщо клієнт наполягає на тому, чи може він у будь-який момент робити вивід:",                                                                              
-        "Výplata prostředků je možná kdykoli. Vaším hlavním úkolem na tento moment je však vypracovat zisk, a pokud chcete vidět, jak tento proces vypadá v praxi, expert vám určitě pomůže."
-      ]
-    },
-    {
-      "id": "node_26",
-      "title": "Я ВЖЕ ВТРАЧАВ",
-      "type": "snippet",
-      "text": [
-        "Dokonce vás chápu – to je velmi nepříjemná situace a samozřejmě chápu vaše obavy.",
-        "Prosím, řekněte, čeho přesně se bojíte?",
-                          "Nebo",
-        "Dokonce chápu vaše obavy – to je opravdu nepříjemná situace.",
-        "Prosím, řekněte mi, co konkrétně vyvolává vaše obavy?",                                                                                                
-       "[Dále nebo přecházíme k zpracování zaperečení, které poskytne klient, nebo ještě jednou vysvětlujeme, kde se nacházejí prostředky, a práci s analytikem.]"
-      ]
-    },
-    {
-      "id": "node_27",
-      "title": "БОЮСЯ ВТРАТИТИ",
-      "type": "snippet",
-      "text": [
-        "V procesu obchodování:",
-        "Samozřejmě, na burze se může stát cokoli – zvláště když se obchoduje samostatně. V takovém případě je velmi snadné utrpět ztráty, protože riziko existuje vždy.",
-        "Naším hlavním cílem je však dovést vás k stabilním ziskům, protože i my vyděláváme jen tehdy, když vy vyděláváte!",
-        
-        "Vyděláváme jak na růstech, tak na poklesech cen.",
-        "Naši analytici na běžném základě informují, jakým směrem se trh ubírá, a pomáhají otevírat transakce ve správný moment.",
-        "Navíc expert pomůže nastavit tzv. omezovače (stop loss/take profit), které zabezpečí vaše prostředky.",
-        
-        "Navrhuji zahájit spolupráci hned teď – abyste ještě dnes viděl/a svůj první zisk!",
-        
-        "Při výplatě:",
-        
-        "Je to výhradně váš individuální obchodní účet. Prosím, řekněte mi – když provádíte převod mezi svými bankovními účty, stalo se, že prostředky „zmizely“?",
-        "Zde to vypadá přesně stejně – prostě provádíte převod mezi svými účty. TO JE ÚPLNĚ BEZPEČNÉ!",
-        
-        "Proto navrhuji zahájit spolupráci hned teď, abyste ještě dnes viděl/a svůj první zisk!",
-        
-        "My dostáváme svou provizi teprve v okamžiku, kdy vy vyplatíte své zisky.",
-        "Prosím, zamyslete se – jaká by pro nás byla výhoda, kdyby se vám nepodařilo vyplatit peníze, když pak ani my nic nevyděláme?",
-        "Vyděláváme jen tehdy, když vyděláváte vy. Proto jsme plně zainteresováni na vašem úspěchu!"
-      ]
-    },
-    {
-      "id": "node_28",
-      "title": "ЯКІ Є РИЗИКИ",
-      "type": "snippet",
-      "text": [
-        "Chápem, o čem myslíte. Pracuji v této branži delší dobu a vím, že každý rozumný člověk se zajímá o otázku rizika. Otázky typu:",
-        "A co když ztratím?",
-        "nebo",
-        "Jaké mám záruky?", 
-        "– to je přirozená reakce. Vždyť jde o vaše peníze, takže takové obavy jsou zcela oprávněné.",
-        
-        "Byl/a bych špatným poradcem, kdybych tvrdil/a, že riziko neexistuje – to je prostě nepravda.",
-        "Budujeme vztah založený na důvěře, proto říkám přímo: riziko vždy existuje, protože nikdo nemá plnou kontrolu nad finančním trhem.",
-        "Nepředvídané situace se mohou objevit všude, ale klíčem je umět toto riziko řídit.",
-        
-        "Jak se říká:", "kdo má informaci, ten má moc","A my tyto informace máme.",
-        
-        "Proto využíváme řadu nástrojů, které pomáhají riziko omezit na minimum.",
-        "Jedním z nejdůležitějších takových nástrojů je tzv. Stop Loss. Slyšel/a jste o tomto pojmu?",
-        
-        "(Stop Loss) (z ang. „zastav ztrátu“) – to je mechanismus, který automaticky uzavře pozici, pokud dosáhne určité úrovně ztráty",
-        "Například: pokud nastavíme Stop Loss na úrovni 2 dolarů, pak i když se trh náhle zhroutí – systém sám uzavře transakci s maximální ztrátou 2 dolarů. To je velmi efektivní forma zabezpečení.",
-        
-        "Navíc – vždy jednáme na několika pozicích současně, což znamená, že i když jedna z transakcí přinese ztrátu, zbývající mohou přinést zisk.",
-        "Díky tomu je možné každodenně generovat příjem – někdy větší, někdy menší, ale pravidelný."
-      ]
-    },
-    {
-      "id": "node_29",
-      "title": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ",
-      "type": "snippet",
-      "text": [
-        "Dříve tato funkce byla dostupná na naší platformě, avšak úplně jsme z ní upustili – a už vysvětluji, proč!",
-        "Udělali jsme to s ohledem na vaše bezpečnost. Odstranili jsme tuto metodu vkladu, abychom se vyhnuli situacím, ve kterých by uživatelé museli uvádět údaje své karty, jako číslo, datum platnosti nebo kód CVC.",
-
-        "V současnosti aktivace účtu probíhá výhradně prostřednictvím finančního oddělení. Protože působíme na území Polska, musíme se vyúčtovat s daňovým úřadem.",
-        "My z naší strany provádíme převod měny, deklarujeme vaši částku a následně ji zaúčtujeme na vašem obchodním účtu.",
-        "Navíc neseme všechny náklady spojené s provizí – což dělá tuto metodu pro vás výhodnější, že ano?"
-      ]
-    },
-    {
-      "id": "node_30",
-      "title": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?",
-      "type": "snippet",
-      "text": [
-        "Oficiální platební partner má několik účtů, část na nadace (např. Červený kříž) — pro transparentnost a soulad s právem.",
-        "Název příjemce je technická záležitost; prostředky jdou na individuální obchodní účet.",
-        "Podobně jako u vstupenek/rezervací — na výpisu bývá jiný právní název.",
-        "Kanál je oficiální a akceptovaný bankami; saldo bude naplněno vybranou částkou."
-      ]
-    }
-  ],
+  {
+    "id": "tomorrow",
+    "title": "Promluvme si zítra — Příklad + Zpráva",
+    "type": "snippet",
+    "text": [
+      "PŘÍKLAD + ZPRÁVA:",
+      "— Pojďme to zanalyzovat trochu podrobněji. Existuje společnost jako Apple — určitě ji dobře znáte, že? [čekáme na odpověď klienta]",
+      "— Skvělé. Představme si, že Apple uvedl na trh nejpokročilejší elektromobil. Tento vůz se stane nesmírně populárním po celém světě a v mnoha zemích se bude nadšeně kupovat.",
+      "— Co myslíte, co by se v takové situaci stalo s akcií Apple? Její hodnota by stoupla, nebo klesla? [čekáme na odpověď klienta]",
+      "— Samozřejmě, máte pravdu. Představte si nyní, že byste akcii Apple koupil ještě před vstupem firmy na automobilový trh — když byla cena stále nízká — a poté ji prodal po nárůstu díky velkému zájmu o nový produkt.",
+      "— Tímto způsobem bychom společně dosáhli zisku. Právě o to se stará analytik: bude pro vás připravovat prognózy a analýzy událostí, které mohou ovlivnit cenu akcií, a poskytne vám hotové informace s úplným odůvodněním.",
+      "— Jaké otázky máte v tuto chvíli?",
+      "— Co si o tom myslíte?",
+      "— Doporučuji vám využít tuto příležitost ještě dnes.",
+      "Máme speciální nabídku — není nutné začínat s 25 000 Kč, stačí testovací částka 5 825–6 400 Kč.",
+      "— — —",
+      "— Jak se stavíte k tomu, vydělat v nejbližší době 750 Kč?",
+      "— Myslím, že jste si všiml, že současná světová situace je poměrně nestabilní, že?",
+      "— V takových chvílích chce každý investor uchovat své peníze na bezpečném místě. A často se ukazuje, že investice do zlata je nejlepší řešení.",
+      "— Na začátku tohoto roku byla cena zlata 2 600 USD za unci.",
+      "— A víte, kolik stojí nyní? — 3 800 USD!",
+      "— Podle prognóz největších analytických center může cena dokonce vystoupit na 4 000–4 100 USD za unci.",
+      "— To je skvělá příležitost! Už dnes můžete nejen vidět, jak se vydělává, ale skutečně získat 750 Kč — díky růstu ceny zlata.",
+      "A pokud se během několika hodin zvýší — nebylo by to také skvělé?",
+      "— Proto navrhuji využít tuto šanci hned teď.",
+      "Stačí dobít svůj účet částkou 5 825–6 400 Kč a začít vydělávat.",
+      "— Co si o tom myslíte?",
+      "— Doporučuji vám využít tuto příležitost ještě dnes.",
+      "Máme speciální nabídku — není nutné začínat s 25 000 Kč, stačí testovací částka 5 825–6 400 Kč."
+    ]
+  },
+  {
+    "id": "closing_payment",
+    "title": "UZAVŘENÍ — DOBITÍ",
+    "type": "snippet",
+    "text": [
+      "— Máte ještě nějaké další otázky? Doporučuji aktivovat svůj obchodní účet právě teď!",
+      "Co si o tom myslíte?",
+      "— Aktivace účtu probíhá v několika krocích:",
+      "1) Společně se přihlásíme do vašeho osobního kabinetu, abyste mohl přímo zadat údaje potřebné pro dobití.",
+      "2) Poté je nutné údaje velmi pečlivě přepsat. Je nesmírně důležité nevynechat žádné číslo ani písmeno.",
+      "3) Po provedení převodu prosím zašlete potvrzení o úspěšné bankovní transakci, abych mohl informaci předat finančnímu oddělení k připsání prostředků na obchodní účet.",
+      "Z jaké banky plánujete poslat prostředky na svůj obchodní účet?",
+      "Používáte mobilní aplikaci své banky?",
+      "Je částka kolem 5 825 Kč dostupná v této nebo jiné vaší bance?",
+      "(DŮLEŽITÉ: ODPOVĚDI KLIENTA POZORNĚ POSLOUCHAT)",
+      "Perfektní, přejdeme k prvnímu kroku, souhlasíte?"
+    ]
+  },
+  {
+    "id": "node",
+    "title": "NEMÁM PENÍZE",
+    "type": "snippet",
+    "text": [
+      "— Řekněte mi prosím: Nemáte nyní volné prostředky, nebo jde o obecný nedostatek peněz — na živobytí? [čekáme na odpověď klienta]",
+      "Pokud řekne, že nemá peníze na život:",
+      "— Vaše situace je velmi obtížná. Opravdu bych vám rád pomohl ji vyřešit, protože i já jsem byl na začátku v podobné situaci. [osobní příklad]",
+      "— Nechme prozatím finanční otázky stranou. Na kolik procent odhadujete své šance, že se vám zde podaří vydělat? [čekáme na odpověď, navrhujeme 70–80 %]",
+      "— Chápu, že zbývajících 20 % jsou vaše pochybnosti. Řekněte mi, co vás konkrétně znepokojuje?",
+      "Pokud řekne, že je si jistý, ale nemá peníze:",
+      "— Představte si: Kdybyste musel naléhavě sehnat 5 825–6 400 Kč, co byste udělal, abyste tuto částku získal?",
+      "Pokud řekne, že nemá volné prostředky:",
+      "— Rozumíte pod ‘volnými prostředky’ penězům, o jejichž ztrátu se nebojíte? [čekáme na odpověď klienta]",
+      "— Řekněte mi, jakým způsobem by se podle vás zde dalo přijít o peníze?"
+    ]
+  },
+  {
+    "id": "2_0",
+    "title": "NEMÁM PENÍZE 2.0 (upřesnění, zdůraznění, nabídka)",
+    "type": "snippet",
+    "text": [
+      "Upřesnění finanční situace:",
+      "Chápu, že finanční situace může být náročná. Mohl byste prosím podrobněji popsat, v čem potíže spočívají? Lépe tak pochopím vaši situaci a navrhnu nejlepší řešení.",
+      "Jaká částka vám chybí? Jak dlouho potrvá vyřešit finanční otázku? Kdy očekáváte další prostředky (např. výplata, důchod, podpora)?",
+      "[pokud klient na první otázku odpoví, že je ‘úplná nula’, je vysoce pravděpodobné, že neříká celou pravdu a skrývá pochybnosti či nedůvěru;",
+      "také další odpovědi poslouchejme velmi pozorně, může říci, že výplata byla před pár dny — tedy peníze jsou, ale začínat nechce]",
+      "Zdůraznění významu investování:",
+      "Chápu, že teď se může zdát, že to není nejlepší chvíle pro investování. Zkusme to však vnímat jako příležitost — nejen zachovat kapitál, ale i ho rozmnožit. Čas jsou peníze: čím dřív začnete, tím větší je potenciál zisku.",
+      "Nabídka exkluzivních podmínek:",
+      "Jsem připraven nabídnout vám exkluzivní podmínky pro nové investory. Je to jedinečná možnost získat přístup k atraktivním investičním příležitostem, které nejsou běžně dostupné. [navrhnout bonus]",
+      "Vytvoření pocitu naléhavosti:",
+      "Tržní situace se může rychle měnit, proto je důležité jednat bez odkladu. Zatímco přemýšlíte, jiní už mohou profitovat. Investice nyní může přinést více výhod než později.",
+      "Zvýraznění úspěchů dřívějších investorů:",
+      "Mnoho našich investorů začínalo s malými částkami a dnes mají významná portfolia. Jejich úspěchy mluví samy za sebe. Chcete i vy využít svou šanci?",
+      "Příprava na uzavření:",
+      "Pokud tuto otázku rychle vyřešíme, předám vám všechny potřebné informace a přejdeme k finalizaci. Stačí pár kroků — a brzy uvidíte první výsledky.",
+      "Použití přesvědčivých faktů:",
+      "Je třeba mít na paměti, že mnoho úspěšných lidí vděčí za své bohatství právě investicím. Nevyplatí se čekat na ‘správnou chvíli’ — pojďme ji společně vytvořit teď hned."
+    ]
+  },
+  {
+    "id": "node_2",
+    "title": "CHCI O TOM PŘEMÝŠLET",
+    "type": "snippet",
+    "text": [
+      "Z mé zkušenosti často znamená, když klient řekne, že o tom chce přemýšlet, že projekt plně nepochopil nebo o něm zatím není přesvědčen.",
+      "Řekněte mi prosím, co vás přesně znepokojuje? [čekáme odpověď; pokud řekne — přemýšlet o rizicích nebo bezpečnosti — přejdeme k odpracování těchto námitek]",
+      "Řekněte mi — o čem konkrétně chcete přemýšlet?",
+      "Co v mé prezentaci chybělo, abyste se mohl rozhodnout už teď?",
+      "Co vás v tuto chvíli brzdí v rozhodnutí?",
+      "Jak by se to mohlo promítnout do vašeho konečného rozhodnutí?",
+      "Samozřejmě máte právo o tom přemýšlet. Z mé zkušenosti se však nejlepší rozhodnutí dělají, když člověk vidí konkrétní výsledky a rozumí, jak to funguje v praxi.",
+      "Upřímně řečeno, teď není nad čím dlouze dumat — ledaže ve vás něco vzbuzuje pochybnosti? Co vám přesně brání rozhodnout se nyní?"
+    ]
+  },
+  {
+    "id": "node_3",
+    "title": "CHCI SE PORADIT S ČLENEM RODINY",
+    "type": "snippet",
+    "text": [
+      "Chápu, že se chcete poradit s manželkou/manželem, protože zatím nejste zcela přesvědčen, je to tak? [pokud odpověď Ano — upřesňujeme]",
+      "V čem konkrétně si nejste jistý? Jaké máte pochybnosti?",
+      "— pokud odpověď Ne",
+      "Řekněte — jde o to, aby vaše rozhodnutí manželka/manžel potvrdil, nebo zamítl?",
+      "Víte, sám bych si nevyžadoval svolení, kdybych nebyl plně přesvědčen o své volbě.",
+      "Pro začátek můžeme začít s malou částkou — je to bezpečné a ukáže to, jak to funguje v praxi.",
+      "Už dnes můžete získat první zisk na světové události a … udělat dárek své manželce/manželovi/synovi!",
+      "Máte ještě obavy? Řekněte mi přesně, co vás znepokojuje — rád to vysvětlím."
+    ]
+  },
+  {
+    "id": "2_0_2",
+    "title": "KONZULTACE S RODINOU 2.0 (logika)",
+    "type": "snippet",
+    "text": [
+      "Přejděme na úroveň logiky:",
+      "Chápu, že chcete rozhodnutí dělat společně s blízkým člověkem — to je zcela přirozené.",
+      "Dovolte otázku: Když vás bolí zub — na koho se obrátíte? Na zubaře, že? Protože je to odborník.",
+      "Řekněte mi, rozumí osoba, s níž se chcete radit, investicím a finančnímu trhu? Pokud ne — je lepší klást všechny otázky odborníkovi.",
+      "Právě proto jsem tu — rád odpovím na vše a pokud budete připraven, přejdeme k aktivaci účtu. Souhlasí?"
+    ]
+  },
+  {
+    "id": "node_4",
+    "title": "LICENCE",
+    "type": "snippet",
+    "text": [
+      "— Samozřejmě, žádný problém. Hned vám pošlu dokumenty a podíváme se na ně společně. Zůstanu na lince, abych okamžitě odpověděl na všechny otázky.",
+      "— Zůstaňme ve spojení, zůstanu na lince, abych ihned reagoval na jakékoli dotazy.",
+      "— Mimochodem — protože si chcete ještě něco ověřit, chápu, že existují určité pochybnosti.",
+      "— Řekněme si to otevřeně: Z čeho máte konkrétně obavy?",
+      "— Co by podle vás v naší spolupráci nemuselo fungovat?",
+      "[pokud klient začne vznášet námitky — přecházíme k jejich odpracování, aniž bychom něco posílali; a pokud se po odpracování klient k licenci vrátí — pak ji pošleme!]",
+      "**Druhá varianta:**",
+      "— Dobře, nic nenamítám proti tomu, poskytnout vám licenci.",
+      "— Ale řekněte — může samotná licence být zárukou zisku?",
+      "— Například: Může vám řidič s řidičským průkazem garantovat bezpečnou jízdu?",
+      "— Souhlasíte, že řidičák je také určitý druh ‘licence’ pro řidiče?",
+      "— Poskytuje samotné vlastnictví záruku?",
+      "— Bohužel dnes není těžké získat licenci — stejně jako řidičák.",
+      "— Proto licence sama o sobě neposkytuje stoprocentní jistotu zisku."
+    ]
+  },
+  {
+    "id": "node_5",
+    "title": "CHCI SI PŘEČÍST RECENZE",
+    "type": "snippet",
+    "text": [
+      "— Řekněte mi, jak často osobně píšete na internetu recenze? [Čekáme na odpověď klienta.]",
+      "— A kdo podle vás píše recenze nejčastěji? [Čekáme na odpověď klienta.]",
+      "— Víte, kdybych teď napsal tisíc negativních komentářů o vašem autě — znamenalo by to, že auto nefunguje a je třeba ho prodat? [Pauza na zamyšlení.]",
+      "— Myslím, že nic nepřesvědčí lépe než osobní zkušenost.",
+      "— Proto navrhuji — ověřme si to společně na dnešní události a výsledky uvidíte na vlastní oči.",
+      "**Jiná varianta:**",
+      "— Je skvělé číst recenze — zejména když víme, kdo je psal.",
+      "— Řekněte mi, jak rozlišujete skutečnou recenzi od méně důvěryhodné?",
+      "— Souhlasíte, že recenze lze koupit?",
+      "— Stalo se vám, že jste věnoval pozornost recenzím třeba na vaši vlastní banku?",
+      "— Kterým recenzím věnujete více pozornosti — pozitivním, nebo negativním?",
+      "— A když vám ukážou stovky pozitivních a stovku negativních — které budete považovat za věrohodnější?",
+      "— Myslím, že nic nepřesvědčí lépe než osobní zkušenost.",
+      "— Proto navrhuji — ověřme si to společně na dnešní události a výsledky uvidíte sami.",
+      "**Přečetl jste si špatné recenze:**",
+      "Vysvětlení na příkladu:",
+      "— To, že jste se seznámil s recenzemi, ukazuje, že rozhodnutí o spolupráci berete vážně — a to je velmi dobře.",
+      "— Přesto recenze na internetu ne vždy odrážejí realitu.",
+      "— Mnohé z nich píše konkurence.",
+      "— Nejpodstatnější je, co si osobně — za pomoci platformy — ověříte.",
+      "— Pak sám posoudíte, zda spolupráce funguje podle očekávání.",
+      "— Recenze lze psát, kopírovat, upravovat — ale osobní zkušenost zfalšovat nelze.",
+      "— Proto prosím — ověřme si to společně, abyste výsledky viděl na vlastní oči."
+    ]
+  },
+  {
+    "id": "node_6",
+    "title": "CHCI PODEPSAT SMLOUVU",
+    "type": "snippet",
+    "text": [
+      "— Se mnou osobně smlouvu nepodepisujete.",
+      "— Po zahájení spolupráce s analytikem si prosím vyžádejte smlouvu — připravují se pro každého klienta individuálně, s ohledem na formu spolupráce, očekávaný zisk, obchodní směr a finanční situaci.",
+      "[Pokud klient žádá poslat prázdnou smlouvu — veďte k odůvodněné námitce a upřesněte, proč ji potřebuje / NENÍ SI JISTÝ NEBO SE BOJÍ / převeďte na téma odůvodněné námitky (jaká forma smlouvy vás zajímá?)]",
+      "**Druhá varianta:**",
+      "— Smlouva se podepisuje, když společnost přebírá klientské prostředky do správy.",
+      "— V našem případě nám své peníze nesvěřujete — otevřete si vlastní účet a spravujete jej sám, podle našich doporučení.",
+      "— Řekněte mi, na kolik procent jste si jistý, že společně dosáhneme zisku?"
+    ]
+  },
+  {
+    "id": "node_7",
+    "title": "ZAVOLEJTE MI ZA MĚSÍC",
+    "type": "snippet",
+    "text": [
+      "Proč právě za měsíc?",
+      "Nebo",
+      "Samozřejmě vám mohu zavolat za měsíc, ale řekněte — co se za tu dobu změní?",
+      "Nebo",
+      "Co vám brání začít už teď?",
+      "Nebo",
+      "Smím se zeptat, co vám konkrétně brání začít okamžitě?",
+      "[Pokud klient řekne, že musí: přemýšlet, nebo bude mít později více času — přejdeme k odpracování těchto námitek. Pokud klient řekne, že bude mít peníze až za měsíc — naším úkolem je ‘prodat zprávu’, zaujmout ho ziskem, nastavit deadline a nabídnout start za výhodnějších podmínek.]"
+    ]
+  },
+  {
+    "id": "node_8",
+    "title": "MÁTE PŘÍZVUK",
+    "type": "snippet",
+    "text": [
+      "V naší zemi žije mnoho lidí z různých částí světa, proto je těžké najít někoho zcela bez přízvuku.",
+      "Za více než 3 roky mé práce v této společnosti mi však přízvuk nikdy nebránil pomáhat lidem dosahovat zisků.",
+      "Tak se soustřeďme na cíl, kvůli kterému jste zanechal registraci, a promluvme si o potenciálním zisku, kterého můžete dosáhnout.",
+      "[HNEDE KLADeme OTEVŘENOU OTÁZKU]"
+    ]
+  },
+  {
+    "id": "node_9",
+    "title": "JE TO PRO MĚ KOMPLIKOVANÉ",
+    "type": "snippet",
+    "text": [
+      "Chápu, že je to pro vás nové a mohou vznikat určité obavy — všichni jsme někdy začínali.",
+      "Právě proto vám přidělujeme zkušeného analytika, který vás krok za krokem provede celým procesem — jako učitel ve škole.",
+      "Naše společnost má — stejně jako vy — zájem jen o jednu věc — O ZISK!",
+      "Provizi si účtujeme až ve chvíli, kdy si vyplácíte své zisky — tedy jsme partneři a ne jen služba.",
+      "Jsem si jistý, že s námi budete úspěšný — a brzy se o tom přesvědčíte sám!"
+    ]
+  },
+  {
+    "id": "node_10",
+    "title": "POŠLETE MI VŠECHNY INFORMACE NA E‑MAIL",
+    "type": "snippet",
+    "text": [
+      "— Pokud chcete informace e‑mailem, může to znamenat, že ještě není vše jasné. Řekněte — jaké informace chybí nebo co ve vás vyvolává pochybnosti?",
+      "— Co byste chtěl, abych dodatečně vysvětlil?",
+      "[Pokud klient odpoví, že nechce nic upřesňovat a vše je jasné — navrhněte začít pracovat]",
+      "— Pokud je vše jasné, navrhuji udělat první krok.",
+      "Jakou částku jste si zvolil pro začátek spolupráce?"
+    ]
+  },
+  {
+    "id": "node_11",
+    "title": "NEMÁM ČAS",
+    "type": "snippet",
+    "text": [
+      "Chtěl bych zdůraznit velmi důležitý bod — aktivace účtu trvá doslova jen pár minut, poté se můžete vrátit ke svým denním povinnostem.",
+      "Nebo",
+      "— Mluvíme spolu už přes 20 minut a když se blížíme k aktivaci obchodního účtu, říkáte mi, že teď nemáte čas.",
+      "Řekněte mi otevřeně — něco vás zadržuje? Z čeho máte konkrétně strach?"
+    ]
+  },
+  {
+    "id": "node_12",
+    "title": "PODVODNÍCI",
+    "type": "snippet",
+    "text": [
+      "Na základě jakých informací určujete, která společnost je poctivá a která ne?",
+      "[Čekáme na odpověď klienta]",
+      "V čem přesně vidíte možné podvodné jednání?",
+      "[Čekáme na odpověď klienta]",
+      "Nežádám od vás žádné osobní údaje — sám jste zanechal registrační formulář, abychom vás mohli kontaktovat.",
+      "To nejdůležitější: Prostředky jsou na vašem individuálním účtu a přístup k nim máte pouze vy. Kde v tom vidíte podvod?"
+    ]
+  },
+  {
+    "id": "node_13",
+    "title": "JE TO PRO MĚ VYSOKÁ ČÁSTKA",
+    "type": "snippet",
+    "text": [
+      "Pokud je 5 825–6 400 Kč pro vás příliš vysoká částka na start, řekněte — jaká částka by pro vás byla příjemná pro zahájení spolupráce?",
+      "[Pokud klient řekne, že není připraven začít a chce přemýšlet/číst nebo se poradit — přejdeme k odpracování této námitky. Pokud klient uvede jinou, menší částku než 5 825–6 400 Kč — pokračujeme v dialogu]",
+      "Proč právě tato částka? Protože v případě možných potíží by to pro vás nebyla velká zátěž? Řekněte to upřímně.",
+      "[Pokud klient řekne — ANO, nebo že chce přemýšlet/má strach — přejdeme k odpracování těchto námitek]"
+    ]
+  },
+  {
+    "id": "node_14",
+    "title": "PROČ NEINVESTUJETE SÁM",
+    "type": "snippet",
+    "text": [
+      "Samozřejmě investuji — a navíc mám osobního analytika, se kterým už 4 roky vydělávám obchodováním peníze.",
+      "Nejčastěji investujeme do kryptoměn, ale pravidelně otevíráme pozice i v jiných třídách aktiv.",
+      "Kromě toho — neinvestuji jen já, tohoto projektu se účastní i moji blízcí.",
+      "Doporučuji vám začít spolupráci — abyste mohl vydělávat stejně jako já.",
+      "Povzbuzuji vás ke startu — uvidíte, že se zde dá opravdu dobře vydělávat."
+    ]
+  },
+  {
+    "id": "node_15",
+    "title": "PROČ NELZE ZAČÍT S JEŠTĚ MENŠÍ ČÁSTKOU",
+    "type": "snippet",
+    "text": [
+      "Proč je minimální částka právě 5 825–6 400 Kč a ne méně?",
+      "Tato částka vychází z předpokládané bezpečné obchodní strategie. Otevíráme v průměru 6–10 pozic denně, ale vždy využíváme jen zhruba 50 % prostředků, abychom minimalizovali riziko.",
+      "Proto je 5 825–6 400 Kč částka, která umožňuje efektivní a bezpečný investiční start — a ve skutečnosti pracuje na trhu jen polovina kapitálu.",
+      "Samozřejmě si můžete najít brokera s nižším vstupním prahem, ale tam budete obchodovat sám — bez podpory, bez strategie a bez člověka, kterému záleží na vašem výsledku. U nás jsme partneři: Vyděláte vy, vyděláme my.",
+      "Pokud je pro vás důležitá bezpečnost a zisk, je nejlepší přesvědčit se v praxi. Navrhuji dobít účet minimální částkou a už dnes udělat první krok k zisku.",
+      "Nebo",
+      "Pět let jsme testovali spolupráci s klienty při různých částkách a dospěli jsme k závěru, že 5 825–6 400 Kč je nejbezpečnější suma pro start.",
+      "Právě od této částky vám mohu dát jistotu, že všechno půjde podle plánu.",
+      "Pokud se ptáte ‘proč?’, vysvětlím:",
+      "tato částka je správně rozdělena podle zásad risk‑managementu: Část kapitálu pracuje na trhu a zbytek tvoří takzvaný ‘bezpečnostní polštář’.",
+      "Řekněte — souhlasíte, že není vhodné investovat celou sumu na jednom místě?"
+    ]
+  },
+  {
+    "id": "node_16",
+    "title": "NIC NEPOTŘEBUJI / UŽ MĚ TO NEZAJÍMÁ",
+    "type": "snippet",
+    "text": [
+      "Vše potřebné pro start jsme probrali.",
+      "Vybrali jsme postup, který urychlí dosažení cíle.",
+      "Probrali jsme i bezpečnost prostředků — tedy nejde o nedostatek zájmu.",
+      "Řekněte to otevřeně — z čeho máte strach?"
+    ]
+  },
+  {
+    "id": "node_17",
+    "title": "CHCI PŘIJÍT DO KANCELÁŘE",
+    "type": "snippet",
+    "text": [
+      "V zásadě jsme už probrali vše, co potřebujete k zahájení spolupráce.",
+      "Vybral jste postup, který vám může pomoci dosáhnout finančního cíle rychleji, než jste čekal.",
+      "Probrali jsme i bezpečnost prostředků, proto předpokládám, že nejde o nedostatek zájmu.",
+      "Řekněte to otevřeně — z čeho máte strach?"
+    ]
+  },
+  {
+    "id": "node_18",
+    "title": "KDE JE VAŠE SPOLEČNOST REGISTROVANÁ",
+    "type": "snippet",
+    "text": [
+      "Jsme mezinárodní společnost, s kanceláří také v Polsku — hlavní kancelář v Krotoszynu.",
+      "Registrace: Elite Czech Republic s.r.o., IČO:27170357, Černínská 95/7, Hradčany (Praha 1), 118 00 Praha , zápisu 28. červenec 2004 .",
+      "V praxi může oficiální žádost u NBP stát přibližně 3 750 Kč a trvat až 14 pracovních dní.",
+      "👉 Pokud se název projektu liší od názvu společnosti — ověřit na internetu podle názvu a Company Number."
+    ]
+  },
+  {
+    "id": "node_19",
+    "title": "JAKÉ JSOU ZÁRUKY",
+    "type": "snippet",
+    "text": [
+      "Když se ptáte na záruky, znamená to, že se chcete před něčím ochránit. Řekněte — z čeho máte přesně obavy?",
+      "[KLADeme OTÁZKY / ZÍSKÁVÁME ODPOVĚDI, NEODPOVÍDÁME ZA KLIENTA! Pokud klient mumlá a neumí jasně odpovědět, ptejte se:]",
+      "Představte si, co se může ve spolupráci s námi stát.",
+      "[KLADeme OTÁZKY / ČEKÁME NA ODPOVĚĎ, ANIŽ BYCHOM KLIENTOVI NABÍZELI VARIANTY]",
+      "Na tuto otázku se ptají jen rozumní lidé — řekněte, jaké konkrétní záruky vás zajímají?",
+      "[Pokud klient odkazuje na smlouvu, licenci nebo osobní schůzku — použijeme příslušné texty. Pokud klient neumí přesně odpovědět — použijeme následující verzi]",
+      "Nejdůležitější zárukou v naší spolupráci je společný zájem. Uvažte: Jaký prospěch bychom měli z toho, dostat vás do situace, kdy přijdete o peníze, když náš zisk činí 10 % vašeho profitu?",
+      "V naší společnosti má naprosto každý zájem na tom, aby naše spolupráce trvala roky."
+    ]
+  },
+  {
+    "id": "node_20",
+    "title": "NEVĚŘÍM TOMU",
+    "type": "snippet",
+    "text": [
+      "Čemu přesně nevěříte? [Čekáme na odpověď klienta]",
+      "Nevěříte, že se zde dá opravdu vydělat? [Čekáme na odpověď klienta + můžeme odkázat na zájem společnosti.]",
+      "Nedůvěřujete? Nebo se možná něčeho obáváte?"
+    ]
+  },
+  {
+    "id": "node_21",
+    "title": "NEVĚŘÍM, ŽE LZE NA FINANČNÍM TRHU VYDĚLAT",
+    "type": "snippet",
+    "text": [
+      "Není třeba ‘věřit’ investičnímu odvětví — lze si to ověřit v praxi.",
+      "Například: Zlato je cenově stabilní, zatímco národní měna před volbami obvykle oslabuje.",
+      "Všechny tyto události lze predikovat — stačí důvěřovat našim analytikům.",
+      "Jsou to profesionálové ve svém oboru a jejich hlavním cílem je maximální růst vašeho kapitálu a společný zisk, protože právě z něj plyne náš příjem.",
+      "Pokud dosáhnete zisku a vyplatíte si ho na svůj účet — budete pak věřit, že to funguje?",
+      "V tom případě navrhuji udělat tento krok, vidět výsledek v praxi a teprve poté hodnotit reálnou proveditelnost.",
+      "Doporučuji začít spolupráci a už dnes získat svůj první zisk!"
+    ]
+  },
+  {
+    "id": "node_22",
+    "title": "MÁM STRACH",
+    "type": "snippet",
+    "text": [
+      "Vaše obavy chápu — je to zcela přirozené. Každý, kdo začíná něco nového, má strach.",
+      "Ale položte si otázku: Z čeho přesně máte strach? Ze ztráty prostředků?",
+      "Právě proto vás nenecháme samotného. Získáte podporu analytika, který vás povede krok za krokem.",
+      "Navíc — vyděláváme jen tehdy, když vyděláváte vy, takže máme společný zájem na vašem úspěchu.",
+      "Neinvestujete celou sumu najednou — pracujeme jen s částí kapitálu, zbytek slouží jako zajištění.",
+      "Jde o promyšlenou a bezpečnou strategii řízení rizik.",
+      "Proto navrhuji: Vyzkoušejme to. Jen praxe rozptýlí všechny pochybnosti."
+    ]
+  },
+  {
+    "id": "node_23",
+    "title": "NEDŮVĚŘUJI",
+    "type": "snippet",
+    "text": [
+      "Vaše obavy chápu — je to zcela přirozené. Každý, kdo začíná něco nového, má strach.",
+      "Ale položte si otázku: Z čeho přesně máte strach? Ze ztráty prostředků?",
+      "Právě proto vás nenecháme samotného. Získáte podporu analytika, který vás povede krok za krokem.",
+      "Navíc — vyděláváme jen tehdy, když vyděláváte vy, takže máme společný zájem na vašem úspěchu.",
+      "Neinvestujete celou sumu najednou — pracujeme jen s částí kapitálu, zbytek slouží jako zajištění.",
+      "Jde o promyšlenou a bezpečnou strategii řízení rizik.",
+      "Proto navrhuji: Vyzkoušejme to. Jen praxe rozptýlí všechny pochybnosti."
+    ]
+  },
+  {
+    "id": "node_24",
+    "title": "NEJSEM SI JISTÝ / NEJSEM PŘIPRAVEN",
+    "type": "snippet",
+    "text": [
+      "Vaše obavy chápu — je to zcela přirozené. Každý, kdo začíná něco nového, má strach.",
+      "Ale položte si otázku: Z čeho přesně máte strach? Ze ztráty prostředků?",
+      "Právě proto vás nenecháme samotného. Získáte podporu analytika, který vás povede krok za krokem.",
+      "Navíc — vyděláváme jen tehdy, když vyděláváte vy, takže máme společný zájem na vašem úspěchu.",
+      "Neinvestujete celou sumu najednou — pracujeme jen s částí kapitálu, zbytek slouží jako zajištění.",
+      "Jde o promyšlenou a bezpečnou strategii řízení rizik.",
+      "Proto navrhuji: Vyzkoušejme to. Jen praxe rozptýlí všechny pochybnosti."
+    ]
+  },
+  {
+    "id": "node_25",
+    "title": "KDY MOHU PENÍZE VYBRAT",
+    "type": "snippet",
+    "text": [
+      "Sami od sebe neříkáme, kdy k výběru dojde. Pokud se klient ptá:",
+      "Prosím, proberte všechny otázky ohledně výběru prostředků se svým expertem.",
+      "Zvlášť když první dosažené zisky budete vybírat právě s jeho pomocí — krok za krokem vám ukáže, jak na to. Souhlasí?",
+      "Pokud klient trvá na tom, zda může vybrat kdykoli:",
+      "Výběr prostředků je možný kdykoli. Vaším hlavním úkolem je teď ale dosáhnout zisku — a pokud chcete vidět, jak to funguje v praxi, expert vám s tím určitě pomůže."
+    ]
+  },
+  {
+    "id": "node_26",
+    "title": "UŽ JSEM PRODĚLAL",
+    "type": "snippet",
+    "text": [
+      "Plně vám rozumím — je to velmi nepříjemná situace a samozřejmě chápu vaše obavy.",
+      "Řekněte — z čeho máte přesně strach?",
+      "Nebo",
+      "Vaše obavy velmi dobře chápu — je to opravdu politováníhodná situace.",
+      "Řekněte — co vás přesně znepokojuje?",
+      "[Poté buď přejdeme k námitkám, které klient vznesl, nebo ještě jednou vysvětlíme, kde se prostředky nacházejí a jak probíhá spolupráce s analytikem.]"
+    ]
+  },
+  {
+    "id": "node_27",
+    "title": "BOJÍM SE ZTRÁTY",
+    "type": "snippet",
+    "text": [
+      "Při obchodním procesu:",
+      "Samozřejmě, na burze se může stát cokoli — obzvlášť, když člověk obchoduje sám. V takovém případě je velmi snadné utrpět ztrátu, protože riziko existuje vždy.",
+      "Naším hlavním cílem je však dovést vás ke stabilním ziskům, protože i my vyděláváme jen tehdy, když vyděláváte vy!",
+      "Vyděláváme jak při růstu, tak při poklesu cen.",
+      "Naši analytici průběžně ukazují směr trhu a pomáhají otevírat pozice ve správný čas.",
+      "Expert vám navíc pomůže nastavit tzv. omezení (Stop‑Loss/Take‑Profit), která chrání vaše prostředky.",
+      "Navrhuji začít spolupráci hned — abyste už dnes viděl svůj první zisk!",
+      "Při výběru:",
+      "Jde výhradně o váš individuální obchodní účet. Řekněte: Stalo se, že by při převodu mezi vašimi bankovními účty prostředky ‘zmizely’?",
+      "Tady je to totéž — děláte prostě převod mezi svými účty. JE TO ZCELA BEZPEČNÉ!",
+      "Proto navrhuji začít spolupráci hned, abyste už dnes viděl první zisk!",
+      "Naši provizi získáváme až ve chvíli, kdy si vyplácíte své zisky.",
+      "Uvažte: Jaký prospěch bychom měli z toho, kdyby se vám nepodařilo vybrat peníze, když bychom v takovém případě také nic nevydělali?",
+      "Vyděláváme jen tehdy, když vyděláváte vy. Proto máme naprostý zájem na vašem úspěchu!"
+    ]
+  },
+  {
+    "id": "node_28",
+    "title": "JAKÁ RIZIKA EXISTUJÍ",
+    "type": "snippet",
+    "text": [
+      "Rozumím, na co myslíte. V tomto oboru pracuji dlouho a vím, že každého rozumného člověka zajímají rizika. Otázky jako:",
+      "Co když prodělám?",
+      "nebo",
+      "Jaké mám záruky?",
+      "— jsou přirozenou reakcí. Jde přece o vaše peníze, proto jsou takové obavy zcela oprávněné.",
+      "Byl bych špatný poradce, kdybych tvrdil, že neexistuje riziko — to by nebyla pravda.",
+      "Vztah stavíme na důvěře, proto říkám na rovinu: Riziko vždy existuje, protože nikdo nemá nad finančním trhem plnou kontrolu.",
+      "Nepředvídatelné situace mohou nastat kdekoliv, klíčem je však uvážený risk‑management.",
+      "Jak se říká: ‘Kdo má informace, má moc’. A my tyto informace máme.",
+      "Proto používáme sadu nástrojů, které pomáhají snižovat riziko na minimum.",
+      "Jedním z nejdůležitějších je tzv. Stop‑Loss. Slyšel jste už ten pojem?",
+      "(Stop‑Loss) — je mechanismus, který pozici automaticky uzavře, když dosáhne určité úrovně ztráty.",
+      "Například: Když nastavíme Stop‑Loss na 2 USD, systém při náhlém propadu trhu sám uzavře pozici s maximální ztrátou 2 USD. Je to velmi účinná ochrana.",
+      "Kromě toho pracujeme vždy s více pozicemi současně. I když jedna přinese ztrátu, jiné mohou být ziskové.",
+      "Díky tomu lze generovat denní příjem — někdy vyšší, někdy nižší, ale pravidelně."
+    ]
+  },
+  {
+    "id": "node_29",
+    "title": "PROČ NA PLATFORMĚ NENÍ DOBITÍ",
+    "type": "snippet",
+    "text": [
+      "Dříve tato funkce na naší platformě byla, ale zcela jsme ji zrušili — a hned vysvětlím proč!",
+      "Udělali jsme to pro vaši bezpečnost. Tuto formu vkladu jsme odstranili, abychom předešli zadávání údajů z karty, jako je číslo, datum expirace či CVC kód.",
+      "V současnosti probíhá aktivace účtu výhradně přes finanční oddělení. Protože působíme v Polsku, musíme se zodpovídat finančnímu úřadu.",
+      "Z naší strany provedeme měnovou konverzi, váš obnos deklarujeme a následně ho připíšeme na váš obchodní účet.",
+      "Navíc všechny poplatky bereme na sebe — tato metoda je pro vás výhodnější, že?"
+    ]
+  },
+  {
+    "id": "node_30",
+    "title": "PROČ SE PŘEVOD ZOBRAZUJE NA JMÉNO ČERVENÉHO KŘÍŽE?",
+    "type": "snippet",
+    "text": [
+      "Oficiální platební partner má více účtů, některé z nich jsou vedeny na nadace (např. Červený kříž) — kvůli transparentnosti a právní konformitě.",
+      "Jméno příjemce platby je technická otázka; prostředky jsou připisovány na váš individuální obchodní účet.",
+      "Podobně jako u jízdenek/rezervací — na výpisu se může objevit jiná právní entita.",
+      "Kanál je oficiální a bankami akceptovaný; zůstatek je dobit zvolenou částkou."
+    ]
+  }
+],
   "edges": [
     {
       "from": "barriers_router",
