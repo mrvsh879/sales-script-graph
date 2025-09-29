@@ -612,503 +612,521 @@
     { "label": "Давайте завтра", "to": "tomorrow" }
   ]
 },
-    {
+       {
       "id": "tomorrow",
-      "title": "Давайте завтра — приклад + новина ПЛ",
+      "title": "Să revenim mâine — exemplu + știre ",
       "type": "snippet",
       "text": [
-        "ПРИКЛАД + НОВИНА (PL):",
-        "— Să discutăm asta puțin mai detaliat. Există o firmă precum Apple — cu siguranță o cunoașteți bine, nu-i așa? [чекаємо відповідь клієнта]",
-        "— Excelent. Să ne imaginăm că firma Apple a produs cea mai modernă mașină electrică. Această mașină devine extrem de populară în întreaga lume și este cumpărată cu plăcere în multe țări.",
-        "— Cum credeți, ce se va întâmpla cu acțiunile firmei Apple în această situație? Valoarea lor va crește sau va scădea? [чекаємо відповідь клієнта]",
-        "— Desigur, aveți dreptate. Să presupunem acum că ați cumpărat acțiuni Apple înainte ca firma să intre pe piața mașinilor — când prețul lor era încă scăzut — și apoi le-ați vândut după creșterea prețului, cauzată de interesul mare pentru noul produs.",
-        "— În acest mod, împreună cu Dumneavoastră, am obține profit. Tocmai asta face analistul, care vă va pregăti prognoze și analize ale evenimentelor care pot influența cursul acțiunilor. Analistul vă va furniza informații gata cu justificări complete.",
-        "— Ce întrebări aveți la această etapă?",
-        "— Ce credeți despre asta?",
-        "— Vă sfătuiesc să profitați de această oportunitate astăzi.",
-        "Avem o ofertă specială — nu trebuie să începeți cu 1000 euro, e suficientă o sumă de probă de 1250 RON.",
+        "EXEMPLU + ȘTIRE:",
+        "— Haideți să discutăm puțin mai detaliat. Există o companie precum Apple — cu siguranță o cunoașteți bine, nu-i așa? [așteptăm răspunsul clientului]",
+        "— Grozav. Să ne imaginăm că Apple a lansat cea mai modernă mașină electrică. Această mașină devine extrem de populară în întreaga lume și este cumpărată cu entuziasm în multe țări.",
+        "— Cum credeți că ar reacționa acțiunile Apple într-o astfel de situație? Valoarea lor ar crește sau ar scădea? [așteptăm răspunsul clientului]",
+        "— Desigur, aveți dreptate. Să presupunem acum că ați cumpărat acțiuni Apple înainte ca firma să intre pe piața auto — când prețul era încă scăzut — și apoi le-ați vândut după creșterea determinată de interesul pentru noul produs.",
+        "— În felul acesta am obține împreună profit. Aceasta este munca analistului: va pregăti pentru dvs. prognoze și analize ale evenimentelor care pot influența cotațiile, oferindu-vă informații gata de utilizare, cu justificare completă.",
+        "— Ce întrebări aveți în acest punct?",
+        "— Ce părere aveți?",
+        "— Vă recomand să profitați de această oportunitate chiar astăzi.",
+        "Avem o ofertă specială — nu trebuie să începeți cu 1000 de euro, este suficientă o sumă de test de 1189–1308 RON.",
         "— — —",
-        "— Cum vă raportați la posibilitatea de a câștiga 30 euro în viitorul apropiat?",
-        "— Cred că ați observat că situația în lume este acum destul de instabilă, nu-i așa?",
-        "— În astfel de momente, fiecare investitor vrea să aibă banii într-un loc sigur. Și tocmai atunci cea mai bună soluție este adesea investiția în aur.",
-        "— La începutul acestui an, prețul aurului era de 2600 dolari pe uncie.",
-        "— Iar știți cât costă acum? — 3800 dolari!",
-        "— Conform prognozelor celor mai mari centre analitice, prețul poate crește chiar până la 4000–4100 dolari pe uncie.",
-        "— E o ocazie excelentă! Deja astăzi puteți nu doar să vedeți cum arată câștigul, ci și să faceți efectiv 30 euro datorită creșterii prețului aurului.",
-        "Și dacă crește în câteva ore — ar fi excelent, nu-i așa?",
-        "— De aceea propun să profitați de această șansă acum.",
-        "E suficient să alimentați contul cu suma de 1250 RON, pentru a începe să câștigați.",
-        "— Ce credeți despre asta?",
-        "— Vă sfătuiesc să profitați de această oportunitate astăzi.",
-        "Avem o ofertă specială — nu trebuie să începeți cu 1000 euro, e suficientă o sumă de probă de 1250 RON."
+        "— Cum priviți posibilitatea de a câștiga 30 de euro în scurt timp?",
+        "— Probabil ați observat că situația globală este destul de instabilă, nu-i așa?",
+        "— În astfel de momente, fiecare investitor vrea să-și păstreze banii într-un loc sigur. Iar investiția în aur se dovedește adesea cea mai bună soluție.",
+        "— La începutul acestui an, prețul aurului era de 2600 de dolari pe uncie.",
+        "— Știți cât costă acum? — 3800 de dolari!",
+        "— Potrivit celor mai mari centre analitice, prețul poate urca până la 4000–4100 de dolari pe uncie.",
+        "— Este o ocazie excelentă! Chiar de astăzi puteți nu doar să vedeți cum se câștigă, ci și să obțineți efectiv 30 de euro datorită creșterii prețului aurului.",
+        "Și dacă va crește în câteva ore — ar fi grozav, nu?",
+        "— De aceea propun să profităm de această șansă chiar acum.",
+        "Este suficient să alimentați contul cu 1189–1308 RON pentru a începe să câștigați.",
+        "— Ce părere aveți?",
+        "— Vă recomand să profitați de această posibilitate chiar astăzi.",
+        "Avem o ofertă specială — nu trebuie să începeți cu 1000 de euro, este suficientă o sumă de test de 1189–1308 RON."
       ]
     },
     {
       "id": "closing_payment",
-      "title": "ЗАКРИТТЯ — ПОПОВНЕННЯ",
+      "title": "ÎNCHIDERE — ALIMENTARE",
       "type": "snippet",
       "text": [
-        "— Aveți alte întrebări? Recomand să activați contul de tranzacționare acum!", 
-        "Ce credeți despre asta?",
-        
-        "— Activarea contului se desfășoară în câteva etape:", 
-        "1) Ne conectăm împreună la contul Dumneavoastră personal, pentru ca să puteți depune direct cererea pentru furnizarea datelor personale necesare pentru alimentarea contului.",
-        "2) Apoi trebuie să copiați datele foarte atent. E extrem de important să nu omiteți nicio cifră sau literă.",
-        "3) După efectuarea transferului, vă rog să furnizați confirmarea operațiunii bancare de succes, ca să pot transmite această informație departamentului financiar pentru a înregistra fondurile pe contul de tranzacționare.", 
-        
-        "De la ce bancă planificați să transferați fondurile pe contul Dumneavoastră de tranzacționare?", 
-        
-        "Folosiți aplicația mobilă a băncii Dumneavoastră?  ",
-        
-        "Suma de 1250 RON este disponibilă în această bancă sau în alta a Dumneavoastră?", 
-        "(ВАЖЛИВО СЛУХАТИ УВАЖНО ВІДПОВІДІ КЛІЄНТА)",
-        
+        "— Mai aveți întrebări? Vă recomand să activați contul de tranzacționare chiar acum!",
+        "Ce părere aveți?",
+        "— Activarea contului are loc în câteva etape:",
+        "1) Ne autentificăm împreună în cabinetul dvs. personal, pentru ca dvs. să puteți completa direct datele necesare alimentării contului.",
+        "2) Apoi trebuie introduse datele cu mare atenție. Este extrem de important să nu se omită nicio cifră sau literă.",
+        "3) După efectuarea transferului, vă rog să trimiteți confirmarea operațiunii bancare reușite, ca să pot transmite informația către departamentul financiar pentru înregistrarea sumelor în contul de tranzacționare.",
+        "Din ce bancă plănuiți să transferați fondurile către contul de tranzacționare?",
+        "Folosiți aplicația mobilă a băncii dvs.?",
+        "Este disponibilă suma de aproximativ 1189 RON în această bancă sau în altă bancă a dvs.?",
+        "(IMPORTANT: ASCULTĂM CU ATENȚIE RĂSPUNSURILE CLIENTULUI)",
         "Excelent, să trecem la primul pas, bine?"
-
       ]
     },
     {
       "id": "node",
-      "title": "НЕМАЄ ГРОШЕЙ",
+      "title": "NU AM BANI",
       "type": "snippet",
       "text": [
-        "— Spuneți-mi, nu aveți acum fonduri libere, sau e vorba de lipsă de bani în general – pentru viață? [чекаємо відповідь клієнта]",
-        "Dacă spune că nu are pentru viață:",
-        "— Aveți o situație foarte grea. Aș vrea foarte mult să vă ajut să o rezolvați, deoarece și eu am fost la început în situație similară. [свій приклад]",
-        "— Să lăsăm deocamdată chestiunile financiare. Pe cât de procente evaluați șansele Dumneavoastră că veți reuși să câștigați aici? [чекаємо відповідь, підказуємо 70–80%]",
-        "— Înțeleg că restul de 20% sunt îndoielile Dumneavoastră. Spuneți-mi, ce vă face nesigur/ă?",
-        "Dacă spune că e sigur/ă, dar nu are bani:",
-        "— Imaginați-vă – dacă ar trebui urgent să obțineți 1250 RON, ce ați face ca să găsiți această sumă?",
-        "Dacă spune că nu are libere:",
-        "— Prin „fonduri libere” înțelegeți bani pe care nu vă e frică să-i pierdeți? [чекаємо відповідь клієнта]",
-        "— Spuneți-mi – cum credeți, în ce mod ați putea pierde bani aici?"
+        "— Spuneți-mi, vă rog: nu aveți în acest moment fonduri libere sau este vorba de lipsă de bani în general — pentru trai? [așteptăm răspunsul clientului]",
+        "Dacă spune că nu are pentru trai:",
+        "— Aveți o situație dificilă. Mi-aș dori foarte mult să vă ajut s-o rezolvați, pentru că și eu am fost într-o situație similară la început. [exemplul propriu]",
+        "— Să lăsăm deocamdată deoparte chestiunile financiare. La ce procent vă evaluați șansele de a câștiga aici? [așteptăm răspunsul, sugerăm 70–80%]",
+        "— Înțeleg că restul de 20% sunt îndoieli. Spuneți-mi, vă rog, ce anume vă trezește nesiguranță?",
+        "Dacă spune că este convins/ă, dar nu are bani:",
+        "— Imaginați-vă că ar trebui urgent să găsiți 1189–1308 RON — ce ați face pentru a strânge suma?",
+        "Dacă spune că nu are fonduri libere:",
+        "— Prin „fonduri libere” înțelegeți bani pe care nu vă este teamă să-i pierdeți? [așteptăm răspunsul clientului]",
+        "— Spuneți-mi, vă rog, cum credeți că s-ar putea pierde aici bani?"
       ]
     },
     {
       "id": "2_0",
-      "title": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)",
+      "title": "NU AM BANI 2.0 (clarificare, subliniere, ofertă)",
       "type": "snippet",
       "text": [
-        "Utocnenie situației financiare:",                                                                                                                                                               
-        "Înțeleg că situația financiară poate fi dificilă. Ați putea preciza în ce constau exact aceste dificultăți? Astfel voi putea înțelege mai bine situația Dumneavoastră și propune cea mai bună soluție posibilă.",
-        "Cât vă lipsește? Cât timp va fi necesar pentru a rezolva chestiunea financiară? Când vă așteptați să primiți următorii bani (de ex. salariu, pensie, alocație)?", 
-        "[якщо клієнт відповідає на перше запитання, що повний нуль, найімовірніше, клієнт не до кінця чесний і за цим приховує свої сумніви або недовіру,",
-        "відповіді на наступні запитання теж треба слухати дуже уважно, адже клієнт може сказати, що зарплату дали кілька днів тому, а отже, гроші в нього є, але розпочинати роботу він не збирається]",
-        "Subiectarea importanței investițiilor:",                                                                                                                                          
-        "Înțeleg că acum poate părea că nu e cel mai bun moment pentru investiții. Vă rog însă să priviți asta ca pe o șansă — nu doar de a păstra, ci și de a multiplica capitalul. Timpul e bani – cu cât începeți mai devreme, cu atât mai mare potențialul de profit puteți utiliza.",
-        "Propunerea condițiilor exclusive:",                                                                                                                                       
-        "Sunt gata să vă propun condiții exclusive destinate noilor investitori. E o ocazie unică de a obține acces la oportunități investiționale atractive, care nu sunt disponibile public. [Запропонувати бонус]",
-        "Crearea senzației de urgență:",                                                                                                                             
-        "Situația pe piață se poate schimba rapid, de aceea e important să acționați fără întârziere. În timp ce Dumneavoastră încă vă gândiți, alții pot deja profita de această ocazie. Investiția acum poate aduce mai multe beneficii decât în viitor.",
-        "Subiectarea succeselor investitorilor anteriori:",                                                                                                                           
-        "Mulți dintre investitorii noștri au început cu sume mici, iar azi sunt proprietari de portofolii semnificative. Succesele lor vorbesc de la sine. Nu ați vrea să profitați de șansa Dumneavoastră?",
-        "Pregătirea pentru încheierea tranzacției:",                                                                                                                                              
-        "Dacă rezolvăm rapid această chestiune, sunt gata să vă transmit toate informațiile necesare și să procedăm la finalizarea tranzacției. Sunt doar câțiva pași – și în curând veți începe să vedeți primele rezultate.",
-        "Utilizarea faptelor convingătoare:",                                                                                                                                  
-        "Merită să țineți minte că mulți oameni de succes își datorează bunăstarea tocmai investițiilor. Nu merită să așteptați un moment mai bun – să-l creăm împreună acum"
+        "Clarificarea situației financiare:",
+        "Înțeleg că situația financiară poate fi dificilă. Ați putea preciza în ce constau exact dificultățile? Astfel voi înțelege mai bine situația dvs. și pot propune cea mai bună soluție.",
+        "Ce sumă vă lipsește? Cât timp va fi necesar pentru a rezolva chestiunea financiară? Când estimați să primiți alți bani (de ex. salariu, pensie, ajutor)?",
+        "[dacă la prima întrebare clientul răspunde că are „zero absolut”, cel mai probabil își ascunde îndoielile sau neîncrederea;",
+        "răspunsurile la următoarele întrebări trebuie ascultate foarte atent, pentru că ar putea spune că a primit salariul acum câteva zile — deci bani există, dar nu intenționează să înceapă acum]",
+        "Sublinierea importanței investiției:",
+        "Înțeleg că acum poate părea că nu e momentul ideal pentru investiții. Totuși, priviți asta ca pe o șansă — nu doar să vă păstrați capitalul, ci să-l și multiplicați. Timpul înseamnă bani: cu cât începeți mai devreme, cu atât potențialul de câștig este mai mare.",
+        "Ofertă de condiții exclusive:",
+        "Sunt gata să vă ofer condiții exclusive pentru investitorii noi. E o ocazie rară de a accesa oportunități atractive care nu sunt disponibile tuturor. [Propuneți bonus]",
+        "Crearea sentimentului de urgență:",
+        "Piața se poate schimba rapid, de aceea e important să acționăm fără întârziere. Cât timp reflectați, alții pot profita deja. Investiția acum poate aduce mai multe beneficii decât mai târziu.",
+        "Sublinierea succeselor altor investitori:",
+        "Mulți investitori ai noștri au început cu sume mici, iar astăzi dețin portofolii semnificative. Succesul lor vorbește de la sine. Nu ați vrea să vă folosiți și dvs. șansa?",
+        "Pregătirea pentru încheiere:",
+        "Dacă rezolvăm repede această chestiune, vă pot oferi toate informațiile necesare și trecem la finalizarea tranzacției. Sunt doar câțiva pași — și curând veți vedea primele rezultate.",
+        "Folosirea faptelor convingătoare:",
+        "Merită amintit că mulți oameni de succes își datorează bunăstarea investițiilor. Nu e nevoie să așteptăm „momentul perfect” — haideți să-l creăm împreună chiar acum."
       ]
     },
     {
       "id": "node_2",
-      "title": "ХОЧУ ПОДУМАТИ",
+      "title": "VREAU SĂ MĂ GÂNDESC",
       "type": "snippet",
       "text": [
-        "Din experiența mea, când un client spune că vrea să se gândească, asta înseamnă adesea că nu a înțeles pe deplin proiectul sau că nu este încă convins de acesta.",
-
-        "Vă rog să-mi spuneți exact ce vă preocupă? [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
-        "Vă rog să-mi spuneți exact la ce doriți să vă gândiți?",
-        "Ce a lipsit din prezentarea mea pentru a vă permite să luați o decizie chiar acum?",
-        "Ce vă împiedică să luați o decizie în acest moment?",
-        "Cum ar putea afecta acest lucru decizia dvs. finală?", 
-
-        "Desigur, aveți dreptul să vă gândiți. Cu toate acestea, din experiența mea, cele mai bune decizii se iau atunci când puteți vedea rezultate concrete și înțelegeți cum funcționează în practică.",
-        "Sincer, nu prea sunt multe lucruri de luat în considerare în acest moment — dacă nu cumva ceva vă îngrijorează? Ce anume vă împiedică să luați o decizie?"
-        ]
+        "Din experiența mea, când un client spune că vrea să se gândească, de multe ori înseamnă că nu a înțeles pe deplin proiectul sau nu este încă convins.",
+        "Spuneți-mi, vă rog, ce anume vă îngrijorează? [așteptăm răspunsul; dacă e vorba de riscuri sau siguranță — trecem la lucrul cu acele obiecții]",
+        "Spuneți-mi — la ce anume ați dori să reflectați?",
+        "Ce a lipsit în prezentarea mea ca să puteți lua decizia chiar acum?",
+        "Ce vă oprește să decideți în acest moment?",
+        "Cum ar putea influența acest lucru decizia finală?",
+        "Desigur, aveți dreptul să reflectați. Totuși, deciziile cele mai bune se iau când vedeți rezultate concrete și înțelegeți cum funcționează în practică.",
+        "Sincer vorbind, acum nu e prea mult la ce să ne gândim — decât dacă aveți îndoieli. Ce anume vă împiedică să decideți?"
+      ]
+    },
+    {
+      "id": "node_3",
+      "title": "VREAU SĂ MĂ CONSULT CU FAMILIA",
+      "type": "snippet",
+      "text": [
+        "Înțeleg că doriți să vă consultați cu soția/soțul, fiindcă încă nu sunteți pe deplin convins/ă, corect? [dacă răspunsul este Da — clarificăm]",
+        "În ce anume nu sunteți sigur/ă? Ce îndoieli aveți?",
+        "— dacă răspunsul este NU",
+        "Spuneți-mi — este vorba ca soția/soțul să vă aprobe sau să respingă decizia?",
+        "Eu, personal, nu aș cere acordul dacă nu aș fi sigur/ă de alegerea mea.",
+        "Pentru început putem porni cu o sumă mică — e sigur și vă permite să vedeți cum funcționează în practică.",
+        "Chiar astăzi puteți obține primul profit pe un eveniment global și… să faceți un cadou soției/soțului/fiului!",
+        "Au rămas temeri? Spuneți-mi ce anume vă preocupă — explic cu plăcere."
+      ]
+    },
+    {
+      "id": "2_0_2",
+      "title": "CONSULTARE CU FAMILIA 2.0 (logică)",
+      "type": "snippet",
+      "text": [
+        "Să apelăm la logică:",
+        "Înțeleg că doriți să luați decizia împreună cu o persoană apropiată — e firesc.",
+        "Permiteți-mi o întrebare: dacă vă doare un dinte, la cine apelați? La dentist, nu-i așa? Pentru că e specialist.",
+        "Persoana cu care doriți să vă consultați se pricepe la investiții și piața financiară? Dacă nu, mai bine adresați întrebările unui specialist.",
+        "De aceea sunt aici să ajut — răspund la tot și, dacă sunteți gata, trecem la activarea contului. Bine?"
+      ]
+    },
+    {
+      "id": "node_4",
+      "title": "LICENȚĂ",
+      "type": "snippet",
+      "text": [
+        "— Desigur, nicio problemă. Vă trimit acum documentele și le parcurgem împreună. Rămân pe linie ca să răspund imediat la orice întrebare.",
+        "— Rămânem în contact; voi fi pe linie ca să răspund pe loc la toate întrebările.",
+        "— Apropo — dacă doriți să mai verificați ceva, înțeleg că există unele îndoieli.",
+        "— Să vorbim deschis: de ce anume vă temeți?",
+        "— Ce credeți că ar putea să nu funcționeze în colaborarea noastră?",
+        "[dacă clientul începe să formuleze obiecții — trecem la lucrul cu ele fără să trimitem nimic; iar dacă după aceea revine la licență — abia atunci o trimitem]",
+        "**Varianta a doua:**",
+        "— În regulă, nu am nimic împotrivă să vă pun la dispoziție licența.",
+        "— Dar spuneți-mi — poate licența, de una singură, să garanteze profitul?",
+        "— De exemplu: un șofer care are permis poate să vă garanteze o călătorie sigură?",
+        "— Sunteți de acord că permisul e și el o formă de „licență” pentru șofer?",
+        "— Doar deținerea lui oferă garanție?",
+        "— Din păcate, astăzi obținerea unei licențe — la fel ca a permisului — nu este dificilă.",
+        "— De aceea, simpla existență a licenței nu oferă certitudinea profitului."
+      ]
     },
     {
       "id": "node_5",
-      "title": "ХОЧУ ПОЧИТАТИ ВІДГУКИ",
+      "title": "VREAU SĂ CITESC REVIEW-URI",
       "type": "snippet",
       "text": [
-        "- Spuneți-mi – cât de des vă întâmplă să scrieți personal recenzii pe internet? [Чекаємо на відповідь клієнта.]",                                                                                                                                                                                                        
-        "- Iar cum credeți – cine scrie cel mai des recenzii? [Чекаємо на відповідь клієнта.]",                                                                         
-        "- Știți, dacă aș scrie acum o mie de comentarii negative despre mașina Dumneavoastră – ar însemna asta că mașina nu funcționează și trebuie vândută? [Пауза, щоб задумався.]",                                                                                
-        "- Cred că nimic nu convinge mai bine decât experiența personală.",                                                                              
-        "- De aceea vă încurajez – să verificăm împreună cu ocazia evenimentului de azi și veți vedea rezultatele cu ochii proprii.",
-
-                                          "**Alt variantă:**",
-        "– E o idee excelentă să citiți recenzii – mai ales când știm cine le-a scris.",
-        "– Spuneți-mi, cum deosebiți o recenzie adevărată de una mai puțin credibilă?",
-        "– Sunteți de acord că recenziile pot fi cumpărate?",
-        "– V-ați uitat vreodată la recenziile băncii Dumneavoastră proprii?",
-        "– La ce recenzii acordați mai multă atenție – pozitive sau negative?",
-        "– Iar dacă v-aș prezenta sute de recenzii pozitive și o sută negative – pe care le-ați considera mai credibile?",
-        "– Cred că nimic nu convinge mai bine decât experiența personală.",
-        "– De aceea vă încurajez – să verificăm împreună cu ocazia evenimentului de azi și veți vedea rezultatele cu ochii proprii.",
-        
-                                    "**A citit recenzii negative:**",
-        "Explicație pe exemplu:",
-        "– Faptul că v-ați familiarizat cu recenziile arată că tratați serios decizia de colaborare – și asta e foarte bine.",
-        "– Totuși, trebuie să țineți minte că recenziile pe internet nu reflectă întotdeauna realitatea.",
-        "– Multe dintre ele sunt scrise de concurență.",
-        "– Cel mai important este ceea ce verificați personal – folosind platforma.",
-        "– Atunci singur/ă evaluați dacă colaborarea funcționează așa cum așteptați.",
-        "– Recenziile pot fi scrise, copiate, editate – dar experiența nimeni nu o poate falsifica.",
-        "– De aceea vă rog – să verificăm împreună, ca să puteți vedea singur/ă rezultatele."
+        "— Spuneți-mi, cât de des scrieți personal review-uri online? [Așteptăm răspunsul.]",
+        "— Și cine credeți că scrie cel mai des review-uri? [Așteptăm răspunsul.]",
+        "— Dacă aș scrie acum o mie de comentarii negative despre mașina dvs. — ar însemna asta că mașina nu funcționează și ar trebui s-o vindeți? [Pauză de reflecție.]",
+        "— Nimic nu convinge mai bine decât experiența personală.",
+        "— De aceea vă propun: să verificăm împreună pe evenimentul de azi și veți vedea rezultatele cu ochii dvs.",
+        "**Altă variantă:**",
+        "— E o idee bună să citiți review-uri — mai ales când știm cine le-a scris.",
+        "— Cum diferențiați un review autentic de unul mai puțin credibil?",
+        "— Sunteți de acord că review-urile pot fi cumpărate?",
+        "— V-ați uitat vreodată la review-urile despre propria bancă?",
+        "— Căror review-uri le acordați mai multă atenție — pozitive sau negative?",
+        "— Și dacă vi s-ar prezenta sute de pozitive și o sută de negative — pe care le-ați considera mai credibile?",
+        "— Consider că nimic nu convinge mai bine decât experiența personală.",
+        "— De aceea, haideți să verificăm împreună pe evenimentul de astăzi și veți vedea rezultatele cu ochii dvs.",
+        "**A citit review-uri negative:**",
+        "Explicație prin exemplu:",
+        "— Faptul că ați citit review-uri arată că tratați serios decizia privind colaborarea — și e foarte bine.",
+        "— Totuși, review-urile online nu reflectă mereu realitatea.",
+        "— Multe sunt scrise de competitori.",
+        "— Cel mai important este ceea ce verificați personal pe platformă.",
+        "— Abia atunci veți putea evalua dacă colaborarea funcționează cum vă așteptați.",
+        "— Review-uri se pot scrie, copia, edita — dar experiența personală nu poate fi falsificată.",
+        "— Așadar, haideți să verificăm împreună, ca să puteți vedea singur/ă rezultatele."
       ]
     },
     {
       "id": "node_6",
-      "title": "ХОЧУ ПІДПИСАТИ ДОГОВІР",
+      "title": "VREAU SĂ SEMNEZ UN CONTRACT",
       "type": "snippet",
       "text": [
-        "- Cu mine personal nu semnați contractul.",
-        "- După începerea colaborării cu analistul, întrebați-l despre contract – ele sunt pregătite individual pentru fiecare client, ținând cont de tipul colaborării, profiturile așteptate, direcția tranzacționării și situația financiară.",
-        "[Якщо клієнт просить вислати порожній договір, ви маєте вивести на обґрунтоване заперечення, і зрозуміти, чому йому потрібен цей договір / НЕ  ВПЕВНЕНА АБО БОЇТЬСЯ / відводьте в тему обґрунтованого заперечення (якої форми договір вас цікавить?)]",
-                                    "**A doua variantă:**",
-        "– Contractul se semnează în cazul în care firma preia fondurile clientului în management.",
-        "– În cazul nostru, nu ne transmiteți banii Dumneavoastră – deschideți propriul cont și îl gestionați singur/ă, folosind recomandările noastre.",
-        "– Spuneți-mi, în câte procente sunteți sigur/ă că veți reuși să câștigați cu noi?"
+        "— Cu mine personal nu semnați contract.",
+        "— După începerea colaborării cu analistul, întrebați de contract — acestea sunt pregătite individual pentru fiecare client, ținând cont de tipul colaborării, așteptările de profit, direcția de tranzacționare și situația financiară.",
+        "[Dacă clientul cere un contract gol, conduceți conversația spre obiecția justificată și înțelegeți de ce are nevoie de contract / NU ESTE CONVINS SAU ÎI ESTE FRICĂ / redirecționați spre tema obiecțiilor justificate (ce formă de contract vă interesează?)]",
+        "**Varianta a doua:**",
+        "— Contractul se semnează atunci când compania primește banii clientului în administrare.",
+        "— În cazul nostru, nu ne încredințați banii — deschideți propriul cont și îl gestionați singur/ă, folosind recomandările noastre.",
+        "— Spuneți-mi, în ce procent sunteți sigur/ă că împreună vom obține profit?"
       ]
     },
     {
       "id": "node_7",
-      "title": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ",
+      "title": "SUNAȚI PESTE O LUNĂ",
       "type": "snippet",
       "text": [
-         "Și de ce tocmai peste o lună?",                                                                                                                                              
-                        "Sau",
-        "Desigur că pot suna peste o lună, dar spuneți-mi – ce se va schimba în acest timp?",
-                        "Sau",
-        "Ce vă împiedică să începeți acum?",
-                        "Sau",
-       "Pot să întreb, ce vă oprește de la începere acum?", 
-       "[Dacă clientul spune că trebuie: să se gândească, va avea mai mult timp mai târziu - atunci trecem la prelucrarea acestor obiecții.",
-        "Dacă clientul spune că doar peste o lună va avea bani - atunci sarcina noastră este să-i vindem știrea, să-l interesăm cu profitul, să punem deadline și să propunem să începem lucrul în condiții mai avantajoase.]"
+        "De ce abia peste o lună?",
+        "Sau",
+        "Desigur pot să vă sun peste o lună, dar spuneți-mi — ce se va schimba între timp?",
+        "Sau",
+        "Ce împiedică să începem chiar acum?",
+        "Sau",
+        "Pot întreba ce anume vă oprește să începeți chiar acum?",
+        "[Dacă spune că vrea să se gândească sau că va avea mai mult timp mai târziu — trecem la lucrul cu aceste obiecții. Dacă spune că va avea bani abia peste o lună — sarcina noastră e să vindem știrea, să-l interesăm prin profit, să punem un termen și să propunem pornirea pe condiții mai avantajoase.]"
       ]
     },
     {
       "id": "node_8",
-      "title": "У ВАС АКЦЕНТ",
+      "title": "AVEȚI ACCENT",
       "type": "snippet",
       "text": [
-        "Pe teritoriul țării noastre locuiesc mulți oameni din diferite părți ale lumii, deci e greu să găsești pe cineva fără niciun accent.",
-        "Totuși, în peste 3 ani de lucru în această firmă, accentul meu niciodată nu a fost o piedică în a ajuta oamenii să obțină profituri.",
-        "De aceea să ne concentrăm pe scopul pentru care ați lăsat înregistrarea și să vorbim despre profiturile potențiale pe care le puteți obține.",
-        "[ОДРАЗУ ЗАДАЄМО ВІДКРИТЕ ПИТАННЯ]"
+        "În țara noastră locuiesc oameni din multe părți ale lumii, așa că e greu să găsești pe cineva fără niciun accent.",
+        "Totuși, în peste 3 ani de muncă în această companie, accentul meu nu m-a împiedicat niciodată să ajut oamenii să obțină profit.",
+        "Așadar, să ne concentrăm pe scopul pentru care ați lăsat înregistrarea și să discutăm despre potențialul profit pe care îl puteți obține.",
+        "[ADRESĂM IMEDIAT O ÎNTREBARE DESCHISĂ]"
       ]
     },
     {
       "id": "node_9",
-      "title": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ",
+      "title": "E PREA COMPLICAT PENTRU MINE",
       "type": "snippet",
       "text": [
-        "Înțeleg că e un domeniu nou pentru Dumneavoastră și pot apărea anumite temeri – fiecare dintre noi a început odată.",
-        "Tocmai de aceea vă atribuim un analist experimentat, care vă va ghida pas cu pas – ca un profesor la școală.",
-        "Firma noastră, la fel ca Dumneavoastră, este interesată de un singur lucru – CÂȘTIGUL!",
-        "Încasăm comision doar când retrageți profiturile Dumneavoastră – deci suntem parteneri, nu doar furnizori de servicii.",
-        "Sunt convins/ă că veți avea succes în colaborarea cu noi – și în curând veți vedea singur/ă!"
+        "Înțeleg că e un domeniu nou pentru dvs. și pot apărea temeri — fiecare dintre noi a fost la început.",
+        "De aceea vă vom aloca un analist experimentat care vă va ghida pas cu pas — ca un profesor la școală.",
+        "Compania noastră, la fel ca dvs., este interesată de un singur lucru — PROFITUL!",
+        "Percepem comision abia când vă retrageți câștigurile — deci suntem parteneri, nu doar prestatori.",
+        "Sunt convins/ă că veți avea succes cu noi — și în curând vă veți convinge!"
       ]
     },
     {
       "id": "node_10",
-      "title": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ",
+      "title": "TRIMITEȚI-MI TOATE INFORMAȚIILE PE EMAIL",
       "type": "snippet",
       "text": [
-        "– Deoarece vreți să primiți informațiile pe e-mail, poate însemna că nu totul e clar încă pentru Dumneavoastră. Spuneți-mi – ce informație lipsește sau ce trezește îndoieli?",
-        "– Ce altceva ați vrea să vă explic?",
-        "[Dacă clientul răspunde că nu vrea să clarifice nimic și totul e clar, atunci propuneți să începeți lucrul]",
-        "– Deoarece totul e clar, propun să facem primul pas.",
-        "Ce sumă ați ales pentru începerea colaborării?"
+        "— Dacă doriți informațiile pe email, înseamnă că încă nu e totul clar. Spuneți-mi — ce informații lipsesc sau ce vă stârnește îndoieli?",
+        "— Ce ați mai dori să explic?",
+        "[Dacă spune că nu are întrebări și i-e clar totul — propuneți să începem]",
+        "— Dacă totul e clar, propun să facem primul pas.",
+        "Ce sumă ați ales pentru a începe colaborarea?"
       ]
     },
     {
       "id": "node_11",
-      "title": "НЕМАЄ ЧАСУ",
+      "title": "NU AM TIMP",
       "type": "snippet",
       "text": [
-        "Vreau să subliniez un lucru foarte important – activarea contului va dura literalmente câteva minute, iar apoi puteți reveni la obligațiile zilnice.",
-                        "Sau",
-        "– Vorbim deja de peste 20 de minute, iar când ne apropiem de activarea contului de tranzacționare, spuneți că nu aveți timp acum.",
-        "Spuneți sincer – ceva vă oprește? De ce anume vă temeți?"
+        "Vreau să subliniez ceva important — activarea contului durează doar câteva minute, apoi vă întoarceți la activitățile zilnice.",
+        "Sau",
+        "— Discutăm de peste 20 de minute, iar când ajungem la activarea contului de tranzacționare, îmi spuneți că nu aveți timp acum.",
+        "Spuneți-mi sincer — vă reține ceva? De ce anume vă temeți?"
       ]
     },
     {
       "id": "node_12",
-      "title": "ШАХРАЇ",
+      "title": "ESCROCI",
       "type": "snippet",
       "text": [
-        "Pe baza căror informații evaluați care firmă e cinstită și care nu?",
-        "[Чекаємо на відповідь клієнта]",
-        "În ce vedeți exact potențialul de fraudă?",
-        "[Чекаємо на відповідь клієнта]",
-        "Nu vă cer nicio dată personală – Dumneavoastră singur/ă ați lăsat formularul de înregistrare ca să vă contactăm.",
-        "Cel mai important, fondurile se află pe contul Dumneavoastră individual și doar Dumneavoastră aveți acces la el. Unde poate fi vorba de fraudă?"
+        "Pe baza căror informații decideți ce companie e corectă și care nu?",
+        "[Așteptăm răspunsul]",
+        "În ce anume vedeți potențiala înșelătorie?",
+        "[Așteptăm răspunsul]",
+        "Nu vă solicităm date personale — dvs. ați completat formularul de înregistrare pentru a fi contactat/ă.",
+        "Cel mai important: banii se află în contul dvs. individual și doar dvs. aveți acces. Unde ar fi aici înșelătoria?"
       ]
     },
     {
       "id": "node_13",
-      "title": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ",
+      "title": "SUMA E MARE PENTRU MINE",
       "type": "snippet",
       "text": [
-        "Dacă 1250 RON e o sumă prea mare pentru Dumneavoastră la început, spuneți-mi – ce sumă ar fi potrivită pentru Dumneavoastră ca să începeți colaborarea?",
-        "[Dacă clientul spune - că nu e gata să înceapă și vrea să se gândească, să citească sau să se consulte, atunci trecem la prelucrarea acestei obiecții. Dacă clientul numește orice altă sumă mai mică de 1250 RON, atunci dezvoltăm dialogul mai departe]",
-        "De ce tocmai această sumă? Pentru că în caz de dificultăți nu ar fi o povară mare pentru Dumneavoastră? Spuneți sincer.",
-        "[Dacă clientul spune - DA sau că vrea să se gândească sau se teme - trecem la prelucrarea acestor obiecții]"
+        "Dacă 1189–1308 RON e o sumă prea mare pentru început, spuneți-mi — ce sumă v-ar fi confortabilă pentru a porni?",
+        "[Dacă spune că nu e gata și vrea să se gândească/citească/să se consulte — trecem la lucrul cu acele obiecții. Dacă numește orice altă sumă sub 1189–1308 RON — continuăm dialogul]",
+        "De ce anume această sumă? Pentru că, în caz de dificultăți, nu ar fi o povară mare? Sincer, vă rog.",
+        "[Dacă spune — DA sau că vrea să se gândească/îi e teamă — trecem la lucrul cu acele obiecții]"
       ]
     },
     {
       "id": "node_14",
-      "title": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ",
+      "title": "DE CE NU INVESTIȚI DVS.?",
       "type": "snippet",
       "text": [
-        "Desigur că investesc – ba mai mult, am și un analist personal cu care colaborez și cu care de 4 ani câștig pe tranzacționare.", 
-        "Cel mai des investim în criptomonede, dar deschidem regulat tranzacții și pe alte active.",
-        "Ba mai mult – nu doar eu investesc, ci și apropiații mei participă la acest proiect.",
-        
-        "Vă sfătuiesc să începeți colaborarea – astfel puteți începe să câștigați ca și mine.",
-        
-        "Vă încurajez să începeți colaborarea – singur/ă veți vedea că se poate câștiga bine."
+        "Desigur că investesc — ba chiar am propriul analist cu care, de 4 ani, câștig din tranzacționare.",
+        "Cel mai des investim în criptomonede, dar deschidem regulat și poziții pe alte active.",
+        "Mai mult — nu doar eu investesc, ci și apropiații mei participă la acest proiect.",
+        "Vă recomand să începeți colaborarea — în felul acesta veți putea câștiga ca mine.",
+        "Vă încurajez să începeți — veți vedea că se poate câștiga foarte bine."
       ]
     },
     {
       "id": "node_15",
-      "title": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ",
+      "title": "DE CE NU POT ÎNCEPE CU O SUMĂ MAI MICĂ",
       "type": "snippet",
       "text": [
-        "De ce suma minimă e tocmai 1250 RON și nu se poate mai puțin?",
-        "Această sumă rezultă din strategia adoptată de tranzacționare sigură. Deschidem în medie 6–10 poziții pe zi, dar folosim întotdeauna doar aproximativ 50% din fonduri, pentru a minimiza riscul.",
-        "De aceea 1250 RON e suma care permite un început eficient și sigur al investițiilor – din care doar jumătate intră efectiv pe piață.",
-        "Desigur puteți căuta un broker cu prag de intrare mai mic, dar acolo veți acționa singur/ă – fără sprijin, fără strategie și fără o persoană implicată în rezultatul Dumneavoastră. La noi suntem parteneri – câștigați Dumneavoastră, câștigăm noi.",
-        "De aceea dacă vă pasă de securitate și profituri, cel mai bine să vă convingeți în practică. Propun să alimentați contul cu suma minimă și deja azi să faceți primul pas spre profit.",
-                   "Sau",
-        "De 5 ani testăm colaborarea cu clienții la diferite sume și am ajuns la concluzia că 1250 RON e cea mai sigură sumă pentru start.",
-        "Tocmai de la această sumă vă pot da garanție că totul va reuși.",
-        "Dacă întrebați „de ce?”, vă explic imediat:",
-        "această sumă este distribuită corespunzător conform regulilor de management al riscului – o parte din capital lucrează pe piață, iar restul servește ca așa-numita „pernă de siguranță”.",
-        "Spuneți-mi – sunteți de acord că nu merită să investiți toată suma într-un singur loc?"
+        "De ce minimul este 1189–1308 RON și nu se poate mai puțin?",
+        "Această sumă rezultă din strategia noastră prudentă. Deschidem în medie 6–10 poziții pe zi, dar folosim aproximativ 50% din fonduri pentru a minimiza riscul.",
+        "De aceea 1189–1308 RON permite un start eficient și sigur — iar doar jumătate din bani ajung efectiv pe piață.",
+        "Desigur, puteți căuta un broker cu prag de intrare mai mic, dar acolo veți acționa singur/ă — fără suport, fără strategie și fără o persoană interesată în rezultatul dvs. La noi suntem parteneri: câștigați dvs., câștigăm și noi.",
+        "Deci, dacă vă interesează siguranța și profitul, cel mai bine e să vă convingeți în practică. Propun să alimentăm contul cu suma minimă și să facem azi primul pas către profit.",
+        "Sau",
+        "Timp de 5 ani am testat colaborarea cu clienții pe sume diferite și am concluzionat că 1189–1308 RON este suma cea mai sigură pentru start.",
+        "De la această sumă vă pot da încredințarea că totul va funcționa.",
+        "Dacă întrebați «de ce?», explic imediat:",
+        "această sumă este împărțită corect după principiile managementului riscului: o parte din capital lucrează pe piață, iar restul reprezintă „perna de siguranță”.",
+        "Spuneți-mi — sunteți de acord că nu e bine să investiți toți banii într-un singur loc?"
       ]
     },
     {
       "id": "node_16",
-      "title": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО",
+      "title": "NU AM NEVOIE / NU MĂ MAI INTERESEAZĂ",
       "type": "snippet",
       "text": [
-        "Am discutat totul necesar pentru start.",
-        "Ați ales modul de acțiune care accelerează atingerea scopului.",
-        "Securitatea fondurilor e și ea discutată — deci nu lipsa de interes e obstacolul.",
-        "Spuneți direct — de ce vă temeți?"
-      ]
+        "Am discutat tot ce e necesar pentru start.",
+        "Am ales o modalitate de lucru care grăbește atingerea obiectivului.",
+        "Și siguranța fondurilor am acoperit-o — deci nu lipsa interesului e problema.",
+        "Spuneți direct — de ce anume vă temeți?"
+      ]]
     },
     {
       "id": "node_17",
-      "title": "ХОЧУ ПРИ ЇХАТИ В ОФІС",
+      "title": "VREAU SĂ VIN LA BIROU",
       "type": "snippet",
       "text": [
-        "În general am discutat deja totul necesar pentru ca să începeți colaborarea.", 
-        "Ați decis modul de acțiune care poate ajuta să atingeți scopul financiar mai repede decât presupuneați.", 
-        "Am discutat și chestiunea securității fondurilor, deci cred că nu lipsa de interes e obstacolul.", 
-        "Spuneți direct – de ce vă temeți?"
+        "În linii mari, am discutat deja tot ce vă trebuie pentru a începe.",
+        "Ați ales o modalitate de lucru care vă poate ajuta să vă atingeți obiectivul financiar mai repede decât vă așteptați.",
+        "Am discutat și despre siguranța fondurilor, deci cred că nu lipsa interesului e obstacolul.",
+        "Spuneți direct — de ce anume vă temeți?"
       ]
     },
     {
       "id": "node_18",
-      "title": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА",
+      "title": "UNDE ESTE ÎNREGISTRATĂ COMPANIA",
       "type": "snippet",
       "text": [
-        "Suntem o firmă internațională, birou și în Polonia — principal în Krotoszyn.",
-        "Înregistrare: ELITE INVESTING SRL., CUI: 51322779, Str. Sergentului 17, sat Ipoești, județ Suceava, Mazowieckie,",
-        "În practică, cererea oficială la NBP poate costa ~1500€ și dura până la 14 zile lucrătoare.",
-        "👉 Dacă numele proiectului diferă de numele firmei — verificați după nume și KRS pe internet."
+        "Suntem o companie internațională, cu birou și în Polonia — principalul la Krotoszyn.",
+        "Înregistrare: ELITE POLSKA sp. z o.o., KRS: 0000646268, ul. Juliana Smulikowskiego 4/112, 00-389 Warszawa, Mazowieckie, data: 2016-11-10.",
+        "În practică, o cerere oficială la NBP poate costa ~150€ și poate dura până la 14 zile lucrătoare.",
+        "👉 Dacă numele proiectului diferă de numele companiei — verificați după nume și KRS pe internet."
       ]
     },
     {
       "id": "node_19",
-      "title": "ЯКІ ГАРАНТІ Ї",
+      "title": "CE GARANȚII AM",
       "type": "snippet",
       "text": [
-        "Dacă întrebați despre garanții, înseamnă că vreți să vă protejați de ceva. Spuneți-mi – de ce anume vă temeți?",
-        "[ЗАДАЄМО ПИТАННЯ/ОТРИМАЄМО ВІДПОВІДЬ, НЕ ВІДПОВІДАЙТЕ ЗА КЛІЄНТА! Dacă clientul mormăie și nu poate răspunde clar, întrebați-l:]",
-        "Imaginați-vă ce poate întâmpla în colaborarea cu noi.",
-        "[СТАВИМО ЗАПИТАННЯ/ЧЕКАЄМО ВІДПОВІДЬ НЕ НАКИДАЮЧИ ВАРІАНТИ ЗА КЛІЄНТА]",
-        "Doar oamenii înțelepți se interesează de această întrebare – spuneți-mi, ce garanții concrete vă interesează?",
-        "[Dacă clientul se referă la contract, licență sau întâlnire personală – folosim prelucrările corespunzătoare din acest fișier. Dacă clientul nu poate da un răspuns exact, folosim varianta de mai jos]",
-        "Cea mai importantă garanție în colaborarea noastră este interesul comun. Gândiți-vă – ce câștig am avea dacă v-am pune în situația în care pierdeți bani, deoarece câștigul nostru e 10% din profitul Dumneavoastră? ",
-        "În firma noastră absolut toți sunt interesați ca colaborarea noastră să dureze ani de zile."
+        "Dacă întrebați despre garanții, înseamnă că doriți să vă protejați de ceva. Spuneți-mi — de ce anume vă temeți?",
+        "[ADRESĂM ÎNTREBĂRI / PRIMIM RĂSPUNS, NU RĂSPUNDEM ÎN LOCUL CLIENTULUI! Dacă murmură și nu poate formula clar — întrebați:]",
+        "Imaginați-vă ce s-ar putea întâmpla în colaborarea cu noi.",
+        "[PUNEM ÎNTREBĂRI / AȘTEPTĂM RĂSPUNSUL, FĂRĂ A SUGERA VARIANTE]",
+        "Doar oamenii serioși pun această întrebare — ce garanții anume vă interesează?",
+        "[Dacă se referă la contract, licență sau întâlnire — folosim textele aferente. Dacă nu poate răspunde clar — folosim varianta de mai jos]",
+        "Cea mai importantă garanție în colaborarea noastră este interesul comun. Gândiți-vă: ce câștig am avea să vă punem într-o situație de pierdere, dacă venitul nostru este 10% din profitul dvs.?",
+        "În compania noastră, absolut toată lumea este interesată ca parteneriatul să dureze ani."
       ]
     },
     {
       "id": "node_20",
-      "title": "Я В ЦЕ НЕ ВІРЮ",
+      "title": "NU CRED ÎN ASTA",
       "type": "snippet",
       "text": [
-        "În ce exact nu credeți? [Чекаємо відповідь клієнта]",
-        "Nu credeți că aici se poate câștiga cu adevărat? [Чекаємо на відповідь клієнта + можемо посилатися на інтерес компанії.]",
+        "În ce anume nu credeți? [Așteptăm răspunsul]",
+        "Nu credeți că se poate câștiga aici? [Așteptăm răspunsul + putem apela la interesul companiei]",
         "Nu aveți încredere? Sau poate vă temeți de ceva?"
       ]
     },
     {
       "id": "node_21",
-      "title": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ",
+      "title": "NU CRED CĂ SE POATE CÂȘTIGA PE PIEȚELE FINANCIARE",
       "type": "snippet",
       "text": [
-        "Nu trebuie să credeți în industria investițiilor — asta se poate verifica în practică.",
-        "De exemplu: aurul e stabil la preț, iar valuta națională înainte de alegeri de obicei pierde valoare.",
-        "Toate aceste evenimente pot fi prevăzute — trebuie doar să aveți încredere în analiștii noștri.",
-        "Sunt profesioniști în domeniul lor, iar scopul lor principal e creșterea maximă a capitalului Dumneavoastră și profitul comun, deoarece tocmai asta e venitul nostru.",
-        
-        "Dacă obțineți profit și îl retrageți pe contul Dumneavoastră — atunci veți crede că funcționează?",
-        "În acest caz propun să facem acest pas, să vedem rezultatul în practică și abia apoi să evaluați cât de real e.", 
-        "Vă sfătuiesc să începeți colaborarea și deja azi să obțineți primul profit!"
+        "Nu trebuie „să credeți” în domeniul investițiilor — poate fi verificat în practică.",
+        "De exemplu: aurul este relativ stabil, iar moneda națională adesea se depreciază înainte de alegeri.",
+        "Toate acestea pot fi anticipate — e suficient să aveți încredere în analiștii noștri.",
+        "Sunt profesioniști, iar scopul lor principal este creșterea capitalului dvs. și profitul comun, pentru că din asta provine venitul nostru.",
+        "Dacă obțineți profit și îl retrageți în contul dvs. — veți crede atunci că funcționează?",
+        "Atunci vă propun să faceți acest pas, să vedeți rezultatul în practică și abia apoi să evaluați realismul.",
+        "Vă recomand să începeți colaborarea și să obțineți primul profit chiar astăzi!"
       ]
     },
     {
       "id": "node_22",
-      "title": "БОЮСЬ",
+      "title": "MI-E FRICĂ",
       "type": "snippet",
       "text": [
-        "Înțeleg temerile Dumneavoastră – e complet natural. Fiecare care începe ceva nou are anumite frici.",
-        "Dar vă rog să vă puneți o întrebare: de ce anume vă temeți? De pierderea fondurilor?",
-        "Tocmai de aceea nu vă lăsăm singur/ă. Primiți sprijinul unui analist, care vă ghidează pas cu pas.",
-        "În plus – câștigăm doar când câștigați Dumneavoastră, deci avem interes comun în succesul Dumneavoastră.",
-        "Nu investiți toată suma deodată – lucrăm doar cu o parte din capital, iar restul servește ca securitate.",
-        "E o strategie gândită și sigură de management al riscului",
-        "De aceea propun: să încercăm. Doar practica risipește toate îndoielile."        
+        "Vă înțeleg temerile — e absolut firesc. Oricine începe ceva nou are anumite frici.",
+        "Dar întrebați-vă: de ce anume vă este frică? De pierderea banilor?",
+        "De aceea nu vă lăsăm singur/ă. Primiți sprijinul unui analist care vă ghidează pas cu pas.",
+        "În plus, câștigăm doar când câștigați și dvs., deci avem același interes în succesul dvs.",
+        "Nu investiți toată suma odată — lucrăm doar cu o parte din capital, restul e rezervă.",
+        "Este o strategie gândită și sigură de management al riscului.",
+        "Așadar, propun: să încercăm. Doar practica risipește toate îndoielile."
       ]
     },
     {
       "id": "node_23",
-      "title": "НЕ ДОВІРЯЮ",
+      "title": "NU AM ÎNCREDERE",
       "type": "snippet",
       "text": [
-        "Înțeleg temerile Dumneavoastră – e complet natural. Fiecare care începe ceva nou are anumite frici.",
-        "Dar vă rog să vă puneți o întrebare: de ce anume vă temeți? De pierderea fondurilor?",
-        "Tocmai de aceea nu vă lăsăm singur/ă. Primiți sprijinul unui analist, care vă ghidează pas cu pas.",
-        "În plus – câștigăm doar când câștigați Dumneavoastră, deci avem interes comun în succesul Dumneavoastră.",
-        "Nu investiți toată suma deodată – lucrăm doar cu o parte din capital, iar restul servește ca securitate.",
-        "E o strategie gândită și sigură de management al riscului.",
-        "De aceea propun: să încercăm. Doar practica risipește toate îndoielile."
+        "Vă înțeleg temerile — e absolut firesc. Oricine începe ceva nou are anumite frici.",
+        "Dar întrebați-vă: de ce anume vă este frică? De pierderea banilor?",
+        "De aceea nu vă lăsăm singur/ă. Primiți sprijinul unui analist care vă ghidează pas cu pas.",
+        "În plus, câștigăm doar când câștigați și dvs., deci avem același interes în succesul dvs.",
+        "Nu investiți toată suma odată — lucrăm doar cu o parte din capital, restul e rezervă.",
+        "Este o strategie gândită și sigură de management al riscului.",
+        "Așadar, propun: să încercăm. Doar practica risipește toate îndoielile."
       ]
     },
     {
       "id": "node_24",
-      "title": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ",
+      "title": "NU SUNT SIGUR / NU SUNT PREGĂTIT",
       "type": "snippet",
       "text": [
-        "Înțeleg temerile Dumneavoastră – e complet natural. Fiecare care începe ceva nou are anumite frici.",
-        "Dar vă rog să vă puneți o întrebare: de ce anume vă temeți? De pierderea fondurilor?",
-        
-        "Tocmai de aceea nu vă lăsăm singur/ă. Primiți sprijinul unui analist, care vă ghidează pas cu pas.",
-        "În plus – câștigăm doar când câștigați Dumneavoastră, deci avem interes comun în succesul Dumneavoastră.",
-        
-        "Nu investiți toată suma deodată – lucrăm doar cu o parte din capital, iar restul servește ca securitate.",
-        "E o strategie gândită și sigură de management al riscului.",
-        
-        "De aceea propun: să încercăm. Doar practica risipește toate îndoielile."
+        "Vă înțeleg temerile — e absolut firesc. Oricine începe ceva nou are frici.",
+        "Dar întrebați-vă: de ce anume vă este frică? De pierderea banilor?",
+        "De aceea nu vă lăsăm singur/ă. Primiți sprijinul unui analist care vă ghidează pas cu pas.",
+        "În plus, câștigăm doar când câștigați și dvs., deci avem același interes în succesul dvs.",
+        "Nu investiți toată suma odată — lucrăm doar cu o parte din capital, restul e rezervă.",
+        "Este o strategie gândită și sigură de management al riscului.",
+        "Așadar, propun: să încercăm. Doar practica risipește toate îndoielile."
       ]
     },
     {
       "id": "node_25",
-      "title": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ",
+      "title": "CÂND POT RETRAGE BANII",
       "type": "snippet",
       "text": [
-        "Nu spunem singuri când se va face retragerea. Dacă clientul întreabă:",                                                                                                                           
-        "Toate întrebările privind retragerea fondurilor vă rog să le discutați cu expertul Dumneavoastră.", 
-        "Mai ales că primele profituri obținute le veți retrage tocmai cu ajutorul lui – el vă va indica exact cum să faceți. De acord?",
-
-        "Dacă clientul insistă dacă poate retrage în orice moment:",                                                                              
-        "Retragerea fondurilor este posibilă în orice moment. Sarcina Dumneavoastră principală acum este însă să obțineți profit, iar dacă vreți să vedeți cum arată acest proces în practică, expertul cu siguranță vă va ajuta."
+        "Nu menționăm singuri termene de retragere. Dacă întreabă clientul:",
+        "Vă rog să discutați toate întrebările despre retrageri cu expertul dvs.",
+        "Cu atât mai mult cu cât primele profituri le veți retrage împreună cu el — vă va arăta pas cu pas cum se face. Sunteți de acord?",
+        "Dacă insistă că vrea să poată retrage oricând:",
+        "Retragerea este posibilă în orice moment. Sarcina principală acum este să obținem profit, iar dacă vreți să vedeți cum funcționează în practică, expertul vă va ajuta cu siguranță."
       ]
     },
     {
       "id": "node_26",
-      "title": "Я ВЖЕ ВТРАЧАВ",
+      "title": "AM MAI PIERDUT ÎNAINTE",
       "type": "snippet",
       "text": [
-        "Înțeleg perfect – e o situație foarte neplăcută și desigur înțeleg temerile Dumneavoastră.",
+        "Vă înțeleg perfect — e o situație neplăcută și, desigur, înțeleg temerile dvs.",
         "Spuneți-mi, de ce anume vă temeți?",
-                          "Sau",
-        "Înțeleg perfect temerile Dumneavoastră – e cu adevărat o situație neplăcută.",
-        "Spuneți-mi, ce anume vă îngrijorează?",                                                                                                
-       "[Mai departe fie trecem la prelucrarea obiecțiilor pe care le va da clientul, fie explicăm din nou unde se află fondurile și lucrul cu analistul.]"
+        "Sau",
+        "Înțeleg foarte bine temerile dvs. — e într-adevăr o situație neplăcută.",
+        "Spuneți-mi, ce anume vă îngrijorează?",
+        "[Apoi fie trecem la obiecțiile formulate de client, fie explicăm încă o dată unde sunt fondurile și cum lucrăm cu analistul.]"
       ]
     },
     {
       "id": "node_27",
-      "title": "БОЮСЯ ВТРАТИТИ",
+      "title": "MI-E FRICĂ SĂ PIERD",
       "type": "snippet",
       "text": [
-        "În procesul de tranzacționare:",
-        "Desigur, la bursă orice se poate întâmpla – mai ales când tranzacționați singur. În acest caz e foarte ușor să aveți pierderi, deoarece riscul există întotdeauna.",
-        "Scopul nostru principal este însă să vă aducem la profituri stabile, deoarece și noi câștigăm doar când câștigați Dumneavoastră!",
-        
-        "Câștigăm atât pe creșteri, cât și pe scăderi de prețuri.",
-        "Analiștii noștri informează constant în ce direcție merge piața și vă ajută să deschideți tranzacțiile la momentul potrivit.",
-        "În plus, expertul vă va ajuta să setați așa-numiții limitatori (stop loss/take profit), care vă vor securiza fondurile.",
-        
-        "Propun să începeți colaborarea acum – ca încă azi să vedeți primul profit!",
-        
+        "În timpul tranzacționării:",
+        "Desigur, pe bursă se poate întâmpla orice — mai ales când tranzacționați singur/ă. E ușor să apară pierderi, căci riscul există mereu.",
+        "Totuși, obiectivul nostru principal este să vă aducem la profituri stabile, fiindcă și noi câștigăm doar când câștigați dvs.!",
+        "Câștigăm atât pe creșteri, cât și pe scăderi de preț.",
+        "Analiștii noștri vă indică permanent direcția pieței și vă ajută să deschideți poziții la momentul potrivit.",
+        "În plus, expertul vă va ajuta să setați așa-numitele limitatoare (stop loss/take profit) care vă protejează fondurile.",
+        "Propun să începem colaborarea chiar acum — ca astăzi să vedeți primul profit!",
         "La retragere:",
-        
-        "E exclusiv contul Dumneavoastră individual de tranzacționare. Spuneți-mi – când faceți transfer între conturile Dumneavoastră bancare, s-a întâmplat ca fondurile să „dispară”?",
-        "Aici e exact la fel – pur și simplu faceți transfer între conturile Dumneavoastră. E COMPLET SIGUR!",
-        
-        "De aceea propun să începeți colaborarea acum, ca deja azi să vedeți primul profit!",
-        
-        "Noi primim comisionul nostru doar în momentul când retrageți profiturile Dumneavoastră.",
-        "Gândiți-vă – ce beneficiu am avea dacă nu ați reuși să retrageți banii, deoarece atunci nici noi nu câștigăm nimic?",
-        "Câștigăm doar când câștigați Dumneavoastră. De aceea suntem pe deplin interesați de succesul Dumneavoastră!"
+        "Este contul dvs. individual de tranzacționare. Spuneți-mi: când transferați între conturile dvs. bancare, s-a întâmplat ca banii să „dispară”?",
+        "Aici e la fel — pur și simplu transferați între conturile dvs. ESTE COMPLET SIGUR!",
+        "De aceea propun să începem acum, ca astăzi să vedeți primul profit!",
+        "Noi ne luăm comisionul doar când vă retrageți câștigurile.",
+        "Gândiți-vă: ce interes am avea să nu puteți retrage bani, dacă atunci nici noi nu câștigăm?",
+        "Câștigăm doar când câștigați dvs. De aceea suntem pe deplin interesați în succesul dvs.!"
       ]
     },
     {
       "id": "node_28",
-      "title": "ЯКІ Є РИЗИКИ",
+      "title": "CE RISCURI EXISTĂ",
       "type": "snippet",
       "text": [
-        "Înțeleg la ce vă gândiți. Lucrez în această industrie de mult timp și știu că fiecare om rezonabil se interesează de chestiunea riscului. Întrebări de genul:",
-        "Dar dacă pierd?",
+        "Înțeleg la ce vă gândiți. Lucrez de mult în domeniu și știu că orice om rațional se interesează de risc. Întrebări precum:",
+        "Dacă pierd?",
         "sau",
-        "Ce garanții am?", 
-        "– e o reacție naturală. În fond, e vorba de banii Dumneavoastră, deci astfel de temeri sunt pe deplin justificate.",
-        
-        "Aș fi un consilier slab dacă aș susține că riscul nu există – pur și simplu nu e adevărat.",
-        "Construim o relație bazată pe încredere, de aceea spun direct: riscul există întotdeauna, deoarece nimeni nu are control total asupra pieței financiare.",
-        "Situații neașteptate pot apărea oriunde, dar cheia e să gestionați acest risc cu abilitate.",
-        
-        "Cum se spune:", "cine are informație, are putere","Și noi avem aceste informații.",
-        
-        "De aceea folosim o serie de instrumente care ajută să reducem riscul la minim.",
-        "Unul dintre cele mai importante astfel de instrumente este așa-numitul Stop Loss. Ați auzit de acest concept?",
-        
-        "(Stop Loss) (din eng. „oprește pierderea”) – e un mecanism care închide automat poziția dacă atinge un anumit nivel de pierdere",
-        "De exemplu: dacă setăm Stop Loss la nivelul de 2 dolari, atunci chiar dacă piața se prăbușește brusc – sistemul va închide singur tranzacția cu pierdere maximă de 2 dolari. E o formă foarte eficientă de securizare.",
-        
-        "Mai mult – acționăm întotdeauna pe mai multe poziții simultan, ceea ce înseamnă că chiar dacă o tranzacție aduce pierdere, celelalte pot aduce profit.",
-        "Datorită asta e posibil să generați venit zilnic – uneori mai mare, uneori mai mic, dar regulat."
+        "Ce garanții am?",
+        "— sunt firești. Vorbim de banii dvs., deci îngrijorările sunt pe deplin justificate.",
+        "Aș fi un consilier slab dacă aș afirma că riscul nu există — nu ar fi adevărat.",
+        "Construim o relație bazată pe încredere, de aceea spun direct: riscul există mereu, nimeni nu controlează complet piețele.",
+        "Situații imprevizibile pot apărea oriunde, cheia este managementul corect al riscului.",
+        "Cum se spune: «cine are informația, are puterea». Iar noi avem aceste informații.",
+        "De aceea folosim instrumente care reduc riscul la minimum.",
+        "Unul dintre cele mai importante este Stop Loss. Ați auzit de acest termen?",
+        "(Stop Loss) — mecanism care închide automat poziția când atinge un anumit nivel de pierdere.",
+        "De exemplu: dacă setăm Stop Loss la 2 dolari, chiar dacă piața cade brusc — sistemul va închide poziția cu o pierdere maximă de 2 dolari. Este o protecție eficientă.",
+        "În plus — lucrăm mereu pe mai multe poziții simultan; dacă una iese pe minus, celelalte pot fi pe plus.",
+        "Astfel se poate genera venit zilnic — uneori mai mare, uneori mai mic, dar constant."
       ]
     },
     {
       "id": "node_29",
-      "title": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ",
+      "title": "DE CE NU EXISTĂ ALIMENTARE DIRECT PE PLATFORMĂ",
       "type": "snippet",
       "text": [
-        "Anterior această funcție era disponibilă pe platforma noastră, dar am renunțat complet la ea – și vă explic de ce!",
-        "Am făcut-o gândindu-ne la securitatea Dumneavoastră. Am eliminat această metodă de depunere pentru a evita situațiile în care utilizatorii trebuie să introducă datele cardului, cum ar fi numărul, data expirării sau codul CVC.",
-
-        "Acum activarea contului se face exclusiv prin departamentul financiar. Deoarece operăm pe teritoriul Poloniei, trebuie să ne decontăm cu fiscul.",
-        "Noi din partea noastră efectuăm conversia valutară, declarăm suma Dumneavoastră și apoi o înregistrăm pe contul Dumneavoastră de tranzacționare.",
-        "În plus, suportăm toate costurile legate de comision – ceea ce face această metodă mai avantajoasă pentru Dumneavoastră, nu-i așa?"
+        "Această funcție a existat cândva pe platformă, dar am renunțat complet la ea — și vă explic de ce!",
+        "Am făcut asta pentru siguranța dvs. Am eliminat metoda ca să evităm situațiile în care utilizatorii trebuie să introducă datele cardului (număr, dată expirare, CVC).",
+        "Acum activarea contului se face exclusiv prin departamentul financiar. Deoarece operăm în Polonia, trebuie să raportăm la fiscul local.",
+        "Din partea noastră efectuăm conversia, declarăm suma dvs., apoi o înregistrăm în contul de tranzacționare.",
+        "Mai mult, acoperim toate comisioanele — ceea ce face metoda mai avantajoasă pentru dvs., nu-i așa?"
       ]
     },
     {
       "id": "node_30",
-      "title": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?",
+      "title": "DE CE APARE NUMELE CRUCII ROȘII LA TRANSFER?",
       "type": "snippet",
       "text": [
         "Partenerul oficial de plăți are mai multe conturi, unele pe fundații (de ex. Crucea Roșie) — pentru transparență și conformitate legală.",
-        "Numele destinatarului e o chestiune tehnică; fondurile ajung pe contul individual de tranzacționare.",
-        "Similar cu biletele/rezervările — pe extras apare uneori alt nume legal.",
-        "Canalul e oficial și acceptat de bănci; soldul va fi alimentat cu suma aleasă."
+        "Numele beneficiarului este o chestiune tehnică; fondurile ajung în contul dvs. individual de tranzacționare.",
+        "La fel ca la bilete/rezervări — pe extras poate apărea o altă denumire juridică.",
+        "Canalul este oficial și acceptat de bănci; soldul va fi alimentat cu suma aleasă."
       ]
     }
   ],
@@ -1743,6 +1761,7 @@
 }
 
     }
+
 
 
 
