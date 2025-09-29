@@ -960,7 +960,7 @@
         "Non investe l'intera somma subito — lavoriamo solo con una parte del capitale, il resto funge da garanzia.",
         "È una strategia di gestione del rischio ponderata e sicura.",
         "Perciò propongo: proviamo. Solo la pratica dissipa ogni dubbio."
-      ]]
+      ]
     },
     {
       "id": "node_23",
@@ -1713,6 +1713,7 @@
 }
     }
    
+
 
 
 
