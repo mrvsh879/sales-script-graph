@@ -621,7 +621,7 @@
   "title": "Sprechen wir morgen — Beispiel + Nachricht",
   "type": "snippet",
   "text": [
-    "BEISPIEL + NACHRICHT (PL):",
+    "BEISPIEL + NACHRICHT :",
     "— Analysieren wir das etwas genauer. Es gibt ein Unternehmen wie Apple — Sie kennen es sicherlich gut, oder? [wir warten auf die Antwort des Kunden]",
     "— Großartig. Stellen wir uns vor, Apple hat das fortschrittlichste Elektroauto auf den Markt gebracht. Dieses Auto wird weltweit äußerst beliebt und in vielen Ländern begeistert gekauft.",
     "— Was meinen Sie, was würde in so einer Situation mit der Apple-Aktie passieren? Würde ihr Wert steigen oder fallen? [wir warten auf die Antwort des Kunden]",
@@ -1765,6 +1765,7 @@
 }
 
     }
+
 
 
 
