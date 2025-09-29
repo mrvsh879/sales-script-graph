@@ -613,10 +613,10 @@
 },
         {
       "id": "tomorrow",
-      "title": "Parlons demain — exemple + actualité PL",
+      "title": "Parlons demain — exemple + actualité ",
       "type": "snippet",
       "text": [
-        "EXEMPLE + ACTUALITÉ (PL) :",
+        "EXEMPLE + ACTUALITÉ :",
         "— Analysons cela un peu plus en détail. Il existe une entreprise comme Apple — vous la connaissez certainement bien, n’est-ce pas ? [nous attendons la réponse du client]",
         "— Parfait. Imaginons qu’Apple ait lancé la voiture électrique la plus avancée. Cette voiture devient extrêmement populaire dans le monde entier et est achetée avec enthousiasme dans de nombreux pays.",
         "— Selon vous, dans une telle situation, que se passerait-il avec l’action Apple ? Sa valeur monterait-elle ou baisserait-elle ? [nous attendons la réponse du client]",
@@ -1760,6 +1760,7 @@
 }
 
     }
+
 
 
 
