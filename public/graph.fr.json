@@ -611,503 +611,521 @@
     { "label": "Давайте завтра", "to": "tomorrow" }
   ]
 },
-    {
+        {
       "id": "tomorrow",
-      "title": "Давайте завтра — приклад + новина ПЛ",
+      "title": "Parlons demain — exemple + actualité PL",
       "type": "snippet",
       "text": [
-        "ПРИКЛАД + НОВИНА (PL):",
-        "— Discutons-en un peu plus en détail. Il y a une entreprise comme Apple — vous la connaissez bien, n'est-ce pas ? [чекаємо відповідь клієнта]",
-        "— Génial. Imaginons que l'entreprise Apple a produit la voiture électrique la plus moderne. Cette voiture devient extrêmement populaire dans le monde entier et est achetée avec enthousiasme dans de nombreux pays.",
-        "— À votre avis, que se passera-t-il avec les actions d'Apple dans cette situation ? Leur valeur augmentera-t-elle ou diminuera-t-elle ? [чекаємо відповідь клієнта]",
-        "— Bien sûr, vous avez raison. Supposons maintenant que vous avez acheté des actions Apple avant que l'entreprise n'entre sur le marché des voitures — quand leur prix était encore bas — et les avez vendues après l'augmentation de prix causée par le grand intérêt pour le nouveau produit.",
-        "— De cette façon, nous aurions réalisé un profit ensemble. C'est précisément le travail de l'analyste, qui préparera pour vous des prévisions et analyses d'événements qui peuvent influencer le cours des actions. L'analyste vous fournira des informations prêtes avec une justification complète.",
-        "— Quelles questions avez-vous à cette étape ?",
-        "— Qu'en pensez-vous ?",
-        "— Je conseille de profiter de cette opportunité dès aujourd'hui.",
-        "Nous avons une offre spéciale — pas besoin de commencer avec 1000 euros, une somme d'essai de 250 eur suffit.",
+        "EXEMPLE + ACTUALITÉ (PL) :",
+        "— Analysons cela un peu plus en détail. Il existe une entreprise comme Apple — vous la connaissez certainement bien, n’est-ce pas ? [nous attendons la réponse du client]",
+        "— Parfait. Imaginons qu’Apple ait lancé la voiture électrique la plus avancée. Cette voiture devient extrêmement populaire dans le monde entier et est achetée avec enthousiasme dans de nombreux pays.",
+        "— Selon vous, dans une telle situation, que se passerait-il avec l’action Apple ? Sa valeur monterait-elle ou baisserait-elle ? [nous attendons la réponse du client]",
+        "— Bien sûr, vous avez raison. Supposons maintenant que vous ayez acheté l’action Apple avant l’entrée de l’entreprise sur le marché automobile — lorsque le prix était bas — puis que vous l’ayez vendue après la hausse due au grand intérêt pour le nouveau produit.",
+        "— De cette façon, nous aurions réalisé un bénéfice ensemble. C’est précisément le rôle de l’analyste : il préparera pour vous des prévisions et des analyses des événements susceptibles d’influencer le cours des actions, en vous fournissant des informations prêtes à l’emploi avec une justification complète.",
+        "— Quelles questions avez-vous à ce stade ?",
+        "— Qu’en pensez-vous ?",
+        "— Je vous conseille de profiter de cette opportunité dès aujourd’hui.",
+        "Nous avons une offre spéciale — il n’est pas nécessaire de commencer avec 1000 euros, un montant d’essai de €233–€256 suffit.",
         "— — —",
-        "— Comment voyez-vous la possibilité de gagner 30 euros dans un proche avenir ?",
-        "— Je pense que vous avez remarqué que la situation dans le monde est maintenant assez instable, n'est-ce pas ?",
-        "— Dans de tels moments, chaque investisseur veut avoir son argent en lieu sûr. Et c'est alors que la meilleure solution est souvent l'investissement dans l'or.",
-        "— Au début de cette année, le prix de l'or était de 2600 dollars l'once.",
-        "— Et savez-vous combien il coûte maintenant ? — 3800 dollars !",
-        "— Selon les prévisions des plus grands centres analytiques, le prix peut monter jusqu'à 4000–4100 dollars l'once.",
-        "— C'est une excellente opportunité ! Dès aujourd'hui, vous pouvez non seulement voir comment fonctionne le gain, mais aussi réellement faire 30 euros grâce à l'augmentation du prix de l'or.",
-        "Et si cela augmente en quelques heures — ce serait génial aussi, n'est-ce pas ?",
-        "— C'est pourquoi je propose de profiter de cette chance maintenant.",
-        "Il suffit de créditer votre compte avec 250 eur pour commencer à gagner.",
-        "— Qu'en pensez-vous ?",
-        "— Je conseille de profiter de cette opportunité dès aujourd'hui.",
-        "Nous avons une offre spéciale — pas besoin de commencer avec 1000 euros, une somme d'essai de 250 eur suffit."
+        "— Comment voyez-vous la possibilité de gagner 30 euros prochainement ?",
+        "— Je pense que vous avez remarqué que la situation mondiale est actuellement assez instable, n’est-ce pas ?",
+        "— Dans de tels moments, chaque investisseur souhaite garder son argent en lieu sûr. Et souvent, l’investissement dans l’or s’avère être la meilleure solution.",
+        "— Au début de cette année, le prix de l’or était de 2600 dollars l’once.",
+        "— Et savez-vous combien cela coûte maintenant ? — 3800 dollars !",
+        "— Selon les prévisions des plus grands centres d’analyse, le prix peut grimper jusqu’à 4000–4100 dollars l’once.",
+        "— C’est une excellente opportunité ! Dès aujourd’hui, vous pouvez non seulement voir comment on gagne, mais aussi obtenir effectivement 30 euros grâce à la hausse du prix de l’or.",
+        "Et s’il montait en quelques heures — ce serait formidable, n’est-ce pas ?",
+        "— C’est pourquoi je propose de saisir cette chance dès maintenant.",
+        "Il suffit de recharger votre compte de €233–€256 pour commencer à gagner.",
+        "— Qu’en pensez-vous ?",
+        "— Je vous conseille de profiter de cette opportunité dès aujourd’hui.",
+        "Nous avons une offre spéciale — il n’est pas nécessaire de commencer avec 1000 euros, un montant d’essai de €233–€256 suffit."
       ]
     },
     {
       "id": "closing_payment",
-      "title": "ЗАКРИТТЯ — ПОПОВНЕННЯ",
+      "title": "CLÔTURE — RECHARGEMENT",
       "type": "snippet",
       "text": [
-        "— Avez-vous encore des questions ? Je recommande d'activer votre compte de trading maintenant !", 
-        "Qu'en pensez-vous ?",
-        
-        "— L'activation du compte se déroule en plusieurs étapes :", 
-        "1) Nous nous connecterons ensemble à votre compte personnel, afin que vous puissiez soumettre directement une demande pour les données personnelles nécessaires pour créditer le compte.",
-        "2) Ensuite, il faut recopier très précisément les données. C'est extrêmement important de ne pas omettre un seul chiffre ou lettre.",
-        "3) Après avoir effectué le virement, veuillez fournir la confirmation de l'opération bancaire réussie, afin que je puisse transmettre cette information au département financier pour comptabiliser les fonds sur le compte de trading.", 
-        
-        "De quelle banque prévoyez-vous de transférer les fonds sur votre compte de trading ?", 
-        
-        "Utilisez-vous l'application mobile de votre banque ?  ",
-        
-        "Le montant de 250 eur est-il disponible dans cette banque ou une autre ?", 
-        "(ВАЖЛИВО СЛУХАТИ УВАЖНО ВІДПОВІДІ КЛІЄНТА)",
-        
-        "Génial, passons à la première étape, d'accord ?"
-
+        "— Avez-vous d’autres questions ? Je vous conseille d’activer votre compte de trading dès maintenant !",
+        "Qu’en pensez-vous ?",
+        "— L’activation du compte se déroule en plusieurs étapes :",
+        "1) Nous nous connecterons ensemble à votre espace personnel, afin que vous puissiez saisir directement les données nécessaires au rechargement.",
+        "2) Ensuite, il faut recopier les informations avec beaucoup d’attention. Il est extrêmement important de ne manquer aucun chiffre ni aucune lettre.",
+        "3) Après avoir effectué le virement, merci d’envoyer la confirmation de l’opération bancaire réussie, afin que je puisse transmettre l’information au service financier pour le crédit des fonds sur le compte de trading.",
+        "Depuis quelle banque prévoyez-vous de transférer des fonds vers votre compte de trading ?",
+        "Utilisez-vous l’application mobile de votre banque ?",
+        "Un montant d’environ €233 est-il disponible dans cette banque ou dans une autre banque à vous ?",
+        "(IMPORTANT : ÉCOUTER ATTENTIVEMENT LES RÉPONSES DU CLIENT)",
+        "Parfait, passons à la première étape, d’accord ?"
       ]
     },
     {
       "id": "node",
-      "title": "НЕМАЄ ГРОШЕЙ",
+      "title": "JE N’AI PAS D’ARGENT",
       "type": "snippet",
       "text": [
-        "— Dites-moi, n'avez-vous pas de fonds libres en ce moment, ou s'agit-il d'un manque d'argent en général – pour vivre ? [чекаємо відповідь клієнта]",
-        "Якщо говорить, що немає на життя:",
-        "— Vous avez une situation très difficile. J'aimerais vraiment vous aider à la résoudre, car j'ai moi-même été dans une situation similaire au début. [свій приклад]",
-        "— Laissons pour l'instant les questions financières. Sur une échelle de pourcentages, comment évaluez-vous vos chances de gagner ici ? [чекаємо відповідь, підказуємо 70–80%]",
-        "— Je comprends que les 20% restants sont vos doutes. Dites-moi, qu'est-ce qui vous rend incertain(e) ?",
-        "Якщо говорить, що впевнений/а, але немає грошей:",
-        "— Imaginez — si vous deviez urgemment trouver 250 eur, que feriez-vous pour trouver cette somme ?",
-        "Якщо говорить, що немає вільних:",
-        "— Par « fonds libres », entendez-vous l'argent que vous n'avez pas peur de perdre ? [чекаємо відповідь клієнта]",
-        "— Dites-moi — à votre avis, comment pourriez-vous perdre de l'argent ici ?"
+        "— Dites-moi, s’il vous plaît : vous n’avez pas de fonds disponibles pour le moment, ou s’agit-il d’un manque d’argent en général — pour vivre ? [nous attendons la réponse du client]",
+        "S’il dit qu’il n’a pas pour vivre :",
+        "— Votre situation est très difficile. J’aimerais vraiment vous aider à la résoudre, car moi-même, au début, je me suis retrouvé(e) dans une situation similaire. [exemple personnel]",
+        "— Mettons de côté pour l’instant les questions financières. À quel pourcentage évaluez-vous vos chances de gagner ici ? [nous attendons la réponse, nous suggérons 70–80 %]",
+        "— Je comprends que les 20 % restants sont vos doutes. Dites-moi, qu’est-ce qui vous rend incertain(-e) exactement ?",
+        "S’il dit qu’il est convaincu, mais qu’il n’a pas d’argent :",
+        "— Imaginez : si vous deviez trouver d’urgence €233–€256, que feriez-vous pour réunir cette somme ?",
+        "S’il dit qu’il n’a pas de fonds disponibles :",
+        "— Par « fonds disponibles », entendez-vous de l’argent que vous n’avez pas peur de perdre ? [nous attendons la réponse du client]",
+        "— Dites-moi, selon vous, de quelle manière pourrait-on perdre de l’argent ici ?"
       ]
     },
     {
       "id": "2_0",
-      "title": "НЕМАЄ ГРОШЕЙ 2.0 (уточнення, підкреслення, пропозиція)",
+      "title": "JE N’AI PAS D’ARGENT 2.0 (précision, mise en avant, proposition)",
       "type": "snippet",
       "text": [
-        "Уточнення фінансової ситуації:",                                                                                                                                                               
-        "Je comprends que la situation financière peut être difficile. Pourriez-vous préciser sur quoi consistent exactement ces difficultés ? Grâce à cela, je pourrai mieux comprendre votre situation et proposer la meilleure solution possible.",
-        "De quel montant manquez-vous ? Combien de temps sera nécessaire pour résoudre la question financière ? Quand attendez-vous recevoir les prochains fonds (par ex. salaire, retraite, allocation) ?", 
-        "[якщо клієнт відповідає на перше запитання, що повний нуль, найімовірніше, клієнт не до кінця чесний і за цим приховує свої сумніви або недовіру,",
-        "відповіді на наступні запитання теж треба слухати дуже уважно, адже клієнт може сказати, що зарплату дали кілька днів тому, а отже, гроші в нього є, але розпочинати роботу він не збирається]",
-        "Підкреслення важливості інвестування:",                                                                                                                                          
-        "Je comprends que maintenant cela peut sembler ne pas être le meilleur moment pour les investissements. Veuillez cependant le voir comme une chance — non seulement pour préserver, mais aussi pour multiplier votre capital. Le temps c'est de l'argent – plus tôt vous commencez, plus grand sera le potentiel de gains.",
-        "Пропозиція ексклюзивних умов:",                                                                                                                                       
-        "Je suis prêt(e) à vous proposer des conditions exclusives destinées aux nouveaux investisseurs. C'est une occasion unique d'accéder à des opportunités d'investissement attractives qui ne sont pas largement disponibles. [Запропонувати бонус]",
-        "Створення відчуття терміновості:",                                                                                                                             
-        "La situation sur le marché peut changer rapidement, c'est pourquoi il est important d'agir sans délai. Pendant que vous hésitez encore, d'autres peuvent déjà profiter de cette occasion. L'investissement maintenant peut apporter plus d'avantages qu'à l'avenir.",
-        "Підкреслення успіхів попередніх інвесторів:",                                                                                                                           
-        "Beaucoup de nos investisseurs ont commencé avec de petites sommes, et aujourd'hui ils sont propriétaires de portefeuilles significatifs. Leurs succès parlent d'eux-mêmes. Ne voudriez-vous pas saisir votre chance ?",
-        "Підготовка до укладення угоди:",                                                                                                                                              
-        "Si nous résolvons rapidement cette question, je suis prêt(e) à vous transmettre toutes les informations nécessaires et à procéder à la finalisation de la transaction. Ce ne sont que quelques étapes – et bientôt vous commencerez à voir les premiers résultats.",
-        "Використання переконливих фактів:",                                                                                                                                  
-        "Il vaut la peine de se rappeler que beaucoup de personnes réussies doivent leur prospérité précisément aux investissements. Il ne vaut pas la peine d'attendre un meilleur moment – créons-le ensemble dès maintenant"
+        "Précision de la situation financière :",
+        "Je comprends que la situation financière puisse être difficile. Pourriez-vous préciser en quoi consistent exactement ces difficultés ? Cela me permettra de mieux comprendre votre situation et de proposer la meilleure solution possible.",
+        "De quel montant avez-vous besoin ? Combien de temps faudra-t-il pour régler la question financière ? Quand prévoyez-vous de recevoir d’autres fonds (p. ex. salaire, pension, allocation) ?",
+        "[si, à la première question, le client répond qu’il est « à zéro », il est très probable qu’il ne soit pas tout à fait sincère et qu’il cache des doutes ou un manque de confiance ;",
+        "il faut écouter avec beaucoup d’attention les réponses suivantes, car il peut dire qu’il a reçu son salaire il y a quelques jours — donc l’argent existe, mais il n’a pas l’intention de commencer]",
+        "Mise en avant de l’importance d’investir :",
+        "Je comprends qu’il puisse sembler que ce ne soit pas le meilleur moment pour investir. Mais voyons cela comme une opportunité — non seulement de préserver, mais aussi d’augmenter votre capital. Le temps, c’est de l’argent : plus vous commencez tôt, plus le potentiel de gain est grand.",
+        "Proposition de conditions exclusives :",
+        "Je suis prêt(e) à vous proposer des conditions exclusives pour les nouveaux investisseurs. C’est une occasion unique d’accéder à des opportunités d’investissement attractives qui ne sont pas accessibles à tous. [Proposer un bonus]",
+        "Création d’un sentiment d’urgence :",
+        "Le marché peut changer rapidement, il est donc important d’agir sans tarder. Pendant que vous réfléchissez, d’autres peuvent déjà en profiter. Investir maintenant peut apporter plus d’avantages que plus tard.",
+        "Mise en avant des réussites des investisseurs précédents :",
+        "Beaucoup de nos investisseurs ont commencé avec de petits montants et possèdent aujourd’hui des portefeuilles importants. Leurs réussites parlent d’elles-mêmes. Ne voudriez-vous pas saisir, vous aussi, votre chance ?",
+        "Préparation à la conclusion :",
+        "Si nous réglons rapidement cette question, je suis prêt(e) à vous fournir toutes les informations nécessaires et à passer à la finalisation. Ce ne sont que quelques étapes — et vous verrez bientôt les premiers résultats.",
+        "Utilisation de faits convaincants :",
+        "Il faut se rappeler que de nombreuses personnes prospères doivent leur bien-être précisément aux investissements. Inutile d’attendre « le bon moment » — créons-le ensemble dès maintenant."
       ]
     },
     {
       "id": "node_2",
-      "title": "ХОЧУ ПОДУМАТИ",
+      "title": "JE VEUX RÉFLÉCHIR",
       "type": "snippet",
       "text": [
-        "D'après mon expérience, quand un client dit qu'il veut réfléchir, cela signifie souvent qu'il n'a pas tout à fait compris le projet ou qu'il n'est pas encore convaincu.",
-
-        "Pouvez-vous me dire exactement ce qui vous inquiète ?  [чекаємо відповідь клієнта, якщо каже - подумати щодо ризиків або безпеки - переходимо до відпрацювання цих заперечень]",
-        "Pouvez-vous me dire exactement ce que vous souhaitez réfléchir ?",
-        "Que manque-t-il dans ma présentation pour que vous puissiez prendre une décision dès maintenant ?",
-        "Qu'est-ce qui vous empêche de prendre une décision pour le moment ?",
-        "Comment cela peut-il influencer votre décision finale ?",
-
-        "Bien sûr, vous avez le droit de réfléchir. Cependant, d'après mon expérience, les meilleures décisions sont prises lorsque l'on peut voir des résultats concrets et comprendre comment cela fonctionne dans la pratique.",
-        " Honnêtement, il n'y a pas grand-chose à réfléchir pour le moment, à moins que quelque chose ne vous pose problème ? Qu'est-ce qui vous empêche exactement de prendre une décision ?"
+        "D’après mon expérience, quand un client dit qu’il veut réfléchir, cela signifie souvent qu’il n’a pas entièrement compris le projet ou qu’il n’en est pas encore convaincu.",
+        "Dites-moi, s’il vous plaît, qu’est-ce qui vous préoccupe exactement ? [nous attendons la réponse ; s’il dit — réfléchir aux risques ou à la sécurité — nous passons au traitement de ces objections]",
+        "Dites-moi — à quoi exactement voulez-vous réfléchir ?",
+        "Qu’est-ce qui a manqué dans ma présentation pour vous permettre de prendre une décision dès maintenant ?",
+        "Qu’est-ce qui vous empêche de décider en ce moment ?",
+        "Comment cela pourrait-il influencer votre décision finale ?",
+        "Bien sûr, vous avez le droit de réfléchir. Toutefois, d’après mon expérience, les meilleures décisions se prennent lorsqu’on peut voir des résultats concrets et comprendre comment cela fonctionne en pratique.",
+        "Franchement, il n’y a pas grand-chose à ruminer maintenant — à moins que quelque chose ne suscite vos doutes ? Qu’est-ce qui vous empêche exactement de décider maintenant ?"
+      ]
+    },
+    {
+      "id": "node_3",
+      "title": "JE VEUX CONSULTER UN PROCHE",
+      "type": "snippet",
+      "text": [
+        "Je comprends que vous souhaitiez consulter votre épouse/époux, car vous n’êtes pas encore totalement convaincu(e), n’est-ce pas ? [si la réponse est Oui — nous précisons]",
+        "En quoi exactement n’êtes-vous pas sûr(e) ? Quels doutes avez-vous ?",
+        "— si la réponse est Non",
+        "Dites-moi — s’agit-il de faire approuver ou rejeter votre décision par votre épouse/époux ?",
+        "Vous savez, moi-même je ne demanderais pas la permission si je n’étais pas entièrement convaincu(e) de mon choix.",
+        "Pour commencer, nous pouvons démarrer avec un petit montant — c’est sûr et cela permet de voir comment cela fonctionne en pratique.",
+        "Dès aujourd’hui, vous pouvez obtenir un premier bénéfice sur un événement mondial et… faire un cadeau à votre épouse/époux/fils !",
+        "Avez-vous encore des craintes ? Dites-moi ce qui vous inquiète exactement — je me ferai un plaisir de l’expliquer."
+      ]
+    },
+    {
+      "id": "2_0_2",
+      "title": "CONSULTER UN PROCHE 2.0 (logique)",
+      "type": "snippet",
+      "text": [
+        "Passons sur le terrain de la logique :",
+        "Je comprends que vous vouliez prendre la décision avec une personne proche — c’est tout à fait naturel.",
+        "Permettez-moi une question : si vous avez mal aux dents — à qui vous adressez-vous ? Au dentiste, n’est-ce pas ? Parce que c’est la personne compétente.",
+        "Dites-moi, la personne que vous souhaitez consulter s’y connaît-elle en investissements et en marchés financiers ? Si non — il vaut mieux poser toutes les questions à quelqu’un de compétent.",
+        "C’est pourquoi je suis là pour vous aider — je répondrai volontiers à tout et, si vous êtes prêt(e), nous passerons à l’activation du compte. D’accord ?"
+      ]
+    },
+    {
+      "id": "node_4",
+      "title": "LICENCE",
+      "type": "snippet",
+      "text": [
+        "— Bien sûr, pas de problème. Je vais vous envoyer les documents maintenant et nous les examinerons ensemble. Je resterai en ligne pour répondre immédiatement à toutes vos questions.",
+        "— Restons en contact, je resterai en ligne pour répondre immédiatement à toutes vos questions.",
+        "— Au fait — puisque vous souhaitez encore vérifier quelque chose, je comprends qu’il y ait des doutes.",
+        "— Parlons franchement : qu’est-ce qui vous fait peur exactement ?",
+        "— Selon vous, qu’est-ce qui pourrait ne pas fonctionner dans notre coopération ?",
+        "[si le client commence à formuler des objections — nous passons à leur traitement, sans rien envoyer ; et si après cela le client reparle de la licence — alors nous la lui envoyons]",
+        "**Deuxième option :**",
+        "— D’accord, je n’ai rien contre le fait de vous fournir la licence.",
+        "— Mais dites-moi — une licence, à elle seule, peut-elle être une garantie de gain ?",
+        "— Par exemple : un conducteur titulaire du permis peut-il vous garantir un voyage sûr ?",
+        "— Êtes-vous d’accord pour dire que le permis de conduire est aussi une forme de « licence » pour le conducteur ?",
+        "— Le simple fait de l’avoir offre-t-il une garantie ?",
+        "— Malheureusement, aujourd’hui, obtenir une licence — comme un permis — n’est pas difficile.",
+        "— Par conséquent, la seule licence ne donne pas une certitude absolue de profit."
       ]
     },
     {
       "id": "node_5",
-      "title": "ХОЧУ ПОЧИТАТИ ВІДГУКИ",
+      "title": "JE VEUX LIRE DES AVIS",
       "type": "snippet",
       "text": [
-        "- Dites-moi – à quelle fréquence vous arrive-t-il d'écrire personnellement des avis sur internet ? [Чекаємо на відповідь клієнта.]",                                                                                                                                                                                                        
-        "- Et à votre avis – qui écrit le plus souvent des avis ? [Чекаємо на відповідь клієнта.]",                                                                         
-        "- Vous savez, si j'écrivais maintenant mille commentaires négatifs sur votre voiture – cela signifierait-il que la voiture ne fonctionne pas et qu'il faut la vendre ? [Пауза, щоб задумався.]",                                                                                
-        "- Je pense que rien ne convainc mieux que l'expérience personnelle.",                                                                              
-        "- C'est pourquoi je vous encourage – vérifions ensemble à l'occasion de l'événement d'aujourd'hui et vous verrez les effets de vos propres yeux.",
-
-                                          "**Інший варіант:**",
-        "– C'est une excellente idée de lire les avis – surtout quand on sait qui les a écrits.",
-        "– Dites-moi, comment distinguez-vous un avis vrai d'un moins crédible ?",
-        "– Êtes-vous d'accord avec l'affirmation que les avis peuvent être achetés ?",
-        "– Vous est-il arrivé de prêter attention aux avis par ex. sur votre propre banque ?",
-        "– À quels avis accordez-vous plus d'attention – positifs ou négatifs ?",
-        "– Et si je vous présentais des centaines d'avis positifs et cent négatifs – lesquels considéreriez-vous comme plus crédibles ?",
-        "– Je pense que rien ne convainc mieux que l'expérience personnelle.",
-        "– C'est pourquoi je vous encourage – vérifions ensemble à l'occasion de l'événement d'aujourd'hui et vous verrez les effets de vos propres yeux.",
-        
-                                    "**Прочитав погані відгуки:**",
-        "Пояснення на прикладі:",
-        "– Le fait que vous ayez lu les avis montre que vous prenez au sérieux la décision de collaboration – et c'est très bien.",
-        "– Il faut cependant se rappeler que les avis sur internet ne reflètent pas toujours la réalité.",
-        "– Beaucoup d'entre eux sont écrits par la concurrence.",
-        "– Le plus important est ce que vous vérifierez personnellement – en utilisant la plateforme.",
-        "– Alors vous-même évaluerez si la collaboration fonctionne comme vous l'attendez.",
-        "– Les avis peuvent être écrits, copiés, édités – mais l'expérience ne peut être falsifiée par personne.",
-        "– C'est pourquoi je vous prie – vérifions ensemble, pour que vous puissiez voir les résultats de vos propres yeux."
+        "— Dites-moi, à quelle fréquence vous arrive-t-il d’écrire personnellement des avis sur internet ? [Nous attendons la réponse du client.]",
+        "— Et selon vous, qui écrit le plus souvent des avis ? [Nous attendons la réponse du client.]",
+        "— Vous savez, si j’écrivais maintenant mille commentaires négatifs sur votre voiture — cela signifierait-il que la voiture ne fonctionne pas et qu’il faut la vendre ? [Pause de réflexion.]",
+        "— Je pense que rien ne convainc mieux que l’expérience personnelle.",
+        "— C’est pourquoi je propose — vérifions cela ensemble à l’occasion de l’événement d’aujourd’hui, et vous verrez les résultats de vos propres yeux.",
+        "**Autre option :**",
+        "— C’est une excellente idée de lire des avis — surtout lorsque nous savons qui les a écrits.",
+        "— Dites-moi, comment distinguez-vous un avis authentique d’un avis moins fiable ?",
+        "— Êtes-vous d’accord pour dire que les avis peuvent s’acheter ?",
+        "— Vous est-il arrivé de prêter attention aux avis, par exemple, sur votre propre banque ?",
+        "— À quels avis prêtez-vous le plus attention — aux positifs ou aux négatifs ?",
+        "— Et si l’on vous présentait des centaines d’avis positifs et une centaine de négatifs — lesquels jugeriez-vous plus crédibles ?",
+        "— Je pense que rien ne convainc mieux que l’expérience personnelle.",
+        "— Par conséquent, vérifions ensemble lors de l’événement d’aujourd’hui, et vous verrez les résultats par vous-même.",
+        "**Vous avez lu de mauvais avis :**",
+        "Explication par l’exemple :",
+        "— Le fait que vous ayez consulté des avis montre que vous prenez au sérieux la décision de coopérer — et c’est très bien.",
+        "— Toutefois, les avis sur internet ne reflètent pas toujours la réalité.",
+        "— Beaucoup d’entre eux sont écrits par la concurrence.",
+        "— Le plus important est ce que vous vérifierez personnellement — en utilisant la plateforme.",
+        "— Ensuite, vous jugerez vous-même si la coopération fonctionne comme prévu.",
+        "— Les avis peuvent s’écrire, se copier, s’éditer — mais l’expérience personnelle ne peut pas être falsifiée.",
+        "— C’est pourquoi je vous prie — vérifions ensemble pour que vous puissiez voir les résultats par vous-même."
       ]
     },
     {
       "id": "node_6",
-      "title": "ХОЧУ ПІДПИСАТИ ДОГОВІР",
+      "title": "JE VEUX SIGNER UN CONTRAT",
       "type": "snippet",
       "text": [
-        "- Avec moi personnellement, vous ne signez pas de contrat.",
-        "- Après le début de la collaboration avec l'analyste, demandez-lui le contrat – ils sont préparés individuellement pour chaque client, en tenant compte du type de collaboration, des gains attendus, de la direction du trading et de la situation financière.",
-        "[Якщо клієнт просить вислати порожній договір, ви маєте вивести на обґрунтоване заперечення, і зрозуміти, чому йому потрібен цей договір / НЕ  ВПЕВНЕНА АБО БОЇТЬСЯ / відводьте в тему обґрунтованого заперечення (якої форми договір вас цікавить?)]",
-                                    "**Другий варіант:**",
-        "– Le contrat est signé dans le cas où l'entreprise accepte les fonds du client en gestion.",
-        "– Dans notre cas, vous ne nous transférez pas votre argent – vous ouvrez votre propre compte et le gérez vous-même, en utilisant nos recommandations.",
-        "– Dites-moi, à combien de pourcent êtes-vous sûr(e) que vous réussirez à gagner avec nous ?"
+        "— Avec moi personnellement, vous ne signez pas de contrat.",
+        "— Après le début de la coopération avec l’analyste, demandez le contrat — ils sont préparés individuellement pour chaque client, en tenant compte du format de la coopération, du bénéfice attendu, de l’orientation de trading et de la situation financière.",
+        "[Si le client demande d’envoyer un contrat vierge — amenez-le à une objection argumentée et clarifiez pourquoi ce contrat lui est nécessaire / PAS SÛR OU A PEUR / orientez vers le thème de l’objection argumentée (quelle forme de contrat vous intéresse ?)]",
+        "**Deuxième option :**",
+        "— Le contrat est signé lorsque l’entreprise prend les fonds du client en gestion.",
+        "— Dans notre cas, vous ne nous confiez pas votre argent — vous ouvrez votre propre compte et le gérez vous-même, en suivant nos recommandations.",
+        "— Dites-moi, à quel pourcentage êtes-vous sûr(e) que nous parviendrons à gagner ensemble ?"
       ]
     },
     {
       "id": "node_7",
-      "title": "ЗАТЕЛЕФОНУЙТЕ ЧЕРЕЗ МІСЯЦЬ",
+      "title": "RAPPELEZ-MOI DANS UN MOIS",
       "type": "snippet",
       "text": [
-         "Et pourquoi seulement dans un mois ?",                                                                                                                                              
-                        "Або",
-        "Bien sûr, je peux vous appeler dans un mois, mais dites-moi – qu'est-ce qui changera d'ici là ?",
-                        "Або",
-        "Qu'est-ce qui empêche de commencer maintenant ?",
-                        "Або",
-       "Puis-je demander ce qui vous empêche de commencer maintenant ?", 
-       "Якщо клієнт каже, що йому треба: подумати, у нього потім буде більше часу - то переходимо до відпрацювання цих заперечень.",
-       "Якщо клієнт каже, що тільки через місяць у нього будуть гроші - тоді наше завдання продати йому новину, зацікавити прибутком, поставити дедлайн і запропонувати запуститися в роботу на більш вигідних умовах.]"
+        "Pourquoi précisément dans un mois ?",
+        "Ou bien",
+        "Bien sûr, je peux vous appeler dans un mois, mais dites-moi — qu’est-ce qui aura changé d’ici là ?",
+        "Ou bien",
+        "Qu’est-ce qui empêche de commencer dès maintenant ?",
+        "Ou bien",
+        "Puis-je demander ce qui vous retient exactement de démarrer tout de suite ?",
+        "[Si le client dit qu’il doit : réfléchir, ou qu’il aura plus de temps plus tard — nous passons au traitement de ces objections. S’il dit qu’il n’aura de l’argent que dans un mois — notre tâche est de « vendre » la nouvelle, de l’intéresser au profit, de fixer une échéance et de proposer un démarrage à des conditions plus avantageuses.]"
       ]
     },
     {
       "id": "node_8",
-      "title": "У ВАС АКЦЕНТ",
+      "title": "VOUS AVEZ UN ACCENT",
       "type": "snippet",
       "text": [
-        "Sur le territoire de notre pays vivent beaucoup de personnes de différents coins du monde, donc il est difficile de trouver quelqu'un qui n'a pas d'accent.",
-        "Cependant, pendant plus de 3 ans de mon travail dans cette entreprise, mon accent n'a jamais été un obstacle pour aider les gens à réaliser des profits.",
-        "C'est pourquoi concentrons-nous sur l'objectif pour lequel vous avez laissé votre inscription, et parlons des profits potentiels que vous pouvez réaliser.",
-        "[ОДРАЗУ ЗАДАЄМО ВІДКРИТЕ ПИТАННЯ]"
+        "Dans notre pays, de nombreuses personnes venues des quatre coins du monde vivent — il est donc difficile de trouver quelqu’un sans aucun accent.",
+        "Cependant, en plus de 3 ans de travail dans cette entreprise, mon accent n’a jamais empêché d’aider les gens à réaliser des profits.",
+        "Concentrons-nous donc sur l’objectif pour lequel vous avez laissé votre inscription, et parlons du profit potentiel que vous pouvez obtenir.",
+        "[NOUS POSONS IMMÉDIATEMENT UNE QUESTION OUVERTE]"
       ]
     },
     {
       "id": "node_9",
-      "title": "ЦЕ СКЛАДНО ДЛЯ МЕНЕ",
+      "title": "C’EST COMPLIQUÉ POUR MOI",
       "type": "snippet",
       "text": [
-        "Je comprends que c'est un nouveau secteur pour vous et que des craintes peuvent apparaître – chacun de nous a commencé un jour.",
-        "C'est précisément pourquoi nous vous assignerons un analyste expérimenté, qui vous guidera étape par étape – comme un professeur à l'école.",
-        "Notre entreprise, comme vous, est intéressée par une chose – LES GAINS !",
-        "Nous prélevons la commission seulement quand vous retirez vos profits – nous sommes donc des partenaires, pas seulement un prestataire.",
-        "Je suis convaincu(e) que vous réussirez dans la collaboration avec nous – et bientôt vous vous en convaincrez vous-même !"
+        "Je comprends que ce soit un domaine nouveau pour vous et que certaines craintes puissent apparaître — nous avons tous commencé un jour.",
+        "C’est justement pour cela que nous vous attribuerons un analyste expérimenté qui vous guidera pas à pas — comme un professeur à l’école.",
+        "Notre entreprise, tout comme vous, n’est intéressée que par une seule chose — LE PROFIT !",
+        "Nous prélevons une commission uniquement lorsque vous retirez vos gains — nous sommes donc des partenaires, pas seulement un prestataire de services.",
+        "Je suis convaincu(e) que vous réussirez avec nous — et vous vous en rendrez compte très bientôt !"
       ]
     },
     {
       "id": "node_10",
-      "title": "НАДІШЛІТЬ МЕНІ ВСЮ ІНФОРМАЦІЮ НА ПОШТУ",
+      "title": "ENVOYEZ-MOI TOUTES LES INFORMATIONS PAR E-MAIL",
       "type": "snippet",
       "text": [
-        "– Puisque vous voulez recevoir les informations par mail, cela peut signifier que tout n'est pas encore clair pour vous. Dites-moi – quelle information manque ou qu'est-ce qui suscite des doutes ?",
-        "– Que voudriez-vous que j'explique encore ?",
-        "[Якщо клієнт відповідає, що нічого не хоче уточнити і йому все зрозуміло тоді пропонуйте починати роботу]",
-        "– Puisque tout est clair, je propose de faire le premier pas.",
-        "Quel montant avez-vous choisi pour commencer la collaboration ?"
+        "— Si vous souhaitez recevoir les informations par e-mail, cela peut signifier que tout n’est pas encore clair. Dites-moi — quelles informations manquent ou qu’est-ce qui suscite des doutes ?",
+        "— Que souhaitez-vous que j’explique en plus ?",
+        "[Si le client répond qu’il ne veut rien préciser et que tout est clair — proposez alors de commencer le travail]",
+        "— Si tout est déjà clair, je propose de faire le premier pas.",
+        "Quel montant avez-vous choisi pour démarrer la coopération ?"
       ]
     },
     {
       "id": "node_11",
-      "title": "НЕМАЄ ЧАСУ",
+      "title": "JE N’AI PAS LE TEMPS",
       "type": "snippet",
       "text": [
-        "Je veux souligner une chose très importante – l'activation du compte prendra littéralement quelques minutes, et ensuite vous pourrez retourner à vos obligations quotidiennes.",
-                        "Або",
-        "– Nous parlons déjà depuis plus de 20 minutes, et quand nous approchons de l'activation du compte de trading, vous dites que vous n'avez pas le temps maintenant.",
-        "Dites-moi honnêtement – quelque chose vous retient-il ? De quoi exactement avez-vous peur ?"
+        "Je veux souligner un point très important — l’activation du compte ne prendra littéralement que quelques minutes, puis vous pourrez retourner à vos occupations quotidiennes.",
+        "Ou bien",
+        "— Nous parlons déjà depuis plus de 20 minutes, et lorsque nous nous approchons de l’activation du compte de trading, vous me dites que vous n’avez pas le temps maintenant.",
+        "Dites-moi franchement — y a-t-il quelque chose qui vous retient ? De quoi avez-vous exactement peur ?"
       ]
     },
     {
       "id": "node_12",
-      "title": "ШАХРАЇ",
+      "title": "ARNAQUEURS",
       "type": "snippet",
       "text": [
-        "Sur la base de quelles informations évaluez-vous quelle entreprise est honnête et laquelle ne l'est pas ?",
-        "[Чекаємо на відповідь клієнта]",
-        "En quoi voyez-vous exactement une potentielle escroquerie ?",
-        "[Чекаємо на відповідь клієнта]",
-        "Je ne vous demande aucune donnée personnelle – c'est vous-même qui avez laissé le formulaire d'inscription pour que nous vous contactions.",
-        "Le plus important, les fonds se trouvent sur votre compte individuel et seul vous y avez accès. Où peut-il y avoir une escroquerie ici ?"
+        "Sur la base de quelles informations déterminez-vous quelle entreprise est honnête et laquelle ne l’est pas ?",
+        "[Nous attendons la réponse du client]",
+        "En quoi voyez-vous exactement une potentielle arnaque ?",
+        "[Nous attendons la réponse du client]",
+        "Je ne vous demande aucune donnée personnelle — c’est vous qui avez laissé le formulaire d’inscription pour que nous vous contactions.",
+        "Le plus important : les fonds se trouvent sur votre compte individuel et vous seul(e) y avez accès. Où voyez-vous ici une arnaque ?"
       ]
     },
     {
       "id": "node_13",
-      "title": "ЦЕ ВЕЛИКА СУМА ДЛЯ МЕНЕ",
+      "title": "C’EST UNE GROSSE SOMME POUR MOI",
       "type": "snippet",
       "text": [
-        "Si 250 eur est pour vous une somme trop élevée pour commencer, dites-moi – quel montant serait approprié pour vous pour commencer la collaboration ?",
-        "[Якщо клієнт каже - що не готовий починати і хоче подумати, почитати або порадитися, то переходимо до відпрацювання цього заперечення. Якщо клієнт називає будь-яку іншу суму, що менша за 1000-1100 злотих, тоді розвиваємо діалог далі]",
-        "Pourquoi précisément ce montant ? Est-ce parce qu'en cas de difficultés éventuelles, cela ne serait pas un grand fardeau pour vous ? Dites-moi honnêtement.",
-        "[Якщо клієнт каже - ТАК або що хоче подумати чи боїться - переходимо до відпрацювання цих заперечень]"
+        "Si €233–€256 est pour vous un montant trop élevé pour commencer, dites-moi — quel montant serait confortable pour démarrer la coopération ?",
+        "[Si le client dit qu’il n’est pas prêt à commencer et veut réfléchir/lire ou consulter — nous passons au traitement de cette objection. S’il indique un autre montant inférieur à €233–€256 — nous poursuivons le dialogue]",
+        "Pourquoi précisément ce montant ? Parce qu’en cas de difficultés éventuelles, cela ne serait pas un grand fardeau pour vous ? Dites-moi franchement.",
+        "[Si le client dit — OUI, ou qu’il veut réfléchir/a peur — nous passons au traitement de ces objections]"
       ]
     },
     {
       "id": "node_14",
-      "title": "ЧОМУ ВИ САМІ НЕ ІНВЕСТУЄТЕ",
+      "title": "POURQUOI VOUS N’INVESTISSEZ PAS VOUS-MÊME",
       "type": "snippet",
       "text": [
-        "Bien sûr que j'investis – de plus, j'ai aussi un analyste personnel avec qui je collabore et avec qui je gagne sur le trading depuis 4 ans.", 
-        "Le plus souvent, nous investissons dans les cryptomonnaies, mais nous ouvrons régulièrement des transactions sur d'autres actifs aussi.",
-        "De plus – non seulement j'investis, mais mes proches participent aussi à ce projet.",
-        
-        "Je vous conseille de commencer la collaboration – grâce à cela, vous pouvez commencer à gagner comme moi.",
-        
-        "Je vous encourage à commencer la collaboration – vous verrez vous-même qu'on peut vraiment bien gagner."
+        "Bien sûr que j’investis — de plus, j’ai aussi un analyste personnel avec qui je gagne de l’argent en trading depuis 4 ans.",
+        "Nous investissons le plus souvent dans les cryptomonnaies, mais nous ouvrons régulièrement des opérations sur d’autres actifs.",
+        "De plus — je ne suis pas le seul à investir, mes proches participent également à ce projet.",
+        "Je vous conseille de commencer à coopérer — ainsi, vous pourrez gagner comme moi.",
+        "Je vous encourage à commencer — vous verrez qu’il est vraiment possible de bien gagner ici."
       ]
     },
     {
       "id": "node_15",
-      "title": "ЧОМУ НЕ МОЖНА ПОЧАТИ З МЕНШОЇ СУМИ",
+      "title": "POURQUOI NE PAS COMMENCER AVEC UNE SOMME PLUS PETITE",
       "type": "snippet",
       "text": [
-        "Pourquoi le montant minimal est précisément 250 eur et pas moins ?",
-        "Ce montant résulte de la stratégie adoptée de trading sécurisé. Nous ouvrons en moyenne 6–10 positions par jour, mais nous utilisons toujours seulement environ 50% des fonds, pour minimiser le risque.",
-        "C'est pourquoi 250 eur est le montant qui permet un démarrage efficace et sécurisé des investissements – dont seulement la moitié va réellement sur le marché.",
-        "Bien sûr, vous pouvez chercher un courtier avec un seuil d'entrée plus bas, mais là vous agirez seul(e) – sans soutien, sans stratégie et sans personne engagée dans votre résultat. Chez nous, nous sommes partenaires – vous gagnez, nous gagnons.",
-        "C'est pourquoi si vous tenez à la sécurité et aux profits, le mieux est de s'en convaincre en pratique. Je propose de créditer le compte avec le montant minimal et de faire aujourd'hui le premier pas vers le profit.",
-                   "Або",
-        "Pendant 5 ans, nous avons testé la collaboration avec les clients à différents montants et nous sommes arrivés à la conclusion que 250 eur est la somme la plus sûre pour commencer.",
-        "C'est précisément à partir de ce montant que je peux vous donner la garantie que tout réussira.",
-        "Si vous demandez « pourquoi ? », je l'explique déjà :",
-        "ce montant est réparti de manière appropriée selon les règles de gestion du risque – une partie du capital travaille sur le marché, et le reste constitue un soi-disant « coussin de sécurité ».",
-        "Dites-moi – êtes-vous d'accord que cela ne vaut pas la peine d'investir toute la somme en un seul endroit ?"
+        "Pourquoi le montant minimum est-il précisément €233–€256 et pas moins ?",
+        "Ce montant découle de la stratégie de trading sécurisé adoptée. Nous ouvrons en moyenne 6–10 positions par jour, mais nous n’utilisons toujours qu’environ 50 % des fonds afin de minimiser le risque.",
+        "Ainsi, €233–€256 est le montant qui permet de démarrer l’investissement de manière efficace et sûre — et seule la moitié finit effectivement sur le marché.",
+        "Bien sûr, vous pouvez chercher un courtier avec un seuil d’entrée plus bas, mais là vous agirez seul(e) — sans support, sans stratégie et sans personne intéressée par votre résultat. Chez nous, nous sommes partenaires : vous gagnez, nous gagnons.",
+        "Donc, si la sécurité et le profit vous importent, le mieux est de le vérifier en pratique. Je propose de recharger le compte du montant minimum et de faire dès aujourd’hui le premier pas vers le profit.",
+        "Ou bien",
+        "Pendant 5 ans, nous avons testé la coopération avec des clients sur différents montants et conclu que €233–€256 est la somme la plus sûre pour commencer.",
+        "C’est à partir de ce montant que je peux vous donner l’assurance que tout se passera bien.",
+        "Si vous demandez « pourquoi ? », j’explique :",
+        "ce montant est réparti correctement selon les principes de gestion du risque : une partie du capital travaille sur le marché, et le reste constitue le « coussin de sécurité ».",
+        "Dites-moi — êtes-vous d’accord qu’il ne faut pas investir tout le montant au même endroit ?"
       ]
     },
     {
       "id": "node_16",
-      "title": "МЕНІ НІЧОГО НЕ ПОТРІБНО / МЕНІ ВЖЕ НЕ ЦІКАВО",
+      "title": "JE N’AI BESOIN DE RIEN / ÇA NE M’INTÉRESSE PLUS",
       "type": "snippet",
       "text": [
-        "Nous avons discuté de tout ce qui est nécessaire pour le démarrage.",
-        "Nous avons choisi une façon d'agir accélérant l'atteinte de l'objectif.",
-        "La sécurité des fonds a aussi été discutée — donc ce n'est plutôt pas un manque d'intérêt.",
+        "Nous avons discuté de tout le nécessaire pour démarrer.",
+        "Nous avons choisi une manière d’agir qui accélère l’atteinte de l’objectif.",
+        "La question de la sécurité des fonds a également été traitée — ce n’est donc pas un manque d’intérêt.",
         "Dites-moi franchement — de quoi avez-vous peur ?"
       ]
     },
     {
       "id": "node_17",
-      "title": "ХОЧУ ПРИ ЇХАТИ В ОФІС",
+      "title": "JE VEUX VENIR AU BUREAU",
       "type": "snippet",
       "text": [
-        "En général, nous avons déjà discuté de tout ce dont vous avez besoin pour commencer la collaboration.", 
-        "Vous avez décidé d'une façon d'agir qui peut aider à atteindre l'objectif financier plus vite que vous ne le supposiez.", 
-        "Nous avons aussi discuté de la question de la sécurité des fonds, donc je pense que ce n'est pas le manque d'intérêt qui est l'obstacle.", 
-        "Dites-moi franchement – de quoi avez-vous peur ?"
+        "Globalement, nous avons déjà discuté de tout ce dont vous avez besoin pour commencer la coopération.",
+        "Vous avez choisi une manière d’agir qui peut vous aider à atteindre votre objectif financier plus rapidement que prévu.",
+        "Nous avons également abordé la sécurité des fonds, j’en déduis donc que ce n’est pas un problème d’intérêt.",
+        "Dites-moi franchement — de quoi avez-vous peur ?"
       ]
     },
     {
       "id": "node_18",
-      "title": "ДЕ ЗАРЕЄСТРОВАНА ВАША ФІРМА",
+      "title": "OÙ VOTRE ENTREPRISE EST-ELLE ENREGISTRÉE",
       "type": "snippet",
       "text": [
-        "Nous sommes une entreprise internationale, bureau aussi en Pologne — principal à Krotoszyn.",
-        "Enregistrement : ELITE UK LIMITED, Company number 05099962,251 Henley Road, Caversham, Reading, RG4 6LJ , Mazowieckie, date: 13 April 2004.",
-        "En pratique, la demande officielle à la NBP peut coûter ~1500€ et durer jusqu'à 14 jours ouvrables.",
-        "👉 Si le nom du projet diffère du nom de l'entreprise — vérifier par nom et KRS sur internet."
+        "Nous sommes une entreprise internationale, avec un bureau également en Pologne — le principal à Krotoszyn.",
+        "ELITE HOLDINGS LIMITED, Company number 12304784, 288 Church Street, Blackpool, Lancashire, England, FY1 3QA , Mazowieckie, 8 novembre 2019",
+        "En pratique, une demande officielle auprès de la NBP peut coûter environ 150 € et prendre jusqu’à 14 jours ouvrables.",
+        "👉 Si le nom du projet diffère du nom de l’entreprise — vérifiez par le nom et le numéro d’entreprise sur internet."
       ]
     },
     {
       "id": "node_19",
-      "title": "ЯКІ ГАРАНТІ Ї",
+      "title": "QUELLES GARANTIES",
       "type": "snippet",
       "text": [
-        "Si vous demandez des garanties, cela signifie que vous voulez vous protéger contre quelque chose. Dites-moi – de quoi exactement avez-vous peur ?",
-        "[ЗАДАЄМО ПИТАННЯ/ОТРИМАЄМО ВІДПОВІДЬ, НЕ ВІДПОВІДАЙТЕ ЗА КЛІЄНТА! Якщо клієнт бурмоче і не може чітко відповісти, запитайте його:]",
-        "Imaginez ce qui pourrait se passer dans la collaboration avec nous.",
-        "[СТАВИМО ЗАПИТАННЯ/ЧЕКАЄМО ВІДПОВІДЬ НЕ НАКИДАЮЧИ ВАРІАНТИ ЗА КЛІЄНТА]",
-        "Seules les personnes intelligentes s'intéressent à cette question – dites-moi, quelles garanties précises vous intéressent ?",
-        "[Якщо клієнт посилається на договір, ліцензію або особисту зустріч – ми використовуємо відповідні напрацювання з цього файлу. Якщо клієнт не може дати точну відповідь, використовуємо наведену нижче версію]",
-        "La garantie la plus importante dans notre collaboration est l'intérêt commun. Réfléchissez – quel serait notre gain à vous mettre dans une situation où vous perdez de l'argent, puisque notre gain est de 10% de votre profit ? ",
-        "Dans notre entreprise, absolument tout le monde est intéressé à ce que notre collaboration dure des années."
+        "Si vous demandez des garanties, cela signifie que vous souhaitez vous protéger de quelque chose. Dites-moi — de quoi avez-vous peur exactement ?",
+        "[NOUS POSONS DES QUESTIONS / NOUS RECEVONS DES RÉPONSES, NOUS NE RÉPONDONS PAS À LA PLACE DU CLIENT ! Si le client marmonne et n’arrive pas à répondre clairement, demandez :]",
+        "Imaginez ce qui peut se passer dans la coopération avec nous.",
+        "[NOUS POSONS DES QUESTIONS / NOUS ATTENDONS LA RÉPONSE, SANS SUGGÉRER DES OPTIONS À LA PLACE DU CLIENT]",
+        "Seules les personnes avisées posent cette question — dites-moi, quelles garanties spécifiques vous intéressent ?",
+        "[Si le client fait référence à un contrat, une licence ou une rencontre — nous utilisons les textes correspondants. S’il ne peut pas répondre précisément — nous utilisons la version suivante]",
+        "La garantie la plus importante dans notre coopération est l’intérêt commun. Réfléchissez : quel avantage aurions-nous à vous mettre dans une situation où vous perdez de l’argent, si notre gain représente 10 % de votre profit ?",
+        "Dans notre entreprise, absolument tout le monde a intérêt à ce que notre coopération dure des années."
       ]
     },
     {
       "id": "node_20",
-      "title": "Я В ЦЕ НЕ ВІРЮ",
+      "title": "JE N’Y CROIS PAS",
       "type": "snippet",
       "text": [
-        "En quoi exactement ne croyez-vous pas ? [Чекаємо відповідь клієнта]",
-        "Vous ne croyez pas qu'on peut vraiment gagner ici ? [Чекаємо на відповідь клієнта + можемо посилатися на інтерес компанії.]",
-        "Vous n'avez pas confiance ? Ou peut-être avez-vous peur de quelque chose ?"
+        "À quoi exactement ne croyez-vous pas ? [Nous attendons la réponse du client]",
+        "Vous ne croyez pas qu’il est vraiment possible de gagner ici ? [Nous attendons la réponse du client + nous pouvons évoquer l’intérêt de l’entreprise.]",
+        "Vous n’avez pas confiance ? Ou peut-être avez-vous peur de quelque chose ?"
       ]
     },
     {
       "id": "node_21",
-      "title": "НЕ ВІРЮ, ЩО МОЖНА ЗАРОБЛЯТИ НА ФІН РИНКУ",
+      "title": "JE NE CROIS PAS QU’ON PUISSE GAGNER SUR LE MARCHÉ FINANCIER",
       "type": "snippet",
       "text": [
-        "Il n'est pas nécessaire de croire au secteur des investissements — cela peut être vérifié en pratique.",
-        "Par exemple : l'or est stable en prix, et la monnaie nationale avant les élections perd généralement de la valeur.",
-        "Tous ces événements peuvent être prévus — il suffit de faire confiance à nos analystes.",
-        "Ce sont des professionnels dans leur domaine, et leur objectif principal est la croissance maximale de votre capital, car nous gagnons aussi seulement quand vous gagnez.",
-        
-        "Si vous réalisez un profit et le retirez sur votre compte — alors croirez-vous que cela fonctionne ?",
-        "Dans ce cas, je propose de faire ce pas, de voir le résultat en pratique et seulement alors d'évaluer à quel point c'est réel.", 
-        "Je vous conseille de commencer la collaboration et de générer votre premier profit dès aujourd'hui !"
+        "Il n’est pas nécessaire de « croire » au secteur de l’investissement — on peut le vérifier dans la pratique.",
+        "Par exemple : l’or est stable en prix, tandis que la monnaie nationale se déprécie généralement avant les élections.",
+        "Tous ces événements peuvent être anticipés — il suffit de faire confiance à nos analystes.",
+        "Ce sont des professionnels dans leur domaine, et leur objectif principal est la croissance maximale de votre capital et le profit commun, car c’est précisément sur cela que repose notre revenu.",
+        "Si vous obtenez un profit et le retirez sur votre compte — croirez-vous alors que cela fonctionne ?",
+        "Dans ce cas, je propose de franchir ce pas, de voir le résultat dans la pratique et seulement ensuite d’en évaluer la faisabilité réelle.",
+        "Je vous conseille de commencer la coopération et d’obtenir dès aujourd’hui votre premier bénéfice !"
       ]
     },
     {
       "id": "node_22",
-      "title": "БОЮСЬ",
+      "title": "J’AI PEUR",
       "type": "snippet",
       "text": [
-        "Je comprends vos craintes – c'est tout à fait naturel. Toute personne qui commence quelque chose de nouveau a certaines peurs.",
-        "Mais posez-vous une question : de quoi exactement avez-vous peur ? De la perte de fonds ?",
-        "C'est précisément pourquoi nous ne vous laissons pas seul(e). Vous recevez le soutien d'un analyste, qui guide étape par étape.",
-        "De plus – nous gagnons seulement quand vous gagnez, donc nous avons un intérêt commun dans votre succès.",
-        "Vous n'investissez pas toute la somme d'un coup – nous travaillons seulement avec une partie du capital, et le reste sert de sécurisation.",
-        "C'est une stratégie réfléchie et sécurisée de gestion du risque",
-        "C'est pourquoi je propose : essayons. Seule la pratique dissipe tous les doutes."        
+        "Je comprends vos craintes — c’est tout à fait naturel. Toute personne qui commence quelque chose de nouveau a des peurs.",
+        "Mais posez-vous une question : de quoi avez-vous peur exactement ? De la perte de fonds ?",
+        "C’est précisément pour cela que nous ne vous laissons pas seul(e). Vous bénéficiez du soutien d’un analyste qui vous guide pas à pas.",
+        "De plus — nous ne gagnons que lorsque vous gagnez, nous avons donc un intérêt commun à votre succès.",
+        "Vous n’investissez pas toute la somme d’un coup — nous ne travaillons qu’avec une partie du capital, le reste servant de garantie.",
+        "C’est une stratégie de gestion des risques réfléchie et sûre.",
+        "Par conséquent, je propose : essayons. Seule la pratique dissipe tous les doutes."
       ]
     },
     {
       "id": "node_23",
-      "title": "НЕ ДОВІРЯЮ",
+      "title": "JE N’AI PAS CONFIANCE",
       "type": "snippet",
       "text": [
-        "Je comprends vos craintes – c'est tout à fait naturel. Toute personne qui commence quelque chose de nouveau a certaines peurs.",
-        "Mais posez-vous une question : de quoi exactement avez-vous peur ? De la perte de fonds ?",
-        "C'est précisément pourquoi nous ne vous laissons pas seul(e). Vous recevez le soutien d'un analyste, qui guide étape par étape.",
-        "De plus – nous gagnons seulement quand vous gagnez, donc nous avons un intérêt commun dans votre succès.",
-        "Vous n'investissez pas toute la somme d'un coup – nous travaillons seulement avec une partie du capital, et le reste sert de sécurisation.",
-        "C'est une stratégie réfléchie et sécurisée de gestion du risque.",
-        "C'est pourquoi je propose : essayons. Seule la pratique dissipe tous les doutes."
+        "Je comprends vos craintes — c’est tout à fait naturel. Toute personne qui commence quelque chose de nouveau a des peurs.",
+        "Mais posez-vous une question : de quoi avez-vous peur exactement ? De la perte de fonds ?",
+        "C’est précisément pour cela que nous ne vous laissons pas seul(e). Vous bénéficiez du soutien d’un analyste qui vous guide pas à pas.",
+        "De plus — nous ne gagnons que lorsque vous gagnez, nous avons donc un intérêt commun à votre succès.",
+        "Vous n’investissez pas toute la somme d’un coup — nous ne travaillons qu’avec une partie du capital, le reste servant de garantie.",
+        "C’est une stratégie de gestion des risques réfléchie et sûre.",
+        "Par conséquent, je propose : essayons. Seule la pratique dissipe tous les doutes."
       ]
     },
     {
       "id": "node_24",
-      "title": "Я НЕ ВПЕВНЕНИЙ / Я НЕ ГОТОВИЙ",
+      "title": "JE NE SUIS PAS SÛR / JE NE SUIS PAS PRÊT",
       "type": "snippet",
       "text": [
-        "Je comprends vos craintes – c'est tout à fait naturel. Toute personne qui commence quelque chose de nouveau a certaines peurs.",
-        "Mais posez-vous une question : de quoi exactement avez-vous peur ? De la perte de fonds ?",
-        
-        "C'est précisément pourquoi nous ne vous laissons pas seul(e). Vous recevez le soutien d'un analyste, qui guide étape par étape.",
-        "De plus – nous gagnons seulement quand vous gagnez, donc nous avons un intérêt commun dans votre succès.",
-        
-        "Vous n'investissez pas toute la somme d'un coup – nous travaillons seulement avec une partie du capital, et le reste sert de sécurisation.",
-        "C'est une stratégie réfléchie et sécurisée de gestion du risque.",
-        
-        "C'est pourquoi je propose : essayons. Seule la pratique dissipe tous les doutes."
+        "Je comprends vos craintes — c’est tout à fait naturel. Toute personne qui commence quelque chose de nouveau a des peurs.",
+        "Mais posez-vous une question : de quoi avez-vous peur exactement ? De la perte de fonds ?",
+        "C’est précisément pour cela que nous ne vous laissons pas seul(e). Vous bénéficiez du soutien d’un analyste qui vous guide pas à pas.",
+        "De plus — nous ne gagnons que lorsque vous gagnez, nous avons donc un intérêt commun à votre succès.",
+        "Vous n’investissez pas toute la somme d’un coup — nous ne travaillons qu’avec une partie du capital, le reste servant de garantie.",
+        "C’est une stratégie de gestion des risques réfléchie et sûre.",
+        "Par conséquent, je propose : essayons. Seule la pratique dissipe tous les doutes."
       ]
     },
     {
       "id": "node_25",
-      "title": "КОЛИ Я МОЖУ ВИВЕСТИ ГРОШІ",
+      "title": "QUAND PUIS-JE RETIRER L’ARGENT",
       "type": "snippet",
       "text": [
-        "Самі не говоримо, коли буде зроблено вивід. Якщо клієнт запитує:",                                                                                                                           
-        "Toutes les questions concernant le retrait des fonds, veuillez les discuter avec votre expert.", 
-        "D'autant plus que les premiers profits générés, vous les retirerez précisément avec son aide – c'est lui qui indiquera comment le faire exactement. D'accord ?",
-
-        "Якщо клієнт наполягає на тому, чи може він у будь-який момент робити вивід:",                                                                              
-        "Le retrait des fonds est possible à tout moment. Votre tâche principale pour le moment est cependant de générer du profit, car si vous voulez voir comment ce processus fonctionne en pratique, l'expert vous aidera certainement."
+        "Nous ne disons pas nous-mêmes quand le retrait aura lieu. Si le client le demande :",
+        "Merci de discuter de toutes les questions relatives au retrait des fonds avec votre expert.",
+        "D’autant plus que vous retirerez vos premiers bénéfices précisément avec son aide — il vous indiquera comment le faire pas à pas. D’accord ?",
+        "Si le client insiste pour savoir s’il peut retirer à tout moment :",
+        "Le retrait des fonds est possible à tout moment. Votre tâche principale maintenant est toutefois de générer un profit et, si vous souhaitez voir comment cela fonctionne en pratique, l’expert vous aidera certainement."
       ]
     },
     {
       "id": "node_26",
-      "title": "Я ВЖЕ ВТРАЧАВ",
+      "title": "J’AI DÉJÀ PERDU",
       "type": "snippet",
       "text": [
-        "Je vous comprends parfaitement – c'est une situation très désagréable et bien sûr je comprends vos craintes.",
-        "Dites-moi, de quoi exactement avez-vous peur ?",
-                          "Або",
-        "Je comprends parfaitement vos craintes – c'est vraiment une situation désagréable.",
-        "Dites-moi, qu'est-ce qui suscite exactement votre inquiétude ?",                                                                                                
-       "[Далі або переходимо до опрацювання заперечень, які надасть клієнт, або ще раз пояснюємо, де знаходяться кошти, та роботу з аналітиком.]"
+        "Je vous comprends parfaitement — c’est une situation très désagréable et, bien sûr, je comprends vos craintes.",
+        "Dites-moi, de quoi avez-vous peur exactement ?",
+        "Ou bien",
+        "Je comprends très bien vos craintes — c’est vraiment une situation regrettable.",
+        "Dites-moi, qu’est-ce qui vous inquiète exactement ?",
+        "[Ensuite, soit nous passons aux objections formulées par le client, soit nous expliquons à nouveau où se trouvent les fonds et le travail avec l’analyste.]"
       ]
     },
     {
       "id": "node_27",
-      "title": "БОЮСЯ ВТРАТИТИ",
+      "title": "J’AI PEUR DE PERDRE",
       "type": "snippet",
       "text": [
-        "У процесі торгівлі:",
-        "Bien sûr, en bourse tout peut arriver – surtout quand on trade seul. Dans ce cas, il est très facile de subir des pertes, car le risque existe toujours.",
-        "Notre objectif principal est cependant de vous amener à des profits stables, car nous gagnons aussi seulement quand vous gagnez !",
-        
-        "Nous gagnons à la fois sur les hausses et sur les baisses des prix.",
-        "Nos analystes informent en temps réel de la direction du marché, et aident à ouvrir des transactions au bon moment.",
-        "De plus, l'expert aidera à définir les soi-disant limiteurs (stop loss/take profit), qui sécuriseront vos fonds.",
-        
-        "Je propose de commencer la collaboration maintenant – pour voir encore aujourd'hui votre premier profit !",
-        
-        "При виведенні:",
-        
-        "C'est exclusivement votre compte de trading individuel. Dites-moi – quand vous effectuez un virement entre vos comptes bancaires, est-il arrivé que les fonds « disparaissent » ?",
-        "Ici, c'est exactement pareil – vous effectuez simplement un virement entre vos comptes. C'EST TOTALEMENT SÉCURISÉ !",
-        
-        "C'est pourquoi je propose de commencer la collaboration maintenant, pour voir aujourd'hui votre premier profit !",
-        
-        "Nous recevons notre commission seulement au moment où vous retirez vos profits.",
-        "Réfléchissez – quel serait notre avantage si vous ne réussissiez pas à retirer l'argent, puisque dans ce cas nous ne gagnons rien non plus ?",
-        "Nous gagnons seulement quand vous gagnez. C'est pourquoi nous sommes pleinement intéressés par votre succès !"
+        "Dans le processus de trading :",
+        "Bien sûr, en bourse tout peut arriver — surtout lorsqu’on trade seul. Dans ce cas, il est très facile de subir des pertes, car le risque existe toujours.",
+        "Cependant, notre objectif principal est de vous amener à des profits stables, puisque nous ne gagnons que lorsque vous gagnez !",
+        "Nous gagnons à la fois sur les hausses et les baisses des prix.",
+        "Nos analystes indiquent en permanence la direction du marché et aident à ouvrir des opérations au bon moment.",
+        "De plus, l’expert vous aidera à paramétrer les « limiteurs » (stop loss/take profit) qui protègent vos fonds.",
+        "Je propose de commencer la coopération dès maintenant — afin que vous puissiez voir votre premier bénéfice aujourd’hui même !",
+        "Lors du retrait :",
+        "Il s’agit exclusivement de votre compte de trading individuel. Dites-moi : lorsque vous effectuez un virement entre vos comptes bancaires, est-il déjà arrivé que des fonds « disparaissent » ?",
+        "Ici, c’est exactement la même chose — vous effectuez simplement un transfert entre vos comptes. C’EST TOTALEMENT SÛR !",
+        "C’est pourquoi je propose de commencer la coopération dès maintenant, afin que vous voyiez votre premier bénéfice aujourd’hui !",
+        "Nous percevons notre commission uniquement au moment où vous retirez vos gains.",
+        "Réfléchissez : quel serait notre intérêt si vous ne parveniez pas à retirer l’argent, puisque dans ce cas nous ne gagnerions rien non plus ?",
+        "Nous ne gagnons que lorsque vous gagnez. Nous sommes donc pleinement intéressés par votre succès !"
       ]
     },
     {
       "id": "node_28",
-      "title": "ЯКІ Є РИЗИКИ",
+      "title": "QUELS SONT LES RISQUES",
       "type": "snippet",
       "text": [
-        "Je comprends à quoi vous pensez. Je travaille dans ce secteur depuis longtemps et je sais que toute personne raisonnable s'intéresse à la question du risque. Des questions comme :",
-        "Et si je perds ?",
-        "ou",
-        "Quelles garanties ai-je ?", 
-        "– c'est une réaction naturelle. Après tout, il s'agit de votre argent, donc de telles craintes sont tout à fait justifiées.",
-        
-        "Je serais un mauvais conseiller si je prétendais que le risque n'existe pas – ce serait simplement faux.",
-        "Nous construisons une relation basée sur la confiance, c'est pourquoi je dis franchement : le risque existe toujours, car personne n'a un contrôle total sur le marché financier.",
-        "Des situations imprévues peuvent survenir partout, mais la clé est de gérer ce risque habilement.",
-        
-        "Comme on dit :", "celui qui a l'information a le pouvoir","Et nous avons ces informations.",
-        
-        "C'est pourquoi nous utilisons une série d'outils qui aident à limiter le risque au minimum.",
-        "L'un des outils les plus importants est le soi-disant Stop Loss. Avez-vous entendu parler de ce concept ?",
-        
-        "(Stop Loss) (de l'anglais « arrêtez la perte ») – c'est un mécanisme qui ferme automatiquement la position si elle atteint un certain niveau de perte",
-        "Par exemple : si nous définissons le Stop Loss à 2 dollars, même si le marché s'effondre brutalement – le système fermera lui-même la transaction avec une perte maximale de 2 dollars. C'est une forme de sécurisation très efficace.",
-        
-        "De plus – nous agissons toujours sur plusieurs positions simultanément, ce qui signifie que même si une transaction apporte une perte, les autres peuvent apporter du profit.",
-        "Grâce à cela, il est possible de générer un revenu quotidien – parfois plus grand, parfois plus petit, mais régulier."
+        "Je comprends ce à quoi vous pensez. Je travaille dans ce secteur depuis longtemps et je sais que toute personne raisonnable s’intéresse à la question du risque. Des questions comme :",
+        "Et si je perdais ?",
+        "ou bien",
+        "Quelles garanties ai-je ?",
+        "— sont une réaction naturelle. Après tout, il s’agit de votre argent, ces préoccupations sont donc tout à fait justifiées.",
+        "Je serais un(e) piètre conseiller(-ère) si j’affirmais que le risque n’existe pas — ce ne serait pas vrai.",
+        "Nous construisons une relation basée sur la confiance, c’est pourquoi je le dis clairement : le risque existe toujours, car personne n’a un contrôle total sur le marché financier.",
+        "Des situations imprévisibles peuvent survenir partout, mais la clé réside dans la bonne gestion du risque.",
+        "Comme on dit : « qui possède l’information possède le pouvoir ». Et nous disposons de ces informations.",
+        "C’est pourquoi nous utilisons une série d’outils qui aident à réduire le risque au minimum.",
+        "L’un des plus importants est le « Stop Loss ». Avez-vous entendu ce terme ?",
+        "(Stop Loss) — c’est un mécanisme qui ferme automatiquement la position lorsqu’elle atteint un niveau de perte déterminé.",
+        "Par exemple : si nous fixons le Stop Loss à 2 dollars, même en cas de chute brutale du marché — le système fermera l’opération avec une perte maximale de 2 dollars. C’est une protection très efficace.",
+        "De plus — nous travaillons toujours sur plusieurs positions simultanément. Ainsi, même si l’une des opérations génère une perte, les autres peuvent apporter un profit.",
+        "Grâce à cela, il est possible de générer des revenus quotidiens — parfois plus élevés, parfois plus faibles, mais réguliers."
       ]
     },
     {
       "id": "node_29",
-      "title": "ЧОМУ НЕМАЄ ПОПОВНЕННЯ НА ПЛАТФОРМІ",
+      "title": "POURQUOI N’Y A-T-IL PAS DE RECHARGEMENT SUR LA PLATEFORME",
       "type": "snippet",
       "text": [
-        "Auparavant, cette fonction était disponible sur notre plateforme, mais nous y avons complètement renoncé – et je vais expliquer pourquoi !",
-        "Nous l'avons fait pour votre sécurité. Nous avons supprimé cette méthode de dépôt pour éviter les situations où les utilisateurs devaient fournir les données de leur carte, comme le numéro, la date d'expiration ou le code CVC.",
-
-        "Actuellement, l'activation du compte se fait exclusivement via le département financier. Comme nous opérons en Pologne, nous devons nous régler avec le bureau des impôts.",
-        "De notre côté, nous effectuons la conversion, déclarons votre montant et le comptabilisons ensuite sur votre compte de trading.",
-        "De plus, nous prenons en charge tous les coûts liés à la commission – ce qui rend cette méthode plus rentable pour vous, n'est-ce pas ?"
+        "Auparavant, cette fonction était disponible sur notre plateforme, mais nous l’avons complètement abandonnée — et je vais expliquer pourquoi !",
+        "Nous l’avons fait pour votre sécurité. Nous avons supprimé cette méthode de dépôt afin d’éviter que les utilisateurs n’aient à saisir les données de leur carte, comme le numéro, la date d’expiration ou le code CVC.",
+        "Actuellement, l’activation du compte se fait exclusivement via le service financier. Comme nous opérons en Pologne, nous devons déclarer aux services fiscaux.",
+        "De notre côté, nous effectuons la conversion, déclarons votre montant, puis nous l’accréditons sur votre compte de trading.",
+        "En outre, nous prenons en charge tous les frais de commission — ce qui rend cette méthode plus avantageuse pour vous, n’est-ce pas ?"
       ]
     },
     {
       "id": "node_30",
-      "title": "ЧОМУ ПЕРЕВЕДЕННЯ ЙДЕ НА ДАНІ ЧЕРВОНОГО ХРЕСТА?",
+      "title": "POURQUOI LE VIREMENT APPARAÎT-IL AU NOM DE LA CROIX-ROUGE ?",
       "type": "snippet",
       "text": [
-        "Le partenaire de paiement officiel possède plusieurs comptes, certains pour des fondations (par ex. Croix-Rouge) — pour la transparence et la conformité légale.",
-        "Le nom du destinataire est une question technique ; les fonds vont sur le compte de trading individuel.",
-        "Similaire aux billets/réservations — sur l'extrait peut apparaître un autre nom légal.",
-        "Le canal est officiel et accepté par les banques ; le solde sera crédité du montant choisi."
+        "Le partenaire officiel des paiements dispose de plusieurs comptes, dont certains au nom de fondations (par ex. Croix-Rouge) — pour la transparence et la conformité juridique.",
+        "Le nom du bénéficiaire est une question technique ; les fonds sont crédités sur votre compte de trading individuel.",
+        "Comme pour les billets/réservations — un autre nom juridique peut apparaître sur le relevé.",
+        "Le canal est officiel et accepté par les banques ; le solde sera rechargé du montant choisi."
       ]
     }
   ],
@@ -1742,6 +1760,7 @@
 }
 
     }
+
 
 
 
