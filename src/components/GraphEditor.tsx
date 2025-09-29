@@ -15,6 +15,8 @@ import ReactFlow, {
   useEdgesState,
   useNodesState,
   MarkerType,
+  Handle,
+  Position
 } from "reactflow";
 
 // IMPORTANT: reactflow styles are imported globally in index.css
@@ -251,8 +253,9 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
         {/* Body */}
         <div className="grid md:grid-cols-[1fr_320px] h-full">
           {/* Canvas */}
-          <div className="relative">
+          <div className="relative h-full">
             <ReactFlow
+              style={{ width: '100%', height: '100%' }}
               nodes={nodes.map(n => ({ ...n, data: { ...n.data }, type: "default" }))}
               edges={edges}
               onNodesChange={onNodesChange}
