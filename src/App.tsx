@@ -75,7 +75,7 @@ const TypePill: React.FC<{ type: NodeType }> = ({ type }) => {
 /** ===== Главный компонент ===== */
 const App: React.FC = () => {
   // Язык (PL / CS / UK / DE / RO / FR)
-  type Lang = "pl" | "cs" | "uk" | "de" | "ro" | "fr";
+  type Lang = "pl" | "cs" | "uk" | "de" | "ro" | "fr" | "it";
   const [lang, setLang] = useState<Lang>("pl");
 
   
@@ -338,6 +338,7 @@ const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про �
               <option value="de">🇩🇪 Deutsch</option>
               <option value="ro">🇷🇴 Română</option>
               <option value="fr">🇫🇷 Français</option>
+              <option value="it">🇮🇹 Italiano</option>
             </select>
           </div>   {/* ← закрыть ml-auto flex ... */}
         </div>   {/* ← закрыть .max-w-screen-2xl ... */}
