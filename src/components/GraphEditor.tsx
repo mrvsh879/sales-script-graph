@@ -238,9 +238,13 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
 
   // Спрятать подписи рёбер, когда edgeLabelsVisible = false
   const displayEdges = useMemo<RFEdge[]>(() => {
-    if (edgeLabelsVisible) return edges;
-    return edges.map(({ label, ...rest }) => ({ ...(rest as RFEdge), label: undefined }));
-  }, [edges, edgeLabelsVisible]);
+  if (edgeLabelsVisible) return edges; // показываем всё: и подписи, и стрелки
+  // когда подписи выключены — убираем и стрелки, и подписи
+  return edges.map((e) => {
+    const { label, markerEnd, ...rest } = e as any;
+    return { ...(rest as RFEdge), label: undefined, markerEnd: undefined };
+  });
+}, [edges, edgeLabelsVisible]);
 
   if (!open) return null;
 
