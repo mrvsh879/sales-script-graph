@@ -19,6 +19,7 @@ import ReactFlow, {
   Position,
 } from "reactflow";
 import type { ReactFlowInstance } from "reactflow";
+import type { NodeDoubleClickHandler, EdgeDoubleClickHandler } from "reactflow";
 
 // ВАЖНО: в index.css должен быть импорт стилей React Flow:
 // @import 'reactflow/dist/style.css';
