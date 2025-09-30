@@ -330,6 +330,14 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
     setEdges((es) => es.map(e => e.id === edgeId ? { ...e, label } : e));
   };
 
+  const onNodeDoubleClick: NodeDoubleClickHandler = useCallback((_, node) => {
+  setSelectedNodeId(node.id);
+}, []);
+
+const onEdgeDoubleClick: EdgeDoubleClickHandler = useCallback((_, edge) => {
+  editEdgeLabel(edge.id); // вызываем твой редактор подписи
+}, []);
+
   const displayEdges = useMemo<RFEdge[]>(() => {
   return edges.map((e) => ({
     ...e,
