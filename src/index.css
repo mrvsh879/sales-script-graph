@@ -76,4 +76,13 @@ html.dark {
   stroke: var(--rf-edge-stroke) !important;
   stroke-width: 2 !important;
 }
+/* Пробиваем слой рёбер на любой теме */
+.react-flow__edges {
+  opacity: 1 !important;
+}
+
+.react-flow__edge-path {
+  stroke: var(--rf-edge-stroke) !important;
+  stroke-width: 2 !important;
+}
 
