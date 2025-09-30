@@ -470,7 +470,18 @@ const autoLayout = () => {
           <div className="relative h-full bg-white dark:bg-[#0b0e14]">
             <ReactFlow
               style={{ width: "100%", height: "100%" }}    // размеры канвы
-              nodes={nodes.map(n => ({ ...n, data: { ...n.data }, type: "default" }))}
+              nodes={nodes.map(n => ({
+                ...n,
+                data: {
+                  ...n.data,
+                  __id: n.id,
+                  onEdit: (id: string) => {
+                    setSelectedNodeId(id);
+                    setFocusTitle(true);
+                  }
+                },
+                type: "default"
+              }))}
               edges={displayEdges}
               onNodesChange={onNodesChange}
               onEdgesChange={onEdgesChange}
