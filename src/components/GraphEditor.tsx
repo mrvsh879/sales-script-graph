@@ -437,6 +437,7 @@ const autoLayout = () => {
               nodeTypes={{ default: RFNodeContent as any }}
               onEdgeDoubleClick={(_, edge) => editEdgeLabel(edge.id)}
               defaultEdgeOptions={{
+                type: "step",
                 animated: false,
                 style: { strokeWidth: 2, stroke: 'var(--rf-edge-stroke)' },
                 markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: 'var(--rf-marker)' }
