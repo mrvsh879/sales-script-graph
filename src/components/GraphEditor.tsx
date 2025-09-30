@@ -157,7 +157,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
   const [edges, setEdges, onEdgesChange] = useEdgesState(initial.edges);
 
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
-  const [showMiniMap, setShowMiniMap] = useState(false)
+  const [showMiniMap, setShowMiniMap] = useState(false);
   const selectedNode = useMemo(() => nodes.find(n => n.id === selectedNodeId), [nodes, selectedNodeId]);
 
   useEffect(() => {
