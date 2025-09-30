@@ -542,6 +542,7 @@ const autoLayout = () => {
                     px-3 py-2"
                     value={String(selectedNode.data?.title ?? "")}
                     onChange={(e) => updateNodeData({ title: e.target.value })}
+                    ref={titleInputRef}
                   />
                 </label>
 
