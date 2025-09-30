@@ -375,6 +375,16 @@ const autoLayout = () => {
   });
 };
 
+  useEffect(() => {
+  if (!focusTitle) return;
+  const id = requestAnimationFrame(() => {
+    titleInputRef.current?.focus();
+    titleInputRef.current?.select();
+  });
+  setFocusTitle(false);
+  return () => cancelAnimationFrame(id);
+}, [focusTitle]);
+  
   if (!open) return null;
 
   return (
