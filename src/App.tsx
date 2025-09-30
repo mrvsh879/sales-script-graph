@@ -407,7 +407,7 @@ const notesTitle = graph?.ui?.sticky_comment_title || "Коментар про �
                   <div className="font-medium text-sm text-zinc-800 dark:text-zinc-100">
                     {n.title}
                   </div>
-                  <TypePill t={n.type} />
+                  <TypePill type={n.type} />
                 </div>
               </button>
 
