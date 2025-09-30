@@ -391,6 +391,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
               nodesDraggable
               nodesConnectable
               elementsSelectable
+              onInit={(inst) => setRf(inst)}
               onNodeClick={(_, node) => setSelectedNodeId(node.id)}
               onPaneClick={() => setSelectedNodeId(null)}
               nodeTypes={{ default: RFNodeContent as any }}
