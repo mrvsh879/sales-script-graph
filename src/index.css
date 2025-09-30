@@ -71,3 +71,9 @@ html.dark {
 .react-flow__edge-textwrapper {
   pointer-events: none !important;
 }
+/* Если вдруг что-то перетёрло цвет линий — держим цвет по теме */
+.react-flow__edge-path {
+  stroke: var(--rf-edge-stroke) !important;
+  stroke-width: 2 !important;
+}
+
