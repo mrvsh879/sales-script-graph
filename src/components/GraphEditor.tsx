@@ -287,13 +287,24 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
   };
 
   const uploadJSON = (file: File) => {
-    file.text().then((txt) => {
-      const parsed = JSON.parse(txt) as GraphData;
-      const rf = toReactFlow(parsed);
-      setNodes(rf.nodes);
-      setEdges(rf.edges);
-    }).catch((e) => alert("Помилка читання файлу: " + e));
-  };
+  file.text().then((txt) => {
+    const parsed = JSON.parse(txt) as GraphData;
+    const rfData = toReactFlow(parsed);
+
+    // раскладываем узлы при импорте
+    const laid = layoutByLevels(rfData.nodes, rfData.edges, {
+      startId: rfData.nodes.find(n => (n.data?.type ?? "") === "greeting")?.id,
+    });
+
+    setNodes(laid);
+    setEdges(rfData.edges);
+
+    // центрируем вид
+    requestAnimationFrame(() => {
+      rf?.fitView?.({ padding: 0.25, duration: 300 });
+    });
+  }).catch((e) => alert("Помилка читання файлу: " + e));
+};
 
   const updateNodeData = (patch: Partial<{ title: string; type: NodeType; text: string }>) => {
     if (!selectedNodeId) return;
