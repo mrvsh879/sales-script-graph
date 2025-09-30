@@ -418,8 +418,10 @@ const autoLayout = () => {
               onChange={(e) => { const f = e.currentTarget.files?.[0]; if (f) uploadJSON(f); }}
             />
           </label>
-          <div className="ml-auto text-xs opacity-70">Режим редагування графа з міні-мапою</div>
-        </div>
+          <div className="ml-auto text-xs opacity-70">
+            Вузлів: {nodes.length} • Зв'язків: {edges.length}
+          </div>
+
 
         {/* Body */}
         <div className="grid md:grid-cols-[1fr_320px] h-full">
