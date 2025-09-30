@@ -261,7 +261,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
         {/* Body */}
         <div className="grid md:grid-cols-[1fr_320px] h-full">
           {/* Canvas */}
-          <div className="relative h-full">
+          <div className="relative h-full" style={{ background: "#0b0e14" }}>
             <ReactFlow
               style={{ width: "100%", height: "100%" }}    // размеры канвы
               nodes={nodes.map(n => ({ ...n, data: { ...n.data }, type: "default" }))}
