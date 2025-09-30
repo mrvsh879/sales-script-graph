@@ -355,7 +355,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
             )}
               
               <Controls position="bottom-left" showInteractive={false} />
-              <Background variant={BackgroundVariant.Dots} gap={18} />
+              <Background variant={BackgroundVariant.Dots} gap={18} color={'var(--rf-bg-dot)'} />
             </ReactFlow>
           </div>
 
