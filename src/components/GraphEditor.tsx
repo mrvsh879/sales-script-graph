@@ -18,6 +18,7 @@ import ReactFlow, {
   Handle,
   Position,
 } from "reactflow";
+import type { ReactFlowInstance } from "reactflow";
 
 // ВАЖНО: в index.css должен быть импорт стилей React Flow:
 // @import 'reactflow/dist/style.css';
