@@ -301,6 +301,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
               nodeTypes={{ default: RFNodeContent as any }}
               onEdgeDoubleClick={(_, edge) => editEdgeLabel(edge.id)}
             >
+              {showMiniMap && (
               <MiniMap
                 className="z-[60] !pointer-events-auto"
                 style={{ pointerEvents: "all", width: 200, height: 120, borderRadius: 10, border: "1px solid rgba(255,255,255,0.08)" }}
@@ -311,6 +312,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
                 nodeStrokeColor="#94a3b8"
                 maskColor="rgba(2,6,23,0.75)"
                 />
+            )}
               
               <Controls position="bottom-left" showInteractive={false} />
               <Background variant={BackgroundVariant.Dots} gap={18} />
