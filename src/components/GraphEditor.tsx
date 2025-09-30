@@ -190,7 +190,7 @@ function fromReactFlow(nodes: RFNode[], edges: RFEdge[], prev: GraphData): Graph
 const RFNodeContent: React.FC<{ data: any }> = ({ data }) => {
   const color = typeColors[data.type as NodeType] ?? "#94a3b8";
   return (
-    <div style={{ display: "grid", gap: 6, position: "relative" }}>
+    <div className="drag-handle" style={{ display: "grid", gap: 6, position: "relative", cursor: "grab" }}>
       <Handle type="target" position={Position.Top} />
       <Handle type="source" position={Position.Bottom} />
       <div className="drag-handle" style={{ display: "flex", alignItems: "center", gap: 8, cursor: "grab" }}>
