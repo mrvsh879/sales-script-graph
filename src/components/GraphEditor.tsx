@@ -408,7 +408,9 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
                 </label>
 
                 <div className="pt-2 flex gap-2">
-                  <button className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700" onClick={() => setSelectedNodeId(null)}>
+                  <button className="px-3 py-1.5 rounded-lg
+                    bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800
+                    dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200" onClick={() => setSelectedNodeId(null)}>
                     Зняти виділення
                   </button>
                   <button className="px-3 py-1.5 rounded-lg bg-rose-700/80 hover:bg-rose-600" onClick={deleteSelection}>
