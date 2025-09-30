@@ -213,6 +213,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
   const initial = useMemo(() => toReactFlow(value), [value]);
   const [nodes, setNodes, onNodesChange] = useNodesState(initial.nodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initial.edges);
+  const [rf, setRf] = useState<ReactFlowInstance | null>(null);
 
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [showMiniMap, setShowMiniMap] = useState(false);
