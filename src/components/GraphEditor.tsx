@@ -387,13 +387,7 @@ const autoLayout = () => {
             {edgeLabelsVisible ? "🔤 Приховати підписи" : "🔤 Показати підписи"}
           </button>
 
-          
-          <label className="px-3 py-1.5 rounded-lg cursor-pointer
-            bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800
-            dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200">
-            ⬆︎ Імпорт JSON
-
-            <button
+           <button
               onClick={autoLayout}
               className="px-3 py-1.5 rounded-lg
               bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800
@@ -402,7 +396,11 @@ const autoLayout = () => {
               >
               ⤢ Авто-розклад
             </button>
-
+          
+          <label className="px-3 py-1.5 rounded-lg cursor-pointer
+            bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800
+            dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200">
+            ⬆︎ Імпорт JSON
             <input
               type="file"
               accept="application/json"
