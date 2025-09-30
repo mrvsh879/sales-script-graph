@@ -477,9 +477,6 @@ const autoLayout = () => {
               nodesConnectable
               elementsSelectable
               onInit={(inst) => setRf(inst)}
-             onNodeClick={(_, node) => {
-               setSelectedNodeId(node.id);
-               setFocusTitle(true);   // ← чтобы сразу поставить курсор в "Заголовок"
              }}
               onPaneClick={() => setSelectedNodeId(null)}
               nodeTypes={{ default: RFNodeContent as any }}
