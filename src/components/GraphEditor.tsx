@@ -318,15 +318,16 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
   };
 
   const displayEdges = useMemo<RFEdge[]>(() => {
-  // Всегда рисуем линию и стрелку; подпись показываем по тумблеру
   return edges.map((e) => ({
     ...e,
     type: 'step',
-    style: { ...(e.style || {}), strokeWidth: 2, stroke: 'var(--rf-edge-stroke)' },
+    // жёстко задаём стиль пути (дорисует ВСЕГДА)
+    style: { stroke: 'var(--rf-edge-stroke)', strokeWidth: 2, opacity: 1 },
     markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: 'var(--rf-marker)' },
     label: edgeLabelsVisible ? e.label : undefined,
   }));
 }, [edges, edgeLabelsVisible]);
+
 
 
   // Автоматический расклад узлов по уровням
