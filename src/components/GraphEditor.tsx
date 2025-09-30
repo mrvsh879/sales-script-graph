@@ -319,12 +319,8 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
 
   // Спрятать подписи рёбер, когда edgeLabelsVisible = false
   const displayEdges = useMemo<RFEdge[]>(() => {
-  if (edgeLabelsVisible) return edges; // показываем всё: и подписи, и стрелки
-  // когда подписи выключены — убираем и стрелки, и подписи
-  return edges.map((e) => {
-    const { label, markerEnd, ...rest } = e as any;
-    return { ...(rest as RFEdge), label: undefined, markerEnd: undefined };
-  });
+  if (edgeLabelsVisible) return edges;
+    return edges.map((e) => ({ ...e, label: undefined }));
 }, [edges, edgeLabelsVisible]);
 
   // Автоматический расклад узлов по уровням
