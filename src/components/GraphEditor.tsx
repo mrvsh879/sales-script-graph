@@ -239,7 +239,11 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
 
   return (
     <div className="fixed inset-0 z-[100] bg-black/70 backdrop-blur-sm p-3 md:p-6">
-      <div className="mx-auto max-w-[1600px] h-full rounded-2xl overflow-hidden border border-white/10 bg-[#0b0e14] text-zinc-200 grid grid-rows-[56px_1fr]">
+      <div className="mx-auto max-w-[1600px] h-full rounded-2xl overflow-hidden
+        border border-black/5 dark:border-white/10
+        bg-white text-slate-900 dark:bg-[#0b0e14] dark:text-zinc-200
+        grid grid-rows-[56px_1fr]">
+        
         {/* Header */}
         <div className="flex items-center gap-2 px-3 md:px-4 border-b border-white/10 bg-white/5">
           <button onClick={onClose} className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700">✕ Закрити</button>
