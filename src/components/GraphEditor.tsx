@@ -152,8 +152,20 @@ function toReactFlow(g: GraphData): { nodes: RFNode[]; edges: RFEdge[] } {
     }))
   );
 
-  const edgeList: Edge[] =
-    (g.edges && g.edges.length) ? g.edges : [...fromTransitions, ...fromOptions];
+ // поддерживаем оба формата: {from,to,label} и {source,target,label/name}
+const normalizeEdges = (edgesMaybe: any[]): Edge[] => {
+  return (edgesMaybe || [])
+    .map((e: any) => ({
+      from: e.from ?? e.source,
+      to: e.to ?? e.target,
+      label: e.label ?? e.name ?? "→",
+    }))
+    .filter((e: Edge) => e.from && e.to);
+};
+
+const edgeListRaw = Array.isArray(g.edges) ? normalizeEdges(g.edges as any[]) : [];
+const edgeList: Edge[] =
+  edgeListRaw.length ? edgeListRaw : [...fromTransitions, ...fromOptions];
 
   const edges: RFEdge[] = edgeList.map((e, i) => ({
     id: `e-${i}-${e.from}-${e.to}`,
