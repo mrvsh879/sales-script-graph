@@ -473,7 +473,10 @@ const autoLayout = () => {
               nodesConnectable
               elementsSelectable
               onInit={(inst) => setRf(inst)}
-              onNodeClick={(_, node) => setSelectedNodeId(node.id)}
+             onNodeClick={(_, node) => {
+               setSelectedNodeId(node.id);
+               setFocusTitle(true);   // ← чтобы сразу поставить курсор в "Заголовок"
+             }}
               onNodeDoubleClick={onNodeDoubleClick}
               onEdgeDoubleClick={onEdgeDoubleClick}
               onPaneClick={() => setSelectedNodeId(null)}
