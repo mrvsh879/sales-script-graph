@@ -282,6 +282,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
 
   setNodes((ns) => [...ns, newNode]);
   setSelectedNodeId(id);
+    setFocusTitle(true);
 
   requestAnimationFrame(() => {
     rf?.fitView?.({ nodes: [{ id }], padding: 0.2, duration: 250 });
