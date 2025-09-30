@@ -326,7 +326,8 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
           </div>
 
           {/* Side editor */}
-          <div className="border-l border-white/10 bg-white/5 p-3 md:p-4 overflow-auto">
+          <div className="border-l border-black/5 dark:border-white/10
+            bg-white/70 dark:bg-white/5 p-3 md:p-4 overflow-auto backdrop-blur">
             <div className="text-xs uppercase tracking-widest text-zinc-400 mb-2">Властивості вузла</div>
 
             {!selectedNode && (
