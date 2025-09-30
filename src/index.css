@@ -42,3 +42,9 @@ html.dark {
   --rf-node-bg: rgba(24, 24, 27, 0.70);
   --rf-node-fg: #e5e7eb;
 }
+/* Edge labels не мешают drag/zoom */
+.react-flow__edge-text,
+.react-flow__edge-textbg,
+.react-flow__edge-textwrapper {
+  pointer-events: none !important;
+}
