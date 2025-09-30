@@ -335,6 +335,11 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
               onPaneClick={() => setSelectedNodeId(null)}
               nodeTypes={{ default: RFNodeContent as any }}
               onEdgeDoubleClick={(_, edge) => editEdgeLabel(edge.id)}
+              defaultEdgeOptions={{
+                animated: false,
+                style: { strokeWidth: 2, stroke: 'var(--rf-edge-stroke)' },
+                markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: 'var(--rf-marker)' }
+              }}
             >
               {showMiniMap && (
               <MiniMap
