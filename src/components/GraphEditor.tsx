@@ -245,7 +245,9 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
         grid grid-rows-[56px_1fr]">
         
         {/* Header */}
-        <div className="flex items-center gap-2 px-3 md:px-4 border-b border-white/10 bg-white/5">
+        <div className="flex items-center gap-2 px-3 md:px-4
+          border-b border-black/5 dark:border-white/10
+          bg-white/70 dark:bg-white/5 backdrop-blur">
           <button onClick={onClose} className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700">✕ Закрити</button>
           <button onClick={saveBack} className="px-3 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-500">💾 Зберегти у застосунок</button>
           <button onClick={addNode} className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700">＋ Додати вузол</button>
