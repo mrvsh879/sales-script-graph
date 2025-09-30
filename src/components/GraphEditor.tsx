@@ -223,7 +223,7 @@ const RFNodeContent: React.FC<{ data: any }> = ({ data }) => {
         <span style={{ fontWeight: 700 }}>{data.title}</span>
       </div>
       {!!data.text && (
-        <div style={{ fontSize: 12, whiteSpace: "pre-wrap", opacity: 0.9 }}>
+        <div style={{ fontSize: 12, whiteSpace: "pre-wrap", opacity: 0.9, pointerEvents: "none" }}>
           {String(data.text).slice(0, 160)}
           {String(data.text).length > 160 ? "…" : ""}
         </div>
