@@ -278,6 +278,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
                 animated: false,
                 style: { strokeWidth: 2.2, stroke: "#8AB4F8" },
                 markerEnd: { type: MarkerType.ArrowClosed, width: 22, height: 22 },
+              }}
               nodes={nodes.map(n => ({ ...n, data: { ...n.data }, type: "default" }))}
               edges={edges}
               onNodesChange={onNodesChange}
