@@ -123,7 +123,7 @@ const RFNodeContent: React.FC<{ data: any }> = ({ data }) => {
     <div style={{ display: "grid", gap: 6, position: "relative" }}>
       <Handle type="target" position={Position.Top} />
       <Handle type="source" position={Position.Bottom} />
-      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+      <div className="drag-handle" style={{ display: "flex", alignItems: "center", gap: 8, cursor: "grab" }}>
         <span
           style={{
             fontSize: 11,
