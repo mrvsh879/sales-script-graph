@@ -14,6 +14,10 @@
   pointer-events: all !important;
   z-index: 1 !important;
 }
+/* Спрятать точки-коннекторы у нод, но оставить функционал drag-to-connect */
+.react-flow__handle {
+  display: none !important;
+}
 
 /* Скрыть подпись React Flow (угол экрана) */
 .react-flow__attribution {
