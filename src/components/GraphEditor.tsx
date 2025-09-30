@@ -490,7 +490,6 @@ const autoLayout = () => {
                setSelectedNodeId(node.id);
                setFocusTitle(true);   // ← чтобы сразу поставить курсор в "Заголовок"
              }}
-              onNodeDoubleClick={onNodeDoubleClick}
               onPaneClick={() => setSelectedNodeId(null)}
               nodeTypes={{ default: RFNodeContent as any }}
               onEdgeDoubleClick={(_, edge) => editEdgeLabel(edge.id)}
