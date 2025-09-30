@@ -135,29 +135,34 @@ function toReactFlow(g: GraphData): { nodes: RFNode[]; edges: RFEdge[] } {
     },
   }));
 
-  // 🔧 ГАРАНТИЯ: если g.edges нет/пустой — строим из transitions каждого узла
+  // СБОР СВЯЗЕЙ: edges ИЛИ transitions ИЛИ options
+  const fromTransitions: Edge[] = (g.nodes || []).flatMap((n) =>
+    (n.transitions ?? []).map((tr) => ({
+      from: n.id,
+      to: tr.to,
+      label: tr.label || "→",
+    }))
+  );
+
+  const fromOptions: Edge[] = (g.nodes || []).flatMap((n) =>
+    (n.options ?? []).map((op) => ({
+      from: n.id,
+      to: op.to,
+      label: op.label || "→",
+    }))
+  );
+
   const edgeList: Edge[] =
-    (g.edges && g.edges.length)
-      ? g.edges
-      : (g.nodes || []).flatMap((n) =>
-          (n.transitions || []).map((tr) => ({
-            from: n.id,
-            to: tr.to,
-            label: tr.label || "→",
-          }))
-        );
+    (g.edges && g.edges.length) ? g.edges : [...fromTransitions, ...fromOptions];
 
   const edges: RFEdge[] = edgeList.map((e, i) => ({
     id: `e-${i}-${e.from}-${e.to}`,
-    source: e.from,
+    source: e.from,                   // ← ВАЖНО: именно source/target
     target: e.to,
     label: e.label || "→",
     type: "step",
     style: { stroke: "var(--rf-edge-stroke)", strokeWidth: 2, opacity: 1 },
     markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: "var(--rf-marker)" },
-    labelBgPadding: [6, 3],
-    labelBgBorderRadius: 8,
-    labelBgStyle: { fill: "rgba(17,24,39,0.6)", stroke: "rgba(255,255,255,0.08)" },
   }));
 
   return { nodes, edges };
