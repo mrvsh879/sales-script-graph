@@ -421,6 +421,8 @@ const autoLayout = () => {
           <div className="ml-auto text-xs opacity-70">
             Вузлів: {nodes.length} • Зв'язків: {edges.length}
           </div>
+          
+          </div>
 
 
         {/* Body */}
