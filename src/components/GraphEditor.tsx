@@ -257,25 +257,34 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
   }, [setEdges]);
 
   const addNode = () => {
-    const id = genId("n");
-    setNodes((ns) => ([
-      ...ns,
-      {
-        id,
-        position: { x: 80 + Math.random() * 240, y: 80 + Math.random() * 180 },
-        data: { title: "Новий вузол", type: "snippet", text: "" },
-        style: {
-          borderRadius: 14,
-          padding: 10,
-          border: `1px solid rgba(0,0,0,0.06)`,
-          background: "var(--rf-node-bg, rgba(24,24,27,0.7))",
-          color: "var(--rf-node-fg, #e5e7eb)",
-          boxShadow: "0 6px 22px rgba(0,0,0,0.25)",
-          minWidth: 220,
-        },
-      },
-    ]));
+  // позиция центра экрана в координатах графа
+  const centerFlow = rf?.project
+    ? rf.project({ x: window.innerWidth / 2, y: window.innerHeight / 2 })
+    : { x: 0, y: 0 };
+
+  const id = genId("n");
+  const newNode: RFNode = {
+    id,
+    position: centerFlow,
+    data: { title: "Новий вузол", type: "snippet", text: "" },
+    style: {
+      borderRadius: 14,
+      padding: 10,
+      border: `1px solid rgba(0,0,0,0.06)`,
+      background: "var(--rf-node-bg, rgba(24,24,27,0.7))",
+      color: "var(--rf-node-fg, #e5e7eb)",
+      boxShadow: "0 6px 22px rgba(0,0,0,0.25)",
+      minWidth: 220,
+    },
   };
+
+  setNodes((ns) => [...ns, newNode]);
+  setSelectedNodeId(id);
+
+  requestAnimationFrame(() => {
+    rf?.fitView?.({ nodes: [{ id }], padding: 0.2, duration: 250 });
+  });
+};
 
   const deleteSelection = () => {
     if (selectedNodeId) {
@@ -465,6 +474,8 @@ const autoLayout = () => {
               elementsSelectable
               onInit={(inst) => setRf(inst)}
               onNodeClick={(_, node) => setSelectedNodeId(node.id)}
+              onNodeDoubleClick={onNodeDoubleClick}
+              onEdgeDoubleClick={onEdgeDoubleClick}
               onPaneClick={() => setSelectedNodeId(null)}
               nodeTypes={{ default: RFNodeContent as any }}
               onEdgeDoubleClick={(_, edge) => editEdgeLabel(edge.id)}
