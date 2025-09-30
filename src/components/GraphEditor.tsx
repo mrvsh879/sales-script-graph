@@ -483,7 +483,6 @@ const autoLayout = () => {
              }}
               onPaneClick={() => setSelectedNodeId(null)}
               nodeTypes={{ default: RFNodeContent as any }}
-              onEdgeDoubleClick={(_, edge) => editEdgeLabel(edge.id)}
               defaultEdgeOptions={{
                 type: "step",
                 animated: false,
