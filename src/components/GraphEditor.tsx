@@ -184,7 +184,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
         style: {
           borderRadius: 14,
           padding: 10,
-          border: `1px solid rgba(255,255,255,0.08)`,
+          border: `1px solid rgba(0,0,0,0.06)`,
           background: "var(--rf-node-bg, rgba(24,24,27,0.7))",
           color: "var(--rf-node-fg, #e5e7eb)",
           boxShadow: "0 6px 22px rgba(0,0,0,0.25)",
