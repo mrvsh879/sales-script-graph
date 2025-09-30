@@ -327,6 +327,19 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
   });
 }, [edges, edgeLabelsVisible]);
 
+  // Автоматический расклад узлов по уровням
+const autoLayout = () => {
+  setNodes((ns) =>
+    layoutByLevels(ns, edges, {
+      startId: ns.find((n) => (n.data?.type ?? "") === "greeting")?.id,
+    })
+  );
+
+  requestAnimationFrame(() => {
+    rf?.fitView?.({ padding: 0.25, duration: 300 });
+  });
+};
+
   if (!open) return null;
 
   return (
