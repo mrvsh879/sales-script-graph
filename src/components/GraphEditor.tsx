@@ -158,6 +158,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
 
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [showMiniMap, setShowMiniMap] = useState(false);
+  const [edgeLabelsVisible, setEdgeLabelsVisible] = useState(false);
   const selectedNode = useMemo(() => nodes.find(n => n.id === selectedNodeId), [nodes, selectedNodeId]);
 
   useEffect(() => {
@@ -260,6 +261,14 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
             >
             {showMiniMap ? "🗺 Приховати міні-мапу" : "🗺 Показати міні-мапу"}
           </button>
+          <button
+            onClick={() => setEdgeLabelsVisible(v => !v)}
+            className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700"
+            title="Показати/сховати підписи переходів"
+            >
+            {edgeLabelsVisible ? "🔤 Приховати підписи" : "🔤 Показати підписи"}
+          </button>
+
           
           <label className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 cursor-pointer">
             ⬆︎ Імпорт JSON
