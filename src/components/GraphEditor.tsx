@@ -342,7 +342,10 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
 
                 <label className="block text-sm">Заголовок
                   <input
-                    className="mt-1 w-full rounded-lg bg-zinc-900/70 border border-white/10 px-3 py-2"
+                    className="mt-1 w-full rounded-lg
+                    bg-white border border-black/10 text-slate-900
+                    dark:bg-zinc-900/70 dark:border-white/10 dark:text-zinc-200
+                    px-3 py-2"
                     value={String(selectedNode.data?.title ?? "")}
                     onChange={(e) => updateNodeData({ title: e.target.value })}
                   />
