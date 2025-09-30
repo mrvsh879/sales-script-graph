@@ -470,7 +470,6 @@ const autoLayout = () => {
           <div className="relative h-full bg-white dark:bg-[#0b0e14]">
             <ReactFlow
               style={{ width: "100%", height: "100%" }}    // размеры канвы
-              dragHandle=".drag-handle"
               nodes={nodes.map(n => ({ ...n, data: { ...n.data }, type: "default" }))}
               edges={displayEdges}
               onNodesChange={onNodesChange}
@@ -478,12 +477,14 @@ const autoLayout = () => {
               onConnect={onConnect}
               fitView
               fitViewOptions={{ padding: 0.4 }}
-              proOptions={{ hideAttribution: true }}       // убираем подпись “React Flow”, чтобы не перекрывала
+              proOptions={{ hideAttribution: true }}
               onlyRenderVisibleElements
               panOnDrag
               selectionOnDrag={false}
               zoomOnScroll
               zoomOnPinch
+              onlyRenderVisibleElements
+              panOnScroll
               minZoom={0.2}
               maxZoom={2}
               nodesDraggable
@@ -494,6 +495,10 @@ const autoLayout = () => {
                 setSelectedNodeId(node.id);
                 setFocusTitle(true);
              }}
+              onNodeMouseDown={(_, node) => {
+                setSelectedNodeId(node.id);
+                setFocusTitle(true);
+              }}
               onPaneClick={() => setSelectedNodeId(null)}
               nodeTypes={{ default: RFNodeContent as any }}
               defaultEdgeOptions={{
