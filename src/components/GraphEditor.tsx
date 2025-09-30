@@ -479,6 +479,7 @@ const autoLayout = () => {
               fitView
               fitViewOptions={{ padding: 0.4 }}
               proOptions={{ hideAttribution: true }}       // убираем подпись “React Flow”, чтобы не перекрывала
+              onlyRenderVisibleElements
               panOnDrag
               selectionOnDrag={false}
               zoomOnScroll
