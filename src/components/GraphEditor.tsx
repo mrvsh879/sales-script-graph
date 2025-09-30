@@ -236,6 +236,12 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
     setEdges((es) => es.map(e => e.id === edgeId ? { ...e, label } : e));
   };
 
+  // Спрятать подписи рёбер, когда edgeLabelsVisible = false
+  const displayEdges = useMemo<RFEdge[]>(() => {
+    if (edgeLabelsVisible) return edges;
+    return edges.map(({ label, ...rest }) => ({ ...(rest as RFEdge), label: undefined }));
+  }, [edges, edgeLabelsVisible]);
+
   if (!open) return null;
 
   return (
@@ -295,7 +301,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
                 markerEnd: { type: MarkerType.ArrowClosed, width: 22, height: 22 },
               }}
               nodes={nodes.map(n => ({ ...n, data: { ...n.data }, type: "default" }))}
-              edges={edges}
+              edges={displayEdges}
               onNodesChange={onNodesChange}
               onEdgesChange={onEdgesChange}
               onConnect={onConnect}
