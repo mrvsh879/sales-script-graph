@@ -298,13 +298,15 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
             >
               <MiniMap
                 className="z-[60] !pointer-events-auto"
-                style={{ pointerEvents: "all" }}
+                style={{ pointerEvents: "all", width: 200, height: 120, borderRadius: 10, border: "1px solid rgba(255,255,255,0.08)" }}
                 zoomable
                 pannable
-                nodeStrokeWidth={2}
-                nodeColor={(n) => typeColors[(n.data as any)?.type as NodeType] ?? "#94a3b8"}
-                maskColor="rgba(2,6,23,0.65)"
-              />
+                nodeStrokeWidth={1.5}
+                nodeColor={(n) => typeColors[(n.data as any)?.type as any] ?? "#6b7280"}
+                nodeStrokeColor="#94a3b8"
+                maskColor="rgba(2,6,23,0.75)"
+                />
+              
               <Controls position="bottom-left" showInteractive={false} />
               <Background variant={BackgroundVariant.Dots} gap={18} />
             </ReactFlow>
