@@ -33,3 +33,12 @@
 .custom-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
+/* Тема для нод React Flow через CSS variables */
+:root {
+  --rf-node-bg: rgba(255, 255, 255, 0.85);
+  --rf-node-fg: #0b0e14;
+}
+html.dark {
+  --rf-node-bg: rgba(24, 24, 27, 0.70);
+  --rf-node-fg: #e5e7eb;
+}
