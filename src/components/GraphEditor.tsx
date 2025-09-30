@@ -255,21 +255,35 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
         <div className="flex items-center gap-2 px-3 md:px-4
           border-b border-black/5 dark:border-white/10
           bg-white/70 dark:bg-white/5 backdrop-blur">
-          <button onClick={onClose} className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700">✕ Закрити</button>
-          <button onClick={saveBack} className="px-3 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-500">💾 Зберегти у застосунок</button>
-          <button onClick={addNode} className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700">＋ Додати вузол</button>
-          <button onClick={deleteSelection} className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700">🗑 Видалити вибране</button>
-          <button onClick={downloadJSON} className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700">⬇︎ Експорт JSON</button>
+          <button onClick={onClose} className="px-3 py-1.5 rounded-lg
+            bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800
+            dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200">✕ Закрити</button>
+          <button onClick={saveBack} className="px-3 py-1.5 rounded-lg
+            bg-cyan-600 hover:bg-cyan-500 text-white
+            dark:bg-cyan-600/80 dark:hover:bg-cyan-600">💾 Зберегти у застосунок</button>
+          <button onClick={addNode} className="px-3 py-1.5 rounded-lg
+            bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800
+            dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200">＋ Додати вузол</button>
+          <button onClick={deleteSelection} className="px-3 py-1.5 rounded-lg
+            bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800
+            dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200">🗑 Видалити вибране</button>
+          <button onClick={downloadJSON} className="px-3 py-1.5 rounded-lg
+            bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800
+            dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200">⬇︎ Експорт JSON</button>
           <button
              onClick={() => setShowMiniMap(v => !v)}
-            className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700"
+            cclassName="px-3 py-1.5 rounded-lg
+            bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800
+            dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200""
             title="Показати/сховати міні-мапу"
             >
             {showMiniMap ? "🗺 Приховати міні-мапу" : "🗺 Показати міні-мапу"}
           </button>
           <button
             onClick={() => setEdgeLabelsVisible(v => !v)}
-            className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700"
+            className="px-3 py-1.5 rounded-lg
+            bg-zinc-100 hover:bg-zinc-200 border border-black/10 text-zinc-800
+            dark:bg-zinc-800/60 dark:hover:bg-zinc-800 dark:border-white/10 dark:text-zinc-200"
             title="Показати/сховати підписи переходів"
             >
             {edgeLabelsVisible ? "🔤 Приховати підписи" : "🔤 Показати підписи"}
