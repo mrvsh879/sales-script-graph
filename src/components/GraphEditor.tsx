@@ -247,15 +247,15 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
           <button onClick={addNode} className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700">＋ Додати вузол</button>
           <button onClick={deleteSelection} className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700">🗑 Видалити вибране</button>
           <button onClick={downloadJSON} className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700">⬇︎ Експорт JSON</button>
+          <button
+             onClick={() => setShowMiniMap(v => !v)}
+            className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700"
+            title="Показати/сховати міні-мапу"
+            >
+            {showMiniMap ? "🗺 Приховати міні-мапу" : "🗺 Показати міні-мапу"}
+          </button>
+          
           <label className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 cursor-pointer">
-            <button
-               onClick={() => setShowMiniMap((v) => !v)}
-              className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700"
-              title="Показати/сховати міні-мапу"
-              >
-              {showMiniMap ? "🗺 Приховати міні-мапу" : "🗺 Показати міні-мапу"}
-            </button>
-            
             ⬆︎ Імпорт JSON
             <input
               type="file"
