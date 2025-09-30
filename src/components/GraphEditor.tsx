@@ -202,9 +202,38 @@ function fromReactFlow(nodes: RFNode[], edges: RFEdge[], prev: GraphData): Graph
 const RFNodeContent: React.FC<{ data: any }> = ({ data }) => {
   const color = typeColors[data.type as NodeType] ?? "#94a3b8";
   return (
-    <div className="drag-handle" style={{ display: "grid", gap: 6, position: "relative", cursor: "grab" }}>
+    <div style={{ display: "grid", gap: 6, position: "relative" }}>
+      {/* ✎ Карандаш — явный вход в редактирование */}
+      <button
+        title="Редагувати вузол"
+        onClick={(e) => {
+          e.stopPropagation();                   // не запускаем drag
+          (data.onEdit ?? (() => {}))(data.__id);
+        }}
+        style={{
+          position: "absolute",
+          top: 6,
+          right: 6,
+          width: 26,
+          height: 26,
+          borderRadius: 6,
+          border: "1px solid rgba(148,163,184,0.35)",
+          background: "rgba(255,255,255,0.9)",
+          color: "#0b0e14",
+          display: "grid",
+          placeItems: "center",
+          fontSize: 13,
+          cursor: "pointer",
+          boxShadow: "0 2px 6px rgba(0,0,0,0.15)",
+        }}
+      >
+        ✎
+      </button>
+
       <Handle type="target" position={Position.Top} />
       <Handle type="source" position={Position.Bottom} />
+
+      {/* ТОЛЬКО шапка — зона перетаскивания */}
       <div className="drag-handle" style={{ display: "flex", alignItems: "center", gap: 8, cursor: "grab" }}>
         <span
           style={{
@@ -222,6 +251,7 @@ const RFNodeContent: React.FC<{ data: any }> = ({ data }) => {
         </span>
         <span style={{ fontWeight: 700 }}>{data.title}</span>
       </div>
+
       {!!data.text && (
         <div style={{ fontSize: 12, whiteSpace: "pre-wrap", opacity: 0.9, pointerEvents: "none" }}>
           {String(data.text).slice(0, 160)}
@@ -231,6 +261,7 @@ const RFNodeContent: React.FC<{ data: any }> = ({ data }) => {
     </div>
   );
 };
+
 
 // === Компонент редактора ===
 const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChange }) => {
@@ -469,7 +500,8 @@ const autoLayout = () => {
           {/* Canvas */}
           <div className="relative h-full bg-white dark:bg-[#0b0e14]">
             <ReactFlow
-              style={{ width: "100%", height: "100%" }}    // размеры канвы
+              style={{ width: "100%", height: "100%" }}
+              dragHandle=".drag-handle"
               nodes={nodes.map(n => ({
                 ...n,
                 data: {
@@ -490,6 +522,7 @@ const autoLayout = () => {
               fitViewOptions={{ padding: 0.4 }}
               proOptions={{ hideAttribution: true }}
               onlyRenderVisibleElements
+              panOnDrag={[2]}
               panOnDrag
               selectionOnDrag={false}
               zoomOnScroll
