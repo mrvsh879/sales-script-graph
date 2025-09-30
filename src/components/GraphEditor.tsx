@@ -317,11 +317,17 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
     setEdges((es) => es.map(e => e.id === edgeId ? { ...e, label } : e));
   };
 
-  // Спрятать подписи рёбер, когда edgeLabelsVisible = false
   const displayEdges = useMemo<RFEdge[]>(() => {
-  if (edgeLabelsVisible) return edges;
-    return edges.map((e) => ({ ...e, label: undefined }));
+  // Всегда рисуем линию и стрелку; подпись показываем по тумблеру
+  return edges.map((e) => ({
+    ...e,
+    type: 'step',
+    style: { ...(e.style || {}), strokeWidth: 2, stroke: 'var(--rf-edge-stroke)' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: 'var(--rf-marker)' },
+    label: edgeLabelsVisible ? e.label : undefined,
+  }));
 }, [edges, edgeLabelsVisible]);
+
 
   // Автоматический расклад узлов по уровням
 const autoLayout = () => {
