@@ -91,3 +91,6 @@ html.dark {
 .custom-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
+/* Узлы всегда над рёбрами — клики не «перехватывают» линии */
+.react-flow__nodes { z-index: 3 !important; }
+.react-flow__edges { z-index: 2 !important; }
