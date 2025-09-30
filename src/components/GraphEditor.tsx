@@ -1,6 +1,6 @@
 // src/components/GraphEditor.tsx
-// Full‑screen node/edge editor with Minimap for your sales‑script graph
-// Drop‑in component. Works with the GraphData/GraphNode types from App.tsx.
+// Full-screen node/edge editor with Minimap for your sales-script graph
+// Drop-in component. Works with the GraphData/GraphNode types from App.tsx.
 
 import React, { useEffect, useMemo, useState, useCallback } from "react";
 import ReactFlow, {
@@ -16,13 +16,13 @@ import ReactFlow, {
   useNodesState,
   MarkerType,
   Handle,
-  Position
+  Position,
 } from "reactflow";
 
-// IMPORTANT: reactflow styles are imported globally in index.css
+// ВАЖНО: в index.css должен быть импорт стилей React Flow:
 // @import 'reactflow/dist/style.css';
 
-// === Types must mirror your App.tsx ===
+// === Types (совместимы с App.tsx) ===
 type NodeType = "greeting" | "router" | "question" | "snippet";
 
 interface Transition { label: string; to: string }
@@ -42,15 +42,15 @@ interface GraphUI {
 }
 interface GraphData { nodes: GraphNode[]; edges?: Edge[]; ui?: GraphUI }
 
-// === Props ===
+// === Пропсы редактора ===
 interface GraphEditorProps {
   open: boolean;
   onClose: () => void;
-  value: GraphData;                 // current graph
-  onChange: (g: GraphData) => void; // save back to App
+  value: GraphData;                 // входной граф
+  onChange: (g: GraphData) => void; // сохранить обратно в App
 }
 
-// === Helpers ===
+// === Утилиты ===
 const genId = (prefix = "node") => `${prefix}_${Math.random().toString(36).slice(2, 8)}`;
 
 const typeColors: Record<NodeType, string> = {
@@ -60,11 +60,11 @@ const typeColors: Record<NodeType, string> = {
   snippet:  "#38bdf8",
 };
 
-// Convert GraphData -> RF nodes/edges for visual editing
+// GraphData -> ReactFlow
 function toReactFlow(g: GraphData): { nodes: RFNode[]; edges: RFEdge[] } {
   const nodes: RFNode[] = g.nodes.map((n, idx) => ({
     id: n.id,
-    position: { x: (idx % 6) * 260, y: Math.floor(idx / 6) * 160 }, // simple layout; user can rearrange
+    position: { x: (idx % 6) * 260, y: Math.floor(idx / 6) * 160 },
     data: { title: n.title, type: n.type, text: (n.text ?? []).join("\n") },
     style: {
       borderRadius: 14,
@@ -77,10 +77,10 @@ function toReactFlow(g: GraphData): { nodes: RFNode[]; edges: RFEdge[] } {
     },
   }));
 
-  // Prefer explicit edges if exist; else derive from transitions
-  const edgeList: Edge[] = (g.edges && g.edges.length)
-    ? g.edges
-    : g.nodes.flatMap(n => (n.transitions ?? []).map(tr => ({ from: n.id, to: tr.to, label: tr.label })));
+  const edgeList: Edge[] =
+    g.edges && g.edges.length
+      ? g.edges
+      : g.nodes.flatMap(n => (n.transitions ?? []).map(tr => ({ from: n.id, to: tr.to, label: tr.label })));
 
   const edges: RFEdge[] = edgeList.map((e, i) => ({
     id: `e-${i}-${e.from}-${e.to}`,
@@ -98,7 +98,7 @@ function toReactFlow(g: GraphData): { nodes: RFNode[]; edges: RFEdge[] } {
   return { nodes, edges };
 }
 
-// Convert RF back -> GraphData (edges preferred over transitions)
+// ReactFlow -> GraphData
 function fromReactFlow(nodes: RFNode[], edges: RFEdge[], prev: GraphData): GraphData {
   const nextNodes: GraphNode[] = nodes.map((n) => ({
     id: n.id,
@@ -116,43 +116,46 @@ function fromReactFlow(nodes: RFNode[], edges: RFEdge[], prev: GraphData): Graph
   return { nodes: nextNodes, edges: nextEdges, ui: prev.ui };
 }
 
-// Lightweight node renderer (title + type pill)
+// Отрисовка ноды (бейдж типа + заголовок + краткий текст) + хэндлы
 const RFNodeContent: React.FC<{ data: any }> = ({ data }) => {
   const color = typeColors[data.type as NodeType] ?? "#94a3b8";
   return (
-    <div style={{ display: "grid", gap: 6 }}>    
-      <div style={{ display: "grid", gap: 6, position: 'relative' }}>
-        {/* точки подключения */}
-        <Handle type="target" position={Position.Top} />
-        <Handle type="source" position={Position.Bottom} />
-        <span style={{
-          fontSize: 11,
-          padding: "4px 8px",
-          borderRadius: 999,
-          background: `${color}20`,
-          border: `1px solid ${color}60`,
-          color,
-          fontWeight: 700,
-          letterSpacing: 0.4,
-        }}>{String(data.type).toUpperCase()}</span>
+    <div style={{ display: "grid", gap: 6, position: "relative" }}>
+      <Handle type="target" position={Position.Top} />
+      <Handle type="source" position={Position.Bottom} />
+      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+        <span
+          style={{
+            fontSize: 11,
+            padding: "4px 8px",
+            borderRadius: 999,
+            background: `${color}20`,
+            border: `1px solid ${color}60`,
+            color,
+            fontWeight: 700,
+            letterSpacing: 0.4,
+          }}
+        >
+          {String(data.type).toUpperCase()}
+        </span>
         <span style={{ fontWeight: 700 }}>{data.title}</span>
       </div>
       {!!data.text && (
         <div style={{ fontSize: 12, whiteSpace: "pre-wrap", opacity: 0.9 }}>
-          {String(data.text).slice(0, 160)}{String(data.text).length > 160 ? "…" : ""}
+          {String(data.text).slice(0, 160)}
+          {String(data.text).length > 160 ? "…" : ""}
         </div>
       )}
     </div>
   );
 };
 
-// === Main component ===
+// === Компонент редактора ===
 const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChange }) => {
   const initial = useMemo(() => toReactFlow(value), [value]);
   const [nodes, setNodes, onNodesChange] = useNodesState(initial.nodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initial.edges);
 
-  // selection for side panel editing
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const selectedNode = useMemo(() => nodes.find(n => n.id === selectedNodeId), [nodes, selectedNodeId]);
 
@@ -215,17 +218,16 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
     file.text().then((txt) => {
       const parsed = JSON.parse(txt) as GraphData;
       const rf = toReactFlow(parsed);
-      setNodes(rf.nodes); setEdges(rf.edges);
+      setNodes(rf.nodes);
+      setEdges(rf.edges);
     }).catch((e) => alert("Помилка читання файлу: " + e));
   };
 
-  // Simple inline node editor
   const updateNodeData = (patch: Partial<{ title: string; type: NodeType; text: string }>) => {
     if (!selectedNodeId) return;
     setNodes((ns) => ns.map(n => n.id === selectedNodeId ? { ...n, data: { ...n.data, ...patch } } : n));
   };
 
-  // Edge label prompt
   const editEdgeLabel = (edgeId: string) => {
     const label = prompt("Мітка переходу:", String(edges.find(e => e.id === edgeId)?.label ?? "→"));
     if (label == null) return;
@@ -246,11 +248,14 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
           <button onClick={downloadJSON} className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700">⬇︎ Експорт JSON</button>
           <label className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 cursor-pointer">
             ⬆︎ Імпорт JSON
-            <input type="file" accept="application/json" className="hidden" onChange={(e) => {
-              const f = e.currentTarget.files?.[0]; if (f) uploadJSON(f);
-            }} />
+            <input
+              type="file"
+              accept="application/json"
+              className="hidden"
+              onChange={(e) => { const f = e.currentTarget.files?.[0]; if (f) uploadJSON(f); }}
+            />
           </label>
-          <div className="ml-auto text-xs opacity-70">Режим редагування графа з міні‑мапою</div>
+          <div className="ml-auto text-xs opacity-70">Режим редагування графа з міні-мапою</div>
         </div>
 
         {/* Body */}
@@ -258,7 +263,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
           {/* Canvas */}
           <div className="relative h-full">
             <ReactFlow
-            style={{ width: '100%', height: '100%' }}      // ← гарантируем размеры
+              style={{ width: "100%", height: "100%" }}    // размеры канвы
               nodes={nodes.map(n => ({ ...n, data: { ...n.data }, type: "default" }))}
               edges={edges}
               onNodesChange={onNodesChange}
@@ -266,22 +271,30 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
               onConnect={onConnect}
               fitView
               fitViewOptions={{ padding: 0.4 }}
-              proOptions={{ hideAttribution: false }}        // поставь true, если хочешь скрыть “React Flow”
-              panOnDrag                                     // ← перетаскивание полотна мышью
-              selectionOnDrag={false}                       // ← чтобы drag двигал полотно, а не выделял
-              zoomOnScroll                                  // ← масштаб колёсиком
-              zoomOnPinch                                   // ← масштаб pinch-жестом (трекпад)
+              proOptions={{ hideAttribution: true }}       // убираем подпись “React Flow”, чтобы не перекрывала
+              panOnDrag
+              selectionOnDrag={false}
+              zoomOnScroll
+              zoomOnPinch
               minZoom={0.2}
               maxZoom={2}
-              nodesDraggable                                // ← узлы можно таскать
-              nodesConnectable                              // ← можно соединять
-              elementsSelectable                            // ← можно выделять
+              nodesDraggable
+              nodesConnectable
+              elementsSelectable
               onNodeClick={(_, node) => setSelectedNodeId(node.id)}
               onPaneClick={() => setSelectedNodeId(null)}
               nodeTypes={{ default: RFNodeContent as any }}
               onEdgeDoubleClick={(_, edge) => editEdgeLabel(edge.id)}
             >
-              <MiniMap zoomable pannable nodeStrokeWidth={2} nodeColor={(n) => typeColors[(n.data as any)?.type as NodeType] ?? "#94a3b8"} maskColor="rgba(2,6,23,0.65)" />
+              <MiniMap
+                className="z-[60] !pointer-events-auto"
+                style={{ pointerEvents: "all" }}
+                zoomable
+                pannable
+                nodeStrokeWidth={2}
+                nodeColor={(n) => typeColors[(n.data as any)?.type as NodeType] ?? "#94a3b8"}
+                maskColor="rgba(2,6,23,0.65)"
+              />
               <Controls position="bottom-left" showInteractive={false} />
               <Background variant={BackgroundVariant.Dots} gap={18} />
             </ReactFlow>
@@ -292,7 +305,9 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
             <div className="text-xs uppercase tracking-widest text-zinc-400 mb-2">Властивості вузла</div>
 
             {!selectedNode && (
-              <div className="text-zinc-400 text-sm opacity-80">Оберіть вузол, щоб змінити заголовок, тип або текст. Подвійний клік по ребру — зміна підпису переходу.</div>
+              <div className="text-zinc-400 text-sm opacity-80">
+                Оберіть вузол, щоб змінити заголовок, тип або текст. Подвійний клік по ребру — зміна підпису переходу.
+              </div>
             )}
 
             {selectedNode && (
@@ -329,11 +344,17 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
                 </label>
 
                 <div className="pt-2 flex gap-2">
-                  <button className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700" onClick={() => setSelectedNodeId(null)}>Зняти виділення</button>
-                  <button className="px-3 py-1.5 rounded-lg bg-rose-700/80 hover:bg-rose-600" onClick={deleteSelection}>Видалити вузол</button>
+                  <button className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700" onClick={() => setSelectedNodeId(null)}>
+                    Зняти виділення
+                  </button>
+                  <button className="px-3 py-1.5 rounded-lg bg-rose-700/80 hover:bg-rose-600" onClick={deleteSelection}>
+                    Видалити вузол
+                  </button>
                 </div>
 
-                <div className="pt-3 text-xs text-zinc-400">Підказка: зʼєднуйте вузли перетягуванням зʼєднувачів; подвійний клік по ребру — змінити мітку.</div>
+                <div className="pt-3 text-xs text-zinc-400">
+                  Підказка: зʼєднуйте вузли перетягуванням зʼєднувачів; подвійний клік по ребру — змінити мітку.
+                </div>
               </div>
             )}
           </div>
