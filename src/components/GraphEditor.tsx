@@ -264,6 +264,7 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
           <div className="relative h-full" style={{ background: "#0b0e14" }}>
             <ReactFlow
               style={{ width: "100%", height: "100%" }}    // размеры канвы
+              dragHandle=".drag-handle"
               nodes={nodes.map(n => ({ ...n, data: { ...n.data }, type: "default" }))}
               edges={edges}
               onNodesChange={onNodesChange}
