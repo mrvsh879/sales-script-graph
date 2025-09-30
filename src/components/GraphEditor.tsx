@@ -60,6 +60,63 @@ const typeColors: Record<NodeType, string> = {
   snippet:  "#38bdf8",
 };
 
+// === Simple BFS layout (levels) ===
+function layoutByLevels(
+  nodes: RFNode[],
+  edges: RFEdge[],
+  opts: { xGap?: number; yGap?: number; startId?: string } = {}
+): RFNode[] {
+  const xGap = opts.xGap ?? 320;
+  const yGap = opts.yGap ?? 180;
+
+  const out = new Map<string, string[]>();
+  const inDeg = new Map<string, number>();
+  nodes.forEach(n => { out.set(n.id, []); inDeg.set(n.id, 0); });
+  edges.forEach(e => {
+    out.get(String(e.source))!.push(String(e.target));
+    inDeg.set(String(e.target), (inDeg.get(String(e.target)) ?? 0) + 1);
+  });
+
+  let roots: string[] = [];
+  const greeting = nodes.find(n => (n.data?.type ?? "") === "greeting")?.id;
+  if (opts.startId) roots = [opts.startId];
+  else if (greeting) roots = [greeting];
+  else roots = nodes.filter(n => (inDeg.get(n.id) ?? 0) === 0).map(n => n.id);
+  if (!roots.length) roots = [nodes[0].id];
+
+  const level = new Map<string, number>();
+  const q = [...roots];
+  roots.forEach(r => level.set(r, 0));
+  while (q.length) {
+    const v = q.shift()!;
+    for (const w of out.get(v) ?? []) {
+      if (!level.has(w)) {
+        level.set(w, (level.get(v) ?? 0) + 1);
+        q.push(w);
+      }
+    }
+  }
+
+  const buckets = new Map<number, string[]>();
+  nodes.forEach(n => {
+    const L = level.get(n.id) ?? 0;
+    if (!buckets.has(L)) buckets.set(L, []);
+    buckets.get(L)!.push(n.id);
+  });
+
+  const laid = nodes.map(n => ({ ...n }));
+  for (const [L, ids] of Array.from(buckets.entries()).sort((a,b) => a[0]-b[0])) {
+    ids.sort();
+    const rowWidth = (ids.length - 1) * xGap;
+    const x0 = -rowWidth / 2;
+    ids.forEach((id, i) => {
+      const node = laid.find(nn => nn.id === id)!;
+      node.position = { x: x0 + i * xGap, y: L * yGap };
+    });
+  }
+  return laid;
+}
+
 // GraphData -> ReactFlow
 function toReactFlow(g: GraphData): { nodes: RFNode[]; edges: RFEdge[] } {
   const nodes: RFNode[] = g.nodes.map((n, idx) => ({
