@@ -221,11 +221,22 @@ const GraphEditor: React.FC<GraphEditorProps> = ({ open, onClose, value, onChang
   const selectedNode = useMemo(() => nodes.find(n => n.id === selectedNodeId), [nodes, selectedNodeId]);
 
   useEffect(() => {
-    if (!open) return;
-    setNodes(initial.nodes);
-    setEdges(initial.edges);
-    setSelectedNodeId(null);
-  }, [open, initial.nodes, initial.edges, setNodes, setEdges]);
+  if (!open) return;
+
+  // раскладываем «ступеньками»: greeting сверху, дальше по уровням
+  const laid = layoutByLevels(initial.nodes, initial.edges, {
+    startId: initial.nodes.find(n => (n.data?.type ?? "") === "greeting")?.id,
+  });
+
+  setNodes(laid);
+  setEdges(initial.edges);
+  setSelectedNodeId(null);
+
+  // центрируем вид на всём графе
+  requestAnimationFrame(() => {
+    rf?.fitView?.({ padding: 0.25, duration: 300 });
+  });
+}, [open, initial.nodes, initial.edges, rf, setNodes, setEdges]);
 
   const onConnect = useCallback((c: Connection) => {
     if (!c.source || !c.target) return;
