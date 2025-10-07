@@ -903,10 +903,9 @@
       "title": "DOVE È REGISTRATA LA VOSTRA AZIENDA",
       "type": "snippet",
       "text": [
-        "Siamo un'azienda internazionale, con ufficio anche in Polonia — principale a Krotoszyn.",
-        "ELITE HOLDINGS LIMITED, Company number 12304784, 288 Church Street, Blackpool, Lancashire, England, FY1 3QA , Mazowieckie, 8 November 2019",
-        "In pratica, una richiesta ufficiale alla NBP può costare circa 150€ e durare fino a 14 giorni lavorativi.",
-        "👉 Se il nome del progetto differisce dal nome dell'azienda — verificare per nome e Company number su internet."
+       "Siamo un'azienda internazionale che ha un ufficio anche a Lancashire.",
+        "ELITE HOLDINGS LIMITED, numero di registrazione 12304784, indirizzo: 288 Church Street, Blackpool, Lancashire, England, FY1 3QA, Voivodato della Masovia, 8 novembre 2019.",
+        "👉 Se il nome del progetto è diverso da quello dell'azienda, verificalo su Internet tramite il nome e il numero di registrazione."
       ]
     },
     {
@@ -1713,6 +1712,7 @@
 }
     }
    
+
 
 
 
